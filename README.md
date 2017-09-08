@@ -1,7 +1,7 @@
 ## 0 Useage
 `$ git clone https://github.com/shengnian/shengnian-ui-react.git`
 `$ cd shengnian-ui-react`
-`gulp`
+`$ gulp`
 
 ## 1 Fonts
 
