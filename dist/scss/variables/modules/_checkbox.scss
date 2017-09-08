@@ -1,0 +1,804 @@
+$checkboxFontName: $fontName;
+$checkboxFontSmoothing: $fontSmoothing;
+$checkboxHeaderFont: $headerFont;
+$checkboxPageFont: $pageFont;
+$checkboxGoogleFontName: $googleFontName;
+$checkboxImportGoogleFonts: $importGoogleFonts;
+$checkboxGoogleFontSizes: $googleFontSizes;
+$checkboxGoogleSubset: $googleSubset;
+$checkboxGoogleProtocol: $googleProtocol;
+$checkboxGoogleFontRequest: $googleFontRequest;
+$checkboxEmSize: $emSize;
+$checkboxFontSize: $fontSize;
+$checkboxRelativeBorderRadius: $relativeBorderRadius;
+$checkboxAbsoluteBorderRadius: $absoluteBorderRadius;
+$checkboxDefaultBorderRadius: $defaultBorderRadius;
+$checkboxPrimaryColor: $primaryColor;
+$checkboxSecondaryColor: $secondaryColor;
+$checkboxLightPrimaryColor: $lightPrimaryColor;
+$checkboxLightSecondaryColor: $lightSecondaryColor;
+$checkboxHeaderFontWeight: $headerFontWeight;
+$checkboxHeaderLineHeight: $headerLineHeight;
+$checkboxH1: $h1;
+$checkboxH2: $h2;
+$checkboxH3: $h3;
+$checkboxH4: $h4;
+$checkboxH5: $h5;
+$checkboxInputBackground: $inputBackground;
+$checkboxInputVerticalPadding: $inputVerticalPadding;
+$checkboxInputHorizontalPadding: $inputHorizontalPadding;
+$checkboxInputPadding: $inputPadding;
+$checkboxInputColor: $inputColor;
+$checkboxInputPlaceholderColor: $inputPlaceholderColor;
+$checkboxInputPlaceholderFocusColor: $inputPlaceholderFocusColor;
+$checkboxInputLineHeight: $inputLineHeight;
+$checkboxFocusedFormBorderColor: $focusedFormBorderColor;
+$checkboxFocusedFormMutedBorderColor: $focusedFormMutedBorderColor;
+$checkboxMiniSize: $miniSize;
+$checkboxTinySize: $tinySize;
+$checkboxSmallSize: $smallSize;
+$checkboxMediumSize: $mediumSize;
+$checkboxLargeSize: $largeSize;
+$checkboxBigSize: $bigSize;
+$checkboxHugeSize: $hugeSize;
+$checkboxMassiveSize: $massiveSize;
+$checkboxPageBackground: $pageBackground;
+$checkboxPageOverflowX: $pageOverflowX;
+$checkboxLineHeight: $lineHeight;
+$checkboxTextColor: $textColor;
+$checkboxParagraphMargin: $paragraphMargin;
+$checkboxParagraphLineHeight: $paragraphLineHeight;
+$checkboxLinkColor: $linkColor;
+$checkboxLinkUnderline: $linkUnderline;
+$checkboxLinkHoverColor: $linkHoverColor;
+$checkboxLinkHoverUnderline: $linkHoverUnderline;
+$checkboxUseCustomScrollbars: $useCustomScrollbars;
+$checkboxCustomScrollbarWidth: $customScrollbarWidth;
+$checkboxTrackBackground: $trackBackground;
+$checkboxTrackBorderRadius: $trackBorderRadius;
+$checkboxThumbBorderRadius: $thumbBorderRadius;
+$checkboxThumbBackground: $thumbBackground;
+$checkboxThumbTransition: $thumbTransition;
+$checkboxThumbInactiveBackground: $thumbInactiveBackground;
+$checkboxThumbHoverBackground: $thumbHoverBackground;
+$checkboxTrackInvertedBackground: $trackInvertedBackground;
+$checkboxThumbInvertedBackground: $thumbInvertedBackground;
+$checkboxThumbInvertedInactiveBackground: $thumbInvertedInactiveBackground;
+$checkboxThumbInvertedHoverBackground: $thumbInvertedHoverBackground;
+$checkboxHighlightBackground: $highlightBackground;
+$checkboxHighlightColor: $highlightColor;
+$checkboxInputHighlightBackground: $inputHighlightBackground;
+$checkboxInputHighlightColor: $inputHighlightColor;
+$checkboxLoaderSize: $loaderSize;
+$checkboxLoaderSpeed: $loaderSpeed;
+$checkboxLoaderLineWidth: $loaderLineWidth;
+$checkboxLoaderFillColor: $loaderFillColor;
+$checkboxLoaderLineColor: $loaderLineColor;
+$checkboxInvertedLoaderFillColor: $invertedLoaderFillColor;
+$checkboxInvertedLoaderLineColor: $invertedLoaderLineColor;
+$checkboxColumnCount: $columnCount;
+$checkboxDefaultDuration: $defaultDuration;
+$checkboxDefaultEasing: $defaultEasing;
+$checkboxMobileBreakpoint: $mobileBreakpoint;
+$checkboxTabletBreakpoint: $tabletBreakpoint;
+$checkboxComputerBreakpoint: $computerBreakpoint;
+$checkboxLargeMonitorBreakpoint: $largeMonitorBreakpoint;
+$checkboxWidescreenMonitorBreakpoint: $widescreenMonitorBreakpoint;
+$checkboxRed: $red;
+$checkboxOrange: $orange;
+$checkboxYellow: $yellow;
+$checkboxOlive: $olive;
+$checkboxGreen: $green;
+$checkboxTeal: $teal;
+$checkboxBlue: $blue;
+$checkboxViolet: $violet;
+$checkboxPurple: $purple;
+$checkboxPink: $pink;
+$checkboxBrown: $brown;
+$checkboxGrey: $grey;
+$checkboxBlack: $black;
+$checkboxLightRed: $lightRed;
+$checkboxLightOrange: $lightOrange;
+$checkboxLightYellow: $lightYellow;
+$checkboxLightOlive: $lightOlive;
+$checkboxLightGreen: $lightGreen;
+$checkboxLightTeal: $lightTeal;
+$checkboxLightBlue: $lightBlue;
+$checkboxLightViolet: $lightViolet;
+$checkboxLightPurple: $lightPurple;
+$checkboxLightPink: $lightPink;
+$checkboxLightBrown: $lightBrown;
+$checkboxLightGrey: $lightGrey;
+$checkboxLightBlack: $lightBlack;
+$checkboxFullBlack: $fullBlack;
+$checkboxOffWhite: $offWhite;
+$checkboxDarkWhite: $darkWhite;
+$checkboxMidWhite: $midWhite;
+$checkboxWhite: $white;
+$checkboxRedBackground: $redBackground;
+$checkboxOrangeBackground: $orangeBackground;
+$checkboxYellowBackground: $yellowBackground;
+$checkboxOliveBackground: $oliveBackground;
+$checkboxGreenBackground: $greenBackground;
+$checkboxTealBackground: $tealBackground;
+$checkboxBlueBackground: $blueBackground;
+$checkboxVioletBackground: $violetBackground;
+$checkboxPurpleBackground: $purpleBackground;
+$checkboxPinkBackground: $pinkBackground;
+$checkboxBrownBackground: $brownBackground;
+$checkboxRedHeaderColor: $redHeaderColor;
+$checkboxOliveHeaderColor: $oliveHeaderColor;
+$checkboxGreenHeaderColor: $greenHeaderColor;
+$checkboxYellowHeaderColor: $yellowHeaderColor;
+$checkboxBlueHeaderColor: $blueHeaderColor;
+$checkboxTealHeaderColor: $tealHeaderColor;
+$checkboxPinkHeaderColor: $pinkHeaderColor;
+$checkboxVioletHeaderColor: $violetHeaderColor;
+$checkboxPurpleHeaderColor: $purpleHeaderColor;
+$checkboxOrangeHeaderColor: $orangeHeaderColor;
+$checkboxBrownHeaderColor: $brownHeaderColor;
+$checkboxRedTextColor: $redTextColor;
+$checkboxOrangeTextColor: $orangeTextColor;
+$checkboxYellowTextColor: $yellowTextColor;
+$checkboxOliveTextColor: $oliveTextColor;
+$checkboxGreenTextColor: $greenTextColor;
+$checkboxTealTextColor: $tealTextColor;
+$checkboxBlueTextColor: $blueTextColor;
+$checkboxVioletTextColor: $violetTextColor;
+$checkboxPurpleTextColor: $purpleTextColor;
+$checkboxPinkTextColor: $pinkTextColor;
+$checkboxBrownTextColor: $brownTextColor;
+$checkboxRedBorderColor: $redBorderColor;
+$checkboxOrangeBorderColor: $orangeBorderColor;
+$checkboxYellowBorderColor: $yellowBorderColor;
+$checkboxOliveBorderColor: $oliveBorderColor;
+$checkboxGreenBorderColor: $greenBorderColor;
+$checkboxTealBorderColor: $tealBorderColor;
+$checkboxBlueBorderColor: $blueBorderColor;
+$checkboxVioletBorderColor: $violetBorderColor;
+$checkboxPurpleBorderColor: $purpleBorderColor;
+$checkboxPinkBorderColor: $pinkBorderColor;
+$checkboxBrownBorderColor: $brownBorderColor;
+$checkboxSubtleTransparentBlack: $subtleTransparentBlack;
+$checkboxTransparentBlack: $transparentBlack;
+$checkboxStrongTransparentBlack: $strongTransparentBlack;
+$checkboxVeryStrongTransparentBlack: $veryStrongTransparentBlack;
+$checkboxSubtleTransparentWhite: $subtleTransparentWhite;
+$checkboxTransparentWhite: $transparentWhite;
+$checkboxStrongTransparentWhite: $strongTransparentWhite;
+$checkboxSubtleGradient: $subtleGradient;
+$checkboxSubtleShadow: $subtleShadow;
+$checkboxFloatingShadow: $floatingShadow;
+$checkboxPositiveColor: $positiveColor;
+$checkboxPositiveBackgroundColor: $positiveBackgroundColor;
+$checkboxPositiveBorderColor: $positiveBorderColor;
+$checkboxPositiveHeaderColor: $positiveHeaderColor;
+$checkboxPositiveTextColor: $positiveTextColor;
+$checkboxNegativeColor: $negativeColor;
+$checkboxNegativeBackgroundColor: $negativeBackgroundColor;
+$checkboxNegativeBorderColor: $negativeBorderColor;
+$checkboxNegativeHeaderColor: $negativeHeaderColor;
+$checkboxNegativeTextColor: $negativeTextColor;
+$checkboxInfoColor: $infoColor;
+$checkboxInfoBackgroundColor: $infoBackgroundColor;
+$checkboxInfoBorderColor: $infoBorderColor;
+$checkboxInfoHeaderColor: $infoHeaderColor;
+$checkboxInfoTextColor: $infoTextColor;
+$checkboxWarningColor: $warningColor;
+$checkboxWarningBorderColor: $warningBorderColor;
+$checkboxWarningBackgroundColor: $warningBackgroundColor;
+$checkboxWarningHeaderColor: $warningHeaderColor;
+$checkboxWarningTextColor: $warningTextColor;
+$checkboxImagePath: $imagePath;
+$checkboxFontPath: $fontPath;
+$checkboxMini: $mini;
+$checkboxTiny: $tiny;
+$checkboxSmall: $small;
+$checkboxMedium: $medium;
+$checkboxLarge: $large;
+$checkboxBig: $big;
+$checkboxHuge: $huge;
+$checkboxMassive: $massive;
+$checkboxRelativeMini: $relativeMini;
+$checkboxRelativeTiny: $relativeTiny;
+$checkboxRelativeSmall: $relativeSmall;
+$checkboxRelativeMedium: $relativeMedium;
+$checkboxRelativeLarge: $relativeLarge;
+$checkboxRelativeBig: $relativeBig;
+$checkboxRelativeHuge: $relativeHuge;
+$checkboxRelativeMassive: $relativeMassive;
+$checkboxAbsoluteMini: $absoluteMini;
+$checkboxAbsoluteTiny: $absoluteTiny;
+$checkboxAbsoluteSmall: $absoluteSmall;
+$checkboxAbsoluteMedium: $absoluteMedium;
+$checkboxAbsoluteLarge: $absoluteLarge;
+$checkboxAbsoluteBig: $absoluteBig;
+$checkboxAbsoluteHuge: $absoluteHuge;
+$checkboxAbsoluteMassive: $absoluteMassive;
+$checkboxIconWidth: $iconWidth;
+$checkboxDarkTextColor: $darkTextColor;
+$checkboxMutedTextColor: $mutedTextColor;
+$checkboxLightTextColor: $lightTextColor;
+$checkboxUnselectedTextColor: $unselectedTextColor;
+$checkboxHoveredTextColor: $hoveredTextColor;
+$checkboxPressedTextColor: $pressedTextColor;
+$checkboxSelectedTextColor: $selectedTextColor;
+$checkboxDisabledTextColor: $disabledTextColor;
+$checkboxInvertedTextColor: $invertedTextColor;
+$checkboxInvertedMutedTextColor: $invertedMutedTextColor;
+$checkboxInvertedLightTextColor: $invertedLightTextColor;
+$checkboxInvertedUnselectedTextColor: $invertedUnselectedTextColor;
+$checkboxInvertedHoveredTextColor: $invertedHoveredTextColor;
+$checkboxInvertedPressedTextColor: $invertedPressedTextColor;
+$checkboxInvertedSelectedTextColor: $invertedSelectedTextColor;
+$checkboxInvertedDisabledTextColor: $invertedDisabledTextColor;
+$checkboxFacebookColor: $facebookColor;
+$checkboxTwitterColor: $twitterColor;
+$checkboxGooglePlusColor: $googlePlusColor;
+$checkboxLinkedInColor: $linkedInColor;
+$checkboxYoutubeColor: $youtubeColor;
+$checkboxPinterestColor: $pinterestColor;
+$checkboxVkColor: $vkColor;
+$checkboxInstagramColor: $instagramColor;
+$checkboxCircularRadius: $circularRadius;
+$checkboxBorderColor: $borderColor;
+$checkboxStrongBorderColor: $strongBorderColor;
+$checkboxInternalBorderColor: $internalBorderColor;
+$checkboxSelectedBorderColor: $selectedBorderColor;
+$checkboxStrongSelectedBorderColor: $strongSelectedBorderColor;
+$checkboxDisabledBorderColor: $disabledBorderColor;
+$checkboxSolidInternalBorderColor: $solidInternalBorderColor;
+$checkboxSolidBorderColor: $solidBorderColor;
+$checkboxSolidSelectedBorderColor: $solidSelectedBorderColor;
+$checkboxWhiteBorderColor: $whiteBorderColor;
+$checkboxSelectedWhiteBorderColor: $selectedWhiteBorderColor;
+$checkboxSolidWhiteBorderColor: $solidWhiteBorderColor;
+$checkboxSelectedSolidWhiteBorderColor: $selectedSolidWhiteBorderColor;
+$checkboxLoaderOffset: $loaderOffset;
+$checkboxLoaderMargin: $loaderMargin;
+$checkboxScrollbarWidth: $scrollbarWidth;
+$checkboxGlyphWidth: $glyphWidth;
+$checkboxLineHeightOffset: $lineHeightOffset;
+$checkboxHeaderLineHeightOffset: $headerLineHeightOffset;
+$checkboxHeaderTopMargin: $headerTopMargin;
+$checkboxHeaderBottomMargin: $headerBottomMargin;
+$checkboxHeaderMargin: $headerMargin;
+$checkboxPageMinWidth: $pageMinWidth;
+$checkboxSuccessBackgroundColor: $successBackgroundColor;
+$checkboxSuccessColor: $successColor;
+$checkboxSuccessBorderColor: $successBorderColor;
+$checkboxSuccessHeaderColor: $successHeaderColor;
+$checkboxSuccessTextColor: $successTextColor;
+$checkboxErrorBackgroundColor: $errorBackgroundColor;
+$checkboxErrorColor: $errorColor;
+$checkboxErrorBorderColor: $errorBorderColor;
+$checkboxErrorHeaderColor: $errorHeaderColor;
+$checkboxErrorTextColor: $errorTextColor;
+$checkboxLargestMobileScreen: $largestMobileScreen;
+$checkboxLargestTabletScreen: $largestTabletScreen;
+$checkboxLargestSmallMonitor: $largestSmallMonitor;
+$checkboxLargestLargeMonitor: $largestLargeMonitor;
+$checkbox1px: $_1px;
+$checkbox2px: $_2px;
+$checkbox3px: $_3px;
+$checkbox4px: $_4px;
+$checkbox5px: $_5px;
+$checkbox6px: $_6px;
+$checkbox7px: $_7px;
+$checkbox8px: $_8px;
+$checkbox9px: $_9px;
+$checkbox10px: $_10px;
+$checkbox11px: $_11px;
+$checkbox12px: $_12px;
+$checkbox13px: $_13px;
+$checkbox14px: $_14px;
+$checkbox15px: $_15px;
+$checkbox16px: $_16px;
+$checkbox17px: $_17px;
+$checkbox18px: $_18px;
+$checkbox19px: $_19px;
+$checkbox20px: $_20px;
+$checkbox21px: $_21px;
+$checkbox22px: $_22px;
+$checkbox23px: $_23px;
+$checkbox24px: $_24px;
+$checkbox25px: $_25px;
+$checkbox26px: $_26px;
+$checkbox27px: $_27px;
+$checkbox28px: $_28px;
+$checkbox29px: $_29px;
+$checkbox30px: $_30px;
+$checkbox31px: $_31px;
+$checkbox32px: $_32px;
+$checkbox33px: $_33px;
+$checkbox34px: $_34px;
+$checkbox35px: $_35px;
+$checkbox36px: $_36px;
+$checkbox37px: $_37px;
+$checkbox38px: $_38px;
+$checkbox39px: $_39px;
+$checkbox40px: $_40px;
+$checkbox41px: $_41px;
+$checkbox42px: $_42px;
+$checkbox43px: $_43px;
+$checkbox44px: $_44px;
+$checkbox45px: $_45px;
+$checkbox46px: $_46px;
+$checkbox47px: $_47px;
+$checkbox48px: $_48px;
+$checkbox49px: $_49px;
+$checkbox50px: $_50px;
+$checkbox51px: $_51px;
+$checkbox52px: $_52px;
+$checkbox53px: $_53px;
+$checkbox54px: $_54px;
+$checkbox55px: $_55px;
+$checkbox56px: $_56px;
+$checkbox57px: $_57px;
+$checkbox58px: $_58px;
+$checkbox59px: $_59px;
+$checkbox60px: $_60px;
+$checkbox61px: $_61px;
+$checkbox62px: $_62px;
+$checkbox63px: $_63px;
+$checkbox64px: $_64px;
+$checkboxRelative1px: $relative1px;
+$checkboxRelative2px: $relative2px;
+$checkboxRelative3px: $relative3px;
+$checkboxRelative4px: $relative4px;
+$checkboxRelative5px: $relative5px;
+$checkboxRelative6px: $relative6px;
+$checkboxRelative7px: $relative7px;
+$checkboxRelative8px: $relative8px;
+$checkboxRelative9px: $relative9px;
+$checkboxRelative10px: $relative10px;
+$checkboxRelative11px: $relative11px;
+$checkboxRelative12px: $relative12px;
+$checkboxRelative13px: $relative13px;
+$checkboxRelative14px: $relative14px;
+$checkboxRelative15px: $relative15px;
+$checkboxRelative16px: $relative16px;
+$checkboxRelative17px: $relative17px;
+$checkboxRelative18px: $relative18px;
+$checkboxRelative19px: $relative19px;
+$checkboxRelative20px: $relative20px;
+$checkboxRelative21px: $relative21px;
+$checkboxRelative22px: $relative22px;
+$checkboxRelative23px: $relative23px;
+$checkboxRelative24px: $relative24px;
+$checkboxRelative25px: $relative25px;
+$checkboxRelative26px: $relative26px;
+$checkboxRelative27px: $relative27px;
+$checkboxRelative28px: $relative28px;
+$checkboxRelative29px: $relative29px;
+$checkboxRelative30px: $relative30px;
+$checkboxRelative31px: $relative31px;
+$checkboxRelative32px: $relative32px;
+$checkboxRelative33px: $relative33px;
+$checkboxRelative34px: $relative34px;
+$checkboxRelative35px: $relative35px;
+$checkboxRelative36px: $relative36px;
+$checkboxRelative37px: $relative37px;
+$checkboxRelative38px: $relative38px;
+$checkboxRelative39px: $relative39px;
+$checkboxRelative40px: $relative40px;
+$checkboxRelative41px: $relative41px;
+$checkboxRelative42px: $relative42px;
+$checkboxRelative43px: $relative43px;
+$checkboxRelative44px: $relative44px;
+$checkboxRelative45px: $relative45px;
+$checkboxRelative46px: $relative46px;
+$checkboxRelative47px: $relative47px;
+$checkboxRelative48px: $relative48px;
+$checkboxRelative49px: $relative49px;
+$checkboxRelative50px: $relative50px;
+$checkboxRelative51px: $relative51px;
+$checkboxRelative52px: $relative52px;
+$checkboxRelative53px: $relative53px;
+$checkboxRelative54px: $relative54px;
+$checkboxRelative55px: $relative55px;
+$checkboxRelative56px: $relative56px;
+$checkboxRelative57px: $relative57px;
+$checkboxRelative58px: $relative58px;
+$checkboxRelative59px: $relative59px;
+$checkboxRelative60px: $relative60px;
+$checkboxRelative61px: $relative61px;
+$checkboxRelative62px: $relative62px;
+$checkboxRelative63px: $relative63px;
+$checkboxRelative64px: $relative64px;
+$checkboxOneWide: $oneWide;
+$checkboxTwoWide: $twoWide;
+$checkboxThreeWide: $threeWide;
+$checkboxFourWide: $fourWide;
+$checkboxFiveWide: $fiveWide;
+$checkboxSixWide: $sixWide;
+$checkboxSevenWide: $sevenWide;
+$checkboxEightWide: $eightWide;
+$checkboxNineWide: $nineWide;
+$checkboxTenWide: $tenWide;
+$checkboxElevenWide: $elevenWide;
+$checkboxTwelveWide: $twelveWide;
+$checkboxThirteenWide: $thirteenWide;
+$checkboxFourteenWide: $fourteenWide;
+$checkboxFifteenWide: $fifteenWide;
+$checkboxSixteenWide: $sixteenWide;
+$checkboxOneColumn: $oneColumn;
+$checkboxTwoColumn: $twoColumn;
+$checkboxThreeColumn: $threeColumn;
+$checkboxFourColumn: $fourColumn;
+$checkboxFiveColumn: $fiveColumn;
+$checkboxSixColumn: $sixColumn;
+$checkboxSevenColumn: $sevenColumn;
+$checkboxEightColumn: $eightColumn;
+$checkboxNineColumn: $nineColumn;
+$checkboxTenColumn: $tenColumn;
+$checkboxElevenColumn: $elevenColumn;
+$checkboxTwelveColumn: $twelveColumn;
+$checkboxThirteenColumn: $thirteenColumn;
+$checkboxFourteenColumn: $fourteenColumn;
+$checkboxFifteenColumn: $fifteenColumn;
+$checkboxSixteenColumn: $sixteenColumn;
+$checkboxDisabledOpacity: $disabledOpacity;
+$checkboxFloatingShadowHover: $floatingShadowHover;
+$checkboxPrimaryColorHover: $primaryColorHover;
+$checkboxSecondaryColorHover: $secondaryColorHover;
+$checkboxRedHover: $redHover;
+$checkboxOrangeHover: $orangeHover;
+$checkboxYellowHover: $yellowHover;
+$checkboxOliveHover: $oliveHover;
+$checkboxGreenHover: $greenHover;
+$checkboxTealHover: $tealHover;
+$checkboxBlueHover: $blueHover;
+$checkboxVioletHover: $violetHover;
+$checkboxPurpleHover: $purpleHover;
+$checkboxPinkHover: $pinkHover;
+$checkboxBrownHover: $brownHover;
+$checkboxLightRedHover: $lightRedHover;
+$checkboxLightOrangeHover: $lightOrangeHover;
+$checkboxLightYellowHover: $lightYellowHover;
+$checkboxLightOliveHover: $lightOliveHover;
+$checkboxLightGreenHover: $lightGreenHover;
+$checkboxLightTealHover: $lightTealHover;
+$checkboxLightBlueHover: $lightBlueHover;
+$checkboxLightVioletHover: $lightVioletHover;
+$checkboxLightPurpleHover: $lightPurpleHover;
+$checkboxLightPinkHover: $lightPinkHover;
+$checkboxLightBrownHover: $lightBrownHover;
+$checkboxLightGreyHover: $lightGreyHover;
+$checkboxLightBlackHover: $lightBlackHover;
+$checkboxPositiveColorHover: $positiveColorHover;
+$checkboxNegativeColorHover: $negativeColorHover;
+$checkboxFacebookHoverColor: $facebookHoverColor;
+$checkboxTwitterHoverColor: $twitterHoverColor;
+$checkboxGooglePlusHoverColor: $googlePlusHoverColor;
+$checkboxLinkedInHoverColor: $linkedInHoverColor;
+$checkboxYoutubeHoverColor: $youtubeHoverColor;
+$checkboxInstagramHoverColor: $instagramHoverColor;
+$checkboxPinterestHoverColor: $pinterestHoverColor;
+$checkboxVkHoverColor: $vkHoverColor;
+$checkboxFullBlackHover: $fullBlackHover;
+$checkboxBlackHover: $blackHover;
+$checkboxGreyHover: $greyHover;
+$checkboxWhiteHover: $whiteHover;
+$checkboxOffWhiteHover: $offWhiteHover;
+$checkboxDarkWhiteHover: $darkWhiteHover;
+$checkboxPrimaryColorFocus: $primaryColorFocus;
+$checkboxSecondaryColorFocus: $secondaryColorFocus;
+$checkboxRedFocus: $redFocus;
+$checkboxOrangeFocus: $orangeFocus;
+$checkboxYellowFocus: $yellowFocus;
+$checkboxOliveFocus: $oliveFocus;
+$checkboxGreenFocus: $greenFocus;
+$checkboxTealFocus: $tealFocus;
+$checkboxBlueFocus: $blueFocus;
+$checkboxVioletFocus: $violetFocus;
+$checkboxPurpleFocus: $purpleFocus;
+$checkboxPinkFocus: $pinkFocus;
+$checkboxBrownFocus: $brownFocus;
+$checkboxLightRedFocus: $lightRedFocus;
+$checkboxLightOrangeFocus: $lightOrangeFocus;
+$checkboxLightYellowFocus: $lightYellowFocus;
+$checkboxLightOliveFocus: $lightOliveFocus;
+$checkboxLightGreenFocus: $lightGreenFocus;
+$checkboxLightTealFocus: $lightTealFocus;
+$checkboxLightBlueFocus: $lightBlueFocus;
+$checkboxLightVioletFocus: $lightVioletFocus;
+$checkboxLightPurpleFocus: $lightPurpleFocus;
+$checkboxLightPinkFocus: $lightPinkFocus;
+$checkboxLightBrownFocus: $lightBrownFocus;
+$checkboxLightGreyFocus: $lightGreyFocus;
+$checkboxLightBlackFocus: $lightBlackFocus;
+$checkboxPositiveColorFocus: $positiveColorFocus;
+$checkboxNegativeColorFocus: $negativeColorFocus;
+$checkboxFacebookFocusColor: $facebookFocusColor;
+$checkboxTwitterFocusColor: $twitterFocusColor;
+$checkboxGooglePlusFocusColor: $googlePlusFocusColor;
+$checkboxLinkedInFocusColor: $linkedInFocusColor;
+$checkboxYoutubeFocusColor: $youtubeFocusColor;
+$checkboxInstagramFocusColor: $instagramFocusColor;
+$checkboxPinterestFocusColor: $pinterestFocusColor;
+$checkboxVkFocusColor: $vkFocusColor;
+$checkboxFullBlackFocus: $fullBlackFocus;
+$checkboxBlackFocus: $blackFocus;
+$checkboxGreyFocus: $greyFocus;
+$checkboxWhiteFocus: $whiteFocus;
+$checkboxOffWhiteFocus: $offWhiteFocus;
+$checkboxDarkWhiteFocus: $darkWhiteFocus;
+$checkboxPrimaryColorDown: $primaryColorDown;
+$checkboxSecondaryColorDown: $secondaryColorDown;
+$checkboxRedDown: $redDown;
+$checkboxOrangeDown: $orangeDown;
+$checkboxYellowDown: $yellowDown;
+$checkboxOliveDown: $oliveDown;
+$checkboxGreenDown: $greenDown;
+$checkboxTealDown: $tealDown;
+$checkboxBlueDown: $blueDown;
+$checkboxVioletDown: $violetDown;
+$checkboxPurpleDown: $purpleDown;
+$checkboxPinkDown: $pinkDown;
+$checkboxBrownDown: $brownDown;
+$checkboxLightRedDown: $lightRedDown;
+$checkboxLightOrangeDown: $lightOrangeDown;
+$checkboxLightYellowDown: $lightYellowDown;
+$checkboxLightOliveDown: $lightOliveDown;
+$checkboxLightGreenDown: $lightGreenDown;
+$checkboxLightTealDown: $lightTealDown;
+$checkboxLightBlueDown: $lightBlueDown;
+$checkboxLightVioletDown: $lightVioletDown;
+$checkboxLightPurpleDown: $lightPurpleDown;
+$checkboxLightPinkDown: $lightPinkDown;
+$checkboxLightBrownDown: $lightBrownDown;
+$checkboxLightGreyDown: $lightGreyDown;
+$checkboxLightBlackDown: $lightBlackDown;
+$checkboxPositiveColorDown: $positiveColorDown;
+$checkboxNegativeColorDown: $negativeColorDown;
+$checkboxFacebookDownColor: $facebookDownColor;
+$checkboxTwitterDownColor: $twitterDownColor;
+$checkboxGooglePlusDownColor: $googlePlusDownColor;
+$checkboxLinkedInDownColor: $linkedInDownColor;
+$checkboxYoutubeDownColor: $youtubeDownColor;
+$checkboxInstagramDownColor: $instagramDownColor;
+$checkboxPinterestDownColor: $pinterestDownColor;
+$checkboxVkDownColor: $vkDownColor;
+$checkboxFullBlackDown: $fullBlackDown;
+$checkboxBlackDown: $blackDown;
+$checkboxGreyDown: $greyDown;
+$checkboxWhiteDown: $whiteDown;
+$checkboxOffWhiteDown: $offWhiteDown;
+$checkboxDarkWhiteDown: $darkWhiteDown;
+$checkboxPrimaryColorActive: $primaryColorActive;
+$checkboxSecondaryColorActive: $secondaryColorActive;
+$checkboxRedActive: $redActive;
+$checkboxOrangeActive: $orangeActive;
+$checkboxYellowActive: $yellowActive;
+$checkboxOliveActive: $oliveActive;
+$checkboxGreenActive: $greenActive;
+$checkboxTealActive: $tealActive;
+$checkboxBlueActive: $blueActive;
+$checkboxVioletActive: $violetActive;
+$checkboxPurpleActive: $purpleActive;
+$checkboxPinkActive: $pinkActive;
+$checkboxBrownActive: $brownActive;
+$checkboxLightRedActive: $lightRedActive;
+$checkboxLightOrangeActive: $lightOrangeActive;
+$checkboxLightYellowActive: $lightYellowActive;
+$checkboxLightOliveActive: $lightOliveActive;
+$checkboxLightGreenActive: $lightGreenActive;
+$checkboxLightTealActive: $lightTealActive;
+$checkboxLightBlueActive: $lightBlueActive;
+$checkboxLightVioletActive: $lightVioletActive;
+$checkboxLightPurpleActive: $lightPurpleActive;
+$checkboxLightPinkActive: $lightPinkActive;
+$checkboxLightBrownActive: $lightBrownActive;
+$checkboxLightGreyActive: $lightGreyActive;
+$checkboxLightBlackActive: $lightBlackActive;
+$checkboxPositiveColorActive: $positiveColorActive;
+$checkboxNegativeColorActive: $negativeColorActive;
+$checkboxFacebookActiveColor: $facebookActiveColor;
+$checkboxTwitterActiveColor: $twitterActiveColor;
+$checkboxGooglePlusActiveColor: $googlePlusActiveColor;
+$checkboxLinkedInActiveColor: $linkedInActiveColor;
+$checkboxYoutubeActiveColor: $youtubeActiveColor;
+$checkboxInstagramActiveColor: $instagramActiveColor;
+$checkboxPinterestActiveColor: $pinterestActiveColor;
+$checkboxVkActiveColor: $vkActiveColor;
+$checkboxFullBlackActive: $fullBlackActive;
+$checkboxBlackActive: $blackActive;
+$checkboxGreyActive: $greyActive;
+$checkboxWhiteActive: $whiteActive;
+$checkboxOffWhiteActive: $offWhiteActive;
+$checkboxDarkWhiteActive: $darkWhiteActive;
+
+
+/*******************************
+            Checkbox
+*******************************/
+
+$checkboxCheckboxSize: 17px;
+$checkboxCheckboxColor: $checkboxTextColor;
+$checkboxCheckboxLineHeight: $checkboxCheckboxSize;
+
+
+/* Label */
+$checkboxLabelDistance: 1.85714em; /* 26px @ 14/em */
+
+/* Checkbox */
+$checkboxCheckboxBackground: $checkboxWhite;
+$checkboxCheckboxBorder: 1px solid $checkboxSolidBorderColor;
+$checkboxCheckboxBorderRadius: $checkbox3px;
+$checkboxCheckboxTransition:
+  border $checkboxDefaultDuration $checkboxDefaultEasing,
+  opacity $checkboxDefaultDuration $checkboxDefaultEasing,
+  transform $checkboxDefaultDuration $checkboxDefaultEasing,
+  box-shadow $checkboxDefaultDuration $checkboxDefaultEasing
+;
+
+/* Checkmark */
+$checkboxCheckboxCheckFontSize: 14px;
+$checkboxCheckboxCheckTop: 0;
+$checkboxCheckboxCheckLeft: 0;
+$checkboxCheckboxCheckSize: $checkboxCheckboxSize;
+
+/* Label */
+$checkboxLabelFontSize: $checkboxRelativeMedium;
+$checkboxLabelColor: $checkboxTextColor;
+$checkboxLabelTransition: color $checkboxDefaultDuration $checkboxDefaultEasing;
+
+/*-------------------
+        States
+--------------------*/
+
+/* Hover */
+$checkboxCheckboxHoverBackground: $checkboxCheckboxBackground;
+$checkboxCheckboxHoverBorderColor: $checkboxSelectedBorderColor;
+$checkboxLabelHoverColor: $checkboxHoveredTextColor;
+
+/* Pressed */
+$checkboxCheckboxPressedBackground: $checkboxOffWhite;
+$checkboxCheckboxPressedBorderColor: $checkboxSelectedBorderColor;
+$checkboxCheckboxPressedColor: $checkboxSelectedTextColor;
+$checkboxLabelPressedColor: $checkboxSelectedTextColor;
+
+/* Focus */
+$checkboxCheckboxFocusBackground: $checkboxWhite;
+$checkboxCheckboxFocusBorderColor: $checkboxFocusedFormMutedBorderColor;
+$checkboxCheckboxFocusCheckColor: $checkboxSelectedTextColor;
+$checkboxLabelFocusColor: $checkboxSelectedTextColor;
+
+/* Active */
+$checkboxLabelActiveColor: $checkboxSelectedTextColor;
+$checkboxCheckboxActiveBackground: $checkboxWhite;
+$checkboxCheckboxActiveBorderColor: $checkboxSelectedBorderColor;
+$checkboxCheckboxActiveCheckColor: $checkboxSelectedTextColor;
+$checkboxCheckboxActiveCheckOpacity: 1;
+
+/* Active Focus */
+$checkboxCheckboxActiveFocusBackground: $checkboxWhite;
+$checkboxCheckboxActiveFocusBorderColor: $checkboxCheckboxFocusBorderColor;
+$checkboxCheckboxActiveFocusCheckColor: $checkboxSelectedTextColor;
+
+/* Indeterminate */
+$checkboxCheckboxIndeterminateBackground: $checkboxCheckboxActiveBackground;
+$checkboxCheckboxIndeterminateBorderColor: $checkboxCheckboxActiveBorderColor;
+$checkboxCheckboxIndeterminateCheckOpacity: 1;
+$checkboxCheckboxIndeterminateCheckColor: $checkboxCheckboxActiveCheckColor;
+
+/* Disabled */
+$checkboxDisabledCheckboxOpacity: 0.5;
+$checkboxDisabledCheckboxLabelColor: rgba(0, 0, 0, 1);
+
+/*-------------------
+        Types
+--------------------*/
+
+/* Radio */
+/* Uses px to avoid rounding issues with circles */
+
+$checkboxRadioSize: 15px;
+$checkboxRadioTop: 1px;
+$checkboxRadioLeft: 0;
+$checkboxRadioLabelDistance: $checkboxLabelDistance;
+
+$checkboxBulletTop: 1px;
+$checkboxBulletLeft: 0;
+$checkboxBulletScale: (7 / 15); /* 7px as unitless value from radio size */
+$checkboxBulletColor: $checkboxTextColor;
+$checkboxBulletRadius: $checkboxCircularRadius;
+
+$checkboxRadioFocusBackground: $checkboxCheckboxFocusBackground;
+$checkboxRadioFocusBulletColor: $checkboxCheckboxFocusCheckColor;
+
+$checkboxRadioActiveBackground: $checkboxCheckboxActiveBackground;
+$checkboxRadioActiveBulletColor: $checkboxCheckboxActiveCheckColor;
+
+$checkboxRadioActiveFocusBackground: $checkboxCheckboxActiveFocusBackground;
+$checkboxRadioActiveFocusBulletColor: $checkboxCheckboxActiveFocusCheckColor;
+
+/* Slider & Toggle Handle */
+$checkboxHandleBackground: $checkboxWhite $checkboxSubtleGradient;
+$checkboxHandleBoxShadow:
+  $checkboxSubtleShadow, 0 0 0 1px $checkboxBorderColor inset
+;
+
+/* Slider */
+$checkboxSliderHandleSize: 1.5rem;
+$checkboxSliderLineWidth: 3.5rem;
+$checkboxSliderTransitionDuration: 0.3s;
+
+$checkboxSliderHandleOffset: (1rem - $checkboxSliderHandleSize) / 2;
+$checkboxSliderHandleTransition: left $checkboxSliderTransitionDuration $checkboxDefaultEasing;
+
+$checkboxSliderWidth: $checkboxSliderLineWidth;
+$checkboxSliderHeight: ($checkboxSliderHandleSize + $checkboxSliderHandleOffset);
+
+$checkboxSliderLineHeight: $checkbox3px;
+$checkboxSliderLineVerticalOffset: 0.4rem;
+$checkboxSliderLineColor: $checkboxTransparentBlack;
+$checkboxSliderLineRadius: $checkboxCircularRadius;
+$checkboxSliderLineTransition: background $checkboxSliderTransitionDuration $checkboxDefaultEasing;
+
+$checkboxSliderTravelDistance: $checkboxSliderLineWidth - $checkboxSliderHandleSize;
+
+$checkboxSliderLabelDistance: $checkboxSliderLineWidth + 1rem;
+$checkboxSliderOffLabelColor: $checkboxUnselectedTextColor;
+
+$checkboxSliderLabelLineHeight: 1rem;
+
+/* Slider States */
+$checkboxSliderHoverLaneBackground: $checkboxVeryStrongTransparentBlack;
+$checkboxSliderHoverLabelColor: $checkboxHoveredTextColor;
+
+$checkboxSliderOnLineColor: $checkboxLightBlack;
+$checkboxSliderOnLabelColor: $checkboxSelectedTextColor;
+
+$checkboxSliderOnFocusLineColor: $checkboxLightBlackFocus;
+$checkboxSliderOnFocusLabelColor: $checkboxSliderOnLabelColor;
+
+
+
+/* Toggle */
+$checkboxToggleLaneWidth: 3.5rem;
+$checkboxToggleHandleSize: 1.5rem;
+$checkboxToggleTransitionDuration: 0.2s;
+
+$checkboxToggleWidth: $checkboxToggleLaneWidth;
+$checkboxToggleHeight: $checkboxToggleHandleSize;
+
+$checkboxToggleHandleRadius: $checkboxCircularRadius;
+$checkboxToggleHandleOffset: 0;
+$checkboxToggleHandleTransition:
+  background $checkboxSliderTransitionDuration $checkboxDefaultEasing,
+  left $checkboxSliderTransitionDuration $checkboxDefaultEasing
+;
+
+$checkboxToggleLaneBackground: $checkboxTransparentBlack;
+$checkboxToggleLaneHeight: $checkboxToggleHandleSize;
+$checkboxToggleLaneBoxShadow: none;
+$checkboxToggleLaneVerticalOffset: 0;
+$checkboxToggleOffOffset: -0.05rem;
+$checkboxToggleOnOffset: ($checkboxToggleLaneWidth - $checkboxToggleHandleSize) + 0.15rem;
+
+$checkboxToggleLabelDistance: $checkboxToggleLaneWidth + 1rem;
+$checkboxToggleLabelLineHeight: 1.5rem;
+$checkboxToggleLabelOffset: 0.15em;
+
+
+$checkboxToggleFocusColor: $checkboxVeryStrongTransparentBlack;
+$checkboxToggleHoverColor: $checkboxToggleFocusColor;
+
+$checkboxToggleOffLabelColor: $checkboxCheckboxColor;
+$checkboxToggleOffHandleBoxShadow: none;
+
+$checkboxToggleOnLabelColor: $checkboxSelectedTextColor;
+$checkboxToggleOnLaneColor: $checkboxPrimaryColor;
+
+$checkboxToggleOnHandleBoxShadow: none;
+
+$checkboxToggleOnFocusLaneColor: $checkboxPrimaryColorFocus;
+$checkboxToggleOnFocusLabelColor: $checkboxToggleOnLabelColor;
+
+
+
+/*-------------------
+      Variations
+--------------------*/

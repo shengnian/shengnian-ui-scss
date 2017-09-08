@@ -1,0 +1,404 @@
+/*!
+ * # Shengnian UI - Search
+ * http://github.com/shengnian/shengnian-ui
+ *
+ *
+ * Released under the MIT license
+ * http://opensource.org/licenses/MIT
+ *
+ */
+
+
+/*******************************
+             Search
+*******************************/
+
+.ui.search {
+  position: relative;
+}
+
+.ui.search > .prompt {
+  margin: 0;
+  outline: none;
+  -webkit-appearance: none;
+  -webkit-tap-highlight-color:  rgba(255, 255, 255, 0);
+
+  text-shadow: none;
+  font-style: normal;
+  font-weight: normal;
+
+  line-height: $searchPromptLineHeight;
+  padding: $searchPromptPadding;
+  font-size: $searchPromptFontSize;
+
+  background: $searchPromptBackground;
+  border: $searchPromptBorder;
+  color: $searchPromptColor;
+  box-shadow: $searchPromptBoxShadow;
+  transition: $searchPromptTransition;
+}
+
+.ui.search .prompt {
+  border-radius: $searchPromptBorderRadius;
+}
+/*--------------
+     Icon
+---------------*/
+
+.ui.search .prompt ~ .search.icon {
+  cursor: pointer;
+}
+
+/*--------------
+    Results
+---------------*/
+
+.ui.search > .results {
+  display: none;
+
+  position: absolute;
+  top: 100%;
+  left: 0%;
+  transform-origin: center top;
+  white-space: normal;
+
+  background: $searchResultsBackground;
+
+  margin-top: $searchResultsDistance;
+  width: $searchResultsWidth;
+
+  border-radius: $searchResultsBorderRadius;
+  box-shadow: $searchResultsBoxShadow;
+  border: $searchResultsBorder;
+  z-index: $searchResultsZIndex;
+}
+.ui.search > .results > :first-child {
+  border-radius: $searchResultsBorderRadius $searchResultsBorderRadius 0 0;
+}
+.ui.search > .results > :last-child {
+  border-radius: 0 0 $searchResultsBorderRadius $searchResultsBorderRadius;
+}
+
+/*--------------
+    Result
+---------------*/
+
+.ui.search > .results .result {
+  cursor: pointer;
+  display: block;
+  overflow: hidden;
+  font-size: $searchResultFontSize;
+  padding: $searchResultPadding;
+  color: $searchResultTextColor;
+  line-height: $searchResultLineHeight;
+  border-bottom: $searchResultDivider;
+}
+.ui.search > .results .result:last-child {
+  border-bottom: $searchResultLastDivider !important;
+}
+
+/* Image */
+.ui.search > .results .result .image {
+  float: $searchResultImageFloat;
+  overflow: hidden;
+  background: $searchResultImageBackground;
+  width: $searchResultImageWidth;
+  height: $searchResultImageHeight;
+  border-radius: $searchResultImageBorderRadius;
+}
+.ui.search > .results .result .image img {
+  display: block;
+  width: auto;
+  height: 100%;
+}
+
+/*--------------
+      Info
+---------------*/
+
+.ui.search > .results .result .image + .content {
+  margin: $searchResultImageMargin;
+}
+
+.ui.search > .results .result .title {
+  margin: $searchResultTitleMargin;
+  font-family: $searchResultTitleFont;
+  font-weight: $searchResultTitleFontWeight;
+  font-size: $searchResultTitleFontSize;
+  color: $searchResultTitleColor;
+}
+.ui.search > .results .result .description {
+  margin-top: $searchResultDescriptionDistance;
+  font-size: $searchResultDescriptionFontSize;
+  color: $searchResultDescriptionColor;
+}
+.ui.search > .results .result .price {
+  float: $searchResultPriceFloat;
+  color: $searchResultPriceColor;
+}
+
+/*--------------
+    Message
+---------------*/
+
+.ui.search > .results > .message {
+  padding: $searchMessageVerticalPadding $searchMessageHorizontalPadding;
+}
+.ui.search > .results > .message .header {
+  font-family: $searchHeaderFont;
+  font-size: $searchMessageHeaderFontSize;
+  font-weight: $searchMessageHeaderFontWeight;
+  color: $searchMessageHeaderColor;
+}
+.ui.search > .results > .message .description {
+  margin-top: $searchMessageDescriptionDistance;
+  font-size: $searchMessageDescriptionFontSize;
+  color: $searchMessageDescriptionColor;
+}
+
+/* View All Results */
+.ui.search > .results > .action {
+  display: block;
+  border-top: $searchActionBorder;
+  background: $searchActionBackground;
+  padding: $searchActionPadding;
+  color: $searchActionColor;
+  font-weight: $searchActionFontWeight;
+  text-align: $searchActionAlign;
+}
+
+
+/*******************************
+            States
+*******************************/
+
+/*--------------------
+       Focus
+---------------------*/
+
+.ui.search > .prompt:focus {
+  border-color: $searchPromptFocusBorderColor;
+  background: $searchPromptFocusBackground;
+  color: $searchPromptFocusColor;
+}
+
+/*--------------------
+       Loading
+---------------------*/
+
+.ui.loading.search .input > i.icon:before {
+  position: absolute;
+  content: '';
+  top: 50%;
+  left: 50%;
+
+  margin: $searchLoaderMargin;
+  width: $searchLoaderSize;
+  height: $searchLoaderSize;
+
+  border-radius: $searchCircularRadius;
+  border: $searchLoaderLineWidth solid $searchLoaderFillColor;
+}
+.ui.loading.search .input > i.icon:after {
+  position: absolute;
+  content: '';
+  top: 50%;
+  left: 50%;
+
+  margin: $searchLoaderMargin;
+  width: $searchLoaderSize;
+  height: $searchLoaderSize;
+
+  animation: button-spin $searchLoaderSpeed linear;
+  animation-iteration-count: infinite;
+
+  border-radius: $searchCircularRadius;
+
+  border-color: $searchLoaderLineColor transparent transparent;
+  border-style: solid;
+  border-width: $searchLoaderLineWidth;
+
+  box-shadow: 0 0 0 1px transparent;
+}
+/*--------------
+      Hover
+---------------*/
+
+.ui.search > .results .result:hover,
+.ui.category.search > .results .category .result:hover {
+  background: $searchResultHoverBackground;
+}
+.ui.search .action:hover {
+  background: $searchActionHoverBackground;
+}
+
+/*--------------
+      Active
+---------------*/
+
+.ui.category.search > .results .category.active {
+  background: $searchCategoryActiveBackground;
+}
+.ui.category.search > .results .category.active > .name {
+  color: $searchCategoryNameActiveColor;
+}
+
+.ui.search > .results .result.active,
+.ui.category.search > .results .category .result.active {
+  position: relative;
+  border-left-color: $searchResultActiveBorderLeft;
+  background: $searchResultActiveBackground;
+  box-shadow: $searchResultActiveBoxShadow;
+}
+.ui.search > .results .result.active .title {
+  color: $searchResultActiveTitleColor;
+}
+.ui.search > .results .result.active .description {
+  color: $searchResultActiveDescriptionColor;
+}
+
+
+
+/*******************************
+           Types
+*******************************/
+
+/*--------------
+    Selection
+---------------*/
+
+.ui.search.selection .prompt {
+  border-radius: $searchSelectionPromptBorderRadius;
+}
+
+/* Remove input */
+.ui.search.selection > .icon.input > .remove.icon {
+  pointer-events: none;
+  position: absolute;
+  left: auto;
+  opacity: 0;
+  color: $searchSelectionCloseIconColor;
+  top: $searchSelectionCloseTop;
+  right: $searchSelectionCloseRight;
+  transition: $searchSelectionCloseTransition;
+}
+.ui.search.selection > .icon.input > .active.remove.icon {
+  cursor: pointer;
+  opacity: $searchSelectionCloseIconOpacity;
+  pointer-events: auto;
+}
+.ui.search.selection > .icon.input:not([class*="left icon"]) > .icon ~ .remove.icon {
+  right: $searchSelectionCloseIconInputRight;
+}
+.ui.search.selection > .icon.input > .remove.icon:hover {
+  opacity: $searchSelectionCloseIconHoverOpacity;
+  color: $searchSelectionCloseIconHoverColor;
+}
+/*--------------
+    Category
+---------------*/
+
+.ui.category.search .results {
+  width: $searchCategoryResultsWidth;
+}
+
+/* Category */
+.ui.category.search > .results .category {
+  background: $searchCategoryBackground;
+  box-shadow: $searchCategoryBoxShadow;
+  border-bottom: $searchCategoryDivider;
+  transition: $searchCategoryTransition;
+}
+
+/* Last Category */
+.ui.category.search > .results .category:last-child {
+  border-bottom: none;
+}
+
+/* First / Last */
+.ui.category.search > .results .category:first-child .name + .result {
+  border-radius: 0 $searchResultsBorderRadius 0 0;
+}
+.ui.category.search > .results .category:last-child .result:last-child {
+  border-radius: 0 0 $searchResultsBorderRadius 0;
+}
+
+/* Category Result */
+.ui.category.search > .results .category .result {
+  background: $searchCategoryResultBackground;
+  margin-left: $searchCategoryNameWidth;
+  border-left: $searchCategoryResultLeftBorder;
+  border-bottom: $searchCategoryResultDivider;
+  transition: $searchCategoryResultTransition;
+  padding: $searchCategoryResultPadding;
+}
+.ui.category.search > .results .category:last-child .result:last-child {
+  border-bottom: $searchCategoryResultLastDivider;
+}
+
+/* Category Result Name */
+.ui.category.search > .results .category > .name {
+  width: $searchCategoryNameWidth;
+  background: $searchCategoryNameBackground;
+  font-family: $searchCategoryNameFont;
+  font-size: $searchCategoryNameFontSize;
+  float: $searchCategoryNameFontSize;
+  float: $searchCategoryNameFloat;
+  padding: $searchCategoryNamePadding;
+  font-weight: $searchCategoryNameFontWeight;
+  color: $searchCategoryNameColor;
+}
+
+
+
+/*******************************
+           Variations
+*******************************/
+
+/*-------------------
+     Left / Right
+--------------------*/
+
+.ui[class*="left aligned"].search > .results {
+  right: auto;
+  left: 0%;
+}
+.ui[class*="right aligned"].search > .results {
+  right: 0%;
+  left: auto;
+}
+
+/*--------------
+    Fluid
+---------------*/
+
+.ui.fluid.search .results {
+  width: 100%;
+}
+/*--------------
+      Sizes
+---------------*/
+
+.ui.mini.search {
+  font-size: $searchRelativeMini;
+}
+.ui.small.search {
+  font-size: $searchRelativeSmall;
+}
+.ui.search {
+  font-size: $searchRelativeMedium;
+}
+.ui.large.search {
+  font-size: $searchRelativeLarge;
+}
+.ui.big.search {
+  font-size: $searchRelativeBig;
+}
+.ui.huge.search {
+  font-size: $searchRelativeHuge;
+}
+.ui.massive.search {
+  font-size: $searchRelativeMassive;
+}
+
+

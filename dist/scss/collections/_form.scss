@@ -1,0 +1,1019 @@
+/*!
+ * # Shengnian UI - Form
+ * http://github.com/shengnian/shengnian-ui
+ *
+ *
+ * Released under the MIT license
+ * http://opensource.org/licenses/MIT
+ *
+ */
+
+
+/*******************************
+            Elements
+*******************************/
+
+/*--------------------
+        Form
+---------------------*/
+
+.ui.form {
+  position: relative;
+  max-width: 100%;
+}
+
+/*--------------------
+        Content
+---------------------*/
+
+.ui.form > p {
+  margin: $formParagraphMargin;
+}
+
+/*--------------------
+        Field
+---------------------*/
+
+.ui.form .field {
+  clear: both;
+  margin: $formFieldMargin;
+}
+
+.ui.form .field:last-child,
+.ui.form .fields:last-child .field {
+  margin-bottom: 0;
+}
+
+.ui.form .fields .field {
+  clear: both;
+  margin: 0;
+}
+/*--------------------
+        Labels
+---------------------*/
+
+.ui.form .field > label {
+  display: block;
+  margin: $formLabelMargin;
+  color: $formLabelColor;
+  font-size: $formLabelFontSize;
+  font-weight: $formLabelFontWeight;
+  text-transform: $formLabelTextTransform;
+}
+
+/*--------------------
+    Standard Inputs
+---------------------*/
+.ui.form textarea,
+.ui.form input:not([type]),
+.ui.form input[type="date"],
+.ui.form input[type="datetime-local"],
+.ui.form input[type="email"],
+.ui.form input[type="number"],
+.ui.form input[type="password"],
+.ui.form input[type="search"],
+.ui.form input[type="tel"],
+.ui.form input[type="time"],
+.ui.form input[type="text"],
+.ui.form input[type="file"],
+.ui.form input[type="url"] {
+  width: $formInputWidth;
+  vertical-align: top;
+}
+
+/* Set max height on unusual input */
+.ui.form ::-webkit-datetime-edit,
+.ui.form ::-webkit-inner-spin-button {
+  height: $formInputLineHeight;
+}
+
+.ui.form input:not([type]),
+.ui.form input[type="date"],
+.ui.form input[type="datetime-local"],
+.ui.form input[type="email"],
+.ui.form input[type="number"],
+.ui.form input[type="password"],
+.ui.form input[type="search"],
+.ui.form input[type="tel"],
+.ui.form input[type="time"],
+.ui.form input[type="text"],
+.ui.form input[type="file"],
+.ui.form input[type="url"] {
+  font-family: $formInputFont;
+  margin: 0;
+  outline: none;
+  -webkit-appearance: none;
+  tap-highlight-color:  rgba(255, 255, 255, 0);
+
+  line-height: $formInputLineHeight;
+  padding: $formInputPadding;
+  font-size: $formInputFontSize;
+
+  background: $formInputBackground;
+  border: $formInputBorder;
+  color: $formInputColor;
+  border-radius: $formInputBorderRadius;
+  box-shadow: $formInputBoxShadow;
+  transition: $formInputTransition;
+}
+
+/* Text Area */
+.ui.form textarea {
+  margin: 0;
+  -webkit-appearance: none;
+  tap-highlight-color:  rgba(255, 255, 255, 0);
+
+  padding: $formTextAreaPadding;
+  font-size: $formTextAreaFontSize;
+  background: $formTextAreaBackground;
+  border: $formTextAreaBorder;
+  outline: none;
+  color: $formInputColor;
+  border-radius: $formInputBorderRadius;
+  box-shadow: $formInputBoxShadow;
+  transition: $formTextAreaTransition;
+  font-size: $formTextAreaFontSize;
+  line-height: $formTextAreaLineHeight;
+  resize: $formTextAreaResize;
+}
+.ui.form textarea:not([rows]) {
+  height: $formTextAreaHeight;
+  min-height: $formTextAreaMinHeight;
+  max-height: $formTextAreaMaxHeight;
+}
+
+.ui.form textarea,
+.ui.form input[type="checkbox"] {
+  vertical-align: $formCheckboxVerticalAlign;
+}
+
+/*--------------------------
+  Input w/ attached Button
+---------------------------*/
+
+.ui.form input.attached {
+  width: auto;
+}
+/*--------------------
+     Basic Select
+---------------------*/
+
+.ui.form select {
+  display: block;
+  height: auto;
+  width: 100%;
+  background: $formSelectBackground;
+  border: $formSelectBorder;
+  border-radius: $formSelectBorderRadius;
+  box-shadow: $formSelectBoxShadow;
+  padding: $formSelectPadding;
+  color: $formSelectColor;
+  transition: $formSelectTransition;
+}
+
+/*--------------------
+       Dropdown
+---------------------*/
+
+/* Block */
+.ui.form .field > .selection.dropdown {
+  width: 100%;
+}
+.ui.form .field > .selection.dropdown > .dropdown.icon {
+  float: right;
+}
+
+/* Inline */
+.ui.form .inline.fields .field > .selection.dropdown,
+.ui.form .inline.field > .selection.dropdown {
+  width: auto;
+}
+.ui.form .inline.fields .field > .selection.dropdown > .dropdown.icon,
+.ui.form .inline.field > .selection.dropdown > .dropdown.icon {
+  float: none;
+}
+
+/*--------------------
+       UI Input
+---------------------*/
+
+/* Block */
+.ui.form .field .ui.input,
+.ui.form .fields .field .ui.input,
+.ui.form .wide.field .ui.input {
+  width: 100%;
+}
+
+/* Inline  */
+.ui.form .inline.fields .field:not(.wide) .ui.input,
+.ui.form .inline.field:not(.wide) .ui.input {
+  width: auto;
+  vertical-align: middle;
+}
+
+/* Auto Input */
+.ui.form .fields .field .ui.input input,
+.ui.form .field .ui.input input {
+  width: auto;
+}
+
+/* Full Width Input */
+.ui.form .ten.fields .ui.input input,
+.ui.form .nine.fields .ui.input input,
+.ui.form .eight.fields .ui.input input,
+.ui.form .seven.fields .ui.input input,
+.ui.form .six.fields .ui.input input,
+.ui.form .five.fields .ui.input input,
+.ui.form .four.fields .ui.input input,
+.ui.form .three.fields .ui.input input,
+.ui.form .two.fields .ui.input input,
+.ui.form .wide.field .ui.input input {
+  flex: 1 0 auto;
+  width: 0;
+}
+/*--------------------
+   Types of Messages
+---------------------*/
+
+.ui.form .success.message,
+.ui.form .warning.message,
+.ui.form .error.message {
+  display: none;
+}
+
+/* Assumptions */
+.ui.form .message:first-child {
+  margin-top: 0;
+}
+
+/*--------------------
+   Validation Prompt
+---------------------*/
+
+.ui.form .field .prompt.label {
+  white-space: normal;
+  background: $formPromptBackground !important;
+  border: $formPromptBorder !important;
+  color: $formPromptTextColor !important;
+}
+.ui.form .inline.fields .field .prompt,
+.ui.form .inline.field .prompt {
+  vertical-align: top;
+  margin: $formInlinePromptMargin;
+}
+.ui.form .inline.fields .field .prompt:before,
+.ui.form .inline.field .prompt:before {
+  border-width: 0 0 $formInlinePromptBorderWidth $formInlinePromptBorderWidth;
+  bottom: auto;
+  right: auto;
+  top: 50%;
+  left: 0;
+}
+
+
+/*******************************
+            States
+*******************************/
+
+/*--------------------
+      Autofilled
+---------------------*/
+
+.ui.form .field.field input:-webkit-autofill {
+  box-shadow: 0 0 0 100px $formInputAutoFillBackground inset !important;
+  border-color: $formInputAutoFillBorder !important;
+}
+
+/* Focus */
+.ui.form .field.field input:-webkit-autofill:focus {
+  box-shadow: 0 0 0 100px $formInputAutoFillFocusBackground inset !important;
+  border-color: $formInputAutoFillFocusBorder !important;
+}
+
+/* Error */
+.ui.form .error.error input:-webkit-autofill {
+  box-shadow: 0 0 0 100px $formInputAutoFillErrorBackground inset !important;
+  border-color: $formInputAutoFillErrorBorder !important;
+}
+/*--------------------
+      Placeholder
+---------------------*/
+
+/* browsers require these rules separate */
+.ui.form ::-webkit-input-placeholder {
+  color: $formInputPlaceholderColor;
+}
+.ui.form :-ms-input-placeholder {
+  color: $formInputPlaceholderColor;
+}
+.ui.form ::-moz-placeholder {
+  color: $formInputPlaceholderColor;
+}
+
+.ui.form :focus::-webkit-input-placeholder {
+  color: $formInputPlaceholderFocusColor;
+}
+.ui.form :focus:-ms-input-placeholder {
+  color: $formInputPlaceholderFocusColor;
+}
+.ui.form :focus::-moz-placeholder {
+  color: $formInputPlaceholderFocusColor;
+}
+
+/* Error Placeholder */
+.ui.form .error ::-webkit-input-placeholder {
+  color: $formInputErrorPlaceholderColor;
+}
+.ui.form .error :-ms-input-placeholder {
+  color: $formInputErrorPlaceholderColor !important;
+}
+.ui.form .error ::-moz-placeholder {
+  color: $formInputErrorPlaceholderColor;
+}
+
+.ui.form .error :focus::-webkit-input-placeholder {
+  color: $formInputErrorPlaceholderFocusColor;
+}
+.ui.form .error :focus:-ms-input-placeholder {
+  color: $formInputErrorPlaceholderFocusColor !important;
+}
+.ui.form .error :focus::-moz-placeholder {
+  color: $formInputErrorPlaceholderFocusColor;
+}
+/*--------------------
+        Focus
+---------------------*/
+
+.ui.form input:not([type]):focus,
+.ui.form input[type="date"]:focus,
+.ui.form input[type="datetime-local"]:focus,
+.ui.form input[type="email"]:focus,
+.ui.form input[type="number"]:focus,
+.ui.form input[type="password"]:focus,
+.ui.form input[type="search"]:focus,
+.ui.form input[type="tel"]:focus,
+.ui.form input[type="time"]:focus,
+.ui.form input[type="text"]:focus,
+.ui.form input[type="file"]:focus,
+.ui.form input[type="url"]:focus {
+  color: $formInputFocusColor;
+  border-color: $formInputFocusBorderColor;
+  border-radius: $formInputFocusBorderRadius;
+  background: $formInputFocusBackground;
+  box-shadow: $formInputFocusBoxShadow;
+}
+.ui.form textarea:focus {
+  color: $formTextAreaFocusColor;
+  border-color: $formTextAreaFocusBorderColor;
+  border-radius: $formTextAreaFocusBorderRadius;
+  background: $formTextAreaFocusBackground;
+  box-shadow: $formTextAreaFocusBoxShadow;
+  -webkit-appearance: none;
+}
+/*--------------------
+        Success
+---------------------*/
+
+/* On Form */
+.ui.form.success .success.message:not(:empty) {
+  display: block;
+}
+.ui.form.success .compact.success.message:not(:empty) {
+  display: inline-block;
+}
+.ui.form.success .icon.success.message:not(:empty) {
+  display: flex;
+}
+
+/*--------------------
+        Warning
+---------------------*/
+
+/* On Form */
+.ui.form.warning .warning.message:not(:empty) {
+  display: block;
+}
+.ui.form.warning .compact.warning.message:not(:empty) {
+  display: inline-block;
+}
+.ui.form.warning .icon.warning.message:not(:empty) {
+  display: flex;
+}
+
+/*--------------------
+        Error
+---------------------*/
+
+/* On Form */
+.ui.form.error .error.message:not(:empty) {
+  display: block;
+}
+.ui.form.error .compact.error.message:not(:empty) {
+  display: inline-block;
+}
+.ui.form.error .icon.error.message:not(:empty) {
+  display: flex;
+}
+
+/* On Field(s) */
+.ui.form .fields.error .field label,
+.ui.form .field.error label,
+.ui.form .fields.error .field .input,
+.ui.form .field.error .input {
+  color: $formFormErrorColor;
+}
+
+.ui.form .fields.error .field .corner.label,
+.ui.form .field.error .corner.label {
+  border-color: $formFormErrorColor;
+  color: $formWhite;
+}
+
+.ui.form .fields.error .field textarea,
+.ui.form .fields.error .field select,
+.ui.form .fields.error .field input:not([type]),
+.ui.form .fields.error .field input[type="date"],
+.ui.form .fields.error .field input[type="datetime-local"],
+.ui.form .fields.error .field input[type="email"],
+.ui.form .fields.error .field input[type="number"],
+.ui.form .fields.error .field input[type="password"],
+.ui.form .fields.error .field input[type="search"],
+.ui.form .fields.error .field input[type="tel"],
+.ui.form .fields.error .field input[type="time"],
+.ui.form .fields.error .field input[type="text"],
+.ui.form .fields.error .field input[type="file"],
+.ui.form .fields.error .field input[type="url"],
+.ui.form .field.error textarea,
+.ui.form .field.error select,
+.ui.form .field.error input:not([type]),
+.ui.form .field.error input[type="date"],
+.ui.form .field.error input[type="datetime-local"],
+.ui.form .field.error input[type="email"],
+.ui.form .field.error input[type="number"],
+.ui.form .field.error input[type="password"],
+.ui.form .field.error input[type="search"],
+.ui.form .field.error input[type="tel"],
+.ui.form .field.error input[type="time"],
+.ui.form .field.error input[type="text"],
+.ui.form .field.error input[type="file"],
+.ui.form .field.error input[type="url"] {
+  background: $formFormErrorBackground;
+  border-color: $formFormErrorBorder;
+  color: $formFormErrorColor;
+  border-radius: $formInputErrorBorderRadius;
+  box-shadow: $formInputErrorBoxShadow;
+}
+.ui.form .field.error textarea:focus,
+.ui.form .field.error select:focus,
+.ui.form .field.error input:not([type]):focus,
+.ui.form .field.error input[type="date"]:focus,
+.ui.form .field.error input[type="datetime-local"]:focus,
+.ui.form .field.error input[type="email"]:focus,
+.ui.form .field.error input[type="number"]:focus,
+.ui.form .field.error input[type="password"]:focus,
+.ui.form .field.error input[type="search"]:focus,
+.ui.form .field.error input[type="tel"]:focus,
+.ui.form .field.error input[type="time"]:focus,
+.ui.form .field.error input[type="text"]:focus,
+.ui.form .field.error input[type="file"]:focus,
+.ui.form .field.error input[type="url"]:focus {
+  background: $formInputErrorFocusBackground;
+  border-color: $formInputErrorFocusBorder;
+  color: $formInputErrorFocusColor;
+
+  -webkit-appearance: none;
+  box-shadow: $formInputErrorFocusBoxShadow;
+}
+
+/* Preserve Native Select Stylings */
+.ui.form .field.error select {
+  -webkit-appearance: menulist-button;
+}
+
+/*------------------
+    Dropdown Error
+--------------------*/
+
+.ui.form .fields.error .field .ui.dropdown,
+.ui.form .fields.error .field .ui.dropdown .item,
+.ui.form .field.error .ui.dropdown,
+.ui.form .field.error .ui.dropdown .text,
+.ui.form .field.error .ui.dropdown .item {
+  background: $formFormErrorBackground;
+  color: $formFormErrorColor;
+}
+.ui.form .fields.error .field .ui.dropdown,
+.ui.form .field.error .ui.dropdown {
+  border-color: $formFormErrorBorder !important;
+}
+.ui.form .fields.error .field .ui.dropdown:hover,
+.ui.form .field.error .ui.dropdown:hover {
+  border-color: $formFormErrorBorder !important;
+}
+.ui.form .fields.error .field .ui.dropdown:hover .menu,
+.ui.form .field.error .ui.dropdown:hover .menu {
+  border-color: $formFormErrorBorder;
+}
+.ui.form .fields.error .field .ui.multiple.selection.dropdown > .label,
+.ui.form .field.error .ui.multiple.selection.dropdown > .label {
+  background-color: $formDropdownErrorLabelBackground;
+  color: $formDropdownErrorLabelColor;
+}
+
+/* Hover */
+.ui.form .fields.error .field .ui.dropdown .menu .item:hover,
+.ui.form .field.error .ui.dropdown .menu .item:hover {
+  background-color: $formDropdownErrorHoverBackground;
+}
+
+/* Selected */
+.ui.form .fields.error .field .ui.dropdown .menu .selected.item,
+.ui.form .field.error .ui.dropdown .menu .selected.item {
+  background-color: $formDropdownErrorSelectedBackground;
+}
+/* Active */
+.ui.form .fields.error .field .ui.dropdown .menu .active.item,
+.ui.form .field.error .ui.dropdown .menu .active.item {
+  background-color: $formDropdownErrorActiveBackground !important;
+}
+
+/*--------------------
+    Checkbox Error
+---------------------*/
+
+.ui.form .fields.error .field .checkbox:not(.toggle):not(.slider) label,
+.ui.form .field.error .checkbox:not(.toggle):not(.slider) label,
+.ui.form .fields.error .field .checkbox:not(.toggle):not(.slider) .box,
+.ui.form .field.error .checkbox:not(.toggle):not(.slider) .box {
+  color: $formFormErrorColor;
+}
+.ui.form .fields.error .field .checkbox:not(.toggle):not(.slider) label:before,
+.ui.form .field.error .checkbox:not(.toggle):not(.slider) label:before,
+.ui.form .fields.error .field .checkbox:not(.toggle):not(.slider) .box:before,
+.ui.form .field.error .checkbox:not(.toggle):not(.slider) .box:before {
+  background: $formFormErrorBackground;
+  border-color: $formFormErrorBorder;
+}
+.ui.form .fields.error .field .checkbox label:after,
+.ui.form .field.error .checkbox label:after,
+.ui.form .fields.error .field .checkbox .box:after,
+.ui.form .field.error .checkbox .box:after {
+  color: $formFormErrorColor;
+}
+
+/*--------------------
+       Disabled
+---------------------*/
+
+.ui.form .disabled.fields .field,
+.ui.form .disabled.field,
+.ui.form .field :disabled {
+  pointer-events: none;
+  opacity: $formDisabledOpacity;
+}
+.ui.form .field.disabled > label,
+.ui.form .fields.disabled > label {
+  opacity: $formDisabledLabelOpacity;
+}
+.ui.form .field.disabled :disabled {
+  opacity: 1;
+}
+/*--------------
+    Loading
+---------------*/
+
+.ui.loading.form {
+  position: relative;
+  cursor: default;
+  pointer-events: none;
+}
+.ui.loading.form:before {
+  position: absolute;
+  content: '';
+  top: 0%;
+  left: 0%;
+  background: $formLoaderDimmerColor;
+  width: 100%;
+  height: 100%;
+  z-index: $formLoaderDimmerZIndex;
+}
+.ui.loading.form:after {
+  position: absolute;
+  content: '';
+  top: 50%;
+  left: 50%;
+
+  @include formLoaderMargin();
+  //margin: $formLoaderMargin;
+  //width: $formLoaderSize;
+  //height: $formLoaderSize;
+
+  animation: form-spin $formLoaderSpeed linear;
+  animation-iteration-count: infinite;
+
+  border-radius: $formCircularRadius;
+
+  border-color: $formLoaderLineColor $formLoaderFillColor $formLoaderFillColor $formLoaderFillColor;
+  border-style: solid;
+  border-width: $formLoaderLineWidth;
+
+  box-shadow: 0 0 0 1px transparent;
+  visibility: visible;
+  z-index: $formLoaderLineZIndex;
+}
+
+@keyframes form-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+/*******************************
+         Element Types
+*******************************/
+
+/*--------------------
+     Required Field
+---------------------*/
+
+.ui.form .required.fields:not(.grouped) > .field > label:after,
+.ui.form .required.fields.grouped > label:after,
+.ui.form .required.field > label:after,
+.ui.form .required.fields:not(.grouped) > .field > .checkbox:after,
+.ui.form .required.field > .checkbox:after {
+  margin: $formRequiredMargin;
+  content: $formRequiredContent;
+  color: $formRequiredColor;
+}
+
+.ui.form .required.fields:not(.grouped) > .field > label:after,
+.ui.form .required.fields.grouped > label:after,
+.ui.form .required.field > label:after {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.ui.form .required.fields:not(.grouped) > .field > .checkbox:after,
+.ui.form .required.field > .checkbox:after {
+  position: absolute;
+  top: 0%;
+  left: 100%;
+}
+
+
+/*******************************
+           Variations
+*******************************/
+/*--------------------
+    Inverted Colors
+---------------------*/
+
+.ui.inverted.form label,
+.ui.form .inverted.segment label,
+.ui.form .inverted.segment .ui.checkbox label,
+.ui.form .inverted.segment .ui.checkbox .box,
+.ui.inverted.form .ui.checkbox label,
+.ui.inverted.form .ui.checkbox .box,
+.ui.inverted.form .inline.fields > label,
+.ui.inverted.form .inline.fields .field > label,
+.ui.inverted.form .inline.fields .field > p,
+.ui.inverted.form .inline.field > label,
+.ui.inverted.form .inline.field > p {
+  color: $formInvertedLabelColor;
+}
+
+/* Inverted Field */
+.ui.inverted.form input:not([type]),
+.ui.inverted.form input[type="date"],
+.ui.inverted.form input[type="datetime-local"],
+.ui.inverted.form input[type="email"],
+.ui.inverted.form input[type="number"],
+.ui.inverted.form input[type="password"],
+.ui.inverted.form input[type="search"],
+.ui.inverted.form input[type="tel"],
+.ui.inverted.form input[type="time"],
+.ui.inverted.form input[type="text"],
+.ui.inverted.form input[type="file"],
+.ui.inverted.form input[type="url"] {
+  background: $formInvertedInputBackground;
+  border-color: $formInvertedInputBorderColor;
+  color: $formInvertedInputColor;
+  box-shadow: $formInvertedInputBoxShadow;
+}
+/*--------------------
+     Field Groups
+---------------------*/
+
+/* Grouped Vertically */
+.ui.form .grouped.fields {
+  display: block;
+  margin: $formGroupedMargin;
+}
+.ui.form .grouped.fields:last-child {
+  margin-bottom: 0;
+}
+
+.ui.form .grouped.fields > label {
+  margin: $formGroupedLabelMargin;
+  color: $formGroupedLabelColor;
+  font-size: $formGroupedLabelFontSize;
+  font-weight: $formGroupedLabelFontWeight;
+  text-transform: $formGroupedLabelTextTransform;
+}
+
+.ui.form .grouped.fields .field,
+.ui.form .grouped.inline.fields .field {
+  display: block;
+  margin: $formGroupedFieldMargin;
+  padding: 0;
+}
+
+/*--------------------
+        Fields
+---------------------*/
+
+/* Split fields */
+.ui.form .fields {
+  display: flex;
+  flex-direction: row;
+  margin: $formFieldsMargin;
+}
+.ui.form .fields > .field {
+  flex: 0 1 auto;
+  padding-left: ($formGutterWidth / 2);
+  padding-right: ($formGutterWidth / 2);
+}
+.ui.form .fields > .field:first-child {
+  border-left: none;
+  box-shadow: none;
+}
+
+/* Other Combinations */
+.ui.form .two.fields > .fields,
+.ui.form .two.fields > .field {
+  width: $formTwoColumn;
+}
+.ui.form .three.fields > .fields,
+.ui.form .three.fields > .field {
+  width: $formThreeColumn;
+}
+.ui.form .four.fields > .fields,
+.ui.form .four.fields > .field {
+  width: $formFourColumn;
+}
+.ui.form .five.fields > .fields,
+.ui.form .five.fields > .field {
+  width: $formFiveColumn;
+}
+.ui.form .six.fields > .fields,
+.ui.form .six.fields > .field {
+  width: $formSixColumn;
+}
+.ui.form .seven.fields > .fields,
+.ui.form .seven.fields > .field {
+  width: $formSevenColumn;
+}
+.ui.form .eight.fields > .fields,
+.ui.form .eight.fields > .field {
+  width: $formEightColumn;
+}
+.ui.form .nine.fields > .fields,
+.ui.form .nine.fields > .field {
+  width: $formNineColumn;
+}
+.ui.form .ten.fields > .fields,
+.ui.form .ten.fields > .field {
+  width: $formTenColumn;
+}
+
+/* Swap to full width on mobile */
+@media only screen and (max-width : $formLargestMobileScreen) {
+  .ui.form .fields {
+    flex-wrap: wrap;
+  }
+
+  .ui[class*="equal width"].form:not(.unstackable) .fields > .field,
+  .ui.form:not(.unstackable) [class*="equal width"].fields:not(.unstackable) > .field,
+  .ui.form:not(.unstackable) .two.fields:not(.unstackable) > .fields,
+  .ui.form:not(.unstackable) .two.fields:not(.unstackable) > .field,
+  .ui.form:not(.unstackable) .three.fields:not(.unstackable) > .fields,
+  .ui.form:not(.unstackable) .three.fields:not(.unstackable) > .field,
+  .ui.form:not(.unstackable) .four.fields:not(.unstackable) > .fields,
+  .ui.form:not(.unstackable) .four.fields:not(.unstackable) > .field,
+  .ui.form:not(.unstackable) .five.fields:not(.unstackable) > .fields,
+  .ui.form:not(.unstackable) .five.fields:not(.unstackable) > .field,
+  .ui.form:not(.unstackable) .six.fields:not(.unstackable) > .fields,
+  .ui.form:not(.unstackable) .six.fields:not(.unstackable) > .field,
+  .ui.form:not(.unstackable) .seven.fields:not(.unstackable) > .fields,
+  .ui.form:not(.unstackable) .seven.fields:not(.unstackable) > .field,
+  .ui.form:not(.unstackable) .eight.fields:not(.unstackable) > .fields,
+  .ui.form:not(.unstackable) .eight.fields:not(.unstackable) > .field,
+  .ui.form:not(.unstackable) .nine.fields:not(.unstackable) > .fields,
+  .ui.form:not(.unstackable) .nine.fields:not(.unstackable) > .field,
+  .ui.form:not(.unstackable) .ten.fields:not(.unstackable) > .fields,
+  .ui.form:not(.unstackable) .ten.fields:not(.unstackable) > .field {
+    width: $formOneColumn !important;
+    margin: 0 0 $formRowDistance;
+  }
+}
+/* Sizing Combinations */
+.ui.form .fields .wide.field {
+  width: $formOneWide;
+  padding-left: ($formGutterWidth / 2);
+  padding-right: ($formGutterWidth / 2);
+}
+
+.ui.form .one.wide.field {
+  width: $formOneWide !important;
+}
+.ui.form .two.wide.field {
+  width: $formTwoWide !important;
+}
+.ui.form .three.wide.field {
+  width: $formThreeWide !important;
+}
+.ui.form .four.wide.field {
+  width: $formFourWide !important;
+}
+.ui.form .five.wide.field {
+  width: $formFiveWide !important;
+}
+.ui.form .six.wide.field {
+  width: $formSixWide !important;
+}
+.ui.form .seven.wide.field {
+  width: $formSevenWide !important;
+}
+.ui.form .eight.wide.field {
+  width: $formEightWide !important;
+}
+.ui.form .nine.wide.field {
+  width: $formNineWide !important;
+}
+.ui.form .ten.wide.field {
+  width: $formTenWide !important;
+}
+.ui.form .eleven.wide.field {
+  width: $formElevenWide !important;
+}
+.ui.form .twelve.wide.field {
+  width: $formTwelveWide !important;
+}
+.ui.form .thirteen.wide.field {
+  width: $formThirteenWide !important;
+}
+.ui.form .fourteen.wide.field {
+  width: $formFourteenWide !important;
+}
+.ui.form .fifteen.wide.field {
+  width: $formFifteenWide !important;
+}
+.ui.form .sixteen.wide.field {
+  width: $formSixteenWide !important;
+}
+
+/* Swap to full width on mobile */
+@media only screen and (max-width : $formLargestMobileScreen) {
+  .ui.form:not(.unstackable) .two.fields:not(.unstackable) > .fields,
+  .ui.form:not(.unstackable) .two.fields:not(.unstackable) > .field,
+  .ui.form:not(.unstackable) .three.fields:not(.unstackable) > .fields,
+  .ui.form:not(.unstackable) .three.fields:not(.unstackable) > .field,
+  .ui.form:not(.unstackable) .four.fields:not(.unstackable) > .fields,
+  .ui.form:not(.unstackable) .four.fields:not(.unstackable) > .field,
+  .ui.form:not(.unstackable) .five.fields:not(.unstackable) > .fields,
+  .ui.form:not(.unstackable) .five.fields:not(.unstackable) > .field,
+  .ui.form:not(.unstackable) .fields:not(.unstackable) > .two.wide.field,
+  .ui.form:not(.unstackable) .fields:not(.unstackable) > .three.wide.field,
+  .ui.form:not(.unstackable) .fields:not(.unstackable) > .four.wide.field,
+  .ui.form:not(.unstackable) .fields:not(.unstackable) > .five.wide.field,
+  .ui.form:not(.unstackable) .fields:not(.unstackable) > .six.wide.field,
+  .ui.form:not(.unstackable) .fields:not(.unstackable) > .seven.wide.field,
+  .ui.form:not(.unstackable) .fields:not(.unstackable) > .eight.wide.field,
+  .ui.form:not(.unstackable) .fields:not(.unstackable) > .nine.wide.field,
+  .ui.form:not(.unstackable) .fields:not(.unstackable) > .ten.wide.field,
+  .ui.form:not(.unstackable) .fields:not(.unstackable) > .eleven.wide.field,
+  .ui.form:not(.unstackable) .fields:not(.unstackable) > .twelve.wide.field,
+  .ui.form:not(.unstackable) .fields:not(.unstackable) > .thirteen.wide.field,
+  .ui.form:not(.unstackable) .fields:not(.unstackable) > .fourteen.wide.field,
+  .ui.form:not(.unstackable) .fields:not(.unstackable) > .fifteen.wide.field,
+  .ui.form:not(.unstackable) .fields:not(.unstackable) > .sixteen.wide.field {
+    width: $formOneColumn !important;
+  }
+  .ui.form .fields {
+    margin-bottom: 0;
+  }
+}
+
+/*--------------------
+     Equal Width
+---------------------*/
+
+.ui[class*="equal width"].form .fields > .field,
+.ui.form [class*="equal width"].fields > .field {
+  width: 100%;
+  flex: 1 1 auto;
+}
+
+/*--------------------
+    Inline Fields
+---------------------*/
+
+.ui.form .inline.fields {
+  margin: $formFieldMargin;
+  align-items: center;
+}
+.ui.form .inline.fields .field {
+  margin: 0;
+  padding: $formInlineFieldsMargin;
+}
+
+/* Inline Label */
+.ui.form .inline.fields > label,
+.ui.form .inline.fields .field > label,
+.ui.form .inline.fields .field > p,
+.ui.form .inline.field > label,
+.ui.form .inline.field > p {
+  display: inline-block;
+  width: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  vertical-align: baseline;
+  font-size: $formInlineLabelFontSize;
+  font-weight: $formInlineLabelFontWeight;
+  color: $formInlineLabelColor;
+  text-transform: $formInlineLabelTextTransform;
+}
+
+/* Grouped Inline Label */
+.ui.form .inline.fields > label {
+  margin: $formGroupedInlineLabelMargin;
+}
+
+/* Inline Input */
+.ui.form .inline.fields .field > input,
+.ui.form .inline.fields .field > select,
+.ui.form .inline.field > input,
+.ui.form .inline.field > select {
+  display: inline-block;
+  width: auto;
+
+  margin-top: 0;
+  margin-bottom: 0;
+
+  vertical-align: middle;
+  font-size: $formInlineInputSize;
+}
+
+/* Label */
+.ui.form .inline.fields .field > :first-child,
+.ui.form .inline.field > :first-child {
+  margin: 0 $formInlineLabelDistance 0 0;
+}
+.ui.form .inline.fields .field > :only-child,
+.ui.form .inline.field > :only-child {
+  margin: 0;
+}
+
+/* Wide */
+.ui.form .inline.fields .wide.field {
+  display: flex;
+  align-items: center;
+}
+.ui.form .inline.fields .wide.field > input,
+.ui.form .inline.fields .wide.field > select {
+  width: 100%;
+}
+/*--------------------
+        Sizes
+---------------------*/
+
+.ui.mini.form {
+  font-size: $formMini;
+}
+.ui.tiny.form {
+  font-size: $formTiny;
+}
+.ui.small.form {
+  font-size: $formSmall;
+}
+.ui.form {
+  font-size: $formMedium;
+}
+.ui.large.form {
+  font-size: $formLarge;
+}
+.ui.big.form {
+  font-size: $formBig;
+}
+.ui.huge.form {
+  font-size: $formHuge;
+}
+.ui.massive.form {
+  font-size: $formMassive;
+}
+
+

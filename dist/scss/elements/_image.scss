@@ -1,0 +1,306 @@
+/*!
+ * # Shengnian UI - Image
+ * http://github.com/shengnian/shengnian-ui
+ *
+ *
+ * Released under the MIT license
+ * http://opensource.org/licenses/MIT
+ *
+ */
+
+
+/*******************************
+             Image
+*******************************/
+
+.ui.image {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  max-width: 100%;
+  background-color: $imagePlaceholderColor;
+}
+
+img.ui.image {
+  display: block;
+}
+
+.ui.image svg,
+.ui.image img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+
+/*******************************
+            States
+*******************************/
+
+.ui.hidden.images,
+.ui.hidden.image {
+  display: none;
+}
+.ui.hidden.transition.images,
+.ui.hidden.transition.image {
+  display: block;
+  visibility: hidden;
+}
+.ui.disabled.images,
+.ui.disabled.image {
+  cursor: default;
+  opacity: $imageDisabledOpacity;
+}
+
+
+/*******************************
+          Variations
+*******************************/
+/*--------------
+     Inline
+---------------*/
+
+.ui.inline.image,
+.ui.inline.image svg,
+.ui.inline.image img {
+  display: inline-block;
+}
+
+/*------------------
+  Vertical Aligned
+-------------------*/
+
+.ui.top.aligned.images .image,
+.ui.top.aligned.image,
+.ui.top.aligned.image svg,
+.ui.top.aligned.image img {
+  display: inline-block;
+  vertical-align: top;
+}
+.ui.middle.aligned.images .image,
+.ui.middle.aligned.image,
+.ui.middle.aligned.image svg,
+.ui.middle.aligned.image img {
+  display: inline-block;
+  vertical-align: middle;
+}
+.ui.bottom.aligned.images .image,
+.ui.bottom.aligned.image,
+.ui.bottom.aligned.image svg,
+.ui.bottom.aligned.image img {
+  display: inline-block;
+  vertical-align: bottom;
+}
+
+/*--------------
+     Rounded
+---------------*/
+
+.ui.rounded.images .image,
+.ui.rounded.image,
+.ui.rounded.images .image > *,
+.ui.rounded.image > * {
+  border-radius: $imageRoundedBorderRadius;
+}
+
+/*--------------
+    Bordered
+---------------*/
+
+.ui.bordered.images .image,
+.ui.bordered.images img,
+.ui.bordered.images svg,
+.ui.bordered.image img,
+.ui.bordered.image svg,
+img.ui.bordered.image {
+  border: $imageImageBorder;
+}
+
+/*--------------
+    Circular
+---------------*/
+
+.ui.circular.images,
+.ui.circular.image {
+  overflow: hidden;
+}
+
+.ui.circular.images .image,
+.ui.circular.image,
+.ui.circular.images .image > *,
+.ui.circular.image > * {
+  -webkit-border-radius: $imageCircularRadius;
+  -moz-border-radius: $imageCircularRadius;
+  border-radius: $imageCircularRadius;
+}
+
+/*--------------
+     Fluid
+---------------*/
+
+.ui.fluid.images,
+.ui.fluid.image,
+.ui.fluid.images img,
+.ui.fluid.images svg,
+.ui.fluid.image svg,
+.ui.fluid.image img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+/*--------------
+     Avatar
+---------------*/
+
+.ui.avatar.images .image,
+.ui.avatar.images img,
+.ui.avatar.images svg,
+.ui.avatar.image img,
+.ui.avatar.image svg,
+.ui.avatar.image {
+  margin-right: $imageAvatarMargin;
+
+  display: inline-block;
+  width: $imageAvatarSize;
+  height: $imageAvatarSize;
+
+  -webkit-border-radius: $imageCircularRadius;
+  -moz-border-radius: $imageCircularRadius;
+  border-radius: $imageCircularRadius;
+}
+
+/*-------------------
+       Spaced
+--------------------*/
+
+.ui.spaced.image {
+  display: inline-block !important;
+  margin-left: $imageSpacedDistance;
+  margin-right: $imageSpacedDistance;
+}
+
+.ui[class*="left spaced"].image {
+  margin-left: $imageSpacedDistance;
+  margin-right: 0;
+}
+
+.ui[class*="right spaced"].image {
+  margin-left: 0;
+  margin-right: $imageSpacedDistance;
+}
+
+/*-------------------
+       Floated
+--------------------*/
+
+.ui.floated.image,
+.ui.floated.images {
+  float: left;
+  margin-right: $imageFloatedHorizontalMargin;
+  margin-bottom: $imageFloatedVerticalMargin;
+}
+.ui.right.floated.images,
+.ui.right.floated.image {
+  float: right;
+  margin-right: 0;
+  margin-bottom: $imageFloatedVerticalMargin;
+  margin-left: $imageFloatedHorizontalMargin;
+}
+
+.ui.floated.images:last-child,
+.ui.floated.image:last-child {
+  margin-bottom: 0;
+}
+.ui.centered.images,
+.ui.centered.image {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*--------------
+     Sizes
+---------------*/
+
+.ui.mini.images .image,
+.ui.mini.images img,
+.ui.mini.images svg,
+.ui.mini.image {
+  width: $imageMiniWidth;
+  height: auto;
+  font-size: $imageMini;
+}
+.ui.tiny.images .image,
+.ui.tiny.images img,
+.ui.tiny.images svg,
+.ui.tiny.image {
+  width: $imageTinyWidth;
+  height: auto;
+  font-size: $imageTiny;
+}
+.ui.small.images .image,
+.ui.small.images img,
+.ui.small.images svg,
+.ui.small.image {
+  width: $imageSmallWidth;
+  height: auto;
+  font-size: $imageSmall;
+}
+.ui.medium.images .image,
+.ui.medium.images img,
+.ui.medium.images svg,
+.ui.medium.image {
+  width: $imageMediumWidth;
+  height: auto;
+  font-size: $imageMedium;
+}
+.ui.large.images .image,
+.ui.large.images img,
+.ui.large.images svg,
+.ui.large.image {
+  width: $imageLargeWidth;
+  height: auto;
+  font-size: $imageLarge;
+}
+.ui.big.images .image,
+.ui.big.images img,
+.ui.big.images svg,
+.ui.big.image {
+  width: $imageBigWidth;
+  height: auto;
+  font-size: $imageBig;
+}
+.ui.huge.images .image,
+.ui.huge.images img,
+.ui.huge.images svg,
+.ui.huge.image {
+  width: $imageHugeWidth;
+  height: auto;
+  font-size: $imageHuge;
+}
+.ui.massive.images .image,
+.ui.massive.images img,
+.ui.massive.images svg,
+.ui.massive.image {
+  width: $imageMassiveWidth;
+  height: auto;
+  font-size: $imageMassive;
+}
+
+
+/*******************************
+              Groups
+*******************************/
+
+.ui.images {
+  font-size: 0;
+  margin: 0 -$imageImageHorizontalMargin 0;
+}
+
+.ui.images .image,
+.ui.images img,
+.ui.images svg {
+  display: inline-block;
+  margin: 0 $imageImageHorizontalMargin $imageImageVerticalMargin;
+}
+
+

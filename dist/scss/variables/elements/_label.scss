@@ -1,0 +1,866 @@
+$labelFontName: $fontName;
+$labelFontSmoothing: $fontSmoothing;
+$labelHeaderFont: $headerFont;
+$labelPageFont: $pageFont;
+$labelGoogleFontName: $googleFontName;
+$labelImportGoogleFonts: $importGoogleFonts;
+$labelGoogleFontSizes: $googleFontSizes;
+$labelGoogleSubset: $googleSubset;
+$labelGoogleProtocol: $googleProtocol;
+$labelGoogleFontRequest: $googleFontRequest;
+$labelEmSize: $emSize;
+$labelFontSize: $fontSize;
+$labelRelativeBorderRadius: $relativeBorderRadius;
+$labelAbsoluteBorderRadius: $absoluteBorderRadius;
+$labelDefaultBorderRadius: $defaultBorderRadius;
+$labelPrimaryColor: $primaryColor;
+$labelSecondaryColor: $secondaryColor;
+$labelLightPrimaryColor: $lightPrimaryColor;
+$labelLightSecondaryColor: $lightSecondaryColor;
+$labelHeaderFontWeight: $headerFontWeight;
+$labelHeaderLineHeight: $headerLineHeight;
+$labelH1: $h1;
+$labelH2: $h2;
+$labelH3: $h3;
+$labelH4: $h4;
+$labelH5: $h5;
+$labelInputBackground: $inputBackground;
+$labelInputVerticalPadding: $inputVerticalPadding;
+$labelInputHorizontalPadding: $inputHorizontalPadding;
+$labelInputPadding: $inputPadding;
+$labelInputColor: $inputColor;
+$labelInputPlaceholderColor: $inputPlaceholderColor;
+$labelInputPlaceholderFocusColor: $inputPlaceholderFocusColor;
+$labelInputLineHeight: $inputLineHeight;
+$labelFocusedFormBorderColor: $focusedFormBorderColor;
+$labelFocusedFormMutedBorderColor: $focusedFormMutedBorderColor;
+$labelMiniSize: $miniSize;
+$labelTinySize: $tinySize;
+$labelSmallSize: $smallSize;
+$labelMediumSize: $mediumSize;
+$labelLargeSize: $largeSize;
+$labelBigSize: $bigSize;
+$labelHugeSize: $hugeSize;
+$labelMassiveSize: $massiveSize;
+$labelPageBackground: $pageBackground;
+$labelPageOverflowX: $pageOverflowX;
+$labelLineHeight: $lineHeight;
+$labelTextColor: $textColor;
+$labelParagraphMargin: $paragraphMargin;
+$labelParagraphLineHeight: $paragraphLineHeight;
+$labelLinkColor: $linkColor;
+$labelLinkUnderline: $linkUnderline;
+$labelLinkHoverColor: $linkHoverColor;
+$labelLinkHoverUnderline: $linkHoverUnderline;
+$labelUseCustomScrollbars: $useCustomScrollbars;
+$labelCustomScrollbarWidth: $customScrollbarWidth;
+$labelTrackBackground: $trackBackground;
+$labelTrackBorderRadius: $trackBorderRadius;
+$labelThumbBorderRadius: $thumbBorderRadius;
+$labelThumbBackground: $thumbBackground;
+$labelThumbTransition: $thumbTransition;
+$labelThumbInactiveBackground: $thumbInactiveBackground;
+$labelThumbHoverBackground: $thumbHoverBackground;
+$labelTrackInvertedBackground: $trackInvertedBackground;
+$labelThumbInvertedBackground: $thumbInvertedBackground;
+$labelThumbInvertedInactiveBackground: $thumbInvertedInactiveBackground;
+$labelThumbInvertedHoverBackground: $thumbInvertedHoverBackground;
+$labelHighlightBackground: $highlightBackground;
+$labelHighlightColor: $highlightColor;
+$labelInputHighlightBackground: $inputHighlightBackground;
+$labelInputHighlightColor: $inputHighlightColor;
+$labelLoaderSize: $loaderSize;
+$labelLoaderSpeed: $loaderSpeed;
+$labelLoaderLineWidth: $loaderLineWidth;
+$labelLoaderFillColor: $loaderFillColor;
+$labelLoaderLineColor: $loaderLineColor;
+$labelInvertedLoaderFillColor: $invertedLoaderFillColor;
+$labelInvertedLoaderLineColor: $invertedLoaderLineColor;
+$labelColumnCount: $columnCount;
+$labelDefaultDuration: $defaultDuration;
+$labelDefaultEasing: $defaultEasing;
+$labelMobileBreakpoint: $mobileBreakpoint;
+$labelTabletBreakpoint: $tabletBreakpoint;
+$labelComputerBreakpoint: $computerBreakpoint;
+$labelLargeMonitorBreakpoint: $largeMonitorBreakpoint;
+$labelWidescreenMonitorBreakpoint: $widescreenMonitorBreakpoint;
+$labelRed: $red;
+$labelOrange: $orange;
+$labelYellow: $yellow;
+$labelOlive: $olive;
+$labelGreen: $green;
+$labelTeal: $teal;
+$labelBlue: $blue;
+$labelViolet: $violet;
+$labelPurple: $purple;
+$labelPink: $pink;
+$labelBrown: $brown;
+$labelGrey: $grey;
+$labelBlack: $black;
+$labelLightRed: $lightRed;
+$labelLightOrange: $lightOrange;
+$labelLightYellow: $lightYellow;
+$labelLightOlive: $lightOlive;
+$labelLightGreen: $lightGreen;
+$labelLightTeal: $lightTeal;
+$labelLightBlue: $lightBlue;
+$labelLightViolet: $lightViolet;
+$labelLightPurple: $lightPurple;
+$labelLightPink: $lightPink;
+$labelLightBrown: $lightBrown;
+$labelLightGrey: $lightGrey;
+$labelLightBlack: $lightBlack;
+$labelFullBlack: $fullBlack;
+$labelOffWhite: $offWhite;
+$labelDarkWhite: $darkWhite;
+$labelMidWhite: $midWhite;
+$labelWhite: $white;
+$labelRedBackground: $redBackground;
+$labelOrangeBackground: $orangeBackground;
+$labelYellowBackground: $yellowBackground;
+$labelOliveBackground: $oliveBackground;
+$labelGreenBackground: $greenBackground;
+$labelTealBackground: $tealBackground;
+$labelBlueBackground: $blueBackground;
+$labelVioletBackground: $violetBackground;
+$labelPurpleBackground: $purpleBackground;
+$labelPinkBackground: $pinkBackground;
+$labelBrownBackground: $brownBackground;
+$labelRedHeaderColor: $redHeaderColor;
+$labelOliveHeaderColor: $oliveHeaderColor;
+$labelGreenHeaderColor: $greenHeaderColor;
+$labelYellowHeaderColor: $yellowHeaderColor;
+$labelBlueHeaderColor: $blueHeaderColor;
+$labelTealHeaderColor: $tealHeaderColor;
+$labelPinkHeaderColor: $pinkHeaderColor;
+$labelVioletHeaderColor: $violetHeaderColor;
+$labelPurpleHeaderColor: $purpleHeaderColor;
+$labelOrangeHeaderColor: $orangeHeaderColor;
+$labelBrownHeaderColor: $brownHeaderColor;
+$labelRedTextColor: $redTextColor;
+$labelOrangeTextColor: $orangeTextColor;
+$labelYellowTextColor: $yellowTextColor;
+$labelOliveTextColor: $oliveTextColor;
+$labelGreenTextColor: $greenTextColor;
+$labelTealTextColor: $tealTextColor;
+$labelBlueTextColor: $blueTextColor;
+$labelVioletTextColor: $violetTextColor;
+$labelPurpleTextColor: $purpleTextColor;
+$labelPinkTextColor: $pinkTextColor;
+$labelBrownTextColor: $brownTextColor;
+$labelRedBorderColor: $redBorderColor;
+$labelOrangeBorderColor: $orangeBorderColor;
+$labelYellowBorderColor: $yellowBorderColor;
+$labelOliveBorderColor: $oliveBorderColor;
+$labelGreenBorderColor: $greenBorderColor;
+$labelTealBorderColor: $tealBorderColor;
+$labelBlueBorderColor: $blueBorderColor;
+$labelVioletBorderColor: $violetBorderColor;
+$labelPurpleBorderColor: $purpleBorderColor;
+$labelPinkBorderColor: $pinkBorderColor;
+$labelBrownBorderColor: $brownBorderColor;
+$labelSubtleTransparentBlack: $subtleTransparentBlack;
+$labelTransparentBlack: $transparentBlack;
+$labelStrongTransparentBlack: $strongTransparentBlack;
+$labelVeryStrongTransparentBlack: $veryStrongTransparentBlack;
+$labelSubtleTransparentWhite: $subtleTransparentWhite;
+$labelTransparentWhite: $transparentWhite;
+$labelStrongTransparentWhite: $strongTransparentWhite;
+$labelSubtleGradient: $subtleGradient;
+$labelSubtleShadow: $subtleShadow;
+$labelFloatingShadow: $floatingShadow;
+$labelPositiveColor: $positiveColor;
+$labelPositiveBackgroundColor: $positiveBackgroundColor;
+$labelPositiveBorderColor: $positiveBorderColor;
+$labelPositiveHeaderColor: $positiveHeaderColor;
+$labelPositiveTextColor: $positiveTextColor;
+$labelNegativeColor: $negativeColor;
+$labelNegativeBackgroundColor: $negativeBackgroundColor;
+$labelNegativeBorderColor: $negativeBorderColor;
+$labelNegativeHeaderColor: $negativeHeaderColor;
+$labelNegativeTextColor: $negativeTextColor;
+$labelInfoColor: $infoColor;
+$labelInfoBackgroundColor: $infoBackgroundColor;
+$labelInfoBorderColor: $infoBorderColor;
+$labelInfoHeaderColor: $infoHeaderColor;
+$labelInfoTextColor: $infoTextColor;
+$labelWarningColor: $warningColor;
+$labelWarningBorderColor: $warningBorderColor;
+$labelWarningBackgroundColor: $warningBackgroundColor;
+$labelWarningHeaderColor: $warningHeaderColor;
+$labelWarningTextColor: $warningTextColor;
+$labelImagePath: $imagePath;
+$labelFontPath: $fontPath;
+$labelMini: $mini;
+$labelTiny: $tiny;
+$labelSmall: $small;
+$labelMedium: $medium;
+$labelLarge: $large;
+$labelBig: $big;
+$labelHuge: $huge;
+$labelMassive: $massive;
+$labelRelativeMini: $relativeMini;
+$labelRelativeTiny: $relativeTiny;
+$labelRelativeSmall: $relativeSmall;
+$labelRelativeMedium: $relativeMedium;
+$labelRelativeLarge: $relativeLarge;
+$labelRelativeBig: $relativeBig;
+$labelRelativeHuge: $relativeHuge;
+$labelRelativeMassive: $relativeMassive;
+$labelAbsoluteMini: $absoluteMini;
+$labelAbsoluteTiny: $absoluteTiny;
+$labelAbsoluteSmall: $absoluteSmall;
+$labelAbsoluteMedium: $absoluteMedium;
+$labelAbsoluteLarge: $absoluteLarge;
+$labelAbsoluteBig: $absoluteBig;
+$labelAbsoluteHuge: $absoluteHuge;
+$labelAbsoluteMassive: $absoluteMassive;
+$labelIconWidth: $iconWidth;
+$labelDarkTextColor: $darkTextColor;
+$labelMutedTextColor: $mutedTextColor;
+$labelLightTextColor: $lightTextColor;
+$labelUnselectedTextColor: $unselectedTextColor;
+$labelHoveredTextColor: $hoveredTextColor;
+$labelPressedTextColor: $pressedTextColor;
+$labelSelectedTextColor: $selectedTextColor;
+$labelDisabledTextColor: $disabledTextColor;
+$labelInvertedTextColor: $invertedTextColor;
+$labelInvertedMutedTextColor: $invertedMutedTextColor;
+$labelInvertedLightTextColor: $invertedLightTextColor;
+$labelInvertedUnselectedTextColor: $invertedUnselectedTextColor;
+$labelInvertedHoveredTextColor: $invertedHoveredTextColor;
+$labelInvertedPressedTextColor: $invertedPressedTextColor;
+$labelInvertedSelectedTextColor: $invertedSelectedTextColor;
+$labelInvertedDisabledTextColor: $invertedDisabledTextColor;
+$labelFacebookColor: $facebookColor;
+$labelTwitterColor: $twitterColor;
+$labelGooglePlusColor: $googlePlusColor;
+$labelLinkedInColor: $linkedInColor;
+$labelYoutubeColor: $youtubeColor;
+$labelPinterestColor: $pinterestColor;
+$labelVkColor: $vkColor;
+$labelInstagramColor: $instagramColor;
+$labelCircularRadius: $circularRadius;
+$labelBorderColor: $borderColor;
+$labelStrongBorderColor: $strongBorderColor;
+$labelInternalBorderColor: $internalBorderColor;
+$labelSelectedBorderColor: $selectedBorderColor;
+$labelStrongSelectedBorderColor: $strongSelectedBorderColor;
+$labelDisabledBorderColor: $disabledBorderColor;
+$labelSolidInternalBorderColor: $solidInternalBorderColor;
+$labelSolidBorderColor: $solidBorderColor;
+$labelSolidSelectedBorderColor: $solidSelectedBorderColor;
+$labelWhiteBorderColor: $whiteBorderColor;
+$labelSelectedWhiteBorderColor: $selectedWhiteBorderColor;
+$labelSolidWhiteBorderColor: $solidWhiteBorderColor;
+$labelSelectedSolidWhiteBorderColor: $selectedSolidWhiteBorderColor;
+$labelLoaderOffset: $loaderOffset;
+$labelLoaderMargin: $loaderMargin;
+$labelScrollbarWidth: $scrollbarWidth;
+$labelGlyphWidth: $glyphWidth;
+$labelLineHeightOffset: $lineHeightOffset;
+$labelHeaderLineHeightOffset: $headerLineHeightOffset;
+$labelHeaderTopMargin: $headerTopMargin;
+$labelHeaderBottomMargin: $headerBottomMargin;
+$labelHeaderMargin: $headerMargin;
+$labelPageMinWidth: $pageMinWidth;
+$labelSuccessBackgroundColor: $successBackgroundColor;
+$labelSuccessColor: $successColor;
+$labelSuccessBorderColor: $successBorderColor;
+$labelSuccessHeaderColor: $successHeaderColor;
+$labelSuccessTextColor: $successTextColor;
+$labelErrorBackgroundColor: $errorBackgroundColor;
+$labelErrorColor: $errorColor;
+$labelErrorBorderColor: $errorBorderColor;
+$labelErrorHeaderColor: $errorHeaderColor;
+$labelErrorTextColor: $errorTextColor;
+$labelLargestMobileScreen: $largestMobileScreen;
+$labelLargestTabletScreen: $largestTabletScreen;
+$labelLargestSmallMonitor: $largestSmallMonitor;
+$labelLargestLargeMonitor: $largestLargeMonitor;
+$label1px: $_1px;
+$label2px: $_2px;
+$label3px: $_3px;
+$label4px: $_4px;
+$label5px: $_5px;
+$label6px: $_6px;
+$label7px: $_7px;
+$label8px: $_8px;
+$label9px: $_9px;
+$label10px: $_10px;
+$label11px: $_11px;
+$label12px: $_12px;
+$label13px: $_13px;
+$label14px: $_14px;
+$label15px: $_15px;
+$label16px: $_16px;
+$label17px: $_17px;
+$label18px: $_18px;
+$label19px: $_19px;
+$label20px: $_20px;
+$label21px: $_21px;
+$label22px: $_22px;
+$label23px: $_23px;
+$label24px: $_24px;
+$label25px: $_25px;
+$label26px: $_26px;
+$label27px: $_27px;
+$label28px: $_28px;
+$label29px: $_29px;
+$label30px: $_30px;
+$label31px: $_31px;
+$label32px: $_32px;
+$label33px: $_33px;
+$label34px: $_34px;
+$label35px: $_35px;
+$label36px: $_36px;
+$label37px: $_37px;
+$label38px: $_38px;
+$label39px: $_39px;
+$label40px: $_40px;
+$label41px: $_41px;
+$label42px: $_42px;
+$label43px: $_43px;
+$label44px: $_44px;
+$label45px: $_45px;
+$label46px: $_46px;
+$label47px: $_47px;
+$label48px: $_48px;
+$label49px: $_49px;
+$label50px: $_50px;
+$label51px: $_51px;
+$label52px: $_52px;
+$label53px: $_53px;
+$label54px: $_54px;
+$label55px: $_55px;
+$label56px: $_56px;
+$label57px: $_57px;
+$label58px: $_58px;
+$label59px: $_59px;
+$label60px: $_60px;
+$label61px: $_61px;
+$label62px: $_62px;
+$label63px: $_63px;
+$label64px: $_64px;
+$labelRelative1px: $relative1px;
+$labelRelative2px: $relative2px;
+$labelRelative3px: $relative3px;
+$labelRelative4px: $relative4px;
+$labelRelative5px: $relative5px;
+$labelRelative6px: $relative6px;
+$labelRelative7px: $relative7px;
+$labelRelative8px: $relative8px;
+$labelRelative9px: $relative9px;
+$labelRelative10px: $relative10px;
+$labelRelative11px: $relative11px;
+$labelRelative12px: $relative12px;
+$labelRelative13px: $relative13px;
+$labelRelative14px: $relative14px;
+$labelRelative15px: $relative15px;
+$labelRelative16px: $relative16px;
+$labelRelative17px: $relative17px;
+$labelRelative18px: $relative18px;
+$labelRelative19px: $relative19px;
+$labelRelative20px: $relative20px;
+$labelRelative21px: $relative21px;
+$labelRelative22px: $relative22px;
+$labelRelative23px: $relative23px;
+$labelRelative24px: $relative24px;
+$labelRelative25px: $relative25px;
+$labelRelative26px: $relative26px;
+$labelRelative27px: $relative27px;
+$labelRelative28px: $relative28px;
+$labelRelative29px: $relative29px;
+$labelRelative30px: $relative30px;
+$labelRelative31px: $relative31px;
+$labelRelative32px: $relative32px;
+$labelRelative33px: $relative33px;
+$labelRelative34px: $relative34px;
+$labelRelative35px: $relative35px;
+$labelRelative36px: $relative36px;
+$labelRelative37px: $relative37px;
+$labelRelative38px: $relative38px;
+$labelRelative39px: $relative39px;
+$labelRelative40px: $relative40px;
+$labelRelative41px: $relative41px;
+$labelRelative42px: $relative42px;
+$labelRelative43px: $relative43px;
+$labelRelative44px: $relative44px;
+$labelRelative45px: $relative45px;
+$labelRelative46px: $relative46px;
+$labelRelative47px: $relative47px;
+$labelRelative48px: $relative48px;
+$labelRelative49px: $relative49px;
+$labelRelative50px: $relative50px;
+$labelRelative51px: $relative51px;
+$labelRelative52px: $relative52px;
+$labelRelative53px: $relative53px;
+$labelRelative54px: $relative54px;
+$labelRelative55px: $relative55px;
+$labelRelative56px: $relative56px;
+$labelRelative57px: $relative57px;
+$labelRelative58px: $relative58px;
+$labelRelative59px: $relative59px;
+$labelRelative60px: $relative60px;
+$labelRelative61px: $relative61px;
+$labelRelative62px: $relative62px;
+$labelRelative63px: $relative63px;
+$labelRelative64px: $relative64px;
+$labelOneWide: $oneWide;
+$labelTwoWide: $twoWide;
+$labelThreeWide: $threeWide;
+$labelFourWide: $fourWide;
+$labelFiveWide: $fiveWide;
+$labelSixWide: $sixWide;
+$labelSevenWide: $sevenWide;
+$labelEightWide: $eightWide;
+$labelNineWide: $nineWide;
+$labelTenWide: $tenWide;
+$labelElevenWide: $elevenWide;
+$labelTwelveWide: $twelveWide;
+$labelThirteenWide: $thirteenWide;
+$labelFourteenWide: $fourteenWide;
+$labelFifteenWide: $fifteenWide;
+$labelSixteenWide: $sixteenWide;
+$labelOneColumn: $oneColumn;
+$labelTwoColumn: $twoColumn;
+$labelThreeColumn: $threeColumn;
+$labelFourColumn: $fourColumn;
+$labelFiveColumn: $fiveColumn;
+$labelSixColumn: $sixColumn;
+$labelSevenColumn: $sevenColumn;
+$labelEightColumn: $eightColumn;
+$labelNineColumn: $nineColumn;
+$labelTenColumn: $tenColumn;
+$labelElevenColumn: $elevenColumn;
+$labelTwelveColumn: $twelveColumn;
+$labelThirteenColumn: $thirteenColumn;
+$labelFourteenColumn: $fourteenColumn;
+$labelFifteenColumn: $fifteenColumn;
+$labelSixteenColumn: $sixteenColumn;
+$labelDisabledOpacity: $disabledOpacity;
+$labelFloatingShadowHover: $floatingShadowHover;
+$labelPrimaryColorHover: $primaryColorHover;
+$labelSecondaryColorHover: $secondaryColorHover;
+$labelRedHover: $redHover;
+$labelOrangeHover: $orangeHover;
+$labelYellowHover: $yellowHover;
+$labelOliveHover: $oliveHover;
+$labelGreenHover: $greenHover;
+$labelTealHover: $tealHover;
+$labelBlueHover: $blueHover;
+$labelVioletHover: $violetHover;
+$labelPurpleHover: $purpleHover;
+$labelPinkHover: $pinkHover;
+$labelBrownHover: $brownHover;
+$labelLightRedHover: $lightRedHover;
+$labelLightOrangeHover: $lightOrangeHover;
+$labelLightYellowHover: $lightYellowHover;
+$labelLightOliveHover: $lightOliveHover;
+$labelLightGreenHover: $lightGreenHover;
+$labelLightTealHover: $lightTealHover;
+$labelLightBlueHover: $lightBlueHover;
+$labelLightVioletHover: $lightVioletHover;
+$labelLightPurpleHover: $lightPurpleHover;
+$labelLightPinkHover: $lightPinkHover;
+$labelLightBrownHover: $lightBrownHover;
+$labelLightGreyHover: $lightGreyHover;
+$labelLightBlackHover: $lightBlackHover;
+$labelPositiveColorHover: $positiveColorHover;
+$labelNegativeColorHover: $negativeColorHover;
+$labelFacebookHoverColor: $facebookHoverColor;
+$labelTwitterHoverColor: $twitterHoverColor;
+$labelGooglePlusHoverColor: $googlePlusHoverColor;
+$labelLinkedInHoverColor: $linkedInHoverColor;
+$labelYoutubeHoverColor: $youtubeHoverColor;
+$labelInstagramHoverColor: $instagramHoverColor;
+$labelPinterestHoverColor: $pinterestHoverColor;
+$labelVkHoverColor: $vkHoverColor;
+$labelFullBlackHover: $fullBlackHover;
+$labelBlackHover: $blackHover;
+$labelGreyHover: $greyHover;
+$labelWhiteHover: $whiteHover;
+$labelOffWhiteHover: $offWhiteHover;
+$labelDarkWhiteHover: $darkWhiteHover;
+$labelPrimaryColorFocus: $primaryColorFocus;
+$labelSecondaryColorFocus: $secondaryColorFocus;
+$labelRedFocus: $redFocus;
+$labelOrangeFocus: $orangeFocus;
+$labelYellowFocus: $yellowFocus;
+$labelOliveFocus: $oliveFocus;
+$labelGreenFocus: $greenFocus;
+$labelTealFocus: $tealFocus;
+$labelBlueFocus: $blueFocus;
+$labelVioletFocus: $violetFocus;
+$labelPurpleFocus: $purpleFocus;
+$labelPinkFocus: $pinkFocus;
+$labelBrownFocus: $brownFocus;
+$labelLightRedFocus: $lightRedFocus;
+$labelLightOrangeFocus: $lightOrangeFocus;
+$labelLightYellowFocus: $lightYellowFocus;
+$labelLightOliveFocus: $lightOliveFocus;
+$labelLightGreenFocus: $lightGreenFocus;
+$labelLightTealFocus: $lightTealFocus;
+$labelLightBlueFocus: $lightBlueFocus;
+$labelLightVioletFocus: $lightVioletFocus;
+$labelLightPurpleFocus: $lightPurpleFocus;
+$labelLightPinkFocus: $lightPinkFocus;
+$labelLightBrownFocus: $lightBrownFocus;
+$labelLightGreyFocus: $lightGreyFocus;
+$labelLightBlackFocus: $lightBlackFocus;
+$labelPositiveColorFocus: $positiveColorFocus;
+$labelNegativeColorFocus: $negativeColorFocus;
+$labelFacebookFocusColor: $facebookFocusColor;
+$labelTwitterFocusColor: $twitterFocusColor;
+$labelGooglePlusFocusColor: $googlePlusFocusColor;
+$labelLinkedInFocusColor: $linkedInFocusColor;
+$labelYoutubeFocusColor: $youtubeFocusColor;
+$labelInstagramFocusColor: $instagramFocusColor;
+$labelPinterestFocusColor: $pinterestFocusColor;
+$labelVkFocusColor: $vkFocusColor;
+$labelFullBlackFocus: $fullBlackFocus;
+$labelBlackFocus: $blackFocus;
+$labelGreyFocus: $greyFocus;
+$labelWhiteFocus: $whiteFocus;
+$labelOffWhiteFocus: $offWhiteFocus;
+$labelDarkWhiteFocus: $darkWhiteFocus;
+$labelPrimaryColorDown: $primaryColorDown;
+$labelSecondaryColorDown: $secondaryColorDown;
+$labelRedDown: $redDown;
+$labelOrangeDown: $orangeDown;
+$labelYellowDown: $yellowDown;
+$labelOliveDown: $oliveDown;
+$labelGreenDown: $greenDown;
+$labelTealDown: $tealDown;
+$labelBlueDown: $blueDown;
+$labelVioletDown: $violetDown;
+$labelPurpleDown: $purpleDown;
+$labelPinkDown: $pinkDown;
+$labelBrownDown: $brownDown;
+$labelLightRedDown: $lightRedDown;
+$labelLightOrangeDown: $lightOrangeDown;
+$labelLightYellowDown: $lightYellowDown;
+$labelLightOliveDown: $lightOliveDown;
+$labelLightGreenDown: $lightGreenDown;
+$labelLightTealDown: $lightTealDown;
+$labelLightBlueDown: $lightBlueDown;
+$labelLightVioletDown: $lightVioletDown;
+$labelLightPurpleDown: $lightPurpleDown;
+$labelLightPinkDown: $lightPinkDown;
+$labelLightBrownDown: $lightBrownDown;
+$labelLightGreyDown: $lightGreyDown;
+$labelLightBlackDown: $lightBlackDown;
+$labelPositiveColorDown: $positiveColorDown;
+$labelNegativeColorDown: $negativeColorDown;
+$labelFacebookDownColor: $facebookDownColor;
+$labelTwitterDownColor: $twitterDownColor;
+$labelGooglePlusDownColor: $googlePlusDownColor;
+$labelLinkedInDownColor: $linkedInDownColor;
+$labelYoutubeDownColor: $youtubeDownColor;
+$labelInstagramDownColor: $instagramDownColor;
+$labelPinterestDownColor: $pinterestDownColor;
+$labelVkDownColor: $vkDownColor;
+$labelFullBlackDown: $fullBlackDown;
+$labelBlackDown: $blackDown;
+$labelGreyDown: $greyDown;
+$labelWhiteDown: $whiteDown;
+$labelOffWhiteDown: $offWhiteDown;
+$labelDarkWhiteDown: $darkWhiteDown;
+$labelPrimaryColorActive: $primaryColorActive;
+$labelSecondaryColorActive: $secondaryColorActive;
+$labelRedActive: $redActive;
+$labelOrangeActive: $orangeActive;
+$labelYellowActive: $yellowActive;
+$labelOliveActive: $oliveActive;
+$labelGreenActive: $greenActive;
+$labelTealActive: $tealActive;
+$labelBlueActive: $blueActive;
+$labelVioletActive: $violetActive;
+$labelPurpleActive: $purpleActive;
+$labelPinkActive: $pinkActive;
+$labelBrownActive: $brownActive;
+$labelLightRedActive: $lightRedActive;
+$labelLightOrangeActive: $lightOrangeActive;
+$labelLightYellowActive: $lightYellowActive;
+$labelLightOliveActive: $lightOliveActive;
+$labelLightGreenActive: $lightGreenActive;
+$labelLightTealActive: $lightTealActive;
+$labelLightBlueActive: $lightBlueActive;
+$labelLightVioletActive: $lightVioletActive;
+$labelLightPurpleActive: $lightPurpleActive;
+$labelLightPinkActive: $lightPinkActive;
+$labelLightBrownActive: $lightBrownActive;
+$labelLightGreyActive: $lightGreyActive;
+$labelLightBlackActive: $lightBlackActive;
+$labelPositiveColorActive: $positiveColorActive;
+$labelNegativeColorActive: $negativeColorActive;
+$labelFacebookActiveColor: $facebookActiveColor;
+$labelTwitterActiveColor: $twitterActiveColor;
+$labelGooglePlusActiveColor: $googlePlusActiveColor;
+$labelLinkedInActiveColor: $linkedInActiveColor;
+$labelYoutubeActiveColor: $youtubeActiveColor;
+$labelInstagramActiveColor: $instagramActiveColor;
+$labelPinterestActiveColor: $pinterestActiveColor;
+$labelVkActiveColor: $vkActiveColor;
+$labelFullBlackActive: $fullBlackActive;
+$labelBlackActive: $blackActive;
+$labelGreyActive: $greyActive;
+$labelWhiteActive: $whiteActive;
+$labelOffWhiteActive: $offWhiteActive;
+$labelDarkWhiteActive: $darkWhiteActive;
+
+
+/*******************************
+             Label
+*******************************/
+
+/*-------------------
+       Element
+--------------------*/
+
+$labelVerticalAlign: baseline;
+$labelVerticalMargin: 0;
+$labelHorizontalMargin: $labelRelative2px;
+$labelBackgroundColor: #E8E8E8;
+$labelColor: $labelMutedTextColor;
+$labelBackgroundImage: none;
+$labelVerticalPadding: 0.5833em; /* medium is not $labelEmSize custom value required */
+$labelHorizontalPadding: 0.833em;
+$labelBorderRadius: $labelAbsoluteBorderRadius;
+$labelTextTransform: none;
+$labelFontWeight: bold;
+$labelBorderWidth: 1px;
+$labelBorder: 0 solid transparent;
+
+$labelLineHeightOffset: -($labelVerticalPadding / 2);
+
+$labelLabelTransitionDuration: $labelDefaultDuration;
+$labelLabelTransitionEasing: $labelDefaultEasing;
+$labelTransition: background $labelLabelTransitionDuration $labelLabelTransitionEasing;
+
+/* Group */
+$labelGroupVerticalMargin: 0.5em;
+$labelGroupHorizontalMargin: 0.5em;
+
+/*-------------------
+        Parts
+--------------------*/
+
+/* Link */
+$labelLinkOpacity: 0.5;
+$labelLinkTransition: $labelLabelTransitionDuration opacity $labelLabelTransitionEasing;
+
+/* Icon */
+$labelIconDistance: 0.75em;
+
+/* Image */
+$labelImageHeight: (1em + $labelVerticalPadding * 2);
+
+/* Detail */
+$labelDetailFontWeight: bold;
+$labelDetailOpacity: 0.8;
+$labelDetailIconDistance: 0.25em;
+$labelDetailMargin: 1em;
+
+/* Delete */
+$labelDeleteOpacity: $labelLinkOpacity;
+$labelDeleteSize: $labelRelativeSmall;
+$labelDeleteMargin: 0.5em;
+$labelDeleteTransition: background $labelLabelTransitionDuration $labelLabelTransitionEasing;
+
+/*-------------------
+        Types
+--------------------*/
+
+/* Image Label */
+$labelImageLabelBackground: $labelBackgroundColor;
+$labelImageLabelVerticalPadding: $labelVerticalPadding;
+$labelImageLabelHorizontalPadding: $labelHorizontalPadding;
+$labelImageLabelTextDistance: 0.5em;
+$labelImageLabelDetailDistance: $labelImageLabelTextDistance;
+$labelImageLabelBorderRadius: $labelBorderRadius;
+$labelImageLabelBoxShadow: none;
+$labelImageLabelPadding: $labelImageLabelVerticalPadding $labelImageLabelHorizontalPadding $labelImageLabelVerticalPadding $labelImageLabelTextDistance;
+
+$labelImageLabelImageMargin: -$labelVerticalPadding $labelImageLabelTextDistance -$labelVerticalPadding -$labelImageLabelTextDistance;
+$labelImageLabelImageBorderRadius: $labelImageLabelBorderRadius 0 0 $labelImageLabelBorderRadius;
+$labelImageLabelImageHeight: $labelImageHeight;
+
+$labelImageLabelDetailBackground: $labelStrongTransparentBlack;
+$labelImageLabelDetailPadding: $labelImageLabelVerticalPadding $labelImageLabelHorizontalPadding;
+$labelImageLabelDetailMargin: -$labelImageLabelVerticalPadding -$labelImageLabelHorizontalPadding -$labelImageLabelVerticalPadding $labelImageLabelDetailDistance;
+
+/*-------------------
+        States
+--------------------*/
+
+/* Hover */
+$labelLabelHoverBackgroundColor: #E0E0E0;
+$labelLabelHoverBackgroundImage: none;
+$labelLabelHoverTextColor: $labelHoveredTextColor;
+
+/* Active */
+$labelLabelActiveBackgroundColor: #D0D0D0;
+$labelLabelActiveBackgroundImage: none;
+$labelLabelActiveTextColor: $labelSelectedTextColor;
+
+/* Active Hover */
+$labelLabelActiveHoverBackgroundColor: #C8C8C8;
+$labelLabelActiveHoverBackgroundImage: none;
+$labelLabelActiveHoverTextColor: $labelSelectedTextColor;
+
+
+/*-------------------
+      Variations
+--------------------*/
+
+/* Basic */
+$labelBasicBackground: none $labelWhite;
+$labelBasicBorderWidth: 1px;
+$labelBasicBorder: $labelBasicBorderWidth solid $labelBorderColor;
+$labelBasicColor: $labelTextColor;
+$labelBasicBoxShadow: none;
+
+$labelBasicHoverBackground: $labelBasicBackground;
+$labelBasicHoverColor: $labelLinkHoverColor;
+$labelBasicHoverBorder: $labelBasicBorder;
+$labelBasicHoverBoxShadow: $labelBasicBoxShadow;
+
+/* Tag */
+$labelTagCircleColor: $labelWhite;
+$labelTagCircleSize: 0.5em;
+$labelTagHorizontalPadding: 1.5em;
+$labelTagCircleBoxShadow: 0 -1px 1px 0 rgba(0, 0, 0, 0.3);
+$labelTagTriangleRightOffset: 100%;
+$labelTagTriangleTopOffset: 50%;
+$labelTagTriangleSize: 1.56em;
+$labelTagTriangleBackgroundImage: none;
+$labelTagTransition: none; /* Avoids error with background: inherit; on animation */
+
+/* Ribbon */
+$labelRibbonTriangleSize: 1.2em;
+$labelRibbonShadowColor: rgba(0, 0, 0, 0.15);
+
+$labelRibbonMargin: 1rem;
+$labelRibbonOffset: #{"calc(" + -$labelRibbonMargin + " - " + $labelRibbonTriangleSize + ")"};
+$labelRibbonDistance: #{"calc(" + $labelRibbonMargin + " + " + $labelRibbonTriangleSize + ")"};
+$labelRightRibbonOffset:  #{"calc(100% + " + $labelRibbonMargin + " + " + $labelRibbonTriangleSize + ")"};
+
+$labelRibbonImageTopDistance: 1rem;
+$labelRibbonImageMargin: -0.05rem; /* Rounding Offset on Triangle */
+$labelRibbonImageOffset: #{"calc(" + -$labelRibbonImageMargin + " - " + $labelRibbonTriangleSize + ")"};
+$labelRightRibbonImageOffset:  #{"calc(100% + " + $labelRibbonImageMargin + " + " + $labelRibbonTriangleSize + ")"};
+
+$labelRibbonTableMargin: $labelRelativeMini; /* Rounding Offset on Triangle */
+$labelRibbonTableOffset: #{"calc(" + -$labelRibbonTableMargin + " - " + $labelRibbonTriangleSize + ")"};
+$labelRightRibbonTableOffset:  #{"calc(100% + " + $labelRibbonTableMargin + " + " + $labelRibbonTriangleSize + ")"};
+
+
+/* Colors */
+$labelRedTextColor: $labelWhite;
+$labelOrangeTextColor: $labelWhite;
+$labelYellowTextColor: $labelWhite;
+$labelOliveTextColor: $labelWhite;
+$labelGreenTextColor: $labelWhite;
+$labelTealTextColor: $labelWhite;
+$labelBlueTextColor: $labelWhite;
+$labelVioletTextColor: $labelWhite;
+$labelPurpleTextColor: $labelWhite;
+$labelPinkTextColor: $labelWhite;
+$labelBrownTextColor: $labelWhite;
+$labelGreyTextColor: $labelWhite;
+$labelBlackTextColor: $labelWhite;
+
+$labelRedHoverTextColor: $labelWhite;
+$labelOrangeHoverTextColor: $labelWhite;
+$labelYellowHoverTextColor: $labelWhite;
+$labelOliveHoverTextColor: $labelWhite;
+$labelGreenHoverTextColor: $labelWhite;
+$labelTealHoverTextColor: $labelWhite;
+$labelBlueHoverTextColor: $labelWhite;
+$labelVioletHoverTextColor: $labelWhite;
+$labelPurpleHoverTextColor: $labelWhite;
+$labelPinkHoverTextColor: $labelWhite;
+$labelBrownHoverTextColor: $labelWhite;
+$labelGreyHoverTextColor: $labelWhite;
+$labelBlackHoverTextColor: $labelWhite;
+
+$labelRedRibbonShadow: darken($labelRed, 10);
+$labelOrangeRibbonShadow: darken($labelOrange, 10);
+$labelYellowRibbonShadow: darken($labelYellow, 10);
+$labelOliveRibbonShadow: darken($labelOlive, 10);
+$labelGreenRibbonShadow: darken($labelGreen, 10);
+$labelTealRibbonShadow: darken($labelTeal, 10);
+$labelBlueRibbonShadow: darken($labelBlue, 10);
+$labelVioletRibbonShadow: darken($labelViolet, 10);
+$labelPurpleRibbonShadow: darken($labelPurple, 10);
+$labelPinkRibbonShadow: darken($labelPink, 10);
+$labelBrownRibbonShadow: darken($labelBrown, 10);
+$labelGreyRibbonShadow: darken($labelGrey, 10);
+$labelBlackRibbonShadow: darken($labelBlack, 10);
+
+/* Attached */
+$labelAttachedSegmentPadding: 2rem;
+$labelAttachedVerticalPadding: 0.75em;
+$labelAttachedHorizontalPadding: 1em;
+
+$labelAttachedCornerBorderRadius: $label3px;
+$labelAttachedBorderRadius: $labelBorderRadius;
+
+/* Corner */
+$labelCornerSizeRatio: 1;
+$labelCornerTransition: color $labelLabelTransitionDuration $labelLabelTransitionEasing;
+$labelCornerTriangleSize: 4em;
+$labelCornerTriangleTransition: border-color $labelLabelTransitionDuration $labelLabelTransitionEasing;
+$labelCornerTriangleZIndex: 1;
+
+$labelCornerIconSize: $labelRelativeLarge;
+$labelCornerIconTopOffset: $labelRelative9px;
+$labelCornerIconLeftOffset: $labelRelative11px;
+
+/* Corner Text */
+$labelCornerTextWidth: 3em;
+$labelCornerTextWeight: bold;
+$labelCornerTextSize: 1em;
+
+/* Horizontal */
+$labelHorizontalLabelMinWidth: 3em;
+$labelHorizontalLabelMargin: 0.5em;
+$labelHorizontalLabelVerticalPadding: 0.4em;
+
+/* Circular Padding */
+$labelCircularPadding: 0.5em;
+$labelCircularMinSize: 2em;
+$labelEmptyCircleSize: 0.5em;
+
+/* Pointing */
+$labelPointingBorderColor: inherit;
+$labelPointingBorderWidth: $labelBorderWidth;
+$labelPointingVerticalDistance: 1em;
+$labelPointingTriangleSize: 0.6666em;
+$labelPointingHorizontalDistance: $labelPointingTriangleSize;
+
+$labelPointingTriangleTransition: background $labelLabelTransitionDuration $labelLabelTransitionEasing;
+$labelPointingTriangleZIndex: 2;
+
+/* Basic Pointing */
+$labelBasicPointingTriangleOffset: -$labelPointingBorderWidth;
+
+/* Floating */
+$labelFloatingTopOffset: -1em;
+$labelFloatingLeftOffset: -1.5em;
+$labelFloatingZIndex: 100;
+
+/*-------------------
+        Group
+--------------------*/
+
+/* Sizing */
+$labelMini    : $label9px;
+$labelTiny    : $label10px;
+$labelSmall   : $label11px;
+$labelMedium  : $label12px;
+$labelLarge   : $labelAbsoluteMedium;
+$labelBig     : $labelAbsoluteBig;
+$labelHuge    : $labelAbsoluteHuge;
+$labelMassive : $labelAbsoluteMassive;

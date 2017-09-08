@@ -1,0 +1,966 @@
+$buttonFontName: $fontName;
+$buttonFontSmoothing: $fontSmoothing;
+$buttonHeaderFont: $headerFont;
+$buttonPageFont: $pageFont;
+$buttonGoogleFontName: $googleFontName;
+$buttonImportGoogleFonts: $importGoogleFonts;
+$buttonGoogleFontSizes: $googleFontSizes;
+$buttonGoogleSubset: $googleSubset;
+$buttonGoogleProtocol: $googleProtocol;
+$buttonGoogleFontRequest: $googleFontRequest;
+$buttonEmSize: $emSize;
+$buttonFontSize: $fontSize;
+$buttonRelativeBorderRadius: $relativeBorderRadius;
+$buttonAbsoluteBorderRadius: $absoluteBorderRadius;
+$buttonDefaultBorderRadius: $defaultBorderRadius;
+$buttonPrimaryColor: $primaryColor;
+$buttonSecondaryColor: $secondaryColor;
+$buttonLightPrimaryColor: $lightPrimaryColor;
+$buttonLightSecondaryColor: $lightSecondaryColor;
+$buttonHeaderFontWeight: $headerFontWeight;
+$buttonHeaderLineHeight: $headerLineHeight;
+$buttonH1: $h1;
+$buttonH2: $h2;
+$buttonH3: $h3;
+$buttonH4: $h4;
+$buttonH5: $h5;
+$buttonInputBackground: $inputBackground;
+$buttonInputVerticalPadding: $inputVerticalPadding;
+$buttonInputHorizontalPadding: $inputHorizontalPadding;
+$buttonInputPadding: $inputPadding;
+$buttonInputColor: $inputColor;
+$buttonInputPlaceholderColor: $inputPlaceholderColor;
+$buttonInputPlaceholderFocusColor: $inputPlaceholderFocusColor;
+$buttonInputLineHeight: $inputLineHeight;
+$buttonFocusedFormBorderColor: $focusedFormBorderColor;
+$buttonFocusedFormMutedBorderColor: $focusedFormMutedBorderColor;
+$buttonMiniSize: $miniSize;
+$buttonTinySize: $tinySize;
+$buttonSmallSize: $smallSize;
+$buttonMediumSize: $mediumSize;
+$buttonLargeSize: $largeSize;
+$buttonBigSize: $bigSize;
+$buttonHugeSize: $hugeSize;
+$buttonMassiveSize: $massiveSize;
+$buttonPageBackground: $pageBackground;
+$buttonPageOverflowX: $pageOverflowX;
+$buttonLineHeight: $lineHeight;
+$buttonTextColor: $textColor;
+$buttonParagraphMargin: $paragraphMargin;
+$buttonParagraphLineHeight: $paragraphLineHeight;
+$buttonLinkColor: $linkColor;
+$buttonLinkUnderline: $linkUnderline;
+$buttonLinkHoverColor: $linkHoverColor;
+$buttonLinkHoverUnderline: $linkHoverUnderline;
+$buttonUseCustomScrollbars: $useCustomScrollbars;
+$buttonCustomScrollbarWidth: $customScrollbarWidth;
+$buttonTrackBackground: $trackBackground;
+$buttonTrackBorderRadius: $trackBorderRadius;
+$buttonThumbBorderRadius: $thumbBorderRadius;
+$buttonThumbBackground: $thumbBackground;
+$buttonThumbTransition: $thumbTransition;
+$buttonThumbInactiveBackground: $thumbInactiveBackground;
+$buttonThumbHoverBackground: $thumbHoverBackground;
+$buttonTrackInvertedBackground: $trackInvertedBackground;
+$buttonThumbInvertedBackground: $thumbInvertedBackground;
+$buttonThumbInvertedInactiveBackground: $thumbInvertedInactiveBackground;
+$buttonThumbInvertedHoverBackground: $thumbInvertedHoverBackground;
+$buttonHighlightBackground: $highlightBackground;
+$buttonHighlightColor: $highlightColor;
+$buttonInputHighlightBackground: $inputHighlightBackground;
+$buttonInputHighlightColor: $inputHighlightColor;
+$buttonLoaderSize: $loaderSize;
+$buttonLoaderSpeed: $loaderSpeed;
+$buttonLoaderLineWidth: $loaderLineWidth;
+$buttonLoaderFillColor: $loaderFillColor;
+$buttonLoaderLineColor: $loaderLineColor;
+$buttonInvertedLoaderFillColor: $invertedLoaderFillColor;
+$buttonInvertedLoaderLineColor: $invertedLoaderLineColor;
+$buttonColumnCount: $columnCount;
+$buttonDefaultDuration: $defaultDuration;
+$buttonDefaultEasing: $defaultEasing;
+$buttonMobileBreakpoint: $mobileBreakpoint;
+$buttonTabletBreakpoint: $tabletBreakpoint;
+$buttonComputerBreakpoint: $computerBreakpoint;
+$buttonLargeMonitorBreakpoint: $largeMonitorBreakpoint;
+$buttonWidescreenMonitorBreakpoint: $widescreenMonitorBreakpoint;
+$buttonRed: $red;
+$buttonOrange: $orange;
+$buttonYellow: $yellow;
+$buttonOlive: $olive;
+$buttonGreen: $green;
+$buttonTeal: $teal;
+$buttonBlue: $blue;
+$buttonViolet: $violet;
+$buttonPurple: $purple;
+$buttonPink: $pink;
+$buttonBrown: $brown;
+$buttonGrey: $grey;
+$buttonBlack: $black;
+$buttonLightRed: $lightRed;
+$buttonLightOrange: $lightOrange;
+$buttonLightYellow: $lightYellow;
+$buttonLightOlive: $lightOlive;
+$buttonLightGreen: $lightGreen;
+$buttonLightTeal: $lightTeal;
+$buttonLightBlue: $lightBlue;
+$buttonLightViolet: $lightViolet;
+$buttonLightPurple: $lightPurple;
+$buttonLightPink: $lightPink;
+$buttonLightBrown: $lightBrown;
+$buttonLightGrey: $lightGrey;
+$buttonLightBlack: $lightBlack;
+$buttonFullBlack: $fullBlack;
+$buttonOffWhite: $offWhite;
+$buttonDarkWhite: $darkWhite;
+$buttonMidWhite: $midWhite;
+$buttonWhite: $white;
+$buttonRedBackground: $redBackground;
+$buttonOrangeBackground: $orangeBackground;
+$buttonYellowBackground: $yellowBackground;
+$buttonOliveBackground: $oliveBackground;
+$buttonGreenBackground: $greenBackground;
+$buttonTealBackground: $tealBackground;
+$buttonBlueBackground: $blueBackground;
+$buttonVioletBackground: $violetBackground;
+$buttonPurpleBackground: $purpleBackground;
+$buttonPinkBackground: $pinkBackground;
+$buttonBrownBackground: $brownBackground;
+$buttonRedHeaderColor: $redHeaderColor;
+$buttonOliveHeaderColor: $oliveHeaderColor;
+$buttonGreenHeaderColor: $greenHeaderColor;
+$buttonYellowHeaderColor: $yellowHeaderColor;
+$buttonBlueHeaderColor: $blueHeaderColor;
+$buttonTealHeaderColor: $tealHeaderColor;
+$buttonPinkHeaderColor: $pinkHeaderColor;
+$buttonVioletHeaderColor: $violetHeaderColor;
+$buttonPurpleHeaderColor: $purpleHeaderColor;
+$buttonOrangeHeaderColor: $orangeHeaderColor;
+$buttonBrownHeaderColor: $brownHeaderColor;
+$buttonRedTextColor: $redTextColor;
+$buttonOrangeTextColor: $orangeTextColor;
+$buttonYellowTextColor: $yellowTextColor;
+$buttonOliveTextColor: $oliveTextColor;
+$buttonGreenTextColor: $greenTextColor;
+$buttonTealTextColor: $tealTextColor;
+$buttonBlueTextColor: $blueTextColor;
+$buttonVioletTextColor: $violetTextColor;
+$buttonPurpleTextColor: $purpleTextColor;
+$buttonPinkTextColor: $pinkTextColor;
+$buttonBrownTextColor: $brownTextColor;
+$buttonRedBorderColor: $redBorderColor;
+$buttonOrangeBorderColor: $orangeBorderColor;
+$buttonYellowBorderColor: $yellowBorderColor;
+$buttonOliveBorderColor: $oliveBorderColor;
+$buttonGreenBorderColor: $greenBorderColor;
+$buttonTealBorderColor: $tealBorderColor;
+$buttonBlueBorderColor: $blueBorderColor;
+$buttonVioletBorderColor: $violetBorderColor;
+$buttonPurpleBorderColor: $purpleBorderColor;
+$buttonPinkBorderColor: $pinkBorderColor;
+$buttonBrownBorderColor: $brownBorderColor;
+$buttonSubtleTransparentBlack: $subtleTransparentBlack;
+$buttonTransparentBlack: $transparentBlack;
+$buttonStrongTransparentBlack: $strongTransparentBlack;
+$buttonVeryStrongTransparentBlack: $veryStrongTransparentBlack;
+$buttonSubtleTransparentWhite: $subtleTransparentWhite;
+$buttonTransparentWhite: $transparentWhite;
+$buttonStrongTransparentWhite: $strongTransparentWhite;
+$buttonSubtleGradient: $subtleGradient;
+$buttonSubtleShadow: $subtleShadow;
+$buttonFloatingShadow: $floatingShadow;
+$buttonPositiveColor: $positiveColor;
+$buttonPositiveBackgroundColor: $positiveBackgroundColor;
+$buttonPositiveBorderColor: $positiveBorderColor;
+$buttonPositiveHeaderColor: $positiveHeaderColor;
+$buttonPositiveTextColor: $positiveTextColor;
+$buttonNegativeColor: $negativeColor;
+$buttonNegativeBackgroundColor: $negativeBackgroundColor;
+$buttonNegativeBorderColor: $negativeBorderColor;
+$buttonNegativeHeaderColor: $negativeHeaderColor;
+$buttonNegativeTextColor: $negativeTextColor;
+$buttonInfoColor: $infoColor;
+$buttonInfoBackgroundColor: $infoBackgroundColor;
+$buttonInfoBorderColor: $infoBorderColor;
+$buttonInfoHeaderColor: $infoHeaderColor;
+$buttonInfoTextColor: $infoTextColor;
+$buttonWarningColor: $warningColor;
+$buttonWarningBorderColor: $warningBorderColor;
+$buttonWarningBackgroundColor: $warningBackgroundColor;
+$buttonWarningHeaderColor: $warningHeaderColor;
+$buttonWarningTextColor: $warningTextColor;
+$buttonImagePath: $imagePath;
+$buttonFontPath: $fontPath;
+$buttonMini: $mini;
+$buttonTiny: $tiny;
+$buttonSmall: $small;
+$buttonMedium: $medium;
+$buttonLarge: $large;
+$buttonBig: $big;
+$buttonHuge: $huge;
+$buttonMassive: $massive;
+$buttonRelativeMini: $relativeMini;
+$buttonRelativeTiny: $relativeTiny;
+$buttonRelativeSmall: $relativeSmall;
+$buttonRelativeMedium: $relativeMedium;
+$buttonRelativeLarge: $relativeLarge;
+$buttonRelativeBig: $relativeBig;
+$buttonRelativeHuge: $relativeHuge;
+$buttonRelativeMassive: $relativeMassive;
+$buttonAbsoluteMini: $absoluteMini;
+$buttonAbsoluteTiny: $absoluteTiny;
+$buttonAbsoluteSmall: $absoluteSmall;
+$buttonAbsoluteMedium: $absoluteMedium;
+$buttonAbsoluteLarge: $absoluteLarge;
+$buttonAbsoluteBig: $absoluteBig;
+$buttonAbsoluteHuge: $absoluteHuge;
+$buttonAbsoluteMassive: $absoluteMassive;
+$buttonIconWidth: $iconWidth;
+$buttonDarkTextColor: $darkTextColor;
+$buttonMutedTextColor: $mutedTextColor;
+$buttonLightTextColor: $lightTextColor;
+$buttonUnselectedTextColor: $unselectedTextColor;
+$buttonHoveredTextColor: $hoveredTextColor;
+$buttonPressedTextColor: $pressedTextColor;
+$buttonSelectedTextColor: $selectedTextColor;
+$buttonDisabledTextColor: $disabledTextColor;
+$buttonInvertedTextColor: $invertedTextColor;
+$buttonInvertedMutedTextColor: $invertedMutedTextColor;
+$buttonInvertedLightTextColor: $invertedLightTextColor;
+$buttonInvertedUnselectedTextColor: $invertedUnselectedTextColor;
+$buttonInvertedHoveredTextColor: $invertedHoveredTextColor;
+$buttonInvertedPressedTextColor: $invertedPressedTextColor;
+$buttonInvertedSelectedTextColor: $invertedSelectedTextColor;
+$buttonInvertedDisabledTextColor: $invertedDisabledTextColor;
+$buttonFacebookColor: $facebookColor;
+$buttonTwitterColor: $twitterColor;
+$buttonGooglePlusColor: $googlePlusColor;
+$buttonLinkedInColor: $linkedInColor;
+$buttonYoutubeColor: $youtubeColor;
+$buttonPinterestColor: $pinterestColor;
+$buttonVkColor: $vkColor;
+$buttonInstagramColor: $instagramColor;
+$buttonCircularRadius: $circularRadius;
+$buttonBorderColor: $borderColor;
+$buttonStrongBorderColor: $strongBorderColor;
+$buttonInternalBorderColor: $internalBorderColor;
+$buttonSelectedBorderColor: $selectedBorderColor;
+$buttonStrongSelectedBorderColor: $strongSelectedBorderColor;
+$buttonDisabledBorderColor: $disabledBorderColor;
+$buttonSolidInternalBorderColor: $solidInternalBorderColor;
+$buttonSolidBorderColor: $solidBorderColor;
+$buttonSolidSelectedBorderColor: $solidSelectedBorderColor;
+$buttonWhiteBorderColor: $whiteBorderColor;
+$buttonSelectedWhiteBorderColor: $selectedWhiteBorderColor;
+$buttonSolidWhiteBorderColor: $solidWhiteBorderColor;
+$buttonSelectedSolidWhiteBorderColor: $selectedSolidWhiteBorderColor;
+$buttonLoaderOffset: $loaderOffset;
+$buttonLoaderMargin: $loaderMargin;
+$buttonScrollbarWidth: $scrollbarWidth;
+$buttonGlyphWidth: $glyphWidth;
+$buttonLineHeightOffset: $lineHeightOffset;
+$buttonHeaderLineHeightOffset: $headerLineHeightOffset;
+$buttonHeaderTopMargin: $headerTopMargin;
+$buttonHeaderBottomMargin: $headerBottomMargin;
+$buttonHeaderMargin: $headerMargin;
+$buttonPageMinWidth: $pageMinWidth;
+$buttonSuccessBackgroundColor: $successBackgroundColor;
+$buttonSuccessColor: $successColor;
+$buttonSuccessBorderColor: $successBorderColor;
+$buttonSuccessHeaderColor: $successHeaderColor;
+$buttonSuccessTextColor: $successTextColor;
+$buttonErrorBackgroundColor: $errorBackgroundColor;
+$buttonErrorColor: $errorColor;
+$buttonErrorBorderColor: $errorBorderColor;
+$buttonErrorHeaderColor: $errorHeaderColor;
+$buttonErrorTextColor: $errorTextColor;
+$buttonLargestMobileScreen: $largestMobileScreen;
+$buttonLargestTabletScreen: $largestTabletScreen;
+$buttonLargestSmallMonitor: $largestSmallMonitor;
+$buttonLargestLargeMonitor: $largestLargeMonitor;
+$button1px: $_1px;
+$button2px: $_2px;
+$button3px: $_3px;
+$button4px: $_4px;
+$button5px: $_5px;
+$button6px: $_6px;
+$button7px: $_7px;
+$button8px: $_8px;
+$button9px: $_9px;
+$button10px: $_10px;
+$button11px: $_11px;
+$button12px: $_12px;
+$button13px: $_13px;
+$button14px: $_14px;
+$button15px: $_15px;
+$button16px: $_16px;
+$button17px: $_17px;
+$button18px: $_18px;
+$button19px: $_19px;
+$button20px: $_20px;
+$button21px: $_21px;
+$button22px: $_22px;
+$button23px: $_23px;
+$button24px: $_24px;
+$button25px: $_25px;
+$button26px: $_26px;
+$button27px: $_27px;
+$button28px: $_28px;
+$button29px: $_29px;
+$button30px: $_30px;
+$button31px: $_31px;
+$button32px: $_32px;
+$button33px: $_33px;
+$button34px: $_34px;
+$button35px: $_35px;
+$button36px: $_36px;
+$button37px: $_37px;
+$button38px: $_38px;
+$button39px: $_39px;
+$button40px: $_40px;
+$button41px: $_41px;
+$button42px: $_42px;
+$button43px: $_43px;
+$button44px: $_44px;
+$button45px: $_45px;
+$button46px: $_46px;
+$button47px: $_47px;
+$button48px: $_48px;
+$button49px: $_49px;
+$button50px: $_50px;
+$button51px: $_51px;
+$button52px: $_52px;
+$button53px: $_53px;
+$button54px: $_54px;
+$button55px: $_55px;
+$button56px: $_56px;
+$button57px: $_57px;
+$button58px: $_58px;
+$button59px: $_59px;
+$button60px: $_60px;
+$button61px: $_61px;
+$button62px: $_62px;
+$button63px: $_63px;
+$button64px: $_64px;
+$buttonRelative1px: $relative1px;
+$buttonRelative2px: $relative2px;
+$buttonRelative3px: $relative3px;
+$buttonRelative4px: $relative4px;
+$buttonRelative5px: $relative5px;
+$buttonRelative6px: $relative6px;
+$buttonRelative7px: $relative7px;
+$buttonRelative8px: $relative8px;
+$buttonRelative9px: $relative9px;
+$buttonRelative10px: $relative10px;
+$buttonRelative11px: $relative11px;
+$buttonRelative12px: $relative12px;
+$buttonRelative13px: $relative13px;
+$buttonRelative14px: $relative14px;
+$buttonRelative15px: $relative15px;
+$buttonRelative16px: $relative16px;
+$buttonRelative17px: $relative17px;
+$buttonRelative18px: $relative18px;
+$buttonRelative19px: $relative19px;
+$buttonRelative20px: $relative20px;
+$buttonRelative21px: $relative21px;
+$buttonRelative22px: $relative22px;
+$buttonRelative23px: $relative23px;
+$buttonRelative24px: $relative24px;
+$buttonRelative25px: $relative25px;
+$buttonRelative26px: $relative26px;
+$buttonRelative27px: $relative27px;
+$buttonRelative28px: $relative28px;
+$buttonRelative29px: $relative29px;
+$buttonRelative30px: $relative30px;
+$buttonRelative31px: $relative31px;
+$buttonRelative32px: $relative32px;
+$buttonRelative33px: $relative33px;
+$buttonRelative34px: $relative34px;
+$buttonRelative35px: $relative35px;
+$buttonRelative36px: $relative36px;
+$buttonRelative37px: $relative37px;
+$buttonRelative38px: $relative38px;
+$buttonRelative39px: $relative39px;
+$buttonRelative40px: $relative40px;
+$buttonRelative41px: $relative41px;
+$buttonRelative42px: $relative42px;
+$buttonRelative43px: $relative43px;
+$buttonRelative44px: $relative44px;
+$buttonRelative45px: $relative45px;
+$buttonRelative46px: $relative46px;
+$buttonRelative47px: $relative47px;
+$buttonRelative48px: $relative48px;
+$buttonRelative49px: $relative49px;
+$buttonRelative50px: $relative50px;
+$buttonRelative51px: $relative51px;
+$buttonRelative52px: $relative52px;
+$buttonRelative53px: $relative53px;
+$buttonRelative54px: $relative54px;
+$buttonRelative55px: $relative55px;
+$buttonRelative56px: $relative56px;
+$buttonRelative57px: $relative57px;
+$buttonRelative58px: $relative58px;
+$buttonRelative59px: $relative59px;
+$buttonRelative60px: $relative60px;
+$buttonRelative61px: $relative61px;
+$buttonRelative62px: $relative62px;
+$buttonRelative63px: $relative63px;
+$buttonRelative64px: $relative64px;
+$buttonOneWide: $oneWide;
+$buttonTwoWide: $twoWide;
+$buttonThreeWide: $threeWide;
+$buttonFourWide: $fourWide;
+$buttonFiveWide: $fiveWide;
+$buttonSixWide: $sixWide;
+$buttonSevenWide: $sevenWide;
+$buttonEightWide: $eightWide;
+$buttonNineWide: $nineWide;
+$buttonTenWide: $tenWide;
+$buttonElevenWide: $elevenWide;
+$buttonTwelveWide: $twelveWide;
+$buttonThirteenWide: $thirteenWide;
+$buttonFourteenWide: $fourteenWide;
+$buttonFifteenWide: $fifteenWide;
+$buttonSixteenWide: $sixteenWide;
+$buttonOneColumn: $oneColumn;
+$buttonTwoColumn: $twoColumn;
+$buttonThreeColumn: $threeColumn;
+$buttonFourColumn: $fourColumn;
+$buttonFiveColumn: $fiveColumn;
+$buttonSixColumn: $sixColumn;
+$buttonSevenColumn: $sevenColumn;
+$buttonEightColumn: $eightColumn;
+$buttonNineColumn: $nineColumn;
+$buttonTenColumn: $tenColumn;
+$buttonElevenColumn: $elevenColumn;
+$buttonTwelveColumn: $twelveColumn;
+$buttonThirteenColumn: $thirteenColumn;
+$buttonFourteenColumn: $fourteenColumn;
+$buttonFifteenColumn: $fifteenColumn;
+$buttonSixteenColumn: $sixteenColumn;
+$buttonDisabledOpacity: $disabledOpacity;
+$buttonFloatingShadowHover: $floatingShadowHover;
+$buttonPrimaryColorHover: $primaryColorHover;
+$buttonSecondaryColorHover: $secondaryColorHover;
+$buttonRedHover: $redHover;
+$buttonOrangeHover: $orangeHover;
+$buttonYellowHover: $yellowHover;
+$buttonOliveHover: $oliveHover;
+$buttonGreenHover: $greenHover;
+$buttonTealHover: $tealHover;
+$buttonBlueHover: $blueHover;
+$buttonVioletHover: $violetHover;
+$buttonPurpleHover: $purpleHover;
+$buttonPinkHover: $pinkHover;
+$buttonBrownHover: $brownHover;
+$buttonLightRedHover: $lightRedHover;
+$buttonLightOrangeHover: $lightOrangeHover;
+$buttonLightYellowHover: $lightYellowHover;
+$buttonLightOliveHover: $lightOliveHover;
+$buttonLightGreenHover: $lightGreenHover;
+$buttonLightTealHover: $lightTealHover;
+$buttonLightBlueHover: $lightBlueHover;
+$buttonLightVioletHover: $lightVioletHover;
+$buttonLightPurpleHover: $lightPurpleHover;
+$buttonLightPinkHover: $lightPinkHover;
+$buttonLightBrownHover: $lightBrownHover;
+$buttonLightGreyHover: $lightGreyHover;
+$buttonLightBlackHover: $lightBlackHover;
+$buttonPositiveColorHover: $positiveColorHover;
+$buttonNegativeColorHover: $negativeColorHover;
+$buttonFacebookHoverColor: $facebookHoverColor;
+$buttonTwitterHoverColor: $twitterHoverColor;
+$buttonGooglePlusHoverColor: $googlePlusHoverColor;
+$buttonLinkedInHoverColor: $linkedInHoverColor;
+$buttonYoutubeHoverColor: $youtubeHoverColor;
+$buttonInstagramHoverColor: $instagramHoverColor;
+$buttonPinterestHoverColor: $pinterestHoverColor;
+$buttonVkHoverColor: $vkHoverColor;
+$buttonFullBlackHover: $fullBlackHover;
+$buttonBlackHover: $blackHover;
+$buttonGreyHover: $greyHover;
+$buttonWhiteHover: $whiteHover;
+$buttonOffWhiteHover: $offWhiteHover;
+$buttonDarkWhiteHover: $darkWhiteHover;
+$buttonPrimaryColorFocus: $primaryColorFocus;
+$buttonSecondaryColorFocus: $secondaryColorFocus;
+$buttonRedFocus: $redFocus;
+$buttonOrangeFocus: $orangeFocus;
+$buttonYellowFocus: $yellowFocus;
+$buttonOliveFocus: $oliveFocus;
+$buttonGreenFocus: $greenFocus;
+$buttonTealFocus: $tealFocus;
+$buttonBlueFocus: $blueFocus;
+$buttonVioletFocus: $violetFocus;
+$buttonPurpleFocus: $purpleFocus;
+$buttonPinkFocus: $pinkFocus;
+$buttonBrownFocus: $brownFocus;
+$buttonLightRedFocus: $lightRedFocus;
+$buttonLightOrangeFocus: $lightOrangeFocus;
+$buttonLightYellowFocus: $lightYellowFocus;
+$buttonLightOliveFocus: $lightOliveFocus;
+$buttonLightGreenFocus: $lightGreenFocus;
+$buttonLightTealFocus: $lightTealFocus;
+$buttonLightBlueFocus: $lightBlueFocus;
+$buttonLightVioletFocus: $lightVioletFocus;
+$buttonLightPurpleFocus: $lightPurpleFocus;
+$buttonLightPinkFocus: $lightPinkFocus;
+$buttonLightBrownFocus: $lightBrownFocus;
+$buttonLightGreyFocus: $lightGreyFocus;
+$buttonLightBlackFocus: $lightBlackFocus;
+$buttonPositiveColorFocus: $positiveColorFocus;
+$buttonNegativeColorFocus: $negativeColorFocus;
+$buttonFacebookFocusColor: $facebookFocusColor;
+$buttonTwitterFocusColor: $twitterFocusColor;
+$buttonGooglePlusFocusColor: $googlePlusFocusColor;
+$buttonLinkedInFocusColor: $linkedInFocusColor;
+$buttonYoutubeFocusColor: $youtubeFocusColor;
+$buttonInstagramFocusColor: $instagramFocusColor;
+$buttonPinterestFocusColor: $pinterestFocusColor;
+$buttonVkFocusColor: $vkFocusColor;
+$buttonFullBlackFocus: $fullBlackFocus;
+$buttonBlackFocus: $blackFocus;
+$buttonGreyFocus: $greyFocus;
+$buttonWhiteFocus: $whiteFocus;
+$buttonOffWhiteFocus: $offWhiteFocus;
+$buttonDarkWhiteFocus: $darkWhiteFocus;
+$buttonPrimaryColorDown: $primaryColorDown;
+$buttonSecondaryColorDown: $secondaryColorDown;
+$buttonRedDown: $redDown;
+$buttonOrangeDown: $orangeDown;
+$buttonYellowDown: $yellowDown;
+$buttonOliveDown: $oliveDown;
+$buttonGreenDown: $greenDown;
+$buttonTealDown: $tealDown;
+$buttonBlueDown: $blueDown;
+$buttonVioletDown: $violetDown;
+$buttonPurpleDown: $purpleDown;
+$buttonPinkDown: $pinkDown;
+$buttonBrownDown: $brownDown;
+$buttonLightRedDown: $lightRedDown;
+$buttonLightOrangeDown: $lightOrangeDown;
+$buttonLightYellowDown: $lightYellowDown;
+$buttonLightOliveDown: $lightOliveDown;
+$buttonLightGreenDown: $lightGreenDown;
+$buttonLightTealDown: $lightTealDown;
+$buttonLightBlueDown: $lightBlueDown;
+$buttonLightVioletDown: $lightVioletDown;
+$buttonLightPurpleDown: $lightPurpleDown;
+$buttonLightPinkDown: $lightPinkDown;
+$buttonLightBrownDown: $lightBrownDown;
+$buttonLightGreyDown: $lightGreyDown;
+$buttonLightBlackDown: $lightBlackDown;
+$buttonPositiveColorDown: $positiveColorDown;
+$buttonNegativeColorDown: $negativeColorDown;
+$buttonFacebookDownColor: $facebookDownColor;
+$buttonTwitterDownColor: $twitterDownColor;
+$buttonGooglePlusDownColor: $googlePlusDownColor;
+$buttonLinkedInDownColor: $linkedInDownColor;
+$buttonYoutubeDownColor: $youtubeDownColor;
+$buttonInstagramDownColor: $instagramDownColor;
+$buttonPinterestDownColor: $pinterestDownColor;
+$buttonVkDownColor: $vkDownColor;
+$buttonFullBlackDown: $fullBlackDown;
+$buttonBlackDown: $blackDown;
+$buttonGreyDown: $greyDown;
+$buttonWhiteDown: $whiteDown;
+$buttonOffWhiteDown: $offWhiteDown;
+$buttonDarkWhiteDown: $darkWhiteDown;
+$buttonPrimaryColorActive: $primaryColorActive;
+$buttonSecondaryColorActive: $secondaryColorActive;
+$buttonRedActive: $redActive;
+$buttonOrangeActive: $orangeActive;
+$buttonYellowActive: $yellowActive;
+$buttonOliveActive: $oliveActive;
+$buttonGreenActive: $greenActive;
+$buttonTealActive: $tealActive;
+$buttonBlueActive: $blueActive;
+$buttonVioletActive: $violetActive;
+$buttonPurpleActive: $purpleActive;
+$buttonPinkActive: $pinkActive;
+$buttonBrownActive: $brownActive;
+$buttonLightRedActive: $lightRedActive;
+$buttonLightOrangeActive: $lightOrangeActive;
+$buttonLightYellowActive: $lightYellowActive;
+$buttonLightOliveActive: $lightOliveActive;
+$buttonLightGreenActive: $lightGreenActive;
+$buttonLightTealActive: $lightTealActive;
+$buttonLightBlueActive: $lightBlueActive;
+$buttonLightVioletActive: $lightVioletActive;
+$buttonLightPurpleActive: $lightPurpleActive;
+$buttonLightPinkActive: $lightPinkActive;
+$buttonLightBrownActive: $lightBrownActive;
+$buttonLightGreyActive: $lightGreyActive;
+$buttonLightBlackActive: $lightBlackActive;
+$buttonPositiveColorActive: $positiveColorActive;
+$buttonNegativeColorActive: $negativeColorActive;
+$buttonFacebookActiveColor: $facebookActiveColor;
+$buttonTwitterActiveColor: $twitterActiveColor;
+$buttonGooglePlusActiveColor: $googlePlusActiveColor;
+$buttonLinkedInActiveColor: $linkedInActiveColor;
+$buttonYoutubeActiveColor: $youtubeActiveColor;
+$buttonInstagramActiveColor: $instagramActiveColor;
+$buttonPinterestActiveColor: $pinterestActiveColor;
+$buttonVkActiveColor: $vkActiveColor;
+$buttonFullBlackActive: $fullBlackActive;
+$buttonBlackActive: $blackActive;
+$buttonGreyActive: $greyActive;
+$buttonWhiteActive: $whiteActive;
+$buttonOffWhiteActive: $offWhiteActive;
+$buttonDarkWhiteActive: $darkWhiteActive;
+
+
+/*******************************
+            Button
+*******************************/
+
+/*-------------------
+       Element
+--------------------*/
+
+/* Button */
+$buttonVerticalMargin: 0;
+$buttonHorizontalMargin: 0.25em;
+$buttonBackgroundColor: #E0E1E2;
+$buttonBackgroundImage: none;
+$buttonBackground: $buttonBackgroundColor $buttonBackgroundImage;
+$buttonLineHeight: 1em;
+
+/* Button defaults to using same height as input globally */
+$buttonVerticalPadding: $buttonInputVerticalPadding;
+$buttonHorizontalPadding: 1.5em;
+
+/* Text */
+$buttonTextTransform: none;
+$buttonTapColor: transparent;
+$buttonFontFamily: $buttonPageFont;
+$buttonFontWeight: bold;
+$buttonTextColor: rgba(0, 0, 0, 0.6);
+$buttonTextShadow: none;
+$buttonInvertedTextShadow: $buttonTextShadow;
+$buttonBorderRadius: $buttonDefaultBorderRadius;
+$buttonVerticalAlign: baseline;
+
+/* Internal Shadow */
+$buttonShadowDistance: 0;
+$buttonShadowOffset: ($buttonShadowDistance / 2);
+$buttonShadowBoxShadow: 0 -$buttonShadowDistance 0 0 $buttonBorderColor inset;
+
+/* Box Shadow */
+$buttonBorderBoxShadowColor: transparent;
+$buttonBorderBoxShadowWidth: 1px;
+$buttonBorderBoxShadow: 0 0 0 $buttonBorderBoxShadowWidth $buttonBorderBoxShadowColor inset;
+$buttonBoxShadow:
+  $buttonBorderBoxShadow,
+  $buttonShadowBoxShadow
+;
+
+/* Icon */
+$buttonIconHeight: $buttonRelativeTiny;
+$buttonIconOpacity: 0.8;
+$buttonIconDistance: $buttonRelative6px;
+$buttonIconColor: '';
+$buttonIconTransition: opacity $buttonDefaultDuration $buttonDefaultEasing;
+$buttonIconVerticalAlign: '';
+
+$buttonIconMargin: 0 $buttonIconDistance 0 -($buttonIconDistance / 2);
+$buttonRightIconMargin: 0 -($buttonIconDistance / 2) 0 $buttonIconDistance;
+
+/* Loader */
+$buttonInvertedLoaderFillColor: rgba(0, 0, 0, 0.15);
+
+$buttonTransition:
+  opacity $buttonDefaultDuration $buttonDefaultEasing,
+  background-color $buttonDefaultDuration $buttonDefaultEasing,
+  color $buttonDefaultDuration $buttonDefaultEasing,
+  box-shadow $buttonDefaultDuration $buttonDefaultEasing,
+  background $buttonDefaultDuration $buttonDefaultEasing
+;
+/*
+$buttonWillChange: box-shadow, transform, opacity, color, background;
+*/
+$buttonWillChange: '';
+
+/*-------------------
+        Group
+--------------------*/
+
+$buttonGroupBoxShadow: none;
+$buttonGroupButtonBoxShadow: $buttonBoxShadow;
+$buttonVerticalBoxShadow: none;
+$buttonGroupButtonOffset: 0 0 0 0;
+$buttonVerticalGroupOffset: 0 0 0 0;
+
+/*-------------------
+        States
+--------------------*/
+
+/* Hovered */
+$buttonHoverBackgroundColor: #CACBCD;
+$buttonHoverBackgroundImage: $buttonBackgroundImage;
+$buttonHoverBoxShadow: $buttonBoxShadow;
+$buttonHoverColor: $buttonHoveredTextColor;
+$buttonIconHoverOpacity: 0.85;
+
+/* Focused */
+$buttonFocusBackgroundColor: $buttonHoverBackgroundColor;
+$buttonFocusBackgroundImage: '';
+$buttonFocusBoxShadow: '';
+$buttonFocusColor: $buttonHoveredTextColor;
+$buttonIconFocusOpacity: 0.85;
+
+/* Disabled */
+$buttonDisabledBackgroundImage: none;
+$buttonDisabledBoxShadow: none;
+
+/* Pressed Down */
+$buttonDownBackgroundColor: #BABBBC;
+$buttonDownBackgroundImage: '';
+$buttonDownPressedShadow: none;
+$buttonDownBoxShadow:
+  $buttonBorderBoxShadow,
+  $buttonDownPressedShadow
+;
+$buttonDownColor: $buttonPressedTextColor;
+
+/* Active */
+$buttonActiveBackgroundColor: #C0C1C2;
+$buttonActiveBackgroundImage: none;
+$buttonActiveColor: $buttonSelectedTextColor;
+$buttonActiveBoxShadow: $buttonBorderBoxShadow;
+
+/* Active + Hovered */
+$buttonActiveHoverBackgroundColor: $buttonActiveBackgroundColor;
+$buttonActiveHoverBackgroundImage: none;
+$buttonActiveHoverColor: $buttonActiveColor;
+$buttonActiveHoverBoxShadow: $buttonActiveBoxShadow;
+
+/* Loading */
+$buttonLoadingOpacity: 1;
+$buttonLoadingPointerEvents: auto;
+$buttonLoadingTransition:
+  all 0s linear,
+  opacity $buttonDefaultDuration $buttonDefaultEasing
+;
+
+/*-------------------
+        Types
+--------------------*/
+
+/* Or */
+$buttonOrText: 'or';
+
+$buttonOrGap: 0.3em;
+$buttonOrHeight: (#{$buttonVerticalPadding} * 2) + 1em;
+$buttonOrZIndex: 3;
+
+$buttonOrCircleDistanceToEdge: ($buttonVerticalPadding);
+$buttonOrCircleSize: $buttonOrHeight - $buttonOrCircleDistanceToEdge;
+$buttonOrLineHeight: ($buttonOrCircleSize);
+$buttonOrBoxShadow: $buttonBorderBoxShadow;
+
+$buttonOrVerticalOffset: -($buttonOrCircleSize / 2);
+$buttonOrHorizontalOffset: -($buttonOrCircleSize / 2);
+
+$buttonOrBackgroundColor: $buttonWhite;
+$buttonOrTextShadow: $buttonInvertedTextShadow;
+$buttonOrTextStyle: normal;
+$buttonOrTextWeight: bold;
+$buttonOrTextColor: $buttonLightTextColor;
+
+
+$buttonOrSpacerHeight: $buttonVerticalPadding;
+$buttonOrSpacerColor: transparent;
+
+/* Icon */
+$buttonIconButtonOpacity: 0.9;
+
+/* Labeled */
+$buttonLabeledLabelFontSize: $buttonMedium;
+$buttonLabeledLabelAlign: center;
+$buttonLabeledLabelPadding: '';
+$buttonLabeledLabelFontSize: $buttonRelativeMedium;
+$buttonLabeledLabelBorderColor: $buttonBorderColor;
+$buttonLabeledLabelBorderOffset: -$buttonBorderBoxShadowWidth;
+$buttonLabeledTagLabelSize: 1.85em; /* hypotenuse of triangle */
+$buttonLabeledIconMargin: 0;
+
+/* Labeled Icon */
+$buttonLabeledIconWidth: 1em + (#{$buttonVerticalPadding} * 2);
+$buttonLabeledIconBackgroundColor: rgba(0, 0, 0, 0.05);
+$buttonLabeledIconPadding: ($buttonHorizontalPadding + $buttonLabeledIconWidth);
+$buttonLabeledIconBorder: transparent;
+$buttonLabeledIconColor: '';
+
+$buttonLabeledIconLeftShadow: -1px 0 0 0 $buttonLabeledIconBorder inset;
+$buttonLabeledIconRightShadow: 1px 0 0 0 $buttonLabeledIconBorder inset;
+
+
+/* Inverted */
+$buttonInvertedBorderSize: 2px;
+$buttonInvertedTextColor: $buttonWhite;
+$buttonInvertedTextHoverColor: $buttonHoverColor;
+$buttonInvertedGroupButtonOffset: 0 0 0 -($buttonInvertedBorderSize);
+$buttonInvertedVerticalGroupButtonOffset: 0 0 -($buttonInvertedBorderSize) 0;
+
+/* Basic */
+$buttonBasicBorderRadius: $buttonBorderRadius;
+$buttonBasicBorderSize: 1px;
+$buttonBasicTextColor: $buttonTextColor;
+$buttonBasicColoredBorderSize: 1px;
+
+$buttonBasicBackground: transparent none;
+$buttonBasicFontWeight: normal;
+$buttonBasicBorder: 1px solid $buttonBorderColor;
+$buttonBasicBoxShadow: 0 0 0 $buttonBasicBorderSize $buttonBorderColor inset;
+$buttonBasicLoadingColor: $buttonOffWhite;
+$buttonBasicTextTransform: none;
+
+/* Basic Hover */
+$buttonBasicHoverBackground: #FFFFFF;
+$buttonBasicHoverTextColor: $buttonHoveredTextColor;
+$buttonBasicHoverBoxShadow: 0 0 0 $buttonBasicBorderSize $buttonSelectedBorderColor inset, 0 0 0 0 $buttonBorderColor inset
+;
+/* Basic Focus */
+$buttonBasicFocusBackground: $buttonBasicHoverBackground;
+$buttonBasicFocusTextColor: $buttonBasicHoverTextColor;
+$buttonBasicFocusBoxShadow: $buttonBasicHoverBoxShadow;
+
+/* Basic Down */
+$buttonBasicDownBackground: #F8F8F8;
+$buttonBasicDownTextColor: $buttonPressedTextColor;
+$buttonBasicDownBoxShadow: 0 0 0 $buttonBasicBorderSize rgba(0, 0, 0, 0.15) inset, 0 1px 4px 0 $buttonBorderColor inset
+;
+/* Basic Active */
+$buttonBasicActiveBackground: $buttonTransparentBlack;
+$buttonBasicActiveBoxShadow: '';
+$buttonBasicActiveTextColor: $buttonSelectedTextColor;
+
+/* Basic Inverted */
+$buttonBasicInvertedBackground: transparent;
+$buttonBasicInvertedFocusBackground: transparent;
+$buttonBasicInvertedDownBackground: $buttonTransparentWhite;
+$buttonBasicInvertedActiveBackground: $buttonTransparentWhite;
+
+$buttonBasicInvertedBoxShadow: 0 0 0 $buttonInvertedBorderSize rgba(255, 255, 255, 0.5) inset;
+$buttonBasicInvertedHoverBoxShadow: 0 0 0 $buttonInvertedBorderSize rgba(255, 255, 255, 1) inset;
+$buttonBasicInvertedFocusBoxShadow: 0 0 0 $buttonInvertedBorderSize rgba(255, 255, 255, 1) inset;
+$buttonBasicInvertedDownBoxShadow: 0 0 0 $buttonInvertedBorderSize rgba(255, 255, 255, 0.9) inset;
+$buttonBasicInvertedActiveBoxShadow: 0 0 0 $buttonInvertedBorderSize rgba(255, 255, 255, 0.7) inset;
+
+$buttonBasicInvertedColor: $buttonDarkWhite;
+$buttonBasicInvertedHoverColor: $buttonDarkWhiteHover;
+$buttonBasicInvertedDownColor: $buttonDarkWhiteActive;
+$buttonBasicInvertedActiveColor: $buttonInvertedTextColor;
+
+
+/* Basic Group */
+$buttonBasicGroupBorder: $buttonBasicBorderSize solid $buttonBorderColor;
+$buttonBasicGroupBoxShadow: none;
+
+/*-------------------
+      Variations
+--------------------*/
+
+/* Colors */
+$buttonColoredBackgroundImage: none;
+$buttonColoredBoxShadow: $buttonShadowBoxShadow;
+
+/* Colored */
+$buttonBrownTextColor: $buttonInvertedTextColor;
+$buttonBrownTextShadow: $buttonInvertedTextShadow;
+$buttonRedTextColor: $buttonInvertedTextColor;
+$buttonRedTextShadow: $buttonInvertedTextShadow;
+$buttonOrangeTextColor: $buttonInvertedTextColor;
+$buttonOrangeTextShadow: $buttonInvertedTextShadow;
+$buttonGreenTextColor: $buttonInvertedTextColor;
+$buttonGreenTextShadow: $buttonInvertedTextShadow;
+$buttonBlueTextColor: $buttonInvertedTextColor;
+$buttonBlueTextShadow: $buttonInvertedTextShadow;
+$buttonVioletTextColor: $buttonInvertedTextColor;
+$buttonVioletTextShadow: $buttonInvertedTextShadow;
+$buttonPurpleTextColor: $buttonInvertedTextColor;
+$buttonPurpleTextShadow: $buttonInvertedTextShadow;
+$buttonPinkTextColor: $buttonInvertedTextColor;
+$buttonPinkTextShadow: $buttonInvertedTextShadow;
+$buttonBlackTextColor: $buttonInvertedTextColor;
+$buttonBlackTextShadow: $buttonInvertedTextShadow;
+$buttonOliveTextColor: $buttonInvertedTextColor;
+$buttonOliveTextShadow: $buttonInvertedTextShadow;
+$buttonYellowTextColor: $buttonInvertedTextColor;
+$buttonYellowTextShadow: $buttonInvertedTextShadow;
+$buttonTealTextColor: $buttonInvertedTextColor;
+$buttonTealTextShadow: $buttonInvertedTextShadow;
+$buttonGreyTextColor: $buttonInvertedTextColor;
+$buttonGreyTextShadow: $buttonInvertedTextShadow;
+
+/* Inverted */
+$buttonLightBrownTextColor: $buttonInvertedTextColor;
+$buttonLightBrownTextShadow: $buttonInvertedTextShadow;
+$buttonLightRedTextColor: $buttonInvertedTextColor;
+$buttonLightRedTextShadow: $buttonInvertedTextShadow;
+$buttonLightOrangeTextColor: $buttonInvertedTextColor;
+$buttonLightOrangeTextShadow: $buttonInvertedTextShadow;
+$buttonLightGreenTextColor: $buttonInvertedTextColor;
+$buttonLightGreenTextShadow: $buttonInvertedTextShadow;
+$buttonLightBlueTextColor: $buttonInvertedTextColor;
+$buttonLightBlueTextShadow: $buttonInvertedTextShadow;
+$buttonLightVioletTextColor: $buttonInvertedTextColor;
+$buttonLightVioletTextShadow: $buttonInvertedTextShadow;
+$buttonLightPurpleTextColor: $buttonInvertedTextColor;
+$buttonLightPurpleTextShadow: $buttonInvertedTextShadow;
+$buttonLightPinkTextColor: $buttonInvertedTextColor;
+$buttonLightPinkTextShadow: $buttonInvertedTextShadow;
+$buttonLightBlackTextColor: $buttonInvertedTextColor;
+$buttonLightBlackTextShadow: $buttonInvertedTextShadow;
+$buttonLightOliveTextColor: $buttonTextColor;
+$buttonLightOliveTextShadow: $buttonTextShadow;
+$buttonLightYellowTextColor: $buttonTextColor;
+$buttonLightYellowTextShadow: $buttonTextShadow;
+$buttonLightTealTextColor: $buttonTextColor;
+$buttonLightTealTextShadow: $buttonTextShadow;
+$buttonLightGreyTextColor: $buttonTextColor;
+$buttonLightGreyTextShadow: $buttonTextShadow;
+
+
+/* Ordinality */
+$buttonPrimaryBackgroundImage: $buttonColoredBackgroundImage;
+$buttonPrimaryTextColor: $buttonInvertedTextColor;
+$buttonPrimaryTextShadow: $buttonInvertedTextShadow;
+$buttonPrimaryBoxShadow: $buttonColoredBoxShadow;
+
+$buttonSecondaryBackgroundImage: $buttonColoredBackgroundImage;
+$buttonSecondaryTextColor: $buttonInvertedTextColor;
+$buttonSecondaryTextShadow: $buttonInvertedTextShadow;
+$buttonSecondaryBoxShadow: $buttonColoredBoxShadow;
+
+$buttonPositiveBackgroundImage: $buttonColoredBackgroundImage;
+$buttonPositiveTextColor: $buttonInvertedTextColor;
+$buttonPositiveTextShadow: $buttonInvertedTextShadow;
+$buttonPositiveBoxShadow: $buttonColoredBoxShadow;
+
+$buttonNegativeBackgroundImage: $buttonColoredBackgroundImage;
+$buttonNegativeTextColor: $buttonInvertedTextColor;
+$buttonNegativeTextShadow: $buttonInvertedTextShadow;
+$buttonNegativeBoxShadow: $buttonColoredBoxShadow;
+
+/* Compact */
+$buttonCompactVerticalPadding: (#{$buttonVerticalPadding} * 0.75);
+$buttonCompactHorizontalPadding: (#{$buttonHorizontalPadding} * 0.75);
+
+/* Attached */
+$buttonAttachedOffset: -1px;
+$buttonAttachedBoxShadow: 0 0 0 1px $buttonBorderColor;
+$buttonAttachedHorizontalPadding: 0.75em;
+$buttonAttachedZIndex: 2;
+
+/* Floated */
+$buttonFloatedMargin: 0.25em;
+
+/* Animated */
+$buttonAnimatedVerticalAlign: middle;
+$buttonAnimatedZIndex: 1;
+$buttonAnimationDuration: 0.3s;
+$buttonAnimationEasing: ease;
+$buttonFadeScaleHigh: 1.5;
+$buttonFadeScaleLow: 0.75;

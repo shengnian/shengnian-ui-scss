@@ -1,0 +1,692 @@
+/*!
+ * # Shengnian UI - Popup
+ * http://github.com/shengnian/shengnian-ui
+ *
+ *
+ * Released under the MIT license
+ * http://opensource.org/licenses/MIT
+ *
+ */
+
+
+/*******************************
+            Popup
+*******************************/
+
+.ui.popup {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  /* Fixes content being squished when inline (moz only) */
+  min-width: min-content;
+  z-index: $popupZIndex;
+
+  border: $popupBorder;
+  line-height: $popupLineHeight;
+  max-width: $popupMaxWidth;
+  background: $popupBackground;
+
+  padding: $popupVerticalPadding $popupHorizontalPadding;
+  font-weight: $popupFontWeight;
+  font-style: $popupFontStyle;
+  color: $popupColor;
+
+  border-radius: $popupBorderRadius;
+  box-shadow: $popupBoxShadow;
+}
+.ui.popup > .header {
+  padding: 0;
+
+  font-family: $popupHeaderFont;
+  font-size: $popupHeaderFontSize;
+  line-height: $popupHeaderLineHeight;
+  font-weight: bold;
+}
+.ui.popup > .header + .content {
+  padding-top: $popupHeaderDistance;
+}
+
+.ui.popup:before {
+  position: absolute;
+  content: '';
+  width: $popupArrowSize;
+  height: $popupArrowSize;
+
+  background: $popupArrowBackground;
+  transform: rotate(45deg);
+
+  z-index: $popupArrowZIndex;
+  box-shadow: $popupArrowBoxShadow;
+}
+
+
+
+/*******************************
+            Types
+*******************************/
+
+/*--------------
+    Tooltip
+---------------*/
+
+/* Content */
+[data-tooltip] {
+  position: relative;
+}
+
+/* Arrow */
+[data-tooltip]:before {
+  pointer-events: none;
+  position: absolute;
+  content: '';
+  font-size: $popupMedium;
+  width: $popupArrowSize;
+  height: $popupArrowSize;
+
+  background: $popupTooltipArrowBackground;
+  transform: rotate(45deg);
+
+  z-index: $popupArrowZIndex;
+  box-shadow: $popupTooltipArrowBoxShadow;
+}
+
+/* Popup */
+[data-tooltip]:after {
+  pointer-events: none;
+  content: attr(data-tooltip);
+  position: absolute;
+  text-transform: none;
+  text-align: left;
+  white-space: nowrap;
+
+  font-size: $popupTooltipFontSize;
+
+  border: $popupTooltipBorder;
+  line-height: $popupTooltipLineHeight;
+  max-width: $popupTooltipMaxWidth;
+  background: $popupTooltipBackground;
+
+  padding: $popupTooltipPadding;
+  font-weight: $popupTooltipFontWeight;
+  font-style: $popupTooltipFontStyle;
+  color: $popupTooltipColor;
+
+  border-radius: $popupTooltipBorderRadius;
+  box-shadow: $popupTooltipBoxShadow;
+  z-index: $popupTooltipZIndex;
+}
+
+/* Default Position (Top Center) */
+[data-tooltip]:not([data-position]):before {
+  top: auto;
+  right: auto;
+  bottom: 100%;
+  left: 50%;
+  background: $popupTooltipArrowBottomBackground;
+  margin-left: $popupTooltipArrowHorizontalOffset;
+  margin-bottom: -$popupTooltipArrowVerticalOffset;
+}
+[data-tooltip]:not([data-position]):after {
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 100%;
+  margin-bottom: $popupTooltipDistanceAway;
+}
+
+/* Animation */
+[data-tooltip]:before,
+[data-tooltip]:after {
+  pointer-events: none;
+  visibility: hidden;
+}
+[data-tooltip]:before {
+  opacity: 0;
+  transform: rotate(45deg) scale(0) !important;
+  transform-origin: center top;
+  transition:
+    all $popupTooltipDuration $popupTooltipEasing
+  ;
+}
+[data-tooltip]:after {
+  opacity: 1;
+  transform-origin: center bottom;
+  transition:
+    all $popupTooltipDuration $popupTooltipEasing
+  ;
+}
+[data-tooltip]:hover:before,
+[data-tooltip]:hover:after {
+  visibility: visible;
+  pointer-events: auto;
+}
+[data-tooltip]:hover:before {
+  transform: rotate(45deg) scale(1) !important;
+  opacity: 1;
+}
+
+/* Animation Position */
+[data-tooltip]:after,
+[data-tooltip][data-position="top center"]:after,
+[data-tooltip][data-position="bottom center"]:after {
+  transform: translateX(-50%) scale(0) !important;
+}
+[data-tooltip]:hover:after,
+[data-tooltip][data-position="bottom center"]:hover:after {
+  transform: translateX(-50%) scale(1) !important;
+}
+[data-tooltip][data-position="left center"]:after,
+[data-tooltip][data-position="right center"]:after {
+  transform: translateY(-50%) scale(0) !important;
+}
+[data-tooltip][data-position="left center"]:hover:after,
+[data-tooltip][data-position="right center"]:hover:after {
+  transform: translateY(-50%) scale(1) !important;
+}
+[data-tooltip][data-position="top left"]:after,
+[data-tooltip][data-position="top right"]:after,
+[data-tooltip][data-position="bottom left"]:after,
+[data-tooltip][data-position="bottom right"]:after {
+  transform: scale(0) !important;
+}
+[data-tooltip][data-position="top left"]:hover:after,
+[data-tooltip][data-position="top right"]:hover:after,
+[data-tooltip][data-position="bottom left"]:hover:after,
+[data-tooltip][data-position="bottom right"]:hover:after {
+  transform: scale(1) !important;
+}
+/*--------------
+    Inverted
+---------------*/
+
+/* Arrow */
+[data-tooltip][data-inverted]:before {
+  box-shadow: none !important;
+}
+
+/* Arrow Position */
+[data-tooltip][data-inverted]:before {
+  background: $popupInvertedArrowBottomBackground;
+}
+
+/* Popup  */
+[data-tooltip][data-inverted]:after {
+  background: $popupTooltipInvertedBackground;
+  color: $popupTooltipInvertedColor;
+  border: $popupTooltipInvertedBorder;
+  box-shadow: $popupTooltipInvertedBoxShadow;
+}
+[data-tooltip][data-inverted]:after .header {
+  background-color: $popupTooltipInvertedHeaderBackground;
+  color: $popupTooltipInvertedHeaderColor;
+}
+
+/*--------------
+    Position
+---------------*/
+
+/* Top Center */
+[data-position="top center"][data-tooltip]:after {
+  top: auto;
+  right: auto;
+  left: 50%;
+  bottom: 100%;
+  transform: translateX(-50%);
+  margin-bottom: $popupTooltipDistanceAway;
+}
+[data-position="top center"][data-tooltip]:before {
+  top: auto;
+  right: auto;
+  bottom: 100%;
+  left: 50%;
+  background: $popupTooltipArrowTopBackground;
+  margin-left: $popupTooltipArrowHorizontalOffset;
+  margin-bottom: -$popupTooltipArrowVerticalOffset;
+}
+
+/* Top Left */
+[data-position="top left"][data-tooltip]:after {
+  top: auto;
+  right: auto;
+  left: 0;
+  bottom: 100%;
+  margin-bottom: $popupTooltipDistanceAway;
+}
+[data-position="top left"][data-tooltip]:before {
+  top: auto;
+  right: auto;
+  bottom: 100%;
+  left: $popupArrowDistanceFromEdge;
+  margin-left: $popupTooltipArrowHorizontalOffset;
+  margin-bottom: -$popupTooltipArrowVerticalOffset;
+}
+
+/* Top Right */
+[data-position="top right"][data-tooltip]:after {
+  top: auto;
+  left: auto;
+  right: 0;
+  bottom: 100%;
+  margin-bottom: $popupTooltipDistanceAway;
+}
+[data-position="top right"][data-tooltip]:before {
+  top: auto;
+  left: auto;
+  bottom: 100%;
+  right: $popupArrowDistanceFromEdge;
+  margin-left: $popupTooltipArrowHorizontalOffset;
+  margin-bottom: -$popupTooltipArrowVerticalOffset;
+}
+/* Bottom Center */
+[data-position="bottom center"][data-tooltip]:after {
+  bottom: auto;
+  right: auto;
+  left: 50%;
+  top: 100%;
+  transform: translateX(-50%);
+  margin-top: $popupTooltipDistanceAway;
+}
+[data-position="bottom center"][data-tooltip]:before {
+  bottom: auto;
+  right: auto;
+  top: 100%;
+  left: 50%;
+  margin-left: $popupTooltipArrowHorizontalOffset;
+  margin-top: -$popupTooltipArrowVerticalOffset;
+}
+
+/* Bottom Left */
+[data-position="bottom left"][data-tooltip]:after {
+  left: 0;
+  top: 100%;
+  margin-top: $popupTooltipDistanceAway;
+}
+[data-position="bottom left"][data-tooltip]:before {
+  bottom: auto;
+  right: auto;
+  top: 100%;
+  left: $popupArrowDistanceFromEdge;
+  margin-left: $popupTooltipArrowHorizontalOffset;
+  margin-top: -$popupTooltipArrowVerticalOffset;
+}
+
+/* Bottom Right */
+[data-position="bottom right"][data-tooltip]:after {
+  right: 0;
+  top: 100%;
+  margin-top: $popupTooltipDistanceAway;
+}
+[data-position="bottom right"][data-tooltip]:before {
+  bottom: auto;
+  left: auto;
+  top: 100%;
+  right: $popupArrowDistanceFromEdge;
+  margin-left: $popupTooltipArrowVerticalOffset;
+  margin-top: -$popupTooltipArrowHorizontalOffset;
+}
+
+/* Left Center */
+[data-position="left center"][data-tooltip]:after {
+  right: 100%;
+  top: 50%;
+  margin-right: $popupTooltipDistanceAway;
+  transform: translateY(-50%);
+}
+[data-position="left center"][data-tooltip]:before {
+  right: 100%;
+  top: 50%;
+  margin-top: $popupTooltipArrowVerticalOffset;
+  margin-right: $popupTooltipArrowHorizontalOffset;
+}
+
+/* Right Center */
+[data-position="right center"][data-tooltip]:after {
+  left: 100%;
+  top: 50%;
+  margin-left: $popupTooltipDistanceAway;
+  transform: translateY(-50%);
+}
+[data-position="right center"][data-tooltip]:before {
+  left: 100%;
+  top: 50%;
+  margin-top: $popupTooltipArrowHorizontalOffset;
+  margin-left: -$popupTooltipArrowVerticalOffset;
+}
+
+/* Arrow */
+[data-position~="bottom"][data-tooltip]:before {
+  background: $popupArrowTopBackground;
+  box-shadow: $popupBottomArrowBoxShadow;
+}
+[data-position="left center"][data-tooltip]:before {
+  background: $popupArrowCenterBackground;
+  box-shadow: $popupLeftArrowBoxShadow;
+}
+[data-position="right center"][data-tooltip]:before {
+  background: $popupArrowCenterBackground;
+  box-shadow: $popupRightArrowBoxShadow;
+}
+[data-position~="top"][data-tooltip]:before {
+  background: $popupArrowBottomBackground;
+}
+
+/* Inverted Arrow Color */
+[data-inverted][data-position~="bottom"][data-tooltip]:before {
+  background: $popupInvertedArrowTopBackground;
+  box-shadow: $popupBottomArrowBoxShadow;
+}
+[data-inverted][data-position="left center"][data-tooltip]:before {
+  background: $popupInvertedArrowCenterBackground;
+  box-shadow: $popupLeftArrowBoxShadow;
+}
+[data-inverted][data-position="right center"][data-tooltip]:before {
+  background: $popupInvertedArrowCenterBackground;
+  box-shadow: $popupRightArrowBoxShadow;
+}
+[data-inverted][data-position~="top"][data-tooltip]:before {
+  background: $popupInvertedArrowBottomBackground;
+}
+
+[data-position~="bottom"][data-tooltip]:before {
+  transform-origin: center bottom;
+}
+[data-position~="bottom"][data-tooltip]:after {
+  transform-origin: center top;
+}
+[data-position="left center"][data-tooltip]:before {
+  transform-origin: top center;
+}
+[data-position="left center"][data-tooltip]:after {
+  transform-origin: right center;
+}
+[data-position="right center"][data-tooltip]:before {
+  transform-origin: right center;
+}
+[data-position="right center"][data-tooltip]:after {
+  transform-origin: left center;
+}
+
+/*--------------
+     Spacing
+---------------*/
+
+.ui.popup {
+  margin: 0;
+}
+
+/* Extending from Top */
+.ui.top.popup {
+  margin: 0 0 $popupPopupDistanceAway;
+}
+.ui.top.left.popup {
+  transform-origin: left bottom;
+}
+.ui.top.center.popup {
+  transform-origin: center bottom;
+}
+.ui.top.right.popup {
+  transform-origin: right bottom;
+}
+
+/* Extending from Vertical Center */
+.ui.left.center.popup {
+  margin: 0 $popupPopupDistanceAway 0 0;
+  transform-origin: right 50%;
+}
+.ui.right.center.popup {
+  margin: 0 0 0 $popupPopupDistanceAway;
+  transform-origin: left 50%;
+}
+
+/* Extending from Bottom */
+.ui.bottom.popup {
+  margin: $popupPopupDistanceAway 0 0;
+}
+.ui.bottom.left.popup {
+  transform-origin: left top;
+}
+.ui.bottom.center.popup {
+  transform-origin: center top;
+}
+.ui.bottom.right.popup {
+  transform-origin: right top;
+}
+
+/*--------------
+     Pointer
+---------------*/
+
+/*--- Below ---*/
+.ui.bottom.center.popup:before {
+  margin-left: $popupArrowOffset;
+  top: $popupArrowOffset;
+  left: 50%;
+  right: auto;
+  bottom: auto;
+  box-shadow: $popupBottomArrowBoxShadow;
+}
+
+.ui.bottom.left.popup {
+  margin-left: $popupBoxArrowOffset;
+}
+/*rtl:rename*/
+.ui.bottom.left.popup:before {
+  top: $popupArrowOffset;
+  left: $popupArrowDistanceFromEdge;
+  right: auto;
+  bottom: auto;
+  margin-left: 0;
+  box-shadow: $popupBottomArrowBoxShadow;
+}
+
+.ui.bottom.right.popup {
+  margin-right: $popupBoxArrowOffset;
+}
+/*rtl:rename*/
+.ui.bottom.right.popup:before {
+  top: $popupArrowOffset;
+  right: $popupArrowDistanceFromEdge;
+  bottom: auto;
+  left: auto;
+  margin-left: 0;
+  box-shadow: $popupBottomArrowBoxShadow;
+}
+
+/*--- Above ---*/
+.ui.top.center.popup:before {
+  top: auto;
+  right: auto;
+  bottom: $popupArrowOffset;
+  left: 50%;
+  margin-left: $popupArrowOffset;
+}
+.ui.top.left.popup {
+  margin-left: $popupBoxArrowOffset;
+}
+/*rtl:rename*/
+.ui.top.left.popup:before {
+  bottom: $popupArrowOffset;
+  left: $popupArrowDistanceFromEdge;
+  top: auto;
+  right: auto;
+  margin-left: 0;
+}
+.ui.top.right.popup {
+  margin-right: $popupBoxArrowOffset;
+}
+/*rtl:rename*/
+.ui.top.right.popup:before {
+  bottom: $popupArrowOffset;
+  right: $popupArrowDistanceFromEdge;
+  top: auto;
+  left: auto;
+  margin-left: 0;
+}
+
+/*--- Left Center ---*/
+/*rtl:rename*/
+.ui.left.center.popup:before {
+  top: 50%;
+  right: $popupArrowOffset;
+  bottom: auto;
+  left: auto;
+  margin-top: $popupArrowOffset;
+  box-shadow: $popupLeftArrowBoxShadow;
+}
+
+/*--- Right Center  ---*/
+/*rtl:rename*/
+.ui.right.center.popup:before {
+  top: 50%;
+  left: $popupArrowOffset;
+  bottom: auto;
+  right: auto;
+  margin-top: $popupArrowOffset;
+  box-shadow: $popupRightArrowBoxShadow;
+}
+
+/* Arrow Color By Location */
+.ui.bottom.popup:before {
+  background: $popupArrowTopBackground;
+}
+.ui.right.center.popup:before,
+.ui.left.center.popup:before {
+  background: $popupArrowCenterBackground;
+}
+.ui.top.popup:before {
+  background: $popupArrowBottomBackground;
+}
+
+/* Inverted Arrow Color */
+.ui.inverted.bottom.popup:before {
+  background: $popupInvertedArrowTopBackground;
+}
+.ui.inverted.right.center.popup:before,
+.ui.inverted.left.center.popup:before {
+  background: $popupInvertedArrowCenterBackground;
+}
+.ui.inverted.top.popup:before {
+  background: $popupInvertedArrowBottomBackground;
+}
+
+
+/*******************************
+            Coupling
+*******************************/
+
+/* Immediate Nested Grid */
+.ui.popup > .ui.grid:not(.padded) {
+  width: $popupNestedGridWidth;
+  margin: $popupNestedGridMargin;
+}
+
+
+
+/*******************************
+            States
+*******************************/
+
+.ui.loading.popup {
+  display: block;
+  visibility: hidden;
+  z-index: $popupLoadingZIndex;
+}
+
+.ui.animating.popup,
+.ui.visible.popup {
+  display: block;
+}
+
+.ui.visible.popup {
+  transform: translateZ(0px);
+  backface-visibility: hidden;
+}
+
+
+/*******************************
+            Variations
+*******************************/
+
+/*--------------
+     Basic
+---------------*/
+
+.ui.basic.popup:before {
+  display: none;
+}
+/*--------------
+     Wide
+---------------*/
+
+.ui.wide.popup {
+  max-width: $popupWideWidth;
+}
+.ui[class*="very wide"].popup {
+  max-width: $popupVeryWideWidth;
+}
+
+@media only screen and (max-width: $popupLargestMobileScreen) {
+  .ui.wide.popup,
+  .ui[class*="very wide"].popup {
+    max-width: $popupMaxWidth;
+  }
+}
+/*--------------
+     Fluid
+---------------*/
+
+.ui.fluid.popup {
+  width: 100%;
+  max-width: none;
+}
+/*--------------
+     Colors
+---------------*/
+
+/* Inverted colors  */
+.ui.inverted.popup {
+  background: $popupInvertedBackground;
+  color: $popupInvertedColor;
+  border: $popupInvertedBorder;
+  box-shadow: $popupInvertedBoxShadow;
+}
+.ui.inverted.popup .header {
+  background-color: $popupInvertedHeaderBackground;
+  color: $popupInvertedHeaderColor;
+}
+.ui.inverted.popup:before {
+  background-color: $popupInvertedArrowColor;
+  box-shadow: none !important;
+}
+
+/*--------------
+     Flowing
+---------------*/
+
+.ui.flowing.popup {
+  max-width: none;
+}
+/*--------------
+     Sizes
+---------------*/
+
+.ui.mini.popup {
+  font-size: $popupMini;
+}
+.ui.tiny.popup {
+  font-size: $popupTiny;
+}
+.ui.small.popup {
+  font-size: $popupSmall;
+}
+.ui.popup {
+  font-size: $popupMedium;
+}
+.ui.large.popup {
+  font-size: $popupLarge;
+}
+.ui.huge.popup {
+  font-size: $popupHuge;
+}
+

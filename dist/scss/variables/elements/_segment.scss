@@ -1,0 +1,755 @@
+$segmentFontName: $fontName;
+$segmentFontSmoothing: $fontSmoothing;
+$segmentHeaderFont: $headerFont;
+$segmentPageFont: $pageFont;
+$segmentGoogleFontName: $googleFontName;
+$segmentImportGoogleFonts: $importGoogleFonts;
+$segmentGoogleFontSizes: $googleFontSizes;
+$segmentGoogleSubset: $googleSubset;
+$segmentGoogleProtocol: $googleProtocol;
+$segmentGoogleFontRequest: $googleFontRequest;
+$segmentEmSize: $emSize;
+$segmentFontSize: $fontSize;
+$segmentRelativeBorderRadius: $relativeBorderRadius;
+$segmentAbsoluteBorderRadius: $absoluteBorderRadius;
+$segmentDefaultBorderRadius: $defaultBorderRadius;
+$segmentPrimaryColor: $primaryColor;
+$segmentSecondaryColor: $secondaryColor;
+$segmentLightPrimaryColor: $lightPrimaryColor;
+$segmentLightSecondaryColor: $lightSecondaryColor;
+$segmentHeaderFontWeight: $headerFontWeight;
+$segmentHeaderLineHeight: $headerLineHeight;
+$segmentH1: $h1;
+$segmentH2: $h2;
+$segmentH3: $h3;
+$segmentH4: $h4;
+$segmentH5: $h5;
+$segmentInputBackground: $inputBackground;
+$segmentInputVerticalPadding: $inputVerticalPadding;
+$segmentInputHorizontalPadding: $inputHorizontalPadding;
+$segmentInputPadding: $inputPadding;
+$segmentInputColor: $inputColor;
+$segmentInputPlaceholderColor: $inputPlaceholderColor;
+$segmentInputPlaceholderFocusColor: $inputPlaceholderFocusColor;
+$segmentInputLineHeight: $inputLineHeight;
+$segmentFocusedFormBorderColor: $focusedFormBorderColor;
+$segmentFocusedFormMutedBorderColor: $focusedFormMutedBorderColor;
+$segmentMiniSize: $miniSize;
+$segmentTinySize: $tinySize;
+$segmentSmallSize: $smallSize;
+$segmentMediumSize: $mediumSize;
+$segmentLargeSize: $largeSize;
+$segmentBigSize: $bigSize;
+$segmentHugeSize: $hugeSize;
+$segmentMassiveSize: $massiveSize;
+$segmentPageBackground: $pageBackground;
+$segmentPageOverflowX: $pageOverflowX;
+$segmentLineHeight: $lineHeight;
+$segmentTextColor: $textColor;
+$segmentParagraphMargin: $paragraphMargin;
+$segmentParagraphLineHeight: $paragraphLineHeight;
+$segmentLinkColor: $linkColor;
+$segmentLinkUnderline: $linkUnderline;
+$segmentLinkHoverColor: $linkHoverColor;
+$segmentLinkHoverUnderline: $linkHoverUnderline;
+$segmentUseCustomScrollbars: $useCustomScrollbars;
+$segmentCustomScrollbarWidth: $customScrollbarWidth;
+$segmentTrackBackground: $trackBackground;
+$segmentTrackBorderRadius: $trackBorderRadius;
+$segmentThumbBorderRadius: $thumbBorderRadius;
+$segmentThumbBackground: $thumbBackground;
+$segmentThumbTransition: $thumbTransition;
+$segmentThumbInactiveBackground: $thumbInactiveBackground;
+$segmentThumbHoverBackground: $thumbHoverBackground;
+$segmentTrackInvertedBackground: $trackInvertedBackground;
+$segmentThumbInvertedBackground: $thumbInvertedBackground;
+$segmentThumbInvertedInactiveBackground: $thumbInvertedInactiveBackground;
+$segmentThumbInvertedHoverBackground: $thumbInvertedHoverBackground;
+$segmentHighlightBackground: $highlightBackground;
+$segmentHighlightColor: $highlightColor;
+$segmentInputHighlightBackground: $inputHighlightBackground;
+$segmentInputHighlightColor: $inputHighlightColor;
+$segmentLoaderSize: $loaderSize;
+$segmentLoaderSpeed: $loaderSpeed;
+$segmentLoaderLineWidth: $loaderLineWidth;
+$segmentLoaderFillColor: $loaderFillColor;
+$segmentLoaderLineColor: $loaderLineColor;
+$segmentInvertedLoaderFillColor: $invertedLoaderFillColor;
+$segmentInvertedLoaderLineColor: $invertedLoaderLineColor;
+$segmentColumnCount: $columnCount;
+$segmentDefaultDuration: $defaultDuration;
+$segmentDefaultEasing: $defaultEasing;
+$segmentMobileBreakpoint: $mobileBreakpoint;
+$segmentTabletBreakpoint: $tabletBreakpoint;
+$segmentComputerBreakpoint: $computerBreakpoint;
+$segmentLargeMonitorBreakpoint: $largeMonitorBreakpoint;
+$segmentWidescreenMonitorBreakpoint: $widescreenMonitorBreakpoint;
+$segmentRed: $red;
+$segmentOrange: $orange;
+$segmentYellow: $yellow;
+$segmentOlive: $olive;
+$segmentGreen: $green;
+$segmentTeal: $teal;
+$segmentBlue: $blue;
+$segmentViolet: $violet;
+$segmentPurple: $purple;
+$segmentPink: $pink;
+$segmentBrown: $brown;
+$segmentGrey: $grey;
+$segmentBlack: $black;
+$segmentLightRed: $lightRed;
+$segmentLightOrange: $lightOrange;
+$segmentLightYellow: $lightYellow;
+$segmentLightOlive: $lightOlive;
+$segmentLightGreen: $lightGreen;
+$segmentLightTeal: $lightTeal;
+$segmentLightBlue: $lightBlue;
+$segmentLightViolet: $lightViolet;
+$segmentLightPurple: $lightPurple;
+$segmentLightPink: $lightPink;
+$segmentLightBrown: $lightBrown;
+$segmentLightGrey: $lightGrey;
+$segmentLightBlack: $lightBlack;
+$segmentFullBlack: $fullBlack;
+$segmentOffWhite: $offWhite;
+$segmentDarkWhite: $darkWhite;
+$segmentMidWhite: $midWhite;
+$segmentWhite: $white;
+$segmentRedBackground: $redBackground;
+$segmentOrangeBackground: $orangeBackground;
+$segmentYellowBackground: $yellowBackground;
+$segmentOliveBackground: $oliveBackground;
+$segmentGreenBackground: $greenBackground;
+$segmentTealBackground: $tealBackground;
+$segmentBlueBackground: $blueBackground;
+$segmentVioletBackground: $violetBackground;
+$segmentPurpleBackground: $purpleBackground;
+$segmentPinkBackground: $pinkBackground;
+$segmentBrownBackground: $brownBackground;
+$segmentRedHeaderColor: $redHeaderColor;
+$segmentOliveHeaderColor: $oliveHeaderColor;
+$segmentGreenHeaderColor: $greenHeaderColor;
+$segmentYellowHeaderColor: $yellowHeaderColor;
+$segmentBlueHeaderColor: $blueHeaderColor;
+$segmentTealHeaderColor: $tealHeaderColor;
+$segmentPinkHeaderColor: $pinkHeaderColor;
+$segmentVioletHeaderColor: $violetHeaderColor;
+$segmentPurpleHeaderColor: $purpleHeaderColor;
+$segmentOrangeHeaderColor: $orangeHeaderColor;
+$segmentBrownHeaderColor: $brownHeaderColor;
+$segmentRedTextColor: $redTextColor;
+$segmentOrangeTextColor: $orangeTextColor;
+$segmentYellowTextColor: $yellowTextColor;
+$segmentOliveTextColor: $oliveTextColor;
+$segmentGreenTextColor: $greenTextColor;
+$segmentTealTextColor: $tealTextColor;
+$segmentBlueTextColor: $blueTextColor;
+$segmentVioletTextColor: $violetTextColor;
+$segmentPurpleTextColor: $purpleTextColor;
+$segmentPinkTextColor: $pinkTextColor;
+$segmentBrownTextColor: $brownTextColor;
+$segmentRedBorderColor: $redBorderColor;
+$segmentOrangeBorderColor: $orangeBorderColor;
+$segmentYellowBorderColor: $yellowBorderColor;
+$segmentOliveBorderColor: $oliveBorderColor;
+$segmentGreenBorderColor: $greenBorderColor;
+$segmentTealBorderColor: $tealBorderColor;
+$segmentBlueBorderColor: $blueBorderColor;
+$segmentVioletBorderColor: $violetBorderColor;
+$segmentPurpleBorderColor: $purpleBorderColor;
+$segmentPinkBorderColor: $pinkBorderColor;
+$segmentBrownBorderColor: $brownBorderColor;
+$segmentSubtleTransparentBlack: $subtleTransparentBlack;
+$segmentTransparentBlack: $transparentBlack;
+$segmentStrongTransparentBlack: $strongTransparentBlack;
+$segmentVeryStrongTransparentBlack: $veryStrongTransparentBlack;
+$segmentSubtleTransparentWhite: $subtleTransparentWhite;
+$segmentTransparentWhite: $transparentWhite;
+$segmentStrongTransparentWhite: $strongTransparentWhite;
+$segmentSubtleGradient: $subtleGradient;
+$segmentSubtleShadow: $subtleShadow;
+$segmentFloatingShadow: $floatingShadow;
+$segmentPositiveColor: $positiveColor;
+$segmentPositiveBackgroundColor: $positiveBackgroundColor;
+$segmentPositiveBorderColor: $positiveBorderColor;
+$segmentPositiveHeaderColor: $positiveHeaderColor;
+$segmentPositiveTextColor: $positiveTextColor;
+$segmentNegativeColor: $negativeColor;
+$segmentNegativeBackgroundColor: $negativeBackgroundColor;
+$segmentNegativeBorderColor: $negativeBorderColor;
+$segmentNegativeHeaderColor: $negativeHeaderColor;
+$segmentNegativeTextColor: $negativeTextColor;
+$segmentInfoColor: $infoColor;
+$segmentInfoBackgroundColor: $infoBackgroundColor;
+$segmentInfoBorderColor: $infoBorderColor;
+$segmentInfoHeaderColor: $infoHeaderColor;
+$segmentInfoTextColor: $infoTextColor;
+$segmentWarningColor: $warningColor;
+$segmentWarningBorderColor: $warningBorderColor;
+$segmentWarningBackgroundColor: $warningBackgroundColor;
+$segmentWarningHeaderColor: $warningHeaderColor;
+$segmentWarningTextColor: $warningTextColor;
+$segmentImagePath: $imagePath;
+$segmentFontPath: $fontPath;
+$segmentMini: $mini;
+$segmentTiny: $tiny;
+$segmentSmall: $small;
+$segmentMedium: $medium;
+$segmentLarge: $large;
+$segmentBig: $big;
+$segmentHuge: $huge;
+$segmentMassive: $massive;
+$segmentRelativeMini: $relativeMini;
+$segmentRelativeTiny: $relativeTiny;
+$segmentRelativeSmall: $relativeSmall;
+$segmentRelativeMedium: $relativeMedium;
+$segmentRelativeLarge: $relativeLarge;
+$segmentRelativeBig: $relativeBig;
+$segmentRelativeHuge: $relativeHuge;
+$segmentRelativeMassive: $relativeMassive;
+$segmentAbsoluteMini: $absoluteMini;
+$segmentAbsoluteTiny: $absoluteTiny;
+$segmentAbsoluteSmall: $absoluteSmall;
+$segmentAbsoluteMedium: $absoluteMedium;
+$segmentAbsoluteLarge: $absoluteLarge;
+$segmentAbsoluteBig: $absoluteBig;
+$segmentAbsoluteHuge: $absoluteHuge;
+$segmentAbsoluteMassive: $absoluteMassive;
+$segmentIconWidth: $iconWidth;
+$segmentDarkTextColor: $darkTextColor;
+$segmentMutedTextColor: $mutedTextColor;
+$segmentLightTextColor: $lightTextColor;
+$segmentUnselectedTextColor: $unselectedTextColor;
+$segmentHoveredTextColor: $hoveredTextColor;
+$segmentPressedTextColor: $pressedTextColor;
+$segmentSelectedTextColor: $selectedTextColor;
+$segmentDisabledTextColor: $disabledTextColor;
+$segmentInvertedTextColor: $invertedTextColor;
+$segmentInvertedMutedTextColor: $invertedMutedTextColor;
+$segmentInvertedLightTextColor: $invertedLightTextColor;
+$segmentInvertedUnselectedTextColor: $invertedUnselectedTextColor;
+$segmentInvertedHoveredTextColor: $invertedHoveredTextColor;
+$segmentInvertedPressedTextColor: $invertedPressedTextColor;
+$segmentInvertedSelectedTextColor: $invertedSelectedTextColor;
+$segmentInvertedDisabledTextColor: $invertedDisabledTextColor;
+$segmentFacebookColor: $facebookColor;
+$segmentTwitterColor: $twitterColor;
+$segmentGooglePlusColor: $googlePlusColor;
+$segmentLinkedInColor: $linkedInColor;
+$segmentYoutubeColor: $youtubeColor;
+$segmentPinterestColor: $pinterestColor;
+$segmentVkColor: $vkColor;
+$segmentInstagramColor: $instagramColor;
+$segmentCircularRadius: $circularRadius;
+$segmentBorderColor: $borderColor;
+$segmentStrongBorderColor: $strongBorderColor;
+$segmentInternalBorderColor: $internalBorderColor;
+$segmentSelectedBorderColor: $selectedBorderColor;
+$segmentStrongSelectedBorderColor: $strongSelectedBorderColor;
+$segmentDisabledBorderColor: $disabledBorderColor;
+$segmentSolidInternalBorderColor: $solidInternalBorderColor;
+$segmentSolidBorderColor: $solidBorderColor;
+$segmentSolidSelectedBorderColor: $solidSelectedBorderColor;
+$segmentWhiteBorderColor: $whiteBorderColor;
+$segmentSelectedWhiteBorderColor: $selectedWhiteBorderColor;
+$segmentSolidWhiteBorderColor: $solidWhiteBorderColor;
+$segmentSelectedSolidWhiteBorderColor: $selectedSolidWhiteBorderColor;
+$segmentLoaderOffset: $loaderOffset;
+$segmentLoaderMargin: $loaderMargin;
+$segmentScrollbarWidth: $scrollbarWidth;
+$segmentGlyphWidth: $glyphWidth;
+$segmentLineHeightOffset: $lineHeightOffset;
+$segmentHeaderLineHeightOffset: $headerLineHeightOffset;
+$segmentHeaderTopMargin: $headerTopMargin;
+$segmentHeaderBottomMargin: $headerBottomMargin;
+$segmentHeaderMargin: $headerMargin;
+$segmentPageMinWidth: $pageMinWidth;
+$segmentSuccessBackgroundColor: $successBackgroundColor;
+$segmentSuccessColor: $successColor;
+$segmentSuccessBorderColor: $successBorderColor;
+$segmentSuccessHeaderColor: $successHeaderColor;
+$segmentSuccessTextColor: $successTextColor;
+$segmentErrorBackgroundColor: $errorBackgroundColor;
+$segmentErrorColor: $errorColor;
+$segmentErrorBorderColor: $errorBorderColor;
+$segmentErrorHeaderColor: $errorHeaderColor;
+$segmentErrorTextColor: $errorTextColor;
+$segmentLargestMobileScreen: $largestMobileScreen;
+$segmentLargestTabletScreen: $largestTabletScreen;
+$segmentLargestSmallMonitor: $largestSmallMonitor;
+$segmentLargestLargeMonitor: $largestLargeMonitor;
+$segment1px: $_1px;
+$segment2px: $_2px;
+$segment3px: $_3px;
+$segment4px: $_4px;
+$segment5px: $_5px;
+$segment6px: $_6px;
+$segment7px: $_7px;
+$segment8px: $_8px;
+$segment9px: $_9px;
+$segment10px: $_10px;
+$segment11px: $_11px;
+$segment12px: $_12px;
+$segment13px: $_13px;
+$segment14px: $_14px;
+$segment15px: $_15px;
+$segment16px: $_16px;
+$segment17px: $_17px;
+$segment18px: $_18px;
+$segment19px: $_19px;
+$segment20px: $_20px;
+$segment21px: $_21px;
+$segment22px: $_22px;
+$segment23px: $_23px;
+$segment24px: $_24px;
+$segment25px: $_25px;
+$segment26px: $_26px;
+$segment27px: $_27px;
+$segment28px: $_28px;
+$segment29px: $_29px;
+$segment30px: $_30px;
+$segment31px: $_31px;
+$segment32px: $_32px;
+$segment33px: $_33px;
+$segment34px: $_34px;
+$segment35px: $_35px;
+$segment36px: $_36px;
+$segment37px: $_37px;
+$segment38px: $_38px;
+$segment39px: $_39px;
+$segment40px: $_40px;
+$segment41px: $_41px;
+$segment42px: $_42px;
+$segment43px: $_43px;
+$segment44px: $_44px;
+$segment45px: $_45px;
+$segment46px: $_46px;
+$segment47px: $_47px;
+$segment48px: $_48px;
+$segment49px: $_49px;
+$segment50px: $_50px;
+$segment51px: $_51px;
+$segment52px: $_52px;
+$segment53px: $_53px;
+$segment54px: $_54px;
+$segment55px: $_55px;
+$segment56px: $_56px;
+$segment57px: $_57px;
+$segment58px: $_58px;
+$segment59px: $_59px;
+$segment60px: $_60px;
+$segment61px: $_61px;
+$segment62px: $_62px;
+$segment63px: $_63px;
+$segment64px: $_64px;
+$segmentRelative1px: $relative1px;
+$segmentRelative2px: $relative2px;
+$segmentRelative3px: $relative3px;
+$segmentRelative4px: $relative4px;
+$segmentRelative5px: $relative5px;
+$segmentRelative6px: $relative6px;
+$segmentRelative7px: $relative7px;
+$segmentRelative8px: $relative8px;
+$segmentRelative9px: $relative9px;
+$segmentRelative10px: $relative10px;
+$segmentRelative11px: $relative11px;
+$segmentRelative12px: $relative12px;
+$segmentRelative13px: $relative13px;
+$segmentRelative14px: $relative14px;
+$segmentRelative15px: $relative15px;
+$segmentRelative16px: $relative16px;
+$segmentRelative17px: $relative17px;
+$segmentRelative18px: $relative18px;
+$segmentRelative19px: $relative19px;
+$segmentRelative20px: $relative20px;
+$segmentRelative21px: $relative21px;
+$segmentRelative22px: $relative22px;
+$segmentRelative23px: $relative23px;
+$segmentRelative24px: $relative24px;
+$segmentRelative25px: $relative25px;
+$segmentRelative26px: $relative26px;
+$segmentRelative27px: $relative27px;
+$segmentRelative28px: $relative28px;
+$segmentRelative29px: $relative29px;
+$segmentRelative30px: $relative30px;
+$segmentRelative31px: $relative31px;
+$segmentRelative32px: $relative32px;
+$segmentRelative33px: $relative33px;
+$segmentRelative34px: $relative34px;
+$segmentRelative35px: $relative35px;
+$segmentRelative36px: $relative36px;
+$segmentRelative37px: $relative37px;
+$segmentRelative38px: $relative38px;
+$segmentRelative39px: $relative39px;
+$segmentRelative40px: $relative40px;
+$segmentRelative41px: $relative41px;
+$segmentRelative42px: $relative42px;
+$segmentRelative43px: $relative43px;
+$segmentRelative44px: $relative44px;
+$segmentRelative45px: $relative45px;
+$segmentRelative46px: $relative46px;
+$segmentRelative47px: $relative47px;
+$segmentRelative48px: $relative48px;
+$segmentRelative49px: $relative49px;
+$segmentRelative50px: $relative50px;
+$segmentRelative51px: $relative51px;
+$segmentRelative52px: $relative52px;
+$segmentRelative53px: $relative53px;
+$segmentRelative54px: $relative54px;
+$segmentRelative55px: $relative55px;
+$segmentRelative56px: $relative56px;
+$segmentRelative57px: $relative57px;
+$segmentRelative58px: $relative58px;
+$segmentRelative59px: $relative59px;
+$segmentRelative60px: $relative60px;
+$segmentRelative61px: $relative61px;
+$segmentRelative62px: $relative62px;
+$segmentRelative63px: $relative63px;
+$segmentRelative64px: $relative64px;
+$segmentOneWide: $oneWide;
+$segmentTwoWide: $twoWide;
+$segmentThreeWide: $threeWide;
+$segmentFourWide: $fourWide;
+$segmentFiveWide: $fiveWide;
+$segmentSixWide: $sixWide;
+$segmentSevenWide: $sevenWide;
+$segmentEightWide: $eightWide;
+$segmentNineWide: $nineWide;
+$segmentTenWide: $tenWide;
+$segmentElevenWide: $elevenWide;
+$segmentTwelveWide: $twelveWide;
+$segmentThirteenWide: $thirteenWide;
+$segmentFourteenWide: $fourteenWide;
+$segmentFifteenWide: $fifteenWide;
+$segmentSixteenWide: $sixteenWide;
+$segmentOneColumn: $oneColumn;
+$segmentTwoColumn: $twoColumn;
+$segmentThreeColumn: $threeColumn;
+$segmentFourColumn: $fourColumn;
+$segmentFiveColumn: $fiveColumn;
+$segmentSixColumn: $sixColumn;
+$segmentSevenColumn: $sevenColumn;
+$segmentEightColumn: $eightColumn;
+$segmentNineColumn: $nineColumn;
+$segmentTenColumn: $tenColumn;
+$segmentElevenColumn: $elevenColumn;
+$segmentTwelveColumn: $twelveColumn;
+$segmentThirteenColumn: $thirteenColumn;
+$segmentFourteenColumn: $fourteenColumn;
+$segmentFifteenColumn: $fifteenColumn;
+$segmentSixteenColumn: $sixteenColumn;
+$segmentDisabledOpacity: $disabledOpacity;
+$segmentFloatingShadowHover: $floatingShadowHover;
+$segmentPrimaryColorHover: $primaryColorHover;
+$segmentSecondaryColorHover: $secondaryColorHover;
+$segmentRedHover: $redHover;
+$segmentOrangeHover: $orangeHover;
+$segmentYellowHover: $yellowHover;
+$segmentOliveHover: $oliveHover;
+$segmentGreenHover: $greenHover;
+$segmentTealHover: $tealHover;
+$segmentBlueHover: $blueHover;
+$segmentVioletHover: $violetHover;
+$segmentPurpleHover: $purpleHover;
+$segmentPinkHover: $pinkHover;
+$segmentBrownHover: $brownHover;
+$segmentLightRedHover: $lightRedHover;
+$segmentLightOrangeHover: $lightOrangeHover;
+$segmentLightYellowHover: $lightYellowHover;
+$segmentLightOliveHover: $lightOliveHover;
+$segmentLightGreenHover: $lightGreenHover;
+$segmentLightTealHover: $lightTealHover;
+$segmentLightBlueHover: $lightBlueHover;
+$segmentLightVioletHover: $lightVioletHover;
+$segmentLightPurpleHover: $lightPurpleHover;
+$segmentLightPinkHover: $lightPinkHover;
+$segmentLightBrownHover: $lightBrownHover;
+$segmentLightGreyHover: $lightGreyHover;
+$segmentLightBlackHover: $lightBlackHover;
+$segmentPositiveColorHover: $positiveColorHover;
+$segmentNegativeColorHover: $negativeColorHover;
+$segmentFacebookHoverColor: $facebookHoverColor;
+$segmentTwitterHoverColor: $twitterHoverColor;
+$segmentGooglePlusHoverColor: $googlePlusHoverColor;
+$segmentLinkedInHoverColor: $linkedInHoverColor;
+$segmentYoutubeHoverColor: $youtubeHoverColor;
+$segmentInstagramHoverColor: $instagramHoverColor;
+$segmentPinterestHoverColor: $pinterestHoverColor;
+$segmentVkHoverColor: $vkHoverColor;
+$segmentFullBlackHover: $fullBlackHover;
+$segmentBlackHover: $blackHover;
+$segmentGreyHover: $greyHover;
+$segmentWhiteHover: $whiteHover;
+$segmentOffWhiteHover: $offWhiteHover;
+$segmentDarkWhiteHover: $darkWhiteHover;
+$segmentPrimaryColorFocus: $primaryColorFocus;
+$segmentSecondaryColorFocus: $secondaryColorFocus;
+$segmentRedFocus: $redFocus;
+$segmentOrangeFocus: $orangeFocus;
+$segmentYellowFocus: $yellowFocus;
+$segmentOliveFocus: $oliveFocus;
+$segmentGreenFocus: $greenFocus;
+$segmentTealFocus: $tealFocus;
+$segmentBlueFocus: $blueFocus;
+$segmentVioletFocus: $violetFocus;
+$segmentPurpleFocus: $purpleFocus;
+$segmentPinkFocus: $pinkFocus;
+$segmentBrownFocus: $brownFocus;
+$segmentLightRedFocus: $lightRedFocus;
+$segmentLightOrangeFocus: $lightOrangeFocus;
+$segmentLightYellowFocus: $lightYellowFocus;
+$segmentLightOliveFocus: $lightOliveFocus;
+$segmentLightGreenFocus: $lightGreenFocus;
+$segmentLightTealFocus: $lightTealFocus;
+$segmentLightBlueFocus: $lightBlueFocus;
+$segmentLightVioletFocus: $lightVioletFocus;
+$segmentLightPurpleFocus: $lightPurpleFocus;
+$segmentLightPinkFocus: $lightPinkFocus;
+$segmentLightBrownFocus: $lightBrownFocus;
+$segmentLightGreyFocus: $lightGreyFocus;
+$segmentLightBlackFocus: $lightBlackFocus;
+$segmentPositiveColorFocus: $positiveColorFocus;
+$segmentNegativeColorFocus: $negativeColorFocus;
+$segmentFacebookFocusColor: $facebookFocusColor;
+$segmentTwitterFocusColor: $twitterFocusColor;
+$segmentGooglePlusFocusColor: $googlePlusFocusColor;
+$segmentLinkedInFocusColor: $linkedInFocusColor;
+$segmentYoutubeFocusColor: $youtubeFocusColor;
+$segmentInstagramFocusColor: $instagramFocusColor;
+$segmentPinterestFocusColor: $pinterestFocusColor;
+$segmentVkFocusColor: $vkFocusColor;
+$segmentFullBlackFocus: $fullBlackFocus;
+$segmentBlackFocus: $blackFocus;
+$segmentGreyFocus: $greyFocus;
+$segmentWhiteFocus: $whiteFocus;
+$segmentOffWhiteFocus: $offWhiteFocus;
+$segmentDarkWhiteFocus: $darkWhiteFocus;
+$segmentPrimaryColorDown: $primaryColorDown;
+$segmentSecondaryColorDown: $secondaryColorDown;
+$segmentRedDown: $redDown;
+$segmentOrangeDown: $orangeDown;
+$segmentYellowDown: $yellowDown;
+$segmentOliveDown: $oliveDown;
+$segmentGreenDown: $greenDown;
+$segmentTealDown: $tealDown;
+$segmentBlueDown: $blueDown;
+$segmentVioletDown: $violetDown;
+$segmentPurpleDown: $purpleDown;
+$segmentPinkDown: $pinkDown;
+$segmentBrownDown: $brownDown;
+$segmentLightRedDown: $lightRedDown;
+$segmentLightOrangeDown: $lightOrangeDown;
+$segmentLightYellowDown: $lightYellowDown;
+$segmentLightOliveDown: $lightOliveDown;
+$segmentLightGreenDown: $lightGreenDown;
+$segmentLightTealDown: $lightTealDown;
+$segmentLightBlueDown: $lightBlueDown;
+$segmentLightVioletDown: $lightVioletDown;
+$segmentLightPurpleDown: $lightPurpleDown;
+$segmentLightPinkDown: $lightPinkDown;
+$segmentLightBrownDown: $lightBrownDown;
+$segmentLightGreyDown: $lightGreyDown;
+$segmentLightBlackDown: $lightBlackDown;
+$segmentPositiveColorDown: $positiveColorDown;
+$segmentNegativeColorDown: $negativeColorDown;
+$segmentFacebookDownColor: $facebookDownColor;
+$segmentTwitterDownColor: $twitterDownColor;
+$segmentGooglePlusDownColor: $googlePlusDownColor;
+$segmentLinkedInDownColor: $linkedInDownColor;
+$segmentYoutubeDownColor: $youtubeDownColor;
+$segmentInstagramDownColor: $instagramDownColor;
+$segmentPinterestDownColor: $pinterestDownColor;
+$segmentVkDownColor: $vkDownColor;
+$segmentFullBlackDown: $fullBlackDown;
+$segmentBlackDown: $blackDown;
+$segmentGreyDown: $greyDown;
+$segmentWhiteDown: $whiteDown;
+$segmentOffWhiteDown: $offWhiteDown;
+$segmentDarkWhiteDown: $darkWhiteDown;
+$segmentPrimaryColorActive: $primaryColorActive;
+$segmentSecondaryColorActive: $secondaryColorActive;
+$segmentRedActive: $redActive;
+$segmentOrangeActive: $orangeActive;
+$segmentYellowActive: $yellowActive;
+$segmentOliveActive: $oliveActive;
+$segmentGreenActive: $greenActive;
+$segmentTealActive: $tealActive;
+$segmentBlueActive: $blueActive;
+$segmentVioletActive: $violetActive;
+$segmentPurpleActive: $purpleActive;
+$segmentPinkActive: $pinkActive;
+$segmentBrownActive: $brownActive;
+$segmentLightRedActive: $lightRedActive;
+$segmentLightOrangeActive: $lightOrangeActive;
+$segmentLightYellowActive: $lightYellowActive;
+$segmentLightOliveActive: $lightOliveActive;
+$segmentLightGreenActive: $lightGreenActive;
+$segmentLightTealActive: $lightTealActive;
+$segmentLightBlueActive: $lightBlueActive;
+$segmentLightVioletActive: $lightVioletActive;
+$segmentLightPurpleActive: $lightPurpleActive;
+$segmentLightPinkActive: $lightPinkActive;
+$segmentLightBrownActive: $lightBrownActive;
+$segmentLightGreyActive: $lightGreyActive;
+$segmentLightBlackActive: $lightBlackActive;
+$segmentPositiveColorActive: $positiveColorActive;
+$segmentNegativeColorActive: $negativeColorActive;
+$segmentFacebookActiveColor: $facebookActiveColor;
+$segmentTwitterActiveColor: $twitterActiveColor;
+$segmentGooglePlusActiveColor: $googlePlusActiveColor;
+$segmentLinkedInActiveColor: $linkedInActiveColor;
+$segmentYoutubeActiveColor: $youtubeActiveColor;
+$segmentInstagramActiveColor: $instagramActiveColor;
+$segmentPinterestActiveColor: $pinterestActiveColor;
+$segmentVkActiveColor: $vkActiveColor;
+$segmentFullBlackActive: $fullBlackActive;
+$segmentBlackActive: $blackActive;
+$segmentGreyActive: $greyActive;
+$segmentWhiteActive: $whiteActive;
+$segmentOffWhiteActive: $offWhiteActive;
+$segmentDarkWhiteActive: $darkWhiteActive;
+
+
+/*******************************
+            Segment
+*******************************/
+
+/*-------------------
+       Element
+--------------------*/
+
+$segmentBackground: $segmentWhite;
+$segmentBorderWidth: 1px;
+$segmentBorder: $segmentBorderWidth solid $segmentBorderColor;
+
+$segmentBoxShadow: $segmentSubtleShadow;
+$segmentVerticalPadding: 1em;
+$segmentHorizontalPadding: 1em;
+$segmentPadding: $segmentVerticalPadding $segmentHorizontalPadding;
+
+$segmentVerticalMargin: 1rem;
+$segmentHorizontalMargin: 0;
+$segmentMargin: $segmentVerticalMargin $segmentHorizontalMargin;
+$segmentBorderRadius: $segmentDefaultBorderRadius;
+
+/*-------------------
+       Group
+--------------------*/
+
+$segmentGroupedMargin: $segmentMargin;
+$segmentGroupedBorder: $segmentBorder;
+$segmentGroupedBoxShadow: $segmentBoxShadow;
+$segmentGroupedBorderRadius: $segmentBorderRadius;
+
+$segmentNestedGroupMargin: $segmentVerticalMargin $segmentVerticalMargin;
+
+$segmentGroupedSegmentBorder: none;
+$segmentGroupedSegmentDivider: $segmentBorder;
+$segmentGroupedSegmentMargin: 0;
+$segmentGroupedSegmentWidth: auto;
+$segmentGroupedSegmentBoxShadow: none;
+
+/*-------------------
+       Coupling
+--------------------*/
+
+/* Page Grid Segment */
+$segmentPageGridMargin: (2 * $segmentVerticalPadding);
+
+
+
+/*******************************
+            States
+*******************************/
+
+/* Loading Dimmer */
+$segmentLoaderDimmerColor: rgba(255, 255, 255, 0.8);
+$segmentLoaderDimmerZIndex: 100;
+
+/* Loading Spinner */
+$segmentLoaderSize: 3em;
+$segmentLoaderLineZIndex: 101;
+
+
+
+
+/*******************************
+            Variations
+*******************************/
+
+/* Piled */
+$segmentPiledZIndex: auto;
+$segmentPiledMargin: 3em;
+$segmentPiledBoxShadow: '';
+$segmentPiledDegrees: 1.2deg;
+$segmentPiledBorder: $segmentBorder;
+
+/* Circular */
+$segmentCircularPadding: 2em;
+
+/* Stacked */
+$segmentStackedHeight: 6px;
+$segmentStackedPageBackground: $segmentSubtleTransparentBlack;
+$segmentStackedPadding: $segmentVerticalPadding + (0.4em);
+$segmentTallStackedPadding: $segmentVerticalPadding + (0.8em);
+
+/* Raised */
+$segmentRaisedBoxShadow: $segmentFloatingShadow;
+
+/* Padded */
+$segmentPaddedSegmentPadding: 1.5em;
+$segmentVeryPaddedSegmentPadding: 3em;
+
+/* Attached */
+$segmentAttachedTopOffset: 0;
+$segmentAttachedBottomOffset: 0;
+$segmentAttachedHorizontalOffset: -$segmentBorderWidth;
+$segmentAttachedWidth: #{"calc(100% + " + -$segmentAttachedHorizontalOffset * 2 + ")"};
+$segmentAttachedBoxShadow: none;
+$segmentAttachedBorder: $segmentBorderWidth solid $segmentSolidBorderColor;
+$segmentAttachedBottomBoxShadow:
+  $segmentBoxShadow,
+  $segmentAttachedBoxShadow
+;
+
+/* Inverted */
+$segmentInvertedBackground: $segmentBlack;
+
+/* Floated */
+$segmentFloatedDistance: 1em;
+
+/* Basic */
+$segmentBasicBackground: none transparent;
+$segmentBasicBorder: none;
+$segmentBasicBoxShadow: none;
+$segmentBasicBorderRadius: 0;
+
+/* Colors */
+$segmentColoredBorderSize: 2px;
+
+/* Ordinality */
+$segmentSecondaryBackground: $segmentDarkWhite;
+$segmentSecondaryColor: $segmentMutedTextColor;
+
+$segmentTertiaryBackground:  $segmentMidWhite;
+$segmentTertiaryColor: $segmentMutedTextColor;
+
+$segmentSecondaryInvertedLightness: 0.2;
+$segmentSecondaryInvertedBackground:
+  lighten($segmentBlack, ($segmentSecondaryInvertedLightness * 100))
+  linear-gradient(
+    rgba(255, 255, 255, $segmentSecondaryInvertedLightness) 0%,
+    rgba(255, 255, 255, $segmentSecondaryInvertedLightness) 100%
+  )
+;
+$segmentSecondaryInvertedColor: $segmentInvertedMutedTextColor;
+
+$segmentTertiaryInvertedLightness: 0.35;
+$segmentTertiaryInvertedBackground:
+  lighten($segmentBlack, ($segmentTertiaryInvertedLightness * 100))
+  linear-gradient(
+    rgba(255, 255, 255, $segmentTertiaryInvertedLightness) 0%,
+    rgba(255, 255, 255, $segmentTertiaryInvertedLightness) 100%
+  )
+;
+$segmentTertiaryInvertedColor: $segmentInvertedMutedTextColor;

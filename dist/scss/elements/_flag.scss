@@ -1,0 +1,42 @@
+/*!
+ * # Shengnian UI - Flag
+ * http://github.com/shengnian/shengnian-ui
+ *
+ *
+ * Released under the MIT license
+ * http://opensource.org/licenses/MIT
+ *
+ */
+
+
+/*******************************
+             Flag
+*******************************/
+
+i.flag:not(.icon) {
+  display: inline-block;
+
+  width: $flagWidth;
+  height: $flagHeight;
+
+  line-height: $flagHeight;
+  vertical-align: $flagVerticalAlign;
+  margin: 0 $flagMargin 0 0;
+
+  text-decoration: inherit;
+
+  speak: none;
+  font-smoothing: antialiased;
+  backface-visibility: hidden;
+}
+
+/* Sprite */
+i.flag:not(.icon):before {
+  display: inline-block;
+  content: '';
+  background: url($flagSpritePath) no-repeat -108px -1976px;
+  width: $flagWidth;
+  height: $flagHeight;
+}
+
+

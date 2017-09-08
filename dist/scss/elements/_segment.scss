@@ -1,0 +1,753 @@
+/*!
+ * # Shengnian UI - Segment
+ * http://github.com/shengnian/shengnian-ui
+ *
+ *
+ * Released under the MIT license
+ * http://opensource.org/licenses/MIT
+ *
+ */
+
+
+/*******************************
+            Segment
+*******************************/
+
+.ui.segment {
+  position: relative;
+  background: $segmentBackground;
+  box-shadow: $segmentBoxShadow;
+  margin: $segmentMargin;
+  padding: $segmentPadding;
+  border-radius: $segmentBorderRadius;
+  border: $segmentBorder;
+}
+
+.ui.segment:first-child {
+  margin-top: 0;
+}
+.ui.segment:last-child {
+  margin-bottom: 0;
+}
+/* Vertical */
+.ui.vertical.segment {
+  margin: 0;
+  padding-left: 0;
+  padding-right: 0;
+
+  background: none transparent;
+  border-radius: 0;
+  box-shadow: none;
+  border: none;
+  border-bottom: $segmentBorderWidth solid $segmentBorderColor;
+}
+.ui.vertical.segment:last-child {
+  border-bottom: none;
+}
+/*-------------------
+    Loose Coupling
+--------------------*/
+
+/* Header */
+.ui.inverted.segment > .ui.header {
+  color: $segmentWhite;
+}
+
+/* Label */
+.ui[class*="bottom attached"].segment > [class*="top attached"].label {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+.ui[class*="top attached"].segment > [class*="bottom attached"].label {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.ui.attached.segment:not(.top):not(.bottom) > [class*="top attached"].label {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+.ui.attached.segment:not(.top):not(.bottom) > [class*="bottom attached"].label {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+/* Grid */
+.ui.page.grid.segment,
+.ui.grid > .row > .ui.segment.column,
+.ui.grid > .ui.segment.column {
+  padding-top: $segmentPageGridMargin;
+  padding-bottom: $segmentPageGridMargin;
+}
+.ui.grid.segment {
+  margin: $segmentMargin;
+  border-radius: $segmentBorderRadius;
+}
+
+/* Table */
+.ui.basic.table.segment {
+  background: $segmentBackground;
+  border: $segmentBorder;
+  box-shadow: $segmentBoxShadow;
+}
+.ui[class*="very basic"].table.segment {
+  padding: $segmentPadding;
+}
+
+
+/*******************************
+             Types
+*******************************/
+
+/*-------------------
+        Piled
+--------------------*/
+
+.ui.piled.segments,
+.ui.piled.segment {
+  margin: $segmentPiledMargin 0;
+  box-shadow: $segmentPiledBoxShadow;
+  z-index: $segmentPiledZIndex;
+}
+.ui.piled.segment:first-child {
+  margin-top: 0;
+}
+.ui.piled.segment:last-child {
+  margin-bottom: 0;
+}
+.ui.piled.segments:after,
+.ui.piled.segments:before,
+.ui.piled.segment:after,
+.ui.piled.segment:before {
+  background-color: $segmentWhite;
+  visibility: visible;
+  content: '';
+  display: block;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  border: $segmentPiledBorder;
+  box-shadow: $segmentPiledBoxShadow;
+}
+.ui.piled.segments:before,
+.ui.piled.segment:before {
+  transform: rotate(-$segmentPiledDegrees);
+  top: 0;
+  z-index: -2;
+}
+.ui.piled.segments:after,
+.ui.piled.segment:after {
+  transform: rotate($segmentPiledDegrees);
+  top: 0;
+  z-index: -1;
+}
+
+/* Piled Attached */
+.ui[class*="top attached"].piled.segment {
+  margin-top: $segmentPiledMargin;
+  margin-bottom: 0;
+}
+.ui.piled.segment[class*="top attached"]:first-child {
+  margin-top: 0;
+}
+.ui.piled.segment[class*="bottom attached"] {
+  margin-top: 0;
+  margin-bottom: $segmentPiledMargin;
+}
+.ui.piled.segment[class*="bottom attached"]:last-child {
+  margin-bottom: 0;
+}
+
+/*-------------------
+       Stacked
+--------------------*/
+
+.ui.stacked.segment {
+  padding-bottom: $segmentStackedPadding;
+}
+.ui.stacked.segments:before,
+.ui.stacked.segments:after,
+.ui.stacked.segment:before,
+.ui.stacked.segment:after {
+  content: '';
+  position: absolute;
+  bottom: -($segmentStackedHeight / 2);
+  left: 0%;
+
+  border-top: 1px solid $segmentBorderColor;
+  background: $segmentStackedPageBackground;
+
+  width: 100%;
+  height: $segmentStackedHeight;
+  visibility: visible;
+}
+.ui.stacked.segments:before,
+.ui.stacked.segment:before {
+  display: none;
+}
+
+/* Add additional page */
+.ui.tall.stacked.segments:before,
+.ui.tall.stacked.segment:before {
+  display: block;
+  bottom: 0;
+}
+
+/* Inverted */
+.ui.stacked.inverted.segments:before,
+.ui.stacked.inverted.segments:after,
+.ui.stacked.inverted.segment:before,
+.ui.stacked.inverted.segment:after {
+  background-color: $segmentSubtleTransparentBlack;
+  border-top: 1px solid $segmentSelectedBorderColor;
+}
+
+/*-------------------
+       Padded
+--------------------*/
+
+.ui.padded.segment {
+  padding: $segmentPaddedSegmentPadding;
+}
+
+.ui[class*="very padded"].segment {
+  padding: $segmentVeryPaddedSegmentPadding;
+}
+
+/* Padded vertical */
+.ui.padded.segment.vertical.segment,
+.ui[class*="very padded"].vertical.segment {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/*-------------------
+       Compact
+--------------------*/
+
+.ui.compact.segment {
+  display: table;
+}
+
+/* Compact Group */
+.ui.compact.segments {
+  display: inline-flex;
+}
+.ui.compact.segments .segment,
+.ui.segments .compact.segment {
+  display: block;
+  flex: 0 1 auto;
+}
+
+/*-------------------
+       Circular
+--------------------*/
+
+.ui.circular.segment {
+  display: table-cell;
+  padding: $segmentCircularPadding;
+  text-align: center;
+  vertical-align: middle;
+  border-radius: 500em;
+}
+
+/*-------------------
+       Raised
+--------------------*/
+
+.ui.raised.segments,
+.ui.raised.segment {
+  box-shadow: $segmentRaisedBoxShadow;
+}
+
+
+/*******************************
+            Groups
+*******************************/
+
+/* Group */
+.ui.segments {
+  flex-direction: column;
+  position: relative;
+  margin: $segmentGroupedMargin;
+  border: $segmentGroupedBorder;
+  box-shadow: $segmentGroupedBoxShadow;
+  border-radius: $segmentGroupedBorderRadius;
+}
+.ui.segments:first-child {
+  margin-top: 0;
+}
+.ui.segments:last-child {
+  margin-bottom: 0;
+}
+/* Nested Segment */
+.ui.segments > .segment {
+  top: 0;
+  bottom: 0;
+  border-radius: 0;
+  margin: $segmentGroupedSegmentMargin;
+  width: $segmentGroupedSegmentWidth;
+  box-shadow: $segmentGroupedSegmentBoxShadow;
+  border: $segmentGroupedSegmentBorder;
+  border-top: $segmentGroupedSegmentDivider;
+}
+
+.ui.segments:not(.horizontal) > .segment:first-child {
+  top: $segmentAttachedTopOffset;
+  bottom: 0;
+  border-top: none;
+  margin-top: 0;
+  bottom: 0;
+  margin-bottom: 0;
+  top: $segmentAttachedTopOffset;
+  border-radius: $segmentBorderRadius $segmentBorderRadius 0 0;
+}
+
+/* Bottom */
+.ui.segments:not(.horizontal) > .segment:last-child {
+  top: $segmentAttachedBottomOffset;
+  bottom: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  box-shadow: $segmentAttachedBottomBoxShadow;
+  border-radius: 0 0 $segmentBorderRadius $segmentBorderRadius;
+}
+
+/* Only */
+.ui.segments:not(.horizontal) > .segment:only-child {
+  border-radius: $segmentBorderRadius;
+}
+/* Nested Group */
+.ui.segments > .ui.segments {
+  border-top: $segmentGroupedSegmentDivider;
+  margin: $segmentNestedGroupMargin;
+}
+.ui.segments > .segments:first-child {
+  border-top: none;
+}
+.ui.segments > .segment + .segments:not(.horizontal) {
+  margin-top: 0;
+}
+
+/* Horizontal Group */
+.ui.horizontal.segments {
+  display: flex;
+  flex-direction: row;
+  background-color: transparent;
+  border-radius: 0;
+  padding: 0;
+  background-color: $segmentBackground;
+  box-shadow: $segmentBoxShadow;
+  margin: $segmentMargin;
+  border-radius: $segmentBorderRadius;
+  border: $segmentBorder;
+}
+
+/* Nested Horizontal Group */
+.ui.segments > .horizontal.segments {
+  margin: 0;
+  background-color: transparent;
+  border-radius: 0;
+  border: none;
+  box-shadow: none;
+  border-top: $segmentGroupedSegmentDivider;
+}
+
+/* Horizontal Segment */
+.ui.horizontal.segments > .segment {
+  flex: 1 1 auto;
+  -ms-flex: 1 1 0; /* Solves #2550 MS Flex */
+  margin: 0;
+  min-width: 0;
+  background-color: transparent;
+  border-radius: 0;
+  border: none;
+  box-shadow: none;
+  border-left: $segmentBorderWidth solid $segmentBorderColor;
+}
+
+/* Border Fixes */
+.ui.segments > .horizontal.segments:first-child {
+  border-top: none;
+}
+.ui.horizontal.segments > .segment:first-child {
+  border-left: none;
+}
+
+
+/*******************************
+            States
+*******************************/
+
+/*--------------
+    Disabled
+---------------*/
+
+.ui.disabled.segment {
+  opacity: $segmentDisabledOpacity;
+  color: $segmentDisabledTextColor;
+}
+
+/*--------------
+    Loading
+---------------*/
+
+.ui.loading.segment {
+  position: relative;
+  cursor: default;
+  pointer-events: none;
+  text-shadow: none !important;
+  color: transparent !important;
+  transition: all 0s linear;
+}
+.ui.loading.segment:before {
+  position: absolute;
+  content: '';
+  top: 0%;
+  left: 0%;
+  background: $segmentLoaderDimmerColor;
+  width: 100%;
+  height: 100%;
+  border-radius: $segmentBorderRadius;
+  z-index: $segmentLoaderDimmerZIndex;
+}
+.ui.loading.segment:after {
+  position: absolute;
+  content: '';
+  top: 50%;
+  left: 50%;
+
+  margin: $segmentLoaderMargin;
+  width: $segmentLoaderSize;
+  height: $segmentLoaderSize;
+
+  animation: segment-spin $segmentLoaderSpeed linear;
+  animation-iteration-count: infinite;
+
+  border-radius: $segmentCircularRadius;
+
+  border-color: $segmentLoaderLineColor $segmentLoaderFillColor $segmentLoaderFillColor $segmentLoaderFillColor;
+  border-style: solid;
+  border-width: $segmentLoaderLineWidth;
+
+  box-shadow: 0 0 0 1px transparent;
+  visibility: visible;
+  z-index: $segmentLoaderLineZIndex;
+}
+
+@keyframes segment-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+/*******************************
+           Variations
+*******************************/
+/*-------------------
+       Basic
+--------------------*/
+
+.ui.basic.segment {
+  background: $segmentBasicBackground;
+  box-shadow: $segmentBasicBoxShadow;
+  border: $segmentBasicBorder;
+  border-radius: $segmentBasicBorderRadius;
+}
+
+/*-------------------
+       Clearing
+--------------------*/
+
+.ui.clearing.segment:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+/*-------------------
+       Colors
+--------------------*/
+
+/* Red */
+.ui.red.segment:not(.inverted) {
+  border-top: $segmentColoredBorderSize solid $segmentRed !important;
+}
+.ui.inverted.red.segment {
+  background-color: $segmentRed !important;
+  color: $segmentWhite !important;
+}
+
+/* Orange */
+.ui.orange.segment:not(.inverted) {
+  border-top: $segmentColoredBorderSize solid $segmentOrange !important;
+}
+.ui.inverted.orange.segment {
+  background-color: $segmentOrange !important;
+  color: $segmentWhite !important;
+}
+
+/* Yellow */
+.ui.yellow.segment:not(.inverted) {
+  border-top: $segmentColoredBorderSize solid $segmentYellow !important;
+}
+.ui.inverted.yellow.segment {
+  background-color: $segmentYellow !important;
+  color: $segmentWhite !important;
+}
+
+/* Olive */
+.ui.olive.segment:not(.inverted) {
+  border-top: $segmentColoredBorderSize solid $segmentOlive !important;
+}
+.ui.inverted.olive.segment {
+  background-color: $segmentOlive !important;
+  color: $segmentWhite !important;
+}
+
+/* Green */
+.ui.green.segment:not(.inverted) {
+  border-top: $segmentColoredBorderSize solid $segmentGreen !important;
+}
+.ui.inverted.green.segment {
+  background-color: $segmentGreen !important;
+  color: $segmentWhite !important;
+}
+
+/* Teal */
+.ui.teal.segment:not(.inverted) {
+  border-top: $segmentColoredBorderSize solid $segmentTeal !important;
+}
+.ui.inverted.teal.segment {
+  background-color: $segmentTeal !important;
+  color: $segmentWhite !important;
+}
+
+/* Blue */
+.ui.blue.segment:not(.inverted) {
+  border-top: $segmentColoredBorderSize solid $segmentBlue !important;
+}
+.ui.inverted.blue.segment {
+  background-color: $segmentBlue !important;
+  color: $segmentWhite !important;
+}
+
+/* Violet */
+.ui.violet.segment:not(.inverted) {
+  border-top: $segmentColoredBorderSize solid $segmentViolet !important;
+}
+.ui.inverted.violet.segment {
+  background-color: $segmentViolet !important;
+  color: $segmentWhite !important;
+}
+
+/* Purple */
+.ui.purple.segment:not(.inverted) {
+  border-top: $segmentColoredBorderSize solid $segmentPurple !important;
+}
+.ui.inverted.purple.segment {
+  background-color: $segmentPurple !important;
+  color: $segmentWhite !important;
+}
+
+/* Pink */
+.ui.pink.segment:not(.inverted) {
+  border-top: $segmentColoredBorderSize solid $segmentPink !important;
+}
+.ui.inverted.pink.segment {
+  background-color: $segmentPink !important;
+  color: $segmentWhite !important;
+}
+
+/* Brown */
+.ui.brown.segment:not(.inverted) {
+  border-top: $segmentColoredBorderSize solid $segmentBrown !important;
+}
+.ui.inverted.brown.segment {
+  background-color: $segmentBrown !important;
+  color: $segmentWhite !important;
+}
+
+/* Grey */
+.ui.grey.segment:not(.inverted) {
+  border-top: $segmentColoredBorderSize solid $segmentGrey !important;
+}
+.ui.inverted.grey.segment {
+  background-color: $segmentGrey !important;
+  color: $segmentWhite !important;
+}
+
+/* Black */
+.ui.black.segment:not(.inverted) {
+  border-top: $segmentColoredBorderSize solid $segmentBlack !important;
+}
+.ui.inverted.black.segment {
+  background-color: $segmentBlack !important;
+  color: $segmentWhite !important;
+}
+
+/*-------------------
+       Aligned
+--------------------*/
+
+.ui[class*="left aligned"].segment {
+  text-align: left;
+}
+.ui[class*="right aligned"].segment {
+  text-align: right;
+}
+.ui[class*="center aligned"].segment {
+  text-align: center;
+}
+
+/*-------------------
+       Floated
+--------------------*/
+
+.ui.floated.segment,
+.ui[class*="left floated"].segment {
+  float: left;
+  margin-right: $segmentFloatedDistance;
+}
+.ui[class*="right floated"].segment {
+  float: right;
+  margin-left: $segmentFloatedDistance;
+}
+/*-------------------
+      Inverted
+--------------------*/
+
+.ui.inverted.segment {
+  border: none;
+  box-shadow: none;
+}
+.ui.inverted.segment,
+.ui.primary.inverted.segment {
+  background: $segmentInvertedBackground;
+  color: $segmentInvertedTextColor;
+}
+
+/* Nested */
+.ui.inverted.segment .segment {
+  color: $segmentTextColor;
+}
+.ui.inverted.segment .inverted.segment {
+  color: $segmentInvertedTextColor;
+}
+
+/* Attached */
+.ui.inverted.attached.segment {
+  border-color: $segmentSolidWhiteBorderColor;
+}
+
+/*-------------------
+     Emphasis
+--------------------*/
+
+/* Secondary */
+.ui.secondary.segment {
+  background: $segmentSecondaryBackground;
+  color: $segmentSecondaryColor;
+}
+.ui.secondary.inverted.segment {
+  background: $segmentSecondaryInvertedBackground;
+  color: $segmentSecondaryInvertedColor;
+}
+
+/* Tertiary */
+.ui.tertiary.segment {
+  background: $segmentTertiaryBackground;
+  color: $segmentTertiaryColor;
+}
+.ui.tertiary.inverted.segment {
+  background: $segmentTertiaryInvertedBackground;
+  color: $segmentTertiaryInvertedColor;
+}
+/*-------------------
+      Attached
+--------------------*/
+
+/* Middle */
+.ui.attached.segment {
+  top: 0;
+  bottom: 0;
+  border-radius: 0;
+  margin: 0 $segmentAttachedHorizontalOffset;
+  width: $segmentAttachedWidth;
+  max-width: $segmentAttachedWidth;
+  box-shadow: $segmentAttachedBoxShadow;
+  border: $segmentAttachedBorder;
+}
+.ui.attached:not(.message) + .ui.attached.segment:not(.top) {
+  border-top: none;
+}
+
+/* Top */
+.ui[class*="top attached"].segment {
+  bottom: 0;
+  margin-bottom: 0;
+  top: $segmentAttachedTopOffset;
+  margin-top: $segmentVerticalMargin;
+  border-radius: $segmentBorderRadius $segmentBorderRadius 0 0;
+}
+.ui.segment[class*="top attached"]:first-child {
+  margin-top: 0;
+}
+
+/* Bottom */
+.ui.segment[class*="bottom attached"] {
+  bottom: 0;
+  margin-top: 0;
+  top: $segmentAttachedBottomOffset;
+  margin-bottom: $segmentVerticalMargin;
+  box-shadow: $segmentAttachedBottomBoxShadow;
+  border-radius: 0 0 $segmentBorderRadius $segmentBorderRadius;
+}
+.ui.segment[class*="bottom attached"]:last-child {
+  margin-bottom: 0;
+}
+
+/*-------------------
+        Size
+--------------------*/
+
+.ui.mini.segments .segment,
+.ui.mini.segment {
+  font-size: $segmentMini;
+}
+.ui.tiny.segments .segment,
+.ui.tiny.segment {
+  font-size: $segmentTiny;
+}
+.ui.small.segments .segment,
+.ui.small.segment {
+  font-size: $segmentSmall;
+}
+.ui.segments .segment,
+.ui.segment {
+  font-size: $segmentMedium;
+}
+.ui.large.segments .segment,
+.ui.large.segment {
+  font-size: $segmentLarge;
+}
+.ui.big.segments .segment,
+.ui.big.segment {
+  font-size: $segmentBig;
+}
+.ui.huge.segments .segment,
+.ui.huge.segment {
+  font-size: $segmentHuge;
+}
+.ui.massive.segments .segment,
+.ui.massive.segment {
+  font-size: $segmentMassive;
+}
+
+

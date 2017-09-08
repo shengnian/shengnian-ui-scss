@@ -1,0 +1,808 @@
+$formFontName: $fontName;
+$formFontSmoothing: $fontSmoothing;
+$formHeaderFont: $headerFont;
+$formPageFont: $pageFont;
+$formGoogleFontName: $googleFontName;
+$formImportGoogleFonts: $importGoogleFonts;
+$formGoogleFontSizes: $googleFontSizes;
+$formGoogleSubset: $googleSubset;
+$formGoogleProtocol: $googleProtocol;
+$formGoogleFontRequest: $googleFontRequest;
+$formEmSize: $emSize;
+$formFontSize: $fontSize;
+$formRelativeBorderRadius: $relativeBorderRadius;
+$formAbsoluteBorderRadius: $absoluteBorderRadius;
+$formDefaultBorderRadius: $defaultBorderRadius;
+$formPrimaryColor: $primaryColor;
+$formSecondaryColor: $secondaryColor;
+$formLightPrimaryColor: $lightPrimaryColor;
+$formLightSecondaryColor: $lightSecondaryColor;
+$formHeaderFontWeight: $headerFontWeight;
+$formHeaderLineHeight: $headerLineHeight;
+$formH1: $h1;
+$formH2: $h2;
+$formH3: $h3;
+$formH4: $h4;
+$formH5: $h5;
+$formInputBackground: $inputBackground;
+$formInputVerticalPadding: $inputVerticalPadding;
+$formInputHorizontalPadding: $inputHorizontalPadding;
+$formInputPadding: $inputPadding;
+$formInputColor: $inputColor;
+$formInputPlaceholderColor: $inputPlaceholderColor;
+$formInputPlaceholderFocusColor: $inputPlaceholderFocusColor;
+$formInputLineHeight: $inputLineHeight;
+$formFocusedFormBorderColor: $focusedFormBorderColor;
+$formFocusedFormMutedBorderColor: $focusedFormMutedBorderColor;
+$formMiniSize: $miniSize;
+$formTinySize: $tinySize;
+$formSmallSize: $smallSize;
+$formMediumSize: $mediumSize;
+$formLargeSize: $largeSize;
+$formBigSize: $bigSize;
+$formHugeSize: $hugeSize;
+$formMassiveSize: $massiveSize;
+$formPageBackground: $pageBackground;
+$formPageOverflowX: $pageOverflowX;
+$formLineHeight: $lineHeight;
+$formTextColor: $textColor;
+$formParagraphMargin: $paragraphMargin;
+$formParagraphLineHeight: $paragraphLineHeight;
+$formLinkColor: $linkColor;
+$formLinkUnderline: $linkUnderline;
+$formLinkHoverColor: $linkHoverColor;
+$formLinkHoverUnderline: $linkHoverUnderline;
+$formUseCustomScrollbars: $useCustomScrollbars;
+$formCustomScrollbarWidth: $customScrollbarWidth;
+$formTrackBackground: $trackBackground;
+$formTrackBorderRadius: $trackBorderRadius;
+$formThumbBorderRadius: $thumbBorderRadius;
+$formThumbBackground: $thumbBackground;
+$formThumbTransition: $thumbTransition;
+$formThumbInactiveBackground: $thumbInactiveBackground;
+$formThumbHoverBackground: $thumbHoverBackground;
+$formTrackInvertedBackground: $trackInvertedBackground;
+$formThumbInvertedBackground: $thumbInvertedBackground;
+$formThumbInvertedInactiveBackground: $thumbInvertedInactiveBackground;
+$formThumbInvertedHoverBackground: $thumbInvertedHoverBackground;
+$formHighlightBackground: $highlightBackground;
+$formHighlightColor: $highlightColor;
+$formInputHighlightBackground: $inputHighlightBackground;
+$formInputHighlightColor: $inputHighlightColor;
+$formLoaderSize: $loaderSize;
+$formLoaderSpeed: $loaderSpeed;
+$formLoaderLineWidth: $loaderLineWidth;
+$formLoaderFillColor: $loaderFillColor;
+$formLoaderLineColor: $loaderLineColor;
+$formInvertedLoaderFillColor: $invertedLoaderFillColor;
+$formInvertedLoaderLineColor: $invertedLoaderLineColor;
+$formColumnCount: $columnCount;
+$formDefaultDuration: $defaultDuration;
+$formDefaultEasing: $defaultEasing;
+$formMobileBreakpoint: $mobileBreakpoint;
+$formTabletBreakpoint: $tabletBreakpoint;
+$formComputerBreakpoint: $computerBreakpoint;
+$formLargeMonitorBreakpoint: $largeMonitorBreakpoint;
+$formWidescreenMonitorBreakpoint: $widescreenMonitorBreakpoint;
+$formRed: $red;
+$formOrange: $orange;
+$formYellow: $yellow;
+$formOlive: $olive;
+$formGreen: $green;
+$formTeal: $teal;
+$formBlue: $blue;
+$formViolet: $violet;
+$formPurple: $purple;
+$formPink: $pink;
+$formBrown: $brown;
+$formGrey: $grey;
+$formBlack: $black;
+$formLightRed: $lightRed;
+$formLightOrange: $lightOrange;
+$formLightYellow: $lightYellow;
+$formLightOlive: $lightOlive;
+$formLightGreen: $lightGreen;
+$formLightTeal: $lightTeal;
+$formLightBlue: $lightBlue;
+$formLightViolet: $lightViolet;
+$formLightPurple: $lightPurple;
+$formLightPink: $lightPink;
+$formLightBrown: $lightBrown;
+$formLightGrey: $lightGrey;
+$formLightBlack: $lightBlack;
+$formFullBlack: $fullBlack;
+$formOffWhite: $offWhite;
+$formDarkWhite: $darkWhite;
+$formMidWhite: $midWhite;
+$formWhite: $white;
+$formRedBackground: $redBackground;
+$formOrangeBackground: $orangeBackground;
+$formYellowBackground: $yellowBackground;
+$formOliveBackground: $oliveBackground;
+$formGreenBackground: $greenBackground;
+$formTealBackground: $tealBackground;
+$formBlueBackground: $blueBackground;
+$formVioletBackground: $violetBackground;
+$formPurpleBackground: $purpleBackground;
+$formPinkBackground: $pinkBackground;
+$formBrownBackground: $brownBackground;
+$formRedHeaderColor: $redHeaderColor;
+$formOliveHeaderColor: $oliveHeaderColor;
+$formGreenHeaderColor: $greenHeaderColor;
+$formYellowHeaderColor: $yellowHeaderColor;
+$formBlueHeaderColor: $blueHeaderColor;
+$formTealHeaderColor: $tealHeaderColor;
+$formPinkHeaderColor: $pinkHeaderColor;
+$formVioletHeaderColor: $violetHeaderColor;
+$formPurpleHeaderColor: $purpleHeaderColor;
+$formOrangeHeaderColor: $orangeHeaderColor;
+$formBrownHeaderColor: $brownHeaderColor;
+$formRedTextColor: $redTextColor;
+$formOrangeTextColor: $orangeTextColor;
+$formYellowTextColor: $yellowTextColor;
+$formOliveTextColor: $oliveTextColor;
+$formGreenTextColor: $greenTextColor;
+$formTealTextColor: $tealTextColor;
+$formBlueTextColor: $blueTextColor;
+$formVioletTextColor: $violetTextColor;
+$formPurpleTextColor: $purpleTextColor;
+$formPinkTextColor: $pinkTextColor;
+$formBrownTextColor: $brownTextColor;
+$formRedBorderColor: $redBorderColor;
+$formOrangeBorderColor: $orangeBorderColor;
+$formYellowBorderColor: $yellowBorderColor;
+$formOliveBorderColor: $oliveBorderColor;
+$formGreenBorderColor: $greenBorderColor;
+$formTealBorderColor: $tealBorderColor;
+$formBlueBorderColor: $blueBorderColor;
+$formVioletBorderColor: $violetBorderColor;
+$formPurpleBorderColor: $purpleBorderColor;
+$formPinkBorderColor: $pinkBorderColor;
+$formBrownBorderColor: $brownBorderColor;
+$formSubtleTransparentBlack: $subtleTransparentBlack;
+$formTransparentBlack: $transparentBlack;
+$formStrongTransparentBlack: $strongTransparentBlack;
+$formVeryStrongTransparentBlack: $veryStrongTransparentBlack;
+$formSubtleTransparentWhite: $subtleTransparentWhite;
+$formTransparentWhite: $transparentWhite;
+$formStrongTransparentWhite: $strongTransparentWhite;
+$formSubtleGradient: $subtleGradient;
+$formSubtleShadow: $subtleShadow;
+$formFloatingShadow: $floatingShadow;
+$formPositiveColor: $positiveColor;
+$formPositiveBackgroundColor: $positiveBackgroundColor;
+$formPositiveBorderColor: $positiveBorderColor;
+$formPositiveHeaderColor: $positiveHeaderColor;
+$formPositiveTextColor: $positiveTextColor;
+$formNegativeColor: $negativeColor;
+$formNegativeBackgroundColor: $negativeBackgroundColor;
+$formNegativeBorderColor: $negativeBorderColor;
+$formNegativeHeaderColor: $negativeHeaderColor;
+$formNegativeTextColor: $negativeTextColor;
+$formInfoColor: $infoColor;
+$formInfoBackgroundColor: $infoBackgroundColor;
+$formInfoBorderColor: $infoBorderColor;
+$formInfoHeaderColor: $infoHeaderColor;
+$formInfoTextColor: $infoTextColor;
+$formWarningColor: $warningColor;
+$formWarningBorderColor: $warningBorderColor;
+$formWarningBackgroundColor: $warningBackgroundColor;
+$formWarningHeaderColor: $warningHeaderColor;
+$formWarningTextColor: $warningTextColor;
+$formImagePath: $imagePath;
+$formFontPath: $fontPath;
+$formMini: $mini;
+$formTiny: $tiny;
+$formSmall: $small;
+$formMedium: $medium;
+$formLarge: $large;
+$formBig: $big;
+$formHuge: $huge;
+$formMassive: $massive;
+$formRelativeMini: $relativeMini;
+$formRelativeTiny: $relativeTiny;
+$formRelativeSmall: $relativeSmall;
+$formRelativeMedium: $relativeMedium;
+$formRelativeLarge: $relativeLarge;
+$formRelativeBig: $relativeBig;
+$formRelativeHuge: $relativeHuge;
+$formRelativeMassive: $relativeMassive;
+$formAbsoluteMini: $absoluteMini;
+$formAbsoluteTiny: $absoluteTiny;
+$formAbsoluteSmall: $absoluteSmall;
+$formAbsoluteMedium: $absoluteMedium;
+$formAbsoluteLarge: $absoluteLarge;
+$formAbsoluteBig: $absoluteBig;
+$formAbsoluteHuge: $absoluteHuge;
+$formAbsoluteMassive: $absoluteMassive;
+$formIconWidth: $iconWidth;
+$formDarkTextColor: $darkTextColor;
+$formMutedTextColor: $mutedTextColor;
+$formLightTextColor: $lightTextColor;
+$formUnselectedTextColor: $unselectedTextColor;
+$formHoveredTextColor: $hoveredTextColor;
+$formPressedTextColor: $pressedTextColor;
+$formSelectedTextColor: $selectedTextColor;
+$formDisabledTextColor: $disabledTextColor;
+$formInvertedTextColor: $invertedTextColor;
+$formInvertedMutedTextColor: $invertedMutedTextColor;
+$formInvertedLightTextColor: $invertedLightTextColor;
+$formInvertedUnselectedTextColor: $invertedUnselectedTextColor;
+$formInvertedHoveredTextColor: $invertedHoveredTextColor;
+$formInvertedPressedTextColor: $invertedPressedTextColor;
+$formInvertedSelectedTextColor: $invertedSelectedTextColor;
+$formInvertedDisabledTextColor: $invertedDisabledTextColor;
+$formFacebookColor: $facebookColor;
+$formTwitterColor: $twitterColor;
+$formGooglePlusColor: $googlePlusColor;
+$formLinkedInColor: $linkedInColor;
+$formYoutubeColor: $youtubeColor;
+$formPinterestColor: $pinterestColor;
+$formVkColor: $vkColor;
+$formInstagramColor: $instagramColor;
+$formCircularRadius: $circularRadius;
+$formBorderColor: $borderColor;
+$formStrongBorderColor: $strongBorderColor;
+$formInternalBorderColor: $internalBorderColor;
+$formSelectedBorderColor: $selectedBorderColor;
+$formStrongSelectedBorderColor: $strongSelectedBorderColor;
+$formDisabledBorderColor: $disabledBorderColor;
+$formSolidInternalBorderColor: $solidInternalBorderColor;
+$formSolidBorderColor: $solidBorderColor;
+$formSolidSelectedBorderColor: $solidSelectedBorderColor;
+$formWhiteBorderColor: $whiteBorderColor;
+$formSelectedWhiteBorderColor: $selectedWhiteBorderColor;
+$formSolidWhiteBorderColor: $solidWhiteBorderColor;
+$formSelectedSolidWhiteBorderColor: $selectedSolidWhiteBorderColor;
+$formLoaderOffset: $loaderOffset;
+$formLoaderMargin: $loaderMargin;
+$formScrollbarWidth: $scrollbarWidth;
+$formGlyphWidth: $glyphWidth;
+$formLineHeightOffset: $lineHeightOffset;
+$formHeaderLineHeightOffset: $headerLineHeightOffset;
+$formHeaderTopMargin: $headerTopMargin;
+$formHeaderBottomMargin: $headerBottomMargin;
+$formHeaderMargin: $headerMargin;
+$formPageMinWidth: $pageMinWidth;
+$formSuccessBackgroundColor: $successBackgroundColor;
+$formSuccessColor: $successColor;
+$formSuccessBorderColor: $successBorderColor;
+$formSuccessHeaderColor: $successHeaderColor;
+$formSuccessTextColor: $successTextColor;
+$formErrorBackgroundColor: $errorBackgroundColor;
+$formErrorColor: $errorColor;
+$formErrorBorderColor: $errorBorderColor;
+$formErrorHeaderColor: $errorHeaderColor;
+$formErrorTextColor: $errorTextColor;
+$formLargestMobileScreen: $largestMobileScreen;
+$formLargestTabletScreen: $largestTabletScreen;
+$formLargestSmallMonitor: $largestSmallMonitor;
+$formLargestLargeMonitor: $largestLargeMonitor;
+$form1px: $_1px;
+$form2px: $_2px;
+$form3px: $_3px;
+$form4px: $_4px;
+$form5px: $_5px;
+$form6px: $_6px;
+$form7px: $_7px;
+$form8px: $_8px;
+$form9px: $_9px;
+$form10px: $_10px;
+$form11px: $_11px;
+$form12px: $_12px;
+$form13px: $_13px;
+$form14px: $_14px;
+$form15px: $_15px;
+$form16px: $_16px;
+$form17px: $_17px;
+$form18px: $_18px;
+$form19px: $_19px;
+$form20px: $_20px;
+$form21px: $_21px;
+$form22px: $_22px;
+$form23px: $_23px;
+$form24px: $_24px;
+$form25px: $_25px;
+$form26px: $_26px;
+$form27px: $_27px;
+$form28px: $_28px;
+$form29px: $_29px;
+$form30px: $_30px;
+$form31px: $_31px;
+$form32px: $_32px;
+$form33px: $_33px;
+$form34px: $_34px;
+$form35px: $_35px;
+$form36px: $_36px;
+$form37px: $_37px;
+$form38px: $_38px;
+$form39px: $_39px;
+$form40px: $_40px;
+$form41px: $_41px;
+$form42px: $_42px;
+$form43px: $_43px;
+$form44px: $_44px;
+$form45px: $_45px;
+$form46px: $_46px;
+$form47px: $_47px;
+$form48px: $_48px;
+$form49px: $_49px;
+$form50px: $_50px;
+$form51px: $_51px;
+$form52px: $_52px;
+$form53px: $_53px;
+$form54px: $_54px;
+$form55px: $_55px;
+$form56px: $_56px;
+$form57px: $_57px;
+$form58px: $_58px;
+$form59px: $_59px;
+$form60px: $_60px;
+$form61px: $_61px;
+$form62px: $_62px;
+$form63px: $_63px;
+$form64px: $_64px;
+$formRelative1px: $relative1px;
+$formRelative2px: $relative2px;
+$formRelative3px: $relative3px;
+$formRelative4px: $relative4px;
+$formRelative5px: $relative5px;
+$formRelative6px: $relative6px;
+$formRelative7px: $relative7px;
+$formRelative8px: $relative8px;
+$formRelative9px: $relative9px;
+$formRelative10px: $relative10px;
+$formRelative11px: $relative11px;
+$formRelative12px: $relative12px;
+$formRelative13px: $relative13px;
+$formRelative14px: $relative14px;
+$formRelative15px: $relative15px;
+$formRelative16px: $relative16px;
+$formRelative17px: $relative17px;
+$formRelative18px: $relative18px;
+$formRelative19px: $relative19px;
+$formRelative20px: $relative20px;
+$formRelative21px: $relative21px;
+$formRelative22px: $relative22px;
+$formRelative23px: $relative23px;
+$formRelative24px: $relative24px;
+$formRelative25px: $relative25px;
+$formRelative26px: $relative26px;
+$formRelative27px: $relative27px;
+$formRelative28px: $relative28px;
+$formRelative29px: $relative29px;
+$formRelative30px: $relative30px;
+$formRelative31px: $relative31px;
+$formRelative32px: $relative32px;
+$formRelative33px: $relative33px;
+$formRelative34px: $relative34px;
+$formRelative35px: $relative35px;
+$formRelative36px: $relative36px;
+$formRelative37px: $relative37px;
+$formRelative38px: $relative38px;
+$formRelative39px: $relative39px;
+$formRelative40px: $relative40px;
+$formRelative41px: $relative41px;
+$formRelative42px: $relative42px;
+$formRelative43px: $relative43px;
+$formRelative44px: $relative44px;
+$formRelative45px: $relative45px;
+$formRelative46px: $relative46px;
+$formRelative47px: $relative47px;
+$formRelative48px: $relative48px;
+$formRelative49px: $relative49px;
+$formRelative50px: $relative50px;
+$formRelative51px: $relative51px;
+$formRelative52px: $relative52px;
+$formRelative53px: $relative53px;
+$formRelative54px: $relative54px;
+$formRelative55px: $relative55px;
+$formRelative56px: $relative56px;
+$formRelative57px: $relative57px;
+$formRelative58px: $relative58px;
+$formRelative59px: $relative59px;
+$formRelative60px: $relative60px;
+$formRelative61px: $relative61px;
+$formRelative62px: $relative62px;
+$formRelative63px: $relative63px;
+$formRelative64px: $relative64px;
+$formOneWide: $oneWide;
+$formTwoWide: $twoWide;
+$formThreeWide: $threeWide;
+$formFourWide: $fourWide;
+$formFiveWide: $fiveWide;
+$formSixWide: $sixWide;
+$formSevenWide: $sevenWide;
+$formEightWide: $eightWide;
+$formNineWide: $nineWide;
+$formTenWide: $tenWide;
+$formElevenWide: $elevenWide;
+$formTwelveWide: $twelveWide;
+$formThirteenWide: $thirteenWide;
+$formFourteenWide: $fourteenWide;
+$formFifteenWide: $fifteenWide;
+$formSixteenWide: $sixteenWide;
+$formOneColumn: $oneColumn;
+$formTwoColumn: $twoColumn;
+$formThreeColumn: $threeColumn;
+$formFourColumn: $fourColumn;
+$formFiveColumn: $fiveColumn;
+$formSixColumn: $sixColumn;
+$formSevenColumn: $sevenColumn;
+$formEightColumn: $eightColumn;
+$formNineColumn: $nineColumn;
+$formTenColumn: $tenColumn;
+$formElevenColumn: $elevenColumn;
+$formTwelveColumn: $twelveColumn;
+$formThirteenColumn: $thirteenColumn;
+$formFourteenColumn: $fourteenColumn;
+$formFifteenColumn: $fifteenColumn;
+$formSixteenColumn: $sixteenColumn;
+$formDisabledOpacity: $disabledOpacity;
+$formFloatingShadowHover: $floatingShadowHover;
+$formPrimaryColorHover: $primaryColorHover;
+$formSecondaryColorHover: $secondaryColorHover;
+$formRedHover: $redHover;
+$formOrangeHover: $orangeHover;
+$formYellowHover: $yellowHover;
+$formOliveHover: $oliveHover;
+$formGreenHover: $greenHover;
+$formTealHover: $tealHover;
+$formBlueHover: $blueHover;
+$formVioletHover: $violetHover;
+$formPurpleHover: $purpleHover;
+$formPinkHover: $pinkHover;
+$formBrownHover: $brownHover;
+$formLightRedHover: $lightRedHover;
+$formLightOrangeHover: $lightOrangeHover;
+$formLightYellowHover: $lightYellowHover;
+$formLightOliveHover: $lightOliveHover;
+$formLightGreenHover: $lightGreenHover;
+$formLightTealHover: $lightTealHover;
+$formLightBlueHover: $lightBlueHover;
+$formLightVioletHover: $lightVioletHover;
+$formLightPurpleHover: $lightPurpleHover;
+$formLightPinkHover: $lightPinkHover;
+$formLightBrownHover: $lightBrownHover;
+$formLightGreyHover: $lightGreyHover;
+$formLightBlackHover: $lightBlackHover;
+$formPositiveColorHover: $positiveColorHover;
+$formNegativeColorHover: $negativeColorHover;
+$formFacebookHoverColor: $facebookHoverColor;
+$formTwitterHoverColor: $twitterHoverColor;
+$formGooglePlusHoverColor: $googlePlusHoverColor;
+$formLinkedInHoverColor: $linkedInHoverColor;
+$formYoutubeHoverColor: $youtubeHoverColor;
+$formInstagramHoverColor: $instagramHoverColor;
+$formPinterestHoverColor: $pinterestHoverColor;
+$formVkHoverColor: $vkHoverColor;
+$formFullBlackHover: $fullBlackHover;
+$formBlackHover: $blackHover;
+$formGreyHover: $greyHover;
+$formWhiteHover: $whiteHover;
+$formOffWhiteHover: $offWhiteHover;
+$formDarkWhiteHover: $darkWhiteHover;
+$formPrimaryColorFocus: $primaryColorFocus;
+$formSecondaryColorFocus: $secondaryColorFocus;
+$formRedFocus: $redFocus;
+$formOrangeFocus: $orangeFocus;
+$formYellowFocus: $yellowFocus;
+$formOliveFocus: $oliveFocus;
+$formGreenFocus: $greenFocus;
+$formTealFocus: $tealFocus;
+$formBlueFocus: $blueFocus;
+$formVioletFocus: $violetFocus;
+$formPurpleFocus: $purpleFocus;
+$formPinkFocus: $pinkFocus;
+$formBrownFocus: $brownFocus;
+$formLightRedFocus: $lightRedFocus;
+$formLightOrangeFocus: $lightOrangeFocus;
+$formLightYellowFocus: $lightYellowFocus;
+$formLightOliveFocus: $lightOliveFocus;
+$formLightGreenFocus: $lightGreenFocus;
+$formLightTealFocus: $lightTealFocus;
+$formLightBlueFocus: $lightBlueFocus;
+$formLightVioletFocus: $lightVioletFocus;
+$formLightPurpleFocus: $lightPurpleFocus;
+$formLightPinkFocus: $lightPinkFocus;
+$formLightBrownFocus: $lightBrownFocus;
+$formLightGreyFocus: $lightGreyFocus;
+$formLightBlackFocus: $lightBlackFocus;
+$formPositiveColorFocus: $positiveColorFocus;
+$formNegativeColorFocus: $negativeColorFocus;
+$formFacebookFocusColor: $facebookFocusColor;
+$formTwitterFocusColor: $twitterFocusColor;
+$formGooglePlusFocusColor: $googlePlusFocusColor;
+$formLinkedInFocusColor: $linkedInFocusColor;
+$formYoutubeFocusColor: $youtubeFocusColor;
+$formInstagramFocusColor: $instagramFocusColor;
+$formPinterestFocusColor: $pinterestFocusColor;
+$formVkFocusColor: $vkFocusColor;
+$formFullBlackFocus: $fullBlackFocus;
+$formBlackFocus: $blackFocus;
+$formGreyFocus: $greyFocus;
+$formWhiteFocus: $whiteFocus;
+$formOffWhiteFocus: $offWhiteFocus;
+$formDarkWhiteFocus: $darkWhiteFocus;
+$formPrimaryColorDown: $primaryColorDown;
+$formSecondaryColorDown: $secondaryColorDown;
+$formRedDown: $redDown;
+$formOrangeDown: $orangeDown;
+$formYellowDown: $yellowDown;
+$formOliveDown: $oliveDown;
+$formGreenDown: $greenDown;
+$formTealDown: $tealDown;
+$formBlueDown: $blueDown;
+$formVioletDown: $violetDown;
+$formPurpleDown: $purpleDown;
+$formPinkDown: $pinkDown;
+$formBrownDown: $brownDown;
+$formLightRedDown: $lightRedDown;
+$formLightOrangeDown: $lightOrangeDown;
+$formLightYellowDown: $lightYellowDown;
+$formLightOliveDown: $lightOliveDown;
+$formLightGreenDown: $lightGreenDown;
+$formLightTealDown: $lightTealDown;
+$formLightBlueDown: $lightBlueDown;
+$formLightVioletDown: $lightVioletDown;
+$formLightPurpleDown: $lightPurpleDown;
+$formLightPinkDown: $lightPinkDown;
+$formLightBrownDown: $lightBrownDown;
+$formLightGreyDown: $lightGreyDown;
+$formLightBlackDown: $lightBlackDown;
+$formPositiveColorDown: $positiveColorDown;
+$formNegativeColorDown: $negativeColorDown;
+$formFacebookDownColor: $facebookDownColor;
+$formTwitterDownColor: $twitterDownColor;
+$formGooglePlusDownColor: $googlePlusDownColor;
+$formLinkedInDownColor: $linkedInDownColor;
+$formYoutubeDownColor: $youtubeDownColor;
+$formInstagramDownColor: $instagramDownColor;
+$formPinterestDownColor: $pinterestDownColor;
+$formVkDownColor: $vkDownColor;
+$formFullBlackDown: $fullBlackDown;
+$formBlackDown: $blackDown;
+$formGreyDown: $greyDown;
+$formWhiteDown: $whiteDown;
+$formOffWhiteDown: $offWhiteDown;
+$formDarkWhiteDown: $darkWhiteDown;
+$formPrimaryColorActive: $primaryColorActive;
+$formSecondaryColorActive: $secondaryColorActive;
+$formRedActive: $redActive;
+$formOrangeActive: $orangeActive;
+$formYellowActive: $yellowActive;
+$formOliveActive: $oliveActive;
+$formGreenActive: $greenActive;
+$formTealActive: $tealActive;
+$formBlueActive: $blueActive;
+$formVioletActive: $violetActive;
+$formPurpleActive: $purpleActive;
+$formPinkActive: $pinkActive;
+$formBrownActive: $brownActive;
+$formLightRedActive: $lightRedActive;
+$formLightOrangeActive: $lightOrangeActive;
+$formLightYellowActive: $lightYellowActive;
+$formLightOliveActive: $lightOliveActive;
+$formLightGreenActive: $lightGreenActive;
+$formLightTealActive: $lightTealActive;
+$formLightBlueActive: $lightBlueActive;
+$formLightVioletActive: $lightVioletActive;
+$formLightPurpleActive: $lightPurpleActive;
+$formLightPinkActive: $lightPinkActive;
+$formLightBrownActive: $lightBrownActive;
+$formLightGreyActive: $lightGreyActive;
+$formLightBlackActive: $lightBlackActive;
+$formPositiveColorActive: $positiveColorActive;
+$formNegativeColorActive: $negativeColorActive;
+$formFacebookActiveColor: $facebookActiveColor;
+$formTwitterActiveColor: $twitterActiveColor;
+$formGooglePlusActiveColor: $googlePlusActiveColor;
+$formLinkedInActiveColor: $linkedInActiveColor;
+$formYoutubeActiveColor: $youtubeActiveColor;
+$formInstagramActiveColor: $instagramActiveColor;
+$formPinterestActiveColor: $pinterestActiveColor;
+$formVkActiveColor: $vkActiveColor;
+$formFullBlackActive: $fullBlackActive;
+$formBlackActive: $blackActive;
+$formGreyActive: $greyActive;
+$formWhiteActive: $whiteActive;
+$formOffWhiteActive: $offWhiteActive;
+$formDarkWhiteActive: $darkWhiteActive;
+
+
+/*******************************
+             Form
+*******************************/
+
+/*-------------------
+       Elements
+--------------------*/
+
+/* Form */
+$formGutterWidth: 1em;
+$formRowDistance: 1em;
+
+/* Text */
+$formParagraphMargin: $formRowDistance 0;
+
+/* Field */
+$formFieldMargin: 0 0 $formRowDistance;
+
+/* Fields */
+$formFieldsMargin: 0 -($formGutterWidth / 2) $formRowDistance;
+
+/* Form Label */
+$formLabelDistance: $form4px;
+$formLabelMargin: 0 0 $formLabelDistance 0;
+$formLabelFontSize: $formRelativeSmall;
+$formLabelFontWeight: bold;
+$formLabelTextTransform: none;
+$formLabelColor: $formTextColor;
+
+/* Input */
+$formInputFont: $formPageFont;
+$formInputWidth: 100%;
+$formInputFontSize: 1em;
+//$formInputPadding: ($formInputVerticalPadding + ((1em - $formInputLineHeight) / 2)) $formInputHorizontalPadding;
+$formInputBorder: 1px solid $formBorderColor;
+$formInputBorderRadius: $formAbsoluteBorderRadius;
+$formInputColor: $formTextColor;
+$formInputTransition:
+  color $formDefaultDuration $formDefaultEasing,
+  border-color $formDefaultDuration $formDefaultEasing
+;
+$formInputBoxShadow: 0 0 0 0 transparent inset;
+
+/* Select */
+$formSelectBackground: $formWhite;
+$formSelectBorderRadius: $formInputBorderRadius;
+$formSelectBorder: $formInputBorder;
+$formSelectPadding: 0.62em $formInputHorizontalPadding;
+$formSelectBoxShadow: $formInputBoxShadow;
+$formSelectTransition: $formInputTransition;
+$formSelectColor: $formInputColor;
+
+/* Text Area */
+$formTextAreaPadding: $formInputVerticalPadding $formInputHorizontalPadding;
+$formTextAreaHeight: 12em;
+$formTextAreaResize: vertical;
+$formTextAreaLineHeight: 1.2857;
+$formTextAreaMinHeight: 8em;
+$formTextAreaMaxHeight: 24em;
+$formTextAreaBackground: $formInputBackground;
+$formTextAreaBorder: $formInputBorder;
+$formTextAreaFontSize: $formInputFontSize;
+$formTextAreaTransition: $formInputTransition;
+
+/* Checkbox */
+$formCheckboxVerticalAlign: top;
+$formCheckboxLabelFontSize: 1em;
+$formCheckboxLabelTextTransform: $formLabelTextTransform;
+
+/* Errored Input */
+$formFormErrorColor: $formNegativeTextColor;
+$formFormErrorBorder: $formNegativeBorderColor;
+$formFormErrorBackground: $formNegativeBackgroundColor;
+
+/* Inline Validation Prompt */
+$formPromptBackground: $formWhite;
+$formPromptBorderColor: $formFormErrorBorder;
+$formPromptBorder: 1px solid $formPromptBorderColor;
+$formPromptTextColor: $formFormErrorColor;
+$formInlinePromptMargin: -0.25em 0 -0.5em 0.5em;
+$formInlinePromptBorderWidth: 1px;
+
+/*-------------------
+        States
+--------------------*/
+
+/* Focus */
+$formInputFocusPointerSize: 0;
+
+/* Input Focus */
+$formInputFocusBackground: $formInputBackground;
+$formInputFocusBorderColor: $formFocusedFormBorderColor;
+$formInputFocusColor: $formSelectedTextColor;
+$formInputFocusBoxShadow: $formInputFocusPointerSize 0 0 0 $formSelectedBorderColor inset;
+$formInputFocusBorderRadius: $formInputBorderRadius;
+
+/* Text Area Focus */
+$formTextAreaFocusBackground: $formInputFocusBackground;
+$formTextAreaFocusBorderColor: $formInputFocusBorderColor;
+$formTextAreaFocusColor: $formInputFocusColor;
+$formTextAreaFocusBoxShadow: $formInputFocusBoxShadow;
+$formTextAreaFocusBorderRadius: $formInputFocusBorderRadius;
+
+/* Disabled */
+$formDisabledLabelOpacity: $formDisabledOpacity;
+
+
+/* AutoFill */
+$formInputAutoFillBackground: #FFFFF0;
+$formInputAutoFillBorder: #E5DFA1;
+$formInputAutoFillFocusBackground: $formInputAutoFillBackground;
+$formInputAutoFillFocusBorder: #D5C315;
+$formInputAutoFillErrorBackground: #FFFAF0;
+$formInputAutoFillErrorBorder: #E0B4B4;
+
+
+/* Input Error */
+$formInputErrorBorderRadius: '';
+$formInputErrorBoxShadow: none;
+
+/* Dropdown Error */
+$formDropdownErrorHoverBackground: #FBE7E7;
+$formDropdownErrorSelectedBackground: $formDropdownErrorHoverBackground;
+$formDropdownErrorActiveBackground: #FDCFCF;
+$formDropdownErrorLabelBackground: #EACBCB;
+$formDropdownErrorLabelColor: $formErrorTextColor;
+
+/* Focused Error */
+$formInputErrorFocusBackground: $formNegativeBackgroundColor;
+$formInputErrorFocusColor: $formNegativeTextColor;
+$formInputErrorFocusBorder: $formNegativeBorderColor;
+$formInputErrorFocusBoxShadow: none;
+
+/* Placeholder Error */
+$formInputErrorPlaceholderColor: lighten($formFormErrorColor, 40);
+$formInputErrorPlaceholderFocusColor: lighten($formFormErrorColor, 30);
+
+/* Loading Dimmer */
+$formLoaderDimmerColor: rgba(255, 255, 255, 0.8);
+$formLoaderDimmerZIndex: 100;
+
+/* Loading Spinner */
+$formLoaderSize: 3em;
+$formLoaderLineZIndex: 101;
+
+/*-------------------
+        Types
+--------------------*/
+
+/* Required */
+$formRequiredContent: '*';
+$formRequiredColor: $formNegativeColor;
+$formRequiredVerticalOffset: -0.2em;
+$formRequiredDistance: 0.2em;
+$formRequiredMargin: $formRequiredVerticalOffset 0 0 $formRequiredDistance;
+
+/* Inverted */
+$formInvertedInputBackground: $formInputBackground;
+$formInvertedInputBorderColor: $formWhiteBorderColor;
+$formInvertedInputBoxShadow: $formInputBoxShadow;
+$formInvertedInputColor: $formInputColor;
+$formInvertedLabelColor: $formInvertedTextColor;
+$formInvertedInputBoxShadow: none;
+
+/*-------------------
+      Variations
+--------------------*/
+
+/* Grouped Fields */
+$formGroupedMargin: $formFieldMargin;
+$formGroupedFieldMargin: 0.5em 0;
+
+$formGroupedLabelDistance: $formLabelDistance;
+$formGroupedLabelColor: $formLabelColor;
+$formGroupedLabelMargin: $formLabelMargin;
+$formGroupedLabelFontSize: $formLabelFontSize;
+$formGroupedLabelFontWeight: $formLabelFontWeight;
+$formGroupedLabelTextTransform: $formLabelTextTransform;
+
+
+/* Inline */
+$formInlineInputSize: $formRelativeMedium;
+
+$formInlineLabelDistance: $formRelativeTiny;
+$formInlineLabelColor: $formLabelColor;
+$formInlineLabelFontSize: $formLabelFontSize;
+$formInlineLabelFontWeight: $formLabelFontWeight;
+$formInlineLabelTextTransform: $formLabelTextTransform;
+
+$formGroupedInlineLabelMargin: 0.035714em 1em 0 0;
+
+/*-------------------
+       Groups
+--------------------*/
+
+$formInlineFieldsMargin: 0 1em 0 0;

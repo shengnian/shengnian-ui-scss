@@ -1,0 +1,1093 @@
+/*!
+ * # Shengnian UI - Table
+ * http://github.com/shengnian/shengnian-ui
+ *
+ *
+ * Released under the MIT license
+ * http://opensource.org/licenses/MIT
+ *
+ */
+
+
+/*******************************
+             Table
+*******************************/
+
+/* Prototype */
+.ui.table {
+  width: 100%;
+  background: $tableBackground;
+  margin: $tableMargin;
+  border: $tableBorder;
+  box-shadow: $tableBoxShadow;
+  border-radius: $tableBorderRadius;
+  text-align: $tableTextAlign;
+  color: $tableColor;
+  border-collapse: $tableBorderCollapse;
+  border-spacing: $tableBorderSpacing;
+}
+
+.ui.table:first-child {
+  margin-top: 0;
+}
+.ui.table:last-child {
+  margin-bottom: 0;
+}
+
+
+
+/*******************************
+             Parts
+*******************************/
+
+/* Table Content */
+.ui.table th,
+.ui.table td {
+  transition: $tableTransition;
+}
+
+/* Headers */
+.ui.table thead {
+  box-shadow: $tableHeaderBoxShadow;
+}
+.ui.table thead th {
+  cursor: auto;
+  background: $tableHeaderBackground;
+  text-align: $tableHeaderAlign;
+  color: $tableHeaderColor;
+  padding: $tableHeaderVerticalPadding $tableHeaderHorizontalPadding;
+  vertical-align: $tableHeaderVerticalAlign;
+  font-style: $tableHeaderFontStyle;
+  font-weight: $tableHeaderFontWeight;
+  text-transform: $tableHeaderTextTransform;
+  border-bottom: $tableHeaderBorder;
+  border-left: $tableHeaderDivider;
+}
+
+.ui.table thead tr > th:first-child {
+  border-left: none;
+}
+
+.ui.table thead tr:first-child > th:first-child {
+  border-radius: $tableBorderRadius 0 0 0;
+}
+.ui.table thead tr:first-child > th:last-child {
+  border-radius: 0 $tableBorderRadius 0 0;
+}
+.ui.table thead tr:first-child > th:only-child {
+  border-radius: $tableBorderRadius $tableBorderRadius 0 0;
+}
+
+/* Footer */
+.ui.table tfoot {
+  box-shadow: $tableFooterBoxShadow;
+}
+.ui.table tfoot th {
+  cursor: auto;
+  border-top: $tableFooterBorder;
+  background: $tableFooterBackground;
+  text-align: $tableFooterAlign;
+  color: $tableFooterColor;
+  padding: $tableFooterVerticalPadding $tableFooterHorizontalPadding;
+  vertical-align: $tableFooterVerticalAlign;
+  font-style: $tableFooterFontStyle;
+  font-weight: $tableFooterFontWeight;
+  text-transform: $tableFooterTextTransform;
+}
+.ui.table tfoot tr > th:first-child {
+  border-left: none;
+}
+.ui.table tfoot tr:first-child > th:first-child {
+  border-radius: 0 0 0 $tableBorderRadius;
+}
+.ui.table tfoot tr:first-child > th:last-child {
+  border-radius: 0 0 $tableBorderRadius 0;
+}
+.ui.table tfoot tr:first-child > th:only-child {
+  border-radius: 0 0 $tableBorderRadius $tableBorderRadius;
+}
+
+/* Table Row */
+.ui.table tr td {
+  border-top: $tableRowBorder;
+}
+.ui.table tr:first-child td {
+  border-top: none;
+}
+
+/* Table Cells */
+.ui.table td {
+  padding: $tableCellVerticalPadding $tableCellHorizontalPadding;
+  text-align: $tableCellTextAlign;
+}
+
+/* Icons */
+.ui.table > .icon {
+  vertical-align: $tableIconVerticalAlign;
+}
+.ui.table > .icon:only-child {
+  margin: 0;
+}
+
+/* Table Segment */
+.ui.table.segment {
+  padding: 0;
+}
+.ui.table.segment:after {
+  display: none;
+}
+.ui.table.segment.stacked:after {
+  display: block;
+}
+/* Responsive */
+@media only screen and (max-width : $tableLargestMobileScreen) {
+  .ui.table:not(.unstackable) {
+    width: 100%;
+  }
+  .ui.table:not(.unstackable) tbody,
+  .ui.table:not(.unstackable) tr,
+  .ui.table:not(.unstackable) tr > th,
+  .ui.table:not(.unstackable) tr > td  {
+    display: block !important;
+    width: auto !important;
+    display: block !important;
+  }
+
+  .ui.table:not(.unstackable) {
+    padding: 0;
+  }
+  .ui.table:not(.unstackable) thead {
+    display: $tableResponsiveHeaderDisplay;
+  }
+  .ui.table:not(.unstackable) tfoot {
+    display: $tableResponsiveFooterDisplay;
+  }
+  .ui.table:not(.unstackable) tr {
+    padding-top: $tableResponsiveRowVerticalPadding;
+    padding-bottom: $tableResponsiveRowVerticalPadding;
+    box-shadow: $tableResponsiveRowBoxShadow;
+  }
+
+  .ui.table:not(.unstackable) tr > th,
+  .ui.table:not(.unstackable) tr > td {
+    background: none;
+    border: none !important;
+    padding: $tableResponsiveCellVerticalPadding $tableResponsiveCellHorizontalPadding !important;
+    box-shadow: $tableResponsiveCellBoxShadow;
+  }
+  .ui.table:not(.unstackable) th:first-child,
+  .ui.table:not(.unstackable) td:first-child {
+    font-weight: bold;
+  }
+
+  /* Definition Table */
+  .ui.definition.table:not(.unstackable) thead th:first-child {
+    box-shadow: none !important;
+  }
+}
+
+
+/*******************************
+            Coupling
+*******************************/
+
+/* UI Image */
+.ui.table th .image,
+.ui.table th .image img,
+.ui.table td .image,
+.ui.table td .image img {
+  max-width: none;
+}
+
+
+/*******************************
+             Types
+*******************************/
+
+/*--------------
+    Complex
+---------------*/
+
+.ui.structured.table {
+  border-collapse: collapse;
+}
+.ui.structured.table thead th {
+  border-left: $tableHeaderDivider;
+  border-right: $tableHeaderDivider;
+}
+.ui.structured.sortable.table thead th {
+  border-left: $tableSortableBorder;
+  border-right: $tableSortableBorder;
+}
+.ui.structured.basic.table th {
+  border-left: $tableBasicTableHeaderDivider;
+  border-right: $tableBasicTableHeaderDivider;
+}
+.ui.structured.celled.table tr th,
+.ui.structured.celled.table tr td {
+  border-left: $tableCellBorder;
+  border-right: $tableCellBorder;
+}
+
+/*--------------
+   Definition
+---------------*/
+
+.ui.definition.table thead:not(.full-width) th:first-child {
+  pointer-events: none;
+  background: $tableDefinitionHeaderBackground;
+  font-weight: $tableDefinitionHeaderFontWeight;
+  color: $tableDefinitionHeaderColor;
+  box-shadow: -$tableBorderWidth -$tableBorderWidth 0 $tableBorderWidth $tableDefinitionPageBackground;
+}
+
+.ui.definition.table tfoot:not(.full-width) th:first-child {
+  pointer-events: none;
+  background: $tableDefinitionFooterBackground;
+  font-weight: $tableDefinitionFooterColor;
+  color: $tableDefinitionFooterFontWeight;
+  box-shadow: $tableBorderWidth $tableBorderWidth 0 $tableBorderWidth $tableDefinitionPageBackground;
+}
+
+/* Remove Border */
+.ui.celled.definition.table thead:not(.full-width) th:first-child {
+  box-shadow: 0 -$tableBorderWidth 0 $tableBorderWidth $tableDefinitionPageBackground;
+}
+.ui.celled.definition.table tfoot:not(.full-width) th:first-child {
+  box-shadow: 0 $tableBorderWidth 0 $tableBorderWidth $tableDefinitionPageBackground;
+}
+
+/* Highlight Defining Column */
+.ui.definition.table tr td:first-child:not(.ignored),
+.ui.definition.table tr td.definition {
+  background: $tableDefinitionColumnBackground;
+  font-weight: $tableDefinitionColumnFontWeight;
+  color: $tableDefinitionColumnColor;
+  text-transform: $tableDefinitionColumnTextTransform;
+  box-shadow: $tableDefinitionColumnBoxShadow;
+  text-align: $tableDefinitionColumnTextAlign;
+  font-size: $tableDefinitionColumnFontSize;
+  padding-left: $tableDefinitionColumnHorizontalPadding;
+  padding-right: $tableDefinitionColumnHorizontalPadding;
+}
+/* Fix 2nd Column */
+.ui.definition.table thead:not(.full-width) th:nth-child(2) {
+  border-left: $tableBorderWidth solid $tableBorderColor;
+}
+.ui.definition.table tfoot:not(.full-width) th:nth-child(2) {
+  border-left: $tableBorderWidth solid $tableBorderColor;
+}
+.ui.definition.table td:nth-child(2) {
+  border-left: $tableBorderWidth solid $tableBorderColor;
+}
+
+
+/*******************************
+             States
+*******************************/
+
+/*--------------
+    Positive
+---------------*/
+
+.ui.table tr.positive,
+.ui.table td.positive {
+  box-shadow: $tablePositiveBoxShadow;
+}
+.ui.table tr.positive,
+.ui.table td.positive {
+  background: $tablePositiveBackgroundColor !important;
+  color: $tablePositiveColor !important;
+}
+
+/*--------------
+     Negative
+---------------*/
+
+.ui.table tr.negative,
+.ui.table td.negative {
+  box-shadow: $tableNegativeBoxShadow;
+}
+.ui.table tr.negative,
+.ui.table td.negative {
+  background: $tableNegativeBackgroundColor !important;
+  color: $tableNegativeColor !important;
+}
+
+/*--------------
+      Error
+---------------*/
+
+.ui.table tr.error,
+.ui.table td.error {
+  box-shadow: $tableErrorBoxShadow;
+}
+.ui.table tr.error,
+.ui.table td.error {
+  background: $tableErrorBackgroundColor !important;
+  color: $tableErrorColor !important;
+}
+/*--------------
+     Warning
+---------------*/
+
+.ui.table tr.warning,
+.ui.table td.warning {
+  box-shadow: $tableWarningBoxShadow;
+}
+.ui.table tr.warning,
+.ui.table td.warning {
+  background: $tableWarningBackgroundColor !important;
+  color: $tableWarningColor !important;
+}
+
+/*--------------
+     Active
+---------------*/
+
+.ui.table tr.active,
+.ui.table td.active {
+  box-shadow: $tableActiveBoxShadow;
+}
+.ui.table tr.active,
+.ui.table td.active {
+  background: $tableActiveBackgroundColor !important;
+  color: $tableActiveColor !important;
+}
+/*--------------
+     Disabled
+---------------*/
+
+.ui.table tr.disabled td,
+.ui.table tr td.disabled,
+.ui.table tr.disabled:hover,
+.ui.table tr:hover td.disabled {
+  pointer-events: none;
+  color: $tableDisabledTextColor;
+}
+
+
+
+/*******************************
+          Variations
+*******************************/
+
+/*--------------
+    Stackable
+---------------*/
+
+@media only screen and (max-width : $tableLargestTabletScreen) {
+
+  .ui[class*="tablet stackable"].table,
+  .ui[class*="tablet stackable"].table tbody,
+  .ui[class*="tablet stackable"].table tr,
+  .ui[class*="tablet stackable"].table tr > th,
+  .ui[class*="tablet stackable"].table tr > td  {
+    display: block !important;
+    width: 100% !important;
+    display: block !important;
+  }
+
+  .ui[class*="tablet stackable"].table {
+    padding: 0;
+  }
+  .ui[class*="tablet stackable"].table thead {
+    display: $tableResponsiveHeaderDisplay;
+  }
+  .ui[class*="tablet stackable"].table tfoot {
+    display: $tableResponsiveFooterDisplay;
+  }
+  .ui[class*="tablet stackable"].table tr {
+    padding-top: $tableResponsiveRowVerticalPadding;
+    padding-bottom: $tableResponsiveRowVerticalPadding;
+    box-shadow: $tableResponsiveRowBoxShadow;
+  }
+  .ui[class*="tablet stackable"].table tr > th,
+  .ui[class*="tablet stackable"].table tr > td {
+    background: none;
+    border: none !important;
+    padding: $tableResponsiveCellVerticalPadding $tableResponsiveCellHorizontalPadding;
+    box-shadow: $tableResponsiveCellBoxShadow;
+  }
+
+  /* Definition Table */
+  .ui.definition[class*="tablet stackable"].table thead th:first-child {
+    box-shadow: none !important;
+  }
+}
+
+/*--------------
+ Text Alignment
+---------------*/
+
+.ui.table[class*="left aligned"],
+.ui.table [class*="left aligned"] {
+  text-align: left;
+}
+.ui.table[class*="center aligned"],
+.ui.table [class*="center aligned"] {
+  text-align: center;
+}
+.ui.table[class*="right aligned"],
+.ui.table [class*="right aligned"] {
+  text-align: right;
+}
+
+/*------------------
+ Vertical Alignment
+------------------*/
+
+.ui.table[class*="top aligned"],
+.ui.table [class*="top aligned"] {
+  vertical-align: top;
+}
+.ui.table[class*="middle aligned"],
+.ui.table [class*="middle aligned"] {
+  vertical-align: middle;
+}
+.ui.table[class*="bottom aligned"],
+.ui.table [class*="bottom aligned"] {
+  vertical-align: bottom;
+}
+
+/*--------------
+    Collapsing
+---------------*/
+
+.ui.table th.collapsing,
+.ui.table td.collapsing {
+  width: 1px;
+  white-space: nowrap;
+}
+
+/*--------------
+     Fixed
+---------------*/
+
+.ui.fixed.table {
+  table-layout: fixed;
+}
+
+.ui.fixed.table th,
+.ui.fixed.table td {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+/*--------------
+   Selectable
+---------------*/
+
+.ui.selectable.table tbody tr:hover,
+.ui.table tbody tr td.selectable:hover {
+  background: $tableSelectableBackground !important;
+  color: $tableSelectableTextColor !important;
+}
+.ui.selectable.inverted.table tbody tr:hover,
+.ui.inverted.table tbody tr td.selectable:hover {
+  background: $tableSelectableInvertedBackground !important;
+  color: $tableSelectableInvertedTextColor !important;
+}
+
+/* Selectable Cell Link */
+.ui.table tbody tr td.selectable {
+  padding: 0;
+}
+.ui.table tbody tr td.selectable > a:not(.ui) {
+  display: block;
+  color: inherit;
+  padding: $tableCellVerticalPadding $tableCellHorizontalPadding;
+}
+
+/* Other States */
+.ui.selectable.table tr.error:hover,
+.ui.table tr td.selectable.error:hover,
+.ui.selectable.table tr:hover td.error {
+  background: $tableErrorBackgroundHover !important;
+  color: $tableErrorColorHover !important;
+}
+.ui.selectable.table tr.warning:hover,
+.ui.table tr td.selectable.warning:hover,
+.ui.selectable.table tr:hover td.warning {
+  background: $tableWarningBackgroundHover !important;
+  color: $tableWarningColorHover !important;
+}
+.ui.selectable.table tr.active:hover,
+.ui.table tr td.selectable.active:hover,
+.ui.selectable.table tr:hover td.active {
+  background: $tableActiveBackgroundColor !important;
+  color: $tableActiveColor !important;
+}
+.ui.selectable.table tr.positive:hover,
+.ui.table tr td.selectable.positive:hover,
+.ui.selectable.table tr:hover td.positive {
+  background: $tablePositiveBackgroundHover !important;
+  color: $tablePositiveColorHover !important;
+}
+.ui.selectable.table tr.negative:hover,
+.ui.table tr td.selectable.negative:hover,
+.ui.selectable.table tr:hover td.negative {
+  background: $tableNegativeBackgroundHover !important;
+  color: $tableNegativeColorHover !important;
+}
+/*-------------------
+      Attached
+--------------------*/
+
+/* Middle */
+.ui.attached.table {
+  top: 0;
+  bottom: 0;
+  border-radius: 0;
+  margin: 0 $tableAttachedHorizontalOffset;
+  width: $tableAttachedWidth;
+  max-width: $tableAttachedWidth;
+  box-shadow: $tableAttachedBoxShadow;
+  border: $tableAttachedBorder;
+}
+.ui.attached + .ui.attached.table:not(.top) {
+  border-top: none;
+}
+
+/* Top */
+.ui[class*="top attached"].table {
+  bottom: 0;
+  margin-bottom: 0;
+  top: $tableAttachedTopOffset;
+  margin-top: $tableVerticalMargin;
+  border-radius: $tableBorderRadius $tableBorderRadius 0 0;
+}
+.ui.table[class*="top attached"]:first-child {
+  margin-top: 0;
+}
+
+/* Bottom */
+.ui[class*="bottom attached"].table {
+  bottom: 0;
+  margin-top: 0;
+  top: $tableAttachedBottomOffset;
+  margin-bottom: $tableVerticalMargin;
+  box-shadow: $tableAttachedBottomBoxShadow;
+  border-radius: 0 0 $tableBorderRadius $tableBorderRadius;
+}
+.ui[class*="bottom attached"].table:last-child {
+  margin-bottom: 0;
+}
+
+/*--------------
+     Striped
+---------------*/
+
+/* Table Striping */
+.ui.striped.table > tr:nth-child(2n),
+.ui.striped.table tbody tr:nth-child(2n) {
+  background-color: $tableStripedBackground;
+}
+
+/* Stripes */
+.ui.inverted.striped.table > tr:nth-child(2n),
+.ui.inverted.striped.table tbody tr:nth-child(2n) {
+  background-color: $tableInvertedStripedBackground;
+}
+
+/* Allow striped active hover */
+.ui.striped.selectable.selectable.selectable.table tbody tr.active:hover {
+  background: $tableActiveBackgroundHover !important;
+  color: $tableActiveColorHover !important;
+}
+
+/*--------------
+   Single Line
+---------------*/
+
+.ui.table[class*="single line"],
+.ui.table [class*="single line"] {
+  white-space: nowrap;
+}
+.ui.table[class*="single line"],
+.ui.table [class*="single line"] {
+  white-space: nowrap;
+}
+
+/*-------------------
+       Colors
+--------------------*/
+
+/* Red */
+.ui.red.table {
+  border-top: $tableColoredBorderSize solid $tableRed;
+}
+.ui.inverted.red.table {
+  background-color: $tableRed !important;
+  color: $tableWhite !important;
+}
+
+/* Orange */
+.ui.orange.table {
+  border-top: $tableColoredBorderSize solid $tableOrange;
+}
+.ui.inverted.orange.table {
+  background-color: $tableOrange !important;
+  color: $tableWhite !important;
+}
+
+/* Yellow */
+.ui.yellow.table {
+  border-top: $tableColoredBorderSize solid $tableYellow;
+}
+.ui.inverted.yellow.table {
+  background-color: $tableYellow !important;
+  color: $tableWhite !important;
+}
+
+/* Olive */
+.ui.olive.table {
+  border-top: $tableColoredBorderSize solid $tableOlive;
+}
+.ui.inverted.olive.table {
+  background-color: $tableOlive !important;
+  color: $tableWhite !important;
+}
+
+/* Green */
+.ui.green.table {
+  border-top: $tableColoredBorderSize solid $tableGreen;
+}
+.ui.inverted.green.table {
+  background-color: $tableGreen !important;
+  color: $tableWhite !important;
+}
+
+/* Teal */
+.ui.teal.table {
+  border-top: $tableColoredBorderSize solid $tableTeal;
+}
+.ui.inverted.teal.table {
+  background-color: $tableTeal !important;
+  color: $tableWhite !important;
+}
+
+/* Blue */
+.ui.blue.table {
+  border-top: $tableColoredBorderSize solid $tableBlue;
+}
+.ui.inverted.blue.table {
+  background-color: $tableBlue !important;
+  color: $tableWhite !important;
+}
+
+/* Violet */
+.ui.violet.table {
+  border-top: $tableColoredBorderSize solid $tableViolet;
+}
+.ui.inverted.violet.table {
+  background-color: $tableViolet !important;
+  color: $tableWhite !important;
+}
+
+/* Purple */
+.ui.purple.table {
+  border-top: $tableColoredBorderSize solid $tablePurple;
+}
+.ui.inverted.purple.table {
+  background-color: $tablePurple !important;
+  color: $tableWhite !important;
+}
+
+/* Pink */
+.ui.pink.table {
+  border-top: $tableColoredBorderSize solid $tablePink;
+}
+.ui.inverted.pink.table {
+  background-color: $tablePink !important;
+  color: $tableWhite !important;
+}
+
+/* Brown */
+.ui.brown.table {
+  border-top: $tableColoredBorderSize solid $tableBrown;
+}
+.ui.inverted.brown.table {
+  background-color: $tableBrown !important;
+  color: $tableWhite !important;
+}
+
+/* Grey */
+.ui.grey.table {
+  border-top: $tableColoredBorderSize solid $tableGrey;
+}
+.ui.inverted.grey.table {
+  background-color: $tableGrey !important;
+  color: $tableWhite !important;
+}
+
+/* Black */
+.ui.black.table {
+  border-top: $tableColoredBorderSize solid $tableBlack;
+}
+.ui.inverted.black.table {
+  background-color: $tableBlack !important;
+  color: $tableWhite !important;
+}
+/*--------------
+  Column Count
+---------------*/
+
+/* Grid Based */
+.ui.one.column.table td {
+  width: $tableOneColumn;
+}
+.ui.two.column.table td {
+  width: $tableTwoColumn;
+}
+.ui.three.column.table td {
+  width: $tableThreeColumn;
+}
+.ui.four.column.table td {
+  width: $tableFourColumn;
+}
+.ui.five.column.table td {
+  width: $tableFiveColumn;
+}
+.ui.six.column.table td {
+  width: $tableSixColumn;
+}
+.ui.seven.column.table td {
+  width: $tableSevenColumn;
+}
+.ui.eight.column.table td {
+  width: $tableEightColumn;
+}
+.ui.nine.column.table td {
+  width: $tableNineColumn;
+}
+.ui.ten.column.table td {
+  width: $tableTenColumn;
+}
+.ui.eleven.column.table td {
+  width: $tableElevenColumn;
+}
+.ui.twelve.column.table td {
+  width: $tableTwelveColumn;
+}
+.ui.thirteen.column.table td {
+  width: $tableThirteenColumn;
+}
+.ui.fourteen.column.table td {
+  width: $tableFourteenColumn;
+}
+.ui.fifteen.column.table td {
+  width: $tableFifteenColumn;
+}
+.ui.sixteen.column.table td {
+  width: $tableSixteenColumn;
+}
+
+/* Column Width */
+.ui.table th.one.wide,
+.ui.table td.one.wide {
+  width: $tableOneWide;
+}
+.ui.table th.two.wide,
+.ui.table td.two.wide {
+  width: $tableTwoWide;
+}
+.ui.table th.three.wide,
+.ui.table td.three.wide {
+  width: $tableThreeWide;
+}
+.ui.table th.four.wide,
+.ui.table td.four.wide {
+  width: $tableFourWide;
+}
+.ui.table th.five.wide,
+.ui.table td.five.wide {
+  width: $tableFiveWide;
+}
+.ui.table th.six.wide,
+.ui.table td.six.wide {
+  width: $tableSixWide;
+}
+.ui.table th.seven.wide,
+.ui.table td.seven.wide {
+  width: $tableSevenWide;
+}
+.ui.table th.eight.wide,
+.ui.table td.eight.wide {
+  width: $tableEightWide;
+}
+.ui.table th.nine.wide,
+.ui.table td.nine.wide {
+  width: $tableNineWide;
+}
+.ui.table th.ten.wide,
+.ui.table td.ten.wide {
+  width: $tableTenWide;
+}
+.ui.table th.eleven.wide,
+.ui.table td.eleven.wide {
+  width: $tableElevenWide;
+}
+.ui.table th.twelve.wide,
+.ui.table td.twelve.wide {
+  width: $tableTwelveWide;
+}
+.ui.table th.thirteen.wide,
+.ui.table td.thirteen.wide {
+  width: $tableThirteenWide;
+}
+.ui.table th.fourteen.wide,
+.ui.table td.fourteen.wide {
+  width: $tableFourteenWide;
+}
+.ui.table th.fifteen.wide,
+.ui.table td.fifteen.wide {
+  width: $tableFifteenWide;
+}
+.ui.table th.sixteen.wide,
+.ui.table td.sixteen.wide {
+  width: $tableSixteenWide;
+}
+
+/*--------------
+    Sortable
+---------------*/
+
+.ui.sortable.table thead th {
+  cursor: pointer;
+  white-space: nowrap;
+  border-left: $tableSortableBorder;
+  color: $tableSortableColor;
+}
+.ui.sortable.table thead th:first-child {
+  border-left: none;
+}
+.ui.sortable.table thead th.sorted,
+.ui.sortable.table thead th.sorted:hover {
+  user-select: none;
+}
+
+.ui.sortable.table thead th:after {
+  display: none;
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: inherit;
+  content: '';
+  height: 1em;
+  width: $tableSortableIconWidth;
+  opacity: $tableSortableIconOpacity;
+  margin: 0 0 0 $tableSortableIconDistance;
+  font-family: $tableSortableIconFont;
+}
+.ui.sortable.table thead th.ascending:after {
+  content: $tableSortableIconAscending;
+}
+.ui.sortable.table thead th.descending:after {
+  content: $tableSortableIconDescending;
+}
+
+/* Hover */
+.ui.sortable.table th.disabled:hover {
+  cursor: auto;
+  color: $tableSortableDisabledColor;
+}
+.ui.sortable.table thead th:hover {
+  background: $tableSortableHoverBackground;
+  color: $tableSortableHoverColor;
+}
+
+/* Sorted */
+.ui.sortable.table thead th.sorted {
+  background: $tableSortableActiveBackground;
+  color: $tableSortableActiveColor;
+}
+.ui.sortable.table thead th.sorted:after {
+  display: inline-block;
+}
+
+/* Sorted Hover */
+.ui.sortable.table thead th.sorted:hover {
+  background: $tableSortableActiveHoverBackground;
+  color: $tableSortableActiveHoverColor;
+}
+
+/* Inverted */
+.ui.inverted.sortable.table thead th.sorted {
+  background: $tableSortableInvertedActiveBackground;
+  color: $tableSortableInvertedActiveColor;
+}
+.ui.inverted.sortable.table thead th:hover {
+  background: $tableSortableInvertedHoverBackground;
+  color: $tableSortableInvertedHoverColor;
+}
+.ui.inverted.sortable.table thead th {
+  border-left-color: $tableSortableInvertedBorderColor;
+  border-right-color: $tableSortableInvertedBorderColor;
+}
+/*--------------
+    Inverted
+---------------*/
+
+/* Text Color */
+.ui.inverted.table {
+  background: $tableInvertedBackground;
+  color: $tableInvertedCellColor;
+  border: $tableInvertedBorder;
+}
+.ui.inverted.table th {
+  background-color: $tableInvertedHeaderBackground;
+  border-color: $tableInvertedHeaderBorderColor !important;
+  color: $tableInvertedHeaderColor !important;
+}
+.ui.inverted.table tr td {
+  border-color: $tableInvertedCellBorderColor !important;
+}
+
+.ui.inverted.table tr.disabled td,
+.ui.inverted.table tr td.disabled,
+.ui.inverted.table tr.disabled:hover td,
+.ui.inverted.table tr:hover td.disabled {
+  pointer-events: none;
+  color: $tableInvertedDisabledTextColor;
+}
+
+/* Definition */
+.ui.inverted.definition.table tfoot:not(.full-width) th:first-child,
+.ui.inverted.definition.table thead:not(.full-width) th:first-child {
+  background: $tableDefinitionPageBackground;
+}
+.ui.inverted.definition.table tr td:first-child {
+  background: $tableInvertedDefinitionColumnBackground;
+  color: $tableInvertedDefinitionColumnColor;
+}
+
+/*--------------
+   Collapsing
+---------------*/
+
+.ui.collapsing.table {
+  width: auto;
+}
+
+/*--------------
+      Basic
+---------------*/
+
+.ui.basic.table {
+  background: $tableBasicTableBackground;
+  border: $tableBasicTableBorder;
+  box-shadow: $tableBasicBoxShadow;
+}
+.ui.basic.table thead,
+.ui.basic.table tfoot {
+  box-shadow: none;
+}
+.ui.basic.table th {
+  background: $tableBasicTableHeaderBackground;
+  border-left: $tableBasicTableHeaderDivider;
+}
+.ui.basic.table tbody tr {
+  border-bottom: $tableBasicTableCellBorder;
+}
+.ui.basic.table td {
+  background: $tableBasicTableCellBackground;
+}
+.ui.basic.striped.table tbody tr:nth-child(2n) {
+  background-color: $tableBasicTableStripedBackground !important;
+}
+
+/* Very Basic */
+.ui[class*="very basic"].table {
+  border: none;
+}
+.ui[class*="very basic"].table:not(.sortable):not(.striped) th,
+.ui[class*="very basic"].table:not(.sortable):not(.striped) td {
+  padding: $tableBasicTableCellPadding;
+}
+.ui[class*="very basic"].table:not(.sortable):not(.striped) th:first-child,
+.ui[class*="very basic"].table:not(.sortable):not(.striped) td:first-child {
+  padding-left: 0;
+}
+.ui[class*="very basic"].table:not(.sortable):not(.striped) th:last-child,
+.ui[class*="very basic"].table:not(.sortable):not(.striped) td:last-child {
+  padding-right: 0;
+}
+.ui[class*="very basic"].table:not(.sortable):not(.striped) thead tr:first-child th {
+  padding-top: 0;
+}
+
+/*--------------
+     Celled
+---------------*/
+
+.ui.celled.table tr th,
+.ui.celled.table tr td {
+  border-left: $tableCellBorder;
+}
+.ui.celled.table tr th:first-child,
+.ui.celled.table tr td:first-child {
+  border-left: none;
+}
+
+/*--------------
+     Padded
+---------------*/
+
+.ui.padded.table th {
+  padding-left: $tablePaddedHorizontalPadding;
+  padding-right: $tablePaddedHorizontalPadding;
+}
+.ui.padded.table th,
+.ui.padded.table td {
+  padding: $tablePaddedVerticalPadding $tablePaddedHorizontalPadding;
+}
+
+/* Very */
+.ui[class*="very padded"].table th {
+  padding-left: $tableVeryPaddedHorizontalPadding;
+  padding-right: $tableVeryPaddedHorizontalPadding;
+}
+.ui[class*="very padded"].table td {
+  padding: $tableVeryPaddedVerticalPadding $tableVeryPaddedHorizontalPadding;
+}
+
+/*--------------
+     Compact
+---------------*/
+
+.ui.compact.table th {
+  padding-left: $tableCompactHorizontalPadding;
+  padding-right: $tableCompactHorizontalPadding;
+}
+.ui.compact.table td {
+  padding: $tableCompactVerticalPadding $tableCompactHorizontalPadding;
+}
+
+/* Very */
+.ui[class*="very compact"].table th {
+  padding-left: $tableVeryCompactHorizontalPadding;
+  padding-right: $tableVeryCompactHorizontalPadding;
+}
+.ui[class*="very compact"].table td {
+  padding: $tableVeryCompactVerticalPadding $tableVeryCompactHorizontalPadding;
+}
+
+/*--------------
+      Sizes
+---------------*/
+
+/* Small */
+.ui.small.table {
+  font-size: $tableSmall;
+}
+
+/* Standard */
+.ui.table {
+  font-size: $tableMedium;
+}
+
+/* Large */
+.ui.large.table {
+  font-size: $tableLarge;
+}
+
+

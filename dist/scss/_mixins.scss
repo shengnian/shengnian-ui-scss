@@ -1,0 +1,384 @@
+/********************
+  _site.scss
+********************/
+@function headerLineHeightOffset()  {
+  @return (to-number($headerLineHeight) - 1em) / 2;
+}
+
+@function headerTopMargin() {
+  @return #{"calc(2rem - " + headerLineHeightOffset() + ")"}
+}
+
+@mixin headerMargin {
+  margin: headerTopMargin() 0 $headerBottomMargin;
+}
+
+/********************
+  _input.scss
+********************/
+@function inputIconWidthFunc () {
+  @return (to-number($inputVerticalPadding) * 2) + $inputGlyphWidth;
+}
+
+@mixin inputIconWidth {
+  width: inputIconWidthFunc();
+}
+
+@mixin inputIconMargin {
+  padding-right: inputIconWidthFunc() + $inputIconDistance !important;
+}
+
+/********************
+  _dropdown.scss
+*********************/
+@function dropdownSelectionMinHeight() {
+  @return to-number($dropdownInputLineHeight) + (to-number($dropdownSelectionVerticalPadding) * 2) - to-number($dropdownSelectionBorderEmWidth);
+}
+
+@function dropdownSelectionIconDistance() {
+  @return to-number($dropdownInputHorizontalPadding) + $dropdownGlyphWidth
+}
+
+@function dropdownSelectionPadding() {
+  @return to-number($dropdownSelectionVerticalPadding) dropdownSelectionIconDistance() to-number($dropdownSelectionVerticalPadding) to-number($dropdownSelectionHorizontalPadding);
+}
+
+@mixin dropdownSelectionMinSize {
+  min-width: $dropdownSelectionMinWidth;
+  min-height: dropdownSelectionMinHeight();
+  padding: dropdownSelectionPadding();
+}
+
+
+// selection
+@function dropdownSelectionItemHeight () {
+  @return (to-number($dropdownSelectionItemVerticalPadding) * 2) + strip-number(($dropdownItemLineHeight + $dropdownSelectedBorderEMWidth + ""), 'em');
+}
+
+@function dropdownSelectionMaxMenuHeight($maxItems) {
+  @return (dropdownSelectionItemHeight() * $maxItems);
+}
+
+@mixin dropdownSelectionMobileMaxMenuHeight {
+  max-height: dropdownSelectionMaxMenuHeight($dropdownSelectionMobileMaxItems);
+}
+
+@mixin dropdownSelectionTabletMaxMenuHeight {
+  max-height: dropdownSelectionMaxMenuHeight($dropdownSelectionTabletMaxItems);
+  //max-height: $dropdownSelectionTabletMaxMenuHeight;
+}
+
+@mixin dropdownSelectionComputerMaxMenuHeight {
+  max-height: dropdownSelectionMaxMenuHeight($dropdownSelectionComputerMaxItems);
+  //max-height: $dropdownSelectionComputerMaxMenuHeight;
+}
+
+@mixin dropdownSelectionWidescreenMaxMenuHeight {
+  max-height: dropdownSelectionMaxMenuHeight($dropdownSelectionWidescreenMaxItems);
+  //max-height: $dropdownSelectionWidescreenMaxMenuHeight;
+}
+
+
+// scrolling
+@function dropdownScrollingItemHeight () {
+  @return (to-number($dropdownItemVerticalPadding) * 2) + strip-number(($dropdownItemLineHeight + $dropdownScrollingBorderEMWidth + ''), 'em')
+}
+
+@function dropdownScrollingMaxMenuHeight ($maxItems) {
+  @return (dropdownScrollingItemHeight() * $maxItems)
+}
+
+@mixin dropdownScrollingMobileMaxMenuHeight {
+  max-height: dropdownScrollingMaxMenuHeight($dropdownScrollingMobileMaxItems);
+  //max-height: $dropdownScrollingMobileMaxMenuHeight;
+}
+
+@mixin dropdownScrollingTabletMaxMenuHeight {
+  max-height: dropdownScrollingMaxMenuHeight($dropdownScrollingTabletMaxItems);
+  //max-height: $dropdownScrollingTabletMaxMenuHeight;
+}
+
+@mixin dropdownScrollingComputerMaxMenuHeight {
+  max-height: dropdownScrollingMaxMenuHeight($dropdownScrollingComputerMaxItems);
+  //max-height: $dropdownScrollingComputerMaxMenuHeight;
+}
+
+@mixin dropdownScrollingWidescreenMaxMenuHeight {
+  max-height: dropdownScrollingMaxMenuHeight($dropdownSelectionWidescreenMaxItems);
+  //max-height: $dropdownScrollingWidescreenMaxMenuHeight;
+}
+
+// dropdown search
+@mixin dropdownSearchMobileMaxMenuHeight {
+  max-height: dropdownSelectionMaxMenuHeight($dropdownSelectionMobileMaxItems);
+}
+
+@mixin dropdownSearchTabletMaxMenuHeight {
+  max-height: dropdownSelectionMaxMenuHeight($dropdownSelectionTabletMaxItems);
+}
+
+@mixin dropdownSearchComputerMaxMenuHeight {
+  max-height: dropdownSelectionMaxMenuHeight($dropdownSelectionComputerMaxItems);
+}
+
+@mixin dropdownSearchWidescreenMaxMenuHeight {
+  max-height: dropdownSelectionMaxMenuHeight($dropdownSelectionWidescreenMaxItems);
+}
+
+
+// dropdown multiple
+@function dropdownMultipleSelectionChildLeftMargin () {
+  @return (to-number($dropdownInputHorizontalPadding) - to-number($dropdownMultipleSelectionLeftPadding));
+}
+
+@function dropdownMultipleSelectionChildVerticalMargin () {
+  @return (to-number($dropdownSelectionVerticalPadding) - ((to-number($dropdownSearchSelectionLineHeight) - 1) / 2)) * (2/3);
+}
+
+@mixin dropdownMultipleSelectionChildMargin {
+  margin: dropdownMultipleSelectionChildVerticalMargin() 0 dropdownMultipleSelectionChildVerticalMargin() dropdownMultipleSelectionChildLeftMargin();
+}
+
+
+@function dropdownSearchSelectionLineHeightOffset() {
+  @return ((to-number($dropdownSearchSelectionLineHeight) - 1em) / 2);
+}
+
+@function dropdownSearchSelectionVerticalPadding() {
+  @return to-number($dropdownSelectionVerticalPadding) - (dropdownSearchSelectionLineHeightOffset());
+}
+
+@function dropdownMultipleSelectionVerticalPadding() {
+  @return (dropdownSearchSelectionVerticalPadding() * (1/3));
+  @return dropdownMultipleSelectionVerticalPadding $dropdownMultipleSelectionRightPadding $dropdownMultipleSelectionVerticalPadding $dropdownMultipleSelectionLeftPadding;
+}
+
+@mixin dropdownMultipleSelectionPadding {
+  padding: dropdownMultipleSelectionVerticalPadding() dropdownSelectionIconDistance()  dropdownMultipleSelectionVerticalPadding() to-number($dropdownMultipleSelectionLeftPadding);
+  //padding: $dropdownMultipleSelectionPadding;
+}
+
+//$dropdownMultipleSelectionChildVerticalMargin 0 $dropdownMultipleSelectionChildVerticalMargin $dropdownMultipleSelectionChildLeftMargin;
+
+/******************
+  _modal.scss
+*******************/
+@function modalCloseHitBoxOffset() {
+  @return ($modalCloseHitbox - 1rem) / 2
+}
+
+@function modalInnerCloseTop() {
+  @return $modalHeaderVerticalPadding - modalCloseHitBoxOffset() + (strip-number($modalLineHeight + '', 'em') - 1)
+}
+
+/* Inner Close Position (Tablet/Mobile) */
+@mixin modalInnerClose {
+  top: modalInnerCloseTop();
+  right: 1rem;
+  color: $modalTextColor;
+}
+
+/********************
+  _menu.scss
+********************/
+@function menuMinHeightFunc() {
+  @return (to-number($menuItemVerticalPadding) * 2) + 1em;
+}
+@mixin menuMinHeight {
+  min-height: menuMinHeightFunc();
+}
+
+@mixin menuSubMenuMargin {
+  margin: $menuSubMenuDistance to-number(-$menuItemHorizontalPadding) 0;
+}
+
+@function menuSubMenuHorizontalPadding() {
+  @return (to-number($menuItemHorizontalPadding) / $menuTinySize) + $menuSubMenuIndent;
+}
+@mixin menuSubMenuPadding {
+  padding: $menuSubMenuVerticalPadding menuSubMenuHorizontalPadding();
+}
+
+@mixin menuSecondaryMenuSubMenuItemMargin {
+  margin: $menuSecondaryMenuSubMenuItemMargin;
+}
+
+@mixin menuSecondaryMenuSubMenuItemPadding {
+  padding: $menuRelative7px ((to-number($menuItemHorizontalPadding) / to-number($menuTinySize)) + $menuSubMenuIndent);
+}
+
+@mixin menuTextMenuMargin {
+  margin: $menuRelativeMedium to-number(-$menuTextMenuItemSpacing);
+}
+
+/********************
+  _button.scss
+********************/
+
+@function buttonCompactVerticalPadding() {
+  @return (to-number($buttonVerticalPadding) * 0.75);
+}
+
+@function buttonCompactHorizontalPadding() {
+  @return (to-number($buttonHorizontalPadding) * 0.75);
+}
+
+@function buttonShadowOffset() {
+  @return $buttonShadowDistance / 2;
+}
+
+@function buttonLabeledIconWidth() {
+  @return 1em + (to-number($buttonVerticalPadding) * 2)
+}
+
+// ui
+@function buttonVerticalPadding() {
+  @return to-number($buttonVerticalPadding);
+}
+
+@mixin buttonPadding($u, $r, $d) {
+  padding: $u $r $d;
+}
+
+@mixin buttonLabeledIconWidthMixin {
+  width: buttonLabeledIconWidth();
+}
+
+
+@function buttonLabeledIconPaddingFunc() {
+  @return  ($buttonHorizontalPadding + buttonLabeledIconWidth());
+}
+
+@mixin buttonLabeledIconPadding {
+  padding-right: buttonLabeledIconPaddingFunc() !important;
+  padding-left: $buttonHorizontalPadding !important;
+}
+
+// button or
+@function buttonOrHeight() {
+  @return (to-number($buttonVerticalPadding) * 2) + 1em;
+}
+@mixin buttonOr {
+  width: $buttonOrGap;
+  height: buttonOrHeight();
+  z-index: $buttonOrZIndex;
+}
+
+@function buttonOrHeight() {
+  @return (to-number($buttonVerticalPadding) * 2) + 1em;
+}
+
+@function buttonOrCircleSize() {
+  @return buttonOrHeight() - to-number($buttonOrCircleDistanceToEdge);
+}
+
+@function buttonOrVerticalOffset() {
+  @return -(buttonOrCircleSize() / 2);
+}
+
+@function buttonOrHorizontalOffset() {
+  @return -(buttonOrCircleSize() / 2)
+}
+
+@mixin buttonOrBefore {
+  margin-top: buttonOrVerticalOffset();
+  margin-left: buttonOrHorizontalOffset();
+
+  width: buttonOrCircleSize();
+  height: buttonOrCircleSize();
+
+  line-height: buttonOrCircleSize();
+}
+
+/********************
+  _input.scss
+********************/
+
+
+@function inputVerticalPadding() {
+  @return to-number($inputVerticalPadding);
+}
+
+@function inputHorizontalPadding() {
+  @return to-number($inputHorizontalPadding);
+}
+
+@function inputLineHeightOffset() {
+  @return (to-number($inputLineHeight) - 1em) / 2;
+}
+
+
+//@return ($inputVerticalPadding - $inputLineHeightOffset) $inputHorizontalPadding
+@mixin inputPadding {
+  padding: inputVerticalPadding() - inputLineHeightOffset() inputHorizontalPadding();
+}
+
+@mixin inputIconPlPr {
+  padding-right: inputIconWidthFunc() + $inputIconDistance !important;
+  padding-right: inputHorizontalPadding() !important;
+}
+
+/********************
+  _loader.scss
+********************/
+@function loaderOffsetBy($offset) {
+  @return -(to-number($offset) / 2);
+}
+
+//@function loaderSize() {
+//  @return to-number($relativeBig);
+//}
+//@function loaderOffset() {
+//  @return -(loaderSize() / 2);
+//}
+
+// input loader margin
+//@function loaderMargin() {
+//  @return loaderOffset() 0 0 loaderOffset();
+//}
+
+@mixin inputLoaderMargin {
+  margin: loaderOffsetBy($inputLoaderSize) 0 0 loaderOffsetBy($inputLoaderSize);
+}
+
+// input loader mini
+//@function inputLoaderOffset($loaderOff) {
+//  @return -(to-number($loaderOff) / 2);
+//}
+
+@mixin loaderMiniOffset {
+  margin: 0 0 0 loaderOffsetBy($loaderMini);
+}
+@mixin loaderTinyOffset {
+  margin: 0 0 0 loaderOffsetBy($loaderTiny);
+}
+@mixin loaderSmallOffset {
+  margin: 0 0 0 loaderOffsetBy($loaderSmall);
+}
+@mixin loaderMediumOffset {
+  margin: 0 0 0 loaderOffsetBy($loaderMedium);
+}
+@mixin loaderLargeOffset {
+  margin: 0 0 0 loaderOffsetBy($loaderLarge);
+}
+@mixin loaderBigOffset {
+  margin: 0 0 0 loaderOffsetBy($loaderBig);
+}
+@mixin loaderHugeOffset {
+  margin: 0 0 0 loaderOffsetBy($loaderHuge);
+}
+@mixin loaderMassiveOffset {
+  margin: 0 0 0 loaderOffsetBy($loaderMassive);
+}
+
+/********************
+  _form.scss
+********************/
+
+@mixin formLoaderMargin() {
+  margin: loaderOffsetBy($formLoaderSize) 0 0 loaderOffsetBy($formLoaderSize);
+  width: $formLoaderSize;
+  height: $formLoaderSize;
+}
+
+

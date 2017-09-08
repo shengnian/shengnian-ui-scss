@@ -211,7 +211,7 @@ tags
 
 bower_components/
 coverage/
-dist/
+#dist/
 docs/build/
 docs/app/docgenInfo.json
 dll/
@@ -223,4 +223,4 @@ dll/
 
 rename.md
 
-less/
+#less/

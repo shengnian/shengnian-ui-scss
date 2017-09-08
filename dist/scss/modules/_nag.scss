@@ -1,0 +1,144 @@
+/*!
+ * # Shengnian UI - Nag
+ * http://github.com/shengnian/shengnian-ui
+ *
+ *
+ * Released under the MIT license
+ * http://opensource.org/licenses/MIT
+ *
+ */
+
+
+/*******************************
+             Nag
+*******************************/
+
+.ui.nag {
+  display: none;
+  opacity: $nagOpacity;
+  position: $nagPosition;
+
+  top: $nagTop;
+  left: 0;
+  z-index: $nagZIndex;
+
+  min-height: $nagMinHeight;
+  width: $nagWidth;
+
+  margin: $nagMargin;
+  padding: $nagPadding;
+
+  background: $nagBackground;
+  box-shadow: $nagBoxShadow;
+
+  font-size: $nagFontSize;
+  text-align: $nagTextAlign;
+  color: $nagColor;
+
+  border-radius: $nagTopBorderRadius;
+  transition: $nagTransition;
+}
+
+a.ui.nag {
+  cursor: pointer;
+}
+
+.ui.nag > .title {
+  display: inline-block;
+  margin: $nagTitleMargin;
+  color: $nagTitleColor;
+}
+.ui.nag > .close.icon {
+  cursor: pointer;
+  opacity: $nagCloseOpacity;
+
+  position: absolute;
+  top: $nagCloseTop;
+  right: $nagCloseRight;
+
+  font-size: $nagCloseSize;
+
+  margin: $nagCloseMargin;
+  color: $nagCloseColor;
+  transition: $nagCloseTransition;
+}
+
+
+/*******************************
+             States
+*******************************/
+
+/* Hover */
+.ui.nag:hover {
+  background: $nagNagHoverBackground;
+  opacity: $nagNagHoverOpacity;
+}
+
+.ui.nag .close:hover {
+  opacity: $nagCloseHoverOpacity;
+}
+
+
+/*******************************
+           Variations
+*******************************/
+/*--------------
+     Static
+---------------*/
+
+.ui.overlay.nag {
+  position: absolute;
+  display: block;
+}
+
+/*--------------
+     Fixed
+---------------*/
+
+.ui.fixed.nag {
+  position: fixed;
+}
+
+/*--------------
+     Bottom
+---------------*/
+
+.ui.bottom.nags,
+.ui.bottom.nag {
+  border-radius: $nagBottomBorderRadius;
+  top: auto;
+  bottom: $nagBottom;
+}
+
+/*--------------
+     White
+---------------*/
+
+.ui.inverted.nags .nag,
+.ui.inverted.nag {
+  background-color: $nagInvertedBackground;
+  color: $nagDarkTextColor;
+}
+.ui.inverted.nags .nag .close,
+.ui.inverted.nags .nag .title,
+.ui.inverted.nag .close,
+.ui.inverted.nag .title {
+  color: $nagLightTextColor;
+}
+
+
+/*******************************
+           Groups
+*******************************/
+
+.ui.nags .nag {
+  border-radius: $nagGroupedBorderRadius !important;
+}
+.ui.nags .nag:last-child {
+  border-radius: $nagTopBorderRadius;
+}
+.ui.bottom.nags .nag:last-child {
+  border-radius: $nagBottomBorderRadius;
+}
+
+

@@ -1,0 +1,680 @@
+/*!
+ * # Shengnian UI - Header
+ * http://github.com/shengnian/shengnian-ui
+ *
+ *
+ * Released under the MIT license
+ * http://opensource.org/licenses/MIT
+ *
+ */
+
+
+/*******************************
+            Header
+*******************************/
+
+/* Standard */
+.ui.header {
+  border: none;
+  margin: #{"calc(2rem - " + $headerLineHeightOffset + ")"} 0 $headerBottomMargin;
+  padding: $headerVerticalPadding $headerHorizontalPadding;
+  font-family: $headerFontFamily;
+  font-weight: $headerFontWeight;
+  line-height: $headerLineHeight;
+  text-transform: $headerTextTransform;
+  color: $headerTextColor;
+}
+
+.ui.header:first-child {
+  margin-top: $headerFirstMargin;
+}
+.ui.header:last-child {
+  margin-bottom: $headerLastMargin;
+}
+
+/*--------------
+   Sub Header
+---------------*/
+
+.ui.header .sub.header {
+  display: block;
+  font-weight: normal;
+  padding: 0;
+  margin: $headerSubHeaderMargin;
+  font-size: $headerSubHeaderFontSize;
+  line-height: $headerSubHeaderLineHeight;
+  color: $headerSubHeaderColor;
+}
+
+/*--------------
+      Icon
+---------------*/
+
+.ui.header > .icon {
+  display: table-cell;
+  opacity: $headerIconOpacity;
+  font-size: $headerIconSize;
+  padding-top: $headerIconOffset;
+  vertical-align: $headerIconAlignment;
+}
+
+/* With Text Node */
+.ui.header .icon:only-child {
+  display: inline-block;
+  padding: 0;
+  margin-right: $headerIconMargin;
+}
+
+/*-------------------
+        Image
+--------------------*/
+
+.ui.header > .image:not(.icon),
+.ui.header > img {
+  display: inline-block;
+  margin-top: $headerImageOffset;
+  width: $headerImageWidth;
+  height: $headerImageHeight;
+  vertical-align: $headerImageAlignment;
+}
+.ui.header > .image:not(.icon):only-child,
+.ui.header > img:only-child {
+  margin-right: $headerImageMargin;
+}
+
+/*--------------
+     Content
+---------------*/
+
+.ui.header .content {
+  display: inline-block;
+  vertical-align: $headerContentAlignment;
+}
+
+/* After Image */
+.ui.header > img + .content,
+.ui.header > .image + .content {
+  padding-left: $headerImageMargin;
+  vertical-align: $headerContentImageAlignment;
+}
+
+/* After Icon */
+.ui.header > .icon + .content {
+  padding-left: $headerIconMargin;
+  display: table-cell;
+  vertical-align: $headerContentIconAlignment;
+}
+/*--------------
+ Loose Coupling
+---------------*/
+
+.ui.header .ui.label {
+  font-size: $headerLabelSize;
+  margin-left: $headerLabelDistance;
+  vertical-align: $headerLabelVerticalAlign;
+}
+
+/* Positioning */
+.ui.header + p {
+  margin-top: $headerNextParagraphDistance;
+}
+
+
+/*******************************
+            Types
+*******************************/
+/*--------------
+     Page
+---------------*/
+
+h1.ui.header {
+  font-size: $headerH1;
+}
+h2.ui.header {
+  font-size: $headerH2;
+}
+h3.ui.header {
+  font-size: $headerH3;
+}
+h4.ui.header {
+  font-size: $headerH4;
+}
+h5.ui.header {
+  font-size: $headerH5;
+}
+/* Sub Header */
+h1.ui.header .sub.header {
+  font-size: $headerH1SubHeaderFontSize;
+}
+h2.ui.header .sub.header {
+  font-size: $headerH2SubHeaderFontSize;
+}
+h3.ui.header .sub.header {
+  font-size: $headerH3SubHeaderFontSize;
+}
+h4.ui.header .sub.header {
+  font-size: $headerH4SubHeaderFontSize;
+}
+h5.ui.header .sub.header {
+  font-size: $headerH5SubHeaderFontSize;
+}
+/*--------------
+ Content Heading
+---------------*/
+
+.ui.huge.header {
+  min-height: 1em;
+  font-size: $headerHugeFontSize;
+}
+.ui.large.header {
+  font-size: $headerLargeFontSize;
+}
+.ui.medium.header {
+  font-size: $headerMediumFontSize;
+}
+.ui.small.header {
+  font-size: $headerSmallFontSize;
+}
+.ui.tiny.header {
+  font-size: $headerTinyFontSize;
+}
+
+/* Sub Header */
+.ui.huge.header .sub.header {
+  font-size: $headerHugeSubHeaderFontSize;
+}
+.ui.large.header .sub.header {
+  font-size: $headerHugeSubHeaderFontSize;
+}
+.ui.header .sub.header {
+  font-size: $headerSubHeaderFontSize;
+}
+.ui.small.header .sub.header {
+  font-size: $headerSmallSubHeaderFontSize;
+}
+.ui.tiny.header .sub.header {
+  font-size: $headerTinySubHeaderFontSize;
+}
+
+/*--------------
+   Sub Heading
+---------------*/
+
+.ui.sub.header {
+  padding: 0;
+  margin-bottom: $headerSubHeadingDistance;
+  font-weight: $headerSubHeadingFontWeight;
+  font-size: $headerSubHeadingFontSize;
+  text-transform: $headerSubHeadingTextTransform;
+  color: $headerSubHeadingColor;
+}
+
+.ui.small.sub.header {
+  font-size: $headerSmallSubHeadingSize;
+}
+.ui.sub.header {
+  font-size: $headerSubHeadingFontSize;
+}
+.ui.large.sub.header {
+  font-size: $headerLargeSubHeadingSize;
+}
+.ui.huge.sub.header {
+  font-size: $headerHugeSubHeadingSize;
+}
+/*-------------------
+        Icon
+--------------------*/
+
+.ui.icon.header {
+  display: inline-block;
+  text-align: center;
+  margin: $headerIconHeaderTopMargin 0 $headerIconHeaderBottomMargin;
+}
+.ui.icon.header:after {
+  content: '';
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.ui.icon.header:first-child {
+  margin-top: $headerIconHeaderFirstMargin;
+}
+.ui.icon.header .icon {
+  float: none;
+  display: block;
+  width: auto;
+  height: auto;
+  line-height: 1;
+  padding: 0;
+  font-size: $headerIconHeaderSize;
+  margin: 0 auto $headerIconHeaderMargin;
+  opacity: $headerIconHeaderOpacity;
+}
+.ui.icon.header .content {
+  display: block;
+  padding: 0;
+}
+.ui.icon.header .circular.icon {
+  font-size: $headerCircularHeaderIconSize;
+}
+.ui.icon.header .square.icon {
+  font-size: $headerSquareHeaderIconSize;
+}
+.ui.block.icon.header .icon {
+  margin-bottom: 0;
+}
+.ui.icon.header.aligned {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+
+
+/*******************************
+            States
+*******************************/
+
+.ui.disabled.header {
+  opacity: $headerDisabledOpacity;
+}
+
+
+/*******************************
+           Variations
+*******************************/
+
+/*-------------------
+      Inverted
+--------------------*/
+
+.ui.inverted.header {
+  color: $headerInvertedColor;
+}
+.ui.inverted.header .sub.header {
+  color: $headerInvertedSubHeaderColor;
+}
+.ui.inverted.attached.header {
+  background: $headerInvertedAttachedBackground;
+  box-shadow: none;
+  border-color: transparent;
+}
+.ui.inverted.block.header {
+  background: $headerInvertedBlockBackground;
+  box-shadow: none;
+}
+.ui.inverted.block.header {
+  border-bottom: none;
+}
+/*-------------------
+       Colors
+--------------------*/
+
+/*--- Red ---*/
+.ui.red.header {
+  color: $headerRed !important;
+}
+a.ui.red.header:hover {
+  color: $headerRedHover !important;
+}
+.ui.red.dividing.header {
+  border-bottom: $headerDividedColoredBorderWidth solid $headerRed;
+}
+
+/* Inverted */
+.ui.inverted.red.header {
+  color: $headerLightRed !important;
+}
+a.ui.inverted.red.header:hover {
+  color: $headerLightRedHover !important;
+}
+
+/*--- Orange ---*/
+.ui.orange.header {
+  color: $headerOrange !important;
+}
+a.ui.orange.header:hover {
+  color: $headerOrangeHover !important;
+}
+.ui.orange.dividing.header {
+  border-bottom: $headerDividedColoredBorderWidth solid $headerOrange;
+}
+/* Inverted */
+.ui.inverted.orange.header {
+  color: $headerLightOrange !important;
+}
+a.ui.inverted.orange.header:hover {
+  color: $headerLightOrangeHover !important;
+}
+
+/*--- Olive ---*/
+.ui.olive.header {
+  color: $headerOlive !important;
+}
+a.ui.olive.header:hover {
+  color: $headerOliveHover !important;
+}
+.ui.olive.dividing.header {
+  border-bottom: $headerDividedColoredBorderWidth solid $headerOlive;
+}
+/* Inverted */
+.ui.inverted.olive.header {
+  color: $headerLightOlive !important;
+}
+a.ui.inverted.olive.header:hover {
+  color: $headerLightOliveHover !important;
+}
+
+/*--- Yellow ---*/
+.ui.yellow.header {
+  color: $headerYellow !important;
+}
+a.ui.yellow.header:hover {
+  color: $headerYellowHover !important;
+}
+.ui.yellow.dividing.header {
+  border-bottom: $headerDividedColoredBorderWidth solid $headerYellow;
+}
+/* Inverted */
+.ui.inverted.yellow.header {
+  color: $headerLightYellow !important;
+}
+a.ui.inverted.yellow.header:hover {
+  color: $headerLightYellowHover !important;
+}
+
+/*--- Green ---*/
+.ui.green.header {
+  color: $headerGreen !important;
+}
+a.ui.green.header:hover {
+  color: $headerGreenHover !important;
+}
+.ui.green.dividing.header {
+  border-bottom: $headerDividedColoredBorderWidth solid $headerGreen;
+}
+/* Inverted */
+.ui.inverted.green.header {
+  color: $headerLightGreen !important;
+}
+a.ui.inverted.green.header:hover {
+  color: $headerLightGreenHover !important;
+}
+
+/*--- Teal ---*/
+.ui.teal.header {
+  color: $headerTeal !important;
+}
+a.ui.teal.header:hover {
+  color: $headerTealHover !important;
+}
+.ui.teal.dividing.header {
+  border-bottom: $headerDividedColoredBorderWidth solid $headerTeal;
+}
+/* Inverted */
+.ui.inverted.teal.header {
+  color: $headerLightTeal !important;
+}
+a.ui.inverted.teal.header:hover {
+  color: $headerLightTealHover !important;
+}
+
+/*--- Blue ---*/
+.ui.blue.header {
+  color: $headerBlue !important;
+}
+a.ui.blue.header:hover {
+  color: $headerBlueHover !important;
+}
+.ui.blue.dividing.header {
+  border-bottom: $headerDividedColoredBorderWidth solid $headerBlue;
+}
+/* Inverted */
+.ui.inverted.blue.header {
+  color: $headerLightBlue !important;
+}
+a.ui.inverted.blue.header:hover {
+  color: $headerLightBlueHover !important;
+}
+
+/*--- Violet ---*/
+.ui.violet.header {
+  color: $headerViolet !important;
+}
+a.ui.violet.header:hover {
+  color: $headerVioletHover !important;
+}
+.ui.violet.dividing.header {
+  border-bottom: $headerDividedColoredBorderWidth solid $headerViolet;
+}
+/* Inverted */
+.ui.inverted.violet.header {
+  color: $headerLightViolet !important;
+}
+a.ui.inverted.violet.header:hover {
+  color: $headerLightVioletHover !important;
+}
+
+/*--- Purple ---*/
+.ui.purple.header {
+  color: $headerPurple !important;
+}
+a.ui.purple.header:hover {
+  color: $headerPurpleHover !important;
+}
+.ui.purple.dividing.header {
+  border-bottom: $headerDividedColoredBorderWidth solid $headerPurple;
+}
+/* Inverted */
+.ui.inverted.purple.header {
+  color: $headerLightPurple !important;
+}
+a.ui.inverted.purple.header:hover {
+  color: $headerLightPurpleHover !important;
+}
+
+/*--- Pink ---*/
+.ui.pink.header {
+  color: $headerPink !important;
+}
+a.ui.pink.header:hover {
+  color: $headerPinkHover !important;
+}
+.ui.pink.dividing.header {
+  border-bottom: $headerDividedColoredBorderWidth solid $headerPink;
+}
+/* Inverted */
+.ui.inverted.pink.header {
+  color: $headerLightPink !important;
+}
+a.ui.inverted.pink.header:hover {
+  color: $headerLightPinkHover !important;
+}
+
+/*--- Brown ---*/
+.ui.brown.header {
+  color: $headerBrown !important;
+}
+a.ui.brown.header:hover {
+  color: $headerBrownHover !important;
+}
+.ui.brown.dividing.header {
+  border-bottom: $headerDividedColoredBorderWidth solid $headerBrown;
+}
+/* Inverted */
+.ui.inverted.brown.header {
+  color: $headerLightBrown !important;
+}
+a.ui.inverted.brown.header:hover {
+  color: $headerLightBrownHover !important;
+}
+
+/*--- Grey ---*/
+.ui.grey.header {
+  color: $headerGrey !important;
+}
+a.ui.grey.header:hover {
+  color: $headerGreyHover !important;
+}
+.ui.grey.dividing.header {
+  border-bottom: $headerDividedColoredBorderWidth solid $headerGrey;
+}
+/* Inverted */
+.ui.inverted.grey.header {
+  color: $headerLightGrey !important;
+}
+a.ui.inverted.grey.header:hover {
+  color: $headerLightGreyHover !important;
+}
+/*-------------------
+       Aligned
+--------------------*/
+
+.ui.left.aligned.header {
+  text-align: left;
+}
+.ui.right.aligned.header {
+  text-align: right;
+}
+.ui.centered.header,
+.ui.center.aligned.header {
+  text-align: center;
+}
+.ui.justified.header {
+  text-align: justify;
+}
+.ui.justified.header:after {
+  display: inline-block;
+  content: '';
+  width: 100%;
+}
+
+/*-------------------
+       Floated
+--------------------*/
+
+.ui.floated.header,
+.ui[class*="left floated"].header {
+  float: left;
+  margin-top: 0;
+  margin-right: $headerFloatedMargin;
+}
+.ui[class*="right floated"].header {
+  float: right;
+  margin-top: 0;
+  margin-left: $headerFloatedMargin;
+}
+
+/*-------------------
+       Fitted
+--------------------*/
+
+.ui.fitted.header {
+  padding: 0;
+}
+/*-------------------
+      Dividing
+--------------------*/
+
+.ui.dividing.header {
+  padding-bottom: $headerDividedBorderPadding;
+  border-bottom: $headerDividedBorder;
+}
+.ui.dividing.header .sub.header {
+  padding-bottom: $headerDividedSubHeaderPadding;
+}
+.ui.dividing.header .icon {
+  margin-bottom: $headerDividedIconPadding;
+}
+
+.ui.inverted.dividing.header {
+  border-bottom-color: $headerInvertedDividedBorderColor;
+}
+/*-------------------
+        Block
+--------------------*/
+
+.ui.block.header {
+  background: $headerBlockBackground;
+  padding: $headerBlockVerticalPadding $headerBlockHorizontalPadding;
+  box-shadow: $headerBlockBoxShadow;
+  border: $headerBlockBorder;
+  border-radius: $headerBlockBorderRadius;
+}
+
+.ui.tiny.block.header {
+  font-size: $headerTinyBlock;
+}
+.ui.small.block.header {
+  font-size: $headerSmallBlock;
+}
+.ui.block.header:not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) {
+  font-size: $headerMediumBlock;
+}
+.ui.large.block.header {
+  font-size: $headerLargeBlock;
+}
+.ui.huge.block.header {
+  font-size: $headerHugeBlock;
+}
+
+/*-------------------
+       Attached
+--------------------*/
+
+.ui.attached.header {
+  background: $headerAttachedBackground;
+  padding: $headerAttachedVerticalPadding $headerAttachedHorizontalPadding;
+  margin-left: $headerAttachedOffset;
+  margin-right: $headerAttachedOffset;
+  box-shadow: $headerAttachedBoxShadow;
+  border: $headerAttachedBorder;
+}
+.ui.attached.block.header {
+  background: $headerBlockBackground;
+}
+
+.ui.attached:not(.top):not(.bottom).header {
+  margin-top: 0;
+  margin-bottom: 0;
+  border-top: none;
+  border-radius: 0;
+}
+.ui.top.attached.header {
+  margin-bottom: 0;
+  border-radius: $headerAttachedBorderRadius $headerAttachedBorderRadius 0 0;
+}
+.ui.bottom.attached.header {
+  margin-top: 0;
+  border-top: none;
+  border-radius: 0 0 $headerAttachedBorderRadius $headerAttachedBorderRadius;
+}
+
+/* Attached Sizes */
+.ui.tiny.attached.header {
+  font-size: $headerTinyAttachedSize;
+}
+.ui.small.attached.header {
+  font-size: $headerSmallAttachedSize;
+}
+.ui.attached.header:not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) {
+  font-size: $headerMediumAttachedSize;
+}
+.ui.large.attached.header {
+  font-size: $headerLargeAttachedSize;
+}
+.ui.huge.attached.header {
+  font-size: $headerHugeAttachedSize;
+}
+
+/*-------------------
+        Sizing
+--------------------*/
+
+.ui.header:not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) {
+  font-size: $headerMediumFontSize;
+}
+
+

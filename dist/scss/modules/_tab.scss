@@ -1,0 +1,87 @@
+/*!
+ * # Shengnian UI - Tab
+ * http://github.com/shengnian/shengnian-ui
+ *
+ *
+ * Released under the MIT license
+ * http://opensource.org/licenses/MIT
+ *
+ */
+
+
+/*******************************
+           UI Tabs
+*******************************/
+
+.ui.tab {
+  display: none;
+}
+
+
+
+/*******************************
+             States
+*******************************/
+
+/*--------------------
+       Active
+---------------------*/
+
+.ui.tab.active,
+.ui.tab.open {
+  display: block;
+}
+
+/*--------------------
+       Loading
+---------------------*/
+
+.ui.tab.loading {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  min-height: $tabLoadingMinHeight;
+}
+.ui.tab.loading * {
+  position: $tabLoadingContentPosition !important;
+  left: $tabLoadingContentOffset !important;
+}
+
+.ui.tab.loading:before,
+.ui.tab.loading.segment:before {
+  position: absolute;
+  content: '';
+  top: $tabLoaderDistanceFromTop;
+  left: 50%;
+
+  margin: $tabLoaderMargin;
+  width: $tabLoaderSize;
+  height: $tabLoaderSize;
+
+  border-radius: $tabCircularRadius;
+  border: $tabLoaderLineWidth solid $tabLoaderFillColor;
+}
+.ui.tab.loading:after,
+.ui.tab.loading.segment:after {
+  position: absolute;
+  content: '';
+  top: $tabLoaderDistanceFromTop;
+  left: 50%;
+
+  margin: $tabLoaderMargin;
+  width: $tabLoaderSize;
+  height: $tabLoaderSize;
+
+  animation: button-spin $tabLoaderSpeed linear;
+  animation-iteration-count: infinite;
+
+  border-radius: $tabCircularRadius;
+
+  border-color: $tabLoaderLineColor transparent transparent;
+  border-style: solid;
+  border-width: $tabLoaderLineWidth;
+
+  box-shadow: 0 0 0 1px transparent;
+}
+
+

@@ -1,0 +1,465 @@
+/*!
+ * # Shengnian UI - Message
+ * http://github.com/shengnian/shengnian-ui
+ *
+ *
+ * Released under the MIT license
+ * http://opensource.org/licenses/MIT
+ *
+ */
+
+
+/*******************************
+            Message
+*******************************/
+
+.ui.message {
+  position: relative;
+  min-height: 1em;
+  margin: $messageVerticalMargin 0;
+  background: $messageBackground;
+  padding: $messagePadding;
+  line-height: $messageLineHeight;
+  color: $messageTextColor;
+  transition: $messageTransition;
+  border-radius: $messageBorderRadius;
+  box-shadow: $messageBoxShadow;
+}
+
+.ui.message:first-child {
+  margin-top: 0;
+}
+.ui.message:last-child {
+  margin-bottom: 0;
+}
+/*--------------
+     Content
+---------------*/
+
+/* Header */
+.ui.message .header {
+  display: $messageHeaderDisplay;
+  font-family: $messageHeaderFont;
+  font-weight: $messageHeaderFontWeight;
+  //margin: $messageHeaderMargin;
+  margin: -$lineHeight 0em 0em 0em;
+  //margin:  -(($lineHeight - 1) / 2) 0 $messageHeaderDistance 0;
+}
+
+/* Default font size */
+.ui.message .header:not(.ui) {
+  font-size: $messageHeaderFontSize;
+}
+
+/* Paragraph */
+.ui.message p {
+  opacity: $messageMessageTextOpacity;
+  margin: $messageMessageParagraphMargin 0;
+}
+.ui.message p:first-child {
+  margin-top: 0;
+}
+.ui.message p:last-child {
+  margin-bottom: 0;
+}
+.ui.message .header + p {
+  margin-top: $messageHeaderParagraphDistance;
+}
+
+/* List */
+.ui.message .list:not(.ui) {
+  text-align: left;
+  padding: 0;
+  opacity: $messageListOpacity;
+  list-style-position: $messageListStylePosition;
+  margin: $messageListMargin 0 0;
+}
+.ui.message .list:not(.ui):first-child {
+  margin-top: 0;
+}
+.ui.message .list:not(.ui):last-child {
+  margin-bottom: 0;
+}
+.ui.message .list:not(.ui) li {
+  position: relative;
+  list-style-type: none;
+  margin: 0 0 $messageListItemMargin $messageListItemIndent;
+  padding: 0;
+}
+.ui.message .list:not(.ui) li:before {
+  position: absolute;
+  content: '•';
+  left: -1em;
+  height: 100%;
+  vertical-align: baseline;
+}
+.ui.message .list:not(.ui) li:last-child {
+  margin-bottom: 0;
+}
+/* Icon */
+.ui.message > .icon {
+  margin-right: $messageIconDistance;
+}
+
+/* Close Icon */
+.ui.message > .close.icon {
+  cursor: pointer;
+  position: absolute;
+  margin: 0;
+  top: $messageCloseTopDistance;
+  right: $messageCloseRightDistance;
+  opacity: $messageCloseOpacity;
+  transition: $messageCloseTransition;
+}
+.ui.message > .close.icon:hover {
+  opacity: 1;
+}
+
+/* First / Last Element */
+.ui.message > :first-child {
+  margin-top: 0;
+}
+.ui.message > :last-child {
+  margin-bottom: 0;
+}
+
+
+
+/*******************************
+            Coupling
+*******************************/
+
+.ui.dropdown .menu > .message {
+  margin: 0 -$messageBorderWidth;
+}
+
+
+
+/*******************************
+            States
+*******************************/
+
+/*--------------
+    Visible
+---------------*/
+
+.ui.visible.visible.visible.visible.message {
+  display: block;
+}
+
+.ui.icon.visible.visible.visible.visible.message {
+  display: flex;
+}
+
+/*--------------
+     Hidden
+---------------*/
+
+.ui.hidden.hidden.hidden.hidden.message {
+  display: none;
+}
+
+
+/*******************************
+            Variations
+*******************************/
+
+/*--------------
+    Compact
+---------------*/
+
+.ui.compact.message {
+  display: inline-block;
+}
+.ui.compact.icon.message {
+  display: inline-flex;
+}
+/*--------------
+    Attached
+---------------*/
+
+.ui.attached.message {
+  margin-bottom: $messageAttachedYOffset;
+  border-radius: $messageBorderRadius $messageBorderRadius 0 0;
+  box-shadow: $messageAttachedBoxShadow;
+  margin-left: $messageAttachedXOffset;
+  margin-right: $messageAttachedXOffset;
+}
+.ui.attached + .ui.attached.message:not(.top):not(.bottom) {
+  margin-top: $messageAttachedYOffset;
+  border-radius: 0;
+}
+.ui.bottom.attached.message {
+  margin-top: $messageAttachedYOffset;
+  border-radius: 0 0 $messageBorderRadius $messageBorderRadius;
+  box-shadow: $messageAttachedBottomBoxShadow;
+}
+.ui.bottom.attached.message:not(:last-child) {
+  margin-bottom: $messageVerticalMargin;
+}
+.ui.attached.icon.message {
+  width: auto;
+}
+/*--------------
+      Icon
+---------------*/
+
+.ui.icon.message {
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+.ui.icon.message > .icon:not(.close) {
+  display: block;
+  flex: 0 0 auto;
+  width: auto;
+  line-height: 1;
+  vertical-align: $messageIconVerticalAlign;
+  font-size: $messageIconSize;
+  opacity: $messageIconOpacity;
+}
+.ui.icon.message > .content {
+  display: block;
+  flex: 1 1 auto;
+  vertical-align: $messageIconVerticalAlign;
+}
+.ui.icon.message .icon:not(.close) + .content {
+  padding-left: $messageIconContentDistance;
+}
+.ui.icon.message .circular.icon {
+  width: 1em;
+}
+
+/*--------------
+    Floating
+---------------*/
+
+.ui.floating.message {
+  box-shadow: $messageFloatingBoxShadow;
+}
+/*--------------
+     Colors
+---------------*/
+
+.ui.black.message {
+  background-color: $messageBlack;
+  color: $messageInvertedTextColor;
+}
+
+/*--------------
+     Types
+---------------*/
+
+/* Positive */
+.ui.positive.message {
+  background-color: $messagePositiveBackgroundColor;
+  color: $messagePositiveTextColor;
+}
+.ui.positive.message,
+.ui.attached.positive.message {
+  box-shadow: $messagePositiveBoxShadow;
+}
+.ui.positive.message .header {
+  color: $messagePositiveHeaderColor;
+}
+
+/* Negative */
+.ui.negative.message {
+  background-color: $messageNegativeBackgroundColor;
+  color: $messageNegativeTextColor;
+}
+.ui.negative.message,
+.ui.attached.negative.message {
+  box-shadow: $messageNegativeBoxShadow;
+}
+.ui.negative.message .header {
+  color: $messageNegativeHeaderColor;
+}
+
+/* Info */
+.ui.info.message {
+  background-color: $messageInfoBackgroundColor;
+  color: $messageInfoTextColor;
+}
+.ui.info.message,
+.ui.attached.info.message {
+  box-shadow: $messageInfoBoxShadow;
+}
+.ui.info.message .header {
+  color: $messageInfoHeaderColor;
+}
+
+/* Warning */
+.ui.warning.message {
+  background-color: $messageWarningBackgroundColor;
+  color: $messageWarningTextColor;
+}
+.ui.warning.message,
+.ui.attached.warning.message {
+  box-shadow: $messageWarningBoxShadow;
+}
+.ui.warning.message .header {
+  color: $messageWarningHeaderColor;
+}
+
+/* Error */
+.ui.error.message {
+  background-color: $messageErrorBackgroundColor;
+  color: $messageErrorTextColor;
+}
+.ui.error.message,
+.ui.attached.error.message {
+  box-shadow: $messageErrorBoxShadow;
+}
+.ui.error.message .header {
+  color: $messageErrorHeaderColor;
+}
+
+/* Success */
+.ui.success.message {
+  background-color: $messageSuccessBackgroundColor;
+  color: $messageSuccessTextColor;
+}
+.ui.success.message,
+.ui.attached.success.message {
+  box-shadow: $messageSuccessBoxShadow;
+}
+.ui.success.message .header {
+  color: $messageSuccessHeaderColor;
+}
+/* Colors */
+.ui.inverted.message,
+.ui.black.message {
+  background-color: $messageBlack;
+  color: $messageInvertedTextColor;
+}
+
+.ui.red.message {
+  background-color: $messageRedBackground;
+  color: $messageRedTextColor;
+  box-shadow: $messageRedBoxShadow;
+}
+.ui.red.message .header {
+  color: $messageRedHeaderColor;
+}
+
+.ui.orange.message {
+  background-color: $messageOrangeBackground;
+  color: $messageOrangeTextColor;
+  box-shadow: $messageOrangeBoxShadow;
+}
+.ui.orange.message .header {
+  color: $messageOrangeHeaderColor;
+}
+
+.ui.yellow.message {
+  background-color: $messageYellowBackground;
+  color: $messageYellowTextColor;
+  box-shadow: $messageYellowBoxShadow;
+}
+.ui.yellow.message .header {
+  color: $messageYellowHeaderColor;
+}
+
+.ui.olive.message {
+  background-color: $messageOliveBackground;
+  color: $messageOliveTextColor;
+  box-shadow: $messageOliveBoxShadow;
+}
+.ui.olive.message .header {
+  color: $messageOliveHeaderColor;
+}
+
+.ui.green.message {
+  background-color: $messageGreenBackground;
+  color: $messageGreenTextColor;
+  box-shadow: $messageGreenBoxShadow;
+}
+.ui.green.message .header {
+  color: $messageGreenHeaderColor;
+}
+
+.ui.teal.message {
+  background-color: $messageTealBackground;
+  color: $messageTealTextColor;
+  box-shadow: $messageTealBoxShadow;
+}
+.ui.teal.message .header {
+  color: $messageTealHeaderColor;
+}
+
+.ui.blue.message {
+  background-color: $messageBlueBackground;
+  color: $messageBlueTextColor;
+  box-shadow: $messageBlueBoxShadow;
+}
+.ui.blue.message .header {
+  color: $messageBlueHeaderColor;
+}
+
+.ui.violet.message {
+  background-color: $messageVioletBackground;
+  color: $messageVioletTextColor;
+  box-shadow: $messageVioletBoxShadow;
+}
+.ui.violet.message .header {
+  color: $messageVioletHeaderColor;
+}
+
+.ui.purple.message {
+  background-color: $messagePurpleBackground;
+  color: $messagePurpleTextColor;
+  box-shadow: $messagePurpleBoxShadow;
+}
+.ui.purple.message .header {
+  color: $messagePurpleHeaderColor;
+}
+
+.ui.pink.message {
+  background-color: $messagePinkBackground;
+  color: $messagePinkTextColor;
+  box-shadow: $messagePinkBoxShadow;
+}
+.ui.pink.message .header {
+  color: $messagePinkHeaderColor;
+}
+
+.ui.brown.message {
+  background-color: $messageBrownBackground;
+  color: $messageBrownTextColor;
+  box-shadow: $messageBrownBoxShadow;
+}
+.ui.brown.message .header {
+  color: $messageBrownHeaderColor;
+}
+
+/*--------------
+     Sizes
+---------------*/
+
+.ui.mini.message {
+  font-size: $messageRelativeMini;
+}
+.ui.tiny.message {
+  font-size: $messageRelativeTiny;
+}
+.ui.small.message {
+  font-size: $messageRelativeSmall;
+}
+.ui.message {
+  font-size: $messageRelativeMedium;
+}
+.ui.large.message {
+  font-size: $messageRelativeLarge;
+}
+.ui.big.message {
+  font-size: $messageRelativeBig;
+}
+.ui.huge.message {
+  font-size: $messageRelativeHuge;
+}
+.ui.massive.message {
+  font-size: $messageRelativeMassive;
+}
+
+

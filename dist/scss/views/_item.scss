@@ -1,0 +1,442 @@
+/*!
+ * # Shengnian UI - Item
+ * http://github.com/shengnian/shengnian-ui
+ *
+ *
+ * Released under the MIT license
+ * http://opensource.org/licenses/MIT
+ *
+ */
+
+
+/*******************************
+            Standard
+*******************************/
+
+/*--------------
+      Item
+---------------*/
+
+.ui.items > .item {
+  display: $itemDisplay;
+  margin: $itemItemSpacing 0;
+  width: $itemWidth;
+  min-height: $itemMinHeight;
+  background: $itemBackground;
+  padding: $itemPadding;
+
+  border: $itemBorder;
+  border-radius: $itemBorderRadius;
+  box-shadow: $itemBoxShadow;
+  transition: $itemTransition;
+  z-index: $itemZIndex;
+}
+.ui.items > .item a {
+  cursor: pointer;
+}
+
+/*--------------
+      Items
+---------------*/
+
+.ui.items {
+  margin: $itemGroupMargin;
+}
+
+.ui.items:first-child {
+  margin-top: 0 !important;
+}
+.ui.items:last-child {
+  margin-bottom: 0 !important;
+}
+
+/*--------------
+      Item
+---------------*/
+
+.ui.items > .item:after {
+  display: block;
+  content: ' ';
+  height: 0;
+  clear: both;
+  overflow: hidden;
+  visibility: hidden;
+}
+.ui.items > .item:first-child {
+  margin-top: 0;
+}
+.ui.items > .item:last-child {
+  margin-bottom: 0;
+}
+/*--------------
+     Images
+---------------*/
+
+.ui.items > .item > .image {
+  position: relative;
+  flex: 0 0 auto;
+  display: $itemImageDisplay;
+  float: $itemImageFloat;
+  margin: $itemImageMargin;
+  padding: $itemImagePadding;
+  max-height: $itemImageMaxHeight;
+  align-self: $itemImageVerticalAlign;
+}
+.ui.items > .item > .image > img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: $itemImageBorderRadius;
+  border: $itemImageBorder;
+}
+
+.ui.items > .item > .image:only-child > img {
+  border-radius: $itemBorderRadius;
+}
+/*--------------
+     Content
+---------------*/
+
+.ui.items > .item > .content {
+  display: block;
+  flex: 1 1 auto;
+  background: $itemContentBackground;
+  margin: $itemContentMargin;
+  padding: $itemContentPadding;
+  box-shadow: $itemContentBoxShadow;
+  font-size: $itemContentFontSize;
+  border: $itemContentBorder;
+  border-radius: $itemContentBorderRadius;
+}
+.ui.items > .item > .content:after {
+  display: block;
+  content: ' ';
+  height: 0;
+  clear: both;
+  overflow: hidden;
+  visibility: hidden;
+}
+
+.ui.items > .item > .image + .content {
+  min-width: 0;
+  width: $itemContentWidth;
+  display: $itemContentDisplay;
+  margin-left: $itemContentOffset;
+  align-self: $itemContentVerticalAlign;
+  padding-left: $itemContentImageDistance;
+}
+
+.ui.items > .item > .content > .header {
+  display: inline-block;
+  margin: $itemHeaderMargin;
+  font-family: $itemHeaderFont;
+  font-weight: $itemHeaderFontWeight;
+  color: $itemHeaderColor;
+}
+/* Default Header Size */
+.ui.items > .item > .content > .header:not(.ui) {
+  font-size: $itemHeaderFontSize;
+}
+
+/*--------------
+     Floated
+---------------*/
+
+.ui.items > .item [class*="left floated"] {
+  float: left;
+}
+.ui.items > .item [class*="right floated"] {
+  float: right;
+}
+/*--------------
+  Content Image
+---------------*/
+
+.ui.items > .item .content img {
+  align-self: $itemContentImageVerticalAlign;
+  width: $itemContentImageWidth;
+}
+.ui.items > .item img.avatar,
+.ui.items > .item .avatar img {
+  width: $itemAvatarSize;
+  height: $itemAvatarSize;
+  border-radius: $itemAvatarBorderRadius;
+}
+/*--------------
+   Description
+---------------*/
+
+.ui.items > .item > .content > .description {
+  margin-top: $itemDescriptionDistance;
+  max-width: $itemDescriptionMaxWidth;
+  font-size: $itemDescriptionFontSize;
+  line-height: $itemDescriptionLineHeight;
+  color: $itemDescriptionColor;
+}
+
+/*--------------
+    Paragraph
+---------------*/
+
+.ui.items > .item > .content p {
+  margin: 0 0 $itemParagraphDistance;
+}
+.ui.items > .item > .content p:last-child {
+  margin-bottom: 0;
+}
+
+/*--------------
+      Meta
+---------------*/
+
+.ui.items > .item .meta {
+  margin: $itemMetaMargin;
+  font-size: $itemMetaFontSize;
+  line-height: $itemMetaLineHeight;
+  color: $itemMetaColor;
+}
+.ui.items > .item .meta * {
+  margin-right: $itemMetaSpacing;
+}
+.ui.items > .item .meta :last-child {
+  margin-right: 0;
+}
+
+.ui.items > .item .meta [class*="right floated"] {
+  margin-right: 0;
+  margin-left: $itemMetaSpacing;
+}
+
+/*--------------
+      Links
+---------------*/
+
+/* Generic */
+.ui.items > .item > .content a:not(.ui) {
+  color: $itemContentLinkColor;
+  transition: $itemContentLinkTransition;
+}
+.ui.items > .item > .content a:not(.ui):hover {
+  color: $itemContentLinkHoverColor;
+}
+
+/* Header */
+.ui.items > .item > .content > a.header {
+  color: $itemHeaderLinkColor;
+}
+.ui.items > .item > .content > a.header:hover {
+  color: $itemHeaderLinkHoverColor;
+}
+
+/* Meta */
+.ui.items > .item .meta > a:not(.ui) {
+  color: $itemMetaLinkColor;
+}
+.ui.items > .item .meta > a:not(.ui):hover {
+  color: $itemMetaLinkHoverColor;
+}
+/*--------------
+     Labels
+---------------*/
+
+/*-----Star----- */
+
+/* Icon */
+.ui.items > .item > .content .favorite.icon {
+  cursor: pointer;
+  opacity: $itemActionOpacity;
+  transition: $itemActionTransition;
+}
+.ui.items > .item > .content .favorite.icon:hover {
+  opacity: $itemActionHoverOpacity;
+  color: $itemFavoriteColor;
+}
+.ui.items > .item > .content .active.favorite.icon {
+  color: $itemFavoriteActiveColor;
+}
+
+/*-----Like----- */
+
+/* Icon */
+.ui.items > .item > .content .like.icon {
+  cursor: pointer;
+  opacity: $itemActionOpacity;
+  transition: $itemActionTransition;
+}
+.ui.items > .item > .content .like.icon:hover {
+  opacity: $itemActionHoverOpacity;
+  color: $itemLikeColor;
+}
+.ui.items > .item > .content .active.like.icon {
+  color: $itemLikeActiveColor;
+}
+
+/*----------------
+  Extra Content
+-----------------*/
+
+.ui.items > .item .extra {
+  display: $itemExtraDisplay;
+  position: $itemExtraPosition;
+  background: $itemExtraBackground;
+  margin: $itemExtraMargin;
+  width: $itemExtraWidth;
+  padding: $itemExtraPadding;
+  top: $itemExtraTop;
+  left: $itemExtraLeft;
+  color: $itemExtraColor;
+  box-shadow: $itemExtraBoxShadow;
+  transition: $itemExtraTransition;
+  border-top: $itemExtraDivider;
+}
+.ui.items > .item .extra > * {
+  margin: ($itemExtraRowSpacing / 2) $itemExtraHorizontalSpacing ($itemExtraRowSpacing / 2) 0;
+}
+.ui.items > .item .extra > [class*="right floated"] {
+  margin: ($itemExtraRowSpacing / 2) 0 ($itemExtraRowSpacing / 2) $itemExtraHorizontalSpacing;
+}
+
+.ui.items > .item .extra:after {
+  display: block;
+  content: ' ';
+  height: 0;
+  clear: both;
+  overflow: hidden;
+  visibility: hidden;
+}
+
+
+/*******************************
+          Responsive
+*******************************/
+
+/* Default Image Width */
+.ui.items > .item > .image:not(.ui) {
+  width: $itemImageWidth;
+}
+/* Tablet Only */
+@media only screen and (min-width: $itemTabletBreakpoint) and (max-width: $itemLargestTabletScreen) {
+  .ui.items > .item {
+    margin: $itemTabletItemSpacing 0;
+  }
+  .ui.items > .item > .image:not(.ui) {
+    width: $itemTabletImageWidth;
+  }
+  .ui.items > .item > .image + .content {
+    display: block;
+    padding: 0 0 0 $itemTabletContentImageDistance;
+  }
+
+}
+
+/* Mobile Only */
+@media only screen and (max-width: $itemLargestMobileScreen) {
+  .ui.items:not(.unstackable) > .item {
+    flex-direction: column;
+    margin: $itemMobileItemSpacing 0;
+  }
+  .ui.items:not(.unstackable) > .item > .image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .ui.items:not(.unstackable) > .item > .image,
+  .ui.items:not(.unstackable) > .item > .image > img {
+    max-width: 100% !important;
+    width: $itemMobileImageWidth !important;
+    max-height: $itemMobileImageMaxHeight !important;
+  }
+  .ui.items:not(.unstackable) > .item > .image + .content {
+    display: block;
+    padding: $itemMobileContentImageDistance 0 0;
+  }
+}
+
+
+/*******************************
+           Variations
+*******************************/
+/*-------------------
+       Aligned
+--------------------*/
+
+.ui.items > .item > .image + [class*="top aligned"].content {
+  align-self: flex-start;
+}
+.ui.items > .item > .image + [class*="middle aligned"].content {
+  align-self: center;
+}
+.ui.items > .item > .image + [class*="bottom aligned"].content {
+  align-self: flex-end;
+}
+/*--------------
+     Relaxed
+---------------*/
+
+.ui.relaxed.items > .item {
+  margin: $itemRelaxedItemSpacing 0;
+}
+.ui[class*="very relaxed"].items > .item {
+  margin: $itemVeryRelaxedItemSpacing 0;
+}
+/*-------------------
+      Divided
+--------------------*/
+
+.ui.divided.items > .item {
+  border-top: $itemDividedBorder;
+  margin: $itemDividedMargin;
+  padding: $itemDividedPadding;
+}
+.ui.divided.items > .item:first-child {
+  border-top: none;
+  margin-top: $itemDividedFirstLastMargin !important;
+  padding-top: $itemDividedFirstLastPadding !important;
+}
+.ui.divided.items > .item:last-child {
+  margin-bottom: $itemDividedFirstLastMargin !important;
+  padding-bottom: $itemDividedFirstLastPadding !important;
+}
+
+/* Relaxed Divided */
+.ui.relaxed.divided.items > .item {
+  margin: 0;
+  padding: $itemRelaxedItemSpacing 0;
+}
+.ui[class*="very relaxed"].divided.items > .item {
+  margin: 0;
+  padding: $itemVeryRelaxedItemSpacing 0;
+}
+/*-------------------
+        Link
+--------------------*/
+
+.ui.items a.item:hover,
+.ui.link.items > .item:hover {
+  cursor: pointer;
+}
+
+.ui.items a.item:hover .content .header,
+.ui.link.items > .item:hover .content .header {
+  color: $itemHeaderLinkHoverColor;
+}
+/*--------------
+      Size
+---------------*/
+
+.ui.items > .item {
+  font-size: $itemRelativeMedium;
+}
+
+/*---------------
+   Unstackable
+----------------*/
+
+@media only screen and (max-width: $itemLargestMobileScreen) {
+  .ui.unstackable.items > .item > .image,
+  .ui.unstackable.items > .item > .image > img {
+    width: $itemUnstackableMobileImageWidth !important;
+  }
+}
+
+

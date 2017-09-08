@@ -1,0 +1,1069 @@
+$menuFontName: $fontName;
+$menuFontSmoothing: $fontSmoothing;
+$menuHeaderFont: $headerFont;
+$menuPageFont: $pageFont;
+$menuGoogleFontName: $googleFontName;
+$menuImportGoogleFonts: $importGoogleFonts;
+$menuGoogleFontSizes: $googleFontSizes;
+$menuGoogleSubset: $googleSubset;
+$menuGoogleProtocol: $googleProtocol;
+$menuGoogleFontRequest: $googleFontRequest;
+$menuEmSize: $emSize;
+$menuFontSize: $fontSize;
+$menuRelativeBorderRadius: $relativeBorderRadius;
+$menuAbsoluteBorderRadius: $absoluteBorderRadius;
+$menuDefaultBorderRadius: $defaultBorderRadius;
+$menuPrimaryColor: $primaryColor;
+$menuSecondaryColor: $secondaryColor;
+$menuLightPrimaryColor: $lightPrimaryColor;
+$menuLightSecondaryColor: $lightSecondaryColor;
+$menuHeaderFontWeight: $headerFontWeight;
+$menuHeaderLineHeight: $headerLineHeight;
+$menuH1: $h1;
+$menuH2: $h2;
+$menuH3: $h3;
+$menuH4: $h4;
+$menuH5: $h5;
+$menuInputBackground: $inputBackground;
+$menuInputVerticalPadding: $inputVerticalPadding;
+$menuInputHorizontalPadding: $inputHorizontalPadding;
+$menuInputPadding: $inputPadding;
+$menuInputColor: $inputColor;
+$menuInputPlaceholderColor: $inputPlaceholderColor;
+$menuInputPlaceholderFocusColor: $inputPlaceholderFocusColor;
+$menuInputLineHeight: $inputLineHeight;
+$menuFocusedFormBorderColor: $focusedFormBorderColor;
+$menuFocusedFormMutedBorderColor: $focusedFormMutedBorderColor;
+$menuMiniSize: $miniSize;
+$menuTinySize: $tinySize;
+$menuSmallSize: $smallSize;
+$menuMediumSize: $mediumSize;
+$menuLargeSize: $largeSize;
+$menuBigSize: $bigSize;
+$menuHugeSize: $hugeSize;
+$menuMassiveSize: $massiveSize;
+$menuPageBackground: $pageBackground;
+$menuPageOverflowX: $pageOverflowX;
+$menuLineHeight: $lineHeight;
+$menuTextColor: $textColor;
+$menuParagraphMargin: $paragraphMargin;
+$menuParagraphLineHeight: $paragraphLineHeight;
+$menuLinkColor: $linkColor;
+$menuLinkUnderline: $linkUnderline;
+$menuLinkHoverColor: $linkHoverColor;
+$menuLinkHoverUnderline: $linkHoverUnderline;
+$menuUseCustomScrollbars: $useCustomScrollbars;
+$menuCustomScrollbarWidth: $customScrollbarWidth;
+$menuTrackBackground: $trackBackground;
+$menuTrackBorderRadius: $trackBorderRadius;
+$menuThumbBorderRadius: $thumbBorderRadius;
+$menuThumbBackground: $thumbBackground;
+$menuThumbTransition: $thumbTransition;
+$menuThumbInactiveBackground: $thumbInactiveBackground;
+$menuThumbHoverBackground: $thumbHoverBackground;
+$menuTrackInvertedBackground: $trackInvertedBackground;
+$menuThumbInvertedBackground: $thumbInvertedBackground;
+$menuThumbInvertedInactiveBackground: $thumbInvertedInactiveBackground;
+$menuThumbInvertedHoverBackground: $thumbInvertedHoverBackground;
+$menuHighlightBackground: $highlightBackground;
+$menuHighlightColor: $highlightColor;
+$menuInputHighlightBackground: $inputHighlightBackground;
+$menuInputHighlightColor: $inputHighlightColor;
+$menuLoaderSize: $loaderSize;
+$menuLoaderSpeed: $loaderSpeed;
+$menuLoaderLineWidth: $loaderLineWidth;
+$menuLoaderFillColor: $loaderFillColor;
+$menuLoaderLineColor: $loaderLineColor;
+$menuInvertedLoaderFillColor: $invertedLoaderFillColor;
+$menuInvertedLoaderLineColor: $invertedLoaderLineColor;
+$menuColumnCount: $columnCount;
+$menuDefaultDuration: $defaultDuration;
+$menuDefaultEasing: $defaultEasing;
+$menuMobileBreakpoint: $mobileBreakpoint;
+$menuTabletBreakpoint: $tabletBreakpoint;
+$menuComputerBreakpoint: $computerBreakpoint;
+$menuLargeMonitorBreakpoint: $largeMonitorBreakpoint;
+$menuWidescreenMonitorBreakpoint: $widescreenMonitorBreakpoint;
+$menuRed: $red;
+$menuOrange: $orange;
+$menuYellow: $yellow;
+$menuOlive: $olive;
+$menuGreen: $green;
+$menuTeal: $teal;
+$menuBlue: $blue;
+$menuViolet: $violet;
+$menuPurple: $purple;
+$menuPink: $pink;
+$menuBrown: $brown;
+$menuGrey: $grey;
+$menuBlack: $black;
+$menuLightRed: $lightRed;
+$menuLightOrange: $lightOrange;
+$menuLightYellow: $lightYellow;
+$menuLightOlive: $lightOlive;
+$menuLightGreen: $lightGreen;
+$menuLightTeal: $lightTeal;
+$menuLightBlue: $lightBlue;
+$menuLightViolet: $lightViolet;
+$menuLightPurple: $lightPurple;
+$menuLightPink: $lightPink;
+$menuLightBrown: $lightBrown;
+$menuLightGrey: $lightGrey;
+$menuLightBlack: $lightBlack;
+$menuFullBlack: $fullBlack;
+$menuOffWhite: $offWhite;
+$menuDarkWhite: $darkWhite;
+$menuMidWhite: $midWhite;
+$menuWhite: $white;
+$menuRedBackground: $redBackground;
+$menuOrangeBackground: $orangeBackground;
+$menuYellowBackground: $yellowBackground;
+$menuOliveBackground: $oliveBackground;
+$menuGreenBackground: $greenBackground;
+$menuTealBackground: $tealBackground;
+$menuBlueBackground: $blueBackground;
+$menuVioletBackground: $violetBackground;
+$menuPurpleBackground: $purpleBackground;
+$menuPinkBackground: $pinkBackground;
+$menuBrownBackground: $brownBackground;
+$menuRedHeaderColor: $redHeaderColor;
+$menuOliveHeaderColor: $oliveHeaderColor;
+$menuGreenHeaderColor: $greenHeaderColor;
+$menuYellowHeaderColor: $yellowHeaderColor;
+$menuBlueHeaderColor: $blueHeaderColor;
+$menuTealHeaderColor: $tealHeaderColor;
+$menuPinkHeaderColor: $pinkHeaderColor;
+$menuVioletHeaderColor: $violetHeaderColor;
+$menuPurpleHeaderColor: $purpleHeaderColor;
+$menuOrangeHeaderColor: $orangeHeaderColor;
+$menuBrownHeaderColor: $brownHeaderColor;
+$menuRedTextColor: $redTextColor;
+$menuOrangeTextColor: $orangeTextColor;
+$menuYellowTextColor: $yellowTextColor;
+$menuOliveTextColor: $oliveTextColor;
+$menuGreenTextColor: $greenTextColor;
+$menuTealTextColor: $tealTextColor;
+$menuBlueTextColor: $blueTextColor;
+$menuVioletTextColor: $violetTextColor;
+$menuPurpleTextColor: $purpleTextColor;
+$menuPinkTextColor: $pinkTextColor;
+$menuBrownTextColor: $brownTextColor;
+$menuRedBorderColor: $redBorderColor;
+$menuOrangeBorderColor: $orangeBorderColor;
+$menuYellowBorderColor: $yellowBorderColor;
+$menuOliveBorderColor: $oliveBorderColor;
+$menuGreenBorderColor: $greenBorderColor;
+$menuTealBorderColor: $tealBorderColor;
+$menuBlueBorderColor: $blueBorderColor;
+$menuVioletBorderColor: $violetBorderColor;
+$menuPurpleBorderColor: $purpleBorderColor;
+$menuPinkBorderColor: $pinkBorderColor;
+$menuBrownBorderColor: $brownBorderColor;
+$menuSubtleTransparentBlack: $subtleTransparentBlack;
+$menuTransparentBlack: $transparentBlack;
+$menuStrongTransparentBlack: $strongTransparentBlack;
+$menuVeryStrongTransparentBlack: $veryStrongTransparentBlack;
+$menuSubtleTransparentWhite: $subtleTransparentWhite;
+$menuTransparentWhite: $transparentWhite;
+$menuStrongTransparentWhite: $strongTransparentWhite;
+$menuSubtleGradient: $subtleGradient;
+$menuSubtleShadow: $subtleShadow;
+$menuFloatingShadow: $floatingShadow;
+$menuPositiveColor: $positiveColor;
+$menuPositiveBackgroundColor: $positiveBackgroundColor;
+$menuPositiveBorderColor: $positiveBorderColor;
+$menuPositiveHeaderColor: $positiveHeaderColor;
+$menuPositiveTextColor: $positiveTextColor;
+$menuNegativeColor: $negativeColor;
+$menuNegativeBackgroundColor: $negativeBackgroundColor;
+$menuNegativeBorderColor: $negativeBorderColor;
+$menuNegativeHeaderColor: $negativeHeaderColor;
+$menuNegativeTextColor: $negativeTextColor;
+$menuInfoColor: $infoColor;
+$menuInfoBackgroundColor: $infoBackgroundColor;
+$menuInfoBorderColor: $infoBorderColor;
+$menuInfoHeaderColor: $infoHeaderColor;
+$menuInfoTextColor: $infoTextColor;
+$menuWarningColor: $warningColor;
+$menuWarningBorderColor: $warningBorderColor;
+$menuWarningBackgroundColor: $warningBackgroundColor;
+$menuWarningHeaderColor: $warningHeaderColor;
+$menuWarningTextColor: $warningTextColor;
+$menuImagePath: $imagePath;
+$menuFontPath: $fontPath;
+$menuMini: $mini;
+$menuTiny: $tiny;
+$menuSmall: $small;
+$menuMedium: $medium;
+$menuLarge: $large;
+$menuBig: $big;
+$menuHuge: $huge;
+$menuMassive: $massive;
+$menuRelativeMini: $relativeMini;
+$menuRelativeTiny: $relativeTiny;
+$menuRelativeSmall: $relativeSmall;
+$menuRelativeMedium: $relativeMedium;
+$menuRelativeLarge: $relativeLarge;
+$menuRelativeBig: $relativeBig;
+$menuRelativeHuge: $relativeHuge;
+$menuRelativeMassive: $relativeMassive;
+$menuAbsoluteMini: $absoluteMini;
+$menuAbsoluteTiny: $absoluteTiny;
+$menuAbsoluteSmall: $absoluteSmall;
+$menuAbsoluteMedium: $absoluteMedium;
+$menuAbsoluteLarge: $absoluteLarge;
+$menuAbsoluteBig: $absoluteBig;
+$menuAbsoluteHuge: $absoluteHuge;
+$menuAbsoluteMassive: $absoluteMassive;
+$menuIconWidth: $iconWidth;
+$menuDarkTextColor: $darkTextColor;
+$menuMutedTextColor: $mutedTextColor;
+$menuLightTextColor: $lightTextColor;
+$menuUnselectedTextColor: $unselectedTextColor;
+$menuHoveredTextColor: $hoveredTextColor;
+$menuPressedTextColor: $pressedTextColor;
+$menuSelectedTextColor: $selectedTextColor;
+$menuDisabledTextColor: $disabledTextColor;
+$menuInvertedTextColor: $invertedTextColor;
+$menuInvertedMutedTextColor: $invertedMutedTextColor;
+$menuInvertedLightTextColor: $invertedLightTextColor;
+$menuInvertedUnselectedTextColor: $invertedUnselectedTextColor;
+$menuInvertedHoveredTextColor: $invertedHoveredTextColor;
+$menuInvertedPressedTextColor: $invertedPressedTextColor;
+$menuInvertedSelectedTextColor: $invertedSelectedTextColor;
+$menuInvertedDisabledTextColor: $invertedDisabledTextColor;
+$menuFacebookColor: $facebookColor;
+$menuTwitterColor: $twitterColor;
+$menuGooglePlusColor: $googlePlusColor;
+$menuLinkedInColor: $linkedInColor;
+$menuYoutubeColor: $youtubeColor;
+$menuPinterestColor: $pinterestColor;
+$menuVkColor: $vkColor;
+$menuInstagramColor: $instagramColor;
+$menuCircularRadius: $circularRadius;
+$menuBorderColor: $borderColor;
+$menuStrongBorderColor: $strongBorderColor;
+$menuInternalBorderColor: $internalBorderColor;
+$menuSelectedBorderColor: $selectedBorderColor;
+$menuStrongSelectedBorderColor: $strongSelectedBorderColor;
+$menuDisabledBorderColor: $disabledBorderColor;
+$menuSolidInternalBorderColor: $solidInternalBorderColor;
+$menuSolidBorderColor: $solidBorderColor;
+$menuSolidSelectedBorderColor: $solidSelectedBorderColor;
+$menuWhiteBorderColor: $whiteBorderColor;
+$menuSelectedWhiteBorderColor: $selectedWhiteBorderColor;
+$menuSolidWhiteBorderColor: $solidWhiteBorderColor;
+$menuSelectedSolidWhiteBorderColor: $selectedSolidWhiteBorderColor;
+$menuLoaderOffset: $loaderOffset;
+$menuLoaderMargin: $loaderMargin;
+$menuScrollbarWidth: $scrollbarWidth;
+$menuGlyphWidth: $glyphWidth;
+$menuLineHeightOffset: $lineHeightOffset;
+$menuHeaderLineHeightOffset: $headerLineHeightOffset;
+$menuHeaderTopMargin: $headerTopMargin;
+$menuHeaderBottomMargin: $headerBottomMargin;
+$menuHeaderMargin: $headerMargin;
+$menuPageMinWidth: $pageMinWidth;
+$menuSuccessBackgroundColor: $successBackgroundColor;
+$menuSuccessColor: $successColor;
+$menuSuccessBorderColor: $successBorderColor;
+$menuSuccessHeaderColor: $successHeaderColor;
+$menuSuccessTextColor: $successTextColor;
+$menuErrorBackgroundColor: $errorBackgroundColor;
+$menuErrorColor: $errorColor;
+$menuErrorBorderColor: $errorBorderColor;
+$menuErrorHeaderColor: $errorHeaderColor;
+$menuErrorTextColor: $errorTextColor;
+$menuLargestMobileScreen: $largestMobileScreen;
+$menuLargestTabletScreen: $largestTabletScreen;
+$menuLargestSmallMonitor: $largestSmallMonitor;
+$menuLargestLargeMonitor: $largestLargeMonitor;
+$menu1px: $_1px;
+$menu2px: $_2px;
+$menu3px: $_3px;
+$menu4px: $_4px;
+$menu5px: $_5px;
+$menu6px: $_6px;
+$menu7px: $_7px;
+$menu8px: $_8px;
+$menu9px: $_9px;
+$menu10px: $_10px;
+$menu11px: $_11px;
+$menu12px: $_12px;
+$menu13px: $_13px;
+$menu14px: $_14px;
+$menu15px: $_15px;
+$menu16px: $_16px;
+$menu17px: $_17px;
+$menu18px: $_18px;
+$menu19px: $_19px;
+$menu20px: $_20px;
+$menu21px: $_21px;
+$menu22px: $_22px;
+$menu23px: $_23px;
+$menu24px: $_24px;
+$menu25px: $_25px;
+$menu26px: $_26px;
+$menu27px: $_27px;
+$menu28px: $_28px;
+$menu29px: $_29px;
+$menu30px: $_30px;
+$menu31px: $_31px;
+$menu32px: $_32px;
+$menu33px: $_33px;
+$menu34px: $_34px;
+$menu35px: $_35px;
+$menu36px: $_36px;
+$menu37px: $_37px;
+$menu38px: $_38px;
+$menu39px: $_39px;
+$menu40px: $_40px;
+$menu41px: $_41px;
+$menu42px: $_42px;
+$menu43px: $_43px;
+$menu44px: $_44px;
+$menu45px: $_45px;
+$menu46px: $_46px;
+$menu47px: $_47px;
+$menu48px: $_48px;
+$menu49px: $_49px;
+$menu50px: $_50px;
+$menu51px: $_51px;
+$menu52px: $_52px;
+$menu53px: $_53px;
+$menu54px: $_54px;
+$menu55px: $_55px;
+$menu56px: $_56px;
+$menu57px: $_57px;
+$menu58px: $_58px;
+$menu59px: $_59px;
+$menu60px: $_60px;
+$menu61px: $_61px;
+$menu62px: $_62px;
+$menu63px: $_63px;
+$menu64px: $_64px;
+$menuRelative1px: $relative1px;
+$menuRelative2px: $relative2px;
+$menuRelative3px: $relative3px;
+$menuRelative4px: $relative4px;
+$menuRelative5px: $relative5px;
+$menuRelative6px: $relative6px;
+$menuRelative7px: $relative7px;
+$menuRelative8px: $relative8px;
+$menuRelative9px: $relative9px;
+$menuRelative10px: $relative10px;
+$menuRelative11px: $relative11px;
+$menuRelative12px: $relative12px;
+$menuRelative13px: $relative13px;
+$menuRelative14px: $relative14px;
+$menuRelative15px: $relative15px;
+$menuRelative16px: $relative16px;
+$menuRelative17px: $relative17px;
+$menuRelative18px: $relative18px;
+$menuRelative19px: $relative19px;
+$menuRelative20px: $relative20px;
+$menuRelative21px: $relative21px;
+$menuRelative22px: $relative22px;
+$menuRelative23px: $relative23px;
+$menuRelative24px: $relative24px;
+$menuRelative25px: $relative25px;
+$menuRelative26px: $relative26px;
+$menuRelative27px: $relative27px;
+$menuRelative28px: $relative28px;
+$menuRelative29px: $relative29px;
+$menuRelative30px: $relative30px;
+$menuRelative31px: $relative31px;
+$menuRelative32px: $relative32px;
+$menuRelative33px: $relative33px;
+$menuRelative34px: $relative34px;
+$menuRelative35px: $relative35px;
+$menuRelative36px: $relative36px;
+$menuRelative37px: $relative37px;
+$menuRelative38px: $relative38px;
+$menuRelative39px: $relative39px;
+$menuRelative40px: $relative40px;
+$menuRelative41px: $relative41px;
+$menuRelative42px: $relative42px;
+$menuRelative43px: $relative43px;
+$menuRelative44px: $relative44px;
+$menuRelative45px: $relative45px;
+$menuRelative46px: $relative46px;
+$menuRelative47px: $relative47px;
+$menuRelative48px: $relative48px;
+$menuRelative49px: $relative49px;
+$menuRelative50px: $relative50px;
+$menuRelative51px: $relative51px;
+$menuRelative52px: $relative52px;
+$menuRelative53px: $relative53px;
+$menuRelative54px: $relative54px;
+$menuRelative55px: $relative55px;
+$menuRelative56px: $relative56px;
+$menuRelative57px: $relative57px;
+$menuRelative58px: $relative58px;
+$menuRelative59px: $relative59px;
+$menuRelative60px: $relative60px;
+$menuRelative61px: $relative61px;
+$menuRelative62px: $relative62px;
+$menuRelative63px: $relative63px;
+$menuRelative64px: $relative64px;
+$menuOneWide: $oneWide;
+$menuTwoWide: $twoWide;
+$menuThreeWide: $threeWide;
+$menuFourWide: $fourWide;
+$menuFiveWide: $fiveWide;
+$menuSixWide: $sixWide;
+$menuSevenWide: $sevenWide;
+$menuEightWide: $eightWide;
+$menuNineWide: $nineWide;
+$menuTenWide: $tenWide;
+$menuElevenWide: $elevenWide;
+$menuTwelveWide: $twelveWide;
+$menuThirteenWide: $thirteenWide;
+$menuFourteenWide: $fourteenWide;
+$menuFifteenWide: $fifteenWide;
+$menuSixteenWide: $sixteenWide;
+$menuOneColumn: $oneColumn;
+$menuTwoColumn: $twoColumn;
+$menuThreeColumn: $threeColumn;
+$menuFourColumn: $fourColumn;
+$menuFiveColumn: $fiveColumn;
+$menuSixColumn: $sixColumn;
+$menuSevenColumn: $sevenColumn;
+$menuEightColumn: $eightColumn;
+$menuNineColumn: $nineColumn;
+$menuTenColumn: $tenColumn;
+$menuElevenColumn: $elevenColumn;
+$menuTwelveColumn: $twelveColumn;
+$menuThirteenColumn: $thirteenColumn;
+$menuFourteenColumn: $fourteenColumn;
+$menuFifteenColumn: $fifteenColumn;
+$menuSixteenColumn: $sixteenColumn;
+$menuDisabledOpacity: $disabledOpacity;
+$menuFloatingShadowHover: $floatingShadowHover;
+$menuPrimaryColorHover: $primaryColorHover;
+$menuSecondaryColorHover: $secondaryColorHover;
+$menuRedHover: $redHover;
+$menuOrangeHover: $orangeHover;
+$menuYellowHover: $yellowHover;
+$menuOliveHover: $oliveHover;
+$menuGreenHover: $greenHover;
+$menuTealHover: $tealHover;
+$menuBlueHover: $blueHover;
+$menuVioletHover: $violetHover;
+$menuPurpleHover: $purpleHover;
+$menuPinkHover: $pinkHover;
+$menuBrownHover: $brownHover;
+$menuLightRedHover: $lightRedHover;
+$menuLightOrangeHover: $lightOrangeHover;
+$menuLightYellowHover: $lightYellowHover;
+$menuLightOliveHover: $lightOliveHover;
+$menuLightGreenHover: $lightGreenHover;
+$menuLightTealHover: $lightTealHover;
+$menuLightBlueHover: $lightBlueHover;
+$menuLightVioletHover: $lightVioletHover;
+$menuLightPurpleHover: $lightPurpleHover;
+$menuLightPinkHover: $lightPinkHover;
+$menuLightBrownHover: $lightBrownHover;
+$menuLightGreyHover: $lightGreyHover;
+$menuLightBlackHover: $lightBlackHover;
+$menuPositiveColorHover: $positiveColorHover;
+$menuNegativeColorHover: $negativeColorHover;
+$menuFacebookHoverColor: $facebookHoverColor;
+$menuTwitterHoverColor: $twitterHoverColor;
+$menuGooglePlusHoverColor: $googlePlusHoverColor;
+$menuLinkedInHoverColor: $linkedInHoverColor;
+$menuYoutubeHoverColor: $youtubeHoverColor;
+$menuInstagramHoverColor: $instagramHoverColor;
+$menuPinterestHoverColor: $pinterestHoverColor;
+$menuVkHoverColor: $vkHoverColor;
+$menuFullBlackHover: $fullBlackHover;
+$menuBlackHover: $blackHover;
+$menuGreyHover: $greyHover;
+$menuWhiteHover: $whiteHover;
+$menuOffWhiteHover: $offWhiteHover;
+$menuDarkWhiteHover: $darkWhiteHover;
+$menuPrimaryColorFocus: $primaryColorFocus;
+$menuSecondaryColorFocus: $secondaryColorFocus;
+$menuRedFocus: $redFocus;
+$menuOrangeFocus: $orangeFocus;
+$menuYellowFocus: $yellowFocus;
+$menuOliveFocus: $oliveFocus;
+$menuGreenFocus: $greenFocus;
+$menuTealFocus: $tealFocus;
+$menuBlueFocus: $blueFocus;
+$menuVioletFocus: $violetFocus;
+$menuPurpleFocus: $purpleFocus;
+$menuPinkFocus: $pinkFocus;
+$menuBrownFocus: $brownFocus;
+$menuLightRedFocus: $lightRedFocus;
+$menuLightOrangeFocus: $lightOrangeFocus;
+$menuLightYellowFocus: $lightYellowFocus;
+$menuLightOliveFocus: $lightOliveFocus;
+$menuLightGreenFocus: $lightGreenFocus;
+$menuLightTealFocus: $lightTealFocus;
+$menuLightBlueFocus: $lightBlueFocus;
+$menuLightVioletFocus: $lightVioletFocus;
+$menuLightPurpleFocus: $lightPurpleFocus;
+$menuLightPinkFocus: $lightPinkFocus;
+$menuLightBrownFocus: $lightBrownFocus;
+$menuLightGreyFocus: $lightGreyFocus;
+$menuLightBlackFocus: $lightBlackFocus;
+$menuPositiveColorFocus: $positiveColorFocus;
+$menuNegativeColorFocus: $negativeColorFocus;
+$menuFacebookFocusColor: $facebookFocusColor;
+$menuTwitterFocusColor: $twitterFocusColor;
+$menuGooglePlusFocusColor: $googlePlusFocusColor;
+$menuLinkedInFocusColor: $linkedInFocusColor;
+$menuYoutubeFocusColor: $youtubeFocusColor;
+$menuInstagramFocusColor: $instagramFocusColor;
+$menuPinterestFocusColor: $pinterestFocusColor;
+$menuVkFocusColor: $vkFocusColor;
+$menuFullBlackFocus: $fullBlackFocus;
+$menuBlackFocus: $blackFocus;
+$menuGreyFocus: $greyFocus;
+$menuWhiteFocus: $whiteFocus;
+$menuOffWhiteFocus: $offWhiteFocus;
+$menuDarkWhiteFocus: $darkWhiteFocus;
+$menuPrimaryColorDown: $primaryColorDown;
+$menuSecondaryColorDown: $secondaryColorDown;
+$menuRedDown: $redDown;
+$menuOrangeDown: $orangeDown;
+$menuYellowDown: $yellowDown;
+$menuOliveDown: $oliveDown;
+$menuGreenDown: $greenDown;
+$menuTealDown: $tealDown;
+$menuBlueDown: $blueDown;
+$menuVioletDown: $violetDown;
+$menuPurpleDown: $purpleDown;
+$menuPinkDown: $pinkDown;
+$menuBrownDown: $brownDown;
+$menuLightRedDown: $lightRedDown;
+$menuLightOrangeDown: $lightOrangeDown;
+$menuLightYellowDown: $lightYellowDown;
+$menuLightOliveDown: $lightOliveDown;
+$menuLightGreenDown: $lightGreenDown;
+$menuLightTealDown: $lightTealDown;
+$menuLightBlueDown: $lightBlueDown;
+$menuLightVioletDown: $lightVioletDown;
+$menuLightPurpleDown: $lightPurpleDown;
+$menuLightPinkDown: $lightPinkDown;
+$menuLightBrownDown: $lightBrownDown;
+$menuLightGreyDown: $lightGreyDown;
+$menuLightBlackDown: $lightBlackDown;
+$menuPositiveColorDown: $positiveColorDown;
+$menuNegativeColorDown: $negativeColorDown;
+$menuFacebookDownColor: $facebookDownColor;
+$menuTwitterDownColor: $twitterDownColor;
+$menuGooglePlusDownColor: $googlePlusDownColor;
+$menuLinkedInDownColor: $linkedInDownColor;
+$menuYoutubeDownColor: $youtubeDownColor;
+$menuInstagramDownColor: $instagramDownColor;
+$menuPinterestDownColor: $pinterestDownColor;
+$menuVkDownColor: $vkDownColor;
+$menuFullBlackDown: $fullBlackDown;
+$menuBlackDown: $blackDown;
+$menuGreyDown: $greyDown;
+$menuWhiteDown: $whiteDown;
+$menuOffWhiteDown: $offWhiteDown;
+$menuDarkWhiteDown: $darkWhiteDown;
+$menuPrimaryColorActive: $primaryColorActive;
+$menuSecondaryColorActive: $secondaryColorActive;
+$menuRedActive: $redActive;
+$menuOrangeActive: $orangeActive;
+$menuYellowActive: $yellowActive;
+$menuOliveActive: $oliveActive;
+$menuGreenActive: $greenActive;
+$menuTealActive: $tealActive;
+$menuBlueActive: $blueActive;
+$menuVioletActive: $violetActive;
+$menuPurpleActive: $purpleActive;
+$menuPinkActive: $pinkActive;
+$menuBrownActive: $brownActive;
+$menuLightRedActive: $lightRedActive;
+$menuLightOrangeActive: $lightOrangeActive;
+$menuLightYellowActive: $lightYellowActive;
+$menuLightOliveActive: $lightOliveActive;
+$menuLightGreenActive: $lightGreenActive;
+$menuLightTealActive: $lightTealActive;
+$menuLightBlueActive: $lightBlueActive;
+$menuLightVioletActive: $lightVioletActive;
+$menuLightPurpleActive: $lightPurpleActive;
+$menuLightPinkActive: $lightPinkActive;
+$menuLightBrownActive: $lightBrownActive;
+$menuLightGreyActive: $lightGreyActive;
+$menuLightBlackActive: $lightBlackActive;
+$menuPositiveColorActive: $positiveColorActive;
+$menuNegativeColorActive: $negativeColorActive;
+$menuFacebookActiveColor: $facebookActiveColor;
+$menuTwitterActiveColor: $twitterActiveColor;
+$menuGooglePlusActiveColor: $googlePlusActiveColor;
+$menuLinkedInActiveColor: $linkedInActiveColor;
+$menuYoutubeActiveColor: $youtubeActiveColor;
+$menuInstagramActiveColor: $instagramActiveColor;
+$menuPinterestActiveColor: $pinterestActiveColor;
+$menuVkActiveColor: $vkActiveColor;
+$menuFullBlackActive: $fullBlackActive;
+$menuBlackActive: $blackActive;
+$menuGreyActive: $greyActive;
+$menuWhiteActive: $whiteActive;
+$menuOffWhiteActive: $offWhiteActive;
+$menuDarkWhiteActive: $darkWhiteActive;
+
+
+/*******************************
+             Menu
+*******************************/
+
+/*-------------------
+      Collection
+--------------------*/
+/* Menu Item */
+$menuItemVerticalPadding: $menuRelativeSmall;
+$menuItemHorizontalPadding: $menuRelativeLarge;
+$menuItemTextTransform: none;
+$menuItemTransition:
+        background $menuDefaultDuration $menuDefaultEasing,
+        box-shadow $menuDefaultDuration $menuDefaultEasing,
+        color $menuDefaultDuration $menuDefaultEasing
+;
+$menuItemFontWeight: normal;
+$menuItemTextColor: $menuTextColor;
+
+/* Menu */
+$menuVerticalMargin: $menuMedium;
+$menuHorizontalMargin: 0;
+$menuMargin: $menuVerticalMargin $menuHorizontalMargin;
+$menuBackground: #FFFFFF;
+$menuFontFamily: $menuPageFont;
+$menuItemBackground: none;
+$menuFontWeight: normal;
+$menuBorderWidth: 1px;
+$menuBorder: $menuBorderWidth solid $menuBorderColor;
+$menuBoxShadow: $menuSubtleShadow;
+$menuBorderRadius: $menuDefaultBorderRadius;
+$menuMinHeight: (#{$menuItemVerticalPadding} * 2) + 1em;
+
+/* Divider */
+$menuDividerSize: 1px;
+$menuDividerBackground: $menuInternalBorderColor;
+
+/* Sub Menu */
+$menuSubMenuDistance: 0.5em;
+$menuSubMenuMargin: $menuSubMenuDistance -$menuItemHorizontalPadding 0;
+$menuSubMenuFontSize: $menuRelativeTiny;
+$menuSubMenuTextColor: rgba(0, 0, 0, 0.5);
+
+$menuSubMenuIndent: 0;
+$menuSubMenuHorizontalPadding: ($menuItemHorizontalPadding / $menuTinySize) + $menuSubMenuIndent;
+$menuSubMenuVerticalPadding: 0.5em;
+
+/* Text Item */
+$menuTextLineHeight: 1.3;
+
+/*--------------
+    Elements
+---------------*/
+
+/* Icon */
+$menuIconFloat: none;
+$menuIconMargin: 0 $menuRelative5px 0 0;
+$menuIconOpacity: 0.9;
+
+/* Dropdown Icon */
+$menuDropdownIconFloat: right;
+$menuDropdownIconDistance: 1em;
+
+/* Header */
+$menuHeaderBackground: '';
+$menuHeaderWeight: bold;
+$menuHeaderTextTransform: normal;
+
+/* Vertical Icon */
+$menuVerticalIconFloat: right;
+$menuVerticalIconMargin: 0 0 0 0.5em;
+
+/* Vertical Header */
+$menuVerticalHeaderMargin: 0 0 0.5em;
+$menuVerticalHeaderFontSize: $menuRelativeMedium;
+$menuVerticalHeaderFontWeight: bold;
+
+/* Pointing Arrow */
+$menuArrowSize: $menuRelative8px;
+$menuArrowBorderWidth: 1px;
+$menuArrowBorder: $menuArrowBorderWidth solid $menuSolidBorderColor;
+$menuArrowTransition: background $menuDefaultDuration $menuDefaultEasing;
+$menuArrowZIndex: 2;
+
+$menuArrowHoverColor: #F2F2F2;
+$menuArrowActiveColor: $menuArrowHoverColor;
+$menuArrowActiveHoverColor: $menuArrowActiveColor;
+
+$menuArrowVerticalHoverColor: $menuArrowHoverColor;
+$menuArrowVerticalActiveColor: $menuArrowActiveColor;
+$menuArrowVerticalSubMenuColor: $menuWhite;
+
+/*--------------
+    Couplings
+---------------*/
+
+/* Button */
+$menuButtonSize: $menuRelativeMedium;
+$menuButtonOffset: 0;
+$menuButtonMargin: -0.5em 0;
+$menuButtonVerticalPadding: $menuRelativeMini;
+
+/* Input */
+$menuInputSize: $menuRelativeMedium;
+$menuInputVerticalMargin: -0.5em;
+$menuInputOffset: 0;
+$menuInputVerticalPadding: $menuRelative8px;
+
+/* Image */
+$menuImageMargin: -0.3em 0;
+$menuImageWidth: 2.5em;
+$menuVerticalImageWidth: auto;
+
+/* Label */
+$menuLabelOffset: -0.15em;
+$menuLabelBackground: #999999;
+$menuLabelTextColor: $menuWhite;
+
+$menuLabelTextMargin: 1em;
+$menuLabelVerticalPadding: 0.3em;
+$menuLabelHorizontalPadding: $menuRelativeMini;
+
+$menuLabelAndIconFloat: none;
+$menuLabelAndIconMargin: 0 0.5em 0 0;
+
+/* Dropdown in Menu */
+$menuDropdownMenuBoxShadow: 0 1px 3px 0 rgba(0, 0, 0, 0.08);
+
+$menuDropdownBackground: #FFFFFF;
+$menuDropdownMenuDistance: 0;
+$menuDropdownMenuBorderRadius: $menuBorderRadius;
+
+$menuDropdownItemFontSize: $menuRelativeMedium;
+$menuDropdownItemPadding: $menuRelativeMini $menuRelativeLarge;
+$menuDropdownItemBackground: transparent;
+$menuDropdownItemColor: $menuTextColor;
+$menuDropdownItemTextTransform: none;
+$menuDropdownItemFontWeight: normal;
+$menuDropdownItemBoxShadow: none;
+$menuDropdownItemTransition: none;
+
+$menuDropdownItemIconFloat: none;
+$menuDropdownItemIconFontSize: $menuRelativeMedium;
+$menuDropdownItemIconMargin: 0 0.75em 0 0;
+
+$menuDropdownHoveredItemBackground: $menuTransparentBlack;
+$menuDropdownHoveredItemColor: $menuSelectedTextColor;
+
+/* Dropdown Variations */
+$menuDropdownVerticalMenuBoxShadow: 0 1px 3px 0 rgba(0, 0, 0, 0.08);
+$menuSecondaryDropdownMenuDistance: $menuRelative5px;
+$menuPointingDropdownMenuDistance: 0.75em;
+$menuInvertedSelectionDropdownColor: $menuInvertedTextColor;
+
+/*--------------
+     States
+---------------*/
+
+/* Hovered Item */
+$menuHoverItemBackground: $menuSubtleTransparentBlack;
+$menuHoverItemTextColor: $menuSelectedTextColor;
+
+/* Pressed Item */
+$menuPressedItemBackground: $menuSubtleTransparentBlack;
+$menuPressedItemTextColor: $menuHoverItemTextColor;
+
+
+/* Active Item */
+$menuActiveItemBackground: $menuTransparentBlack;
+$menuActiveItemTextColor: $menuSelectedTextColor;
+$menuActiveItemFontWeight: normal;
+$menuActiveIconOpacity: 1;
+$menuActiveItemBoxShadow: none;
+
+/* Active Hovered Item */
+$menuActiveHoverItemBackground: $menuTransparentBlack;
+$menuActiveHoverItemColor: $menuSelectedTextColor;
+
+/* Selected Dropdown */
+$menuDropdownSelectedItemBackground: $menuTransparentBlack;
+$menuDropdownSelectedItemColor: $menuSelectedTextColor;
+
+/* Active Dropdown */
+$menuDropdownActiveItemBackground: $menuSubtleTransparentBlack;
+$menuDropdownActiveItemColor: $menuSelectedTextColor;
+$menuDropdownActiveItemFontWeight: bold;
+
+/* Active Sub Menu */
+$menuSubMenuActiveBackground: transparent;
+$menuSubMenuActiveTextColor: $menuActiveItemTextColor;
+$menuSubMenuActiveFontWeight: bold;
+
+
+/*--------------
+     Types
+---------------*/
+
+/* Vertical */
+$menuVerticalBoxShadow: $menuBoxShadow;
+$menuVerticalPointerWidth: 2px;
+$menuVerticalBackground: #FFFFFF;
+$menuVerticalItemBackground: none;
+$menuVerticalDividerBackground: $menuDividerBackground;
+
+$menuVerticalActiveBoxShadow: none;
+
+
+/* Secondary */
+$menuSecondaryBackground: none;
+$menuSecondaryItemBackground: none;
+$menuSecondaryItemSpacing: $menuRelative5px;
+$menuSecondaryItemMargin: 0 $menuSecondaryItemSpacing;
+$menuSecondaryMargin: 0 -$menuSecondaryItemSpacing;
+$menuSecondaryItemVerticalPadding: $menuRelativeMini;
+$menuSecondaryItemHorizontalPadding: $menuRelativeSmall;
+$menuSecondaryItemPadding: $menuRelativeMini $menuRelativeSmall;
+$menuSecondaryItemBorderRadius: $menuDefaultBorderRadius;
+$menuSecondaryItemTransition: color $menuDefaultDuration $menuDefaultEasing;
+$menuSecondaryItemColor: $menuUnselectedTextColor;
+
+$menuSecondaryHoverItemBackground: $menuTransparentBlack;
+$menuSecondaryHoverItemColor: $menuSelectedTextColor;
+
+$menuSecondaryActiveItemBackground: $menuTransparentBlack;
+$menuSecondaryActiveItemColor: $menuSelectedTextColor;
+$menuSecondaryActiveHoverItemBackground: $menuTransparentBlack;
+$menuSecondaryActiveHoverItemColor: $menuSelectedTextColor;
+
+$menuSecondaryActiveHoveredItemBackground: $menuTransparentBlack;
+$menuSecondaryActiveHoveredItemColor: $menuSelectedTextColor;
+
+$menuSecondaryHeaderBackground: none transparent;
+$menuSecondaryHeaderBorder: none;
+
+$menuSecondaryItemVerticalSpacing: $menuSecondaryItemSpacing;
+$menuSecondaryVerticalItemMargin: 0 0 $menuSecondaryItemVerticalSpacing;
+$menuSecondaryVerticalItemBorderRadius: $menuDefaultBorderRadius;
+
+$menuSecondaryMenuSubMenuMargin: 0 -$menuSecondaryItemHorizontalPadding;
+$menuSecondaryMenuSubMenuItemMargin: 0;
+$menuSecondarySubMenuHorizontalPadding: ($menuItemHorizontalPadding / $menuTinySize) + $menuSubMenuIndent;
+$menuSecondaryMenuSubMenuItemPadding: $menuRelative7px $menuSecondarySubMenuHorizontalPadding;
+
+/* Pointing */
+$menuSecondaryPointingBorderWidth: 2px;
+$menuSecondaryPointingBorderColor: $menuBorderColor;
+$menuSecondaryPointingItemVerticalPadding: $menuRelativeTiny;
+$menuSecondaryPointingItemHorizontalPadding: $menuRelativeLarge;
+
+$menuSecondaryPointingHoverTextColor: $menuTextColor;
+
+$menuSecondaryPointingActiveBorderColor: $menuBlack;
+$menuSecondaryPointingActiveTextColor: $menuSelectedTextColor;
+$menuSecondaryPointingActiveFontWeight: bold;
+
+$menuSecondaryPointingActiveDropdownBorderColor: transparent;
+
+$menuSecondaryPointingActiveHoverBorderColor: $menuSecondaryPointingActiveBorderColor;
+$menuSecondaryPointingActiveHoverTextColor: $menuSecondaryPointingActiveTextColor;
+
+$menuSecondaryPointingHeaderColor: $menuDarkTextColor;
+$menuSecondaryVerticalPointingItemMargin: 0 -$menuSecondaryPointingBorderWidth 0 0;
+
+
+/* Inverted Secondary */
+$menuSecondaryInvertedColor: $menuInvertedLightTextColor;
+
+$menuSecondaryInvertedHoverBackground: $menuTransparentWhite;
+$menuSecondaryInvertedHoverColor: $menuInvertedSelectedTextColor;
+
+$menuSecondaryInvertedActiveBackground: $menuStrongTransparentWhite;
+$menuSecondaryInvertedActiveColor: $menuInvertedSelectedTextColor;
+
+/* Inverted Pointing */
+$menuSecondaryPointingInvertedBorderColor: $menuWhiteBorderColor;
+$menuSecondaryPointingInvertedItemTextColor: $menuInvertedTextColor;
+$menuSecondaryPointingInvertedItemHeaderColor: $menuWhite;
+$menuSecondaryPointingInvertedItemHoverTextColor: $menuSelectedTextColor;
+$menuSecondaryPointingInvertedActiveBorderColor: $menuWhite;
+$menuSecondaryPointingInvertedActiveColor: $menuInvertedSelectedTextColor;
+
+
+/* Tiered */
+$menuTieredActiveItemBackground: #FCFCFC;
+$menuTieredActiveMenuBackground: #FCFCFC;
+
+$menuTieredSubMenuTextTransform: normal;
+$menuTieredSubMenuFontWeight: normal;
+
+$menuTieredSubMenuColor: $menuLightTextColor;
+
+$menuTieredSubMenuHoverBackground: none transparent;
+$menuTieredSubMenuHoverColor: $menuHoveredTextColor;
+
+$menuTieredSubMenuActiveBackground: none transparent;
+$menuTieredSubMenuActiveColor: $menuSelectedTextColor;
+
+$menuTieredInvertedSubMenuBackground: rgba(0, 0, 0, 0.2);
+
+
+/* Icon */
+$menuIconMenuTextAlign: center;
+$menuIconMenuItemColor: $menuBlack;
+$menuIconMenuInvertedItemColor: $menuWhite;
+
+
+/* Tabular */
+$menuTabularBorderColor: $menuSolidBorderColor;
+$menuTabularBackgroundColor: transparent;
+$menuTabularBackground: none $menuTabularBackgroundColor;
+$menuTabularBorderWidth: 1px;
+$menuTabularOppositeBorderWidth: $menuTabularBorderWidth + 1px;
+$menuTabularVerticalPadding: $menuItemVerticalPadding;
+$menuTabularHorizontalPadding: $menuRelativeHuge;
+$menuTabularBorderRadius: $menuDefaultBorderRadius;
+$menuTabularTextColor: $menuItemTextColor;
+
+$menuTabularHoveredTextColor: $menuHoveredTextColor;
+
+$menuTabularVerticalBackground: none $menuTabularBackgroundColor;
+
+$menuTabularFluidOffset: 1px;
+$menuTabularFluidWidth: #{"calc(100% + " + ($menuTabularFluidOffset * 2) + ")"};
+
+$menuTabularActiveBackground: none $menuWhite;
+$menuTabularActiveColor: $menuSelectedTextColor;
+$menuTabularActiveBoxShadow: none;
+$menuTabularActiveWeight: bold;
+
+
+
+/* Pagination */
+$menuPaginationMinWidth: 3em;
+$menuPaginationActiveBackground: $menuTransparentBlack;
+$menuPaginationActiveTextColor: $menuSelectedTextColor;
+
+/* Labeled Icon */
+$menuLabeledIconItemHorizontalPadding: $menuRelativeMassive;
+$menuLabeledIconSize: $menuRelativeMassive;
+$menuLabeledIconMinWidth: 6em;
+$menuLabeledIconTextMargin: 0.5rem;
+
+
+/* Text */
+$menuTextMenuItemSpacing: $menuRelative7px;
+$menuTextMenuMargin: $menuRelativeMedium -($menuTextMenuItemSpacing);
+$menuTextMenuItemColor: $menuMutedTextColor;
+$menuTextMenuItemFontWeight: normal;
+$menuTextMenuItemMargin: 0 0;
+$menuTextMenuItemPadding: $menuRelative5px $menuTextMenuItemSpacing;
+$menuTextMenuItemTransition: opacity $menuDefaultDuration $menuDefaultEasing;
+
+$menuTextMenuSubMenuMargin: 0;
+$menuTextMenuSubMenuItemMargin: 0;
+$menuTextMenuSubMenuItemPadding: $menuRelative7px 0;
+
+$menuTextMenuActiveItemFontWeight: normal;
+$menuTextMenuActiveItemColor: $menuSelectedTextColor;
+
+$menuTextMenuHeaderSize: $menuRelativeSmall;
+$menuTextMenuHeaderColor: $menuDarkTextColor;
+$menuTextMenuHeaderFontWeight: bold;
+$menuTextMenuHeaderTextTransform: uppercase;
+
+$menuTextVerticalMenuMargin: $menuRelativeMedium 0;
+$menuTextVerticalMenuHeaderMargin: $menuRelative8px 0 $menuRelative10px;
+$menuTextVerticalMenuItemMargin: $menuRelative8px 0;
+
+$menuTextVerticalMenuIconFloat: none;
+$menuTextVerticalMenuIconMargin: $menuIconMargin;
+
+
+/*--------------
+   Variations
+---------------*/
+
+/* Inverted */
+$menuInvertedBackground: $menuBlack;
+$menuInvertedBoxShadow: none;
+$menuInvertedBorder: 0 solid transparent;
+$menuInvertedHeaderBackground: transparent;
+
+$menuInvertedItemBackground: transparent;
+$menuInvertedItemTextColor: $menuInvertedTextColor;
+
+/* Inverted Sub Menu */
+$menuInvertedSubMenuBackground: transparent;
+$menuInvertedSubMenuColor: $menuInvertedUnselectedTextColor;
+
+/* Inverted Hover */
+$menuInvertedHoverBackground: $menuTransparentWhite;
+$menuInvertedHoverColor: $menuInvertedSelectedTextColor;
+
+$menuInvertedSubMenuHoverBackground: transparent;
+$menuInvertedSubMenuHoverColor: $menuInvertedSelectedTextColor;
+
+/* Pressed */
+$menuInvertedMenuPressedBackground: $menuTransparentWhite;
+$menuInvertedMenuPressedColor: $menuInvertedSelectedTextColor;
+
+/* Inverted Active */
+$menuInvertedActiveBackground: $menuStrongTransparentWhite;
+$menuInvertedActiveColor: $menuInvertedSelectedTextColor;
+$menuInvertedArrowActiveColor: #3D3E3F;
+
+/* Inverted Active Hover  */
+$menuInvertedActiveHoverBackground: $menuInvertedActiveBackground;
+$menuInvertedActiveHoverColor: $menuWhite;
+$menuInvertedArrowActiveHoverColor: $menuInvertedArrowActiveColor;
+
+$menuInvertedSubMenuActiveBackground: transparent;
+$menuInvertedSubMenuActiveColor: $menuWhite;
+
+/* Inverted Menu Divider */
+$menuInvertedDividerBackground: rgba(255, 255, 255, 0.08);
+$menuInvertedVerticalDividerBackground: $menuInvertedDividerBackground;
+
+/* Inverted Colored */
+$menuInvertedColoredDividerBackground: $menuDividerBackground;
+$menuInvertedColoredActiveBackground: $menuStrongTransparentBlack;
+
+/* Fixed */
+$menuFixedPrecedingGridMargin: 2.75rem;
+
+/* Floated */
+$menuFloatedDistance: 0.5rem;
+
+/* Attached */
+$menuAttachedTopOffset: 0;
+$menuAttachedBottomOffset: 0;
+$menuAttachedHorizontalOffset: -$menuBorderWidth;
+$menuAttachedWidth: #{"calc(100% + " + -$menuAttachedHorizontalOffset * 2 + ")"};
+$menuAttachedBoxShadow: none;
+$menuAttachedBorder: $menuBorderWidth solid $menuSolidBorderColor;
+$menuAttachedBottomBoxShadow:
+  $menuBoxShadow,
+  $menuAttachedBoxShadow
+;
+
+/* Resize large sizes */
+$menuMini: $menu11px;
+$menuTiny: $menu12px;
+$menuSmall: $menu13px;
+$menuLarge: $menu15px;
+$menuHuge: $menu16px;
+$menuBig: $menu17px;
+$menuMassive: $menu18px;
+
+/* Sizes */
+$menuMiniWidth: 9rem;
+$menuTinyWidth: 11rem;
+$menuSmallWidth: 13rem;
+$menuMediumWidth: 15rem;
+$menuLargeWidth: 18rem;
+$menuHugeWidth: 20rem;
+$menuBigWidth: 22rem;
+$menuMassiveWidth: 25rem;

@@ -1,0 +1,325 @@
+/*!
+ * # Shengnian UI - Loader
+ * http://github.com/shengnian/shengnian-ui
+ *
+ *
+ * Released under the MIT license
+ * http://opensource.org/licenses/MIT
+ *
+ */
+
+
+/*******************************
+            Loader
+*******************************/
+/* Standard Size */
+.ui.loader {
+  display: none;
+  position: absolute;
+  top: $loaderLoaderTopOffset;
+  left: $loaderLoaderLeftOffset;
+  margin: 0;
+  text-align: center;
+  z-index: 1000;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+/* Static Shape */
+.ui.loader:before {
+  position: absolute;
+  content: '';
+  top: 0%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+
+  border-radius: $loaderCircularRadius;
+  border: $loaderLoaderLineWidth solid $loaderLoaderFillColor;
+}
+
+/* Active Shape */
+.ui.loader:after {
+  position: absolute;
+  content: '';
+  top: 0%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+
+  animation: loader $loaderLoaderSpeed linear;
+  animation-iteration-count: infinite;
+
+  border-radius: $loaderCircularRadius;
+
+  border-color: $loaderShapeBorderColor;
+  border-style: solid;
+  border-width: $loaderLoaderLineWidth;
+
+  box-shadow: 0 0 0 1px transparent;
+}
+
+/* Active Animation */
+@keyframes loader {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Sizes */
+.ui.mini.loader:before,
+.ui.mini.loader:after {
+  width: $loaderMini;
+  height: $loaderMini;
+  @include loaderMiniOffset();
+  //margin: $loaderMiniOffset;
+}
+.ui.tiny.loader:before,
+.ui.tiny.loader:after {
+  width: $loaderTiny;
+  height: $loaderTiny;
+  @include loaderTinyOffset();
+  //margin: $loaderTinyOffset;
+}
+.ui.small.loader:before,
+.ui.small.loader:after {
+  width: $loaderSmall;
+  height: $loaderSmall;
+  @include loaderSmallOffset();
+  //margin: $loaderSmallOffset;
+}
+.ui.loader:before,
+.ui.loader:after {
+  width: $loaderMedium;
+  height: $loaderMedium;
+  @include loaderMediumOffset();
+  //margin: $loaderMediumOffset;
+}
+.ui.large.loader:before,
+.ui.large.loader:after {
+  width: $loaderLarge;
+  height: $loaderLarge;
+  @include loaderLargeOffset();
+  //margin: $loaderLargeOffset;
+}
+.ui.big.loader:before,
+.ui.big.loader:after {
+  width: $loaderBig;
+  height: $loaderBig;
+  @include loaderBigOffset();
+  //margin: $loaderBigOffset;
+}
+.ui.huge.loader:before,
+.ui.huge.loader:after {
+  width: $loaderHuge;
+  height: $loaderHuge;
+  @include loaderHugeOffset();
+  //margin: $loaderHugeOffset;
+}
+.ui.massive.loader:before,
+.ui.massive.loader:after {
+  width: $loaderMassive;
+  height: $loaderMassive;
+  @include loaderMassiveOffset();
+  //margin: $loaderMassiveOffset;
+}
+
+/*-------------------
+      Coupling
+--------------------*/
+
+/* Show inside active dimmer */
+.ui.dimmer .loader {
+  display: block;
+}
+
+/* Black Dimmer */
+.ui.dimmer .ui.loader {
+  color: $loaderInvertedLoaderTextColor;
+}
+.ui.dimmer .ui.loader:before {
+  border-color: $loaderInvertedLoaderFillColor;
+}
+.ui.dimmer .ui.loader:after {
+  border-color: $loaderInvertedShapeBorderColor;
+}
+
+/* White Dimmer (Inverted) */
+.ui.inverted.dimmer .ui.loader {
+  color: $loaderLoaderTextColor;
+}
+.ui.inverted.dimmer .ui.loader:before {
+  border-color: $loaderLoaderFillColor;
+}
+.ui.inverted.dimmer .ui.loader:after {
+  border-color: $loaderShapeBorderColor;
+}
+
+
+
+/*******************************
+             Types
+*******************************/
+/*-------------------
+        Text
+--------------------*/
+
+.ui.text.loader {
+  width: auto !important;
+  height: auto !important;
+  text-align: center;
+  font-style: normal;
+}
+
+
+/*******************************
+            States
+*******************************/
+
+.ui.indeterminate.loader:after {
+  animation-direction: $loaderIndeterminateDirection;
+  animation-duration: $loaderIndeterminateSpeed;
+}
+
+.ui.loader.active,
+.ui.loader.visible {
+  display: block;
+}
+.ui.loader.disabled,
+.ui.loader.hidden {
+  display: none;
+}
+
+
+
+/*******************************
+            Variations
+*******************************/
+/*-------------------
+        Sizes
+--------------------*/
+/* Loader */
+.ui.inverted.dimmer .ui.mini.loader,
+.ui.mini.loader {
+  width: $loaderMini;
+  height: $loaderMini;
+  font-size: $loaderMiniFontSize;
+}
+.ui.inverted.dimmer .ui.tiny.loader,
+.ui.tiny.loader {
+  width: $loaderTiny;
+  height: $loaderTiny;
+  font-size: $loaderTinyFontSize;
+}
+.ui.inverted.dimmer .ui.small.loader,
+.ui.small.loader {
+  width: $loaderSmall;
+  height: $loaderSmall;
+  font-size: $loaderSmallFontSize;
+}
+.ui.inverted.dimmer .ui.loader,
+.ui.loader {
+  width: $loaderMedium;
+  height: $loaderMedium;
+  font-size: $loaderMediumFontSize;
+}
+.ui.inverted.dimmer .ui.large.loader,
+.ui.large.loader {
+  width: $loaderLarge;
+  height: $loaderLarge;
+  font-size: $loaderLargeFontSize;
+}
+.ui.inverted.dimmer .ui.big.loader,
+.ui.big.loader {
+  width: $loaderBig;
+  height: $loaderBig;
+  font-size: $loaderBigFontSize;
+}
+.ui.inverted.dimmer .ui.huge.loader,
+.ui.huge.loader {
+  width: $loaderHuge;
+  height: $loaderHuge;
+  font-size: $loaderHugeFontSize;
+}
+.ui.inverted.dimmer .ui.massive.loader,
+.ui.massive.loader {
+  width: $loaderMassive;
+  height: $loaderMassive;
+  font-size: $loaderMassiveFontSize;
+}
+
+/* Text Loader */
+.ui.mini.text.loader {
+  min-width: $loaderMini;
+  padding-top: ($loaderMini + $loaderTextDistance);
+}
+.ui.tiny.text.loader {
+  min-width: $loaderTiny;
+  padding-top: ($loaderTiny + $loaderTextDistance);
+}
+.ui.small.text.loader {
+  min-width: $loaderSmall;
+  padding-top: ($loaderSmall + $loaderTextDistance);
+}
+.ui.text.loader {
+  min-width: $loaderMedium;
+  padding-top: ($loaderMedium + $loaderTextDistance);
+}
+.ui.large.text.loader {
+  min-width: $loaderLarge;
+  padding-top: ($loaderLarge + $loaderTextDistance);
+}
+.ui.big.text.loader {
+  min-width: $loaderBig;
+  padding-top: ($loaderBig + $loaderTextDistance);
+}
+.ui.huge.text.loader {
+  min-width: $loaderHuge;
+  padding-top: ($loaderHuge + $loaderTextDistance);
+}
+.ui.massive.text.loader {
+  min-width: $loaderMassive;
+  padding-top: ($loaderMassive + $loaderTextDistance);
+}
+/*-------------------
+       Inverted
+--------------------*/
+
+.ui.inverted.loader {
+  color: $loaderInvertedLoaderTextColor
+}
+.ui.inverted.loader:before {
+  border-color: $loaderInvertedLoaderFillColor;
+}
+.ui.inverted.loader:after {
+  border-top-color: $loaderInvertedLoaderLineColor;
+}
+
+/*-------------------
+       Inline
+--------------------*/
+
+.ui.inline.loader {
+  position: relative;
+  vertical-align: $loaderInlineVerticalAlign;
+  margin: $loaderInlineMargin;
+  left: 0;
+  top: 0;
+  transform: none;
+}
+
+.ui.inline.loader.active,
+.ui.inline.loader.visible {
+  display: inline-block;
+}
+
+/* Centered Inline */
+.ui.centered.inline.loader.active,
+.ui.centered.inline.loader.visible {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+

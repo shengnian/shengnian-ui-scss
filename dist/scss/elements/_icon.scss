@@ -1,0 +1,493 @@
+/*!
+ * # Shengnian UI - Icon
+ * http://github.com/shengnian/shengnian-ui
+ *
+ *
+ * Released under the MIT license
+ * http://opensource.org/licenses/MIT
+ *
+ */
+
+
+/*******************************
+             Icon
+*******************************/
+
+@font-face {
+  font-family: 'Icons';
+  src: $iconFallbackSRC;
+  src: $iconSrc;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-decoration: inherit;
+  text-transform: none;
+}
+
+i.icon {
+  display: inline-block;
+  opacity: $iconOpacity;
+
+  margin: 0 $iconDistanceFromText 0 0;
+
+  width: $iconWidth;
+  height: $iconHeight;
+
+  font-family: 'Icons';
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: inherit;
+  text-align: center;
+
+  speak: none;
+  font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  backface-visibility: hidden;
+}
+
+i.icon:before {
+  background: none !important;
+}
+
+
+
+/*******************************
+             Types
+*******************************/
+
+/*--------------
+    Loading
+---------------*/
+
+i.icon.loading {
+  height: 1em;
+  line-height: 1;
+  animation: icon-loading $iconLoadingDuration linear infinite;
+}
+@keyframes icon-loading {
+ from {
+    transform: rotate(0deg);
+ }
+ to {
+    transform: rotate(360deg);
+ }
+}
+
+
+
+/*******************************
+             States
+*******************************/
+
+i.icon.hover {
+  opacity: 1 !important;
+}
+
+i.icon.active {
+  opacity: 1 !important;
+}
+
+i.emphasized.icon {
+  opacity: 1 !important;
+}
+
+i.disabled.icon {
+  opacity: $iconDisabledOpacity !important;
+}
+
+
+/*******************************
+           Variations
+*******************************/
+/*-------------------
+        Fitted
+--------------------*/
+
+i.fitted.icon {
+  width: auto;
+  margin: 0;
+}
+
+/*-------------------
+         Link
+--------------------*/
+
+i.link.icon, i.link.icons {
+  cursor: pointer;
+  opacity: $iconLinkOpacity;
+  transition: opacity $iconDefaultDuration $iconDefaultEasing;
+}
+i.link.icon:hover, i.link.icons:hover {
+  opacity: 1 !important;
+}
+
+/*-------------------
+      Circular
+--------------------*/
+
+i.circular.icon {
+  border-radius: 500em !important;
+  line-height: 1 !important;
+
+  padding: $iconCircularPadding !important;
+  box-shadow: $iconCircularShadow;
+
+  width: $iconCircularSize !important;
+  height: $iconCircularSize !important;
+}
+i.circular.inverted.icon {
+  border: none;
+  box-shadow: none;
+}
+
+/*-------------------
+      Flipped
+--------------------*/
+
+i.flipped.icon,
+i.horizontally.flipped.icon {
+  transform: scale(-1, 1);
+}
+i.vertically.flipped.icon {
+  transform: scale(1, -1);
+}
+
+/*-------------------
+      Rotated
+--------------------*/
+
+i.rotated.icon,
+i.right.rotated.icon,
+i.clockwise.rotated.icon {
+  transform: rotate(90deg);
+}
+
+i.left.rotated.icon,
+i.counterclockwise.rotated.icon {
+  transform: rotate(-90deg);
+}
+
+/*-------------------
+      Bordered
+--------------------*/
+
+i.bordered.icon {
+  line-height: 1;
+  vertical-align: baseline;
+
+  width: $iconBorderedSize;
+  height: $iconBorderedSize;
+  padding: $iconBorderedVerticalPadding $iconBorderedHorizontalPadding !important;
+  box-shadow: $iconBorderedShadow;
+}
+i.bordered.inverted.icon {
+  border: none;
+  box-shadow: none;
+}
+
+/*-------------------
+      Inverted
+--------------------*/
+
+/* Inverted Shapes */
+i.inverted.bordered.icon,
+i.inverted.circular.icon {
+  background-color: $iconBlack !important;
+  color: $iconWhite !important;
+}
+
+i.inverted.icon {
+  color: $iconWhite;
+}
+/*-------------------
+       Colors
+--------------------*/
+
+/* Red */
+i.red.icon {
+  color: $iconRed !important;
+}
+i.inverted.red.icon {
+  color: $iconLightRed !important;
+}
+i.inverted.bordered.red.icon,
+i.inverted.circular.red.icon {
+  background-color: $iconRed !important;
+  color: $iconWhite !important;
+}
+
+/* Orange */
+i.orange.icon {
+  color: $iconOrange !important;
+}
+i.inverted.orange.icon {
+  color: $iconLightOrange !important;
+}
+i.inverted.bordered.orange.icon,
+i.inverted.circular.orange.icon {
+  background-color: $iconOrange !important;
+  color: $iconWhite !important;
+}
+
+/* Yellow */
+i.yellow.icon {
+  color: $iconYellow !important;
+}
+i.inverted.yellow.icon {
+  color: $iconLightYellow !important;
+}
+i.inverted.bordered.yellow.icon,
+i.inverted.circular.yellow.icon {
+  background-color: $iconYellow !important;
+  color: $iconWhite !important;
+}
+
+/* Olive */
+i.olive.icon {
+  color: $iconOlive !important;
+}
+i.inverted.olive.icon {
+  color: $iconLightOlive !important;
+}
+i.inverted.bordered.olive.icon,
+i.inverted.circular.olive.icon {
+  background-color: $iconOlive !important;
+  color: $iconWhite !important;
+}
+
+/* Green */
+i.green.icon {
+  color: $iconGreen !important;
+}
+i.inverted.green.icon {
+  color: $iconLightGreen !important;
+}
+i.inverted.bordered.green.icon,
+i.inverted.circular.green.icon {
+  background-color: $iconGreen !important;
+  color: $iconWhite !important;
+}
+
+/* Teal */
+i.teal.icon {
+  color: $iconTeal !important;
+}
+i.inverted.teal.icon {
+  color: $iconLightTeal !important;
+}
+i.inverted.bordered.teal.icon,
+i.inverted.circular.teal.icon {
+  background-color: $iconTeal !important;
+  color: $iconWhite !important;
+}
+
+/* Blue */
+i.blue.icon {
+  color: $iconBlue !important;
+}
+i.inverted.blue.icon {
+  color: $iconLightBlue !important;
+}
+i.inverted.bordered.blue.icon,
+i.inverted.circular.blue.icon {
+  background-color: $iconBlue !important;
+  color: $iconWhite !important;
+}
+
+/* Violet */
+i.violet.icon {
+  color: $iconViolet !important;
+}
+i.inverted.violet.icon {
+  color: $iconLightViolet !important;
+}
+i.inverted.bordered.violet.icon,
+i.inverted.circular.violet.icon {
+  background-color: $iconViolet !important;
+  color: $iconWhite !important;
+}
+
+/* Purple */
+i.purple.icon {
+  color: $iconPurple !important;
+}
+i.inverted.purple.icon {
+  color: $iconLightPurple !important;
+}
+i.inverted.bordered.purple.icon,
+i.inverted.circular.purple.icon {
+  background-color: $iconPurple !important;
+  color: $iconWhite !important;
+}
+
+/* Pink */
+i.pink.icon {
+  color: $iconPink !important;
+}
+i.inverted.pink.icon {
+  color: $iconLightPink !important;
+}
+i.inverted.bordered.pink.icon,
+i.inverted.circular.pink.icon {
+  background-color: $iconPink !important;
+  color: $iconWhite !important;
+}
+
+/* Brown */
+i.brown.icon {
+  color: $iconBrown !important;
+}
+i.inverted.brown.icon {
+  color: $iconLightBrown !important;
+}
+i.inverted.bordered.brown.icon,
+i.inverted.circular.brown.icon {
+  background-color: $iconBrown !important;
+  color: $iconWhite !important;
+}
+
+/* Grey */
+i.grey.icon {
+  color: $iconGrey !important;
+}
+i.inverted.grey.icon {
+  color: $iconLightGrey !important;
+}
+i.inverted.bordered.grey.icon,
+i.inverted.circular.grey.icon {
+  background-color: $iconGrey !important;
+  color: $iconWhite !important;
+}
+
+/* Black */
+i.black.icon {
+  color: $iconBlack !important;
+}
+i.inverted.black.icon {
+  color: $iconLightBlack !important;
+}
+i.inverted.bordered.black.icon,
+i.inverted.circular.black.icon {
+  background-color: $iconBlack !important;
+  color: $iconWhite !important;
+}
+
+/*-------------------
+        Sizes
+--------------------*/
+
+i.mini.icon,
+i.mini.icons {
+  line-height: 1;
+  font-size: $iconMini;
+}
+i.tiny.icon,
+i.tiny.icons {
+  line-height: 1;
+  font-size: $iconTiny;
+}
+i.small.icon,
+i.small.icons {
+  line-height: 1;
+  font-size: $iconSmall;
+}
+i.icon,
+i.icons {
+  font-size: $iconMedium;
+}
+i.large.icon,
+i.large.icons {
+  line-height: 1;
+  vertical-align: middle;
+  font-size: $iconLarge;
+}
+i.big.icon,
+i.big.icons {
+  line-height: 1;
+  vertical-align: middle;
+  font-size: $iconBig;
+}
+i.huge.icon,
+i.huge.icons {
+  line-height: 1;
+  vertical-align: middle;
+  font-size: $iconHuge;
+}
+i.massive.icon,
+i.massive.icons {
+  line-height: 1;
+  vertical-align: middle;
+  font-size: $iconMassive;
+}
+
+
+
+/*******************************
+            Groups
+*******************************/
+
+i.icons {
+  display: inline-block;
+  position: relative;
+  line-height: 1;
+}
+
+i.icons .icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  margin: 0;
+  margin: 0;
+}
+
+i.icons .icon:first-child {
+  position: static;
+  width: auto;
+  height: auto;
+  vertical-align: top;
+  transform: none;
+  margin-right: $iconDistanceFromText;
+}
+
+/* Corner Icon */
+i.icons .corner.icon {
+  top: auto;
+  left: auto;
+  right: 0;
+  bottom: 0;
+  transform: none;
+  font-size: $iconCornerIconSize;
+  text-shadow: $iconCornerIconShadow;
+}
+i.icons .top.right.corner.icon {
+  top: 0;
+  left: auto;
+  right: 0;
+  bottom: auto;
+}
+i.icons .top.left.corner.icon {
+  top: 0;
+  left: 0;
+  right: auto;
+  bottom: auto;
+}
+i.icons .bottom.left.corner.icon {
+  top: auto;
+  left: 0;
+  right: auto;
+  bottom: 0;
+}
+i.icons .bottom.right.corner.icon {
+  top: auto;
+  left: auto;
+  right: 0;
+  bottom: 0;
+}
+
+i.icons .inverted.corner.icon {
+  text-shadow: $iconCornerIconInvertedShadow;
+}
+
+

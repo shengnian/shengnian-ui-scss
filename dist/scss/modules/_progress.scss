@@ -1,0 +1,492 @@
+/*!
+ * # Shengnian UI - Progress Bar
+ * http://github.com/shengnian/shengnian-ui
+ *
+ *
+ * Released under the MIT license
+ * http://opensource.org/licenses/MIT
+ *
+ */
+
+
+/*******************************
+            Progress
+*******************************/
+
+.ui.progress {
+  position: relative;
+  display: block;
+  max-width: 100%;
+  border: $progressBorder;
+  margin: $progressMargin;
+  box-shadow: $progressBoxShadow;
+  background: $progressBackground;
+  padding: $progressPadding;
+  border-radius: $progressBorderRadius;
+}
+
+.ui.progress:first-child {
+  margin: $progressFirstMargin;
+}
+.ui.progress:last-child {
+  margin: $progressLastMargin;
+}
+
+
+
+/*******************************
+            Content
+*******************************/
+
+/* Activity Bar */
+.ui.progress .bar {
+  display: block;
+  line-height: 1;
+  position: $progressBarPosition;
+  width: $progressBarInitialWidth;
+  min-width: $progressBarMinWidth;
+  background: $progressBarBackground;
+  border-radius: $progressBarBorderRadius;
+  transition: $progressBarTransition;
+}
+
+/* Percent Complete */
+.ui.progress .bar > .progress {
+  white-space: nowrap;
+  position: $progressProgressPosition;
+  width: $progressProgressWidth;
+  font-size: $progressProgressSize;
+  top: $progressProgressTop;
+  right: $progressProgressRight;
+  left: $progressProgressLeft;
+  bottom: $progressProgressBottom;
+  color: $progressProgressColor;
+  text-shadow: $progressProgressTextShadow;
+  margin-top: $progressProgressOffset;
+  font-weight: $progressProgressFontWeight;
+  text-align: $progressProgressTextAlign;
+}
+
+/* Label */
+.ui.progress > .label {
+  position: absolute;
+  width: $progressLabelWidth;
+  font-size: $progressLabelSize;
+  top: $progressLabelTop;
+  right: $progressLabelRight;
+  left: $progressLabelLeft;
+  bottom: $progressLabelBottom;
+  color: $progressLabelColor;
+  font-weight: $progressLabelFontWeight;
+  text-shadow: $progressLabelTextShadow;
+  margin-top: $progressLabelOffset;
+  text-align: $progressLabelTextAlign;
+  transition: $progressLabelTransition;
+}
+
+
+/*******************************
+            Types
+*******************************/
+/* Indicating */
+.ui.indicating.progress[data-percent^="1"] .bar,
+.ui.indicating.progress[data-percent^="2"] .bar {
+  background-color: $progressIndicatingFirstColor;
+}
+.ui.indicating.progress[data-percent^="3"] .bar {
+  background-color: $progressIndicatingSecondColor;
+}
+.ui.indicating.progress[data-percent^="4"] .bar,
+.ui.indicating.progress[data-percent^="5"] .bar {
+  background-color: $progressIndicatingThirdColor;
+}
+.ui.indicating.progress[data-percent^="6"] .bar {
+  background-color: $progressIndicatingFourthColor;
+}
+.ui.indicating.progress[data-percent^="7"] .bar,
+.ui.indicating.progress[data-percent^="8"] .bar {
+  background-color: $progressIndicatingFifthColor;
+}
+.ui.indicating.progress[data-percent^="9"] .bar,
+.ui.indicating.progress[data-percent^="100"] .bar {
+  background-color: $progressIndicatingSixthColor;
+}
+
+/* Indicating Label */
+.ui.indicating.progress[data-percent^="1"] .label,
+.ui.indicating.progress[data-percent^="2"] .label {
+  color: $progressIndicatingFirstLabelColor;
+}
+.ui.indicating.progress[data-percent^="3"] .label {
+  color: $progressIndicatingSecondLabelColor;
+}
+.ui.indicating.progress[data-percent^="4"] .label,
+.ui.indicating.progress[data-percent^="5"] .label {
+  color: $progressIndicatingThirdLabelColor;
+}
+.ui.indicating.progress[data-percent^="6"] .label {
+  color: $progressIndicatingFourthLabelColor;
+}
+.ui.indicating.progress[data-percent^="7"] .label,
+.ui.indicating.progress[data-percent^="8"] .label {
+  color: $progressIndicatingFifthLabelColor;
+}
+.ui.indicating.progress[data-percent^="9"] .label,
+.ui.indicating.progress[data-percent^="100"] .label {
+  color: $progressIndicatingSixthLabelColor;
+}
+
+/* Single Digits */
+.ui.indicating.progress[data-percent="1"] .bar,
+.ui.indicating.progress[data-percent="2"] .bar,
+.ui.indicating.progress[data-percent="3"] .bar,
+.ui.indicating.progress[data-percent="4"] .bar,
+.ui.indicating.progress[data-percent="5"] .bar,
+.ui.indicating.progress[data-percent="6"] .bar,
+.ui.indicating.progress[data-percent="7"] .bar,
+.ui.indicating.progress[data-percent="8"] .bar,
+.ui.indicating.progress[data-percent="9"] .bar {
+  background-color: $progressIndicatingFirstColor;
+}
+.ui.indicating.progress[data-percent="1"] .label,
+.ui.indicating.progress[data-percent="2"] .label,
+.ui.indicating.progress[data-percent="3"] .label,
+.ui.indicating.progress[data-percent="4"] .label,
+.ui.indicating.progress[data-percent="5"] .label,
+.ui.indicating.progress[data-percent="6"] .label,
+.ui.indicating.progress[data-percent="7"] .label,
+.ui.indicating.progress[data-percent="8"] .label,
+.ui.indicating.progress[data-percent="9"] .label {
+  color: $progressIndicatingFirstLabelColor;
+}
+
+/* Indicating Success */
+.ui.indicating.progress.success .label {
+  color: $progressSuccessHeaderColor;
+}
+
+
+
+/*******************************
+             States
+*******************************/
+/*--------------
+     Success
+---------------*/
+
+.ui.progress.success .bar {
+  background-color: $progressSuccessColor !important;
+}
+.ui.progress.success .bar,
+.ui.progress.success .bar::after {
+  animation: none !important;
+}
+.ui.progress.success > .label {
+  color: $progressSuccessHeaderColor;
+}
+
+/*--------------
+     Warning
+---------------*/
+
+.ui.progress.warning .bar {
+  background-color: $progressWarningColor !important;
+}
+.ui.progress.warning .bar,
+.ui.progress.warning .bar::after {
+  animation: none !important;
+}
+.ui.progress.warning > .label {
+  color: $progressWarningHeaderColor;
+}
+
+/*--------------
+     Error
+---------------*/
+
+.ui.progress.error .bar {
+  background-color: $progressErrorColor !important;
+}
+.ui.progress.error .bar,
+.ui.progress.error .bar::after {
+  animation: none !important;
+}
+.ui.progress.error > .label {
+  color: $progressErrorHeaderColor;
+}
+
+/*--------------
+     Active
+---------------*/
+
+.ui.active.progress .bar {
+  position: relative;
+  min-width: $progressActiveMinWidth;
+}
+.ui.active.progress .bar::after {
+  content: '';
+  opacity: 0;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: $progressActivePulseColor;
+
+  border-radius: $progressBarBorderRadius;
+
+  animation: progress-active $progressActivePulseDuration $progressDefaultEasing infinite;
+}
+@keyframes progress-active {
+  0% {
+    opacity: $progressActivePulseMaxOpacity;
+    width: 0;
+  }
+  90% {
+  }
+  100% {
+    opacity: 0;
+    width: 100%;
+  }
+}
+
+/*--------------
+    Disabled
+---------------*/
+
+.ui.disabled.progress {
+  opacity: 0.35;
+}
+.ui.disabled.progress .bar,
+.ui.disabled.progress .bar::after {
+  animation: none !important;
+}
+
+
+/*******************************
+           Variations
+*******************************/
+/*--------------
+    Inverted
+---------------*/
+
+.ui.inverted.progress {
+  background: $progressInvertedBackground;
+  border: $progressInvertedBorder;
+}
+.ui.inverted.progress .bar {
+  background: $progressInvertedBarBackground;
+}
+.ui.inverted.progress .bar > .progress {
+  color: $progressInvertedProgressColor;
+}
+.ui.inverted.progress > .label {
+  color: $progressInvertedLabelColor;
+}
+.ui.inverted.progress.success > .label {
+  color: $progressSuccessColor;
+}
+.ui.inverted.progress.warning > .label {
+  color: $progressWarningColor;
+}
+.ui.inverted.progress.error > .label {
+  color: $progressErrorColor;
+}
+
+/*--------------
+    Attached
+---------------*/
+
+/* bottom attached */
+.ui.progress.attached {
+  background: $progressAttachedBackground;
+  position: relative;
+  border: none;
+  margin: 0;
+}
+.ui.progress.attached,
+.ui.progress.attached .bar {
+  display: block;
+  height: $progressAttachedHeight;
+  padding: 0;
+  overflow: hidden;
+  border-radius: 0 0 $progressAttachedBorderRadius $progressAttachedBorderRadius;
+}
+.ui.progress.attached .bar {
+  border-radius: 0;
+}
+
+/* top attached */
+.ui.progress.top.attached,
+.ui.progress.top.attached .bar {
+  top: 0;
+  border-radius: $progressAttachedBorderRadius $progressAttachedBorderRadius 0 0;
+}
+.ui.progress.top.attached .bar {
+  border-radius: 0;
+}
+
+/* Coupling */
+.ui.segment > .ui.attached.progress,
+.ui.card > .ui.attached.progress {
+  position: absolute;
+  top: auto;
+  left: 0;
+  bottom: 100%;
+  width: 100%;
+}
+.ui.segment > .ui.bottom.attached.progress,
+.ui.card > .ui.bottom.attached.progress {
+  top: 100%;
+  bottom: auto;
+}
+
+/*--------------
+     Colors
+---------------*/
+
+/* Red */
+.ui.red.progress .bar {
+  background-color: $progressRed;
+}
+.ui.red.inverted.progress .bar {
+  background-color: $progressLightRed;
+}
+
+/* Orange */
+.ui.orange.progress .bar {
+  background-color: $progressOrange;
+}
+.ui.orange.inverted.progress .bar {
+  background-color: $progressLightOrange;
+}
+
+/* Yellow */
+.ui.yellow.progress .bar {
+  background-color: $progressYellow;
+}
+.ui.yellow.inverted.progress .bar {
+  background-color: $progressLightYellow;
+}
+
+/* Olive */
+.ui.olive.progress .bar {
+  background-color: $progressOlive;
+}
+.ui.olive.inverted.progress .bar {
+  background-color: $progressLightOlive;
+}
+
+/* Green */
+.ui.green.progress .bar {
+  background-color: $progressGreen;
+}
+.ui.green.inverted.progress .bar {
+  background-color: $progressLightGreen;
+}
+
+/* Teal */
+.ui.teal.progress .bar {
+  background-color: $progressTeal;
+}
+.ui.teal.inverted.progress .bar {
+  background-color: $progressLightTeal;
+}
+
+/* Blue */
+.ui.blue.progress .bar {
+  background-color: $progressBlue;
+}
+.ui.blue.inverted.progress .bar {
+  background-color: $progressLightBlue;
+}
+
+/* Violet */
+.ui.violet.progress .bar {
+  background-color: $progressViolet;
+}
+.ui.violet.inverted.progress .bar {
+  background-color: $progressLightViolet;
+}
+
+/* Purple */
+.ui.purple.progress .bar {
+  background-color: $progressPurple;
+}
+.ui.purple.inverted.progress .bar {
+  background-color: $progressLightPurple;
+}
+
+/* Pink */
+.ui.pink.progress .bar {
+  background-color: $progressPink;
+}
+.ui.pink.inverted.progress .bar {
+  background-color: $progressLightPink;
+}
+
+/* Brown */
+.ui.brown.progress .bar {
+  background-color: $progressBrown;
+}
+.ui.brown.inverted.progress .bar {
+  background-color: $progressLightBrown;
+}
+
+/* Grey */
+.ui.grey.progress .bar {
+  background-color: $progressGrey;
+}
+.ui.grey.inverted.progress .bar {
+  background-color: $progressLightGrey;
+}
+
+/* Black */
+.ui.black.progress .bar {
+  background-color: $progressBlack;
+}
+.ui.black.inverted.progress .bar {
+  background-color: $progressLightBlack;
+}
+
+/*--------------
+     Sizes
+---------------*/
+
+.ui.tiny.progress {
+  font-size: $progressTiny;
+}
+.ui.tiny.progress .bar {
+  height: $progressTinyBarHeight;
+}
+
+.ui.small.progress {
+  font-size: $progressSmall;
+}
+.ui.small.progress .bar {
+  height: $progressSmallBarHeight;
+}
+
+.ui.progress {
+  font-size: $progressMedium;
+}
+.ui.progress .bar {
+  height: $progressBarHeight;
+}
+
+.ui.large.progress {
+  font-size: $progressLarge;
+}
+.ui.large.progress .bar {
+  height: $progressLargeBarHeight;
+}
+
+.ui.big.progress {
+  font-size: $progressBig;
+}
+.ui.big.progress .bar {
+  height: $progressBigBarHeight;
+}
+
+

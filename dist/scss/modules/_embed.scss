@@ -1,0 +1,153 @@
+/*!
+ * # Shengnian UI - Video
+ * http://github.com/shengnian/shengnian-ui
+ *
+ *
+ * Released under the MIT license
+ * http://opensource.org/licenses/MIT
+ *
+ */
+
+
+/*******************************
+            Types
+*******************************/
+
+.ui.embed {
+  position: relative;
+  position: relative;
+  max-width: 100%;
+  height: 0;
+  overflow: hidden;
+  background: $embedBackground;
+  padding-bottom: $embedWidescreenRatio;
+}
+
+/*-----------------
+  Embedded Content
+------------------*/
+
+.ui.embed iframe,
+.ui.embed embed,
+.ui.embed object {
+  position: absolute;
+  border: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/*-----------------
+      Embed
+------------------*/
+
+.ui.embed > .embed {
+  display: none;
+}
+
+/*--------------
+   Placeholder
+---------------*/
+
+.ui.embed > .placeholder {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: $embedPlaceholderBackground;
+}
+
+/*--------------
+      Icon
+---------------*/
+
+.ui.embed > .icon {
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+.ui.embed > .icon:after {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+  content: '';
+  background: $embedPlaceholderBackground;
+  opacity: $embedPlaceholderBackgroundOpacity;
+  transition: $embedPlaceholderBackgroundTransition;
+}
+.ui.embed > .icon:before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 4;
+  transform: translateX(-50%) translateY(-50%);
+
+  color: $embedIconColor;
+  font-size: $embedIconSize;
+  text-shadow: $embedIconShadow;
+  transition: $embedIconTransition;
+  z-index: $embedIconZIndex;
+}
+
+
+
+/*******************************
+            States
+*******************************/
+
+/*--------------
+     Hover
+---------------*/
+
+.ui.embed .icon:hover:after {
+  background: $embedHoverPlaceholderBackground;
+  opacity: $embedHoverPlaceholderBackgroundOpacity;
+}
+.ui.embed .icon:hover:before {
+  color: $embedHoverIconColor;
+}
+
+/*--------------
+     Active
+---------------*/
+
+.ui.active.embed > .icon,
+.ui.active.embed > .placeholder {
+  display: none;
+}
+.ui.active.embed > .embed {
+  display: block;
+}
+
+
+
+
+/*******************************
+          Variations
+*******************************/
+
+.ui.square.embed {
+  padding-bottom: $embedSquareRatio;
+}
+.ui[class*="4:3"].embed {
+  padding-bottom: $embedStandardRatio;
+}
+.ui[class*="16:9"].embed {
+  padding-bottom: $embedWidescreenRatio;
+}
+.ui[class*="21:9"].embed {
+  padding-bottom: $embedUltraWidescreenRatio;
+}

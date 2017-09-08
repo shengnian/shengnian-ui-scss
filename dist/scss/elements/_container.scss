@@ -1,0 +1,133 @@
+/*!
+ * # Shengnian UI - Container
+ * http://github.com/shengnian/shengnian-ui
+ *
+ *
+ * Released under the MIT license
+ * http://opensource.org/licenses/MIT
+ *
+ */
+
+
+/*******************************
+            Container
+*******************************/
+
+/* All Sizes */
+.ui.container {
+  display: block;
+  max-width: $containerMaxWidth !important;
+}
+
+/* Mobile */
+@media only screen and (max-width: $containerLargestMobileScreen) {
+  .ui.container {
+    width: $containerMobileWidth !important;
+    margin-left: $containerMobileGutter !important;
+    margin-right: $containerMobileGutter !important;
+  }
+  .ui.grid.container {
+    width: $containerMobileGridWidth !important;
+  }
+  .ui.relaxed.grid.container {
+    width: $containerMobileRelaxedGridWidth !important;
+  }
+  .ui.very.relaxed.grid.container {
+    width: $containerMobileVeryRelaxedGridWidth !important;
+  }
+}
+
+/* Tablet */
+@media only screen and (min-width: $containerTabletBreakpoint) and (max-width: $containerLargestTabletScreen) {
+  .ui.container {
+    width: $containerTabletWidth;
+    margin-left: $containerTabletGutter !important;
+    margin-right: $containerTabletGutter !important;
+  }
+  .ui.grid.container {
+    width: $containerTabletGridWidth !important;
+  }
+  .ui.relaxed.grid.container {
+    width: $containerTabletRelaxedGridWidth !important;
+  }
+  .ui.very.relaxed.grid.container {
+    width: $containerTabletVeryRelaxedGridWidth !important;
+  }
+}
+
+/* Small Monitor */
+@media only screen and (min-width: $containerComputerBreakpoint) and (max-width: $containerLargestSmallMonitor) {
+  .ui.container {
+    width: $containerComputerWidth;
+    margin-left: $containerComputerGutter !important;
+    margin-right: $containerComputerGutter !important;
+  }
+  .ui.grid.container {
+    width: $containerComputerGridWidth !important;
+  }
+  .ui.relaxed.grid.container {
+    width: $containerComputerRelaxedGridWidth !important;
+  }
+  .ui.very.relaxed.grid.container {
+    width: $containerComputerVeryRelaxedGridWidth !important;
+  }
+}
+
+/* Large Monitor */
+@media only screen and (min-width: $containerLargeMonitorBreakpoint) {
+  .ui.container {
+    width: $containerLargeMonitorWidth;
+    margin-left: $containerLargeMonitorGutter !important;
+    margin-right: $containerLargeMonitorGutter !important;
+  }
+  .ui.grid.container {
+    width: $containerLargeMonitorGridWidth !important;
+  }
+  .ui.relaxed.grid.container {
+    width: $containerLargeMonitorRelaxedGridWidth !important;
+  }
+  .ui.very.relaxed.grid.container {
+    width: $containerLargeMonitorVeryRelaxedGridWidth !important;
+  }
+}
+
+
+
+/*******************************
+             Types
+*******************************/
+/* Text Container */
+.ui.text.container {
+  font-family: $containerTextFontFamily;
+  max-width: $containerTextWidth !important;
+  line-height: $containerTextLineHeight;
+}
+
+.ui.text.container {
+  font-size: $containerTextSize;
+}
+
+/* Fluid */
+.ui.fluid.container {
+  width: 100%;
+}
+
+
+/*******************************
+           Variations
+*******************************/
+
+.ui[class*="left aligned"].container {
+  text-align: left;
+}
+.ui[class*="center aligned"].container {
+  text-align: center;
+}
+.ui[class*="right aligned"].container {
+  text-align: right;
+}
+.ui.justified.container {
+  text-align: justify;
+  hyphens: auto;
+}
+

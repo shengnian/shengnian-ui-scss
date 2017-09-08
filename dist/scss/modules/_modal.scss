@@ -1,0 +1,564 @@
+/*!
+ * # Shengnian UI - Modal
+ * http://github.com/shengnian/shengnian-ui
+ *
+ *
+ * Released under the MIT license
+ * http://opensource.org/licenses/MIT
+ *
+ */
+
+
+/*******************************
+             Modal
+*******************************/
+
+.ui.modal {
+  display: none;
+  position: fixed;
+  z-index: $modalZIndex;
+
+  top: 50%;
+  left: 50%;
+  text-align: left;
+
+  background: $modalBackground;
+  border: $modalBorder;
+  box-shadow: $modalBoxShadow;
+  transform-origin: $modalTransformOrigin;
+
+  border-radius: $modalBorderRadius;
+  user-select: text;
+  will-change: top, left, margin, transform, opacity;
+}
+
+.ui.modal > :first-child:not(.icon),
+.ui.modal > .icon:first-child + * {
+  border-top-left-radius: $modalBorderRadius;
+  border-top-right-radius: $modalBorderRadius;
+}
+
+.ui.modal > :last-child {
+  border-bottom-left-radius: $modalBorderRadius;
+  border-bottom-right-radius: $modalBorderRadius;
+}
+
+
+
+/*******************************
+            Content
+*******************************/
+
+/*--------------
+     Close
+---------------*/
+
+.ui.modal > .close {
+  cursor: pointer;
+  position: absolute;
+  top: $modalCloseTop;
+  right: $modalCloseRight;
+  z-index: 1;
+
+  opacity: $modalCloseOpacity;
+  font-size: $modalCloseSize;
+  color: $modalCloseColor;
+
+  width: $modalCloseHitbox;
+  height: $modalCloseHitbox;
+  padding: $modalClosePadding;
+}
+.ui.modal > .close:hover {
+  opacity: 1;
+}
+
+/*--------------
+     Header
+---------------*/
+
+.ui.modal > .header {
+  display: block;
+  font-family: $modalHeaderFontFamily;
+  background: $modalHeaderBackground;
+  margin: $modalHeaderMargin;
+  padding: $modalHeaderPadding;
+  box-shadow: $modalHeaderBoxShadow;
+
+  color: $modalHeaderColor;
+  border-bottom: $modalHeaderBorder;
+}
+.ui.modal > .header:not(.ui) {
+  font-size: $modalHeaderFontSize;
+  line-height: $modalHeaderLineHeight;
+  font-weight: $modalHeaderFontWeight;
+}
+
+/*--------------
+     Content
+---------------*/
+
+.ui.modal > .content {
+  display: block;
+  width: 100%;
+  font-size: $modalContentFontSize;
+  line-height: $modalContentLineHeight;
+  padding: $modalContentPadding;
+  background: $modalContentBackground;
+}
+.ui.modal > .image.content {
+  display: flex;
+  flex-direction: row;
+}
+
+/* Image */
+.ui.modal > .content > .image {
+  display: block;
+  flex: 0 1 auto;
+  width: $modalImageWidth;
+  align-self: $modalImageVerticalAlign;
+}
+.ui.modal > [class*="top aligned"] {
+  align-self: top;
+}
+.ui.modal > [class*="middle aligned"] {
+  align-self: middle;
+}
+.ui.modal > [class*="stretched"] {
+  align-self: stretch;
+}
+
+/* Description */
+.ui.modal > .content > .description {
+  display: block;
+  flex: 1 0 auto;
+  min-width: 0;
+  align-self: $modalDescriptionVerticalAlign;
+}
+
+.ui.modal > .content > .icon + .description,
+.ui.modal > .content > .image + .description {
+  flex: 0 1 auto;
+  min-width: $modalDescriptionMinWidth;
+  width: $modalDescriptionWidth;
+  padding-left: $modalDescriptionDistance;
+}
+
+/*rtl:ignore*/
+.ui.modal > .content > .image > i.icon {
+  margin: 0;
+  opacity: 1;
+  width: auto;
+  line-height: 1;
+  font-size: $modalImageIconSize;
+}
+
+/*--------------
+     Actions
+---------------*/
+
+.ui.modal > .actions {
+  background: $modalActionBackground;
+  padding: $modalActionPadding;
+  border-top: $modalActionBorder;
+  text-align: $modalActionAlign;
+}
+.ui.modal .actions > .button {
+  margin-left: $modalButtonDistance;
+}
+
+/*-------------------
+       Responsive
+--------------------*/
+
+/* Modal Width */
+@media only screen and (max-width : $modalLargestMobileScreen) {
+  .ui.modal {
+    width: $modalMobileWidth;
+    margin: $modalMobileMargin;
+  }
+}
+@media only screen and (min-width : $modalTabletBreakpoint) {
+  .ui.modal {
+    width: $modalTabletWidth;
+    margin: $modalTabletMargin;
+  }
+}
+@media only screen and (min-width : $modalComputerBreakpoint) {
+  .ui.modal {
+    width: $modalComputerWidth;
+    margin: $modalComputerMargin;
+  }
+}
+@media only screen and (min-width : $modalLargeMonitorBreakpoint) {
+  .ui.modal {
+    width: $modalLargeMonitorWidth;
+    margin: $modalLargeMonitorMargin;
+  }
+}
+@media only screen and (min-width : $modalWidescreenMonitorBreakpoint) {
+  .ui.modal {
+    width: $modalWidescreenMonitorWidth;
+    margin: $modalWidescreenMonitorMargin;
+  }
+}
+
+/* Tablet and Mobile */
+@media only screen and (max-width : $modalLargestTabletScreen) {
+  .ui.modal > .header {
+    padding-right: $modalCloseHitbox;
+  }
+  .ui.modal > .close {
+    @include modalInnerClose();
+    //top: $modalInnerCloseTop;
+    //right: $modalInnerCloseRight;
+    //color: $modalInnerCloseColor;
+  }
+}
+
+/* Mobile */
+@media only screen and (max-width : $modalLargestMobileScreen) {
+
+  .ui.modal > .header {
+    padding: $modalMobileHeaderPadding !important;
+    padding-right: $modalCloseHitbox !important;
+  }
+  .ui.modal > .content {
+    display: block;
+    padding: $modalMobileContentPadding !important;
+  }
+  .ui.modal > .close {
+    top: $modalMobileCloseTop !important;
+    right: $modalMobileCloseRight !important;
+  }
+
+  /*rtl:ignore*/
+  .ui.modal .image.content {
+    flex-direction: column;
+  }
+  .ui.modal .content > .image {
+    display: block;
+    max-width: 100%;
+    margin: 0 auto !important;
+    text-align: center;
+    padding: $modalMobileImagePadding !important;
+  }
+  .ui.modal > .content > .image > i.icon {
+    font-size: $modalMobileImageIconSize;
+    text-align: center;
+  }
+
+  /*rtl:ignore*/
+  .ui.modal .content > .description {
+    display: block;
+    width: 100% !important;
+    margin: 0 !important;
+    padding: $modalMobileDescriptionPadding !important;
+    box-shadow: none;
+  }
+
+  /* Let Buttons Stack */
+  .ui.modal > .actions {
+    padding: $modalMobileActionPadding !important;
+  }
+  .ui.modal .actions > .buttons,
+  .ui.modal .actions > .button {
+    margin-bottom: $modalMobileButtonDistance;
+  }
+}
+
+/*--------------
+    Coupling
+---------------*/
+
+.ui.inverted.dimmer > .ui.modal {
+  box-shadow: $modalInvertedBoxShadow;
+}
+
+
+
+/*******************************
+             Types
+*******************************/
+
+.ui.basic.modal {
+  background-color: transparent;
+  border: none;
+  border-radius: 0;
+  box-shadow: none !important;
+  color: $modalBasicModalColor;
+}
+.ui.basic.modal > .header,
+.ui.basic.modal > .content,
+.ui.basic.modal > .actions {
+  background-color: transparent;
+}
+.ui.basic.modal > .header {
+  color: $modalBasicModalHeaderColor;
+}
+.ui.basic.modal > .close {
+  top: $modalBasicModalCloseTop;
+  right: $modalBasicModalCloseRight;
+}
+
+.ui.inverted.dimmer > .basic.modal {
+  color: $modalBasicInvertedModalColor;
+}
+.ui.inverted.dimmer > .ui.basic.modal > .header {
+  color: $modalBasicInvertedModalHeaderColor;
+}
+
+/* Tablet and Mobile */
+@media only screen and (max-width : $modalLargestTabletScreen) {
+  .ui.basic.modal > .close {
+    color: $modalBasicInnerCloseColor;
+  }
+}
+
+
+/*******************************
+             States
+*******************************/
+
+.ui.loading.modal {
+  display: block;
+  visibility: hidden;
+  z-index: $modalLoadingZIndex;
+}
+
+.ui.active.modal {
+  display: block;
+}
+
+
+
+/*******************************
+           Variations
+*******************************/
+
+/*--------------
+    Scrolling
+---------------*/
+
+/* A modal that cannot fit on the page */
+.scrolling.dimmable.dimmed {
+  overflow: hidden;
+}
+.scrolling.dimmable.dimmed > .dimmer {
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+}
+.scrolling.dimmable > .dimmer {
+  position: fixed;
+}
+.modals.dimmer .ui.scrolling.modal {
+  position: static !important;
+  margin: $modalScrollingMargin auto !important;
+}
+
+/* undetached scrolling */
+.scrolling.undetached.dimmable.dimmed {
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+}
+.scrolling.undetached.dimmable.dimmed > .dimmer {
+  overflow: hidden;
+}
+.scrolling.undetached.dimmable .ui.scrolling.modal {
+  position: absolute;
+  left: 50%;
+  margin-top: $modalScrollingMargin !important;
+}
+
+/* Coupling with Sidebar */
+.undetached.dimmable.dimmed > .pusher {
+  z-index: auto;
+}
+
+@media only screen and (max-width : $modalLargestTabletScreen) {
+  .modals.dimmer .ui.scrolling.modal {
+    margin-top: $modalMobileScrollingMargin !important;
+    margin-bottom: $modalMobileScrollingMargin !important;
+  }
+}
+
+/* Scrolling Content */
+
+.ui.modal .scrolling.content {
+  max-height: $modalScrollingContentMaxHeight;
+  overflow: auto;
+}
+/*--------------
+   Full Screen
+---------------*/
+
+.ui.fullscreen.modal {
+  width: $modalFullScreenWidth !important;
+  left: $modalFullScreenOffset !important;
+  margin: $modalFullScreenMargin;
+}
+.ui.fullscreen.scrolling.modal {
+  left: 0 !important;
+}
+.ui.fullscreen.modal > .header {
+  padding-right: $modalCloseHitbox;
+}
+.ui.fullscreen.modal > .close {
+  @include modalInnerClose();
+  //top: $modalInnerCloseTop;
+  //right: $modalInnerCloseRight;
+  //color: $modalInnerCloseColor;
+}
+/*--------------
+      Size
+---------------*/
+
+.ui.modal {
+  font-size: $modalMedium;
+}
+
+/* Mini */
+.ui.mini.modal > .header:not(.ui) {
+  font-size: $modalMiniHeaderSize;
+}
+
+/* Mini Modal Width */
+@media only screen and (max-width : $modalLargestMobileScreen) {
+  .ui.mini.modal {
+    width: $modalMiniMobileWidth;
+    margin: $modalMiniMobileMargin;
+  }
+}
+@media only screen and (min-width : $modalTabletBreakpoint) {
+  .ui.mini.modal {
+    width: $modalMiniTabletWidth;
+    margin: $modalMiniTabletMargin;
+  }
+}
+@media only screen and (min-width : $modalComputerBreakpoint) {
+  .ui.mini.modal {
+    width: $modalMiniComputerWidth;
+    margin: $modalMiniComputerMargin;
+  }
+}
+@media only screen and (min-width : $modalLargeMonitorBreakpoint) {
+  .ui.mini.modal {
+    width: $modalMiniLargeMonitorWidth;
+    margin: $modalMiniLargeMonitorMargin;
+  }
+}
+@media only screen and (min-width : $modalWidescreenMonitorBreakpoint) {
+  .ui.mini.modal {
+    width: $modalMiniWidescreenMonitorWidth;
+    margin: $modalMiniWidescreenMonitorMargin;
+  }
+}
+
+/* mini */
+.ui.small.modal > .header:not(.ui) {
+  font-size: $modalMiniHeaderSize;
+}
+
+/* Tiny Modal Width */
+@media only screen and (max-width : $modalLargestMobileScreen) {
+  .ui.tiny.modal {
+    width: $modalTinyMobileWidth;
+    margin: $modalTinyMobileMargin;
+  }
+}
+@media only screen and (min-width : $modalTabletBreakpoint) {
+  .ui.tiny.modal {
+    width: $modalTinyTabletWidth;
+    margin: $modalTinyTabletMargin;
+  }
+}
+@media only screen and (min-width : $modalComputerBreakpoint) {
+  .ui.tiny.modal {
+    width: $modalTinyComputerWidth;
+    margin: $modalTinyComputerMargin;
+  }
+}
+@media only screen and (min-width : $modalLargeMonitorBreakpoint) {
+  .ui.tiny.modal {
+    width: $modalTinyLargeMonitorWidth;
+    margin: $modalTinyLargeMonitorMargin;
+  }
+}
+@media only screen and (min-width : $modalWidescreenMonitorBreakpoint) {
+  .ui.tiny.modal {
+    width: $modalTinyWidescreenMonitorWidth;
+    margin: $modalTinyWidescreenMonitorMargin;
+  }
+}
+
+/* Small */
+.ui.small.modal > .header:not(.ui) {
+  font-size: $modalSmallHeaderSize;
+}
+
+/* Small Modal Width */
+@media only screen and (max-width : $modalLargestMobileScreen) {
+  .ui.small.modal {
+    width: $modalSmallMobileWidth;
+    margin: $modalSmallMobileMargin;
+  }
+}
+@media only screen and (min-width : $modalTabletBreakpoint) {
+  .ui.small.modal {
+    width: $modalSmallTabletWidth;
+    margin: $modalSmallTabletMargin;
+  }
+}
+@media only screen and (min-width : $modalComputerBreakpoint) {
+  .ui.small.modal {
+    width: $modalSmallComputerWidth;
+    margin: $modalSmallComputerMargin;
+  }
+}
+@media only screen and (min-width : $modalLargeMonitorBreakpoint) {
+  .ui.small.modal {
+    width: $modalSmallLargeMonitorWidth;
+    margin: $modalSmallLargeMonitorMargin;
+  }
+}
+@media only screen and (min-width : $modalWidescreenMonitorBreakpoint) {
+  .ui.small.modal {
+    width: $modalSmallWidescreenMonitorWidth;
+    margin: $modalSmallWidescreenMonitorMargin;
+  }
+}
+
+/* Large Modal Width */
+.ui.large.modal > .header {
+  font-size: $modalLargeHeaderSize;
+}
+@media only screen and (max-width : $modalLargestMobileScreen) {
+  .ui.large.modal {
+    width: $modalLargeMobileWidth;
+    margin: $modalLargeMobileMargin;
+  }
+}
+@media only screen and (min-width : $modalTabletBreakpoint) {
+  .ui.large.modal {
+    width: $modalLargeTabletWidth;
+    margin: $modalLargeTabletMargin;
+  }
+}
+@media only screen and (min-width : $modalComputerBreakpoint) {
+  .ui.large.modal {
+    width: $modalLargeComputerWidth;
+    margin: $modalLargeComputerMargin;
+  }
+}
+@media only screen and (min-width : $modalLargeMonitorBreakpoint) {
+  .ui.large.modal {
+    width: $modalLargeLargeMonitorWidth;
+    margin: $modalLargeLargeMonitorMargin;
+  }
+}
+@media only screen and (min-width : $modalWidescreenMonitorBreakpoint) {
+  .ui.large.modal {
+    width: $modalLargeWidescreenMonitorWidth;
+    margin: $modalLargeWidescreenMonitorMargin;
+  }
+}
+

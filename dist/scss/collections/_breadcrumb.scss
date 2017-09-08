@@ -1,0 +1,115 @@
+/*!
+ * # Shengnian UI - Breadcrumb
+ * http://github.com/shengnian/shengnian-ui
+ *
+ *
+ * Released under the MIT license
+ * http://opensource.org/licenses/MIT
+ *
+ */
+
+
+/*******************************
+           Breadcrumb
+*******************************/
+
+.ui.breadcrumb {
+  line-height: 1;
+  display: $breadcrumbDisplay;
+  margin: $breadcrumbVerticalMargin 0;
+  vertical-align: $breadcrumbVerticalAlign;
+}
+.ui.breadcrumb:first-child {
+  margin-top: 0;
+}
+.ui.breadcrumb:last-child {
+  margin-bottom: 0;
+}
+
+
+
+/*******************************
+          Content
+*******************************/
+
+/* Divider */
+.ui.breadcrumb .divider {
+  display: inline-block;
+  opacity: $breadcrumbDividerOpacity;
+  margin: 0 $breadcrumbDividerSpacing 0;
+
+  font-size: $breadcrumbDividerSize;
+  color: $breadcrumbDividerColor;
+  vertical-align: $breadcrumbDividerVerticalAlign;
+}
+
+/* Link */
+.ui.breadcrumb a {
+  color: $breadcrumbLinkColor;
+}
+.ui.breadcrumb a:hover {
+  color: $breadcrumbLinkHoverColor;
+}
+/* Icon Divider */
+.ui.breadcrumb .icon.divider {
+  font-size: $breadcrumbIconDividerSize;
+  vertical-align: $breadcrumbIconDividerVerticalAlign;
+}
+
+/* Section */
+.ui.breadcrumb a.section {
+  cursor: pointer;
+}
+.ui.breadcrumb .section {
+  display: inline-block;
+  margin: $breadcrumbSectionMargin;
+  padding: $breadcrumbSectionPadding;
+}
+
+/* Loose Coupling */
+.ui.breadcrumb.segment {
+  display: inline-block;
+  padding: $breadcrumbSegmentPadding;
+}
+
+
+
+/*******************************
+            States
+*******************************/
+
+.ui.breadcrumb .active.section {
+  font-weight: $breadcrumbActiveFontWeight;
+}
+
+
+/*******************************
+           Variations
+*******************************/
+
+.ui.mini.breadcrumb {
+  font-size: $breadcrumbMini;
+}
+.ui.tiny.breadcrumb {
+  font-size: $breadcrumbTiny;
+}
+.ui.small.breadcrumb {
+  font-size: $breadcrumbSmall;
+}
+.ui.breadcrumb {
+  font-size: $breadcrumbMedium;
+}
+.ui.large.breadcrumb {
+  font-size: $breadcrumbLarge;
+}
+.ui.big.breadcrumb {
+  font-size: $breadcrumbBig;
+}
+.ui.huge.breadcrumb {
+  font-size: $breadcrumbHuge;
+}
+.ui.massive.breadcrumb {
+  font-size: $breadcrumbMassive;
+}
+
+

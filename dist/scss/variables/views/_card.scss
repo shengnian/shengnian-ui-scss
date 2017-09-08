@@ -1,0 +1,832 @@
+$cardFontName: $fontName;
+$cardFontSmoothing: $fontSmoothing;
+$cardHeaderFont: $headerFont;
+$cardPageFont: $pageFont;
+$cardGoogleFontName: $googleFontName;
+$cardImportGoogleFonts: $importGoogleFonts;
+$cardGoogleFontSizes: $googleFontSizes;
+$cardGoogleSubset: $googleSubset;
+$cardGoogleProtocol: $googleProtocol;
+$cardGoogleFontRequest: $googleFontRequest;
+$cardEmSize: $emSize;
+$cardFontSize: $fontSize;
+$cardRelativeBorderRadius: $relativeBorderRadius;
+$cardAbsoluteBorderRadius: $absoluteBorderRadius;
+$cardDefaultBorderRadius: $defaultBorderRadius;
+$cardPrimaryColor: $primaryColor;
+$cardSecondaryColor: $secondaryColor;
+$cardLightPrimaryColor: $lightPrimaryColor;
+$cardLightSecondaryColor: $lightSecondaryColor;
+$cardHeaderFontWeight: $headerFontWeight;
+$cardHeaderLineHeight: $headerLineHeight;
+$cardH1: $h1;
+$cardH2: $h2;
+$cardH3: $h3;
+$cardH4: $h4;
+$cardH5: $h5;
+$cardInputBackground: $inputBackground;
+$cardInputVerticalPadding: $inputVerticalPadding;
+$cardInputHorizontalPadding: $inputHorizontalPadding;
+$cardInputPadding: $inputPadding;
+$cardInputColor: $inputColor;
+$cardInputPlaceholderColor: $inputPlaceholderColor;
+$cardInputPlaceholderFocusColor: $inputPlaceholderFocusColor;
+$cardInputLineHeight: $inputLineHeight;
+$cardFocusedFormBorderColor: $focusedFormBorderColor;
+$cardFocusedFormMutedBorderColor: $focusedFormMutedBorderColor;
+$cardMiniSize: $miniSize;
+$cardTinySize: $tinySize;
+$cardSmallSize: $smallSize;
+$cardMediumSize: $mediumSize;
+$cardLargeSize: $largeSize;
+$cardBigSize: $bigSize;
+$cardHugeSize: $hugeSize;
+$cardMassiveSize: $massiveSize;
+$cardPageBackground: $pageBackground;
+$cardPageOverflowX: $pageOverflowX;
+$cardLineHeight: $lineHeight;
+$cardTextColor: $textColor;
+$cardParagraphMargin: $paragraphMargin;
+$cardParagraphLineHeight: $paragraphLineHeight;
+$cardLinkColor: $linkColor;
+$cardLinkUnderline: $linkUnderline;
+$cardLinkHoverColor: $linkHoverColor;
+$cardLinkHoverUnderline: $linkHoverUnderline;
+$cardUseCustomScrollbars: $useCustomScrollbars;
+$cardCustomScrollbarWidth: $customScrollbarWidth;
+$cardTrackBackground: $trackBackground;
+$cardTrackBorderRadius: $trackBorderRadius;
+$cardThumbBorderRadius: $thumbBorderRadius;
+$cardThumbBackground: $thumbBackground;
+$cardThumbTransition: $thumbTransition;
+$cardThumbInactiveBackground: $thumbInactiveBackground;
+$cardThumbHoverBackground: $thumbHoverBackground;
+$cardTrackInvertedBackground: $trackInvertedBackground;
+$cardThumbInvertedBackground: $thumbInvertedBackground;
+$cardThumbInvertedInactiveBackground: $thumbInvertedInactiveBackground;
+$cardThumbInvertedHoverBackground: $thumbInvertedHoverBackground;
+$cardHighlightBackground: $highlightBackground;
+$cardHighlightColor: $highlightColor;
+$cardInputHighlightBackground: $inputHighlightBackground;
+$cardInputHighlightColor: $inputHighlightColor;
+$cardLoaderSize: $loaderSize;
+$cardLoaderSpeed: $loaderSpeed;
+$cardLoaderLineWidth: $loaderLineWidth;
+$cardLoaderFillColor: $loaderFillColor;
+$cardLoaderLineColor: $loaderLineColor;
+$cardInvertedLoaderFillColor: $invertedLoaderFillColor;
+$cardInvertedLoaderLineColor: $invertedLoaderLineColor;
+$cardColumnCount: $columnCount;
+$cardDefaultDuration: $defaultDuration;
+$cardDefaultEasing: $defaultEasing;
+$cardMobileBreakpoint: $mobileBreakpoint;
+$cardTabletBreakpoint: $tabletBreakpoint;
+$cardComputerBreakpoint: $computerBreakpoint;
+$cardLargeMonitorBreakpoint: $largeMonitorBreakpoint;
+$cardWidescreenMonitorBreakpoint: $widescreenMonitorBreakpoint;
+$cardRed: $red;
+$cardOrange: $orange;
+$cardYellow: $yellow;
+$cardOlive: $olive;
+$cardGreen: $green;
+$cardTeal: $teal;
+$cardBlue: $blue;
+$cardViolet: $violet;
+$cardPurple: $purple;
+$cardPink: $pink;
+$cardBrown: $brown;
+$cardGrey: $grey;
+$cardBlack: $black;
+$cardLightRed: $lightRed;
+$cardLightOrange: $lightOrange;
+$cardLightYellow: $lightYellow;
+$cardLightOlive: $lightOlive;
+$cardLightGreen: $lightGreen;
+$cardLightTeal: $lightTeal;
+$cardLightBlue: $lightBlue;
+$cardLightViolet: $lightViolet;
+$cardLightPurple: $lightPurple;
+$cardLightPink: $lightPink;
+$cardLightBrown: $lightBrown;
+$cardLightGrey: $lightGrey;
+$cardLightBlack: $lightBlack;
+$cardFullBlack: $fullBlack;
+$cardOffWhite: $offWhite;
+$cardDarkWhite: $darkWhite;
+$cardMidWhite: $midWhite;
+$cardWhite: $white;
+$cardRedBackground: $redBackground;
+$cardOrangeBackground: $orangeBackground;
+$cardYellowBackground: $yellowBackground;
+$cardOliveBackground: $oliveBackground;
+$cardGreenBackground: $greenBackground;
+$cardTealBackground: $tealBackground;
+$cardBlueBackground: $blueBackground;
+$cardVioletBackground: $violetBackground;
+$cardPurpleBackground: $purpleBackground;
+$cardPinkBackground: $pinkBackground;
+$cardBrownBackground: $brownBackground;
+$cardRedHeaderColor: $redHeaderColor;
+$cardOliveHeaderColor: $oliveHeaderColor;
+$cardGreenHeaderColor: $greenHeaderColor;
+$cardYellowHeaderColor: $yellowHeaderColor;
+$cardBlueHeaderColor: $blueHeaderColor;
+$cardTealHeaderColor: $tealHeaderColor;
+$cardPinkHeaderColor: $pinkHeaderColor;
+$cardVioletHeaderColor: $violetHeaderColor;
+$cardPurpleHeaderColor: $purpleHeaderColor;
+$cardOrangeHeaderColor: $orangeHeaderColor;
+$cardBrownHeaderColor: $brownHeaderColor;
+$cardRedTextColor: $redTextColor;
+$cardOrangeTextColor: $orangeTextColor;
+$cardYellowTextColor: $yellowTextColor;
+$cardOliveTextColor: $oliveTextColor;
+$cardGreenTextColor: $greenTextColor;
+$cardTealTextColor: $tealTextColor;
+$cardBlueTextColor: $blueTextColor;
+$cardVioletTextColor: $violetTextColor;
+$cardPurpleTextColor: $purpleTextColor;
+$cardPinkTextColor: $pinkTextColor;
+$cardBrownTextColor: $brownTextColor;
+$cardRedBorderColor: $redBorderColor;
+$cardOrangeBorderColor: $orangeBorderColor;
+$cardYellowBorderColor: $yellowBorderColor;
+$cardOliveBorderColor: $oliveBorderColor;
+$cardGreenBorderColor: $greenBorderColor;
+$cardTealBorderColor: $tealBorderColor;
+$cardBlueBorderColor: $blueBorderColor;
+$cardVioletBorderColor: $violetBorderColor;
+$cardPurpleBorderColor: $purpleBorderColor;
+$cardPinkBorderColor: $pinkBorderColor;
+$cardBrownBorderColor: $brownBorderColor;
+$cardSubtleTransparentBlack: $subtleTransparentBlack;
+$cardTransparentBlack: $transparentBlack;
+$cardStrongTransparentBlack: $strongTransparentBlack;
+$cardVeryStrongTransparentBlack: $veryStrongTransparentBlack;
+$cardSubtleTransparentWhite: $subtleTransparentWhite;
+$cardTransparentWhite: $transparentWhite;
+$cardStrongTransparentWhite: $strongTransparentWhite;
+$cardSubtleGradient: $subtleGradient;
+$cardSubtleShadow: $subtleShadow;
+$cardFloatingShadow: $floatingShadow;
+$cardPositiveColor: $positiveColor;
+$cardPositiveBackgroundColor: $positiveBackgroundColor;
+$cardPositiveBorderColor: $positiveBorderColor;
+$cardPositiveHeaderColor: $positiveHeaderColor;
+$cardPositiveTextColor: $positiveTextColor;
+$cardNegativeColor: $negativeColor;
+$cardNegativeBackgroundColor: $negativeBackgroundColor;
+$cardNegativeBorderColor: $negativeBorderColor;
+$cardNegativeHeaderColor: $negativeHeaderColor;
+$cardNegativeTextColor: $negativeTextColor;
+$cardInfoColor: $infoColor;
+$cardInfoBackgroundColor: $infoBackgroundColor;
+$cardInfoBorderColor: $infoBorderColor;
+$cardInfoHeaderColor: $infoHeaderColor;
+$cardInfoTextColor: $infoTextColor;
+$cardWarningColor: $warningColor;
+$cardWarningBorderColor: $warningBorderColor;
+$cardWarningBackgroundColor: $warningBackgroundColor;
+$cardWarningHeaderColor: $warningHeaderColor;
+$cardWarningTextColor: $warningTextColor;
+$cardImagePath: $imagePath;
+$cardFontPath: $fontPath;
+$cardMini: $mini;
+$cardTiny: $tiny;
+$cardSmall: $small;
+$cardMedium: $medium;
+$cardLarge: $large;
+$cardBig: $big;
+$cardHuge: $huge;
+$cardMassive: $massive;
+$cardRelativeMini: $relativeMini;
+$cardRelativeTiny: $relativeTiny;
+$cardRelativeSmall: $relativeSmall;
+$cardRelativeMedium: $relativeMedium;
+$cardRelativeLarge: $relativeLarge;
+$cardRelativeBig: $relativeBig;
+$cardRelativeHuge: $relativeHuge;
+$cardRelativeMassive: $relativeMassive;
+$cardAbsoluteMini: $absoluteMini;
+$cardAbsoluteTiny: $absoluteTiny;
+$cardAbsoluteSmall: $absoluteSmall;
+$cardAbsoluteMedium: $absoluteMedium;
+$cardAbsoluteLarge: $absoluteLarge;
+$cardAbsoluteBig: $absoluteBig;
+$cardAbsoluteHuge: $absoluteHuge;
+$cardAbsoluteMassive: $absoluteMassive;
+$cardIconWidth: $iconWidth;
+$cardDarkTextColor: $darkTextColor;
+$cardMutedTextColor: $mutedTextColor;
+$cardLightTextColor: $lightTextColor;
+$cardUnselectedTextColor: $unselectedTextColor;
+$cardHoveredTextColor: $hoveredTextColor;
+$cardPressedTextColor: $pressedTextColor;
+$cardSelectedTextColor: $selectedTextColor;
+$cardDisabledTextColor: $disabledTextColor;
+$cardInvertedTextColor: $invertedTextColor;
+$cardInvertedMutedTextColor: $invertedMutedTextColor;
+$cardInvertedLightTextColor: $invertedLightTextColor;
+$cardInvertedUnselectedTextColor: $invertedUnselectedTextColor;
+$cardInvertedHoveredTextColor: $invertedHoveredTextColor;
+$cardInvertedPressedTextColor: $invertedPressedTextColor;
+$cardInvertedSelectedTextColor: $invertedSelectedTextColor;
+$cardInvertedDisabledTextColor: $invertedDisabledTextColor;
+$cardFacebookColor: $facebookColor;
+$cardTwitterColor: $twitterColor;
+$cardGooglePlusColor: $googlePlusColor;
+$cardLinkedInColor: $linkedInColor;
+$cardYoutubeColor: $youtubeColor;
+$cardPinterestColor: $pinterestColor;
+$cardVkColor: $vkColor;
+$cardInstagramColor: $instagramColor;
+$cardCircularRadius: $circularRadius;
+$cardBorderColor: $borderColor;
+$cardStrongBorderColor: $strongBorderColor;
+$cardInternalBorderColor: $internalBorderColor;
+$cardSelectedBorderColor: $selectedBorderColor;
+$cardStrongSelectedBorderColor: $strongSelectedBorderColor;
+$cardDisabledBorderColor: $disabledBorderColor;
+$cardSolidInternalBorderColor: $solidInternalBorderColor;
+$cardSolidBorderColor: $solidBorderColor;
+$cardSolidSelectedBorderColor: $solidSelectedBorderColor;
+$cardWhiteBorderColor: $whiteBorderColor;
+$cardSelectedWhiteBorderColor: $selectedWhiteBorderColor;
+$cardSolidWhiteBorderColor: $solidWhiteBorderColor;
+$cardSelectedSolidWhiteBorderColor: $selectedSolidWhiteBorderColor;
+$cardLoaderOffset: $loaderOffset;
+$cardLoaderMargin: $loaderMargin;
+$cardScrollbarWidth: $scrollbarWidth;
+$cardGlyphWidth: $glyphWidth;
+$cardLineHeightOffset: $lineHeightOffset;
+$cardHeaderLineHeightOffset: $headerLineHeightOffset;
+$cardHeaderTopMargin: $headerTopMargin;
+$cardHeaderBottomMargin: $headerBottomMargin;
+$cardHeaderMargin: $headerMargin;
+$cardPageMinWidth: $pageMinWidth;
+$cardSuccessBackgroundColor: $successBackgroundColor;
+$cardSuccessColor: $successColor;
+$cardSuccessBorderColor: $successBorderColor;
+$cardSuccessHeaderColor: $successHeaderColor;
+$cardSuccessTextColor: $successTextColor;
+$cardErrorBackgroundColor: $errorBackgroundColor;
+$cardErrorColor: $errorColor;
+$cardErrorBorderColor: $errorBorderColor;
+$cardErrorHeaderColor: $errorHeaderColor;
+$cardErrorTextColor: $errorTextColor;
+$cardLargestMobileScreen: $largestMobileScreen;
+$cardLargestTabletScreen: $largestTabletScreen;
+$cardLargestSmallMonitor: $largestSmallMonitor;
+$cardLargestLargeMonitor: $largestLargeMonitor;
+$card1px: $_1px;
+$card2px: $_2px;
+$card3px: $_3px;
+$card4px: $_4px;
+$card5px: $_5px;
+$card6px: $_6px;
+$card7px: $_7px;
+$card8px: $_8px;
+$card9px: $_9px;
+$card10px: $_10px;
+$card11px: $_11px;
+$card12px: $_12px;
+$card13px: $_13px;
+$card14px: $_14px;
+$card15px: $_15px;
+$card16px: $_16px;
+$card17px: $_17px;
+$card18px: $_18px;
+$card19px: $_19px;
+$card20px: $_20px;
+$card21px: $_21px;
+$card22px: $_22px;
+$card23px: $_23px;
+$card24px: $_24px;
+$card25px: $_25px;
+$card26px: $_26px;
+$card27px: $_27px;
+$card28px: $_28px;
+$card29px: $_29px;
+$card30px: $_30px;
+$card31px: $_31px;
+$card32px: $_32px;
+$card33px: $_33px;
+$card34px: $_34px;
+$card35px: $_35px;
+$card36px: $_36px;
+$card37px: $_37px;
+$card38px: $_38px;
+$card39px: $_39px;
+$card40px: $_40px;
+$card41px: $_41px;
+$card42px: $_42px;
+$card43px: $_43px;
+$card44px: $_44px;
+$card45px: $_45px;
+$card46px: $_46px;
+$card47px: $_47px;
+$card48px: $_48px;
+$card49px: $_49px;
+$card50px: $_50px;
+$card51px: $_51px;
+$card52px: $_52px;
+$card53px: $_53px;
+$card54px: $_54px;
+$card55px: $_55px;
+$card56px: $_56px;
+$card57px: $_57px;
+$card58px: $_58px;
+$card59px: $_59px;
+$card60px: $_60px;
+$card61px: $_61px;
+$card62px: $_62px;
+$card63px: $_63px;
+$card64px: $_64px;
+$cardRelative1px: $relative1px;
+$cardRelative2px: $relative2px;
+$cardRelative3px: $relative3px;
+$cardRelative4px: $relative4px;
+$cardRelative5px: $relative5px;
+$cardRelative6px: $relative6px;
+$cardRelative7px: $relative7px;
+$cardRelative8px: $relative8px;
+$cardRelative9px: $relative9px;
+$cardRelative10px: $relative10px;
+$cardRelative11px: $relative11px;
+$cardRelative12px: $relative12px;
+$cardRelative13px: $relative13px;
+$cardRelative14px: $relative14px;
+$cardRelative15px: $relative15px;
+$cardRelative16px: $relative16px;
+$cardRelative17px: $relative17px;
+$cardRelative18px: $relative18px;
+$cardRelative19px: $relative19px;
+$cardRelative20px: $relative20px;
+$cardRelative21px: $relative21px;
+$cardRelative22px: $relative22px;
+$cardRelative23px: $relative23px;
+$cardRelative24px: $relative24px;
+$cardRelative25px: $relative25px;
+$cardRelative26px: $relative26px;
+$cardRelative27px: $relative27px;
+$cardRelative28px: $relative28px;
+$cardRelative29px: $relative29px;
+$cardRelative30px: $relative30px;
+$cardRelative31px: $relative31px;
+$cardRelative32px: $relative32px;
+$cardRelative33px: $relative33px;
+$cardRelative34px: $relative34px;
+$cardRelative35px: $relative35px;
+$cardRelative36px: $relative36px;
+$cardRelative37px: $relative37px;
+$cardRelative38px: $relative38px;
+$cardRelative39px: $relative39px;
+$cardRelative40px: $relative40px;
+$cardRelative41px: $relative41px;
+$cardRelative42px: $relative42px;
+$cardRelative43px: $relative43px;
+$cardRelative44px: $relative44px;
+$cardRelative45px: $relative45px;
+$cardRelative46px: $relative46px;
+$cardRelative47px: $relative47px;
+$cardRelative48px: $relative48px;
+$cardRelative49px: $relative49px;
+$cardRelative50px: $relative50px;
+$cardRelative51px: $relative51px;
+$cardRelative52px: $relative52px;
+$cardRelative53px: $relative53px;
+$cardRelative54px: $relative54px;
+$cardRelative55px: $relative55px;
+$cardRelative56px: $relative56px;
+$cardRelative57px: $relative57px;
+$cardRelative58px: $relative58px;
+$cardRelative59px: $relative59px;
+$cardRelative60px: $relative60px;
+$cardRelative61px: $relative61px;
+$cardRelative62px: $relative62px;
+$cardRelative63px: $relative63px;
+$cardRelative64px: $relative64px;
+$cardOneWide: $oneWide;
+$cardTwoWide: $twoWide;
+$cardThreeWide: $threeWide;
+$cardFourWide: $fourWide;
+$cardFiveWide: $fiveWide;
+$cardSixWide: $sixWide;
+$cardSevenWide: $sevenWide;
+$cardEightWide: $eightWide;
+$cardNineWide: $nineWide;
+$cardTenWide: $tenWide;
+$cardElevenWide: $elevenWide;
+$cardTwelveWide: $twelveWide;
+$cardThirteenWide: $thirteenWide;
+$cardFourteenWide: $fourteenWide;
+$cardFifteenWide: $fifteenWide;
+$cardSixteenWide: $sixteenWide;
+$cardOneColumn: $oneColumn;
+$cardTwoColumn: $twoColumn;
+$cardThreeColumn: $threeColumn;
+$cardFourColumn: $fourColumn;
+$cardFiveColumn: $fiveColumn;
+$cardSixColumn: $sixColumn;
+$cardSevenColumn: $sevenColumn;
+$cardEightColumn: $eightColumn;
+$cardNineColumn: $nineColumn;
+$cardTenColumn: $tenColumn;
+$cardElevenColumn: $elevenColumn;
+$cardTwelveColumn: $twelveColumn;
+$cardThirteenColumn: $thirteenColumn;
+$cardFourteenColumn: $fourteenColumn;
+$cardFifteenColumn: $fifteenColumn;
+$cardSixteenColumn: $sixteenColumn;
+$cardDisabledOpacity: $disabledOpacity;
+$cardFloatingShadowHover: $floatingShadowHover;
+$cardPrimaryColorHover: $primaryColorHover;
+$cardSecondaryColorHover: $secondaryColorHover;
+$cardRedHover: $redHover;
+$cardOrangeHover: $orangeHover;
+$cardYellowHover: $yellowHover;
+$cardOliveHover: $oliveHover;
+$cardGreenHover: $greenHover;
+$cardTealHover: $tealHover;
+$cardBlueHover: $blueHover;
+$cardVioletHover: $violetHover;
+$cardPurpleHover: $purpleHover;
+$cardPinkHover: $pinkHover;
+$cardBrownHover: $brownHover;
+$cardLightRedHover: $lightRedHover;
+$cardLightOrangeHover: $lightOrangeHover;
+$cardLightYellowHover: $lightYellowHover;
+$cardLightOliveHover: $lightOliveHover;
+$cardLightGreenHover: $lightGreenHover;
+$cardLightTealHover: $lightTealHover;
+$cardLightBlueHover: $lightBlueHover;
+$cardLightVioletHover: $lightVioletHover;
+$cardLightPurpleHover: $lightPurpleHover;
+$cardLightPinkHover: $lightPinkHover;
+$cardLightBrownHover: $lightBrownHover;
+$cardLightGreyHover: $lightGreyHover;
+$cardLightBlackHover: $lightBlackHover;
+$cardPositiveColorHover: $positiveColorHover;
+$cardNegativeColorHover: $negativeColorHover;
+$cardFacebookHoverColor: $facebookHoverColor;
+$cardTwitterHoverColor: $twitterHoverColor;
+$cardGooglePlusHoverColor: $googlePlusHoverColor;
+$cardLinkedInHoverColor: $linkedInHoverColor;
+$cardYoutubeHoverColor: $youtubeHoverColor;
+$cardInstagramHoverColor: $instagramHoverColor;
+$cardPinterestHoverColor: $pinterestHoverColor;
+$cardVkHoverColor: $vkHoverColor;
+$cardFullBlackHover: $fullBlackHover;
+$cardBlackHover: $blackHover;
+$cardGreyHover: $greyHover;
+$cardWhiteHover: $whiteHover;
+$cardOffWhiteHover: $offWhiteHover;
+$cardDarkWhiteHover: $darkWhiteHover;
+$cardPrimaryColorFocus: $primaryColorFocus;
+$cardSecondaryColorFocus: $secondaryColorFocus;
+$cardRedFocus: $redFocus;
+$cardOrangeFocus: $orangeFocus;
+$cardYellowFocus: $yellowFocus;
+$cardOliveFocus: $oliveFocus;
+$cardGreenFocus: $greenFocus;
+$cardTealFocus: $tealFocus;
+$cardBlueFocus: $blueFocus;
+$cardVioletFocus: $violetFocus;
+$cardPurpleFocus: $purpleFocus;
+$cardPinkFocus: $pinkFocus;
+$cardBrownFocus: $brownFocus;
+$cardLightRedFocus: $lightRedFocus;
+$cardLightOrangeFocus: $lightOrangeFocus;
+$cardLightYellowFocus: $lightYellowFocus;
+$cardLightOliveFocus: $lightOliveFocus;
+$cardLightGreenFocus: $lightGreenFocus;
+$cardLightTealFocus: $lightTealFocus;
+$cardLightBlueFocus: $lightBlueFocus;
+$cardLightVioletFocus: $lightVioletFocus;
+$cardLightPurpleFocus: $lightPurpleFocus;
+$cardLightPinkFocus: $lightPinkFocus;
+$cardLightBrownFocus: $lightBrownFocus;
+$cardLightGreyFocus: $lightGreyFocus;
+$cardLightBlackFocus: $lightBlackFocus;
+$cardPositiveColorFocus: $positiveColorFocus;
+$cardNegativeColorFocus: $negativeColorFocus;
+$cardFacebookFocusColor: $facebookFocusColor;
+$cardTwitterFocusColor: $twitterFocusColor;
+$cardGooglePlusFocusColor: $googlePlusFocusColor;
+$cardLinkedInFocusColor: $linkedInFocusColor;
+$cardYoutubeFocusColor: $youtubeFocusColor;
+$cardInstagramFocusColor: $instagramFocusColor;
+$cardPinterestFocusColor: $pinterestFocusColor;
+$cardVkFocusColor: $vkFocusColor;
+$cardFullBlackFocus: $fullBlackFocus;
+$cardBlackFocus: $blackFocus;
+$cardGreyFocus: $greyFocus;
+$cardWhiteFocus: $whiteFocus;
+$cardOffWhiteFocus: $offWhiteFocus;
+$cardDarkWhiteFocus: $darkWhiteFocus;
+$cardPrimaryColorDown: $primaryColorDown;
+$cardSecondaryColorDown: $secondaryColorDown;
+$cardRedDown: $redDown;
+$cardOrangeDown: $orangeDown;
+$cardYellowDown: $yellowDown;
+$cardOliveDown: $oliveDown;
+$cardGreenDown: $greenDown;
+$cardTealDown: $tealDown;
+$cardBlueDown: $blueDown;
+$cardVioletDown: $violetDown;
+$cardPurpleDown: $purpleDown;
+$cardPinkDown: $pinkDown;
+$cardBrownDown: $brownDown;
+$cardLightRedDown: $lightRedDown;
+$cardLightOrangeDown: $lightOrangeDown;
+$cardLightYellowDown: $lightYellowDown;
+$cardLightOliveDown: $lightOliveDown;
+$cardLightGreenDown: $lightGreenDown;
+$cardLightTealDown: $lightTealDown;
+$cardLightBlueDown: $lightBlueDown;
+$cardLightVioletDown: $lightVioletDown;
+$cardLightPurpleDown: $lightPurpleDown;
+$cardLightPinkDown: $lightPinkDown;
+$cardLightBrownDown: $lightBrownDown;
+$cardLightGreyDown: $lightGreyDown;
+$cardLightBlackDown: $lightBlackDown;
+$cardPositiveColorDown: $positiveColorDown;
+$cardNegativeColorDown: $negativeColorDown;
+$cardFacebookDownColor: $facebookDownColor;
+$cardTwitterDownColor: $twitterDownColor;
+$cardGooglePlusDownColor: $googlePlusDownColor;
+$cardLinkedInDownColor: $linkedInDownColor;
+$cardYoutubeDownColor: $youtubeDownColor;
+$cardInstagramDownColor: $instagramDownColor;
+$cardPinterestDownColor: $pinterestDownColor;
+$cardVkDownColor: $vkDownColor;
+$cardFullBlackDown: $fullBlackDown;
+$cardBlackDown: $blackDown;
+$cardGreyDown: $greyDown;
+$cardWhiteDown: $whiteDown;
+$cardOffWhiteDown: $offWhiteDown;
+$cardDarkWhiteDown: $darkWhiteDown;
+$cardPrimaryColorActive: $primaryColorActive;
+$cardSecondaryColorActive: $secondaryColorActive;
+$cardRedActive: $redActive;
+$cardOrangeActive: $orangeActive;
+$cardYellowActive: $yellowActive;
+$cardOliveActive: $oliveActive;
+$cardGreenActive: $greenActive;
+$cardTealActive: $tealActive;
+$cardBlueActive: $blueActive;
+$cardVioletActive: $violetActive;
+$cardPurpleActive: $purpleActive;
+$cardPinkActive: $pinkActive;
+$cardBrownActive: $brownActive;
+$cardLightRedActive: $lightRedActive;
+$cardLightOrangeActive: $lightOrangeActive;
+$cardLightYellowActive: $lightYellowActive;
+$cardLightOliveActive: $lightOliveActive;
+$cardLightGreenActive: $lightGreenActive;
+$cardLightTealActive: $lightTealActive;
+$cardLightBlueActive: $lightBlueActive;
+$cardLightVioletActive: $lightVioletActive;
+$cardLightPurpleActive: $lightPurpleActive;
+$cardLightPinkActive: $lightPinkActive;
+$cardLightBrownActive: $lightBrownActive;
+$cardLightGreyActive: $lightGreyActive;
+$cardLightBlackActive: $lightBlackActive;
+$cardPositiveColorActive: $positiveColorActive;
+$cardNegativeColorActive: $negativeColorActive;
+$cardFacebookActiveColor: $facebookActiveColor;
+$cardTwitterActiveColor: $twitterActiveColor;
+$cardGooglePlusActiveColor: $googlePlusActiveColor;
+$cardLinkedInActiveColor: $linkedInActiveColor;
+$cardYoutubeActiveColor: $youtubeActiveColor;
+$cardInstagramActiveColor: $instagramActiveColor;
+$cardPinterestActiveColor: $pinterestActiveColor;
+$cardVkActiveColor: $vkActiveColor;
+$cardFullBlackActive: $fullBlackActive;
+$cardBlackActive: $blackActive;
+$cardGreyActive: $greyActive;
+$cardWhiteActive: $whiteActive;
+$cardOffWhiteActive: $offWhiteActive;
+$cardDarkWhiteActive: $darkWhiteActive;
+
+
+/*******************************
+             Card
+*******************************/
+
+/*-------------------
+         View
+--------------------*/
+
+/* Shadow */
+$cardShadowDistance: 1px;
+$cardShadowBoxShadow: 0 $cardShadowDistance 3px 0 $cardSolidBorderColor;
+
+/* Card */
+$cardFontFamily: $cardPageFont;
+$cardDisplay: flex;
+$cardBackground: $cardWhite;
+$cardBorderRadius: $cardDefaultBorderRadius;
+$cardMargin: 1em 0;
+$cardMinHeight: 0;
+$cardPadding: 0;
+$cardWidth: 290px;
+$cardBorderWidth: 1px;
+$cardBorderShadow: 0 0 0 $cardBorderWidth $cardSolidBorderColor;
+$cardBoxShadow:
+  $cardShadowBoxShadow,
+  $cardBorderShadow
+;
+$cardBorder: none;
+$cardZIndex: '';
+$cardTransition:
+  box-shadow $cardDefaultDuration $cardDefaultEasing,
+  transform $cardDefaultDuration $cardDefaultEasing
+;
+
+/* Card Group */
+$cardHorizontalSpacing: 1em;
+$cardRowSpacing: 1.75em;
+
+$cardGroupMargin: -($cardRowSpacing / 2) -($cardHorizontalSpacing / 2);
+$cardGroupDisplay: flex;
+
+$cardGroupCardFloat: none;
+$cardGroupCardDisplay: flex;
+$cardGroupCardMargin: ($cardRowSpacing / 2) ($cardHorizontalSpacing / 2);
+
+/* Consecutive Cards */
+$cardConsecutiveGroupDistance: ($cardRowSpacing / 2);
+
+/*-------------------
+       Content
+--------------------*/
+
+
+/* Image */
+$cardImageBackground: $cardTransparentBlack;
+$cardImagePadding: 0;
+$cardImageBorder: none;
+$cardImageBoxShadow: none;
+$cardImageBorder: none;
+
+/* Content */
+$cardContentDivider: $cardBorderWidth solid $cardInternalBorderColor;
+$cardContentMargin: 0;
+$cardContentBackground: none;
+$cardContentPadding: 1em 1em;
+$cardContentFontSize: 1em;
+$cardContentBorderRadius: 0;
+$cardContentBoxShadow: none;
+$cardContentBorder: none;
+
+
+/* Header */
+$cardHeaderMargin: '';
+$cardHeaderFontWeight: bold;
+$cardHeaderFontSize: $cardRelativeBig;
+$cardHeaderLineHeightOffset: -($cardLineHeight - 1em) / 2;
+$cardHeaderColor: $cardDarkTextColor;
+
+/* Metadata */
+$cardMetaFontSize: $cardRelativeMedium;
+$cardMetaSpacing: 0.3em;
+$cardMetaColor: $cardLightTextColor;
+
+/* Icons */
+$cardActionOpacity: 0.75;
+$cardActionHoverOpacity: 1;
+$cardActionTransition: color $cardDefaultDuration $cardDefaultEasing;
+
+$cardStarColor: #FFB70A;
+$cardStarActiveColor: #FFE623;
+
+$cardLikeColor: #FF2733;
+$cardLikeActiveColor: #FF2733;
+
+/* Links */
+$cardContentLinkColor: '';
+$cardContentLinkHoverColor: '';
+$cardContentLinkTransition: color $cardDefaultDuration $cardDefaultEasing;
+
+$cardHeaderLinkColor: $cardHeaderColor;
+$cardHeaderLinkHoverColor: $cardLinkHoverColor;
+
+$cardMetaLinkColor: $cardLightTextColor;
+$cardMetaLinkHoverColor: $cardTextColor;
+
+/* Description */
+$cardDescriptionDistance: 0.5em;
+$cardDescriptionColor: rgba(0, 0, 0, 0.68);
+
+/* Content Image */
+$cardContentImageWidth: '';
+$cardContentImageVerticalAlign: middle;
+
+/* Avatar Image */
+$cardAvatarSize: 2em;
+$cardAvatarBorderRadius: $cardCircularRadius;
+
+/* Paragraph */
+$cardParagraphDistance: 0.5em;
+
+/* Dimmer */
+$cardDimmerZIndex: 10;
+$cardDimmerColor: '';
+
+/* Additional Content */
+$cardExtraDivider: 1px solid rgba(0, 0, 0, 0.05);
+$cardExtraBackground: none;
+$cardExtraPosition: static;
+$cardExtraWidth: auto;
+$cardExtraTop: 0;
+$cardExtraLeft: 0;
+$cardExtraMargin: 0 0;
+$cardExtraPadding: 0.75em 1em;
+$cardExtraBoxShadow: none;
+$cardExtraColor: $cardLightTextColor;
+$cardExtraTransition: color $cardDefaultDuration $cardDefaultEasing;
+
+/* Extra Links */
+$cardExtraLinkColor: $cardUnselectedTextColor;
+$cardExtraLinkHoverColor: $cardLinkHoverColor;
+
+/* Buttons */
+$cardButtonMargin: 0 -$cardBorderWidth;
+$cardButtonWidth: #{"calc(100% + " + ($cardBorderWidth * 2) + ")"};
+
+/*-------------------
+      Variations
+--------------------*/
+
+/* Link */
+$cardLinkHoverBackground: $cardWhite;
+$cardLinkHoverBorder: $cardBorder;
+$cardLinkHoverZIndex: 5;
+$cardLinkHoverRaiseDistance: 3px;
+$cardLinkHoverTransform: translateY(-$cardLinkHoverRaiseDistance);
+
+$cardShadowHoverBoxShadow: 0 $cardShadowDistance $cardLinkHoverRaiseDistance 0 $cardSolidSelectedBorderColor;
+$cardLinkHoverBoxShadow:
+  $cardShadowHoverBoxShadow,
+  $cardBorderShadow
+;
+
+
+/* Raised */
+$cardRaisedShadow:
+  $cardBorderShadow,
+  $cardFloatingShadow
+;
+$cardRaisedShadowHover:
+  $cardBorderShadow,
+  $cardFloatingShadowHover
+;
+
+/* Card Count */
+$cardWideCardSpacing: 1em;
+$cardCardSpacing: 0.75em;
+$cardSmallCardSpacing: 0.5em;
+
+$cardOneCardSpacing: 0;
+$cardTwoCardSpacing: $cardWideCardSpacing;
+$cardThreeCardSpacing: $cardWideCardSpacing;
+$cardFourCardSpacing: $cardCardSpacing;
+$cardFiveCardSpacing: $cardCardSpacing;
+$cardSixCardSpacing: $cardCardSpacing;
+$cardSevenCardSpacing: $cardSmallCardSpacing;
+$cardEightCardSpacing: $cardSmallCardSpacing;
+$cardNineCardSpacing: $cardSmallCardSpacing;
+$cardTenCardSpacing: $cardSmallCardSpacing;
+
+$cardOneCard: $cardOneColumn;
+$cardOneCardOffset: 0;
+$cardTwoCard: #{"calc(" + $cardTwoColumn + " - " + ($cardTwoCardSpacing * 2) + ")"};
+$cardTwoCardOffset: -$cardTwoCardSpacing;
+$cardThreeCard: #{"calc(" + $cardThreeColumn + " - " + ($cardThreeCardSpacing * 2) + ")"};
+$cardThreeCardOffset: -$cardThreeCardSpacing;
+$cardFourCard: #{"calc(" + $cardFourColumn + " - " + ($cardFourCardSpacing * 2) + ")"};
+$cardFourCardOffset: -$cardFourCardSpacing;
+$cardFiveCard: #{"calc(" + $cardFiveColumn + " - " + ($cardFiveCardSpacing * 2) + ")"};
+$cardFiveCardOffset: -$cardFiveCardSpacing;
+$cardSixCard: #{"calc(" + $cardSixColumn + " - " + ($cardSixCardSpacing * 2) + ")"};
+$cardSixCardOffset: -$cardSixCardSpacing;
+$cardSevenCard: #{"calc(" + $cardSevenColumn + " - " + ($cardSevenCardSpacing * 2) + ")"};
+$cardSevenCardOffset: -$cardSevenCardSpacing;
+$cardEightCard: #{"calc(" + $cardEightColumn + " - " + ($cardSevenCardSpacing * 2) + ")"};
+$cardEightCardOffset: -$cardSevenCardSpacing;
+$cardNineCard: #{"calc(" + $cardNineColumn + " - " + ($cardNineCardSpacing * 2) + ")"};
+$cardNineCardOffset: -$cardNineCardSpacing;
+$cardTenCard: #{"calc(" + $cardTenColumn + " - " + ($cardTenCardSpacing * 2) + ")"};
+$cardTenCardOffset: -$cardTenCardSpacing;
+
+/* Stackable */
+$cardStackableRowSpacing: 1em;
+$cardStackableCardSpacing: 1em;
+$cardStackableMargin: #{"calc(" + $cardOneColumn + " - " + ($cardStackableCardSpacing * 2) + ")"};
+
+/* Sizes */
+$cardMedium: 1em;
+
+/* Colored */
+$cardColoredShadowDistance: 2px;

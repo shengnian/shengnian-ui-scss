@@ -1,0 +1,836 @@
+$listFontName: $fontName;
+$listFontSmoothing: $fontSmoothing;
+$listHeaderFont: $headerFont;
+$listPageFont: $pageFont;
+$listGoogleFontName: $googleFontName;
+$listImportGoogleFonts: $importGoogleFonts;
+$listGoogleFontSizes: $googleFontSizes;
+$listGoogleSubset: $googleSubset;
+$listGoogleProtocol: $googleProtocol;
+$listGoogleFontRequest: $googleFontRequest;
+$listEmSize: $emSize;
+$listFontSize: $fontSize;
+$listRelativeBorderRadius: $relativeBorderRadius;
+$listAbsoluteBorderRadius: $absoluteBorderRadius;
+$listDefaultBorderRadius: $defaultBorderRadius;
+$listPrimaryColor: $primaryColor;
+$listSecondaryColor: $secondaryColor;
+$listLightPrimaryColor: $lightPrimaryColor;
+$listLightSecondaryColor: $lightSecondaryColor;
+$listHeaderFontWeight: $headerFontWeight;
+$listHeaderLineHeight: $headerLineHeight;
+$listH1: $h1;
+$listH2: $h2;
+$listH3: $h3;
+$listH4: $h4;
+$listH5: $h5;
+$listInputBackground: $inputBackground;
+$listInputVerticalPadding: $inputVerticalPadding;
+$listInputHorizontalPadding: $inputHorizontalPadding;
+$listInputPadding: $inputPadding;
+$listInputColor: $inputColor;
+$listInputPlaceholderColor: $inputPlaceholderColor;
+$listInputPlaceholderFocusColor: $inputPlaceholderFocusColor;
+$listInputLineHeight: $inputLineHeight;
+$listFocusedFormBorderColor: $focusedFormBorderColor;
+$listFocusedFormMutedBorderColor: $focusedFormMutedBorderColor;
+$listMiniSize: $miniSize;
+$listTinySize: $tinySize;
+$listSmallSize: $smallSize;
+$listMediumSize: $mediumSize;
+$listLargeSize: $largeSize;
+$listBigSize: $bigSize;
+$listHugeSize: $hugeSize;
+$listMassiveSize: $massiveSize;
+$listPageBackground: $pageBackground;
+$listPageOverflowX: $pageOverflowX;
+$listLineHeight: $lineHeight;
+$listTextColor: $textColor;
+$listParagraphMargin: $paragraphMargin;
+$listParagraphLineHeight: $paragraphLineHeight;
+$listLinkColor: $linkColor;
+$listLinkUnderline: $linkUnderline;
+$listLinkHoverColor: $linkHoverColor;
+$listLinkHoverUnderline: $linkHoverUnderline;
+$listUseCustomScrollbars: $useCustomScrollbars;
+$listCustomScrollbarWidth: $customScrollbarWidth;
+$listTrackBackground: $trackBackground;
+$listTrackBorderRadius: $trackBorderRadius;
+$listThumbBorderRadius: $thumbBorderRadius;
+$listThumbBackground: $thumbBackground;
+$listThumbTransition: $thumbTransition;
+$listThumbInactiveBackground: $thumbInactiveBackground;
+$listThumbHoverBackground: $thumbHoverBackground;
+$listTrackInvertedBackground: $trackInvertedBackground;
+$listThumbInvertedBackground: $thumbInvertedBackground;
+$listThumbInvertedInactiveBackground: $thumbInvertedInactiveBackground;
+$listThumbInvertedHoverBackground: $thumbInvertedHoverBackground;
+$listHighlightBackground: $highlightBackground;
+$listHighlightColor: $highlightColor;
+$listInputHighlightBackground: $inputHighlightBackground;
+$listInputHighlightColor: $inputHighlightColor;
+$listLoaderSize: $loaderSize;
+$listLoaderSpeed: $loaderSpeed;
+$listLoaderLineWidth: $loaderLineWidth;
+$listLoaderFillColor: $loaderFillColor;
+$listLoaderLineColor: $loaderLineColor;
+$listInvertedLoaderFillColor: $invertedLoaderFillColor;
+$listInvertedLoaderLineColor: $invertedLoaderLineColor;
+$listColumnCount: $columnCount;
+$listDefaultDuration: $defaultDuration;
+$listDefaultEasing: $defaultEasing;
+$listMobileBreakpoint: $mobileBreakpoint;
+$listTabletBreakpoint: $tabletBreakpoint;
+$listComputerBreakpoint: $computerBreakpoint;
+$listLargeMonitorBreakpoint: $largeMonitorBreakpoint;
+$listWidescreenMonitorBreakpoint: $widescreenMonitorBreakpoint;
+$listRed: $red;
+$listOrange: $orange;
+$listYellow: $yellow;
+$listOlive: $olive;
+$listGreen: $green;
+$listTeal: $teal;
+$listBlue: $blue;
+$listViolet: $violet;
+$listPurple: $purple;
+$listPink: $pink;
+$listBrown: $brown;
+$listGrey: $grey;
+$listBlack: $black;
+$listLightRed: $lightRed;
+$listLightOrange: $lightOrange;
+$listLightYellow: $lightYellow;
+$listLightOlive: $lightOlive;
+$listLightGreen: $lightGreen;
+$listLightTeal: $lightTeal;
+$listLightBlue: $lightBlue;
+$listLightViolet: $lightViolet;
+$listLightPurple: $lightPurple;
+$listLightPink: $lightPink;
+$listLightBrown: $lightBrown;
+$listLightGrey: $lightGrey;
+$listLightBlack: $lightBlack;
+$listFullBlack: $fullBlack;
+$listOffWhite: $offWhite;
+$listDarkWhite: $darkWhite;
+$listMidWhite: $midWhite;
+$listWhite: $white;
+$listRedBackground: $redBackground;
+$listOrangeBackground: $orangeBackground;
+$listYellowBackground: $yellowBackground;
+$listOliveBackground: $oliveBackground;
+$listGreenBackground: $greenBackground;
+$listTealBackground: $tealBackground;
+$listBlueBackground: $blueBackground;
+$listVioletBackground: $violetBackground;
+$listPurpleBackground: $purpleBackground;
+$listPinkBackground: $pinkBackground;
+$listBrownBackground: $brownBackground;
+$listRedHeaderColor: $redHeaderColor;
+$listOliveHeaderColor: $oliveHeaderColor;
+$listGreenHeaderColor: $greenHeaderColor;
+$listYellowHeaderColor: $yellowHeaderColor;
+$listBlueHeaderColor: $blueHeaderColor;
+$listTealHeaderColor: $tealHeaderColor;
+$listPinkHeaderColor: $pinkHeaderColor;
+$listVioletHeaderColor: $violetHeaderColor;
+$listPurpleHeaderColor: $purpleHeaderColor;
+$listOrangeHeaderColor: $orangeHeaderColor;
+$listBrownHeaderColor: $brownHeaderColor;
+$listRedTextColor: $redTextColor;
+$listOrangeTextColor: $orangeTextColor;
+$listYellowTextColor: $yellowTextColor;
+$listOliveTextColor: $oliveTextColor;
+$listGreenTextColor: $greenTextColor;
+$listTealTextColor: $tealTextColor;
+$listBlueTextColor: $blueTextColor;
+$listVioletTextColor: $violetTextColor;
+$listPurpleTextColor: $purpleTextColor;
+$listPinkTextColor: $pinkTextColor;
+$listBrownTextColor: $brownTextColor;
+$listRedBorderColor: $redBorderColor;
+$listOrangeBorderColor: $orangeBorderColor;
+$listYellowBorderColor: $yellowBorderColor;
+$listOliveBorderColor: $oliveBorderColor;
+$listGreenBorderColor: $greenBorderColor;
+$listTealBorderColor: $tealBorderColor;
+$listBlueBorderColor: $blueBorderColor;
+$listVioletBorderColor: $violetBorderColor;
+$listPurpleBorderColor: $purpleBorderColor;
+$listPinkBorderColor: $pinkBorderColor;
+$listBrownBorderColor: $brownBorderColor;
+$listSubtleTransparentBlack: $subtleTransparentBlack;
+$listTransparentBlack: $transparentBlack;
+$listStrongTransparentBlack: $strongTransparentBlack;
+$listVeryStrongTransparentBlack: $veryStrongTransparentBlack;
+$listSubtleTransparentWhite: $subtleTransparentWhite;
+$listTransparentWhite: $transparentWhite;
+$listStrongTransparentWhite: $strongTransparentWhite;
+$listSubtleGradient: $subtleGradient;
+$listSubtleShadow: $subtleShadow;
+$listFloatingShadow: $floatingShadow;
+$listPositiveColor: $positiveColor;
+$listPositiveBackgroundColor: $positiveBackgroundColor;
+$listPositiveBorderColor: $positiveBorderColor;
+$listPositiveHeaderColor: $positiveHeaderColor;
+$listPositiveTextColor: $positiveTextColor;
+$listNegativeColor: $negativeColor;
+$listNegativeBackgroundColor: $negativeBackgroundColor;
+$listNegativeBorderColor: $negativeBorderColor;
+$listNegativeHeaderColor: $negativeHeaderColor;
+$listNegativeTextColor: $negativeTextColor;
+$listInfoColor: $infoColor;
+$listInfoBackgroundColor: $infoBackgroundColor;
+$listInfoBorderColor: $infoBorderColor;
+$listInfoHeaderColor: $infoHeaderColor;
+$listInfoTextColor: $infoTextColor;
+$listWarningColor: $warningColor;
+$listWarningBorderColor: $warningBorderColor;
+$listWarningBackgroundColor: $warningBackgroundColor;
+$listWarningHeaderColor: $warningHeaderColor;
+$listWarningTextColor: $warningTextColor;
+$listImagePath: $imagePath;
+$listFontPath: $fontPath;
+$listMini: $mini;
+$listTiny: $tiny;
+$listSmall: $small;
+$listMedium: $medium;
+$listLarge: $large;
+$listBig: $big;
+$listHuge: $huge;
+$listMassive: $massive;
+$listRelativeMini: $relativeMini;
+$listRelativeTiny: $relativeTiny;
+$listRelativeSmall: $relativeSmall;
+$listRelativeMedium: $relativeMedium;
+$listRelativeLarge: $relativeLarge;
+$listRelativeBig: $relativeBig;
+$listRelativeHuge: $relativeHuge;
+$listRelativeMassive: $relativeMassive;
+$listAbsoluteMini: $absoluteMini;
+$listAbsoluteTiny: $absoluteTiny;
+$listAbsoluteSmall: $absoluteSmall;
+$listAbsoluteMedium: $absoluteMedium;
+$listAbsoluteLarge: $absoluteLarge;
+$listAbsoluteBig: $absoluteBig;
+$listAbsoluteHuge: $absoluteHuge;
+$listAbsoluteMassive: $absoluteMassive;
+$listIconWidth: $iconWidth;
+$listDarkTextColor: $darkTextColor;
+$listMutedTextColor: $mutedTextColor;
+$listLightTextColor: $lightTextColor;
+$listUnselectedTextColor: $unselectedTextColor;
+$listHoveredTextColor: $hoveredTextColor;
+$listPressedTextColor: $pressedTextColor;
+$listSelectedTextColor: $selectedTextColor;
+$listDisabledTextColor: $disabledTextColor;
+$listInvertedTextColor: $invertedTextColor;
+$listInvertedMutedTextColor: $invertedMutedTextColor;
+$listInvertedLightTextColor: $invertedLightTextColor;
+$listInvertedUnselectedTextColor: $invertedUnselectedTextColor;
+$listInvertedHoveredTextColor: $invertedHoveredTextColor;
+$listInvertedPressedTextColor: $invertedPressedTextColor;
+$listInvertedSelectedTextColor: $invertedSelectedTextColor;
+$listInvertedDisabledTextColor: $invertedDisabledTextColor;
+$listFacebookColor: $facebookColor;
+$listTwitterColor: $twitterColor;
+$listGooglePlusColor: $googlePlusColor;
+$listLinkedInColor: $linkedInColor;
+$listYoutubeColor: $youtubeColor;
+$listPinterestColor: $pinterestColor;
+$listVkColor: $vkColor;
+$listInstagramColor: $instagramColor;
+$listCircularRadius: $circularRadius;
+$listBorderColor: $borderColor;
+$listStrongBorderColor: $strongBorderColor;
+$listInternalBorderColor: $internalBorderColor;
+$listSelectedBorderColor: $selectedBorderColor;
+$listStrongSelectedBorderColor: $strongSelectedBorderColor;
+$listDisabledBorderColor: $disabledBorderColor;
+$listSolidInternalBorderColor: $solidInternalBorderColor;
+$listSolidBorderColor: $solidBorderColor;
+$listSolidSelectedBorderColor: $solidSelectedBorderColor;
+$listWhiteBorderColor: $whiteBorderColor;
+$listSelectedWhiteBorderColor: $selectedWhiteBorderColor;
+$listSolidWhiteBorderColor: $solidWhiteBorderColor;
+$listSelectedSolidWhiteBorderColor: $selectedSolidWhiteBorderColor;
+$listLoaderOffset: $loaderOffset;
+$listLoaderMargin: $loaderMargin;
+$listScrollbarWidth: $scrollbarWidth;
+$listGlyphWidth: $glyphWidth;
+$listLineHeightOffset: $lineHeightOffset;
+$listHeaderLineHeightOffset: $headerLineHeightOffset;
+$listHeaderTopMargin: $headerTopMargin;
+$listHeaderBottomMargin: $headerBottomMargin;
+$listHeaderMargin: $headerMargin;
+$listPageMinWidth: $pageMinWidth;
+$listSuccessBackgroundColor: $successBackgroundColor;
+$listSuccessColor: $successColor;
+$listSuccessBorderColor: $successBorderColor;
+$listSuccessHeaderColor: $successHeaderColor;
+$listSuccessTextColor: $successTextColor;
+$listErrorBackgroundColor: $errorBackgroundColor;
+$listErrorColor: $errorColor;
+$listErrorBorderColor: $errorBorderColor;
+$listErrorHeaderColor: $errorHeaderColor;
+$listErrorTextColor: $errorTextColor;
+$listLargestMobileScreen: $largestMobileScreen;
+$listLargestTabletScreen: $largestTabletScreen;
+$listLargestSmallMonitor: $largestSmallMonitor;
+$listLargestLargeMonitor: $largestLargeMonitor;
+$list1px: $_1px;
+$list2px: $_2px;
+$list3px: $_3px;
+$list4px: $_4px;
+$list5px: $_5px;
+$list6px: $_6px;
+$list7px: $_7px;
+$list8px: $_8px;
+$list9px: $_9px;
+$list10px: $_10px;
+$list11px: $_11px;
+$list12px: $_12px;
+$list13px: $_13px;
+$list14px: $_14px;
+$list15px: $_15px;
+$list16px: $_16px;
+$list17px: $_17px;
+$list18px: $_18px;
+$list19px: $_19px;
+$list20px: $_20px;
+$list21px: $_21px;
+$list22px: $_22px;
+$list23px: $_23px;
+$list24px: $_24px;
+$list25px: $_25px;
+$list26px: $_26px;
+$list27px: $_27px;
+$list28px: $_28px;
+$list29px: $_29px;
+$list30px: $_30px;
+$list31px: $_31px;
+$list32px: $_32px;
+$list33px: $_33px;
+$list34px: $_34px;
+$list35px: $_35px;
+$list36px: $_36px;
+$list37px: $_37px;
+$list38px: $_38px;
+$list39px: $_39px;
+$list40px: $_40px;
+$list41px: $_41px;
+$list42px: $_42px;
+$list43px: $_43px;
+$list44px: $_44px;
+$list45px: $_45px;
+$list46px: $_46px;
+$list47px: $_47px;
+$list48px: $_48px;
+$list49px: $_49px;
+$list50px: $_50px;
+$list51px: $_51px;
+$list52px: $_52px;
+$list53px: $_53px;
+$list54px: $_54px;
+$list55px: $_55px;
+$list56px: $_56px;
+$list57px: $_57px;
+$list58px: $_58px;
+$list59px: $_59px;
+$list60px: $_60px;
+$list61px: $_61px;
+$list62px: $_62px;
+$list63px: $_63px;
+$list64px: $_64px;
+$listRelative1px: $relative1px;
+$listRelative2px: $relative2px;
+$listRelative3px: $relative3px;
+$listRelative4px: $relative4px;
+$listRelative5px: $relative5px;
+$listRelative6px: $relative6px;
+$listRelative7px: $relative7px;
+$listRelative8px: $relative8px;
+$listRelative9px: $relative9px;
+$listRelative10px: $relative10px;
+$listRelative11px: $relative11px;
+$listRelative12px: $relative12px;
+$listRelative13px: $relative13px;
+$listRelative14px: $relative14px;
+$listRelative15px: $relative15px;
+$listRelative16px: $relative16px;
+$listRelative17px: $relative17px;
+$listRelative18px: $relative18px;
+$listRelative19px: $relative19px;
+$listRelative20px: $relative20px;
+$listRelative21px: $relative21px;
+$listRelative22px: $relative22px;
+$listRelative23px: $relative23px;
+$listRelative24px: $relative24px;
+$listRelative25px: $relative25px;
+$listRelative26px: $relative26px;
+$listRelative27px: $relative27px;
+$listRelative28px: $relative28px;
+$listRelative29px: $relative29px;
+$listRelative30px: $relative30px;
+$listRelative31px: $relative31px;
+$listRelative32px: $relative32px;
+$listRelative33px: $relative33px;
+$listRelative34px: $relative34px;
+$listRelative35px: $relative35px;
+$listRelative36px: $relative36px;
+$listRelative37px: $relative37px;
+$listRelative38px: $relative38px;
+$listRelative39px: $relative39px;
+$listRelative40px: $relative40px;
+$listRelative41px: $relative41px;
+$listRelative42px: $relative42px;
+$listRelative43px: $relative43px;
+$listRelative44px: $relative44px;
+$listRelative45px: $relative45px;
+$listRelative46px: $relative46px;
+$listRelative47px: $relative47px;
+$listRelative48px: $relative48px;
+$listRelative49px: $relative49px;
+$listRelative50px: $relative50px;
+$listRelative51px: $relative51px;
+$listRelative52px: $relative52px;
+$listRelative53px: $relative53px;
+$listRelative54px: $relative54px;
+$listRelative55px: $relative55px;
+$listRelative56px: $relative56px;
+$listRelative57px: $relative57px;
+$listRelative58px: $relative58px;
+$listRelative59px: $relative59px;
+$listRelative60px: $relative60px;
+$listRelative61px: $relative61px;
+$listRelative62px: $relative62px;
+$listRelative63px: $relative63px;
+$listRelative64px: $relative64px;
+$listOneWide: $oneWide;
+$listTwoWide: $twoWide;
+$listThreeWide: $threeWide;
+$listFourWide: $fourWide;
+$listFiveWide: $fiveWide;
+$listSixWide: $sixWide;
+$listSevenWide: $sevenWide;
+$listEightWide: $eightWide;
+$listNineWide: $nineWide;
+$listTenWide: $tenWide;
+$listElevenWide: $elevenWide;
+$listTwelveWide: $twelveWide;
+$listThirteenWide: $thirteenWide;
+$listFourteenWide: $fourteenWide;
+$listFifteenWide: $fifteenWide;
+$listSixteenWide: $sixteenWide;
+$listOneColumn: $oneColumn;
+$listTwoColumn: $twoColumn;
+$listThreeColumn: $threeColumn;
+$listFourColumn: $fourColumn;
+$listFiveColumn: $fiveColumn;
+$listSixColumn: $sixColumn;
+$listSevenColumn: $sevenColumn;
+$listEightColumn: $eightColumn;
+$listNineColumn: $nineColumn;
+$listTenColumn: $tenColumn;
+$listElevenColumn: $elevenColumn;
+$listTwelveColumn: $twelveColumn;
+$listThirteenColumn: $thirteenColumn;
+$listFourteenColumn: $fourteenColumn;
+$listFifteenColumn: $fifteenColumn;
+$listSixteenColumn: $sixteenColumn;
+$listDisabledOpacity: $disabledOpacity;
+$listFloatingShadowHover: $floatingShadowHover;
+$listPrimaryColorHover: $primaryColorHover;
+$listSecondaryColorHover: $secondaryColorHover;
+$listRedHover: $redHover;
+$listOrangeHover: $orangeHover;
+$listYellowHover: $yellowHover;
+$listOliveHover: $oliveHover;
+$listGreenHover: $greenHover;
+$listTealHover: $tealHover;
+$listBlueHover: $blueHover;
+$listVioletHover: $violetHover;
+$listPurpleHover: $purpleHover;
+$listPinkHover: $pinkHover;
+$listBrownHover: $brownHover;
+$listLightRedHover: $lightRedHover;
+$listLightOrangeHover: $lightOrangeHover;
+$listLightYellowHover: $lightYellowHover;
+$listLightOliveHover: $lightOliveHover;
+$listLightGreenHover: $lightGreenHover;
+$listLightTealHover: $lightTealHover;
+$listLightBlueHover: $lightBlueHover;
+$listLightVioletHover: $lightVioletHover;
+$listLightPurpleHover: $lightPurpleHover;
+$listLightPinkHover: $lightPinkHover;
+$listLightBrownHover: $lightBrownHover;
+$listLightGreyHover: $lightGreyHover;
+$listLightBlackHover: $lightBlackHover;
+$listPositiveColorHover: $positiveColorHover;
+$listNegativeColorHover: $negativeColorHover;
+$listFacebookHoverColor: $facebookHoverColor;
+$listTwitterHoverColor: $twitterHoverColor;
+$listGooglePlusHoverColor: $googlePlusHoverColor;
+$listLinkedInHoverColor: $linkedInHoverColor;
+$listYoutubeHoverColor: $youtubeHoverColor;
+$listInstagramHoverColor: $instagramHoverColor;
+$listPinterestHoverColor: $pinterestHoverColor;
+$listVkHoverColor: $vkHoverColor;
+$listFullBlackHover: $fullBlackHover;
+$listBlackHover: $blackHover;
+$listGreyHover: $greyHover;
+$listWhiteHover: $whiteHover;
+$listOffWhiteHover: $offWhiteHover;
+$listDarkWhiteHover: $darkWhiteHover;
+$listPrimaryColorFocus: $primaryColorFocus;
+$listSecondaryColorFocus: $secondaryColorFocus;
+$listRedFocus: $redFocus;
+$listOrangeFocus: $orangeFocus;
+$listYellowFocus: $yellowFocus;
+$listOliveFocus: $oliveFocus;
+$listGreenFocus: $greenFocus;
+$listTealFocus: $tealFocus;
+$listBlueFocus: $blueFocus;
+$listVioletFocus: $violetFocus;
+$listPurpleFocus: $purpleFocus;
+$listPinkFocus: $pinkFocus;
+$listBrownFocus: $brownFocus;
+$listLightRedFocus: $lightRedFocus;
+$listLightOrangeFocus: $lightOrangeFocus;
+$listLightYellowFocus: $lightYellowFocus;
+$listLightOliveFocus: $lightOliveFocus;
+$listLightGreenFocus: $lightGreenFocus;
+$listLightTealFocus: $lightTealFocus;
+$listLightBlueFocus: $lightBlueFocus;
+$listLightVioletFocus: $lightVioletFocus;
+$listLightPurpleFocus: $lightPurpleFocus;
+$listLightPinkFocus: $lightPinkFocus;
+$listLightBrownFocus: $lightBrownFocus;
+$listLightGreyFocus: $lightGreyFocus;
+$listLightBlackFocus: $lightBlackFocus;
+$listPositiveColorFocus: $positiveColorFocus;
+$listNegativeColorFocus: $negativeColorFocus;
+$listFacebookFocusColor: $facebookFocusColor;
+$listTwitterFocusColor: $twitterFocusColor;
+$listGooglePlusFocusColor: $googlePlusFocusColor;
+$listLinkedInFocusColor: $linkedInFocusColor;
+$listYoutubeFocusColor: $youtubeFocusColor;
+$listInstagramFocusColor: $instagramFocusColor;
+$listPinterestFocusColor: $pinterestFocusColor;
+$listVkFocusColor: $vkFocusColor;
+$listFullBlackFocus: $fullBlackFocus;
+$listBlackFocus: $blackFocus;
+$listGreyFocus: $greyFocus;
+$listWhiteFocus: $whiteFocus;
+$listOffWhiteFocus: $offWhiteFocus;
+$listDarkWhiteFocus: $darkWhiteFocus;
+$listPrimaryColorDown: $primaryColorDown;
+$listSecondaryColorDown: $secondaryColorDown;
+$listRedDown: $redDown;
+$listOrangeDown: $orangeDown;
+$listYellowDown: $yellowDown;
+$listOliveDown: $oliveDown;
+$listGreenDown: $greenDown;
+$listTealDown: $tealDown;
+$listBlueDown: $blueDown;
+$listVioletDown: $violetDown;
+$listPurpleDown: $purpleDown;
+$listPinkDown: $pinkDown;
+$listBrownDown: $brownDown;
+$listLightRedDown: $lightRedDown;
+$listLightOrangeDown: $lightOrangeDown;
+$listLightYellowDown: $lightYellowDown;
+$listLightOliveDown: $lightOliveDown;
+$listLightGreenDown: $lightGreenDown;
+$listLightTealDown: $lightTealDown;
+$listLightBlueDown: $lightBlueDown;
+$listLightVioletDown: $lightVioletDown;
+$listLightPurpleDown: $lightPurpleDown;
+$listLightPinkDown: $lightPinkDown;
+$listLightBrownDown: $lightBrownDown;
+$listLightGreyDown: $lightGreyDown;
+$listLightBlackDown: $lightBlackDown;
+$listPositiveColorDown: $positiveColorDown;
+$listNegativeColorDown: $negativeColorDown;
+$listFacebookDownColor: $facebookDownColor;
+$listTwitterDownColor: $twitterDownColor;
+$listGooglePlusDownColor: $googlePlusDownColor;
+$listLinkedInDownColor: $linkedInDownColor;
+$listYoutubeDownColor: $youtubeDownColor;
+$listInstagramDownColor: $instagramDownColor;
+$listPinterestDownColor: $pinterestDownColor;
+$listVkDownColor: $vkDownColor;
+$listFullBlackDown: $fullBlackDown;
+$listBlackDown: $blackDown;
+$listGreyDown: $greyDown;
+$listWhiteDown: $whiteDown;
+$listOffWhiteDown: $offWhiteDown;
+$listDarkWhiteDown: $darkWhiteDown;
+$listPrimaryColorActive: $primaryColorActive;
+$listSecondaryColorActive: $secondaryColorActive;
+$listRedActive: $redActive;
+$listOrangeActive: $orangeActive;
+$listYellowActive: $yellowActive;
+$listOliveActive: $oliveActive;
+$listGreenActive: $greenActive;
+$listTealActive: $tealActive;
+$listBlueActive: $blueActive;
+$listVioletActive: $violetActive;
+$listPurpleActive: $purpleActive;
+$listPinkActive: $pinkActive;
+$listBrownActive: $brownActive;
+$listLightRedActive: $lightRedActive;
+$listLightOrangeActive: $lightOrangeActive;
+$listLightYellowActive: $lightYellowActive;
+$listLightOliveActive: $lightOliveActive;
+$listLightGreenActive: $lightGreenActive;
+$listLightTealActive: $lightTealActive;
+$listLightBlueActive: $lightBlueActive;
+$listLightVioletActive: $lightVioletActive;
+$listLightPurpleActive: $lightPurpleActive;
+$listLightPinkActive: $lightPinkActive;
+$listLightBrownActive: $lightBrownActive;
+$listLightGreyActive: $lightGreyActive;
+$listLightBlackActive: $lightBlackActive;
+$listPositiveColorActive: $positiveColorActive;
+$listNegativeColorActive: $negativeColorActive;
+$listFacebookActiveColor: $facebookActiveColor;
+$listTwitterActiveColor: $twitterActiveColor;
+$listGooglePlusActiveColor: $googlePlusActiveColor;
+$listLinkedInActiveColor: $linkedInActiveColor;
+$listYoutubeActiveColor: $youtubeActiveColor;
+$listInstagramActiveColor: $instagramActiveColor;
+$listPinterestActiveColor: $pinterestActiveColor;
+$listVkActiveColor: $vkActiveColor;
+$listFullBlackActive: $fullBlackActive;
+$listBlackActive: $blackActive;
+$listGreyActive: $greyActive;
+$listWhiteActive: $whiteActive;
+$listOffWhiteActive: $offWhiteActive;
+$listDarkWhiteActive: $darkWhiteActive;
+
+
+/*******************************
+             List
+*******************************/
+
+/*-------------------
+         View
+--------------------*/
+
+/* List */
+$listListStyleType: none;
+$listListStylePosition: outside;
+$listMargin: 1em 0;
+$listVerticalPadding: 0;
+$listHorizontalPadding: 0;
+
+/* List Item */
+$listItemVerticalPadding: $listRelative3px;
+$listItemHorizontalPadding: 0;
+$listItemPadding: $listItemVerticalPadding $listItemHorizontalPadding;
+$listItemLineHeight: $listRelativeLarge;
+
+/* Sub List */
+$listChildListPadding: 0.75em 0 0.25em 0.5em;
+$listChildListIndent: 1em;
+
+/* Sub List Item */
+$listChildItemVerticalPadding: $listRelative2px;
+$listChildItemHorizontalPadding: 0;
+$listChildItemPadding: $listChildItemVerticalPadding $listChildItemHorizontalPadding;
+$listChildItemLineHeight: inherit;
+
+/*-------------------
+      Elements
+--------------------*/
+
+/* Icon */
+$listIconDistance: $listRelative4px;
+$listIconOffset: 0;
+$listIconTransition: color $listDefaultDuration $listDefaultEasing;
+$listIconVerticalAlign: top;
+$listIconContentVerticalAlign: top;
+
+/* Image */
+$listImageDistance: 0.5em;
+$listImageAlign: top;
+
+/* Content */
+$listContentDistance: 0.5em;
+$listContentLineHeight: $listItemLineHeight;
+$listContentLineHeightOffset: ($listContentLineHeight - 1em) / 2;
+$listContentVerticalAlign: top;
+
+/* Header */
+$listItemHeaderFontFamily: $listHeaderFont;
+$listItemHeaderFontWeight: bold;
+$listItemHeaderColor: $listTextColor;
+
+/* Description */
+$listItemDescriptionColor: rgba(0, 0, 0, 0.7);
+
+/* Link */
+$listItemLinkColor: $listLinkColor;
+$listItemLinkHoverColor: $listLinkHoverColor;
+
+/* Header Link */
+$listItemHeaderLinkColor: $listItemLinkColor;
+$listItemHeaderLinkHoverColor: $listItemLinkHoverColor;
+
+/* Linked Icon */
+$listItemLinkIconColor: $listLightTextColor;
+$listItemLinkIconHoverColor: $listTextColor;
+$listInvertedIconLinkColor: $listInvertedLightTextColor;
+
+/*-------------------
+        States
+--------------------*/
+
+$listDisabledColor: $listDisabledTextColor;
+$listInvertedDisabledColor: $listInvertedDisabledTextColor;
+
+/*-------------------
+      Variations
+--------------------*/
+
+/* Float */
+$listFloatDistance: 1em;
+$listLeftFloatMargin: 0 $listFloatDistance 0 0;
+$listRightFloatMargin: 0 0 0 $listFloatDistance;
+
+/* Horizontal */
+$listHorizontalSpacing: 1em;
+$listHorizontalIconDistance: 0.25em;
+$listHorizontalVerticalAlign: middle;
+
+/* Inverted */
+$listInvertedListIconColor: $listInvertedLightTextColor;
+$listInvertedHeaderColor: $listInvertedTextColor;
+$listInvertedDescriptionColor: $listInvertedLightTextColor;
+$listInvertedItemLinkColor: $listInvertedTextColor;
+$listInvertedItemLinkHoverColor: $listLinkHoverColor;
+
+/* Link List */
+$listLinkListItemColor: $listUnselectedTextColor;
+$listLinkListItemHoverColor: $listHoveredTextColor;
+$listLinkListItemDownColor: $listPressedTextColor;
+$listLinkListItemActiveColor: $listSelectedTextColor;
+$listLinkListTransition:
+  $listDefaultDuration color $listDefaultEasing
+;
+
+/* Inverted Link List */
+$listInvertedLinkListItemColor: $listInvertedUnselectedTextColor;
+$listInvertedLinkListItemHoverColor: $listInvertedHoveredTextColor;
+$listInvertedLinkListItemDownColor: $listInvertedPressedTextColor;
+$listInvertedLinkListItemActiveColor: $listInvertedSelectedTextColor;
+
+/* Selection List */
+$listSelectionListItemMargin: 0;
+$listSelectionListItemBorderRadius: 0.5em;
+$listSelectionListItemVerticalPadding: 0.5em;
+$listSelectionListItemHorizontalPadding: 0.5em;
+$listSelectionListTransition:
+  $listDefaultDuration color $listDefaultEasing,
+  $listDefaultDuration padding-left $listDefaultEasing,
+  $listDefaultDuration background-color $listDefaultEasing
+;
+
+/* Selection List States */
+$listSelectionListBackground: transparent;
+$listSelectionListColor: $listUnselectedTextColor;
+$listSelectionListHoverBackground: $listSubtleTransparentBlack;
+$listSelectionListHoverColor: $listHoveredTextColor;
+$listSelectionListDownBackground: $listTransparentBlack;
+$listSelectionListDownColor: $listPressedTextColor;
+$listSelectionListActiveBackground: $listTransparentBlack;
+$listSelectionListActiveColor: $listSelectedTextColor;
+
+/* Inverted Selection List */
+$listInvertedSelectionListBackground: transparent;
+$listInvertedSelectionListColor: $listInvertedUnselectedTextColor;
+$listInvertedSelectionListHoverBackground: $listSubtleTransparentWhite;
+$listInvertedSelectionListHoverColor: $listInvertedHoveredTextColor;
+$listInvertedSelectionListDownBackground: $listTransparentWhite;
+$listInvertedSelectionListDownColor: $listInvertedPressedTextColor;
+$listInvertedSelectionListActiveBackground: $listTransparentWhite;
+$listInvertedSelectionListActiveColor: $listInvertedSelectedTextColor;
+
+/* Animated List */
+$listAnimatedDuration: 0.25s;
+$listAnimatedDelay: 0.1s;
+$listAnimatedListTransition:
+  $listAnimatedDuration color $listDefaultEasing $listAnimatedDelay,
+  $listAnimatedDuration padding-left $listDefaultEasing $listAnimatedDelay,
+  $listAnimatedDuration background-color $listDefaultEasing $listAnimatedDelay
+;
+$listAnimatedListIndent: 1em;
+
+/* Bulleted */
+$listBulletDistance: 1.25rem;
+$listBulletOffset: -$listBulletDistance;
+
+$listBulletOpacity: 1;
+$listBulletCharacter: '•';
+$listBulletColor: inherit;
+$listBulletLinkColor: $listTextColor;
+$listBulletVerticalAlign: top;
+$listBulletChildDistance: $listBulletDistance;
+
+/* Horizontal Bullets */
+$listHorizontalBulletColor: $listTextColor;
+$listHorizontalBulletSpacing: $listBulletDistance + 0.5rem;
+
+/* Ordered List */
+$listOrderedCountName: ordered;
+$listOrderedCountContent: counters(ordered, ".") " ";
+$listOrderedCountColor: $listTextColor;
+$listOrderedCountDistance: 1.25rem;
+$listOrderedCountOpacity: 0.8;
+$listOrderedCountTextAlign: right;
+$listOrderedCountVerticalAlign: middle;
+
+$listOrderedChildCountDistance: 1em;
+$listOrderedChildCountOffset: -2em;
+
+$listOrderedInvertedCountColor: $listInvertedLightTextColor;
+
+/* Horizontal Ordered */
+$listHorizontalOrderedCountDistance: 0.5em;
+
+/* Divided */
+$listDividedBorderWidth: 1px;
+$listDividedBorder: $listDividedBorderWidth solid $listBorderColor;
+$listDividedInvertedBorderColor: $listWhiteBorderColor;
+$listDividedChildListBorder: none;
+$listDividedChildItemBorder: none;
+
+/* Divided Horizontal */
+$listHorizontalDividedSpacing: ($listHorizontalSpacing / 2);
+$listHorizontalDividedLineHeight: 0.6;
+
+/* Divided */
+$listCelledBorderWidth: 1px;
+$listCelledBorder: $listCelledBorderWidth solid $listBorderColor;
+$listCelledInvertedBorder: $listDividedBorderWidth solid $listWhiteBorderColor;
+$listCelledHorizontalPadding: 0.5em;
+$listCelledChildListBorder: none;
+$listCelledChildItemBorder: none;
+
+/* Divided Horizontal */
+$listHorizontalCelledSpacing: ($listHorizontalSpacing / 2);
+$listHorizontalCelledLineHeight: 0.6;
+
+/* Relaxed */
+$listRelaxedItemVerticalPadding: $listRelative6px;
+$listRelaxedChildItemVerticalPadding: $listRelative3px;
+$listRelaxedHeaderMargin: 0.25rem;
+$listRelaxedHorizontalPadding: 1rem;
+
+/* Very Relaxed */
+$listVeryRelaxedItemVerticalPadding: $listRelative12px;
+$listVeryRelaxedChildItemVerticalPadding: $listRelative4px;
+$listVeryRelaxedHeaderMargin: 0.5rem;
+$listVeryRelaxedHorizontalPadding: 1.5rem;
+
