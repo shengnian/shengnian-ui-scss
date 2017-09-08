@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/shengnian/shengnian-ui.git"
+    "url": "git://github.com/shengnian/shengnian-ui-scss.git"
   },
   "keywords": [
     "shengnian",
@@ -18,9 +18,9 @@
   "author": "C <c@shengnian.org>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/shengnian/shengnian-ui/issues"
+    "url": "https://github.com/shengnian/shengnian-ui-scss/issues"
   },
-  "homepage": "https://github.com/shengnian/shengnian-ui#readme",
+  "homepage": "https://github.com/shengnian/shengnian-ui-scss#readme",
   "devDependencies": {
     "babel-core": "^6.26.0",
     "babel-preset-es2015": "^6.24.1",
