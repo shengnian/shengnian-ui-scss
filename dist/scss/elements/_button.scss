@@ -28,7 +28,8 @@
   font-family: $buttonFontFamily;
 
   margin: 0 $buttonHorizontalMargin $buttonVerticalMargin 0;
-  padding: $buttonVerticalPadding $buttonHorizontalPadding ($buttonVerticalPadding + $buttonShadowOffset);
+  @include buttonPadding(buttonVerticalPadding(), $buttonHorizontalPadding, (buttonVerticalPadding() + buttonShadowOffset()));
+  //padding: $buttonVerticalPadding $buttonHorizontalPadding ($buttonVerticalPadding + $buttonShadowOffset);
 
   text-transform: $buttonTextTransform;
   text-shadow: $buttonTextShadow;
@@ -134,7 +135,8 @@
   top: 50%;
   left: 50%;
 
-  margin: $buttonLoaderMargin;
+  //margin: $buttonLoaderMargin;
+  @include loaderMargin($buttonLoaderSize);
   width: $buttonLoaderSize;
   height: $buttonLoaderSize;
 
@@ -147,7 +149,8 @@
   top: 50%;
   left: 50%;
 
-  margin: $buttonLoaderMargin;
+  //margin: $buttonLoaderMargin;
+  @include loaderMargin($buttonLoaderSize);
   width: $buttonLoaderSize;
   height: $buttonLoaderSize;
 
@@ -575,17 +578,20 @@
 .ui.button > .icon:not(.button) {
   height: $buttonIconHeight;
   opacity: $buttonIconOpacity;
-  margin: $buttonIconMargin;
+  @include buttonIconMargin();
+  //margin: $buttonIconMargin;
   transition: $buttonIconTransition;
   vertical-align: $buttonIconVerticalAlign;
   color: $buttonIconColor;
 }
 
 .ui.button:not(.icon) > .icon:not(.button):not(.dropdown) {
-  margin: $buttonIconMargin;
+  @include buttonIconMargin();
+  //margin: $buttonIconMargin;
 }
 .ui.button:not(.icon) > .right.icon:not(.button):not(.dropdown) {
-  margin: $buttonRightIconMargin;
+  @include buttonRightIconMargin();
+  //margin: $buttonRightIconMargin;
 }
 
 
@@ -810,8 +816,9 @@
 .ui.labeled.icon.buttons .button,
 .ui.labeled.icon.button {
   position: relative;
-  padding-left: $buttonLabeledIconPadding !important;
-  padding-right: $buttonHorizontalPadding !important;
+  @include buttonLabeledIconPadding();
+  //padding-left: $buttonLabeledIconPadding !important;
+  //padding-right: $buttonHorizontalPadding !important;
 }
 
 /* Left Labeled */

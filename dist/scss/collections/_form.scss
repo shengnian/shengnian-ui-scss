@@ -603,10 +603,10 @@
   top: 50%;
   left: 50%;
 
-  @include formLoaderMargin();
+  @include loaderMargin($formLoaderSize);
   //margin: $formLoaderMargin;
-  //width: $formLoaderSize;
-  //height: $formLoaderSize;
+  width: $formLoaderSize;
+  height: $formLoaderSize;
 
   animation: form-spin $formLoaderSpeed linear;
   animation-iteration-count: infinite;

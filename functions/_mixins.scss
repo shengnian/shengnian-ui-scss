@@ -158,7 +158,17 @@
   //padding: $dropdownMultipleSelectionPadding;
 }
 
-//$dropdownMultipleSelectionChildVerticalMargin 0 $dropdownMultipleSelectionChildVerticalMargin $dropdownMultipleSelectionChildLeftMargin;
+@mixin dropdownSelectionIconPadding {
+  padding: to-number($dropdownSelectionIconHitbox) / to-number($dropdownDropdownIconSize) + em;
+}
+
+@mixin dropdownSearchSelectionInputPadding {
+  padding: dropdownSearchSelectionVerticalPadding() dropdownSelectionIconDistance() dropdownSearchSelectionVerticalPadding() to-number($dropdownSearchSelectionHorizontalPadding);
+}
+
+@function dropdownPointingArrowOffset() {
+  @return (to-number(-$dropdownPointingArrowSize) / 2)
+}
 
 /******************
   _modal.scss
@@ -290,11 +300,26 @@
   line-height: buttonOrCircleSize();
 }
 
+@mixin buttonLoaderMargin() {
+  margin: loaderOffsetBy($buttonLoaderSize) 0 0 loaderOffsetBy($buttonLoaderSize);
+}
+
+@mixin loaderMargin($loaderSize) {
+  margin: loaderOffsetBy($loaderSize) 0 0 loaderOffsetBy($loaderSize);
+}
+
+
+@mixin buttonIconMargin {
+  margin: 0 to-number($buttonIconDistance) 0 (to-number(-$buttonIconDistance) / 2);
+}
+
+@mixin buttonRightIconMargin {
+  margin: 0 (to-number(-$buttonIconDistance) / 2) 0 to-number($buttonIconDistance);
+}
+
 /********************
   _input.scss
 ********************/
-
-
 @function inputVerticalPadding() {
   @return to-number($inputVerticalPadding);
 }
@@ -371,14 +396,45 @@
   margin: 0 0 0 loaderOffsetBy($loaderMassive);
 }
 
+@mixin loaderPaddingTop($loader) {
+  padding-top: (to-number($loader) + strip-number($loaderTextDistance, 'em'));
+}
+
 /********************
   _form.scss
 ********************/
 
-@mixin formLoaderMargin() {
+/*@mixin formLoaderMargin() {
   margin: loaderOffsetBy($formLoaderSize) 0 0 loaderOffsetBy($formLoaderSize);
   width: $formLoaderSize;
   height: $formLoaderSize;
+}*/
+
+
+/********************
+  _segment.scss
+********************/
+
+
+/********************
+  _popup.scss
+********************/
+@function popupTooltipArrowVerticalOffset() {
+  @return -(to-number(-$popup2px));
 }
 
+@function popupTooltipArrowHorizontalOffset() {
+  @return (to-number(-$popup1px));
+}
 
+@function popupArrowOffset() {
+  @return -(to-number($popupArrowSize) / 2) + $popupArrowJitter
+}
+
+/********************
+  _search.scss
+********************/
+
+@function searchPromptPadding() {
+  @return (to-number($searchPromptVerticalPadding) + ((1em - to-number($searchPromptLineHeight)) / 2));
+}

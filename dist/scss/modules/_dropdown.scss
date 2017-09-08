@@ -381,7 +381,8 @@ select.ui.dropdown {
   right: $dropdownSelectionHorizontalPadding;
   z-index: $dropdownSelectionIconZIndex;
   margin: $dropdownSelectionIconMargin;
-  padding: $dropdownSelectionIconPadding;
+  //padding: $dropdownSelectionIconPadding;
+  @include dropdownSelectionIconPadding();
   opacity: $dropdownSelectionIconOpacity;
   transition: $dropdownSelectionIconTransition;
 }
@@ -562,13 +563,15 @@ select.ui.dropdown {
 /* Search Selection */
 .ui.search.selection.dropdown > input.search {
   line-height: $dropdownSearchSelectionLineHeight;
-  padding: $dropdownSearchSelectionInputPadding;
+  @include dropdownSearchSelectionInputPadding();
+  //padding: $dropdownSearchSelectionInputPadding;
 }
 
 /* Used to size multi select input to character width */
 .ui.search.selection.dropdown > span.sizer {
   line-height: $dropdownSearchSelectionLineHeight;
-  padding: $dropdownSearchSelectionInputPadding;
+  @include dropdownSearchSelectionInputPadding();
+  //padding: $dropdownSearchSelectionInputPadding;
   display: none;
   white-space: pre;
 }
@@ -772,7 +775,8 @@ select.ui.dropdown {
   top: 50%;
   left: 50%;
 
-  margin: $dropdownLoaderMargin;
+  @include loaderMargin($dropdownLoaderSize);
+  //margin: $dropdownLoaderMargin;
   width: $dropdownLoaderSize;
   height: $dropdownLoaderSize;
 
@@ -786,7 +790,8 @@ select.ui.dropdown {
   left: 50%;
   box-shadow: 0 0 0 1px transparent;
 
-  margin: $dropdownLoaderMargin;
+  @include loaderMargin($dropdownLoaderSize);
+  //margin: $dropdownLoaderMargin;
   width: $dropdownLoaderSize;
   height: $dropdownLoaderSize;
 
@@ -1217,9 +1222,10 @@ select.ui.dropdown {
 }
 
 .ui.pointing.dropdown > .menu:after {
-  top: $dropdownPointingArrowOffset;
+  top: dropdownPointingArrowOffset();
+  //@include dropdownPointingArrowOffset();
   left: 50%;
-  margin: 0 0 0 $dropdownPointingArrowOffset;
+  margin: 0 0 0 dropdownPointingArrowOffset();
 }
 
 /* Top Left Pointing */
@@ -1238,7 +1244,7 @@ select.ui.dropdown {
   margin: $dropdownPointingArrowDistanceFromEdge 0 0;
 }
 .ui.top.left.pointing.dropdown > .menu:after {
-  top: $dropdownPointingArrowOffset;
+  top: dropdownPointingArrowOffset();
   left: $dropdownPointingArrowDistanceFromEdge;
   right: auto;
   margin: 0;
@@ -1254,7 +1260,7 @@ select.ui.dropdown {
 }
 .ui.top.pointing.dropdown > .left.menu:after,
 .ui.top.right.pointing.dropdown > .menu:after {
-  top: $dropdownPointingArrowOffset;
+  top: dropdownPointingArrowOffset();
   left: auto !important;
   right: $dropdownPointingArrowDistanceFromEdge !important;
   margin: 0;
@@ -1270,7 +1276,7 @@ select.ui.dropdown {
 }
 .ui.left.pointing.dropdown > .menu:after {
   top: 1em;
-  left: $dropdownPointingArrowOffset;
+  left: dropdownPointingArrowOffset();
   margin: 0 0 0 0;
   transform: rotate(-45deg);
 }
@@ -1282,7 +1288,7 @@ select.ui.dropdown {
 .ui.left:not(.top):not(.bottom).pointing.dropdown > .left.menu:after {
   top: 1em;
   left: auto;
-  right: $dropdownPointingArrowOffset;
+  right: dropdownPointingArrowOffset();
   margin: 0 0 0 0;
   transform: rotate(135deg);
 }
@@ -1296,7 +1302,7 @@ select.ui.dropdown {
 .ui.right.pointing.dropdown > .menu:after {
   top: 1em;
   left: auto;
-  right: $dropdownPointingArrowOffset;
+  right: dropdownPointingArrowOffset();
   margin: 0 0 0 0;
   transform: rotate(135deg);
 }
@@ -1311,7 +1317,7 @@ select.ui.dropdown {
 }
 .ui.bottom.pointing.dropdown > .menu:after {
   top: auto;
-  bottom: $dropdownPointingArrowOffset;
+  bottom: dropdownPointingArrowOffset();
   right: auto;
   margin: 0;
   transform: rotate(-135deg);
@@ -1355,7 +1361,7 @@ select.ui.dropdown {
   top: 100% !important;
   bottom: auto !important;
   box-shadow: $dropdownPointingUpwardArrowBoxShadow;
-  margin: $dropdownPointingArrowOffset 0 0;
+  margin: dropdownPointingArrowOffset() 0 0;
 }
 
 /* Right Pointing Upward */

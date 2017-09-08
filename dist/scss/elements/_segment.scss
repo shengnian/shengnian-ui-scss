@@ -417,7 +417,8 @@
   top: 50%;
   left: 50%;
 
-  margin: $segmentLoaderMargin;
+  //margin: $segmentLoaderMargin;
+  @include loaderMargin($segmentLoaderSize);
   width: $segmentLoaderSize;
   height: $segmentLoaderSize;
 

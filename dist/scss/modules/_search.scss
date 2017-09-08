@@ -28,7 +28,7 @@
   font-weight: normal;
 
   line-height: $searchPromptLineHeight;
-  padding: $searchPromptPadding;
+  padding: searchPromptPadding() to-number($searchPromptHorizontalPadding);
   font-size: $searchPromptFontSize;
 
   background: $searchPromptBackground;
@@ -192,7 +192,7 @@
   top: 50%;
   left: 50%;
 
-  margin: $searchLoaderMargin;
+  @include loaderMargin($searchLoaderSize);
   width: $searchLoaderSize;
   height: $searchLoaderSize;
 
@@ -205,7 +205,7 @@
   top: 50%;
   left: 50%;
 
-  margin: $searchLoaderMargin;
+  @include loaderMargin($searchLoaderSize);
   width: $searchLoaderSize;
   height: $searchLoaderSize;
 

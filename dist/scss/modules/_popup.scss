@@ -125,8 +125,8 @@
   bottom: 100%;
   left: 50%;
   background: $popupTooltipArrowBottomBackground;
-  margin-left: $popupTooltipArrowHorizontalOffset;
-  margin-bottom: -$popupTooltipArrowVerticalOffset;
+  margin-left: popupTooltipArrowHorizontalOffset();
+  margin-bottom: popupTooltipArrowVerticalOffset();
 }
 [data-tooltip]:not([data-position]):after {
   left: 50%;
@@ -241,8 +241,8 @@
   bottom: 100%;
   left: 50%;
   background: $popupTooltipArrowTopBackground;
-  margin-left: $popupTooltipArrowHorizontalOffset;
-  margin-bottom: -$popupTooltipArrowVerticalOffset;
+  margin-left: popupTooltipArrowHorizontalOffset();
+  margin-bottom: popupTooltipArrowVerticalOffset();
 }
 
 /* Top Left */
@@ -258,8 +258,8 @@
   right: auto;
   bottom: 100%;
   left: $popupArrowDistanceFromEdge;
-  margin-left: $popupTooltipArrowHorizontalOffset;
-  margin-bottom: -$popupTooltipArrowVerticalOffset;
+  margin-left: popupTooltipArrowHorizontalOffset();
+  margin-bottom: popupTooltipArrowVerticalOffset();
 }
 
 /* Top Right */
@@ -275,8 +275,8 @@
   left: auto;
   bottom: 100%;
   right: $popupArrowDistanceFromEdge;
-  margin-left: $popupTooltipArrowHorizontalOffset;
-  margin-bottom: -$popupTooltipArrowVerticalOffset;
+  margin-left: popupTooltipArrowHorizontalOffset();
+  margin-bottom: popupTooltipArrowVerticalOffset();
 }
 /* Bottom Center */
 [data-position="bottom center"][data-tooltip]:after {
@@ -292,8 +292,8 @@
   right: auto;
   top: 100%;
   left: 50%;
-  margin-left: $popupTooltipArrowHorizontalOffset;
-  margin-top: -$popupTooltipArrowVerticalOffset;
+  margin-left: popupTooltipArrowHorizontalOffset();
+  margin-top: popupTooltipArrowVerticalOffset();
 }
 
 /* Bottom Left */
@@ -307,8 +307,8 @@
   right: auto;
   top: 100%;
   left: $popupArrowDistanceFromEdge;
-  margin-left: $popupTooltipArrowHorizontalOffset;
-  margin-top: -$popupTooltipArrowVerticalOffset;
+  margin-left: popupTooltipArrowHorizontalOffset();
+  margin-top: popupTooltipArrowVerticalOffset();
 }
 
 /* Bottom Right */
@@ -322,8 +322,8 @@
   left: auto;
   top: 100%;
   right: $popupArrowDistanceFromEdge;
-  margin-left: $popupTooltipArrowVerticalOffset;
-  margin-top: -$popupTooltipArrowHorizontalOffset;
+  margin-left: popupTooltipArrowVerticalOffset() * -1;
+  margin-top: popupTooltipArrowHorizontalOffset() * -1;
 }
 
 /* Left Center */
@@ -350,8 +350,8 @@
 [data-position="right center"][data-tooltip]:before {
   left: 100%;
   top: 50%;
-  margin-top: $popupTooltipArrowHorizontalOffset;
-  margin-left: -$popupTooltipArrowVerticalOffset;
+  margin-top: popupTooltipArrowHorizontalOffset();
+  margin-left: popupTooltipArrowVerticalOffset();
 }
 
 /* Arrow */
@@ -459,8 +459,8 @@
 
 /*--- Below ---*/
 .ui.bottom.center.popup:before {
-  margin-left: $popupArrowOffset;
-  top: $popupArrowOffset;
+  margin-left: popupArrowOffset();
+  top: popupArrowOffset();
   left: 50%;
   right: auto;
   bottom: auto;
@@ -472,7 +472,7 @@
 }
 /*rtl:rename*/
 .ui.bottom.left.popup:before {
-  top: $popupArrowOffset;
+  top: popupArrowOffset();
   left: $popupArrowDistanceFromEdge;
   right: auto;
   bottom: auto;
@@ -485,7 +485,7 @@
 }
 /*rtl:rename*/
 .ui.bottom.right.popup:before {
-  top: $popupArrowOffset;
+  top: popupArrowOffset();
   right: $popupArrowDistanceFromEdge;
   bottom: auto;
   left: auto;
@@ -497,16 +497,16 @@
 .ui.top.center.popup:before {
   top: auto;
   right: auto;
-  bottom: $popupArrowOffset;
+  bottom: popupArrowOffset();
   left: 50%;
-  margin-left: $popupArrowOffset;
+  margin-left: popupArrowOffset();
 }
 .ui.top.left.popup {
   margin-left: $popupBoxArrowOffset;
 }
 /*rtl:rename*/
 .ui.top.left.popup:before {
-  bottom: $popupArrowOffset;
+  bottom: popupArrowOffset();
   left: $popupArrowDistanceFromEdge;
   top: auto;
   right: auto;
@@ -517,7 +517,7 @@
 }
 /*rtl:rename*/
 .ui.top.right.popup:before {
-  bottom: $popupArrowOffset;
+  bottom: popupArrowOffset();
   right: $popupArrowDistanceFromEdge;
   top: auto;
   left: auto;
@@ -528,10 +528,10 @@
 /*rtl:rename*/
 .ui.left.center.popup:before {
   top: 50%;
-  right: $popupArrowOffset;
+  right: popupArrowOffset();
   bottom: auto;
   left: auto;
-  margin-top: $popupArrowOffset;
+  margin-top: popupArrowOffset();
   box-shadow: $popupLeftArrowBoxShadow;
 }
 
@@ -539,10 +539,10 @@
 /*rtl:rename*/
 .ui.right.center.popup:before {
   top: 50%;
-  left: $popupArrowOffset;
+  left: popupArrowOffset();
   bottom: auto;
   right: auto;
-  margin-top: $popupArrowOffset;
+  margin-top: popupArrowOffset();
   box-shadow: $popupRightArrowBoxShadow;
 }
 

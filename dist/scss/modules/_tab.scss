@@ -54,7 +54,8 @@
   top: $tabLoaderDistanceFromTop;
   left: 50%;
 
-  margin: $tabLoaderMargin;
+  //margin: $tabLoaderMargin;
+  @include loaderMargin($tabLoaderSize);
   width: $tabLoaderSize;
   height: $tabLoaderSize;
 
@@ -68,7 +69,8 @@
   top: $tabLoaderDistanceFromTop;
   left: 50%;
 
-  margin: $tabLoaderMargin;
+  //margin: $tabLoaderMargin;
+  @include loaderMargin($tabLoaderSize);
   width: $tabLoaderSize;
   height: $tabLoaderSize;
 
