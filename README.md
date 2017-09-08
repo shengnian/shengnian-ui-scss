@@ -3,7 +3,7 @@
 
 `$ cd shengnian-ui-react`
 
-`gulp`
+`$ gulp`
 
 ## 1 Fonts
 
