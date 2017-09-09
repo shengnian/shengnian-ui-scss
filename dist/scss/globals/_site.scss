@@ -12,8 +12,9 @@
 /*******************************
              Page
 *******************************/
-
-@include loadFonts();
+@if($importGoogleFonts) {
+  @include loadFonts();
+}
 
 html,
 body {

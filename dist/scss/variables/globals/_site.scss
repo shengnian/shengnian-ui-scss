@@ -7,8 +7,8 @@
 --------------------*/
 
 /* For source only. Modified in gulp for dist */
-$imagePath : './assets/images';
-$fontPath  : './assets/fonts';
+$imagePath : '/assets/images';
+$fontPath  : '/assets/fonts';
 
 /*-------------------
        Fonts
@@ -21,7 +21,7 @@ $headerFont        : $fontName, 'Helvetica Neue', Arial, Helvetica, sans-serif;
 $pageFont          : $fontName, 'Helvetica Neue', Arial, Helvetica, sans-serif;
 
 $googleFontName    : $fontName;
-$importGoogleFonts : true;
+$importGoogleFonts : false;
 $googleFontSizes   : '400,700,400italic,700italic';
 $googleSubset      : 'latin';
 

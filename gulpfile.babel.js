@@ -19,6 +19,10 @@ import prompt from 'gulp-prompt'
 import rename from 'gulp-rename'
 import replace from 'gulp-replace'
 import util from 'gulp-util'
+import postcss from 'gulp-postcss'
+import autoprefixer from 'autoprefixer'
+import cssnano from 'cssnano'
+import sass from 'gulp-sass'
 
 
 /*
@@ -487,3 +491,42 @@ function defaultTask(done) {
 }
 
 gulp.task('default', defaultTask)
+
+
+function scss(done) {
+  gulp.src(paths.dest.scss + '/*.scss')
+    .pipe(sass().on('error', sass.logError))
+    .pipe(gulp.dest(paths.dest.root + '/css'))
+    .on('end', () => {
+      done();
+    })
+    .on('error', (err) => {
+      done(err)
+    })
+}
+
+gulp.task(scss)
+
+function css (done) {
+  var plugins = [
+    autoprefixer({browsers: ['last 1 version']}),
+    cssnano()
+  ];
+  gulp.src(paths.dest.root + '/css/*.css')
+    .pipe(postcss(plugins))
+    .pipe(rename({suffix: '.min'}))
+    .pipe(gulp.dest(paths.dest.root + '/css'))
+    .on('end', () => {
+      done();
+    })
+    .on('error', (err) => {
+      done(err)
+    })
+}
+
+gulp.task(css)
+
+gulp.task('build:css',  gulp.series(
+  scss,
+  css
+));
