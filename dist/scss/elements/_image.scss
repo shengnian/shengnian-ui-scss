@@ -293,7 +293,7 @@ img.ui.bordered.image {
 
 .ui.images {
   font-size: 0;
-  margin: 0 -$imageImageHorizontalMargin 0;
+  margin: 0 (-$imageImageHorizontalMargin) 0;
 }
 
 .ui.images .image,

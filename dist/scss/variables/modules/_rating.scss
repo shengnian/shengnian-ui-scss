@@ -655,7 +655,7 @@ $ratingStarInactiveTextShadow: none;
 $ratingStarActiveBackground: $ratingActiveBackground;
 $ratingStarActiveColor: #FFE623;
 $ratingStarActiveShadowColor: #DDC507;
-$ratingStarActiveTextShadow: 0 -$ratingStarShadowWidth 0 $ratingStarActiveShadowColor,
+$ratingStarActiveTextShadow: 0 (-$ratingStarShadowWidth) 0 $ratingStarActiveShadowColor,
   -$ratingStarShadowWidth 0 0 $ratingStarActiveShadowColor, 0 $ratingStarShadowWidth 0 $ratingStarActiveShadowColor,
   $ratingStarShadowWidth 0 0 $ratingStarActiveShadowColor
 ;
@@ -663,7 +663,7 @@ $ratingStarActiveTextShadow: 0 -$ratingStarShadowWidth 0 $ratingStarActiveShadow
 $ratingStarSelectedBackground: $ratingSelectedBackground;
 $ratingStarSelectedColor: #FFCC00;
 $ratingStarSelectedShadowColor: #E6A200;
-$ratingStarSelectedTextShadow: 0 -$ratingStarShadowWidth 0 $ratingStarSelectedShadowColor,
+$ratingStarSelectedTextShadow: 0 (-$ratingStarShadowWidth) 0 $ratingStarSelectedShadowColor,
   -$ratingStarShadowWidth 0 0 $ratingStarSelectedShadowColor, 0 $ratingStarShadowWidth 0 $ratingStarSelectedShadowColor,
   $ratingStarShadowWidth 0 0 $ratingStarSelectedShadowColor
 ;
@@ -680,7 +680,7 @@ $ratingHeartInactiveTextShadow: none;
 $ratingHeartActiveBackground: $ratingActiveBackground;
 $ratingHeartActiveColor: #FF6D75;
 $ratingHeartActiveShadowColor: #CD0707;
-$ratingHeartActiveTextShadow: 0 -$ratingHeartShadowWidth 0 $ratingHeartActiveShadowColor,
+$ratingHeartActiveTextShadow: 0 (-$ratingHeartShadowWidth) 0 $ratingHeartActiveShadowColor,
   -$ratingHeartShadowWidth 0 0 $ratingHeartActiveShadowColor, 0 $ratingHeartShadowWidth 0 $ratingHeartActiveShadowColor,
   $ratingHeartShadowWidth 0 0 $ratingHeartActiveShadowColor
 ;
@@ -688,7 +688,7 @@ $ratingHeartActiveTextShadow: 0 -$ratingHeartShadowWidth 0 $ratingHeartActiveSha
 $ratingHeartSelectedBackground: $ratingSelectedBackground;
 $ratingHeartSelectedColor: #FF3000;
 $ratingHeartSelectedShadowColor: #AA0101;
-$ratingHeartSelectedTextShadow: 0 -$ratingHeartShadowWidth 0 $ratingHeartSelectedShadowColor,
+$ratingHeartSelectedTextShadow: 0 (-$ratingHeartShadowWidth) 0 $ratingHeartSelectedShadowColor,
   -$ratingHeartShadowWidth 0 0 $ratingHeartSelectedShadowColor, 0 $ratingHeartShadowWidth 0 $ratingHeartSelectedShadowColor,
   $ratingHeartShadowWidth 0 0 $ratingHeartSelectedShadowColor
 ;

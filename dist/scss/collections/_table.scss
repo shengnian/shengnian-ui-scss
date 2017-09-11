@@ -251,7 +251,7 @@
 
 /* Remove Border */
 .ui.celled.definition.table thead:not(.full-width) th:first-child {
-  box-shadow: 0 -$tableBorderWidth 0 $tableBorderWidth $tableDefinitionPageBackground;
+  box-shadow: 0 (-$tableBorderWidth) 0 $tableBorderWidth $tableDefinitionPageBackground;
 }
 .ui.celled.definition.table tfoot:not(.full-width) th:first-child {
   box-shadow: 0 $tableBorderWidth 0 $tableBorderWidth $tableDefinitionPageBackground;

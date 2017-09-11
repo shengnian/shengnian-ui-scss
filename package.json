@@ -1,6 +1,6 @@
 {
   "name": "shengnian-ui-scss",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Shengnian UI SCSS base on Semantic UI",
   "main": "index.js",
   "scripts": {

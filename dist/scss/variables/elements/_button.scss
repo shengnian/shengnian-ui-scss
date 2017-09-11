@@ -644,7 +644,7 @@ $buttonVerticalAlign: baseline;
 /* Internal Shadow */
 $buttonShadowDistance: 0;
 $buttonShadowOffset: ($buttonShadowDistance / 2);
-$buttonShadowBoxShadow: 0 -$buttonShadowDistance 0 0 $buttonBorderColor inset;
+$buttonShadowBoxShadow: 0 (-$buttonShadowDistance) 0 0 $buttonBorderColor inset;
 
 /* Box Shadow */
 $buttonBorderBoxShadowColor: transparent;
@@ -663,8 +663,8 @@ $buttonIconColor: '';
 $buttonIconTransition: opacity $buttonDefaultDuration $buttonDefaultEasing;
 $buttonIconVerticalAlign: '';
 
-$buttonIconMargin: 0 $buttonIconDistance 0 -($buttonIconDistance / 2);
-$buttonRightIconMargin: 0 -($buttonIconDistance / 2) 0 $buttonIconDistance;
+$buttonIconMargin: 0 $buttonIconDistance 0 (-$buttonIconDistance / 2);
+$buttonRightIconMargin: 0 (-$buttonIconDistance / 2) 0 $buttonIconDistance;
 
 /* Loader */
 $buttonInvertedLoaderFillColor: rgba(0, 0, 0, 0.15);
@@ -800,8 +800,8 @@ $buttonLabeledIconRightShadow: 1px 0 0 0 $buttonLabeledIconBorder inset;
 $buttonInvertedBorderSize: 2px;
 $buttonInvertedTextColor: $buttonWhite;
 $buttonInvertedTextHoverColor: $buttonHoverColor;
-$buttonInvertedGroupButtonOffset: 0 0 0 -($buttonInvertedBorderSize);
-$buttonInvertedVerticalGroupButtonOffset: 0 0 -($buttonInvertedBorderSize) 0;
+$buttonInvertedGroupButtonOffset: 0 0 0 (-$buttonInvertedBorderSize);
+$buttonInvertedVerticalGroupButtonOffset: 0 0 (-$buttonInvertedBorderSize) 0;
 
 /* Basic */
 $buttonBasicBorderRadius: $buttonBorderRadius;

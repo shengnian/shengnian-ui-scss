@@ -648,7 +648,7 @@ $cardTransition:
 $cardHorizontalSpacing: 1em;
 $cardRowSpacing: 1.75em;
 
-$cardGroupMargin: -($cardRowSpacing / 2) -($cardHorizontalSpacing / 2);
+$cardGroupMargin: (-$cardRowSpacing / 2) (-$cardHorizontalSpacing / 2);
 $cardGroupDisplay: flex;
 
 $cardGroupCardFloat: none;
@@ -752,7 +752,7 @@ $cardExtraLinkColor: $cardUnselectedTextColor;
 $cardExtraLinkHoverColor: $cardLinkHoverColor;
 
 /* Buttons */
-$cardButtonMargin: 0 -$cardBorderWidth;
+$cardButtonMargin: 0 (-$cardBorderWidth);
 $cardButtonWidth: #{"calc(100% + " + ($cardBorderWidth * 2) + ")"};
 
 /*-------------------

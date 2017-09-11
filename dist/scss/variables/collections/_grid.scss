@@ -656,10 +656,10 @@ $gridVeryRelaxedGutterWidth: 5rem;
 ---------------*/
 
 $gridDividedBorder: -1px 0 0 0 $gridBorderColor;
-$gridVerticallyDividedBorder: 0 -1px 0 0 $gridBorderColor;
+$gridVerticallyDividedBorder: 0 (-1px) 0 0 $gridBorderColor;
 
 $gridDividedInvertedBorder: -1px 0 0 0 $gridWhiteBorderColor;
-$gridVerticallyDividedInvertedBorder: 0 -1px 0 0 $gridWhiteBorderColor;
+$gridVerticallyDividedInvertedBorder: 0 (-1px) 0 0 $gridWhiteBorderColor;
 
 /*--------------
     Celled

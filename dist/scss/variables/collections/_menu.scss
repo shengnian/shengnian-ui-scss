@@ -822,7 +822,7 @@ $menuSecondaryBackground: none;
 $menuSecondaryItemBackground: none;
 $menuSecondaryItemSpacing: $menuRelative5px;
 $menuSecondaryItemMargin: 0 $menuSecondaryItemSpacing;
-$menuSecondaryMargin: 0 -$menuSecondaryItemSpacing;
+$menuSecondaryMargin: 0 (-$menuSecondaryItemSpacing);
 $menuSecondaryItemVerticalPadding: $menuRelativeMini;
 $menuSecondaryItemHorizontalPadding: $menuRelativeSmall;
 $menuSecondaryItemPadding: $menuRelativeMini $menuRelativeSmall;
@@ -848,7 +848,7 @@ $menuSecondaryItemVerticalSpacing: $menuSecondaryItemSpacing;
 $menuSecondaryVerticalItemMargin: 0 0 $menuSecondaryItemVerticalSpacing;
 $menuSecondaryVerticalItemBorderRadius: $menuDefaultBorderRadius;
 
-$menuSecondaryMenuSubMenuMargin: 0 -$menuSecondaryItemHorizontalPadding;
+$menuSecondaryMenuSubMenuMargin: 0 (-$menuSecondaryItemHorizontalPadding);
 $menuSecondaryMenuSubMenuItemMargin: 0;
 $menuSecondarySubMenuHorizontalPadding: ($menuItemHorizontalPadding / $menuTinySize) + $menuSubMenuIndent;
 $menuSecondaryMenuSubMenuItemPadding: $menuRelative7px $menuSecondarySubMenuHorizontalPadding;
@@ -871,7 +871,7 @@ $menuSecondaryPointingActiveHoverBorderColor: $menuSecondaryPointingActiveBorder
 $menuSecondaryPointingActiveHoverTextColor: $menuSecondaryPointingActiveTextColor;
 
 $menuSecondaryPointingHeaderColor: $menuDarkTextColor;
-$menuSecondaryVerticalPointingItemMargin: 0 -$menuSecondaryPointingBorderWidth 0 0;
+$menuSecondaryVerticalPointingItemMargin: 0 (-$menuSecondaryPointingBorderWidth) 0 0;
 
 
 /* Inverted Secondary */
@@ -955,7 +955,7 @@ $menuLabeledIconTextMargin: 0.5rem;
 
 /* Text */
 $menuTextMenuItemSpacing: $menuRelative7px;
-$menuTextMenuMargin: $menuRelativeMedium -($menuTextMenuItemSpacing);
+$menuTextMenuMargin: $menuRelativeMedium (-$menuTextMenuItemSpacing);
 $menuTextMenuItemColor: $menuMutedTextColor;
 $menuTextMenuItemFontWeight: normal;
 $menuTextMenuItemMargin: 0 0;
@@ -1041,7 +1041,7 @@ $menuFloatedDistance: 0.5rem;
 $menuAttachedTopOffset: 0;
 $menuAttachedBottomOffset: 0;
 $menuAttachedHorizontalOffset: -$menuBorderWidth;
-$menuAttachedWidth: #{"calc(100% + " + -$menuAttachedHorizontalOffset * 2 + ")"};
+$menuAttachedWidth: #{"calc(100% + " + (-$menuAttachedHorizontalOffset * 2) + ")"};
 $menuAttachedBoxShadow: none;
 $menuAttachedBorder: $menuBorderWidth solid $menuSolidBorderColor;
 $menuAttachedBottomBoxShadow:

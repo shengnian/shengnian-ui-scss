@@ -704,7 +704,7 @@ $segmentVeryPaddedSegmentPadding: 3em;
 $segmentAttachedTopOffset: 0;
 $segmentAttachedBottomOffset: 0;
 $segmentAttachedHorizontalOffset: -$segmentBorderWidth;
-$segmentAttachedWidth: #{"calc(100% + " + -$segmentAttachedHorizontalOffset * 2 + ")"};
+$segmentAttachedWidth: #{"calc(100% + " + (-$segmentAttachedHorizontalOffset * 2) + ")"};
 $segmentAttachedBoxShadow: none;
 $segmentAttachedBorder: $segmentBorderWidth solid $segmentSolidBorderColor;
 $segmentAttachedBottomBoxShadow:

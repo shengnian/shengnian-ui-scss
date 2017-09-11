@@ -946,12 +946,12 @@ $dropdownScrollingWidescreenMaxMenuHeight: (#{$dropdownScrollingItemHeight} * $d
 /* Upward */
 $dropdownUpwardSelectionVisibleBorderRadius: $dropdownSelectionVisibleConnectingBorder $dropdownSelectionVisibleConnectingBorder $dropdownBorderRadius $dropdownBorderRadius;
 $dropdownUpwardMenuBoxShadow: 0 0 3px 0 rgba(0, 0, 0, 0.08);
-$dropdownUpwardSelectionMenuBoxShadow: 0 -2px 3px 0 rgba(0, 0, 0, 0.08);
+$dropdownUpwardSelectionMenuBoxShadow: 0 (-2px) 3px 0 rgba(0, 0, 0, 0.08);
 $dropdownUpwardMenuBorderRadius: $dropdownBorderRadius $dropdownBorderRadius 0 0;
 $dropdownUpwardSelectionHoverBoxShadow: 0 0 2px 0 rgba(0, 0, 0, 0.05);
 $dropdownUpwardSelectionVisibleBoxShadow: 0 0 3px 0 rgba(0, 0, 0, 0.08);
 $dropdownUpwardSelectionActiveHoverBoxShadow: 0 0 3px 0 rgba(0, 0, 0, 0.05);
-$dropdownUpwardSelectionActiveHoverMenuBoxShadow: 0 -2px 3px 0 rgba(0, 0, 0, 0.08);
+$dropdownUpwardSelectionActiveHoverMenuBoxShadow: 0 (-2px) 3px 0 rgba(0, 0, 0, 0.08);
 
 /* Flyout Direction */
 $dropdownLeftMenuDropdownIconFloat: left;

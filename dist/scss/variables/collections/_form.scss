@@ -629,7 +629,7 @@ $formParagraphMargin: $formRowDistance 0;
 $formFieldMargin: 0 0 $formRowDistance;
 
 /* Fields */
-$formFieldsMargin: 0 -($formGutterWidth / 2) $formRowDistance;
+$formFieldsMargin: 0 (-$formGutterWidth / 2) $formRowDistance;
 
 /* Form Label */
 $formLabelDistance: $form4px;
@@ -689,7 +689,7 @@ $formPromptBackground: $formWhite;
 $formPromptBorderColor: $formFormErrorBorder;
 $formPromptBorder: 1px solid $formPromptBorderColor;
 $formPromptTextColor: $formFormErrorColor;
-$formInlinePromptMargin: -0.25em 0 -0.5em 0.5em;
+$formInlinePromptMargin: -0.25em 0em (-0.5em) 0.5em;
 $formInlinePromptBorderWidth: 1px;
 
 /*-------------------

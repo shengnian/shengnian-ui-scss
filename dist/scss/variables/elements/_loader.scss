@@ -665,14 +665,14 @@ $loaderBig     : $loader52px;
 $loaderHuge    : $loader58px;
 $loaderMassive : $loader64px;
 
-$loaderMiniOffset: 0 0 0 -($loaderMini / 2);
-$loaderTinyOffset: 0 0 0 -($loaderTiny / 2);
-$loaderSmallOffset: 0 0 0 -($loaderSmall / 2);
-$loaderMediumOffset: 0 0 0 -($loaderMedium / 2);
-$loaderLargeOffset: 0 0 0 -($loaderLarge / 2);
-$loaderBigOffset: 0 0 0 -($loaderBig / 2);
-$loaderHugeOffset: 0 0 0 -($loaderHuge / 2);
-$loaderMassiveOffset: 0 0 0 -($loaderMassive / 2);
+$loaderMiniOffset: 0 0 0 (-$loaderMini / 2);
+$loaderTinyOffset: 0 0 0 (-$loaderTiny / 2);
+$loaderSmallOffset: 0 0 0 (-$loaderSmall / 2);
+$loaderMediumOffset: 0 0 0 (-$loaderMedium / 2);
+$loaderLargeOffset: 0 0 0 (-$loaderLarge / 2);
+$loaderBigOffset: 0 0 0 (-$loaderBig / 2);
+$loaderHugeOffset: 0 0 0 (-$loaderHuge / 2);
+$loaderMassiveOffset: 0 0 0 (-$loaderMassive / 2);
 
 $loaderTinyFontSize: $loaderRelativeTiny;
 $loaderMiniFontSize: $loaderRelativeMini;

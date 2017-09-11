@@ -696,11 +696,11 @@ $modalComputerWidth: 850px;
 $modalLargeMonitorWidth: 900px;
 $modalWidescreenMonitorWidth: 950px;
 
-$modalMobileMargin: 0 0 0 -($modalMobileWidth / 2);
-$modalTabletMargin: 0 0 0 -($modalTabletWidth / 2);
-$modalComputerMargin: 0 0 0 -($modalComputerWidth / 2);
-$modalLargeMonitorMargin: 0 0 0 -($modalLargeMonitorWidth / 2);
-$modalWidescreenMonitorMargin: 0 0 0 -($modalWidescreenMonitorWidth / 2);
+$modalMobileMargin: 0 0 0 (-$modalMobileWidth / 2);
+$modalTabletMargin: 0 0 0 (-$modalTabletWidth / 2);
+$modalComputerMargin: 0 0 0 (-$modalComputerWidth / 2);
+$modalLargeMonitorMargin: 0 0 0 (-$modalLargeMonitorWidth / 2);
+$modalWidescreenMonitorMargin: 0 0 0 (-$modalWidescreenMonitorWidth / 2);
 
 $modalFullScreenWidth: 95%;
 $modalFullScreenOffset: (100% - $modalFullScreenWidth) / 2;
@@ -754,11 +754,11 @@ $modalMiniComputerWidth: ($modalComputerWidth * $modalMiniRatio);
 $modalMiniLargeMonitorWidth: ($modalLargeMonitorWidth * $modalMiniRatio);
 $modalMiniWidescreenMonitorWidth: ($modalWidescreenMonitorWidth * $modalMiniRatio);
 
-$modalMiniMobileMargin: 0 0 0 -($modalMiniMobileWidth / 2);
-$modalMiniTabletMargin: 0 0 0 -($modalMiniTabletWidth / 2);
-$modalMiniComputerMargin: 0 0 0 -($modalMiniComputerWidth / 2);
-$modalMiniLargeMonitorMargin: 0 0 0 -($modalMiniLargeMonitorWidth / 2);
-$modalMiniWidescreenMonitorMargin: 0 0 0 -($modalMiniWidescreenMonitorWidth / 2);
+$modalMiniMobileMargin: 0 0 0 (-$modalMiniMobileWidth / 2);
+$modalMiniTabletMargin: 0 0 0 (-$modalMiniTabletWidth / 2);
+$modalMiniComputerMargin: 0 0 0 (-$modalMiniComputerWidth / 2);
+$modalMiniLargeMonitorMargin: 0 0 0 (-$modalMiniLargeMonitorWidth / 2);
+$modalMiniWidescreenMonitorMargin: 0 0 0 (-$modalMiniWidescreenMonitorWidth / 2);
 
 $modalTinyHeaderSize: 1.3em;
 $modalTinyMobileWidth: $modalMobileWidth;
@@ -767,11 +767,11 @@ $modalTinyComputerWidth: ($modalComputerWidth * $modalTinyRatio);
 $modalTinyLargeMonitorWidth: ($modalLargeMonitorWidth * $modalTinyRatio);
 $modalTinyWidescreenMonitorWidth: ($modalWidescreenMonitorWidth * $modalTinyRatio);
 
-$modalTinyMobileMargin: 0 0 0 -($modalTinyMobileWidth / 2);
-$modalTinyTabletMargin: 0 0 0 -($modalTinyTabletWidth / 2);
-$modalTinyComputerMargin: 0 0 0 -($modalTinyComputerWidth / 2);
-$modalTinyLargeMonitorMargin: 0 0 0 -($modalTinyLargeMonitorWidth / 2);
-$modalTinyWidescreenMonitorMargin: 0 0 0 -($modalTinyWidescreenMonitorWidth / 2);
+$modalTinyMobileMargin: 0 0 0 (-$modalTinyMobileWidth / 2);
+$modalTinyTabletMargin: 0 0 0 (-$modalTinyTabletWidth / 2);
+$modalTinyComputerMargin: 0 0 0 (-$modalTinyComputerWidth / 2);
+$modalTinyLargeMonitorMargin: 0 0 0 (-$modalTinyLargeMonitorWidth / 2);
+$modalTinyWidescreenMonitorMargin: 0 0 0 (-$modalTinyWidescreenMonitorWidth / 2);
 
 $modalSmallHeaderSize: 1.3em;
 $modalSmallMobileWidth: $modalMobileWidth;
@@ -780,11 +780,11 @@ $modalSmallComputerWidth: ($modalComputerWidth * $modalSmallRatio);
 $modalSmallLargeMonitorWidth: ($modalLargeMonitorWidth * $modalSmallRatio);
 $modalSmallWidescreenMonitorWidth: ($modalWidescreenMonitorWidth * $modalSmallRatio);
 
-$modalSmallMobileMargin: 0 0 0 -($modalSmallMobileWidth / 2);
-$modalSmallTabletMargin: 0 0 0 -($modalSmallTabletWidth / 2);
-$modalSmallComputerMargin: 0 0 0 -($modalSmallComputerWidth / 2);
-$modalSmallLargeMonitorMargin: 0 0 0 -($modalSmallLargeMonitorWidth / 2);
-$modalSmallWidescreenMonitorMargin: 0 0 0 -($modalSmallWidescreenMonitorWidth / 2);
+$modalSmallMobileMargin: 0 0 0 (-$modalSmallMobileWidth / 2);
+$modalSmallTabletMargin: 0 0 0 (-$modalSmallTabletWidth / 2);
+$modalSmallComputerMargin: 0 0 0 (-$modalSmallComputerWidth / 2);
+$modalSmallLargeMonitorMargin: 0 0 0 (-$modalSmallLargeMonitorWidth / 2);
+$modalSmallWidescreenMonitorMargin: 0 0 0 (-$modalSmallWidescreenMonitorWidth / 2);
 
 $modalLargeHeaderSize: 1.6em;
 $modalLargeMobileWidth: $modalMobileWidth;
@@ -793,8 +793,8 @@ $modalLargeComputerWidth: ($modalComputerWidth * $modalLargeRatio);
 $modalLargeLargeMonitorWidth: ($modalLargeMonitorWidth * $modalLargeRatio);
 $modalLargeWidescreenMonitorWidth: ($modalWidescreenMonitorWidth * $modalLargeRatio);
 
-$modalLargeMobileMargin: 0 0 0 -($modalLargeMobileWidth / 2);
-$modalLargeTabletMargin: 0 0 0 -($modalLargeTabletWidth / 2);
-$modalLargeComputerMargin: 0 0 0 -($modalLargeComputerWidth / 2);
-$modalLargeLargeMonitorMargin: 0 0 0 -($modalLargeLargeMonitorWidth / 2);
-$modalLargeWidescreenMonitorMargin: 0 0 0 -($modalLargeWidescreenMonitorWidth / 2);
+$modalLargeMobileMargin: 0 0 0 (-$modalLargeMobileWidth / 2);
+$modalLargeTabletMargin: 0 0 0 (-$modalLargeTabletWidth / 2);
+$modalLargeComputerMargin: 0 0 0 (-$modalLargeComputerWidth / 2);
+$modalLargeLargeMonitorMargin: 0 0 0 (-$modalLargeLargeMonitorWidth / 2);
+$modalLargeWidescreenMonitorMargin: 0 0 0 (-$modalLargeWidescreenMonitorWidth / 2);

@@ -693,7 +693,7 @@ $commentCommentReplyDistance: $commentReplyDistance;
 --------------------*/
 
 /* Threaded */
-$commentThreadedCommentMargin: -1.5em 0 -1em  ($commentAvatarWidth / 2);
+$commentThreadedCommentMargin: -1.5em 0 (-1em)  ($commentAvatarWidth / 2);
 $commentThreadedCommentPadding: 3em 0 2em 2.25em;
 $commentThreadedCommentBoxShadow: -1px 0 0 $commentBorderColor;
 

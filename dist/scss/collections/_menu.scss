@@ -653,7 +653,7 @@ Floated Menu / Item
   background: $menuTabularActiveBackground;
   color: $menuTabularActiveColor;
   border-color: $menuTabularBorderColor;
-  margin: 0 -$menuTabularBorderWidth 0 0;
+  margin: 0 (-$menuTabularBorderWidth) 0 0;
   border-radius: $menuTabularBorderRadius 0 0 $menuTabularBorderRadius !important;
 }
 
@@ -677,7 +677,7 @@ Floated Menu / Item
   background: $menuTabularActiveBackground;
   color: $menuTabularActiveColor;
   border-color: $menuTabularBorderColor;
-  margin: 0 0 0 -$menuTabularBorderWidth;
+  margin: 0 0 0 (-$menuTabularBorderWidth);
   border-radius: 0 $menuTabularBorderRadius $menuTabularBorderRadius 0 !important;
 }
 
@@ -866,7 +866,7 @@ Floated Menu / Item
   border-radius: 0;
   align-self: flex-end;
 
-  margin: 0 0 -$menuSecondaryPointingBorderWidth;
+  margin: 0 0 (-$menuSecondaryPointingBorderWidth);
   padding: $menuSecondaryPointingItemVerticalPadding $menuSecondaryPointingItemHorizontalPadding;
   border-bottom-width: $menuSecondaryPointingBorderWidth;
   transition: $menuSecondaryItemTransition;
@@ -1745,7 +1745,7 @@ Floated Menu / Item
   left: auto;
 
   transform: translateX(50%) translateY(-50%) rotate(45deg);
-  margin: 0 -($menuArrowBorderWidth / 2) 0 0;
+  margin: 0 (-$menuArrowBorderWidth / 2) 0 0;
 
   border: none;
   border-top: $menuArrowBorder;

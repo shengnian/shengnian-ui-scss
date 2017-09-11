@@ -681,7 +681,7 @@ $tableFooterTextTransform: none;
 $tableResponsiveHeaderDisplay: block;
 $tableResponsiveFooterDisplay: block;
 $tableResponsiveRowVerticalPadding: 1em;
-$tableResponsiveRowBoxShadow: 0 -1px 0 0 rgba(0, 0, 0, 0.1) inset !important;
+$tableResponsiveRowBoxShadow: 0 (-1px) 0 0 rgba(0, 0, 0, 0.1) inset !important;
 $tableResponsiveCellVerticalPadding: 0.25em;
 $tableResponsiveCellHorizontalPadding: 0.75em;
 $tableResponsiveCellBoxShadow: none !important;
@@ -763,7 +763,7 @@ $tableActiveColorHover: $tableSelectedTextColor;
 $tableAttachedTopOffset: 0;
 $tableAttachedBottomOffset: 0;
 $tableAttachedHorizontalOffset: -$tableBorderWidth;
-$tableAttachedWidth: #{"calc(100% + " + -$tableAttachedHorizontalOffset * 2 + ")"};
+$tableAttachedWidth: #{"calc(100% + " + (-$tableAttachedHorizontalOffset * 2) + ")"};
 $tableAttachedBoxShadow: none;
 $tableAttachedBorder: $tableBorderWidth solid $tableSolidBorderColor;
 $tableAttachedBottomBoxShadow:

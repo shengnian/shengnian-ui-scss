@@ -625,7 +625,7 @@ $statisticMaxWidth: auto;
 /* Group */
 $statisticHorizontalSpacing: 1.5em;
 $statisticRowSpacing: 2em;
-$statisticGroupMargin: 1em -$statisticHorizontalSpacing -$statisticRowSpacing;
+$statisticGroupMargin: 1em (-$statisticHorizontalSpacing) (-$statisticRowSpacing);
 
 /* Group Element */
 $statisticElementMargin: 0 $statisticHorizontalSpacing $statisticRowSpacing;

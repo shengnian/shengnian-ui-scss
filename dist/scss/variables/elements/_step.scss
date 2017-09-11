@@ -707,7 +707,7 @@ $stepVerticalActiveLastArrowDisplay: block;
 
 $stepAttachedHorizontalOffset: -$stepBorderWidth;
 $stepAttachedVerticalOffset: 0;
-$stepAttachedWidth: #{"calc(100% + " + -$stepAttachedHorizontalOffset * 2 + ")"};
+$stepAttachedWidth: #{"calc(100% + " + (-$stepAttachedHorizontalOffset * 2) + ")"};
 
 $stepOrderedFontFamily: inherit;
 $stepOrderedFontWeight: bold;

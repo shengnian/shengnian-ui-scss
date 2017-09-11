@@ -730,7 +730,7 @@ $labelBasicHoverBoxShadow: $labelBasicBoxShadow;
 $labelTagCircleColor: $labelWhite;
 $labelTagCircleSize: 0.5em;
 $labelTagHorizontalPadding: 1.5em;
-$labelTagCircleBoxShadow: 0 -1px 1px 0 rgba(0, 0, 0, 0.3);
+$labelTagCircleBoxShadow: 0 (-1px) 1px 0 rgba(0, 0, 0, 0.3);
 $labelTagTriangleRightOffset: 100%;
 $labelTagTriangleTopOffset: 50%;
 $labelTagTriangleSize: 1.56em;
@@ -742,17 +742,17 @@ $labelRibbonTriangleSize: 1.2em;
 $labelRibbonShadowColor: rgba(0, 0, 0, 0.15);
 
 $labelRibbonMargin: 1rem;
-$labelRibbonOffset: #{"calc(" + -$labelRibbonMargin + " - " + $labelRibbonTriangleSize + ")"};
+$labelRibbonOffset: #{"calc(" + (-$labelRibbonMargin) + " - " + $labelRibbonTriangleSize + ")"};
 $labelRibbonDistance: #{"calc(" + $labelRibbonMargin + " + " + $labelRibbonTriangleSize + ")"};
 $labelRightRibbonOffset:  #{"calc(100% + " + $labelRibbonMargin + " + " + $labelRibbonTriangleSize + ")"};
 
 $labelRibbonImageTopDistance: 1rem;
 $labelRibbonImageMargin: -0.05rem; /* Rounding Offset on Triangle */
-$labelRibbonImageOffset: #{"calc(" + -$labelRibbonImageMargin + " - " + $labelRibbonTriangleSize + ")"};
+$labelRibbonImageOffset: #{"calc(" + (-$labelRibbonImageMargin) + " - " + $labelRibbonTriangleSize + ")"};
 $labelRightRibbonImageOffset:  #{"calc(100% + " + $labelRibbonImageMargin + " + " + $labelRibbonTriangleSize + ")"};
 
 $labelRibbonTableMargin: $labelRelativeMini; /* Rounding Offset on Triangle */
-$labelRibbonTableOffset: #{"calc(" + -$labelRibbonTableMargin + " - " + $labelRibbonTriangleSize + ")"};
+$labelRibbonTableOffset: #{"calc(" + (-$labelRibbonTableMargin) + " - " + $labelRibbonTriangleSize + ")"};
 $labelRightRibbonTableOffset:  #{"calc(100% + " + $labelRibbonTableMargin + " + " + $labelRibbonTriangleSize + ")"};
 
 
