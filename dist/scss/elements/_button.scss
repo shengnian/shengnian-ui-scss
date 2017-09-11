@@ -849,9 +849,9 @@
 
 /* Right Labeled */
 .ui[class*="right labeled"].icon.button {
-  @include buttonLabeledIconPadding();
-  //padding-right: $buttonLabeledIconPadding !important;
-  //padding-left: $buttonHorizontalPadding !important;
+  //@include buttonLabeledIconPadding();
+  padding-right: buttonLabeledIconPaddingFunc() !important;
+  padding-left: $buttonHorizontalPadding !important;
 }
 .ui[class*="right labeled"].icon.button > .icon {
   left: auto;

@@ -289,9 +289,8 @@
   left: $inputCircularIconHorizontalOffset;
 }
 .ui[class*="left icon"].input > input {
-  @include inputIconPlPr();
-  //padding-left: $inputIconMargin !important;
-  //padding-right: $inputHorizontalPadding !important;
+  padding-left: inputIconWidthFunc() + $inputIconDistance !important;
+  padding-right: inputHorizontalPadding() !important;
 }
 
 /* Focus */

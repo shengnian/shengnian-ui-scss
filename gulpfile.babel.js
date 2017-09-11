@@ -493,6 +493,15 @@ function defaultTask(done) {
 gulp.task('default', defaultTask)
 
 
+function cleanCss(done) {
+  console.log(`Delete ${paths.dest.root}/css`);
+  return del([
+    paths.dest.root + '/css'
+  ], done)
+}
+
+gulp.task(cleanCss);
+
 function scss(done) {
   gulp.src(paths.dest.scss + '/*.scss')
     .pipe(sass().on('error', sass.logError))
@@ -505,7 +514,7 @@ function scss(done) {
     })
 }
 
-gulp.task(scss)
+gulp.task(scss);
 
 function css (done) {
   var plugins = [
@@ -524,9 +533,10 @@ function css (done) {
     })
 }
 
-gulp.task(css)
+gulp.task(css);
 
 gulp.task('build:css',  gulp.series(
+  cleanCss,
   scss,
   css
 ));

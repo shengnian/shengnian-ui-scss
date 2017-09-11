@@ -260,8 +260,8 @@
 }
 
 @mixin buttonLabeledIconPadding {
-  padding-right: buttonLabeledIconPaddingFunc() !important;
-  padding-left: $buttonHorizontalPadding !important;
+  padding-left: buttonLabeledIconPaddingFunc() !important;
+  padding-right: $buttonHorizontalPadding !important;
 }
 
 // button or
@@ -339,7 +339,7 @@
 }
 
 @mixin inputIconPlPr {
-  padding-right: inputIconWidthFunc() + $inputIconDistance !important;
+  padding-left: inputIconWidthFunc() + $inputIconDistance !important;
   padding-right: inputHorizontalPadding() !important;
 }
 

@@ -260,8 +260,8 @@
 }
 
 @mixin buttonLabeledIconPadding {
-  padding-right: buttonLabeledIconPaddingFunc() !important;
-  padding-left: $buttonHorizontalPadding !important;
+  padding-left: buttonLabeledIconPaddingFunc() !important;
+  padding-right: $buttonHorizontalPadding !important;
 }
 
 // button or
