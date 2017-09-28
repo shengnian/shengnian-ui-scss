@@ -40,48 +40,48 @@
   position: relative;
   overflow: hidden;
   display: block;
-  min-height: $tabLoadingMinHeight;
+  min-height: $tab-loading-min-height;
 }
 .ui.tab.loading * {
-  position: $tabLoadingContentPosition !important;
-  left: $tabLoadingContentOffset !important;
+  position: $tab-loading-content-position !important;
+  left: $tab-loading-content-offset !important;
 }
 
 .ui.tab.loading:before,
 .ui.tab.loading.segment:before {
   position: absolute;
   content: '';
-  top: $tabLoaderDistanceFromTop;
+  top: $tab-loader-distance-from-top;
   left: 50%;
 
-  //margin: $tabLoaderMargin;
-  @include loaderMargin($tabLoaderSize);
-  width: $tabLoaderSize;
-  height: $tabLoaderSize;
+  //margin: $tab-loader-margin;
+  @include loaderMargin($tab-loader-size);
+  width: $tab-loader-size;
+  height: $tab-loader-size;
 
-  border-radius: $tabCircularRadius;
-  border: $tabLoaderLineWidth solid $tabLoaderFillColor;
+  border-radius: $circular-radius;
+  border: $loader-line-width solid $loader-fill-color;
 }
 .ui.tab.loading:after,
 .ui.tab.loading.segment:after {
   position: absolute;
   content: '';
-  top: $tabLoaderDistanceFromTop;
+  top: $tab-loader-distance-from-top;
   left: 50%;
 
-  //margin: $tabLoaderMargin;
-  @include loaderMargin($tabLoaderSize);
-  width: $tabLoaderSize;
-  height: $tabLoaderSize;
+  //margin: $tab-loader-margin;
+  @include loaderMargin($tab-loader-size);
+  width: $tab-loader-size;
+  height: $tab-loader-size;
 
-  animation: button-spin $tabLoaderSpeed linear;
+  animation: button-spin $loader-speed linear;
   animation-iteration-count: infinite;
 
-  border-radius: $tabCircularRadius;
+  border-radius: $circular-radius;
 
-  border-color: $tabLoaderLineColor transparent transparent;
+  border-color: $loader-line-color transparent transparent;
   border-style: solid;
-  border-width: $tabLoaderLineWidth;
+  border-width: $loader-line-width;
 
   box-shadow: 0 0 0 1px transparent;
 }

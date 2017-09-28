@@ -2,7 +2,7 @@
   _site.scss
 ********************/
 @function headerLineHeightOffset()  {
-  @return (to-number($headerLineHeight) - 1em) / 2;
+  @return (to-number($header-line-height) - 1em) / 2;
 }
 
 @function headerTopMargin() {
@@ -10,14 +10,14 @@
 }
 
 @mixin headerMargin {
-  margin: headerTopMargin() 0 $headerBottomMargin;
+  margin: headerTopMargin() 0 $header-bottom-margin;
 }
 
 /********************
   _input.scss
 ********************/
 @function inputIconWidthFunc () {
-  @return (to-number($inputVerticalPadding) * 2) + $inputGlyphWidth;
+  @return (to-number($input-vertical-padding) * 2) + $glyph-width;
 }
 
 @mixin inputIconWidth {
@@ -25,26 +25,26 @@
 }
 
 @mixin inputIconMargin {
-  padding-right: inputIconWidthFunc() + $inputIconDistance !important;
+  padding-right: inputIconWidthFunc() + $input-icon-distance !important;
 }
 
 /********************
   _dropdown.scss
 *********************/
 @function dropdownSelectionMinHeight() {
-  @return to-number($dropdownInputLineHeight) + (to-number($dropdownSelectionVerticalPadding) * 2) - to-number($dropdownSelectionBorderEmWidth);
+  @return to-number($input-line-height) + (to-number($dropdown-selection-vertical-padding) * 2) - to-number($dropdown-selection-border-em-width);
 }
 
 @function dropdownSelectionIconDistance() {
-  @return to-number($dropdownInputHorizontalPadding) + $dropdownGlyphWidth
+  @return to-number($input-horizontal-padding) + $glyph-width
 }
 
 @function dropdownSelectionPadding() {
-  @return to-number($dropdownSelectionVerticalPadding) dropdownSelectionIconDistance() to-number($dropdownSelectionVerticalPadding) to-number($dropdownSelectionHorizontalPadding);
+  @return to-number($dropdown-selection-vertical-padding) dropdownSelectionIconDistance() to-number($dropdown-selection-vertical-padding) to-number($dropdown-selection-horizontal-padding);
 }
 
 @mixin dropdownSelectionMinSize {
-  min-width: $dropdownSelectionMinWidth;
+  min-width: $dropdown-selection-min-width;
   min-height: dropdownSelectionMinHeight();
   padding: dropdownSelectionPadding();
 }
@@ -52,87 +52,87 @@
 
 // selection
 @function dropdownSelectionItemHeight () {
-  @return (to-number($dropdownSelectionItemVerticalPadding) * 2) + strip-number(($dropdownItemLineHeight + $dropdownSelectedBorderEMWidth + ""), 'em');
+  @return (to-number($dropdown-selection-item-vertical-padding) * 2) + strip-number(($dropdown-item-line-height + $dropdown-selected-borderEMWidth + ""), 'em');
 }
 
-@function dropdownSelectionMaxMenuHeight($maxItems) {
-  @return (dropdownSelectionItemHeight() * $maxItems);
+@function dropdownSelectionMaxMenuHeight($max-items) {
+  @return (dropdownSelectionItemHeight() * $max-items);
 }
 
 @mixin dropdownSelectionMobileMaxMenuHeight {
-  max-height: dropdownSelectionMaxMenuHeight($dropdownSelectionMobileMaxItems);
+  max-height: dropdownSelectionMaxMenuHeight($dropdown-selection-mobile-max-items);
 }
 
 @mixin dropdownSelectionTabletMaxMenuHeight {
-  max-height: dropdownSelectionMaxMenuHeight($dropdownSelectionTabletMaxItems);
-  //max-height: $dropdownSelectionTabletMaxMenuHeight;
+  max-height: dropdownSelectionMaxMenuHeight($dropdown-selection-tablet-max-items);
+  //max-height: $dropdown-selection-tablet-max-menu-height;
 }
 
 @mixin dropdownSelectionComputerMaxMenuHeight {
-  max-height: dropdownSelectionMaxMenuHeight($dropdownSelectionComputerMaxItems);
-  //max-height: $dropdownSelectionComputerMaxMenuHeight;
+  max-height: dropdownSelectionMaxMenuHeight($dropdown-selection-computer-max-items);
+  //max-height: $dropdown-selection-computer-max-menu-height;
 }
 
 @mixin dropdownSelectionWidescreenMaxMenuHeight {
-  max-height: dropdownSelectionMaxMenuHeight($dropdownSelectionWidescreenMaxItems);
-  //max-height: $dropdownSelectionWidescreenMaxMenuHeight;
+  max-height: dropdownSelectionMaxMenuHeight($dropdown-selection-widescreen-max-items);
+  //max-height: $dropdown-selection-widescreen-max-menu-height;
 }
 
 
 // scrolling
 @function dropdownScrollingItemHeight () {
-  @return (to-number($dropdownItemVerticalPadding) * 2) + strip-number(($dropdownItemLineHeight + $dropdownScrollingBorderEMWidth + ''), 'em')
+  @return (to-number($dropdown-item-vertical-padding) * 2) + strip-number(($dropdown-item-line-height + $dropdown-scrolling-borderEMWidth + ''), 'em')
 }
 
-@function dropdownScrollingMaxMenuHeight ($maxItems) {
-  @return (dropdownScrollingItemHeight() * $maxItems)
+@function dropdownScrollingMaxMenuHeight ($max-items) {
+  @return (dropdownScrollingItemHeight() * $max-items)
 }
 
 @mixin dropdownScrollingMobileMaxMenuHeight {
-  max-height: dropdownScrollingMaxMenuHeight($dropdownScrollingMobileMaxItems);
-  //max-height: $dropdownScrollingMobileMaxMenuHeight;
+  max-height: dropdownScrollingMaxMenuHeight($dropdown-scrolling-mobile-max-items);
+  //max-height: $dropdown-scrolling-mobile-max-menu-height;
 }
 
 @mixin dropdownScrollingTabletMaxMenuHeight {
-  max-height: dropdownScrollingMaxMenuHeight($dropdownScrollingTabletMaxItems);
-  //max-height: $dropdownScrollingTabletMaxMenuHeight;
+  max-height: dropdownScrollingMaxMenuHeight($dropdown-scrolling-tablet-max-items);
+  //max-height: $dropdown-scrolling-tablet-max-menu-height;
 }
 
 @mixin dropdownScrollingComputerMaxMenuHeight {
-  max-height: dropdownScrollingMaxMenuHeight($dropdownScrollingComputerMaxItems);
-  //max-height: $dropdownScrollingComputerMaxMenuHeight;
+  max-height: dropdownScrollingMaxMenuHeight($dropdown-scrolling-computer-max-items);
+  //max-height: $dropdown-scrolling-computer-max-menu-height;
 }
 
 @mixin dropdownScrollingWidescreenMaxMenuHeight {
-  max-height: dropdownScrollingMaxMenuHeight($dropdownSelectionWidescreenMaxItems);
-  //max-height: $dropdownScrollingWidescreenMaxMenuHeight;
+  max-height: dropdownScrollingMaxMenuHeight($dropdown-selection-widescreen-max-items);
+  //max-height: $dropdown-scrolling-widescreen-max-menu-height;
 }
 
 // dropdown search
 @mixin dropdownSearchMobileMaxMenuHeight {
-  max-height: dropdownSelectionMaxMenuHeight($dropdownSelectionMobileMaxItems);
+  max-height: dropdownSelectionMaxMenuHeight($dropdown-selection-mobile-max-items);
 }
 
 @mixin dropdownSearchTabletMaxMenuHeight {
-  max-height: dropdownSelectionMaxMenuHeight($dropdownSelectionTabletMaxItems);
+  max-height: dropdownSelectionMaxMenuHeight($dropdown-selection-tablet-max-items);
 }
 
 @mixin dropdownSearchComputerMaxMenuHeight {
-  max-height: dropdownSelectionMaxMenuHeight($dropdownSelectionComputerMaxItems);
+  max-height: dropdownSelectionMaxMenuHeight($dropdown-selection-computer-max-items);
 }
 
 @mixin dropdownSearchWidescreenMaxMenuHeight {
-  max-height: dropdownSelectionMaxMenuHeight($dropdownSelectionWidescreenMaxItems);
+  max-height: dropdownSelectionMaxMenuHeight($dropdown-selection-widescreen-max-items);
 }
 
 
 // dropdown multiple
 @function dropdownMultipleSelectionChildLeftMargin () {
-  @return (to-number($dropdownInputHorizontalPadding) - to-number($dropdownMultipleSelectionLeftPadding));
+  @return (to-number($input-horizontal-padding) - to-number($dropdown-multiple-selection-left-padding));
 }
 
 @function dropdownMultipleSelectionChildVerticalMargin () {
-  @return (to-number($dropdownSelectionVerticalPadding) - ((to-number($dropdownSearchSelectionLineHeight) - 1) / 2)) * (2/3);
+  @return (to-number($dropdown-selection-vertical-padding) - ((to-number($dropdown-search-selection-line-height) - 1) / 2)) * (2/3);
 }
 
 @mixin dropdownMultipleSelectionChildMargin {
@@ -141,84 +141,84 @@
 
 
 @function dropdownSearchSelectionLineHeightOffset() {
-  @return ((to-number($dropdownSearchSelectionLineHeight) - 1em) / 2);
+  @return ((to-number($dropdown-search-selection-line-height) - 1em) / 2);
 }
 
 @function dropdownSearchSelectionVerticalPadding() {
-  @return to-number($dropdownSelectionVerticalPadding) - (dropdownSearchSelectionLineHeightOffset());
+  @return to-number($dropdown-selection-vertical-padding) - (dropdownSearchSelectionLineHeightOffset());
 }
 
 @function dropdownMultipleSelectionVerticalPadding() {
   @return (dropdownSearchSelectionVerticalPadding() * (1/3));
-  @return dropdownMultipleSelectionVerticalPadding $dropdownMultipleSelectionRightPadding $dropdownMultipleSelectionVerticalPadding $dropdownMultipleSelectionLeftPadding;
+  @return dropdownMultipleSelectionVerticalPadding $dropdown-multiple-selection-right-padding $dropdown-multiple-selection-vertical-padding $dropdown-multiple-selection-left-padding;
 }
 
 @mixin dropdownMultipleSelectionPadding {
-  padding: dropdownMultipleSelectionVerticalPadding() dropdownSelectionIconDistance()  dropdownMultipleSelectionVerticalPadding() to-number($dropdownMultipleSelectionLeftPadding);
-  //padding: $dropdownMultipleSelectionPadding;
+  padding: dropdownMultipleSelectionVerticalPadding() dropdownSelectionIconDistance()  dropdownMultipleSelectionVerticalPadding() to-number($dropdown-multiple-selection-left-padding);
+  //padding: $dropdown-multiple-selection-padding;
 }
 
 @mixin dropdownSelectionIconPadding {
-  padding: to-number($dropdownSelectionIconHitbox) / to-number($dropdownDropdownIconSize) + em;
+  padding: to-number($dropdown-selection-icon-hitbox) / to-number($dropdown-dropdown-icon-size) + em;
 }
 
 @mixin dropdownSearchSelectionInputPadding {
-  padding: dropdownSearchSelectionVerticalPadding() dropdownSelectionIconDistance() dropdownSearchSelectionVerticalPadding() to-number($dropdownSearchSelectionHorizontalPadding);
+  padding: dropdownSearchSelectionVerticalPadding() dropdownSelectionIconDistance() dropdownSearchSelectionVerticalPadding() to-number($dropdown-search-selection-horizontal-padding);
 }
 
 @function dropdownPointingArrowOffset() {
-  @return (to-number(-$dropdownPointingArrowSize) / 2)
+  @return (to-number(-$dropdown-pointing-arrow-size) / 2)
 }
 
 /******************
   _modal.scss
 *******************/
 @function modalCloseHitBoxOffset() {
-  @return ($modalCloseHitbox - 1rem) / 2
+  @return ($modal-close-hitbox - 1rem) / 2
 }
 
 @function modalInnerCloseTop() {
-  @return $modalHeaderVerticalPadding - modalCloseHitBoxOffset() + (strip-number($modalLineHeight + '', 'em') - 1)
+  @return $modal-header-vertical-padding - modalCloseHitBoxOffset() + (strip-number($line-height + '', 'em') - 1)
 }
 
 /* Inner Close Position (Tablet/Mobile) */
 @mixin modalInnerClose {
   top: modalInnerCloseTop();
   right: 1rem;
-  color: $modalTextColor;
+  color: $text-color;
 }
 
 /********************
   _menu.scss
 ********************/
 @function menuMinHeightFunc() {
-  @return (to-number($menuItemVerticalPadding) * 2) + 1em;
+  @return (to-number($menu-item-vertical-padding) * 2) + 1em;
 }
 @mixin menuMinHeight {
   min-height: menuMinHeightFunc();
 }
 
 @mixin menuSubMenuMargin {
-  margin: $menuSubMenuDistance to-number(-$menuItemHorizontalPadding) 0;
+  margin: $menu-sub-menu-distance to-number(-$menu-item-horizontal-padding) 0;
 }
 
 @function menuSubMenuHorizontalPadding() {
-  @return (to-number($menuItemHorizontalPadding) / $menuTinySize) + $menuSubMenuIndent;
+  @return (to-number($menu-item-horizontal-padding) / $tiny-size) + $menu-sub-menu-indent;
 }
 @mixin menuSubMenuPadding {
-  padding: $menuSubMenuVerticalPadding menuSubMenuHorizontalPadding();
+  padding: $menu-sub-menu-vertical-padding menuSubMenuHorizontalPadding();
 }
 
 @mixin menuSecondaryMenuSubMenuItemMargin {
-  margin: $menuSecondaryMenuSubMenuItemMargin;
+  margin: $menu-secondary-menu-sub-menu-item-margin;
 }
 
 @mixin menuSecondaryMenuSubMenuItemPadding {
-  padding: $menuRelative7px ((to-number($menuItemHorizontalPadding) / to-number($menuTinySize)) + $menuSubMenuIndent);
+  padding: $relative7px ((to-number($menu-item-horizontal-padding) / to-number($tiny-size)) + $menu-sub-menu-indent);
 }
 
 @mixin menuTextMenuMargin {
-  margin: $menuRelativeMedium to-number(-$menuTextMenuItemSpacing);
+  margin: $relative-medium to-number(-$menu-text-menu-item-spacing);
 }
 
 /********************
@@ -226,24 +226,24 @@
 ********************/
 
 @function buttonCompactVerticalPadding() {
-  @return (to-number($buttonVerticalPadding) * 0.75);
+  @return (to-number($button-vertical-padding) * 0.75);
 }
 
 @function buttonCompactHorizontalPadding() {
-  @return (to-number($buttonHorizontalPadding) * 0.75);
+  @return (to-number($button-horizontal-padding) * 0.75);
 }
 
 @function buttonShadowOffset() {
-  @return $buttonShadowDistance / 2;
+  @return $button-shadow-distance / 2;
 }
 
 @function buttonLabeledIconWidth() {
-  @return 1em + (to-number($buttonVerticalPadding) * 2)
+  @return 1em + (to-number($button-vertical-padding) * 2)
 }
 
 // ui
 @function buttonVerticalPadding() {
-  @return to-number($buttonVerticalPadding);
+  @return to-number($button-vertical-padding);
 }
 
 @mixin buttonPadding($u, $r, $d) {
@@ -256,30 +256,30 @@
 
 
 @function buttonLabeledIconPaddingFunc() {
-  @return  ($buttonHorizontalPadding + buttonLabeledIconWidth());
+  @return  ($button-horizontal-padding + buttonLabeledIconWidth());
 }
 
 @mixin buttonLabeledIconPadding {
   padding-left: buttonLabeledIconPaddingFunc() !important;
-  padding-right: $buttonHorizontalPadding !important;
+  padding-right: $button-horizontal-padding !important;
 }
 
 // button or
 @function buttonOrHeight() {
-  @return (to-number($buttonVerticalPadding) * 2) + 1em;
+  @return (to-number($button-vertical-padding) * 2) + 1em;
 }
 @mixin buttonOr {
-  width: $buttonOrGap;
+  width: $button-or-gap;
   height: buttonOrHeight();
-  z-index: $buttonOrZIndex;
+  z-index: $button-or-zindex;
 }
 
 @function buttonOrHeight() {
-  @return (to-number($buttonVerticalPadding) * 2) + 1em;
+  @return (to-number($button-vertical-padding) * 2) + 1em;
 }
 
 @function buttonOrCircleSize() {
-  @return buttonOrHeight() - to-number($buttonOrCircleDistanceToEdge);
+  @return buttonOrHeight() - to-number($button-or-circle-distance-to-edge);
 }
 
 @function buttonOrVerticalOffset() {
@@ -301,45 +301,45 @@
 }
 
 @mixin buttonLoaderMargin() {
-  margin: loaderOffsetBy($buttonLoaderSize) 0 0 loaderOffsetBy($buttonLoaderSize);
+  margin: loaderOffsetBy($loader-size) 0 0 loaderOffsetBy($loader-size);
 }
 
-@mixin loaderMargin($loaderSize) {
-  margin: loaderOffsetBy($loaderSize) 0 0 loaderOffsetBy($loaderSize);
+@mixin loaderMargin($loader-size) {
+  margin: loaderOffsetBy($loader-size) 0 0 loaderOffsetBy($loader-size);
 }
 
 
 @mixin buttonIconMargin {
-  margin: 0 to-number($buttonIconDistance) 0 (to-number(-$buttonIconDistance) / 2);
+  margin: 0 to-number($button-icon-distance) 0 (to-number(-$button-icon-distance) / 2);
 }
 
 @mixin buttonRightIconMargin {
-  margin: 0 (to-number(-$buttonIconDistance) / 2) 0 to-number($buttonIconDistance);
+  margin: 0 (to-number(-$button-icon-distance) / 2) 0 to-number($button-icon-distance);
 }
 
 /********************
   _input.scss
 ********************/
 @function inputVerticalPadding() {
-  @return to-number($inputVerticalPadding);
+  @return to-number($input-vertical-padding);
 }
 
 @function inputHorizontalPadding() {
-  @return to-number($inputHorizontalPadding);
+  @return to-number($input-horizontal-padding);
 }
 
 @function inputLineHeightOffset() {
-  @return (to-number($inputLineHeight) - 1em) / 2;
+  @return (to-number($input-line-height) - 1em) / 2;
 }
 
 
-//@return ($inputVerticalPadding - $inputLineHeightOffset) $inputHorizontalPadding
+//@return ($input-vertical-padding - $input-line-height-offset) $input-horizontal-padding
 @mixin inputPadding {
   padding: inputVerticalPadding() - inputLineHeightOffset() inputHorizontalPadding();
 }
 
 @mixin inputIconPlPr {
-  padding-left: inputIconWidthFunc() + $inputIconDistance !important;
+  padding-left: inputIconWidthFunc() + $input-icon-distance !important;
   padding-right: inputHorizontalPadding() !important;
 }
 
@@ -351,7 +351,7 @@
 }
 
 //@function loaderSize() {
-//  @return to-number($relativeBig);
+//  @return to-number($relative-big);
 //}
 //@function loaderOffset() {
 //  @return -(loaderSize() / 2);
@@ -363,41 +363,41 @@
 //}
 
 @mixin inputLoaderMargin {
-  margin: loaderOffsetBy($inputLoaderSize) 0 0 loaderOffsetBy($inputLoaderSize);
+  margin: loaderOffsetBy($loader-size) 0 0 loaderOffsetBy($loader-size);
 }
 
 // input loader mini
-//@function inputLoaderOffset($loaderOff) {
-//  @return -(to-number($loaderOff) / 2);
+//@function inputLoaderOffset($loader-off) {
+//  @return -(to-number($loader-off) / 2);
 //}
 
 @mixin loaderMiniOffset {
-  margin: 0 0 0 loaderOffsetBy($loaderMini);
+  margin: 0 0 0 loaderOffsetBy($loader-mini);
 }
 @mixin loaderTinyOffset {
-  margin: 0 0 0 loaderOffsetBy($loaderTiny);
+  margin: 0 0 0 loaderOffsetBy($loader-tiny);
 }
 @mixin loaderSmallOffset {
-  margin: 0 0 0 loaderOffsetBy($loaderSmall);
+  margin: 0 0 0 loaderOffsetBy($loader-small);
 }
 @mixin loaderMediumOffset {
-  margin: 0 0 0 loaderOffsetBy($loaderMedium);
+  margin: 0 0 0 loaderOffsetBy($loader-medium);
 }
 @mixin loaderLargeOffset {
-  margin: 0 0 0 loaderOffsetBy($loaderLarge);
+  margin: 0 0 0 loaderOffsetBy($loader-large);
 }
 @mixin loaderBigOffset {
-  margin: 0 0 0 loaderOffsetBy($loaderBig);
+  margin: 0 0 0 loaderOffsetBy($loader-big);
 }
 @mixin loaderHugeOffset {
-  margin: 0 0 0 loaderOffsetBy($loaderHuge);
+  margin: 0 0 0 loaderOffsetBy($loader-huge);
 }
 @mixin loaderMassiveOffset {
-  margin: 0 0 0 loaderOffsetBy($loaderMassive);
+  margin: 0 0 0 loaderOffsetBy($loader-massive);
 }
 
 @mixin loaderPaddingTop($loader) {
-  padding-top: (to-number($loader) + strip-number($loaderTextDistance, 'em'));
+  padding-top: (to-number($loader) + strip-number($loader-text-distance, 'em'));
 }
 
 /********************
@@ -405,9 +405,9 @@
 ********************/
 
 /*@mixin formLoaderMargin() {
-  margin: loaderOffsetBy($formLoaderSize) 0 0 loaderOffsetBy($formLoaderSize);
-  width: $formLoaderSize;
-  height: $formLoaderSize;
+  margin: loaderOffsetBy($form-loader-size) 0 0 loaderOffsetBy($form-loader-size);
+  width: $form-loader-size;
+  height: $form-loader-size;
 }*/
 
 
@@ -420,15 +420,15 @@
   _popup.scss
 ********************/
 @function popupTooltipArrowVerticalOffset() {
-  @return -(to-number(-$popup2px));
+  @return -(to-number(-$_2px));
 }
 
 @function popupTooltipArrowHorizontalOffset() {
-  @return (to-number(-$popup1px));
+  @return (to-number(-$_1px));
 }
 
 @function popupArrowOffset() {
-  @return -(to-number($popupArrowSize) / 2) + $popupArrowJitter
+  @return -(to-number($popup-arrow-size) / 2) + $popup-arrow-jitter
 }
 
 /********************
@@ -436,5 +436,5 @@
 ********************/
 
 @function searchPromptPadding() {
-  @return (to-number($searchPromptVerticalPadding) + ((1em - to-number($searchPromptLineHeight)) / 2));
+  @return (to-number($search-prompt-vertical-padding) + ((1em - to-number($search-prompt-line-height)) / 2));
 }

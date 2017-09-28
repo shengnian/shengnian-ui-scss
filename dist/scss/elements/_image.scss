@@ -18,7 +18,7 @@
   display: inline-block;
   vertical-align: middle;
   max-width: 100%;
-  background-color: $imagePlaceholderColor;
+  background-color: $image-placeholder-color;
 }
 
 img.ui.image {
@@ -49,7 +49,7 @@ img.ui.image {
 .ui.disabled.images,
 .ui.disabled.image {
   cursor: default;
-  opacity: $imageDisabledOpacity;
+  opacity: $disabled-opacity;
 }
 
 
@@ -100,7 +100,7 @@ img.ui.image {
 .ui.rounded.image,
 .ui.rounded.images .image > *,
 .ui.rounded.image > * {
-  border-radius: $imageRoundedBorderRadius;
+  border-radius: $image-rounded-border-radius;
 }
 
 /*--------------
@@ -113,7 +113,7 @@ img.ui.image {
 .ui.bordered.image img,
 .ui.bordered.image svg,
 img.ui.bordered.image {
-  border: $imageImageBorder;
+  border: $image-image-border;
 }
 
 /*--------------
@@ -129,9 +129,9 @@ img.ui.bordered.image {
 .ui.circular.image,
 .ui.circular.images .image > *,
 .ui.circular.image > * {
-  -webkit-border-radius: $imageCircularRadius;
-  -moz-border-radius: $imageCircularRadius;
-  border-radius: $imageCircularRadius;
+  -webkit-border-radius: $circular-radius;
+  -moz-border-radius: $circular-radius;
+  border-radius: $circular-radius;
 }
 
 /*--------------
@@ -158,15 +158,15 @@ img.ui.bordered.image {
 .ui.avatar.image img,
 .ui.avatar.image svg,
 .ui.avatar.image {
-  margin-right: $imageAvatarMargin;
+  margin-right: $image-avatar-margin;
 
   display: inline-block;
-  width: $imageAvatarSize;
-  height: $imageAvatarSize;
+  width: $image-avatar-size;
+  height: $image-avatar-size;
 
-  -webkit-border-radius: $imageCircularRadius;
-  -moz-border-radius: $imageCircularRadius;
-  border-radius: $imageCircularRadius;
+  -webkit-border-radius: $circular-radius;
+  -moz-border-radius: $circular-radius;
+  border-radius: $circular-radius;
 }
 
 /*-------------------
@@ -175,18 +175,18 @@ img.ui.bordered.image {
 
 .ui.spaced.image {
   display: inline-block !important;
-  margin-left: $imageSpacedDistance;
-  margin-right: $imageSpacedDistance;
+  margin-left: $image-spaced-distance;
+  margin-right: $image-spaced-distance;
 }
 
 .ui[class*="left spaced"].image {
-  margin-left: $imageSpacedDistance;
+  margin-left: $image-spaced-distance;
   margin-right: 0;
 }
 
 .ui[class*="right spaced"].image {
   margin-left: 0;
-  margin-right: $imageSpacedDistance;
+  margin-right: $image-spaced-distance;
 }
 
 /*-------------------
@@ -196,15 +196,15 @@ img.ui.bordered.image {
 .ui.floated.image,
 .ui.floated.images {
   float: left;
-  margin-right: $imageFloatedHorizontalMargin;
-  margin-bottom: $imageFloatedVerticalMargin;
+  margin-right: $image-floated-horizontal-margin;
+  margin-bottom: $image-floated-vertical-margin;
 }
 .ui.right.floated.images,
 .ui.right.floated.image {
   float: right;
   margin-right: 0;
-  margin-bottom: $imageFloatedVerticalMargin;
-  margin-left: $imageFloatedHorizontalMargin;
+  margin-bottom: $image-floated-vertical-margin;
+  margin-left: $image-floated-horizontal-margin;
 }
 
 .ui.floated.images:last-child,
@@ -225,65 +225,65 @@ img.ui.bordered.image {
 .ui.mini.images img,
 .ui.mini.images svg,
 .ui.mini.image {
-  width: $imageMiniWidth;
+  width: $image-mini-width;
   height: auto;
-  font-size: $imageMini;
+  font-size: $mini;
 }
 .ui.tiny.images .image,
 .ui.tiny.images img,
 .ui.tiny.images svg,
 .ui.tiny.image {
-  width: $imageTinyWidth;
+  width: $image-tiny-width;
   height: auto;
-  font-size: $imageTiny;
+  font-size: $tiny;
 }
 .ui.small.images .image,
 .ui.small.images img,
 .ui.small.images svg,
 .ui.small.image {
-  width: $imageSmallWidth;
+  width: $image-small-width;
   height: auto;
-  font-size: $imageSmall;
+  font-size: $small;
 }
 .ui.medium.images .image,
 .ui.medium.images img,
 .ui.medium.images svg,
 .ui.medium.image {
-  width: $imageMediumWidth;
+  width: $image-medium-width;
   height: auto;
-  font-size: $imageMedium;
+  font-size: $medium;
 }
 .ui.large.images .image,
 .ui.large.images img,
 .ui.large.images svg,
 .ui.large.image {
-  width: $imageLargeWidth;
+  width: $image-large-width;
   height: auto;
-  font-size: $imageLarge;
+  font-size: $large;
 }
 .ui.big.images .image,
 .ui.big.images img,
 .ui.big.images svg,
 .ui.big.image {
-  width: $imageBigWidth;
+  width: $image-big-width;
   height: auto;
-  font-size: $imageBig;
+  font-size: $big;
 }
 .ui.huge.images .image,
 .ui.huge.images img,
 .ui.huge.images svg,
 .ui.huge.image {
-  width: $imageHugeWidth;
+  width: $image-huge-width;
   height: auto;
-  font-size: $imageHuge;
+  font-size: $huge;
 }
 .ui.massive.images .image,
 .ui.massive.images img,
 .ui.massive.images svg,
 .ui.massive.image {
-  width: $imageMassiveWidth;
+  width: $image-massive-width;
   height: auto;
-  font-size: $imageMassive;
+  font-size: $massive;
 }
 
 
@@ -293,14 +293,14 @@ img.ui.bordered.image {
 
 .ui.images {
   font-size: 0;
-  margin: 0 (-$imageImageHorizontalMargin) 0;
+  margin: 0 (-$image-image-horizontal-margin) 0;
 }
 
 .ui.images .image,
 .ui.images img,
 .ui.images svg {
   display: inline-block;
-  margin: 0 $imageImageHorizontalMargin $imageImageVerticalMargin;
+  margin: 0 $image-image-horizontal-margin $image-image-vertical-margin;
 }
 
 

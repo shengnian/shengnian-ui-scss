@@ -15,9 +15,9 @@
 
 .transition {
   animation-iteration-count: 1;
-  animation-duration: $transitionTransitionDefaultDuration;
-  animation-timing-function: $transitionTransitionDefaultEasing;
-  animation-fill-mode: $transitionTransitionDefaultFill;
+  animation-duration: $transition-transition-default-duration;
+  animation-timing-function: $transition-transition-default-easing;
+  animation-fill-mode: $transition-transition-default-fill;
 }
 
 
@@ -27,7 +27,7 @@
 *******************************/
 /* Animating */
 .animating.transition {
-  backface-visibility: $transitionBackfaceVisibility;
+  backface-visibility: $transition-backface-visibility;
   visibility: visible !important;
 }
 
@@ -48,8 +48,8 @@
 .visible.transition {
   display: block !important;
   visibility: visible !important;
-/*  backface-visibility: $transitionBackfaceVisibility;
-  transform: $transitionUse3DAcceleration;*/
+/*  backface-visibility: $transition-backface-visibility;
+  transform: $transition-use3DAcceleration;*/
 }
 
 /* Disabled */

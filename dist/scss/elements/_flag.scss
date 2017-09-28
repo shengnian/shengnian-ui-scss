@@ -16,12 +16,12 @@
 i.flag:not(.icon) {
   display: inline-block;
 
-  width: $flagWidth;
-  height: $flagHeight;
+  width: $flag-width;
+  height: $flag-height;
 
-  line-height: $flagHeight;
-  vertical-align: $flagVerticalAlign;
-  margin: 0 $flagMargin 0 0;
+  line-height: $flag-height;
+  vertical-align: $flag-vertical-align;
+  margin: 0 $flag-margin 0 0;
 
   text-decoration: inherit;
 
@@ -34,9 +34,9 @@ i.flag:not(.icon) {
 i.flag:not(.icon):before {
   display: inline-block;
   content: '';
-  background: url($flagSpritePath) no-repeat -108px -1976px;
-  width: $flagWidth;
-  height: $flagHeight;
+  background: url($flag-sprite-path) no-repeat -108px -1976px;
+  width: $flag-width;
+  height: $flag-height;
 }
 
 

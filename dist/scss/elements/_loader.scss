@@ -16,8 +16,8 @@
 .ui.loader {
   display: none;
   position: absolute;
-  top: $loaderLoaderTopOffset;
-  left: $loaderLoaderLeftOffset;
+  top: $loader-loader-top-offset;
+  left: $loader-loader-left-offset;
   margin: 0;
   text-align: center;
   z-index: 1000;
@@ -28,32 +28,32 @@
 .ui.loader:before {
   position: absolute;
   content: '';
-  top: 0%;
+  top: 0;
   left: 50%;
   width: 100%;
   height: 100%;
 
-  border-radius: $loaderCircularRadius;
-  border: $loaderLoaderLineWidth solid $loaderLoaderFillColor;
+  border-radius: $circular-radius;
+  border: $loader-line-width solid $loader-fill-color;
 }
 
 /* Active Shape */
 .ui.loader:after {
   position: absolute;
   content: '';
-  top: 0%;
+  top: 0;
   left: 50%;
   width: 100%;
   height: 100%;
 
-  animation: loader $loaderLoaderSpeed linear;
+  animation: loader $loader-speed linear;
   animation-iteration-count: infinite;
 
-  border-radius: $loaderCircularRadius;
+  border-radius: $circular-radius;
 
-  border-color: $loaderShapeBorderColor;
+  border-color: $loader-shape-border-color;
   border-style: solid;
-  border-width: $loaderLoaderLineWidth;
+  border-width: $loader-line-width;
 
   box-shadow: 0 0 0 1px transparent;
 }
@@ -71,59 +71,59 @@
 /* Sizes */
 .ui.mini.loader:before,
 .ui.mini.loader:after {
-  width: $loaderMini;
-  height: $loaderMini;
+  width: $loader-mini;
+  height: $loader-mini;
   @include loaderMiniOffset();
-  //margin: $loaderMiniOffset;
+  //margin: $loader-mini-offset;
 }
 .ui.tiny.loader:before,
 .ui.tiny.loader:after {
-  width: $loaderTiny;
-  height: $loaderTiny;
+  width: $loader-tiny;
+  height: $loader-tiny;
   @include loaderTinyOffset();
-  //margin: $loaderTinyOffset;
+  //margin: $loader-tiny-offset;
 }
 .ui.small.loader:before,
 .ui.small.loader:after {
-  width: $loaderSmall;
-  height: $loaderSmall;
+  width: $loader-small;
+  height: $loader-small;
   @include loaderSmallOffset();
-  //margin: $loaderSmallOffset;
+  //margin: $loader-small-offset;
 }
 .ui.loader:before,
 .ui.loader:after {
-  width: $loaderMedium;
-  height: $loaderMedium;
+  width: $loader-medium;
+  height: $loader-medium;
   @include loaderMediumOffset();
-  //margin: $loaderMediumOffset;
+  //margin: $loader-medium-offset;
 }
 .ui.large.loader:before,
 .ui.large.loader:after {
-  width: $loaderLarge;
-  height: $loaderLarge;
+  width: $loader-large;
+  height: $loader-large;
   @include loaderLargeOffset();
-  //margin: $loaderLargeOffset;
+  //margin: $loader-large-offset;
 }
 .ui.big.loader:before,
 .ui.big.loader:after {
-  width: $loaderBig;
-  height: $loaderBig;
+  width: $loader-big;
+  height: $loader-big;
   @include loaderBigOffset();
-  //margin: $loaderBigOffset;
+  //margin: $loader-big-offset;
 }
 .ui.huge.loader:before,
 .ui.huge.loader:after {
-  width: $loaderHuge;
-  height: $loaderHuge;
+  width: $loader-huge;
+  height: $loader-huge;
   @include loaderHugeOffset();
-  //margin: $loaderHugeOffset;
+  //margin: $loader-huge-offset;
 }
 .ui.massive.loader:before,
 .ui.massive.loader:after {
-  width: $loaderMassive;
-  height: $loaderMassive;
+  width: $loader-massive;
+  height: $loader-massive;
   @include loaderMassiveOffset();
-  //margin: $loaderMassiveOffset;
+  //margin: $loader-massive-offset;
 }
 
 /*-------------------
@@ -137,24 +137,24 @@
 
 /* Black Dimmer */
 .ui.dimmer .ui.loader {
-  color: $loaderInvertedLoaderTextColor;
+  color: $loader-inverted-loader-text-color;
 }
 .ui.dimmer .ui.loader:before {
-  border-color: $loaderInvertedLoaderFillColor;
+  border-color: $inverted-loader-fill-color;
 }
 .ui.dimmer .ui.loader:after {
-  border-color: $loaderInvertedShapeBorderColor;
+  border-color: $loader-inverted-shape-border-color;
 }
 
 /* White Dimmer (Inverted) */
 .ui.inverted.dimmer .ui.loader {
-  color: $loaderLoaderTextColor;
+  color: $loader-loader-text-color;
 }
 .ui.inverted.dimmer .ui.loader:before {
-  border-color: $loaderLoaderFillColor;
+  border-color: $loader-fill-color;
 }
 .ui.inverted.dimmer .ui.loader:after {
-  border-color: $loaderShapeBorderColor;
+  border-color: $loader-shape-border-color;
 }
 
 
@@ -179,8 +179,8 @@
 *******************************/
 
 .ui.indeterminate.loader:after {
-  animation-direction: $loaderIndeterminateDirection;
-  animation-duration: $loaderIndeterminateSpeed;
+  animation-direction: $loader-indeterminate-direction;
+  animation-duration: $loader-indeterminate-speed;
 }
 
 .ui.loader.active,
@@ -203,106 +203,106 @@
 /* Loader */
 .ui.inverted.dimmer .ui.mini.loader,
 .ui.mini.loader {
-  width: $loaderMini;
-  height: $loaderMini;
-  font-size: $loaderMiniFontSize;
+  width: $loader-mini;
+  height: $loader-mini;
+  font-size: $loader-mini-font-size;
 }
 .ui.inverted.dimmer .ui.tiny.loader,
 .ui.tiny.loader {
-  width: $loaderTiny;
-  height: $loaderTiny;
-  font-size: $loaderTinyFontSize;
+  width: $loader-tiny;
+  height: $loader-tiny;
+  font-size: $loader-tiny-font-size;
 }
 .ui.inverted.dimmer .ui.small.loader,
 .ui.small.loader {
-  width: $loaderSmall;
-  height: $loaderSmall;
-  font-size: $loaderSmallFontSize;
+  width: $loader-small;
+  height: $loader-small;
+  font-size: $loader-small-font-size;
 }
 .ui.inverted.dimmer .ui.loader,
 .ui.loader {
-  width: $loaderMedium;
-  height: $loaderMedium;
-  font-size: $loaderMediumFontSize;
+  width: $loader-medium;
+  height: $loader-medium;
+  font-size: $loader-medium-font-size;
 }
 .ui.inverted.dimmer .ui.large.loader,
 .ui.large.loader {
-  width: $loaderLarge;
-  height: $loaderLarge;
-  font-size: $loaderLargeFontSize;
+  width: $loader-large;
+  height: $loader-large;
+  font-size: $loader-large-font-size;
 }
 .ui.inverted.dimmer .ui.big.loader,
 .ui.big.loader {
-  width: $loaderBig;
-  height: $loaderBig;
-  font-size: $loaderBigFontSize;
+  width: $loader-big;
+  height: $loader-big;
+  font-size: $loader-big-font-size;
 }
 .ui.inverted.dimmer .ui.huge.loader,
 .ui.huge.loader {
-  width: $loaderHuge;
-  height: $loaderHuge;
-  font-size: $loaderHugeFontSize;
+  width: $loader-huge;
+  height: $loader-huge;
+  font-size: $loader-huge-font-size;
 }
 .ui.inverted.dimmer .ui.massive.loader,
 .ui.massive.loader {
-  width: $loaderMassive;
-  height: $loaderMassive;
-  font-size: $loaderMassiveFontSize;
+  width: $loader-massive;
+  height: $loader-massive;
+  font-size: $loader-massive-font-size;
 }
 
 /* Text Loader */
 .ui.mini.text.loader {
-  min-width: $loaderMini;
-  @include loaderPaddingTop($loaderMini);
-  //padding-top: ($loaderMini + $loaderTextDistance);
+  min-width: $loader-mini;
+  @include loaderPaddingTop($loader-mini);
+  //padding-top: ($loader-mini + $loader-text-distance);
 }
 .ui.tiny.text.loader {
-  min-width: $loaderTiny;
-  @include loaderPaddingTop($loaderTiny);
-  //padding-top: ($loaderTiny + $loaderTextDistance);
+  min-width: $loader-tiny;
+  @include loaderPaddingTop($loader-tiny);
+  //padding-top: ($loader-tiny + $loader-text-distance);
 }
 .ui.small.text.loader {
-  min-width: $loaderSmall;
-  @include loaderPaddingTop($loaderSmall);
-  //padding-top: ($loaderSmall + $loaderTextDistance);
+  min-width: $loader-small;
+  @include loaderPaddingTop($loader-small);
+  //padding-top: ($loader-small + $loader-text-distance);
 }
 .ui.text.loader {
-  min-width: $loaderMedium;
-  @include loaderPaddingTop($loaderMedium);
-  //padding-top: ($loaderMedium + $loaderTextDistance);
+  min-width: $loader-medium;
+  @include loaderPaddingTop($loader-medium);
+  //padding-top: ($loader-medium + $loader-text-distance);
 }
 .ui.large.text.loader {
-  min-width: $loaderLarge;
-  @include loaderPaddingTop($loaderLarge);
-  //padding-top: ($loaderLarge + $loaderTextDistance);
+  min-width: $loader-large;
+  @include loaderPaddingTop($loader-large);
+  //padding-top: ($loader-large + $loader-text-distance);
 }
 .ui.big.text.loader {
-  min-width: $loaderBig;
-  @include loaderPaddingTop($loaderBig);
-  //padding-top: ($loaderBig + $loaderTextDistance);
+  min-width: $loader-big;
+  @include loaderPaddingTop($loader-big);
+  //padding-top: ($loader-big + $loader-text-distance);
 }
 .ui.huge.text.loader {
-  min-width: $loaderHuge;
-  @include loaderPaddingTop($loaderHuge);
-  //padding-top: ($loaderHuge + $loaderTextDistance);
+  min-width: $loader-huge;
+  @include loaderPaddingTop($loader-huge);
+  //padding-top: ($loader-huge + $loader-text-distance);
 }
 .ui.massive.text.loader {
-  min-width: $loaderMassive;
-  @include loaderPaddingTop($loaderMassive);
-  //padding-top: ($loaderMassive + $loaderTextDistance);
+  min-width: $loader-massive;
+  @include loaderPaddingTop($loader-massive);
+  //padding-top: ($loader-massive + $loader-text-distance);
 }
 /*-------------------
        Inverted
 --------------------*/
 
 .ui.inverted.loader {
-  color: $loaderInvertedLoaderTextColor
+  color: $loader-inverted-loader-text-color
 }
 .ui.inverted.loader:before {
-  border-color: $loaderInvertedLoaderFillColor;
+  border-color: $inverted-loader-fill-color;
 }
 .ui.inverted.loader:after {
-  border-top-color: $loaderInvertedLoaderLineColor;
+  border-top-color: $inverted-loader-line-color;
 }
 
 /*-------------------
@@ -311,8 +311,8 @@
 
 .ui.inline.loader {
   position: relative;
-  vertical-align: $loaderInlineVerticalAlign;
-  margin: $loaderInlineMargin;
+  vertical-align: $loader-inline-vertical-align;
+  margin: $loader-inline-margin;
   left: 0;
   top: 0;
   transform: none;

@@ -186,6 +186,9 @@
 /*---  Dark Tones  ---*/
 /*---  Light Tones  ---*/
 /*******************************
+             Reset
+*******************************/
+/*******************************
           Breadcrumb
 *******************************/
 /*-------------------
@@ -413,7 +416,7 @@
 /* Icon */
 /* Loader */
 /*
-$button-will-change: box-shadow, transform, opacity, color, background;
+$buttonWillChange: box-shadow, transform, opacity, color, background;
 */
 /*-------------------
         Group
@@ -555,6 +558,7 @@ $button-will-change: box-shadow, transform, opacity, color, background;
 /*-------------------
         States
 --------------------*/
+/* Placeholder */
 /* Down */
 /* Focus */
 /* Error */
@@ -569,7 +573,7 @@ $button-will-change: box-shadow, transform, opacity, color, background;
 /*-------------------
        Element
 --------------------*/
-/* medium is not $label-em-size custom value required */
+/* medium is not $labelEmSize custom value required */
 /* Group */
 /*-------------------
         Parts
@@ -991,7 +995,7 @@ $button-will-change: box-shadow, transform, opacity, color, background;
        Coupling
 --------------------*/
 /* Grid Inside Popup */
-/* (padding * $popup-medium) */
+/* (padding * $popupMedium) */
 /*-------------------
        States
 --------------------*/
@@ -1270,9 +1274,9 @@ $button-will-change: box-shadow, transform, opacity, color, background;
   _form.scss
 ********************/
 /*@mixin formLoaderMargin() {
-  margin: loaderOffsetBy($form-loader-size) 0 0 loaderOffsetBy($form-loader-size);
-  width: $form-loader-size;
-  height: $form-loader-size;
+  margin: loaderOffsetBy($formLoaderSize) 0 0 loaderOffsetBy($formLoaderSize);
+  width: $formLoaderSize;
+  height: $formLoaderSize;
 }*/
 /********************
   _segment.scss
@@ -1438,17 +1442,17 @@ body .ui.inverted::-webkit-scrollbar-thumb:hover {
 /* Form */
 textarea::-webkit-selection,
 input::-webkit-selection {
-  background-color: rgba(100, 100, 100, 0.4);
+  background-color: #CCE2FF;
   color: rgba(0, 0, 0, 0.87); }
 
 textarea::-moz-selection,
 input::-moz-selection {
-  background-color: rgba(100, 100, 100, 0.4);
+  background-color: #CCE2FF;
   color: rgba(0, 0, 0, 0.87); }
 
 textarea::selection,
 input::selection {
-  background-color: rgba(100, 100, 100, 0.4);
+  background-color: #CCE2FF;
   color: rgba(0, 0, 0, 0.87); }
 
 /*!
@@ -3623,7 +3627,7 @@ input[type="text"], input[type="email"], input[type="search"], input[type="passw
 .ui.grid > .olive.row,
 .ui.grid > .olive.column,
 .ui.grid > .row > .olive.column {
-  background-color: olive !important;
+  background-color: #B5CC18 !important;
   color: #FFFFFF; }
 
 /* Green */
@@ -4177,7 +4181,7 @@ input[type="text"], input[type="email"], input[type="search"], input[type="passw
 .ui.menu .item:before {
   position: absolute;
   content: '';
-  top: 0;
+  top: 0%;
   right: 0;
   height: 100%;
   width: 1px;
@@ -4532,7 +4536,7 @@ Floated Menu / Item
 .ui.vertical.menu .item:before {
   position: absolute;
   content: '';
-  top: 0;
+  top: 0%;
   left: 0;
   width: 100%;
   height: 1px;
@@ -5643,7 +5647,7 @@ Floated Menu / Item
 .ui.vertical.pointing.menu .item:after {
   position: absolute;
   top: 50%;
-  right: 0;
+  right: 0%;
   bottom: auto;
   left: auto;
   transform: translateX(50%) translateY(-50%) rotate(45deg);
@@ -7368,7 +7372,7 @@ Floated Menu / Item
 
 .ui.animated.button .visible.content {
   left: auto;
-  right: 0; }
+  right: 0%; }
 
 .ui.animated.button .hidden.content {
   top: 50%;
@@ -7384,7 +7388,7 @@ Floated Menu / Item
 .ui.animated.button:focus .hidden.content,
 .ui.animated.button:hover .hidden.content {
   left: auto;
-  right: 0; }
+  right: 0%; }
 
 /* Vertical */
 .ui.vertical.animated.button .visible.content,
@@ -7397,7 +7401,7 @@ Floated Menu / Item
 
 .ui.vertical.animated.button .hidden.content {
   top: -50%;
-  left: 0;
+  left: 0%;
   right: auto; }
 
 .ui.vertical.animated.button:focus .visible.content,
@@ -7423,7 +7427,7 @@ Floated Menu / Item
 
 .ui.fade.animated.button .hidden.content {
   opacity: 0;
-  left: 0;
+  left: 0%;
   right: auto;
   transform: scale(1.5); }
 
@@ -7436,7 +7440,7 @@ Floated Menu / Item
 
 .ui.fade.animated.button:focus .hidden.content,
 .ui.fade.animated.button:hover .hidden.content {
-  left: 0;
+  left: 0%;
   right: auto;
   opacity: 1;
   transform: scale(1); }
@@ -7503,6 +7507,7 @@ Floated Menu / Item
   margin: 0 0 0 -1px !important;
   font-size: 1em;
   padding: "";
+  font-size: 1em;
   border-color: rgba(34, 36, 38, 0.15); }
 
 /* Tag */
@@ -7668,21 +7673,6 @@ Floated Menu / Item
 
 .ui.vk.button:active {
   background-color: #3c5876;
-  color: #FFFFFF; }
-
-/* Shengnian */
-.ui.shengnian.button {
-  background-color: #0760bc;
-  color: #FFFFFF;
-  background-image: none;
-  box-shadow: 0 0 0 0 rgba(34, 36, 38, 0.15) inset; }
-
-.ui.shengnian.button:hover {
-  background-color: #0053aa;
-  color: #FFFFFF; }
-
-.ui.shengnian.button:active {
-  background-color: #05478b;
   color: #FFFFFF; }
 
 /*--------------
@@ -8030,13 +8020,13 @@ Floated Menu / Item
   width: 1.78571em;
   height: 1.78571em;
   line-height: 1.78571em;
-  /*margin-top: $button-or-vertical-offset;
-  margin-left: $button-or-horizontal-offset;
+  /*margin-top: $buttonOrVerticalOffset;
+  margin-left: $buttonOrHorizontalOffset;
 
-  width: $button-or-circle-size;
-  height: $button-or-circle-size;
+  width: $buttonOrCircleSize;
+  height: $buttonOrCircleSize;
 
-  line-height: $button-or-line-height;*/
+  line-height: $buttonOrLineHeight;*/
   color: rgba(0, 0, 0, 0.4);
   font-style: normal;
   font-weight: bold;
@@ -10570,7 +10560,7 @@ Floated Menu / Item
   z-index: 3;
   border-left: 1px solid rgba(34, 36, 38, 0.15);
   border-right: 1px solid rgba(255, 255, 255, 0.1);
-  width: 0;
+  width: 0%;
   height: calc(100% - 1rem); }
 
 .ui.vertical.divider:before {
@@ -11724,7 +11714,7 @@ i.flag.zimbabwe:before {
 /* Standard */
 .ui.header {
   border: none;
-  margin: calc(2rem - 1.28571em-1em/2) 0 1rem;
+  margin: calc(2rem - 0.21425em) 0 1rem;
   padding: 0 0;
   font-family: "Lato", "Helvetica Neue", Arial, Helvetica, sans-serif;
   font-weight: bold;
@@ -11733,7 +11723,7 @@ i.flag.zimbabwe:before {
   color: rgba(0, 0, 0, 0.87); }
 
 .ui.header:first-child {
-  margin-top: -1.28571em-1em/2; }
+  margin-top: -0.21425em; }
 
 .ui.header:last-child {
   margin-bottom: 0; }
@@ -11772,7 +11762,7 @@ i.flag.zimbabwe:before {
 .ui.header > .image:not(.icon),
 .ui.header > img {
   display: inline-block;
-  margin-top: 1.28571em-1em/2;
+  margin-top: 0.21425em;
   width: 2.5em;
   height: auto;
   vertical-align: middle; }
@@ -12701,6 +12691,7 @@ i.icons .icon {
   top: 50%;
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
+  margin: 0;
   margin: 0; }
 
 i.icons .icon:first-child {
@@ -16512,7 +16503,7 @@ a.ui.label {
 
 .ui[class*="right ribbon"].label:after {
   left: auto;
-  right: 0;
+  right: 0%;
   border-style: solid;
   border-width: 1.2em 1.2em 0 0;
   border-color: transparent;
@@ -16942,7 +16933,7 @@ a.ui.basic.violet.label:hover {
 .ui.purple.label {
   background-color: #A333C8 !important;
   border-color: #A333C8 !important;
-  color: #A333C8 !important; }
+  color: #FFFFFF !important; }
 
 /* Link */
 .ui.purple.labels .label:hover,
@@ -17215,7 +17206,7 @@ a.ui.basic.label:hover {
 .ui[class*="pointing above"].label:before {
   border-width: 1px 0 0 1px;
   transform: translateX(-50%) translateY(-50%) rotate(45deg);
-  top: 0;
+  top: 0%;
   left: 50%; }
 
 /*--- Below ---*/
@@ -17255,7 +17246,7 @@ a.ui.basic.label:hover {
   border-width: 1px 1px 0 0;
   transform: translateX(50%) translateY(-50%) rotate(45deg);
   top: 50%;
-  right: 0;
+  right: 0%;
   bottom: auto;
   left: auto; }
 
@@ -18198,7 +18189,7 @@ ol.ui.horizontal.list li:before,
 .ui.loader:before {
   position: absolute;
   content: '';
-  top: 0;
+  top: 0%;
   left: 50%;
   width: 100%;
   height: 100%;
@@ -18209,7 +18200,7 @@ ol.ui.horizontal.list li:before,
 .ui.loader:after {
   position: absolute;
   content: '';
-  top: 0;
+  top: 0%;
   left: 50%;
   width: 100%;
   height: 100%;
@@ -18467,7 +18458,7 @@ ol.ui.horizontal.list li:before,
 *******************************/
 .ui.rail {
   position: absolute;
-  top: 0;
+  top: 0%;
   width: 300px;
   height: 100%; }
 
@@ -18490,14 +18481,14 @@ ol.ui.horizontal.list li:before,
      Internal
 ---------------*/
 .ui.left.internal.rail {
-  left: 0;
+  left: 0%;
   right: auto;
   padding: 0 0 0 2rem;
   margin: 0 0 0 2rem; }
 
 .ui.right.internal.rail {
   left: auto;
-  right: 0;
+  right: 0%;
   padding: 0 2rem 0 0;
   margin: 0 2rem 0 0; }
 
@@ -18633,7 +18624,7 @@ ol.ui.horizontal.list li:before,
 
 .ui.slide.reveal > .hidden.content {
   position: absolute !important;
-  left: 0 !important;
+  left: 0% !important;
   width: 100% !important;
   transform: translateX(100%) !important; }
 
@@ -18710,7 +18701,7 @@ ol.ui.horizontal.list li:before,
 
 .ui.move.reveal > .hidden.content {
   position: absolute !important;
-  left: 0 !important;
+  left: 0% !important;
   width: 100% !important; }
 
 .ui.move.active.reveal > .visible.content,
@@ -18948,7 +18939,7 @@ ol.ui.horizontal.list li:before,
   content: '';
   position: absolute;
   bottom: -3px;
-  left: 0;
+  left: 0%;
   border-top: 1px solid rgba(34, 36, 38, 0.15);
   background: rgba(0, 0, 0, 0.03);
   width: 100%;
@@ -19056,6 +19047,7 @@ ol.ui.horizontal.list li:before,
   margin-top: 0;
   bottom: 0;
   margin-bottom: 0;
+  top: 0;
   border-radius: 0.28571rem 0.28571rem 0 0; }
 
 /* Bottom */
@@ -19148,8 +19140,8 @@ ol.ui.horizontal.list li:before,
 .ui.loading.segment:before {
   position: absolute;
   content: '';
-  top: 0;
-  left: 0;
+  top: 0%;
+  left: 0%;
   background: rgba(255, 255, 255, 0.8);
   width: 100%;
   height: 100%;
@@ -20729,8 +20721,8 @@ body.dimmable > .dimmer {
   display: block;
   overflow: hidden;
   opacity: 1;
-  width: 0;
-  height: 0;
+  width: 0%;
+  height: 0%;
   z-index: -100;
   background-color: transparent; }
 
@@ -20792,6 +20784,7 @@ body.dimmable > .dimmer {
   box-shadow: 0 2px 3px 0 rgba(34, 36, 38, 0.15);
   border: 1px solid rgba(34, 36, 38, 0.15);
   border-radius: 0.28571rem;
+  transition: opacity 0.1s ease;
   z-index: 11;
   will-change: transform, opacity; }
 
@@ -20844,6 +20837,7 @@ body.dimmable > .dimmer {
   font-size: 1rem;
   color: rgba(0, 0, 0, 0.87);
   padding: 0.78571rem 1.14286rem !important;
+  font-size: 1rem;
   text-transform: none;
   font-weight: normal;
   box-shadow: none;
@@ -21723,7 +21717,7 @@ select.ui.dropdown {
   overflow: visible;
   width: auto;
   height: auto;
-  top: 0 !important;
+  top: 0% !important;
   left: 100% !important;
   opacity: 1; }
 
@@ -21791,14 +21785,14 @@ select.ui.dropdown {
 .ui.top.left.pointing.dropdown > .menu {
   top: 100%;
   bottom: auto;
-  left: 0;
+  left: 0%;
   right: auto;
   margin: 1em 0 0; }
 
 .ui.top.left.pointing.dropdown > .menu {
   top: 100%;
   bottom: auto;
-  left: 0;
+  left: 0%;
   right: auto;
   margin: 1em 0 0; }
 
@@ -21813,7 +21807,7 @@ select.ui.dropdown {
 .ui.top.right.pointing.dropdown > .menu {
   top: 100%;
   bottom: auto;
-  right: 0;
+  right: 0%;
   left: auto;
   margin: 1em 0 0; }
 
@@ -21827,7 +21821,7 @@ select.ui.dropdown {
 
 /* Left Pointing */
 .ui.left.pointing.dropdown > .menu {
-  top: 0;
+  top: 0%;
   left: 100%;
   right: auto;
   margin: 0 0 0 1em; }
@@ -21852,7 +21846,7 @@ select.ui.dropdown {
 
 /* Right Pointing */
 .ui.right.pointing.dropdown > .menu {
-  top: 0;
+  top: 0%;
   left: auto;
   right: 100%;
   margin: 0 1em 0 0; }
@@ -21868,7 +21862,7 @@ select.ui.dropdown {
 .ui.bottom.pointing.dropdown > .menu {
   top: auto;
   bottom: 100%;
-  left: 0;
+  left: 0%;
   right: auto;
   margin: 0 0 1em; }
 
@@ -21886,7 +21880,7 @@ select.ui.dropdown {
 
 /* Bottom Left */
 .ui.bottom.left.pointing.dropdown > .menu {
-  left: 0;
+  left: 0%;
   right: auto; }
 
 .ui.bottom.left.pointing.dropdown > .menu:after {
@@ -21895,7 +21889,7 @@ select.ui.dropdown {
 
 /* Bottom Right */
 .ui.bottom.right.pointing.dropdown > .menu {
-  right: 0;
+  right: 0%;
   left: auto; }
 
 .ui.bottom.right.pointing.dropdown > .menu:after {
@@ -21955,6 +21949,7 @@ select.ui.dropdown {
 *******************************/
 .ui.embed {
   position: relative;
+  position: relative;
   max-width: 100%;
   height: 0;
   overflow: hidden;
@@ -22009,8 +22004,8 @@ select.ui.dropdown {
 
 .ui.embed > .icon:after {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 0%;
+  left: 0%;
   width: 100%;
   height: 100%;
   z-index: 3;
@@ -23825,7 +23820,7 @@ a.ui.nag {
   font-size: 1.42857rem; }
 
 .ui.massive.rating {
-  font-size: 1.71429rem; }
+  font-size: 2rem; }
 
 /*!
  * # Shengnian UI - Search
@@ -23875,7 +23870,7 @@ a.ui.nag {
   display: none;
   position: absolute;
   top: 100%;
-  left: 0;
+  left: 0%;
   transform-origin: center top;
   white-space: normal;
   background: #FFFFFF;
@@ -23929,7 +23924,7 @@ a.ui.nag {
   margin: 0 6em 0 0; }
 
 .ui.search > .results .result .title {
-  margin: -1.28571em-1em/2 0 0;
+  margin: -0.21425em 0 0;
   font-family: "Lato", "Helvetica Neue", Arial, Helvetica, sans-serif;
   font-weight: bold;
   font-size: 1em;
@@ -24132,10 +24127,10 @@ a.ui.nag {
 --------------------*/
 .ui[class*="left aligned"].search > .results {
   right: auto;
-  left: 0; }
+  left: 0%; }
 
 .ui[class*="right aligned"].search > .results {
-  right: 0;
+  right: 0%;
   left: auto; }
 
 /*--------------
@@ -24885,8 +24880,8 @@ body.pushable > .pusher {
 .visible.transition {
   display: block !important;
   visibility: visible !important;
-  /*  backface-visibility: $transition-backface-visibility;
-  transform: $transition-use3DAcceleration;*/ }
+  /*  backface-visibility: $transitionBackfaceVisibility;
+  transform: $transitionUse3DAcceleration;*/ }
 
 /* Disabled */
 .disabled.transition {
@@ -26227,7 +26222,8 @@ a.ui.card:hover,
   color: rgba(0, 0, 0, 0.4);
   font-weight: normal;
   font-size: 1em;
-  font-style: normal; }
+  font-style: normal;
+  color: rgba(0, 0, 0, 0.4); }
 
 /*--------------
      Summary

@@ -16,14 +16,14 @@
 .ui.message {
   position: relative;
   min-height: 1em;
-  margin: $messageVerticalMargin 0;
-  background: $messageBackground;
-  padding: $messagePadding;
-  line-height: $messageLineHeight;
-  color: $messageTextColor;
-  transition: $messageTransition;
-  border-radius: $messageBorderRadius;
-  box-shadow: $messageBoxShadow;
+  margin: $message-vertical-margin 0;
+  background: $message-background;
+  padding: $message-padding;
+  line-height: $line-height;
+  color: $text-color;
+  transition: $message-transition;
+  border-radius: $message-border-radius;
+  box-shadow: $message-box-shadow;
 }
 
 .ui.message:first-child {
@@ -38,23 +38,23 @@
 
 /* Header */
 .ui.message .header {
-  display: $messageHeaderDisplay;
-  font-family: $messageHeaderFont;
-  font-weight: $messageHeaderFontWeight;
-  //margin: $messageHeaderMargin;
-  margin: -$lineHeight 0em 0em 0em;
-  //margin:  -(($lineHeight - 1) / 2) 0 $messageHeaderDistance 0;
+  display: $message-header-display;
+  font-family: $header-font;
+  font-weight: $message-header-font-weight;
+  //margin: $message-header-margin;
+  margin: -$line-height 0em 0em 0em;
+  //margin:  -(($line-height - 1) / 2) 0 $message-header-distance 0;
 }
 
 /* Default font size */
 .ui.message .header:not(.ui) {
-  font-size: $messageHeaderFontSize;
+  font-size: $message-header-font-size;
 }
 
 /* Paragraph */
 .ui.message p {
-  opacity: $messageMessageTextOpacity;
-  margin: $messageMessageParagraphMargin 0;
+  opacity: $message-message-text-opacity;
+  margin: $message-message-paragraph-margin 0;
 }
 .ui.message p:first-child {
   margin-top: 0;
@@ -63,16 +63,16 @@
   margin-bottom: 0;
 }
 .ui.message .header + p {
-  margin-top: $messageHeaderParagraphDistance;
+  margin-top: $message-header-paragraph-distance;
 }
 
 /* List */
 .ui.message .list:not(.ui) {
   text-align: left;
   padding: 0;
-  opacity: $messageListOpacity;
-  list-style-position: $messageListStylePosition;
-  margin: $messageListMargin 0 0;
+  opacity: $message-list-opacity;
+  list-style-position: $message-list-style-position;
+  margin: $message-list-margin 0 0;
 }
 .ui.message .list:not(.ui):first-child {
   margin-top: 0;
@@ -83,7 +83,7 @@
 .ui.message .list:not(.ui) li {
   position: relative;
   list-style-type: none;
-  margin: 0 0 $messageListItemMargin $messageListItemIndent;
+  margin: 0 0 $message-list-item-margin $message-list-item-indent;
   padding: 0;
 }
 .ui.message .list:not(.ui) li:before {
@@ -98,7 +98,7 @@
 }
 /* Icon */
 .ui.message > .icon {
-  margin-right: $messageIconDistance;
+  margin-right: $message-icon-distance;
 }
 
 /* Close Icon */
@@ -106,10 +106,10 @@
   cursor: pointer;
   position: absolute;
   margin: 0;
-  top: $messageCloseTopDistance;
-  right: $messageCloseRightDistance;
-  opacity: $messageCloseOpacity;
-  transition: $messageCloseTransition;
+  top: $message-close-top-distance;
+  right: $message-close-right-distance;
+  opacity: $message-close-opacity;
+  transition: $message-close-transition;
 }
 .ui.message > .close.icon:hover {
   opacity: 1;
@@ -130,7 +130,7 @@
 *******************************/
 
 .ui.dropdown .menu > .message {
-  margin: 0 (-$messageBorderWidth);
+  margin: 0 (-$message-border-width);
 }
 
 
@@ -179,23 +179,23 @@
 ---------------*/
 
 .ui.attached.message {
-  margin-bottom: $messageAttachedYOffset;
-  border-radius: $messageBorderRadius $messageBorderRadius 0 0;
-  box-shadow: $messageAttachedBoxShadow;
-  margin-left: $messageAttachedXOffset;
-  margin-right: $messageAttachedXOffset;
+  margin-bottom: $message-attachedYOffset;
+  border-radius: $message-border-radius $message-border-radius 0 0;
+  box-shadow: $message-attached-box-shadow;
+  margin-left: $message-attachedXOffset;
+  margin-right: $message-attachedXOffset;
 }
 .ui.attached + .ui.attached.message:not(.top):not(.bottom) {
-  margin-top: $messageAttachedYOffset;
+  margin-top: $message-attachedYOffset;
   border-radius: 0;
 }
 .ui.bottom.attached.message {
-  margin-top: $messageAttachedYOffset;
-  border-radius: 0 0 $messageBorderRadius $messageBorderRadius;
-  box-shadow: $messageAttachedBottomBoxShadow;
+  margin-top: $message-attachedYOffset;
+  border-radius: 0 0 $message-border-radius $message-border-radius;
+  box-shadow: $message-attached-bottom-box-shadow;
 }
 .ui.bottom.attached.message:not(:last-child) {
-  margin-bottom: $messageVerticalMargin;
+  margin-bottom: $message-vertical-margin;
 }
 .ui.attached.icon.message {
   width: auto;
@@ -214,17 +214,17 @@
   flex: 0 0 auto;
   width: auto;
   line-height: 1;
-  vertical-align: $messageIconVerticalAlign;
-  font-size: $messageIconSize;
-  opacity: $messageIconOpacity;
+  vertical-align: $message-icon-vertical-align;
+  font-size: $message-icon-size;
+  opacity: $message-icon-opacity;
 }
 .ui.icon.message > .content {
   display: block;
   flex: 1 1 auto;
-  vertical-align: $messageIconVerticalAlign;
+  vertical-align: $message-icon-vertical-align;
 }
 .ui.icon.message .icon:not(.close) + .content {
-  padding-left: $messageIconContentDistance;
+  padding-left: $message-icon-content-distance;
 }
 .ui.icon.message .circular.icon {
   width: 1em;
@@ -235,15 +235,15 @@
 ---------------*/
 
 .ui.floating.message {
-  box-shadow: $messageFloatingBoxShadow;
+  box-shadow: $message-floating-box-shadow;
 }
 /*--------------
      Colors
 ---------------*/
 
 .ui.black.message {
-  background-color: $messageBlack;
-  color: $messageInvertedTextColor;
+  background-color: $black;
+  color: $inverted-text-color;
 }
 
 /*--------------
@@ -252,185 +252,185 @@
 
 /* Positive */
 .ui.positive.message {
-  background-color: $messagePositiveBackgroundColor;
-  color: $messagePositiveTextColor;
+  background-color: $positive-background-color;
+  color: $positive-text-color;
 }
 .ui.positive.message,
 .ui.attached.positive.message {
-  box-shadow: $messagePositiveBoxShadow;
+  box-shadow: $message-positive-box-shadow;
 }
 .ui.positive.message .header {
-  color: $messagePositiveHeaderColor;
+  color: $positive-header-color;
 }
 
 /* Negative */
 .ui.negative.message {
-  background-color: $messageNegativeBackgroundColor;
-  color: $messageNegativeTextColor;
+  background-color: $negative-background-color;
+  color: $negative-text-color;
 }
 .ui.negative.message,
 .ui.attached.negative.message {
-  box-shadow: $messageNegativeBoxShadow;
+  box-shadow: $message-negative-box-shadow;
 }
 .ui.negative.message .header {
-  color: $messageNegativeHeaderColor;
+  color: $negative-header-color;
 }
 
 /* Info */
 .ui.info.message {
-  background-color: $messageInfoBackgroundColor;
-  color: $messageInfoTextColor;
+  background-color: $info-background-color;
+  color: $info-text-color;
 }
 .ui.info.message,
 .ui.attached.info.message {
-  box-shadow: $messageInfoBoxShadow;
+  box-shadow: $message-info-box-shadow;
 }
 .ui.info.message .header {
-  color: $messageInfoHeaderColor;
+  color: $info-header-color;
 }
 
 /* Warning */
 .ui.warning.message {
-  background-color: $messageWarningBackgroundColor;
-  color: $messageWarningTextColor;
+  background-color: $warning-background-color;
+  color: $warning-text-color;
 }
 .ui.warning.message,
 .ui.attached.warning.message {
-  box-shadow: $messageWarningBoxShadow;
+  box-shadow: $message-warning-box-shadow;
 }
 .ui.warning.message .header {
-  color: $messageWarningHeaderColor;
+  color: $warning-header-color;
 }
 
 /* Error */
 .ui.error.message {
-  background-color: $messageErrorBackgroundColor;
-  color: $messageErrorTextColor;
+  background-color: $error-background-color;
+  color: $error-text-color;
 }
 .ui.error.message,
 .ui.attached.error.message {
-  box-shadow: $messageErrorBoxShadow;
+  box-shadow: $message-error-box-shadow;
 }
 .ui.error.message .header {
-  color: $messageErrorHeaderColor;
+  color: $error-header-color;
 }
 
 /* Success */
 .ui.success.message {
-  background-color: $messageSuccessBackgroundColor;
-  color: $messageSuccessTextColor;
+  background-color: $success-background-color;
+  color: $success-text-color;
 }
 .ui.success.message,
 .ui.attached.success.message {
-  box-shadow: $messageSuccessBoxShadow;
+  box-shadow: $message-success-box-shadow;
 }
 .ui.success.message .header {
-  color: $messageSuccessHeaderColor;
+  color: $success-header-color;
 }
 /* Colors */
 .ui.inverted.message,
 .ui.black.message {
-  background-color: $messageBlack;
-  color: $messageInvertedTextColor;
+  background-color: $black;
+  color: $inverted-text-color;
 }
 
 .ui.red.message {
-  background-color: $messageRedBackground;
-  color: $messageRedTextColor;
-  box-shadow: $messageRedBoxShadow;
+  background-color: $red-background;
+  color: $red-text-color;
+  box-shadow: $message-red-box-shadow;
 }
 .ui.red.message .header {
-  color: $messageRedHeaderColor;
+  color: $red-header-color;
 }
 
 .ui.orange.message {
-  background-color: $messageOrangeBackground;
-  color: $messageOrangeTextColor;
-  box-shadow: $messageOrangeBoxShadow;
+  background-color: $orange-background;
+  color: $orange-text-color;
+  box-shadow: $message-orange-box-shadow;
 }
 .ui.orange.message .header {
-  color: $messageOrangeHeaderColor;
+  color: $orange-header-color;
 }
 
 .ui.yellow.message {
-  background-color: $messageYellowBackground;
-  color: $messageYellowTextColor;
-  box-shadow: $messageYellowBoxShadow;
+  background-color: $yellow-background;
+  color: $yellow-text-color;
+  box-shadow: $message-yellow-box-shadow;
 }
 .ui.yellow.message .header {
-  color: $messageYellowHeaderColor;
+  color: $yellow-header-color;
 }
 
 .ui.olive.message {
-  background-color: $messageOliveBackground;
-  color: $messageOliveTextColor;
-  box-shadow: $messageOliveBoxShadow;
+  background-color: $olive-background;
+  color: $olive-text-color;
+  box-shadow: $message-olive-box-shadow;
 }
 .ui.olive.message .header {
-  color: $messageOliveHeaderColor;
+  color: $olive-header-color;
 }
 
 .ui.green.message {
-  background-color: $messageGreenBackground;
-  color: $messageGreenTextColor;
-  box-shadow: $messageGreenBoxShadow;
+  background-color: $green-background;
+  color: $green-text-color;
+  box-shadow: $message-green-box-shadow;
 }
 .ui.green.message .header {
-  color: $messageGreenHeaderColor;
+  color: $green-header-color;
 }
 
 .ui.teal.message {
-  background-color: $messageTealBackground;
-  color: $messageTealTextColor;
-  box-shadow: $messageTealBoxShadow;
+  background-color: $teal-background;
+  color: $teal-text-color;
+  box-shadow: $message-teal-box-shadow;
 }
 .ui.teal.message .header {
-  color: $messageTealHeaderColor;
+  color: $teal-header-color;
 }
 
 .ui.blue.message {
-  background-color: $messageBlueBackground;
-  color: $messageBlueTextColor;
-  box-shadow: $messageBlueBoxShadow;
+  background-color: $blue-background;
+  color: $blue-text-color;
+  box-shadow: $message-blue-box-shadow;
 }
 .ui.blue.message .header {
-  color: $messageBlueHeaderColor;
+  color: $blue-header-color;
 }
 
 .ui.violet.message {
-  background-color: $messageVioletBackground;
-  color: $messageVioletTextColor;
-  box-shadow: $messageVioletBoxShadow;
+  background-color: $violet-background;
+  color: $violet-text-color;
+  box-shadow: $message-violet-box-shadow;
 }
 .ui.violet.message .header {
-  color: $messageVioletHeaderColor;
+  color: $violet-header-color;
 }
 
 .ui.purple.message {
-  background-color: $messagePurpleBackground;
-  color: $messagePurpleTextColor;
-  box-shadow: $messagePurpleBoxShadow;
+  background-color: $purple-background;
+  color: $purple-text-color;
+  box-shadow: $message-purple-box-shadow;
 }
 .ui.purple.message .header {
-  color: $messagePurpleHeaderColor;
+  color: $purple-header-color;
 }
 
 .ui.pink.message {
-  background-color: $messagePinkBackground;
-  color: $messagePinkTextColor;
-  box-shadow: $messagePinkBoxShadow;
+  background-color: $pink-background;
+  color: $pink-text-color;
+  box-shadow: $message-pink-box-shadow;
 }
 .ui.pink.message .header {
-  color: $messagePinkHeaderColor;
+  color: $pink-header-color;
 }
 
 .ui.brown.message {
-  background-color: $messageBrownBackground;
-  color: $messageBrownTextColor;
-  box-shadow: $messageBrownBoxShadow;
+  background-color: $brown-background;
+  color: $brown-text-color;
+  box-shadow: $message-brown-box-shadow;
 }
 .ui.brown.message .header {
-  color: $messageBrownHeaderColor;
+  color: $brown-header-color;
 }
 
 /*--------------
@@ -438,28 +438,28 @@
 ---------------*/
 
 .ui.mini.message {
-  font-size: $messageRelativeMini;
+  font-size: $relative-mini;
 }
 .ui.tiny.message {
-  font-size: $messageRelativeTiny;
+  font-size: $relative-tiny;
 }
 .ui.small.message {
-  font-size: $messageRelativeSmall;
+  font-size: $relative-small;
 }
 .ui.message {
-  font-size: $messageRelativeMedium;
+  font-size: $relative-medium;
 }
 .ui.large.message {
-  font-size: $messageRelativeLarge;
+  font-size: $relative-large;
 }
 .ui.big.message {
-  font-size: $messageRelativeBig;
+  font-size: $relative-big;
 }
 .ui.huge.message {
-  font-size: $messageRelativeHuge;
+  font-size: $relative-huge;
 }
 .ui.massive.message {
-  font-size: $messageRelativeMassive;
+  font-size: $relative-massive;
 }
 
 

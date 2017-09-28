@@ -1,5 +1,5 @@
 @mixin loadFonts() {
-  @import url('#{$googleProtocol}fonts.googleapis.com/css?family=#{$googleFontRequest}');
+  @import url('#{$google-protocol}fonts.googleapis.com/css?family=#{$google-font-request}');
 }
 
 @function strip-units($number){
@@ -10,7 +10,7 @@
   @return $number;
 }
 
-@function px2em($target-size, $context: $fontSize) {
+@function px2em($target-size, $context: $font-size) {
   @if not unitless($target-size){
     $target-size: strip-units($target-size);
   }
@@ -20,7 +20,7 @@
   @return ($target-size / $context) * 1em;
 }
 
-@function px2rem($target-size, $context: $fontSize) {
+@function px2rem($target-size, $context: $font-size) {
   @if not unitless($target-size){
     $target-size: strip-units($target-size);
   }

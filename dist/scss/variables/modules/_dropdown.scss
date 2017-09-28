@@ -1,615 +1,3 @@
-$dropdownFontName: $fontName;
-$dropdownFontSmoothing: $fontSmoothing;
-$dropdownHeaderFont: $headerFont;
-$dropdownPageFont: $pageFont;
-$dropdownGoogleFontName: $googleFontName;
-$dropdownImportGoogleFonts: $importGoogleFonts;
-$dropdownGoogleFontSizes: $googleFontSizes;
-$dropdownGoogleSubset: $googleSubset;
-$dropdownGoogleProtocol: $googleProtocol;
-$dropdownGoogleFontRequest: $googleFontRequest;
-$dropdownEmSize: $emSize;
-$dropdownFontSize: $fontSize;
-$dropdownRelativeBorderRadius: $relativeBorderRadius;
-$dropdownAbsoluteBorderRadius: $absoluteBorderRadius;
-$dropdownDefaultBorderRadius: $defaultBorderRadius;
-$dropdownPrimaryColor: $primaryColor;
-$dropdownSecondaryColor: $secondaryColor;
-$dropdownLightPrimaryColor: $lightPrimaryColor;
-$dropdownLightSecondaryColor: $lightSecondaryColor;
-$dropdownHeaderFontWeight: $headerFontWeight;
-$dropdownHeaderLineHeight: $headerLineHeight;
-$dropdownH1: $h1;
-$dropdownH2: $h2;
-$dropdownH3: $h3;
-$dropdownH4: $h4;
-$dropdownH5: $h5;
-$dropdownInputBackground: $inputBackground;
-$dropdownInputVerticalPadding: $inputVerticalPadding;
-$dropdownInputHorizontalPadding: $inputHorizontalPadding;
-$dropdownInputPadding: $inputPadding;
-$dropdownInputColor: $inputColor;
-$dropdownInputPlaceholderColor: $inputPlaceholderColor;
-$dropdownInputPlaceholderFocusColor: $inputPlaceholderFocusColor;
-$dropdownInputLineHeight: $inputLineHeight;
-$dropdownFocusedFormBorderColor: $focusedFormBorderColor;
-$dropdownFocusedFormMutedBorderColor: $focusedFormMutedBorderColor;
-$dropdownMiniSize: $miniSize;
-$dropdownTinySize: $tinySize;
-$dropdownSmallSize: $smallSize;
-$dropdownMediumSize: $mediumSize;
-$dropdownLargeSize: $largeSize;
-$dropdownBigSize: $bigSize;
-$dropdownHugeSize: $hugeSize;
-$dropdownMassiveSize: $massiveSize;
-$dropdownPageBackground: $pageBackground;
-$dropdownPageOverflowX: $pageOverflowX;
-$dropdownLineHeight: $lineHeight;
-$dropdownTextColor: $textColor;
-$dropdownParagraphMargin: $paragraphMargin;
-$dropdownParagraphLineHeight: $paragraphLineHeight;
-$dropdownLinkColor: $linkColor;
-$dropdownLinkUnderline: $linkUnderline;
-$dropdownLinkHoverColor: $linkHoverColor;
-$dropdownLinkHoverUnderline: $linkHoverUnderline;
-$dropdownUseCustomScrollbars: $useCustomScrollbars;
-$dropdownCustomScrollbarWidth: $customScrollbarWidth;
-$dropdownTrackBackground: $trackBackground;
-$dropdownTrackBorderRadius: $trackBorderRadius;
-$dropdownThumbBorderRadius: $thumbBorderRadius;
-$dropdownThumbBackground: $thumbBackground;
-$dropdownThumbTransition: $thumbTransition;
-$dropdownThumbInactiveBackground: $thumbInactiveBackground;
-$dropdownThumbHoverBackground: $thumbHoverBackground;
-$dropdownTrackInvertedBackground: $trackInvertedBackground;
-$dropdownThumbInvertedBackground: $thumbInvertedBackground;
-$dropdownThumbInvertedInactiveBackground: $thumbInvertedInactiveBackground;
-$dropdownThumbInvertedHoverBackground: $thumbInvertedHoverBackground;
-$dropdownHighlightBackground: $highlightBackground;
-$dropdownHighlightColor: $highlightColor;
-$dropdownInputHighlightBackground: $inputHighlightBackground;
-$dropdownInputHighlightColor: $inputHighlightColor;
-$dropdownLoaderSize: $loaderSize;
-$dropdownLoaderSpeed: $loaderSpeed;
-$dropdownLoaderLineWidth: $loaderLineWidth;
-$dropdownLoaderFillColor: $loaderFillColor;
-$dropdownLoaderLineColor: $loaderLineColor;
-$dropdownInvertedLoaderFillColor: $invertedLoaderFillColor;
-$dropdownInvertedLoaderLineColor: $invertedLoaderLineColor;
-$dropdownColumnCount: $columnCount;
-$dropdownDefaultDuration: $defaultDuration;
-$dropdownDefaultEasing: $defaultEasing;
-$dropdownMobileBreakpoint: $mobileBreakpoint;
-$dropdownTabletBreakpoint: $tabletBreakpoint;
-$dropdownComputerBreakpoint: $computerBreakpoint;
-$dropdownLargeMonitorBreakpoint: $largeMonitorBreakpoint;
-$dropdownWidescreenMonitorBreakpoint: $widescreenMonitorBreakpoint;
-$dropdownRed: $red;
-$dropdownOrange: $orange;
-$dropdownYellow: $yellow;
-$dropdownOlive: $olive;
-$dropdownGreen: $green;
-$dropdownTeal: $teal;
-$dropdownBlue: $blue;
-$dropdownViolet: $violet;
-$dropdownPurple: $purple;
-$dropdownPink: $pink;
-$dropdownBrown: $brown;
-$dropdownGrey: $grey;
-$dropdownBlack: $black;
-$dropdownLightRed: $lightRed;
-$dropdownLightOrange: $lightOrange;
-$dropdownLightYellow: $lightYellow;
-$dropdownLightOlive: $lightOlive;
-$dropdownLightGreen: $lightGreen;
-$dropdownLightTeal: $lightTeal;
-$dropdownLightBlue: $lightBlue;
-$dropdownLightViolet: $lightViolet;
-$dropdownLightPurple: $lightPurple;
-$dropdownLightPink: $lightPink;
-$dropdownLightBrown: $lightBrown;
-$dropdownLightGrey: $lightGrey;
-$dropdownLightBlack: $lightBlack;
-$dropdownFullBlack: $fullBlack;
-$dropdownOffWhite: $offWhite;
-$dropdownDarkWhite: $darkWhite;
-$dropdownMidWhite: $midWhite;
-$dropdownWhite: $white;
-$dropdownRedBackground: $redBackground;
-$dropdownOrangeBackground: $orangeBackground;
-$dropdownYellowBackground: $yellowBackground;
-$dropdownOliveBackground: $oliveBackground;
-$dropdownGreenBackground: $greenBackground;
-$dropdownTealBackground: $tealBackground;
-$dropdownBlueBackground: $blueBackground;
-$dropdownVioletBackground: $violetBackground;
-$dropdownPurpleBackground: $purpleBackground;
-$dropdownPinkBackground: $pinkBackground;
-$dropdownBrownBackground: $brownBackground;
-$dropdownRedHeaderColor: $redHeaderColor;
-$dropdownOliveHeaderColor: $oliveHeaderColor;
-$dropdownGreenHeaderColor: $greenHeaderColor;
-$dropdownYellowHeaderColor: $yellowHeaderColor;
-$dropdownBlueHeaderColor: $blueHeaderColor;
-$dropdownTealHeaderColor: $tealHeaderColor;
-$dropdownPinkHeaderColor: $pinkHeaderColor;
-$dropdownVioletHeaderColor: $violetHeaderColor;
-$dropdownPurpleHeaderColor: $purpleHeaderColor;
-$dropdownOrangeHeaderColor: $orangeHeaderColor;
-$dropdownBrownHeaderColor: $brownHeaderColor;
-$dropdownRedTextColor: $redTextColor;
-$dropdownOrangeTextColor: $orangeTextColor;
-$dropdownYellowTextColor: $yellowTextColor;
-$dropdownOliveTextColor: $oliveTextColor;
-$dropdownGreenTextColor: $greenTextColor;
-$dropdownTealTextColor: $tealTextColor;
-$dropdownBlueTextColor: $blueTextColor;
-$dropdownVioletTextColor: $violetTextColor;
-$dropdownPurpleTextColor: $purpleTextColor;
-$dropdownPinkTextColor: $pinkTextColor;
-$dropdownBrownTextColor: $brownTextColor;
-$dropdownRedBorderColor: $redBorderColor;
-$dropdownOrangeBorderColor: $orangeBorderColor;
-$dropdownYellowBorderColor: $yellowBorderColor;
-$dropdownOliveBorderColor: $oliveBorderColor;
-$dropdownGreenBorderColor: $greenBorderColor;
-$dropdownTealBorderColor: $tealBorderColor;
-$dropdownBlueBorderColor: $blueBorderColor;
-$dropdownVioletBorderColor: $violetBorderColor;
-$dropdownPurpleBorderColor: $purpleBorderColor;
-$dropdownPinkBorderColor: $pinkBorderColor;
-$dropdownBrownBorderColor: $brownBorderColor;
-$dropdownSubtleTransparentBlack: $subtleTransparentBlack;
-$dropdownTransparentBlack: $transparentBlack;
-$dropdownStrongTransparentBlack: $strongTransparentBlack;
-$dropdownVeryStrongTransparentBlack: $veryStrongTransparentBlack;
-$dropdownSubtleTransparentWhite: $subtleTransparentWhite;
-$dropdownTransparentWhite: $transparentWhite;
-$dropdownStrongTransparentWhite: $strongTransparentWhite;
-$dropdownSubtleGradient: $subtleGradient;
-$dropdownSubtleShadow: $subtleShadow;
-$dropdownFloatingShadow: $floatingShadow;
-$dropdownPositiveColor: $positiveColor;
-$dropdownPositiveBackgroundColor: $positiveBackgroundColor;
-$dropdownPositiveBorderColor: $positiveBorderColor;
-$dropdownPositiveHeaderColor: $positiveHeaderColor;
-$dropdownPositiveTextColor: $positiveTextColor;
-$dropdownNegativeColor: $negativeColor;
-$dropdownNegativeBackgroundColor: $negativeBackgroundColor;
-$dropdownNegativeBorderColor: $negativeBorderColor;
-$dropdownNegativeHeaderColor: $negativeHeaderColor;
-$dropdownNegativeTextColor: $negativeTextColor;
-$dropdownInfoColor: $infoColor;
-$dropdownInfoBackgroundColor: $infoBackgroundColor;
-$dropdownInfoBorderColor: $infoBorderColor;
-$dropdownInfoHeaderColor: $infoHeaderColor;
-$dropdownInfoTextColor: $infoTextColor;
-$dropdownWarningColor: $warningColor;
-$dropdownWarningBorderColor: $warningBorderColor;
-$dropdownWarningBackgroundColor: $warningBackgroundColor;
-$dropdownWarningHeaderColor: $warningHeaderColor;
-$dropdownWarningTextColor: $warningTextColor;
-$dropdownImagePath: $imagePath;
-$dropdownFontPath: $fontPath;
-$dropdownMini: $mini;
-$dropdownTiny: $tiny;
-$dropdownSmall: $small;
-$dropdownMedium: $medium;
-$dropdownLarge: $large;
-$dropdownBig: $big;
-$dropdownHuge: $huge;
-$dropdownMassive: $massive;
-$dropdownRelativeMini: $relativeMini;
-$dropdownRelativeTiny: $relativeTiny;
-$dropdownRelativeSmall: $relativeSmall;
-$dropdownRelativeMedium: $relativeMedium;
-$dropdownRelativeLarge: $relativeLarge;
-$dropdownRelativeBig: $relativeBig;
-$dropdownRelativeHuge: $relativeHuge;
-$dropdownRelativeMassive: $relativeMassive;
-$dropdownAbsoluteMini: $absoluteMini;
-$dropdownAbsoluteTiny: $absoluteTiny;
-$dropdownAbsoluteSmall: $absoluteSmall;
-$dropdownAbsoluteMedium: $absoluteMedium;
-$dropdownAbsoluteLarge: $absoluteLarge;
-$dropdownAbsoluteBig: $absoluteBig;
-$dropdownAbsoluteHuge: $absoluteHuge;
-$dropdownAbsoluteMassive: $absoluteMassive;
-$dropdownIconWidth: $iconWidth;
-$dropdownDarkTextColor: $darkTextColor;
-$dropdownMutedTextColor: $mutedTextColor;
-$dropdownLightTextColor: $lightTextColor;
-$dropdownUnselectedTextColor: $unselectedTextColor;
-$dropdownHoveredTextColor: $hoveredTextColor;
-$dropdownPressedTextColor: $pressedTextColor;
-$dropdownSelectedTextColor: $selectedTextColor;
-$dropdownDisabledTextColor: $disabledTextColor;
-$dropdownInvertedTextColor: $invertedTextColor;
-$dropdownInvertedMutedTextColor: $invertedMutedTextColor;
-$dropdownInvertedLightTextColor: $invertedLightTextColor;
-$dropdownInvertedUnselectedTextColor: $invertedUnselectedTextColor;
-$dropdownInvertedHoveredTextColor: $invertedHoveredTextColor;
-$dropdownInvertedPressedTextColor: $invertedPressedTextColor;
-$dropdownInvertedSelectedTextColor: $invertedSelectedTextColor;
-$dropdownInvertedDisabledTextColor: $invertedDisabledTextColor;
-$dropdownFacebookColor: $facebookColor;
-$dropdownTwitterColor: $twitterColor;
-$dropdownGooglePlusColor: $googlePlusColor;
-$dropdownLinkedInColor: $linkedInColor;
-$dropdownYoutubeColor: $youtubeColor;
-$dropdownPinterestColor: $pinterestColor;
-$dropdownVkColor: $vkColor;
-$dropdownInstagramColor: $instagramColor;
-$dropdownCircularRadius: $circularRadius;
-$dropdownBorderColor: $borderColor;
-$dropdownStrongBorderColor: $strongBorderColor;
-$dropdownInternalBorderColor: $internalBorderColor;
-$dropdownSelectedBorderColor: $selectedBorderColor;
-$dropdownStrongSelectedBorderColor: $strongSelectedBorderColor;
-$dropdownDisabledBorderColor: $disabledBorderColor;
-$dropdownSolidInternalBorderColor: $solidInternalBorderColor;
-$dropdownSolidBorderColor: $solidBorderColor;
-$dropdownSolidSelectedBorderColor: $solidSelectedBorderColor;
-$dropdownWhiteBorderColor: $whiteBorderColor;
-$dropdownSelectedWhiteBorderColor: $selectedWhiteBorderColor;
-$dropdownSolidWhiteBorderColor: $solidWhiteBorderColor;
-$dropdownSelectedSolidWhiteBorderColor: $selectedSolidWhiteBorderColor;
-$dropdownLoaderOffset: $loaderOffset;
-$dropdownLoaderMargin: $loaderMargin;
-$dropdownScrollbarWidth: $scrollbarWidth;
-$dropdownGlyphWidth: $glyphWidth;
-$dropdownLineHeightOffset: $lineHeightOffset;
-$dropdownHeaderLineHeightOffset: $headerLineHeightOffset;
-$dropdownHeaderTopMargin: $headerTopMargin;
-$dropdownHeaderBottomMargin: $headerBottomMargin;
-$dropdownHeaderMargin: $headerMargin;
-$dropdownPageMinWidth: $pageMinWidth;
-$dropdownSuccessBackgroundColor: $successBackgroundColor;
-$dropdownSuccessColor: $successColor;
-$dropdownSuccessBorderColor: $successBorderColor;
-$dropdownSuccessHeaderColor: $successHeaderColor;
-$dropdownSuccessTextColor: $successTextColor;
-$dropdownErrorBackgroundColor: $errorBackgroundColor;
-$dropdownErrorColor: $errorColor;
-$dropdownErrorBorderColor: $errorBorderColor;
-$dropdownErrorHeaderColor: $errorHeaderColor;
-$dropdownErrorTextColor: $errorTextColor;
-$dropdownLargestMobileScreen: $largestMobileScreen;
-$dropdownLargestTabletScreen: $largestTabletScreen;
-$dropdownLargestSmallMonitor: $largestSmallMonitor;
-$dropdownLargestLargeMonitor: $largestLargeMonitor;
-$dropdown1px: $_1px;
-$dropdown2px: $_2px;
-$dropdown3px: $_3px;
-$dropdown4px: $_4px;
-$dropdown5px: $_5px;
-$dropdown6px: $_6px;
-$dropdown7px: $_7px;
-$dropdown8px: $_8px;
-$dropdown9px: $_9px;
-$dropdown10px: $_10px;
-$dropdown11px: $_11px;
-$dropdown12px: $_12px;
-$dropdown13px: $_13px;
-$dropdown14px: $_14px;
-$dropdown15px: $_15px;
-$dropdown16px: $_16px;
-$dropdown17px: $_17px;
-$dropdown18px: $_18px;
-$dropdown19px: $_19px;
-$dropdown20px: $_20px;
-$dropdown21px: $_21px;
-$dropdown22px: $_22px;
-$dropdown23px: $_23px;
-$dropdown24px: $_24px;
-$dropdown25px: $_25px;
-$dropdown26px: $_26px;
-$dropdown27px: $_27px;
-$dropdown28px: $_28px;
-$dropdown29px: $_29px;
-$dropdown30px: $_30px;
-$dropdown31px: $_31px;
-$dropdown32px: $_32px;
-$dropdown33px: $_33px;
-$dropdown34px: $_34px;
-$dropdown35px: $_35px;
-$dropdown36px: $_36px;
-$dropdown37px: $_37px;
-$dropdown38px: $_38px;
-$dropdown39px: $_39px;
-$dropdown40px: $_40px;
-$dropdown41px: $_41px;
-$dropdown42px: $_42px;
-$dropdown43px: $_43px;
-$dropdown44px: $_44px;
-$dropdown45px: $_45px;
-$dropdown46px: $_46px;
-$dropdown47px: $_47px;
-$dropdown48px: $_48px;
-$dropdown49px: $_49px;
-$dropdown50px: $_50px;
-$dropdown51px: $_51px;
-$dropdown52px: $_52px;
-$dropdown53px: $_53px;
-$dropdown54px: $_54px;
-$dropdown55px: $_55px;
-$dropdown56px: $_56px;
-$dropdown57px: $_57px;
-$dropdown58px: $_58px;
-$dropdown59px: $_59px;
-$dropdown60px: $_60px;
-$dropdown61px: $_61px;
-$dropdown62px: $_62px;
-$dropdown63px: $_63px;
-$dropdown64px: $_64px;
-$dropdownRelative1px: $relative1px;
-$dropdownRelative2px: $relative2px;
-$dropdownRelative3px: $relative3px;
-$dropdownRelative4px: $relative4px;
-$dropdownRelative5px: $relative5px;
-$dropdownRelative6px: $relative6px;
-$dropdownRelative7px: $relative7px;
-$dropdownRelative8px: $relative8px;
-$dropdownRelative9px: $relative9px;
-$dropdownRelative10px: $relative10px;
-$dropdownRelative11px: $relative11px;
-$dropdownRelative12px: $relative12px;
-$dropdownRelative13px: $relative13px;
-$dropdownRelative14px: $relative14px;
-$dropdownRelative15px: $relative15px;
-$dropdownRelative16px: $relative16px;
-$dropdownRelative17px: $relative17px;
-$dropdownRelative18px: $relative18px;
-$dropdownRelative19px: $relative19px;
-$dropdownRelative20px: $relative20px;
-$dropdownRelative21px: $relative21px;
-$dropdownRelative22px: $relative22px;
-$dropdownRelative23px: $relative23px;
-$dropdownRelative24px: $relative24px;
-$dropdownRelative25px: $relative25px;
-$dropdownRelative26px: $relative26px;
-$dropdownRelative27px: $relative27px;
-$dropdownRelative28px: $relative28px;
-$dropdownRelative29px: $relative29px;
-$dropdownRelative30px: $relative30px;
-$dropdownRelative31px: $relative31px;
-$dropdownRelative32px: $relative32px;
-$dropdownRelative33px: $relative33px;
-$dropdownRelative34px: $relative34px;
-$dropdownRelative35px: $relative35px;
-$dropdownRelative36px: $relative36px;
-$dropdownRelative37px: $relative37px;
-$dropdownRelative38px: $relative38px;
-$dropdownRelative39px: $relative39px;
-$dropdownRelative40px: $relative40px;
-$dropdownRelative41px: $relative41px;
-$dropdownRelative42px: $relative42px;
-$dropdownRelative43px: $relative43px;
-$dropdownRelative44px: $relative44px;
-$dropdownRelative45px: $relative45px;
-$dropdownRelative46px: $relative46px;
-$dropdownRelative47px: $relative47px;
-$dropdownRelative48px: $relative48px;
-$dropdownRelative49px: $relative49px;
-$dropdownRelative50px: $relative50px;
-$dropdownRelative51px: $relative51px;
-$dropdownRelative52px: $relative52px;
-$dropdownRelative53px: $relative53px;
-$dropdownRelative54px: $relative54px;
-$dropdownRelative55px: $relative55px;
-$dropdownRelative56px: $relative56px;
-$dropdownRelative57px: $relative57px;
-$dropdownRelative58px: $relative58px;
-$dropdownRelative59px: $relative59px;
-$dropdownRelative60px: $relative60px;
-$dropdownRelative61px: $relative61px;
-$dropdownRelative62px: $relative62px;
-$dropdownRelative63px: $relative63px;
-$dropdownRelative64px: $relative64px;
-$dropdownOneWide: $oneWide;
-$dropdownTwoWide: $twoWide;
-$dropdownThreeWide: $threeWide;
-$dropdownFourWide: $fourWide;
-$dropdownFiveWide: $fiveWide;
-$dropdownSixWide: $sixWide;
-$dropdownSevenWide: $sevenWide;
-$dropdownEightWide: $eightWide;
-$dropdownNineWide: $nineWide;
-$dropdownTenWide: $tenWide;
-$dropdownElevenWide: $elevenWide;
-$dropdownTwelveWide: $twelveWide;
-$dropdownThirteenWide: $thirteenWide;
-$dropdownFourteenWide: $fourteenWide;
-$dropdownFifteenWide: $fifteenWide;
-$dropdownSixteenWide: $sixteenWide;
-$dropdownOneColumn: $oneColumn;
-$dropdownTwoColumn: $twoColumn;
-$dropdownThreeColumn: $threeColumn;
-$dropdownFourColumn: $fourColumn;
-$dropdownFiveColumn: $fiveColumn;
-$dropdownSixColumn: $sixColumn;
-$dropdownSevenColumn: $sevenColumn;
-$dropdownEightColumn: $eightColumn;
-$dropdownNineColumn: $nineColumn;
-$dropdownTenColumn: $tenColumn;
-$dropdownElevenColumn: $elevenColumn;
-$dropdownTwelveColumn: $twelveColumn;
-$dropdownThirteenColumn: $thirteenColumn;
-$dropdownFourteenColumn: $fourteenColumn;
-$dropdownFifteenColumn: $fifteenColumn;
-$dropdownSixteenColumn: $sixteenColumn;
-$dropdownDisabledOpacity: $disabledOpacity;
-$dropdownFloatingShadowHover: $floatingShadowHover;
-$dropdownPrimaryColorHover: $primaryColorHover;
-$dropdownSecondaryColorHover: $secondaryColorHover;
-$dropdownRedHover: $redHover;
-$dropdownOrangeHover: $orangeHover;
-$dropdownYellowHover: $yellowHover;
-$dropdownOliveHover: $oliveHover;
-$dropdownGreenHover: $greenHover;
-$dropdownTealHover: $tealHover;
-$dropdownBlueHover: $blueHover;
-$dropdownVioletHover: $violetHover;
-$dropdownPurpleHover: $purpleHover;
-$dropdownPinkHover: $pinkHover;
-$dropdownBrownHover: $brownHover;
-$dropdownLightRedHover: $lightRedHover;
-$dropdownLightOrangeHover: $lightOrangeHover;
-$dropdownLightYellowHover: $lightYellowHover;
-$dropdownLightOliveHover: $lightOliveHover;
-$dropdownLightGreenHover: $lightGreenHover;
-$dropdownLightTealHover: $lightTealHover;
-$dropdownLightBlueHover: $lightBlueHover;
-$dropdownLightVioletHover: $lightVioletHover;
-$dropdownLightPurpleHover: $lightPurpleHover;
-$dropdownLightPinkHover: $lightPinkHover;
-$dropdownLightBrownHover: $lightBrownHover;
-$dropdownLightGreyHover: $lightGreyHover;
-$dropdownLightBlackHover: $lightBlackHover;
-$dropdownPositiveColorHover: $positiveColorHover;
-$dropdownNegativeColorHover: $negativeColorHover;
-$dropdownFacebookHoverColor: $facebookHoverColor;
-$dropdownTwitterHoverColor: $twitterHoverColor;
-$dropdownGooglePlusHoverColor: $googlePlusHoverColor;
-$dropdownLinkedInHoverColor: $linkedInHoverColor;
-$dropdownYoutubeHoverColor: $youtubeHoverColor;
-$dropdownInstagramHoverColor: $instagramHoverColor;
-$dropdownPinterestHoverColor: $pinterestHoverColor;
-$dropdownVkHoverColor: $vkHoverColor;
-$dropdownFullBlackHover: $fullBlackHover;
-$dropdownBlackHover: $blackHover;
-$dropdownGreyHover: $greyHover;
-$dropdownWhiteHover: $whiteHover;
-$dropdownOffWhiteHover: $offWhiteHover;
-$dropdownDarkWhiteHover: $darkWhiteHover;
-$dropdownPrimaryColorFocus: $primaryColorFocus;
-$dropdownSecondaryColorFocus: $secondaryColorFocus;
-$dropdownRedFocus: $redFocus;
-$dropdownOrangeFocus: $orangeFocus;
-$dropdownYellowFocus: $yellowFocus;
-$dropdownOliveFocus: $oliveFocus;
-$dropdownGreenFocus: $greenFocus;
-$dropdownTealFocus: $tealFocus;
-$dropdownBlueFocus: $blueFocus;
-$dropdownVioletFocus: $violetFocus;
-$dropdownPurpleFocus: $purpleFocus;
-$dropdownPinkFocus: $pinkFocus;
-$dropdownBrownFocus: $brownFocus;
-$dropdownLightRedFocus: $lightRedFocus;
-$dropdownLightOrangeFocus: $lightOrangeFocus;
-$dropdownLightYellowFocus: $lightYellowFocus;
-$dropdownLightOliveFocus: $lightOliveFocus;
-$dropdownLightGreenFocus: $lightGreenFocus;
-$dropdownLightTealFocus: $lightTealFocus;
-$dropdownLightBlueFocus: $lightBlueFocus;
-$dropdownLightVioletFocus: $lightVioletFocus;
-$dropdownLightPurpleFocus: $lightPurpleFocus;
-$dropdownLightPinkFocus: $lightPinkFocus;
-$dropdownLightBrownFocus: $lightBrownFocus;
-$dropdownLightGreyFocus: $lightGreyFocus;
-$dropdownLightBlackFocus: $lightBlackFocus;
-$dropdownPositiveColorFocus: $positiveColorFocus;
-$dropdownNegativeColorFocus: $negativeColorFocus;
-$dropdownFacebookFocusColor: $facebookFocusColor;
-$dropdownTwitterFocusColor: $twitterFocusColor;
-$dropdownGooglePlusFocusColor: $googlePlusFocusColor;
-$dropdownLinkedInFocusColor: $linkedInFocusColor;
-$dropdownYoutubeFocusColor: $youtubeFocusColor;
-$dropdownInstagramFocusColor: $instagramFocusColor;
-$dropdownPinterestFocusColor: $pinterestFocusColor;
-$dropdownVkFocusColor: $vkFocusColor;
-$dropdownFullBlackFocus: $fullBlackFocus;
-$dropdownBlackFocus: $blackFocus;
-$dropdownGreyFocus: $greyFocus;
-$dropdownWhiteFocus: $whiteFocus;
-$dropdownOffWhiteFocus: $offWhiteFocus;
-$dropdownDarkWhiteFocus: $darkWhiteFocus;
-$dropdownPrimaryColorDown: $primaryColorDown;
-$dropdownSecondaryColorDown: $secondaryColorDown;
-$dropdownRedDown: $redDown;
-$dropdownOrangeDown: $orangeDown;
-$dropdownYellowDown: $yellowDown;
-$dropdownOliveDown: $oliveDown;
-$dropdownGreenDown: $greenDown;
-$dropdownTealDown: $tealDown;
-$dropdownBlueDown: $blueDown;
-$dropdownVioletDown: $violetDown;
-$dropdownPurpleDown: $purpleDown;
-$dropdownPinkDown: $pinkDown;
-$dropdownBrownDown: $brownDown;
-$dropdownLightRedDown: $lightRedDown;
-$dropdownLightOrangeDown: $lightOrangeDown;
-$dropdownLightYellowDown: $lightYellowDown;
-$dropdownLightOliveDown: $lightOliveDown;
-$dropdownLightGreenDown: $lightGreenDown;
-$dropdownLightTealDown: $lightTealDown;
-$dropdownLightBlueDown: $lightBlueDown;
-$dropdownLightVioletDown: $lightVioletDown;
-$dropdownLightPurpleDown: $lightPurpleDown;
-$dropdownLightPinkDown: $lightPinkDown;
-$dropdownLightBrownDown: $lightBrownDown;
-$dropdownLightGreyDown: $lightGreyDown;
-$dropdownLightBlackDown: $lightBlackDown;
-$dropdownPositiveColorDown: $positiveColorDown;
-$dropdownNegativeColorDown: $negativeColorDown;
-$dropdownFacebookDownColor: $facebookDownColor;
-$dropdownTwitterDownColor: $twitterDownColor;
-$dropdownGooglePlusDownColor: $googlePlusDownColor;
-$dropdownLinkedInDownColor: $linkedInDownColor;
-$dropdownYoutubeDownColor: $youtubeDownColor;
-$dropdownInstagramDownColor: $instagramDownColor;
-$dropdownPinterestDownColor: $pinterestDownColor;
-$dropdownVkDownColor: $vkDownColor;
-$dropdownFullBlackDown: $fullBlackDown;
-$dropdownBlackDown: $blackDown;
-$dropdownGreyDown: $greyDown;
-$dropdownWhiteDown: $whiteDown;
-$dropdownOffWhiteDown: $offWhiteDown;
-$dropdownDarkWhiteDown: $darkWhiteDown;
-$dropdownPrimaryColorActive: $primaryColorActive;
-$dropdownSecondaryColorActive: $secondaryColorActive;
-$dropdownRedActive: $redActive;
-$dropdownOrangeActive: $orangeActive;
-$dropdownYellowActive: $yellowActive;
-$dropdownOliveActive: $oliveActive;
-$dropdownGreenActive: $greenActive;
-$dropdownTealActive: $tealActive;
-$dropdownBlueActive: $blueActive;
-$dropdownVioletActive: $violetActive;
-$dropdownPurpleActive: $purpleActive;
-$dropdownPinkActive: $pinkActive;
-$dropdownBrownActive: $brownActive;
-$dropdownLightRedActive: $lightRedActive;
-$dropdownLightOrangeActive: $lightOrangeActive;
-$dropdownLightYellowActive: $lightYellowActive;
-$dropdownLightOliveActive: $lightOliveActive;
-$dropdownLightGreenActive: $lightGreenActive;
-$dropdownLightTealActive: $lightTealActive;
-$dropdownLightBlueActive: $lightBlueActive;
-$dropdownLightVioletActive: $lightVioletActive;
-$dropdownLightPurpleActive: $lightPurpleActive;
-$dropdownLightPinkActive: $lightPinkActive;
-$dropdownLightBrownActive: $lightBrownActive;
-$dropdownLightGreyActive: $lightGreyActive;
-$dropdownLightBlackActive: $lightBlackActive;
-$dropdownPositiveColorActive: $positiveColorActive;
-$dropdownNegativeColorActive: $negativeColorActive;
-$dropdownFacebookActiveColor: $facebookActiveColor;
-$dropdownTwitterActiveColor: $twitterActiveColor;
-$dropdownGooglePlusActiveColor: $googlePlusActiveColor;
-$dropdownLinkedInActiveColor: $linkedInActiveColor;
-$dropdownYoutubeActiveColor: $youtubeActiveColor;
-$dropdownInstagramActiveColor: $instagramActiveColor;
-$dropdownPinterestActiveColor: $pinterestActiveColor;
-$dropdownVkActiveColor: $vkActiveColor;
-$dropdownFullBlackActive: $fullBlackActive;
-$dropdownBlackActive: $blackActive;
-$dropdownGreyActive: $greyActive;
-$dropdownWhiteActive: $whiteActive;
-$dropdownOffWhiteActive: $offWhiteActive;
-$dropdownDarkWhiteActive: $darkWhiteActive;
-
-
 /*******************************
             Dropdown
 *******************************/
@@ -618,112 +6,112 @@ $dropdownDarkWhiteActive: $darkWhiteActive;
        Element
 --------------------*/
 
-$dropdownTransition:
-  box-shadow $dropdownDefaultDuration $dropdownDefaultEasing,
-  width $dropdownDefaultDuration $dropdownDefaultEasing
+$dropdown-transition:
+  box-shadow $default-duration $default-easing,
+  width $default-duration $default-easing
 ;
-$dropdownBorderRadius: $dropdownDefaultBorderRadius;
+$dropdown-border-radius: $default-border-radius;
 
-$dropdownRaisedShadow: 0 2px 3px 0 $dropdownBorderColor;
+$dropdown-raised-shadow: 0 2px 3px 0 $border-color;
 
 /*-------------------
        Content
 --------------------*/
 
 /* Icon */
-$dropdownDropdownIconSize: $dropdownRelative12px;
-$dropdownDropdownIconMargin: 0 0 0 1em;
+$dropdown-dropdown-icon-size: $relative12px;
+$dropdown-dropdown-icon-margin: 0 0 0 1em;
 
 /* Current Text */
-$dropdownTextTransition: none;
+$dropdown-text-transition: none;
 
 /* Menu */
-$dropdownMenuBackground: #FFFFFF;
-$dropdownMenuMargin: 0;
-$dropdownMenuPadding: 0 0;
-$dropdownMenuTop: 100%;
-$dropdownMenuTextAlign: left;
+$dropdown-menu-background: #FFFFFF;
+$dropdown-menu-margin: 0;
+$dropdown-menu-padding: 0 0;
+$dropdown-menu-top: 100%;
+$dropdown-menu-text-align: left;
 
-$dropdownMenuBorderWidth: 1px;
-$dropdownMenuBorderColor: $dropdownBorderColor;
-$dropdownMenuBorder: $dropdownMenuBorderWidth solid $dropdownMenuBorderColor;
-$dropdownMenuBoxShadow: $dropdownRaisedShadow;
-$dropdownMenuBorderRadius: $dropdownBorderRadius;
-$dropdownMenuTransition: opacity $dropdownDefaultDuration $dropdownDefaultEasing;
-$dropdownMenuMinWidth: #{"calc(100% + " + ($dropdownMenuBorderWidth * 2) + ")"};
-$dropdownMenuZIndex: 11;
+$dropdown-menu-border-width: 1px;
+$dropdown-menu-border-color: $border-color;
+$dropdown-menu-border: $dropdown-menu-border-width solid $dropdown-menu-border-color;
+$dropdown-menu-box-shadow: $dropdown-raised-shadow;
+$dropdown-menu-border-radius: $dropdown-border-radius;
+$dropdown-menu-transition: opacity $default-duration $default-easing;
+$dropdown-menu-min-width: #{"calc(100% + " + ($dropdown-menu-border-width * 2) + ")"};
+$dropdown-menu-zindex: 11;
 
 /* Text */
-$dropdownTextLineHeight: 1em;
-$dropdownTextLineHeightOffset: ($dropdownTextLineHeight - 1em);
-$dropdownTextCursorSpacing: 1px;
+$dropdown-text-line-height: 1em;
+$dropdown-text-line-height-offset: ($dropdown-text-line-height - 1em);
+$dropdown-text-cursor-spacing: 1px;
 
 /* Menu Item */
-$dropdownItemFontSize: $dropdownMedium;
-$dropdownItemTextAlign: left;
-$dropdownItemBorder: none;
-$dropdownItemHeight: auto;
-$dropdownItemDivider: none;
-$dropdownItemColor: $dropdownTextColor;
-$dropdownItemVerticalPadding: $dropdownMini;
-$dropdownItemHorizontalPadding: $dropdownLarge;
-$dropdownItemPadding: $dropdownItemVerticalPadding $dropdownItemHorizontalPadding;
-$dropdownItemFontWeight: normal;
-$dropdownItemLineHeight: 1em;
-$dropdownItemLineHeightOffset: ($dropdownItemLineHeight - 1em);
-$dropdownItemTextTransform: none;
-$dropdownItemBoxShadow: none;
+$dropdown-item-font-size: $medium;
+$dropdown-item-text-align: left;
+$dropdown-item-border: none;
+$dropdown-item-height: auto;
+$dropdown-item-divider: none;
+$dropdown-item-color: $text-color;
+$dropdown-item-vertical-padding: $mini;
+$dropdown-item-horizontal-padding: $large;
+$dropdown-item-padding: $dropdown-item-vertical-padding $dropdown-item-horizontal-padding;
+$dropdown-item-font-weight: normal;
+$dropdown-item-line-height: 1em;
+$dropdown-item-line-height-offset: ($dropdown-item-line-height - 1em);
+$dropdown-item-text-transform: none;
+$dropdown-item-box-shadow: none;
 
 /* Sub Menu */
-$dropdownSubMenuTop: 0%;
-$dropdownSubMenuLeft: 100%;
-$dropdownSubMenuRight: auto;
-$dropdownSubMenuDistanceAway: -0.5em;
-$dropdownSubMenuMargin: 0 0 0 $dropdownSubMenuDistanceAway;
-$dropdownSubMenuBorderRadius: $dropdownBorderRadius;
-$dropdownSubMenuZIndex: 21;
+$dropdown-sub-menu-top: 0%;
+$dropdown-sub-menu-left: 100%;
+$dropdown-sub-menu-right: auto;
+$dropdown-sub-menu-distance-away: -0.5em;
+$dropdown-sub-menu-margin: 0 0 0 $dropdown-sub-menu-distance-away;
+$dropdown-sub-menu-border-radius: $dropdown-border-radius;
+$dropdown-sub-menu-zindex: 21;
 
 /* Menu Header */
-$dropdownMenuHeaderColor: $dropdownDarkTextColor;
-$dropdownMenuHeaderFontSize: $dropdownRelative11px;
-$dropdownMenuHeaderFontWeight: bold;
-$dropdownMenuHeaderTextTransform: uppercase;
-$dropdownMenuHeaderMargin: 1rem 0 0.75rem;
-$dropdownMenuHeaderPadding: 0 $dropdownItemHorizontalPadding;
+$dropdown-menu-header-color: $dark-text-color;
+$dropdown-menu-header-font-size: $relative11px;
+$dropdown-menu-header-font-weight: bold;
+$dropdown-menu-header-text-transform: uppercase;
+$dropdown-menu-header-margin: 1rem 0 0.75rem;
+$dropdown-menu-header-padding: 0 $dropdown-item-horizontal-padding;
 
 /* Menu Divider */
-$dropdownMenuDividerMargin: 0.5em 0;
-$dropdownMenuDividerColor: $dropdownInternalBorderColor;
-$dropdownMenuDividerSize: 1px;
-$dropdownMenuDividerBorder: $dropdownMenuDividerSize solid $dropdownMenuDividerColor;
+$dropdown-menu-divider-margin: 0.5em 0;
+$dropdown-menu-divider-color: $internal-border-color;
+$dropdown-menu-divider-size: 1px;
+$dropdown-menu-divider-border: $dropdown-menu-divider-size solid $dropdown-menu-divider-color;
 
 /* Menu Input */
-$dropdownMenuInputMargin: $dropdownLarge $dropdownMini;
-$dropdownMenuInputMinWidth: 10rem;
-$dropdownMenuInputVerticalPadding: 0.5em;
-$dropdownMenuInputHorizontalPadding: $dropdownInputHorizontalPadding;
-$dropdownMenuInputPadding: $dropdownMenuInputVerticalPadding $dropdownMenuInputHorizontalPadding;
+$dropdown-menu-input-margin: $large $mini;
+$dropdown-menu-input-min-width: 10rem;
+$dropdown-menu-input-vertical-padding: 0.5em;
+$dropdown-menu-input-horizontal-padding: $input-horizontal-padding;
+$dropdown-menu-input-padding: $dropdown-menu-input-vertical-padding $dropdown-menu-input-horizontal-padding;
 
 /* Menu Image */
-$dropdownMenuImageMaxHeight: 2em;
-$dropdownMenuImageVerticalMargin: -($dropdownMenuImageMaxHeight - 1em) / 2;
+$dropdown-menu-image-max-height: 2em;
+$dropdown-menu-image-vertical-margin: -($dropdown-menu-image-max-height - 1em) / 2;
 
 /* Item Sub-Element */
-$dropdownItemElementFloat: none;
-$dropdownItemElementDistance: $dropdownMini;
+$dropdown-item-element-float: none;
+$dropdown-item-element-distance: $mini;
 
 /* Sub-Menu Dropdown Icon */
-$dropdownItemDropdownIconDistance: 1em;
-$dropdownItemDropdownIconFloat: right;
-$dropdownItemDropdownIconMargin: $dropdownItemLineHeightOffset 0 0 $dropdownItemDropdownIconDistance;
+$dropdown-item-dropdown-icon-distance: 1em;
+$dropdown-item-dropdown-icon-float: right;
+$dropdown-item-dropdown-icon-margin: $dropdown-item-line-height-offset 0 0 $dropdown-item-dropdown-icon-distance;
 
 /* Description */
-$dropdownItemDescriptionFloat: right;
-$dropdownItemDescriptionMargin: 0 0 0 1em;
-$dropdownItemDescriptionColor: $dropdownLightTextColor;
+$dropdown-item-description-float: right;
+$dropdown-item-description-margin: 0 0 0 1em;
+$dropdown-item-description-color: $light-text-color;
 
 /* Floated Content */
-$dropdownFloatedDistance: 1em;
+$dropdown-floated-distance: 1em;
 
 /*-------------------
         Types
@@ -733,123 +121,123 @@ $dropdownFloatedDistance: 1em;
    Selection
 --------------*/
 
-$dropdownSelectionMinWidth: 14em;
-$dropdownSelectionVerticalPadding: $dropdownInputVerticalPadding;
-$dropdownSelectionHorizontalPadding: $dropdownInputHorizontalPadding;
-$dropdownSelectionBorderEmWidth:  $dropdownRelative1px;
-$dropdownSelectionMinHeight: $dropdownInputLineHeight + (#{$dropdownSelectionVerticalPadding} * 2) - $dropdownSelectionBorderEmWidth;
-$dropdownSelectionBackground: $dropdownInputBackground;
-$dropdownSelectionDisplay: inline-block;
-$dropdownSelectionIconDistance: $dropdownInputHorizontalPadding + $dropdownGlyphWidth;
-$dropdownSelectionPadding: $dropdownSelectionVerticalPadding $dropdownSelectionIconDistance $dropdownSelectionVerticalPadding $dropdownSelectionHorizontalPadding;
-$dropdownSelectionZIndex: 10;
+$dropdown-selection-min-width: 14em;
+$dropdown-selection-vertical-padding: $input-vertical-padding;
+$dropdown-selection-horizontal-padding: $input-horizontal-padding;
+$dropdown-selection-border-em-width:  $relative1px;
+$dropdown-selection-min-height: $input-line-height + (#{$dropdown-selection-vertical-padding} * 2) - $dropdown-selection-border-em-width;
+$dropdown-selection-background: $input-background;
+$dropdown-selection-display: inline-block;
+$dropdown-selection-icon-distance: $input-horizontal-padding + $glyph-width;
+$dropdown-selection-padding: $dropdown-selection-vertical-padding $dropdown-selection-icon-distance $dropdown-selection-vertical-padding $dropdown-selection-horizontal-padding;
+$dropdown-selection-zindex: 10;
 
 
 /* <select> */
-$dropdownSelectBorder: 1px solid $dropdownBorderColor;
-$dropdownSelectPadding: 0.5em;
-$dropdownSelectVisibility: visible;
-$dropdownSelectHeight: 38px;
+$dropdown-select-border: 1px solid $border-color;
+$dropdown-select-padding: 0.5em;
+$dropdown-select-visibility: visible;
+$dropdown-select-height: 38px;
 
-$dropdownSelectionTextColor: $dropdownTextColor;
+$dropdown-selection-text-color: $text-color;
 
-$dropdownSelectionTextUnderlayIconOpacity: $dropdownDisabledOpacity;
-$dropdownSelectionTextUnderlayColor: $dropdownInputPlaceholderFocusColor;
+$dropdown-selection-text-underlay-icon-opacity: $disabled-opacity;
+$dropdown-selection-text-underlay-color: $input-placeholder-focus-color;
 
-$dropdownSelectionBoxShadow: none;
-$dropdownSelectionBorderColor: $dropdownBorderColor;
-$dropdownSelectionBorder: 1px solid $dropdownSelectionBorderColor;
-$dropdownSelectionBorderRadius: $dropdownBorderRadius;
+$dropdown-selection-box-shadow: none;
+$dropdown-selection-border-color: $border-color;
+$dropdown-selection-border: 1px solid $dropdown-selection-border-color;
+$dropdown-selection-border-radius: $dropdown-border-radius;
 
-$dropdownSelectionIconOpacity: 0.8;
-$dropdownSelectionIconZIndex: 3;
-$dropdownSelectionIconHitbox: $dropdownSelectionVerticalPadding;
-$dropdownSelectionIconMargin: -$dropdownSelectionIconHitbox;
-$dropdownSelectionIconPadding: $dropdownSelectionIconHitbox / $dropdownDropdownIconSize;
-$dropdownSelectionIconTransition: opacity $dropdownDefaultDuration $dropdownDefaultEasing;
+$dropdown-selection-icon-opacity: 0.8;
+$dropdown-selection-icon-zindex: 3;
+$dropdown-selection-icon-hitbox: $dropdown-selection-vertical-padding;
+$dropdown-selection-icon-margin: -$dropdown-selection-icon-hitbox;
+$dropdown-selection-icon-padding: $dropdown-selection-icon-hitbox / $dropdown-dropdown-icon-size;
+$dropdown-selection-icon-transition: opacity $default-duration $default-easing;
 
-$dropdownSelectionMenuBorderRadius: 0 0 $dropdownBorderRadius $dropdownBorderRadius;
-$dropdownSelectionMenuBoxShadow: $dropdownRaisedShadow;
-$dropdownSelectionMenuItemBoxShadow: none;
+$dropdown-selection-menu-border-radius: 0 0 $dropdown-border-radius $dropdown-border-radius;
+$dropdown-selection-menu-box-shadow: $dropdown-raised-shadow;
+$dropdown-selection-menu-item-box-shadow: none;
 
-$dropdownSelectionItemHorizontalPadding: $dropdownItemHorizontalPadding;
-$dropdownSelectionItemVerticalPadding: $dropdownItemVerticalPadding;
-$dropdownSelectionItemPadding: $dropdownSelectionItemVerticalPadding $dropdownSelectionItemHorizontalPadding;
+$dropdown-selection-item-horizontal-padding: $dropdown-item-horizontal-padding;
+$dropdown-selection-item-vertical-padding: $dropdown-item-vertical-padding;
+$dropdown-selection-item-padding: $dropdown-selection-item-vertical-padding $dropdown-selection-item-horizontal-padding;
 
-$dropdownSelectionItemDivider: 1px solid $dropdownSolidInternalBorderColor;
-$dropdownSelectionMessagePadding: $dropdownSelectionItemPadding;
+$dropdown-selection-item-divider: 1px solid $solid-internal-border-color;
+$dropdown-selection-message-padding: $dropdown-selection-item-padding;
 
-$dropdownSelectionTransition: $dropdownTransition;
-$dropdownSelectionMenuTransition: $dropdownMenuTransition;
+$dropdown-selection-transition: $dropdown-transition;
+$dropdown-selection-menu-transition: $dropdown-menu-transition;
 
 /* Responsive */
-$dropdownSelectionMobileMaxItems: 3;
-$dropdownSelectionTabletMaxItems: 4;
-$dropdownSelectionComputerMaxItems: 6;
-$dropdownSelectionWidescreenMaxItems: 8;
+$dropdown-selection-mobile-max-items: 3;
+$dropdown-selection-tablet-max-items: 4;
+$dropdown-selection-computer-max-items: 6;
+$dropdown-selection-widescreen-max-items: 8;
 
 /* Derived */
-$dropdownSelectedBorderEMWidth: 0.1em; /* 1px / em size */
-$dropdownSelectionItemHeight: (#{$dropdownSelectionItemVerticalPadding} * 2) + $dropdownItemLineHeight + $dropdownSelectedBorderEMWidth;
-$dropdownSelectionMobileMaxMenuHeight: (#{$dropdownSelectionItemHeight} * $dropdownSelectionMobileMaxItems);
-$dropdownSelectionTabletMaxMenuHeight: (#{$dropdownSelectionItemHeight} * $dropdownSelectionTabletMaxItems);
-$dropdownSelectionComputerMaxMenuHeight: (#{$dropdownSelectionItemHeight} * $dropdownSelectionComputerMaxItems);
-$dropdownSelectionWidescreenMaxMenuHeight: (#{$dropdownSelectionItemHeight} * $dropdownSelectionWidescreenMaxItems);
+$dropdown-selected-borderEMWidth: 0.1em; /* 1px / em size */
+$dropdown-selection-item-height: (#{$dropdown-selection-item-vertical-padding} * 2) + $dropdown-item-line-height + $dropdown-selected-borderEMWidth;
+$dropdown-selection-mobile-max-menu-height: (#{$dropdown-selection-item-height} * $dropdown-selection-mobile-max-items);
+$dropdown-selection-tablet-max-menu-height: (#{$dropdown-selection-item-height} * $dropdown-selection-tablet-max-items);
+$dropdown-selection-computer-max-menu-height: (#{$dropdown-selection-item-height} * $dropdown-selection-computer-max-items);
+$dropdown-selection-widescreen-max-menu-height: (#{$dropdown-selection-item-height} * $dropdown-selection-widescreen-max-items);
 
 /* Hover */
-$dropdownSelectionHoverBorderColor: $dropdownSelectedBorderColor;
-$dropdownSelectionHoverBoxShadow: none;
+$dropdown-selection-hover-border-color: $selected-border-color;
+$dropdown-selection-hover-box-shadow: none;
 
 /* Focus */
-$dropdownSelectionFocusBorderColor: $dropdownFocusedFormMutedBorderColor;
-$dropdownSelectionFocusBoxShadow: none;
-$dropdownSelectionFocusMenuBoxShadow: $dropdownRaisedShadow;
+$dropdown-selection-focus-border-color: $focused-form-muted-border-color;
+$dropdown-selection-focus-box-shadow: none;
+$dropdown-selection-focus-menu-box-shadow: $dropdown-raised-shadow;
 
 /* Visible */
-$dropdownSelectionVisibleTextFontWeight: normal;
-$dropdownSelectionVisibleTextColor: $dropdownHoveredTextColor;
+$dropdown-selection-visible-text-font-weight: normal;
+$dropdown-selection-visible-text-color: $hovered-text-color;
 
-$dropdownSelectionVisibleBorderColor: $dropdownFocusedFormMutedBorderColor;
-$dropdownSelectionVisibleBoxShadow: $dropdownRaisedShadow;
-$dropdownSelectionVisibleMenuBoxShadow: $dropdownRaisedShadow;
+$dropdown-selection-visible-border-color: $focused-form-muted-border-color;
+$dropdown-selection-visible-box-shadow: $dropdown-raised-shadow;
+$dropdown-selection-visible-menu-box-shadow: $dropdown-raised-shadow;
 
 /* Visible Hover */
-$dropdownSelectionActiveHoverBorderColor: $dropdownFocusedFormMutedBorderColor;
-$dropdownSelectionActiveHoverBoxShadow: $dropdownSelectionVisibleBoxShadow;
-$dropdownSelectionActiveHoverMenuBoxShadow: $dropdownSelectionVisibleMenuBoxShadow;
+$dropdown-selection-active-hover-border-color: $focused-form-muted-border-color;
+$dropdown-selection-active-hover-box-shadow: $dropdown-selection-visible-box-shadow;
+$dropdown-selection-active-hover-menu-box-shadow: $dropdown-selection-visible-menu-box-shadow;
 
-$dropdownSelectionVisibleConnectingBorder: 0;
-$dropdownSelectionVisibleIconOpacity: 1;
+$dropdown-selection-visible-connecting-border: 0;
+$dropdown-selection-visible-icon-opacity: 1;
 
 /* Message */
-$dropdownMessagePadding: $dropdownSelectionItemPadding;
-$dropdownMessageFontWeight: normal;
-$dropdownMessageColor: $dropdownUnselectedTextColor;
+$dropdown-message-padding: $dropdown-selection-item-padding;
+$dropdown-message-font-weight: normal;
+$dropdown-message-color: $unselected-text-color;
 
 /*--------------
      Search
 --------------*/
 
-$dropdownSearchMinWidth: '';
+$dropdown-search-min-width: '';
 
 /* Search Selection */
-$dropdownSearchSelectionLineHeight: $dropdownInputLineHeight;
-$dropdownSearchSelectionLineHeightOffset: (($dropdownSearchSelectionLineHeight - 1em) / 2);
-$dropdownSearchSelectionVerticalPadding: ($dropdownSelectionVerticalPadding - $dropdownSearchSelectionLineHeightOffset);
-$dropdownSearchSelectionHorizontalPadding: $dropdownSelectionHorizontalPadding;
-$dropdownSearchSelectionInputPadding: $dropdownSearchSelectionVerticalPadding $dropdownSelectionIconDistance $dropdownSearchSelectionVerticalPadding $dropdownSearchSelectionHorizontalPadding;
+$dropdown-search-selection-line-height: $input-line-height;
+$dropdown-search-selection-line-height-offset: (($dropdown-search-selection-line-height - 1em) / 2);
+$dropdown-search-selection-vertical-padding: ($dropdown-selection-vertical-padding - $dropdown-search-selection-line-height-offset);
+$dropdown-search-selection-horizontal-padding: $dropdown-selection-horizontal-padding;
+$dropdown-search-selection-input-padding: $dropdown-search-selection-vertical-padding $dropdown-selection-icon-distance $dropdown-search-selection-vertical-padding $dropdown-search-selection-horizontal-padding;
 
-$dropdownSearchMobileMaxMenuHeight: $dropdownSelectionMobileMaxMenuHeight;
-$dropdownSearchTabletMaxMenuHeight: $dropdownSelectionTabletMaxMenuHeight;
-$dropdownSearchComputerMaxMenuHeight: $dropdownSelectionComputerMaxMenuHeight;
-$dropdownSearchWidescreenMaxMenuHeight: $dropdownSelectionWidescreenMaxMenuHeight;
+$dropdown-search-mobile-max-menu-height: $dropdown-selection-mobile-max-menu-height;
+$dropdown-search-tablet-max-menu-height: $dropdown-selection-tablet-max-menu-height;
+$dropdown-search-computer-max-menu-height: $dropdown-selection-computer-max-menu-height;
+$dropdown-search-widescreen-max-menu-height: $dropdown-selection-widescreen-max-menu-height;
 
 /* Inline */
-$dropdownInlineIconMargin: 0 $dropdownRelative7px 0 $dropdownRelative3px;
-$dropdownInlineTextColor: inherit;
-$dropdownInlineTextFontWeight: bold;
-$dropdownInlineMenuDistance: $dropdownRelative3px;
-$dropdownInlineMenuBorderRadius: $dropdownBorderRadius;
+$dropdown-inline-icon-margin: 0 $relative7px 0 $relative3px;
+$dropdown-inline-text-color: inherit;
+$dropdown-inline-text-font-weight: bold;
+$dropdown-inline-menu-distance: $relative3px;
+$dropdown-inline-menu-border-radius: $dropdown-border-radius;
 
 
 /*--------------
@@ -857,132 +245,132 @@ $dropdownInlineMenuBorderRadius: $dropdownBorderRadius;
 --------------*/
 
 /* Split Actual Padding Between Child and Parent (allows for label spacing) */
-$dropdownMultipleSelectionVerticalPadding: (#{$dropdownSearchSelectionVerticalPadding} * (1/3));
-$dropdownMultipleSelectionLeftPadding: $dropdownRelative5px;
-$dropdownMultipleSelectionRightPadding: $dropdownSelectionIconDistance;
-$dropdownMultipleSelectionPadding: $dropdownMultipleSelectionVerticalPadding $dropdownMultipleSelectionRightPadding $dropdownMultipleSelectionVerticalPadding $dropdownMultipleSelectionLeftPadding;
+$dropdown-multiple-selection-vertical-padding: (#{$dropdown-search-selection-vertical-padding} * (1/3));
+$dropdown-multiple-selection-left-padding: $relative5px;
+$dropdown-multiple-selection-right-padding: $dropdown-selection-icon-distance;
+$dropdown-multiple-selection-padding: $dropdown-multiple-selection-vertical-padding $dropdown-multiple-selection-right-padding $dropdown-multiple-selection-vertical-padding $dropdown-multiple-selection-left-padding;
 
 /* Child Elements */
-$dropdownMultipleSelectionChildVerticalMargin: (#{$dropdownSearchSelectionVerticalPadding} * (2/3));
-$dropdownMultipleSelectionChildLeftMargin: ($dropdownInputHorizontalPadding - $dropdownMultipleSelectionLeftPadding);
-$dropdownMultipleSelectionChildMargin: $dropdownMultipleSelectionChildVerticalMargin 0 $dropdownMultipleSelectionChildVerticalMargin $dropdownMultipleSelectionChildLeftMargin;
-$dropdownMultipleSelectionChildLineHeight: $dropdownRelative17px;
-$dropdownMultipleSelectionSearchStartWidth: ($dropdownGlyphWidth * 2);
+$dropdown-multiple-selection-child-vertical-margin: (#{$dropdown-search-selection-vertical-padding} * (2/3));
+$dropdown-multiple-selection-child-left-margin: ($input-horizontal-padding - $dropdown-multiple-selection-left-padding);
+$dropdown-multiple-selection-child-margin: $dropdown-multiple-selection-child-vertical-margin 0 $dropdown-multiple-selection-child-vertical-margin $dropdown-multiple-selection-child-left-margin;
+$dropdown-multiple-selection-child-line-height: $relative17px;
+$dropdown-multiple-selection-search-start-width: ($glyph-width * 2);
 
 /* Dropdown Icon */
-$dropdownMultipleSelectionDropdownIconMargin: '';
-$dropdownMultipleSelectionDropdownIconPadding: '';
+$dropdown-multiple-selection-dropdown-icon-margin: '';
+$dropdown-multiple-selection-dropdown-icon-padding: '';
 
-$dropdownMultipleSelectionSearchAfterLabelDistance: $dropdownRelative2px;
+$dropdown-multiple-selection-search-after-label-distance: $relative2px;
 
 /* Selection Label */
-$dropdownLabelSize: $dropdownRelativeMedium;
-$dropdownLabelHorizontalMargin: $dropdown4px;
-$dropdownLabelVerticalMargin: $dropdown2px;
-$dropdownLabelMargin: $dropdownLabelVerticalMargin $dropdownLabelHorizontalMargin $dropdownLabelVerticalMargin 0;
-$dropdownLabelBorderWidth: 1px;
-$dropdownLabelBoxShadow: 0 0 0 $dropdownLabelBorderWidth $dropdownBorderColor inset;
+$dropdown-label-size: $relative-medium;
+$dropdown-label-horizontal-margin: $_4px;
+$dropdown-label-vertical-margin: $_2px;
+$dropdown-label-margin: $dropdown-label-vertical-margin $dropdown-label-horizontal-margin $dropdown-label-vertical-margin 0;
+$dropdown-label-border-width: 1px;
+$dropdown-label-box-shadow: 0 0 0 $dropdown-label-border-width $border-color inset;
 
-$dropdownLabelVerticalPadding: $dropdownRelative5px;
-$dropdownLabelHorizontalPadding: $dropdownRelativeMini;
-$dropdownLabelPadding: $dropdownLabelVerticalPadding $dropdownLabelHorizontalPadding;
+$dropdown-label-vertical-padding: $relative5px;
+$dropdown-label-horizontal-padding: $relative-mini;
+$dropdown-label-padding: $dropdown-label-vertical-padding $dropdown-label-horizontal-padding;
 
 /*-------------------
        States
 --------------------*/
 
 /* Hovered */
-$dropdownHoveredItemBackground: $dropdownTransparentBlack;
-$dropdownHoveredItemColor: $dropdownSelectedTextColor;
-$dropdownHoveredZIndex: $dropdownMenuZIndex + 2;
+$dropdown-hovered-item-background: $transparent-black;
+$dropdown-hovered-item-color: $selected-text-color;
+$dropdown-hovered-zindex: $dropdown-menu-zindex + 2;
 
 /* Default Text */
-$dropdownDefaultTextColor: $dropdownInputPlaceholderColor;
-$dropdownDefaultTextFocusColor: $dropdownInputPlaceholderFocusColor;
+$dropdown-default-text-color: $input-placeholder-color;
+$dropdown-default-text-focus-color: $input-placeholder-focus-color;
 
 /* Loading */
-$dropdownLoadingZIndex: -1;
+$dropdown-loading-zindex: -1;
 
 /* Active Menu Item */
-$dropdownActiveItemZIndex: $dropdownMenuZIndex + 1;
-$dropdownActiveItemBackground: transparent;
-$dropdownActiveItemBoxShadow: none;
-$dropdownActiveItemFontWeight: bold;
-$dropdownActiveItemColor: $dropdownSelectedTextColor;
+$dropdown-active-item-zindex: $dropdown-menu-zindex + 1;
+$dropdown-active-item-background: transparent;
+$dropdown-active-item-box-shadow: none;
+$dropdown-active-item-font-weight: bold;
+$dropdown-active-item-color: $selected-text-color;
 
 /* Selected */
-$dropdownSelectedBackground: $dropdownSubtleTransparentBlack;
-$dropdownSelectedColor: $dropdownSelectedTextColor;
+$dropdown-selected-background: $subtle-transparent-black;
+$dropdown-selected-color: $selected-text-color;
 
 /* Error */
-$dropdownErrorLabelBackground: #EACBCB;
-$dropdownErrorLabelColor: $dropdownErrorTextColor;
+$dropdown-error-label-background: #EACBCB;
+$dropdown-error-label-color: $error-text-color;
 
-$dropdownErrorItemTextColor: $dropdownErrorTextColor;
-$dropdownErrorItemHoverBackground: #FFF2F2;
-$dropdownErrorItemActiveBackground: #FDCFCF;
+$dropdown-error-item-text-color: $error-text-color;
+$dropdown-error-item-hover-background: #FFF2F2;
+$dropdown-error-item-active-background: #FDCFCF;
 
 /*-------------------
       Variations
 --------------------*/
 
 /* Scrolling */
-$dropdownScrollingMenuWidth: 100%;
-$dropdownScrollingMenuItemBorder: none;
-$dropdownScrollingMenuRightItemPadding: #{"calc(" + ($dropdownItemHorizontalPadding) + " + " + ($dropdownScrollbarWidth) + ")"};
+$dropdown-scrolling-menu-width: 100%;
+$dropdown-scrolling-menu-item-border: none;
+$dropdown-scrolling-menu-right-item-padding: #{"calc(" + ($dropdown-item-horizontal-padding) + " + " + ($scrollbar-width) + ")"};
 
-$dropdownScrollingMobileMaxItems: 4;
-$dropdownScrollingTabletMaxItems: 6;
-$dropdownScrollingComputerMaxItems: 8;
-$dropdownScrollingWidescreenMaxItems: 12;
+$dropdown-scrolling-mobile-max-items: 4;
+$dropdown-scrolling-tablet-max-items: 6;
+$dropdown-scrolling-computer-max-items: 8;
+$dropdown-scrolling-widescreen-max-items: 12;
 
-$dropdownScrollingBorderEMWidth: 0; /* 0 / em size */
-$dropdownScrollingItemHeight: (#{$dropdownItemVerticalPadding} * 2) + $dropdownItemLineHeight + $dropdownScrollingBorderEMWidth;
-$dropdownScrollingMobileMaxMenuHeight: (#{$dropdownScrollingItemHeight} * $dropdownScrollingMobileMaxItems);
-$dropdownScrollingTabletMaxMenuHeight: (#{$dropdownScrollingItemHeight} * $dropdownScrollingTabletMaxItems);
-$dropdownScrollingComputerMaxMenuHeight: (#{$dropdownScrollingItemHeight} * $dropdownScrollingComputerMaxItems);
-$dropdownScrollingWidescreenMaxMenuHeight: (#{$dropdownScrollingItemHeight} * $dropdownSelectionWidescreenMaxItems);
+$dropdown-scrolling-borderEMWidth: 0; /* 0 / em size */
+$dropdown-scrolling-item-height: (#{$dropdown-item-vertical-padding} * 2) + $dropdown-item-line-height + $dropdown-scrolling-borderEMWidth;
+$dropdown-scrolling-mobile-max-menu-height: (#{$dropdown-scrolling-item-height} * $dropdown-scrolling-mobile-max-items);
+$dropdown-scrolling-tablet-max-menu-height: (#{$dropdown-scrolling-item-height} * $dropdown-scrolling-tablet-max-items);
+$dropdown-scrolling-computer-max-menu-height: (#{$dropdown-scrolling-item-height} * $dropdown-scrolling-computer-max-items);
+$dropdown-scrolling-widescreen-max-menu-height: (#{$dropdown-scrolling-item-height} * $dropdown-selection-widescreen-max-items);
 
 /* Upward */
-$dropdownUpwardSelectionVisibleBorderRadius: $dropdownSelectionVisibleConnectingBorder $dropdownSelectionVisibleConnectingBorder $dropdownBorderRadius $dropdownBorderRadius;
-$dropdownUpwardMenuBoxShadow: 0 0 3px 0 rgba(0, 0, 0, 0.08);
-$dropdownUpwardSelectionMenuBoxShadow: 0 (-2px) 3px 0 rgba(0, 0, 0, 0.08);
-$dropdownUpwardMenuBorderRadius: $dropdownBorderRadius $dropdownBorderRadius 0 0;
-$dropdownUpwardSelectionHoverBoxShadow: 0 0 2px 0 rgba(0, 0, 0, 0.05);
-$dropdownUpwardSelectionVisibleBoxShadow: 0 0 3px 0 rgba(0, 0, 0, 0.08);
-$dropdownUpwardSelectionActiveHoverBoxShadow: 0 0 3px 0 rgba(0, 0, 0, 0.05);
-$dropdownUpwardSelectionActiveHoverMenuBoxShadow: 0 (-2px) 3px 0 rgba(0, 0, 0, 0.08);
+$dropdown-upward-selection-visible-border-radius: $dropdown-selection-visible-connecting-border $dropdown-selection-visible-connecting-border $dropdown-border-radius $dropdown-border-radius;
+$dropdown-upward-menu-box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.08);
+$dropdown-upward-selection-menu-box-shadow: 0 (-2px) 3px 0 rgba(0, 0, 0, 0.08);
+$dropdown-upward-menu-border-radius: $dropdown-border-radius $dropdown-border-radius 0 0;
+$dropdown-upward-selection-hover-box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.05);
+$dropdown-upward-selection-visible-box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.08);
+$dropdown-upward-selection-active-hover-box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.05);
+$dropdown-upward-selection-active-hover-menu-box-shadow: 0 (-2px) 3px 0 rgba(0, 0, 0, 0.08);
 
 /* Flyout Direction */
-$dropdownLeftMenuDropdownIconFloat: left;
-$dropdownLeftMenuDropdownIconMargin: $dropdownItemLineHeightOffset 0 0 0;
+$dropdown-left-menu-dropdown-icon-float: left;
+$dropdown-left-menu-dropdown-icon-margin: $dropdown-item-line-height-offset 0 0 0;
 
 /* Left */
-$dropdownLeftSubMenuBorderRadius: $dropdownBorderRadius;
-$dropdownLeftSubMenuMargin: 0 $dropdownSubMenuDistanceAway 0 0;
+$dropdown-left-sub-menu-border-radius: $dropdown-border-radius;
+$dropdown-left-sub-menu-margin: 0 $dropdown-sub-menu-distance-away 0 0;
 
 /* Simple */
-$dropdownSimpleTransitionDuration: $dropdownDefaultDuration;
-$dropdownSimpleTransition: opacity $dropdownSimpleTransitionDuration $dropdownDefaultEasing;
+$dropdown-simple-transition-duration: $default-duration;
+$dropdown-simple-transition: opacity $dropdown-simple-transition-duration $default-easing;
 
 /* Floating */
-$dropdownFloatingMenuDistance: 0.5em;
-$dropdownFloatingMenuBoxShadow: $dropdownFloatingShadow;
-$dropdownFloatingMenuBorderRadius: $dropdownBorderRadius;
+$dropdown-floating-menu-distance: 0.5em;
+$dropdown-floating-menu-box-shadow: $floating-shadow;
+$dropdown-floating-menu-border-radius: $dropdown-border-radius;
 
 /* Pointing */
-$dropdownPointingArrowBackground: $dropdownWhite;
-$dropdownPointingArrowZIndex: 2;
-$dropdownPointingArrowBoxShadow: -$dropdownMenuBorderWidth -$dropdownMenuBorderWidth 0 0 $dropdownMenuBorderColor;
-$dropdownPointingArrowSize: $dropdownRelative7px;
+$dropdown-pointing-arrow-background: $white;
+$dropdown-pointing-arrow-zindex: 2;
+$dropdown-pointing-arrow-box-shadow: -$dropdown-menu-border-width -$dropdown-menu-border-width 0 0 $dropdown-menu-border-color;
+$dropdown-pointing-arrow-size: $relative7px;
 
-$dropdownPointingArrowOffset: -($dropdownPointingArrowSize / 2);
-$dropdownPointingArrowDistanceFromEdge: 1em;
+$dropdown-pointing-arrow-offset: -($dropdown-pointing-arrow-size / 2);
+$dropdown-pointing-arrow-distance-from-edge: 1em;
 
-$dropdownPointingMenuDistance: $dropdownMini;
-$dropdownPointingMenuBorderRadius: $dropdownBorderRadius;
-$dropdownPointingArrowBoxShadow: -$dropdownMenuBorderWidth -$dropdownMenuBorderWidth 0 0 $dropdownMenuBorderColor;
+$dropdown-pointing-menu-distance: $mini;
+$dropdown-pointing-menu-border-radius: $dropdown-border-radius;
+$dropdown-pointing-arrow-box-shadow: -$dropdown-menu-border-width -$dropdown-menu-border-width 0 0 $dropdown-menu-border-color;
 
 /* Pointing Upward */
-$dropdownPointingUpwardMenuBorderRadius: $dropdownBorderRadius;
-$dropdownPointingUpwardArrowBoxShadow: $dropdownMenuBorderWidth $dropdownMenuBorderWidth 0 0 $dropdownMenuBorderColor;
+$dropdown-pointing-upward-menu-border-radius: $dropdown-border-radius;
+$dropdown-pointing-upward-arrow-box-shadow: $dropdown-menu-border-width $dropdown-menu-border-width 0 0 $dropdown-menu-border-color;

@@ -16,15 +16,15 @@
 /* Prototype */
 .ui.table {
   width: 100%;
-  background: $tableBackground;
-  margin: $tableMargin;
-  border: $tableBorder;
-  box-shadow: $tableBoxShadow;
-  border-radius: $tableBorderRadius;
-  text-align: $tableTextAlign;
-  color: $tableColor;
-  border-collapse: $tableBorderCollapse;
-  border-spacing: $tableBorderSpacing;
+  background: $table-background;
+  margin: $table-margin;
+  border: $table-border;
+  box-shadow: $table-box-shadow;
+  border-radius: $table-border-radius;
+  text-align: $table-text-align;
+  color: $table-color;
+  border-collapse: $table-border-collapse;
+  border-spacing: $table-border-spacing;
 }
 
 .ui.table:first-child {
@@ -43,25 +43,25 @@
 /* Table Content */
 .ui.table th,
 .ui.table td {
-  transition: $tableTransition;
+  transition: $table-transition;
 }
 
 /* Headers */
 .ui.table thead {
-  box-shadow: $tableHeaderBoxShadow;
+  box-shadow: $table-header-box-shadow;
 }
 .ui.table thead th {
   cursor: auto;
-  background: $tableHeaderBackground;
-  text-align: $tableHeaderAlign;
-  color: $tableHeaderColor;
-  padding: $tableHeaderVerticalPadding $tableHeaderHorizontalPadding;
-  vertical-align: $tableHeaderVerticalAlign;
-  font-style: $tableHeaderFontStyle;
-  font-weight: $tableHeaderFontWeight;
-  text-transform: $tableHeaderTextTransform;
-  border-bottom: $tableHeaderBorder;
-  border-left: $tableHeaderDivider;
+  background: $table-header-background;
+  text-align: $table-header-align;
+  color: $table-header-color;
+  padding: $table-header-vertical-padding $table-header-horizontal-padding;
+  vertical-align: $table-header-vertical-align;
+  font-style: $table-header-font-style;
+  font-weight: $table-header-font-weight;
+  text-transform: $table-header-text-transform;
+  border-bottom: $table-header-border;
+  border-left: $table-header-divider;
 }
 
 .ui.table thead tr > th:first-child {
@@ -69,47 +69,47 @@
 }
 
 .ui.table thead tr:first-child > th:first-child {
-  border-radius: $tableBorderRadius 0 0 0;
+  border-radius: $table-border-radius 0 0 0;
 }
 .ui.table thead tr:first-child > th:last-child {
-  border-radius: 0 $tableBorderRadius 0 0;
+  border-radius: 0 $table-border-radius 0 0;
 }
 .ui.table thead tr:first-child > th:only-child {
-  border-radius: $tableBorderRadius $tableBorderRadius 0 0;
+  border-radius: $table-border-radius $table-border-radius 0 0;
 }
 
 /* Footer */
 .ui.table tfoot {
-  box-shadow: $tableFooterBoxShadow;
+  box-shadow: $table-footer-box-shadow;
 }
 .ui.table tfoot th {
   cursor: auto;
-  border-top: $tableFooterBorder;
-  background: $tableFooterBackground;
-  text-align: $tableFooterAlign;
-  color: $tableFooterColor;
-  padding: $tableFooterVerticalPadding $tableFooterHorizontalPadding;
-  vertical-align: $tableFooterVerticalAlign;
-  font-style: $tableFooterFontStyle;
-  font-weight: $tableFooterFontWeight;
-  text-transform: $tableFooterTextTransform;
+  border-top: $table-footer-border;
+  background: $table-footer-background;
+  text-align: $table-footer-align;
+  color: $table-footer-color;
+  padding: $table-footer-vertical-padding $table-footer-horizontal-padding;
+  vertical-align: $table-footer-vertical-align;
+  font-style: $table-footer-font-style;
+  font-weight: $table-footer-font-weight;
+  text-transform: $table-footer-text-transform;
 }
 .ui.table tfoot tr > th:first-child {
   border-left: none;
 }
 .ui.table tfoot tr:first-child > th:first-child {
-  border-radius: 0 0 0 $tableBorderRadius;
+  border-radius: 0 0 0 $table-border-radius;
 }
 .ui.table tfoot tr:first-child > th:last-child {
-  border-radius: 0 0 $tableBorderRadius 0;
+  border-radius: 0 0 $table-border-radius 0;
 }
 .ui.table tfoot tr:first-child > th:only-child {
-  border-radius: 0 0 $tableBorderRadius $tableBorderRadius;
+  border-radius: 0 0 $table-border-radius $table-border-radius;
 }
 
 /* Table Row */
 .ui.table tr td {
-  border-top: $tableRowBorder;
+  border-top: $table-row-border;
 }
 .ui.table tr:first-child td {
   border-top: none;
@@ -117,13 +117,13 @@
 
 /* Table Cells */
 .ui.table td {
-  padding: $tableCellVerticalPadding $tableCellHorizontalPadding;
-  text-align: $tableCellTextAlign;
+  padding: $table-cell-vertical-padding $table-cell-horizontal-padding;
+  text-align: $table-cell-text-align;
 }
 
 /* Icons */
 .ui.table > .icon {
-  vertical-align: $tableIconVerticalAlign;
+  vertical-align: $table-icon-vertical-align;
 }
 .ui.table > .icon:only-child {
   margin: 0;
@@ -140,7 +140,7 @@
   display: block;
 }
 /* Responsive */
-@media only screen and (max-width : $tableLargestMobileScreen) {
+@media only screen and (max-width : $largest-mobile-screen) {
   .ui.table:not(.unstackable) {
     width: 100%;
   }
@@ -157,23 +157,23 @@
     padding: 0;
   }
   .ui.table:not(.unstackable) thead {
-    display: $tableResponsiveHeaderDisplay;
+    display: $table-responsive-header-display;
   }
   .ui.table:not(.unstackable) tfoot {
-    display: $tableResponsiveFooterDisplay;
+    display: $table-responsive-footer-display;
   }
   .ui.table:not(.unstackable) tr {
-    padding-top: $tableResponsiveRowVerticalPadding;
-    padding-bottom: $tableResponsiveRowVerticalPadding;
-    box-shadow: $tableResponsiveRowBoxShadow;
+    padding-top: $table-responsive-row-vertical-padding;
+    padding-bottom: $table-responsive-row-vertical-padding;
+    box-shadow: $table-responsive-row-box-shadow;
   }
 
   .ui.table:not(.unstackable) tr > th,
   .ui.table:not(.unstackable) tr > td {
     background: none;
     border: none !important;
-    padding: $tableResponsiveCellVerticalPadding $tableResponsiveCellHorizontalPadding !important;
-    box-shadow: $tableResponsiveCellBoxShadow;
+    padding: $table-responsive-cell-vertical-padding $table-responsive-cell-horizontal-padding !important;
+    box-shadow: $table-responsive-cell-box-shadow;
   }
   .ui.table:not(.unstackable) th:first-child,
   .ui.table:not(.unstackable) td:first-child {
@@ -212,21 +212,21 @@
   border-collapse: collapse;
 }
 .ui.structured.table thead th {
-  border-left: $tableHeaderDivider;
-  border-right: $tableHeaderDivider;
+  border-left: $table-header-divider;
+  border-right: $table-header-divider;
 }
 .ui.structured.sortable.table thead th {
-  border-left: $tableSortableBorder;
-  border-right: $tableSortableBorder;
+  border-left: $table-sortable-border;
+  border-right: $table-sortable-border;
 }
 .ui.structured.basic.table th {
-  border-left: $tableBasicTableHeaderDivider;
-  border-right: $tableBasicTableHeaderDivider;
+  border-left: $table-basic-table-header-divider;
+  border-right: $table-basic-table-header-divider;
 }
 .ui.structured.celled.table tr th,
 .ui.structured.celled.table tr td {
-  border-left: $tableCellBorder;
-  border-right: $tableCellBorder;
+  border-left: $table-cell-border;
+  border-right: $table-cell-border;
 }
 
 /*--------------
@@ -235,50 +235,50 @@
 
 .ui.definition.table thead:not(.full-width) th:first-child {
   pointer-events: none;
-  background: $tableDefinitionHeaderBackground;
-  font-weight: $tableDefinitionHeaderFontWeight;
-  color: $tableDefinitionHeaderColor;
-  box-shadow: -$tableBorderWidth -$tableBorderWidth 0 $tableBorderWidth $tableDefinitionPageBackground;
+  background: $table-definition-header-background;
+  font-weight: $table-definition-header-font-weight;
+  color: $table-definition-header-color;
+  box-shadow: -$table-border-width -$table-border-width 0 $table-border-width $table-definition-page-background;
 }
 
 .ui.definition.table tfoot:not(.full-width) th:first-child {
   pointer-events: none;
-  background: $tableDefinitionFooterBackground;
-  font-weight: $tableDefinitionFooterColor;
-  color: $tableDefinitionFooterFontWeight;
-  box-shadow: $tableBorderWidth $tableBorderWidth 0 $tableBorderWidth $tableDefinitionPageBackground;
+  background: $table-definition-footer-background;
+  font-weight: $table-definition-footer-color;
+  color: $table-definition-footer-font-weight;
+  box-shadow: $table-border-width $table-border-width 0 $table-border-width $table-definition-page-background;
 }
 
 /* Remove Border */
 .ui.celled.definition.table thead:not(.full-width) th:first-child {
-  box-shadow: 0 (-$tableBorderWidth) 0 $tableBorderWidth $tableDefinitionPageBackground;
+  box-shadow: 0 (-$table-border-width) 0 $table-border-width $table-definition-page-background;
 }
 .ui.celled.definition.table tfoot:not(.full-width) th:first-child {
-  box-shadow: 0 $tableBorderWidth 0 $tableBorderWidth $tableDefinitionPageBackground;
+  box-shadow: 0 $table-border-width 0 $table-border-width $table-definition-page-background;
 }
 
 /* Highlight Defining Column */
 .ui.definition.table tr td:first-child:not(.ignored),
 .ui.definition.table tr td.definition {
-  background: $tableDefinitionColumnBackground;
-  font-weight: $tableDefinitionColumnFontWeight;
-  color: $tableDefinitionColumnColor;
-  text-transform: $tableDefinitionColumnTextTransform;
-  box-shadow: $tableDefinitionColumnBoxShadow;
-  text-align: $tableDefinitionColumnTextAlign;
-  font-size: $tableDefinitionColumnFontSize;
-  padding-left: $tableDefinitionColumnHorizontalPadding;
-  padding-right: $tableDefinitionColumnHorizontalPadding;
+  background: $table-definition-column-background;
+  font-weight: $table-definition-column-font-weight;
+  color: $table-definition-column-color;
+  text-transform: $table-definition-column-text-transform;
+  box-shadow: $table-definition-column-box-shadow;
+  text-align: $table-definition-column-text-align;
+  font-size: $table-definition-column-font-size;
+  padding-left: $table-definition-column-horizontal-padding;
+  padding-right: $table-definition-column-horizontal-padding;
 }
 /* Fix 2nd Column */
 .ui.definition.table thead:not(.full-width) th:nth-child(2) {
-  border-left: $tableBorderWidth solid $tableBorderColor;
+  border-left: $table-border-width solid $border-color;
 }
 .ui.definition.table tfoot:not(.full-width) th:nth-child(2) {
-  border-left: $tableBorderWidth solid $tableBorderColor;
+  border-left: $table-border-width solid $border-color;
 }
 .ui.definition.table td:nth-child(2) {
-  border-left: $tableBorderWidth solid $tableBorderColor;
+  border-left: $table-border-width solid $border-color;
 }
 
 
@@ -292,12 +292,12 @@
 
 .ui.table tr.positive,
 .ui.table td.positive {
-  box-shadow: $tablePositiveBoxShadow;
+  box-shadow: $table-positive-box-shadow;
 }
 .ui.table tr.positive,
 .ui.table td.positive {
-  background: $tablePositiveBackgroundColor !important;
-  color: $tablePositiveColor !important;
+  background: $positive-background-color !important;
+  color: $table-positive-color !important;
 }
 
 /*--------------
@@ -306,12 +306,12 @@
 
 .ui.table tr.negative,
 .ui.table td.negative {
-  box-shadow: $tableNegativeBoxShadow;
+  box-shadow: $table-negative-box-shadow;
 }
 .ui.table tr.negative,
 .ui.table td.negative {
-  background: $tableNegativeBackgroundColor !important;
-  color: $tableNegativeColor !important;
+  background: $negative-background-color !important;
+  color: $table-negative-color !important;
 }
 
 /*--------------
@@ -320,12 +320,12 @@
 
 .ui.table tr.error,
 .ui.table td.error {
-  box-shadow: $tableErrorBoxShadow;
+  box-shadow: $table-error-box-shadow;
 }
 .ui.table tr.error,
 .ui.table td.error {
-  background: $tableErrorBackgroundColor !important;
-  color: $tableErrorColor !important;
+  background: $error-background-color !important;
+  color: $table-error-color !important;
 }
 /*--------------
      Warning
@@ -333,12 +333,12 @@
 
 .ui.table tr.warning,
 .ui.table td.warning {
-  box-shadow: $tableWarningBoxShadow;
+  box-shadow: $table-warning-box-shadow;
 }
 .ui.table tr.warning,
 .ui.table td.warning {
-  background: $tableWarningBackgroundColor !important;
-  color: $tableWarningColor !important;
+  background: $warning-background-color !important;
+  color: $table-warning-color !important;
 }
 
 /*--------------
@@ -347,12 +347,12 @@
 
 .ui.table tr.active,
 .ui.table td.active {
-  box-shadow: $tableActiveBoxShadow;
+  box-shadow: $table-active-box-shadow;
 }
 .ui.table tr.active,
 .ui.table td.active {
-  background: $tableActiveBackgroundColor !important;
-  color: $tableActiveColor !important;
+  background: $table-active-background-color !important;
+  color: $table-active-color !important;
 }
 /*--------------
      Disabled
@@ -363,7 +363,7 @@
 .ui.table tr.disabled:hover,
 .ui.table tr:hover td.disabled {
   pointer-events: none;
-  color: $tableDisabledTextColor;
+  color: $disabled-text-color;
 }
 
 
@@ -376,7 +376,7 @@
     Stackable
 ---------------*/
 
-@media only screen and (max-width : $tableLargestTabletScreen) {
+@media only screen and (max-width : $largest-tablet-screen) {
 
   .ui[class*="tablet stackable"].table,
   .ui[class*="tablet stackable"].table tbody,
@@ -392,22 +392,22 @@
     padding: 0;
   }
   .ui[class*="tablet stackable"].table thead {
-    display: $tableResponsiveHeaderDisplay;
+    display: $table-responsive-header-display;
   }
   .ui[class*="tablet stackable"].table tfoot {
-    display: $tableResponsiveFooterDisplay;
+    display: $table-responsive-footer-display;
   }
   .ui[class*="tablet stackable"].table tr {
-    padding-top: $tableResponsiveRowVerticalPadding;
-    padding-bottom: $tableResponsiveRowVerticalPadding;
-    box-shadow: $tableResponsiveRowBoxShadow;
+    padding-top: $table-responsive-row-vertical-padding;
+    padding-bottom: $table-responsive-row-vertical-padding;
+    box-shadow: $table-responsive-row-box-shadow;
   }
   .ui[class*="tablet stackable"].table tr > th,
   .ui[class*="tablet stackable"].table tr > td {
     background: none;
     border: none !important;
-    padding: $tableResponsiveCellVerticalPadding $tableResponsiveCellHorizontalPadding;
-    box-shadow: $tableResponsiveCellBoxShadow;
+    padding: $table-responsive-cell-vertical-padding $table-responsive-cell-horizontal-padding;
+    box-shadow: $table-responsive-cell-box-shadow;
   }
 
   /* Definition Table */
@@ -479,13 +479,13 @@
 
 .ui.selectable.table tbody tr:hover,
 .ui.table tbody tr td.selectable:hover {
-  background: $tableSelectableBackground !important;
-  color: $tableSelectableTextColor !important;
+  background: $table-selectable-background !important;
+  color: $table-selectable-text-color !important;
 }
 .ui.selectable.inverted.table tbody tr:hover,
 .ui.inverted.table tbody tr td.selectable:hover {
-  background: $tableSelectableInvertedBackground !important;
-  color: $tableSelectableInvertedTextColor !important;
+  background: $table-selectable-inverted-background !important;
+  color: $table-selectable-inverted-text-color !important;
 }
 
 /* Selectable Cell Link */
@@ -495,39 +495,39 @@
 .ui.table tbody tr td.selectable > a:not(.ui) {
   display: block;
   color: inherit;
-  padding: $tableCellVerticalPadding $tableCellHorizontalPadding;
+  padding: $table-cell-vertical-padding $table-cell-horizontal-padding;
 }
 
 /* Other States */
 .ui.selectable.table tr.error:hover,
 .ui.table tr td.selectable.error:hover,
 .ui.selectable.table tr:hover td.error {
-  background: $tableErrorBackgroundHover !important;
-  color: $tableErrorColorHover !important;
+  background: $table-error-background-hover !important;
+  color: $table-error-color-hover !important;
 }
 .ui.selectable.table tr.warning:hover,
 .ui.table tr td.selectable.warning:hover,
 .ui.selectable.table tr:hover td.warning {
-  background: $tableWarningBackgroundHover !important;
-  color: $tableWarningColorHover !important;
+  background: $table-warning-background-hover !important;
+  color: $table-warning-color-hover !important;
 }
 .ui.selectable.table tr.active:hover,
 .ui.table tr td.selectable.active:hover,
 .ui.selectable.table tr:hover td.active {
-  background: $tableActiveBackgroundColor !important;
-  color: $tableActiveColor !important;
+  background: $table-active-background-color !important;
+  color: $table-active-color !important;
 }
 .ui.selectable.table tr.positive:hover,
 .ui.table tr td.selectable.positive:hover,
 .ui.selectable.table tr:hover td.positive {
-  background: $tablePositiveBackgroundHover !important;
-  color: $tablePositiveColorHover !important;
+  background: $table-positive-background-hover !important;
+  color: $table-positive-color-hover !important;
 }
 .ui.selectable.table tr.negative:hover,
 .ui.table tr td.selectable.negative:hover,
 .ui.selectable.table tr:hover td.negative {
-  background: $tableNegativeBackgroundHover !important;
-  color: $tableNegativeColorHover !important;
+  background: $table-negative-background-hover !important;
+  color: $table-negative-color-hover !important;
 }
 /*-------------------
       Attached
@@ -538,11 +538,11 @@
   top: 0;
   bottom: 0;
   border-radius: 0;
-  margin: 0 $tableAttachedHorizontalOffset;
-  width: $tableAttachedWidth;
-  max-width: $tableAttachedWidth;
-  box-shadow: $tableAttachedBoxShadow;
-  border: $tableAttachedBorder;
+  margin: 0 $table-attached-horizontal-offset;
+  width: $table-attached-width;
+  max-width: $table-attached-width;
+  box-shadow: $table-attached-box-shadow;
+  border: $table-attached-border;
 }
 .ui.attached + .ui.attached.table:not(.top) {
   border-top: none;
@@ -552,9 +552,9 @@
 .ui[class*="top attached"].table {
   bottom: 0;
   margin-bottom: 0;
-  top: $tableAttachedTopOffset;
-  margin-top: $tableVerticalMargin;
-  border-radius: $tableBorderRadius $tableBorderRadius 0 0;
+  top: $table-attached-top-offset;
+  margin-top: $table-vertical-margin;
+  border-radius: $table-border-radius $table-border-radius 0 0;
 }
 .ui.table[class*="top attached"]:first-child {
   margin-top: 0;
@@ -564,10 +564,10 @@
 .ui[class*="bottom attached"].table {
   bottom: 0;
   margin-top: 0;
-  top: $tableAttachedBottomOffset;
-  margin-bottom: $tableVerticalMargin;
-  box-shadow: $tableAttachedBottomBoxShadow;
-  border-radius: 0 0 $tableBorderRadius $tableBorderRadius;
+  top: $table-attached-bottom-offset;
+  margin-bottom: $table-vertical-margin;
+  box-shadow: $table-attached-bottom-box-shadow;
+  border-radius: 0 0 $table-border-radius $table-border-radius;
 }
 .ui[class*="bottom attached"].table:last-child {
   margin-bottom: 0;
@@ -580,19 +580,19 @@
 /* Table Striping */
 .ui.striped.table > tr:nth-child(2n),
 .ui.striped.table tbody tr:nth-child(2n) {
-  background-color: $tableStripedBackground;
+  background-color: $table-striped-background;
 }
 
 /* Stripes */
 .ui.inverted.striped.table > tr:nth-child(2n),
 .ui.inverted.striped.table tbody tr:nth-child(2n) {
-  background-color: $tableInvertedStripedBackground;
+  background-color: $table-inverted-striped-background;
 }
 
 /* Allow striped active hover */
 .ui.striped.selectable.selectable.selectable.table tbody tr.active:hover {
-  background: $tableActiveBackgroundHover !important;
-  color: $tableActiveColorHover !important;
+  background: $table-active-background-hover !important;
+  color: $table-active-color-hover !important;
 }
 
 /*--------------
@@ -614,119 +614,119 @@
 
 /* Red */
 .ui.red.table {
-  border-top: $tableColoredBorderSize solid $tableRed;
+  border-top: $table-colored-border-size solid $red;
 }
 .ui.inverted.red.table {
-  background-color: $tableRed !important;
-  color: $tableWhite !important;
+  background-color: $red !important;
+  color: $white !important;
 }
 
 /* Orange */
 .ui.orange.table {
-  border-top: $tableColoredBorderSize solid $tableOrange;
+  border-top: $table-colored-border-size solid $orange;
 }
 .ui.inverted.orange.table {
-  background-color: $tableOrange !important;
-  color: $tableWhite !important;
+  background-color: $orange !important;
+  color: $white !important;
 }
 
 /* Yellow */
 .ui.yellow.table {
-  border-top: $tableColoredBorderSize solid $tableYellow;
+  border-top: $table-colored-border-size solid $yellow;
 }
 .ui.inverted.yellow.table {
-  background-color: $tableYellow !important;
-  color: $tableWhite !important;
+  background-color: $yellow !important;
+  color: $white !important;
 }
 
 /* Olive */
 .ui.olive.table {
-  border-top: $tableColoredBorderSize solid $tableOlive;
+  border-top: $table-colored-border-size solid $olive;
 }
 .ui.inverted.olive.table {
-  background-color: $tableOlive !important;
-  color: $tableWhite !important;
+  background-color: $olive !important;
+  color: $white !important;
 }
 
 /* Green */
 .ui.green.table {
-  border-top: $tableColoredBorderSize solid $tableGreen;
+  border-top: $table-colored-border-size solid $green;
 }
 .ui.inverted.green.table {
-  background-color: $tableGreen !important;
-  color: $tableWhite !important;
+  background-color: $green !important;
+  color: $white !important;
 }
 
 /* Teal */
 .ui.teal.table {
-  border-top: $tableColoredBorderSize solid $tableTeal;
+  border-top: $table-colored-border-size solid $teal;
 }
 .ui.inverted.teal.table {
-  background-color: $tableTeal !important;
-  color: $tableWhite !important;
+  background-color: $teal !important;
+  color: $white !important;
 }
 
 /* Blue */
 .ui.blue.table {
-  border-top: $tableColoredBorderSize solid $tableBlue;
+  border-top: $table-colored-border-size solid $blue;
 }
 .ui.inverted.blue.table {
-  background-color: $tableBlue !important;
-  color: $tableWhite !important;
+  background-color: $blue !important;
+  color: $white !important;
 }
 
 /* Violet */
 .ui.violet.table {
-  border-top: $tableColoredBorderSize solid $tableViolet;
+  border-top: $table-colored-border-size solid $violet;
 }
 .ui.inverted.violet.table {
-  background-color: $tableViolet !important;
-  color: $tableWhite !important;
+  background-color: $violet !important;
+  color: $white !important;
 }
 
 /* Purple */
 .ui.purple.table {
-  border-top: $tableColoredBorderSize solid $tablePurple;
+  border-top: $table-colored-border-size solid $purple;
 }
 .ui.inverted.purple.table {
-  background-color: $tablePurple !important;
-  color: $tableWhite !important;
+  background-color: $purple !important;
+  color: $white !important;
 }
 
 /* Pink */
 .ui.pink.table {
-  border-top: $tableColoredBorderSize solid $tablePink;
+  border-top: $table-colored-border-size solid $pink;
 }
 .ui.inverted.pink.table {
-  background-color: $tablePink !important;
-  color: $tableWhite !important;
+  background-color: $pink !important;
+  color: $white !important;
 }
 
 /* Brown */
 .ui.brown.table {
-  border-top: $tableColoredBorderSize solid $tableBrown;
+  border-top: $table-colored-border-size solid $brown;
 }
 .ui.inverted.brown.table {
-  background-color: $tableBrown !important;
-  color: $tableWhite !important;
+  background-color: $brown !important;
+  color: $white !important;
 }
 
 /* Grey */
 .ui.grey.table {
-  border-top: $tableColoredBorderSize solid $tableGrey;
+  border-top: $table-colored-border-size solid $grey;
 }
 .ui.inverted.grey.table {
-  background-color: $tableGrey !important;
-  color: $tableWhite !important;
+  background-color: $grey !important;
+  color: $white !important;
 }
 
 /* Black */
 .ui.black.table {
-  border-top: $tableColoredBorderSize solid $tableBlack;
+  border-top: $table-colored-border-size solid $black;
 }
 .ui.inverted.black.table {
-  background-color: $tableBlack !important;
-  color: $tableWhite !important;
+  background-color: $black !important;
+  color: $white !important;
 }
 /*--------------
   Column Count
@@ -734,118 +734,118 @@
 
 /* Grid Based */
 .ui.one.column.table td {
-  width: $tableOneColumn;
+  width: $one-column;
 }
 .ui.two.column.table td {
-  width: $tableTwoColumn;
+  width: $two-column;
 }
 .ui.three.column.table td {
-  width: $tableThreeColumn;
+  width: $three-column;
 }
 .ui.four.column.table td {
-  width: $tableFourColumn;
+  width: $four-column;
 }
 .ui.five.column.table td {
-  width: $tableFiveColumn;
+  width: $five-column;
 }
 .ui.six.column.table td {
-  width: $tableSixColumn;
+  width: $six-column;
 }
 .ui.seven.column.table td {
-  width: $tableSevenColumn;
+  width: $seven-column;
 }
 .ui.eight.column.table td {
-  width: $tableEightColumn;
+  width: $eight-column;
 }
 .ui.nine.column.table td {
-  width: $tableNineColumn;
+  width: $nine-column;
 }
 .ui.ten.column.table td {
-  width: $tableTenColumn;
+  width: $ten-column;
 }
 .ui.eleven.column.table td {
-  width: $tableElevenColumn;
+  width: $eleven-column;
 }
 .ui.twelve.column.table td {
-  width: $tableTwelveColumn;
+  width: $twelve-column;
 }
 .ui.thirteen.column.table td {
-  width: $tableThirteenColumn;
+  width: $thirteen-column;
 }
 .ui.fourteen.column.table td {
-  width: $tableFourteenColumn;
+  width: $fourteen-column;
 }
 .ui.fifteen.column.table td {
-  width: $tableFifteenColumn;
+  width: $fifteen-column;
 }
 .ui.sixteen.column.table td {
-  width: $tableSixteenColumn;
+  width: $sixteen-column;
 }
 
 /* Column Width */
 .ui.table th.one.wide,
 .ui.table td.one.wide {
-  width: $tableOneWide;
+  width: $one-wide;
 }
 .ui.table th.two.wide,
 .ui.table td.two.wide {
-  width: $tableTwoWide;
+  width: $two-wide;
 }
 .ui.table th.three.wide,
 .ui.table td.three.wide {
-  width: $tableThreeWide;
+  width: $three-wide;
 }
 .ui.table th.four.wide,
 .ui.table td.four.wide {
-  width: $tableFourWide;
+  width: $four-wide;
 }
 .ui.table th.five.wide,
 .ui.table td.five.wide {
-  width: $tableFiveWide;
+  width: $five-wide;
 }
 .ui.table th.six.wide,
 .ui.table td.six.wide {
-  width: $tableSixWide;
+  width: $six-wide;
 }
 .ui.table th.seven.wide,
 .ui.table td.seven.wide {
-  width: $tableSevenWide;
+  width: $seven-wide;
 }
 .ui.table th.eight.wide,
 .ui.table td.eight.wide {
-  width: $tableEightWide;
+  width: $eight-wide;
 }
 .ui.table th.nine.wide,
 .ui.table td.nine.wide {
-  width: $tableNineWide;
+  width: $nine-wide;
 }
 .ui.table th.ten.wide,
 .ui.table td.ten.wide {
-  width: $tableTenWide;
+  width: $ten-wide;
 }
 .ui.table th.eleven.wide,
 .ui.table td.eleven.wide {
-  width: $tableElevenWide;
+  width: $eleven-wide;
 }
 .ui.table th.twelve.wide,
 .ui.table td.twelve.wide {
-  width: $tableTwelveWide;
+  width: $twelve-wide;
 }
 .ui.table th.thirteen.wide,
 .ui.table td.thirteen.wide {
-  width: $tableThirteenWide;
+  width: $thirteen-wide;
 }
 .ui.table th.fourteen.wide,
 .ui.table td.fourteen.wide {
-  width: $tableFourteenWide;
+  width: $fourteen-wide;
 }
 .ui.table th.fifteen.wide,
 .ui.table td.fifteen.wide {
-  width: $tableFifteenWide;
+  width: $fifteen-wide;
 }
 .ui.table th.sixteen.wide,
 .ui.table td.sixteen.wide {
-  width: $tableSixteenWide;
+  width: $sixteen-wide;
 }
 
 /*--------------
@@ -855,8 +855,8 @@
 .ui.sortable.table thead th {
   cursor: pointer;
   white-space: nowrap;
-  border-left: $tableSortableBorder;
-  color: $tableSortableColor;
+  border-left: $table-sortable-border;
+  color: $table-sortable-color;
 }
 .ui.sortable.table thead th:first-child {
   border-left: none;
@@ -873,32 +873,32 @@
   text-decoration: inherit;
   content: '';
   height: 1em;
-  width: $tableSortableIconWidth;
-  opacity: $tableSortableIconOpacity;
-  margin: 0 0 0 $tableSortableIconDistance;
-  font-family: $tableSortableIconFont;
+  width: $table-sortable-icon-width;
+  opacity: $table-sortable-icon-opacity;
+  margin: 0 0 0 $table-sortable-icon-distance;
+  font-family: $table-sortable-icon-font;
 }
 .ui.sortable.table thead th.ascending:after {
-  content: $tableSortableIconAscending;
+  content: $table-sortable-icon-ascending;
 }
 .ui.sortable.table thead th.descending:after {
-  content: $tableSortableIconDescending;
+  content: $table-sortable-icon-descending;
 }
 
 /* Hover */
 .ui.sortable.table th.disabled:hover {
   cursor: auto;
-  color: $tableSortableDisabledColor;
+  color: $table-sortable-disabled-color;
 }
 .ui.sortable.table thead th:hover {
-  background: $tableSortableHoverBackground;
-  color: $tableSortableHoverColor;
+  background: $table-sortable-hover-background;
+  color: $table-sortable-hover-color;
 }
 
 /* Sorted */
 .ui.sortable.table thead th.sorted {
-  background: $tableSortableActiveBackground;
-  color: $tableSortableActiveColor;
+  background: $table-sortable-active-background;
+  color: $table-sortable-active-color;
 }
 .ui.sortable.table thead th.sorted:after {
   display: inline-block;
@@ -906,22 +906,22 @@
 
 /* Sorted Hover */
 .ui.sortable.table thead th.sorted:hover {
-  background: $tableSortableActiveHoverBackground;
-  color: $tableSortableActiveHoverColor;
+  background: $table-sortable-active-hover-background;
+  color: $table-sortable-active-hover-color;
 }
 
 /* Inverted */
 .ui.inverted.sortable.table thead th.sorted {
-  background: $tableSortableInvertedActiveBackground;
-  color: $tableSortableInvertedActiveColor;
+  background: $table-sortable-inverted-active-background;
+  color: $table-sortable-inverted-active-color;
 }
 .ui.inverted.sortable.table thead th:hover {
-  background: $tableSortableInvertedHoverBackground;
-  color: $tableSortableInvertedHoverColor;
+  background: $table-sortable-inverted-hover-background;
+  color: $table-sortable-inverted-hover-color;
 }
 .ui.inverted.sortable.table thead th {
-  border-left-color: $tableSortableInvertedBorderColor;
-  border-right-color: $tableSortableInvertedBorderColor;
+  border-left-color: $table-sortable-inverted-border-color;
+  border-right-color: $table-sortable-inverted-border-color;
 }
 /*--------------
     Inverted
@@ -929,17 +929,17 @@
 
 /* Text Color */
 .ui.inverted.table {
-  background: $tableInvertedBackground;
-  color: $tableInvertedCellColor;
-  border: $tableInvertedBorder;
+  background: $table-inverted-background;
+  color: $table-inverted-cell-color;
+  border: $table-inverted-border;
 }
 .ui.inverted.table th {
-  background-color: $tableInvertedHeaderBackground;
-  border-color: $tableInvertedHeaderBorderColor !important;
-  color: $tableInvertedHeaderColor !important;
+  background-color: $table-inverted-header-background;
+  border-color: $table-inverted-header-border-color !important;
+  color: $table-inverted-header-color !important;
 }
 .ui.inverted.table tr td {
-  border-color: $tableInvertedCellBorderColor !important;
+  border-color: $table-inverted-cell-border-color !important;
 }
 
 .ui.inverted.table tr.disabled td,
@@ -947,17 +947,17 @@
 .ui.inverted.table tr.disabled:hover td,
 .ui.inverted.table tr:hover td.disabled {
   pointer-events: none;
-  color: $tableInvertedDisabledTextColor;
+  color: $inverted-disabled-text-color;
 }
 
 /* Definition */
 .ui.inverted.definition.table tfoot:not(.full-width) th:first-child,
 .ui.inverted.definition.table thead:not(.full-width) th:first-child {
-  background: $tableDefinitionPageBackground;
+  background: $table-definition-page-background;
 }
 .ui.inverted.definition.table tr td:first-child {
-  background: $tableInvertedDefinitionColumnBackground;
-  color: $tableInvertedDefinitionColumnColor;
+  background: $table-inverted-definition-column-background;
+  color: $table-inverted-definition-column-color;
 }
 
 /*--------------
@@ -973,26 +973,26 @@
 ---------------*/
 
 .ui.basic.table {
-  background: $tableBasicTableBackground;
-  border: $tableBasicTableBorder;
-  box-shadow: $tableBasicBoxShadow;
+  background: $table-basic-table-background;
+  border: $table-basic-table-border;
+  box-shadow: $table-basic-box-shadow;
 }
 .ui.basic.table thead,
 .ui.basic.table tfoot {
   box-shadow: none;
 }
 .ui.basic.table th {
-  background: $tableBasicTableHeaderBackground;
-  border-left: $tableBasicTableHeaderDivider;
+  background: $table-basic-table-header-background;
+  border-left: $table-basic-table-header-divider;
 }
 .ui.basic.table tbody tr {
-  border-bottom: $tableBasicTableCellBorder;
+  border-bottom: $table-basic-table-cell-border;
 }
 .ui.basic.table td {
-  background: $tableBasicTableCellBackground;
+  background: $table-basic-table-cell-background;
 }
 .ui.basic.striped.table tbody tr:nth-child(2n) {
-  background-color: $tableBasicTableStripedBackground !important;
+  background-color: $table-basic-table-striped-background !important;
 }
 
 /* Very Basic */
@@ -1001,7 +1001,7 @@
 }
 .ui[class*="very basic"].table:not(.sortable):not(.striped) th,
 .ui[class*="very basic"].table:not(.sortable):not(.striped) td {
-  padding: $tableBasicTableCellPadding;
+  padding: $table-basic-table-cell-padding;
 }
 .ui[class*="very basic"].table:not(.sortable):not(.striped) th:first-child,
 .ui[class*="very basic"].table:not(.sortable):not(.striped) td:first-child {
@@ -1021,7 +1021,7 @@
 
 .ui.celled.table tr th,
 .ui.celled.table tr td {
-  border-left: $tableCellBorder;
+  border-left: $table-cell-border;
 }
 .ui.celled.table tr th:first-child,
 .ui.celled.table tr td:first-child {
@@ -1033,21 +1033,21 @@
 ---------------*/
 
 .ui.padded.table th {
-  padding-left: $tablePaddedHorizontalPadding;
-  padding-right: $tablePaddedHorizontalPadding;
+  padding-left: $table-padded-horizontal-padding;
+  padding-right: $table-padded-horizontal-padding;
 }
 .ui.padded.table th,
 .ui.padded.table td {
-  padding: $tablePaddedVerticalPadding $tablePaddedHorizontalPadding;
+  padding: $table-padded-vertical-padding $table-padded-horizontal-padding;
 }
 
 /* Very */
 .ui[class*="very padded"].table th {
-  padding-left: $tableVeryPaddedHorizontalPadding;
-  padding-right: $tableVeryPaddedHorizontalPadding;
+  padding-left: $table-very-padded-horizontal-padding;
+  padding-right: $table-very-padded-horizontal-padding;
 }
 .ui[class*="very padded"].table td {
-  padding: $tableVeryPaddedVerticalPadding $tableVeryPaddedHorizontalPadding;
+  padding: $table-very-padded-vertical-padding $table-very-padded-horizontal-padding;
 }
 
 /*--------------
@@ -1055,20 +1055,20 @@
 ---------------*/
 
 .ui.compact.table th {
-  padding-left: $tableCompactHorizontalPadding;
-  padding-right: $tableCompactHorizontalPadding;
+  padding-left: $table-compact-horizontal-padding;
+  padding-right: $table-compact-horizontal-padding;
 }
 .ui.compact.table td {
-  padding: $tableCompactVerticalPadding $tableCompactHorizontalPadding;
+  padding: $table-compact-vertical-padding $table-compact-horizontal-padding;
 }
 
 /* Very */
 .ui[class*="very compact"].table th {
-  padding-left: $tableVeryCompactHorizontalPadding;
-  padding-right: $tableVeryCompactHorizontalPadding;
+  padding-left: $table-very-compact-horizontal-padding;
+  padding-right: $table-very-compact-horizontal-padding;
 }
 .ui[class*="very compact"].table td {
-  padding: $tableVeryCompactVerticalPadding $tableVeryCompactHorizontalPadding;
+  padding: $table-very-compact-vertical-padding $table-very-compact-horizontal-padding;
 }
 
 /*--------------
@@ -1077,17 +1077,17 @@
 
 /* Small */
 .ui.small.table {
-  font-size: $tableSmall;
+  font-size: $table-small;
 }
 
 /* Standard */
 .ui.table {
-  font-size: $tableMedium;
+  font-size: $table-medium;
 }
 
 /* Large */
 .ui.large.table {
-  font-size: $tableLarge;
+  font-size: $table-large;
 }
 
 

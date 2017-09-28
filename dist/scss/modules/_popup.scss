@@ -21,44 +21,44 @@
 
   /* Fixes content being squished when inline (moz only) */
   min-width: min-content;
-  z-index: $popupZIndex;
+  z-index: $popup-zindex;
 
-  border: $popupBorder;
-  line-height: $popupLineHeight;
-  max-width: $popupMaxWidth;
-  background: $popupBackground;
+  border: $popup-border;
+  line-height: $line-height;
+  max-width: $popup-max-width;
+  background: $popup-background;
 
-  padding: $popupVerticalPadding $popupHorizontalPadding;
-  font-weight: $popupFontWeight;
-  font-style: $popupFontStyle;
-  color: $popupColor;
+  padding: $popup-vertical-padding $popup-horizontal-padding;
+  font-weight: $popup-font-weight;
+  font-style: $popup-font-style;
+  color: $popup-color;
 
-  border-radius: $popupBorderRadius;
-  box-shadow: $popupBoxShadow;
+  border-radius: $popup-border-radius;
+  box-shadow: $popup-box-shadow;
 }
 .ui.popup > .header {
   padding: 0;
 
-  font-family: $popupHeaderFont;
-  font-size: $popupHeaderFontSize;
-  line-height: $popupHeaderLineHeight;
+  font-family: $header-font;
+  font-size: $popup-header-font-size;
+  line-height: $popup-header-line-height;
   font-weight: bold;
 }
 .ui.popup > .header + .content {
-  padding-top: $popupHeaderDistance;
+  padding-top: $popup-header-distance;
 }
 
 .ui.popup:before {
   position: absolute;
   content: '';
-  width: $popupArrowSize;
-  height: $popupArrowSize;
+  width: $popup-arrow-size;
+  height: $popup-arrow-size;
 
-  background: $popupArrowBackground;
+  background: $popup-arrow-background;
   transform: rotate(45deg);
 
-  z-index: $popupArrowZIndex;
-  box-shadow: $popupArrowBoxShadow;
+  z-index: $popup-arrow-zindex;
+  box-shadow: $popup-arrow-box-shadow;
 }
 
 
@@ -81,15 +81,15 @@
   pointer-events: none;
   position: absolute;
   content: '';
-  font-size: $popupMedium;
-  width: $popupArrowSize;
-  height: $popupArrowSize;
+  font-size: $medium;
+  width: $popup-arrow-size;
+  height: $popup-arrow-size;
 
-  background: $popupTooltipArrowBackground;
+  background: $popup-tooltip-arrow-background;
   transform: rotate(45deg);
 
-  z-index: $popupArrowZIndex;
-  box-shadow: $popupTooltipArrowBoxShadow;
+  z-index: $popup-arrow-zindex;
+  box-shadow: $popup-tooltip-arrow-box-shadow;
 }
 
 /* Popup */
@@ -101,21 +101,21 @@
   text-align: left;
   white-space: nowrap;
 
-  font-size: $popupTooltipFontSize;
+  font-size: $popup-tooltip-font-size;
 
-  border: $popupTooltipBorder;
-  line-height: $popupTooltipLineHeight;
-  max-width: $popupTooltipMaxWidth;
-  background: $popupTooltipBackground;
+  border: $popup-tooltip-border;
+  line-height: $popup-tooltip-line-height;
+  max-width: $popup-tooltip-max-width;
+  background: $popup-tooltip-background;
 
-  padding: $popupTooltipPadding;
-  font-weight: $popupTooltipFontWeight;
-  font-style: $popupTooltipFontStyle;
-  color: $popupTooltipColor;
+  padding: $popup-tooltip-padding;
+  font-weight: $popup-tooltip-font-weight;
+  font-style: $popup-tooltip-font-style;
+  color: $popup-tooltip-color;
 
-  border-radius: $popupTooltipBorderRadius;
-  box-shadow: $popupTooltipBoxShadow;
-  z-index: $popupTooltipZIndex;
+  border-radius: $popup-tooltip-border-radius;
+  box-shadow: $popup-tooltip-box-shadow;
+  z-index: $popup-tooltip-zindex;
 }
 
 /* Default Position (Top Center) */
@@ -124,7 +124,7 @@
   right: auto;
   bottom: 100%;
   left: 50%;
-  background: $popupTooltipArrowBottomBackground;
+  background: $popup-tooltip-arrow-bottom-background;
   margin-left: popupTooltipArrowHorizontalOffset();
   margin-bottom: popupTooltipArrowVerticalOffset();
 }
@@ -132,7 +132,7 @@
   left: 50%;
   transform: translateX(-50%);
   bottom: 100%;
-  margin-bottom: $popupTooltipDistanceAway;
+  margin-bottom: $popup-tooltip-distance-away;
 }
 
 /* Animation */
@@ -146,14 +146,14 @@
   transform: rotate(45deg) scale(0) !important;
   transform-origin: center top;
   transition:
-    all $popupTooltipDuration $popupTooltipEasing
+    all $popup-tooltip-duration $popup-tooltip-easing
   ;
 }
 [data-tooltip]:after {
   opacity: 1;
   transform-origin: center bottom;
   transition:
-    all $popupTooltipDuration $popupTooltipEasing
+    all $popup-tooltip-duration $popup-tooltip-easing
   ;
 }
 [data-tooltip]:hover:before,
@@ -207,19 +207,19 @@
 
 /* Arrow Position */
 [data-tooltip][data-inverted]:before {
-  background: $popupInvertedArrowBottomBackground;
+  background: $popup-inverted-arrow-bottom-background;
 }
 
 /* Popup  */
 [data-tooltip][data-inverted]:after {
-  background: $popupTooltipInvertedBackground;
-  color: $popupTooltipInvertedColor;
-  border: $popupTooltipInvertedBorder;
-  box-shadow: $popupTooltipInvertedBoxShadow;
+  background: $popup-tooltip-inverted-background;
+  color: $popup-tooltip-inverted-color;
+  border: $popup-tooltip-inverted-border;
+  box-shadow: $popup-tooltip-inverted-box-shadow;
 }
 [data-tooltip][data-inverted]:after .header {
-  background-color: $popupTooltipInvertedHeaderBackground;
-  color: $popupTooltipInvertedHeaderColor;
+  background-color: $popup-tooltip-inverted-header-background;
+  color: $popup-tooltip-inverted-header-color;
 }
 
 /*--------------
@@ -233,14 +233,14 @@
   left: 50%;
   bottom: 100%;
   transform: translateX(-50%);
-  margin-bottom: $popupTooltipDistanceAway;
+  margin-bottom: $popup-tooltip-distance-away;
 }
 [data-position="top center"][data-tooltip]:before {
   top: auto;
   right: auto;
   bottom: 100%;
   left: 50%;
-  background: $popupTooltipArrowTopBackground;
+  background: $popup-tooltip-arrow-top-background;
   margin-left: popupTooltipArrowHorizontalOffset();
   margin-bottom: popupTooltipArrowVerticalOffset();
 }
@@ -251,13 +251,13 @@
   right: auto;
   left: 0;
   bottom: 100%;
-  margin-bottom: $popupTooltipDistanceAway;
+  margin-bottom: $popup-tooltip-distance-away;
 }
 [data-position="top left"][data-tooltip]:before {
   top: auto;
   right: auto;
   bottom: 100%;
-  left: $popupArrowDistanceFromEdge;
+  left: $popup-arrow-distance-from-edge;
   margin-left: popupTooltipArrowHorizontalOffset();
   margin-bottom: popupTooltipArrowVerticalOffset();
 }
@@ -268,13 +268,13 @@
   left: auto;
   right: 0;
   bottom: 100%;
-  margin-bottom: $popupTooltipDistanceAway;
+  margin-bottom: $popup-tooltip-distance-away;
 }
 [data-position="top right"][data-tooltip]:before {
   top: auto;
   left: auto;
   bottom: 100%;
-  right: $popupArrowDistanceFromEdge;
+  right: $popup-arrow-distance-from-edge;
   margin-left: popupTooltipArrowHorizontalOffset();
   margin-bottom: popupTooltipArrowVerticalOffset();
 }
@@ -285,7 +285,7 @@
   left: 50%;
   top: 100%;
   transform: translateX(-50%);
-  margin-top: $popupTooltipDistanceAway;
+  margin-top: $popup-tooltip-distance-away;
 }
 [data-position="bottom center"][data-tooltip]:before {
   bottom: auto;
@@ -300,13 +300,13 @@
 [data-position="bottom left"][data-tooltip]:after {
   left: 0;
   top: 100%;
-  margin-top: $popupTooltipDistanceAway;
+  margin-top: $popup-tooltip-distance-away;
 }
 [data-position="bottom left"][data-tooltip]:before {
   bottom: auto;
   right: auto;
   top: 100%;
-  left: $popupArrowDistanceFromEdge;
+  left: $popup-arrow-distance-from-edge;
   margin-left: popupTooltipArrowHorizontalOffset();
   margin-top: popupTooltipArrowVerticalOffset();
 }
@@ -315,13 +315,13 @@
 [data-position="bottom right"][data-tooltip]:after {
   right: 0;
   top: 100%;
-  margin-top: $popupTooltipDistanceAway;
+  margin-top: $popup-tooltip-distance-away;
 }
 [data-position="bottom right"][data-tooltip]:before {
   bottom: auto;
   left: auto;
   top: 100%;
-  right: $popupArrowDistanceFromEdge;
+  right: $popup-arrow-distance-from-edge;
   margin-left: popupTooltipArrowVerticalOffset() * -1;
   margin-top: popupTooltipArrowHorizontalOffset() * -1;
 }
@@ -330,21 +330,21 @@
 [data-position="left center"][data-tooltip]:after {
   right: 100%;
   top: 50%;
-  margin-right: $popupTooltipDistanceAway;
+  margin-right: $popup-tooltip-distance-away;
   transform: translateY(-50%);
 }
 [data-position="left center"][data-tooltip]:before {
   right: 100%;
   top: 50%;
-  margin-top: $popupTooltipArrowVerticalOffset;
-  margin-right: $popupTooltipArrowHorizontalOffset;
+  margin-top: $popup-tooltip-arrow-vertical-offset;
+  margin-right: $popup-tooltip-arrow-horizontal-offset;
 }
 
 /* Right Center */
 [data-position="right center"][data-tooltip]:after {
   left: 100%;
   top: 50%;
-  margin-left: $popupTooltipDistanceAway;
+  margin-left: $popup-tooltip-distance-away;
   transform: translateY(-50%);
 }
 [data-position="right center"][data-tooltip]:before {
@@ -356,36 +356,36 @@
 
 /* Arrow */
 [data-position~="bottom"][data-tooltip]:before {
-  background: $popupArrowTopBackground;
-  box-shadow: $popupBottomArrowBoxShadow;
+  background: $popup-arrow-top-background;
+  box-shadow: $popup-bottom-arrow-box-shadow;
 }
 [data-position="left center"][data-tooltip]:before {
-  background: $popupArrowCenterBackground;
-  box-shadow: $popupLeftArrowBoxShadow;
+  background: $popup-arrow-center-background;
+  box-shadow: $popup-left-arrow-box-shadow;
 }
 [data-position="right center"][data-tooltip]:before {
-  background: $popupArrowCenterBackground;
-  box-shadow: $popupRightArrowBoxShadow;
+  background: $popup-arrow-center-background;
+  box-shadow: $popup-right-arrow-box-shadow;
 }
 [data-position~="top"][data-tooltip]:before {
-  background: $popupArrowBottomBackground;
+  background: $popup-arrow-bottom-background;
 }
 
 /* Inverted Arrow Color */
 [data-inverted][data-position~="bottom"][data-tooltip]:before {
-  background: $popupInvertedArrowTopBackground;
-  box-shadow: $popupBottomArrowBoxShadow;
+  background: $popup-inverted-arrow-top-background;
+  box-shadow: $popup-bottom-arrow-box-shadow;
 }
 [data-inverted][data-position="left center"][data-tooltip]:before {
-  background: $popupInvertedArrowCenterBackground;
-  box-shadow: $popupLeftArrowBoxShadow;
+  background: $popup-inverted-arrow-center-background;
+  box-shadow: $popup-left-arrow-box-shadow;
 }
 [data-inverted][data-position="right center"][data-tooltip]:before {
-  background: $popupInvertedArrowCenterBackground;
-  box-shadow: $popupRightArrowBoxShadow;
+  background: $popup-inverted-arrow-center-background;
+  box-shadow: $popup-right-arrow-box-shadow;
 }
 [data-inverted][data-position~="top"][data-tooltip]:before {
-  background: $popupInvertedArrowBottomBackground;
+  background: $popup-inverted-arrow-bottom-background;
 }
 
 [data-position~="bottom"][data-tooltip]:before {
@@ -417,7 +417,7 @@
 
 /* Extending from Top */
 .ui.top.popup {
-  margin: 0 0 $popupPopupDistanceAway;
+  margin: 0 0 $popup-popup-distance-away;
 }
 .ui.top.left.popup {
   transform-origin: left bottom;
@@ -431,17 +431,17 @@
 
 /* Extending from Vertical Center */
 .ui.left.center.popup {
-  margin: 0 $popupPopupDistanceAway 0 0;
+  margin: 0 $popup-popup-distance-away 0 0;
   transform-origin: right 50%;
 }
 .ui.right.center.popup {
-  margin: 0 0 0 $popupPopupDistanceAway;
+  margin: 0 0 0 $popup-popup-distance-away;
   transform-origin: left 50%;
 }
 
 /* Extending from Bottom */
 .ui.bottom.popup {
-  margin: $popupPopupDistanceAway 0 0;
+  margin: $popup-popup-distance-away 0 0;
 }
 .ui.bottom.left.popup {
   transform-origin: left top;
@@ -464,33 +464,33 @@
   left: 50%;
   right: auto;
   bottom: auto;
-  box-shadow: $popupBottomArrowBoxShadow;
+  box-shadow: $popup-bottom-arrow-box-shadow;
 }
 
 .ui.bottom.left.popup {
-  margin-left: $popupBoxArrowOffset;
+  margin-left: $popup-box-arrow-offset;
 }
 /*rtl:rename*/
 .ui.bottom.left.popup:before {
   top: popupArrowOffset();
-  left: $popupArrowDistanceFromEdge;
+  left: $popup-arrow-distance-from-edge;
   right: auto;
   bottom: auto;
   margin-left: 0;
-  box-shadow: $popupBottomArrowBoxShadow;
+  box-shadow: $popup-bottom-arrow-box-shadow;
 }
 
 .ui.bottom.right.popup {
-  margin-right: $popupBoxArrowOffset;
+  margin-right: $popup-box-arrow-offset;
 }
 /*rtl:rename*/
 .ui.bottom.right.popup:before {
   top: popupArrowOffset();
-  right: $popupArrowDistanceFromEdge;
+  right: $popup-arrow-distance-from-edge;
   bottom: auto;
   left: auto;
   margin-left: 0;
-  box-shadow: $popupBottomArrowBoxShadow;
+  box-shadow: $popup-bottom-arrow-box-shadow;
 }
 
 /*--- Above ---*/
@@ -502,23 +502,23 @@
   margin-left: popupArrowOffset();
 }
 .ui.top.left.popup {
-  margin-left: $popupBoxArrowOffset;
+  margin-left: $popup-box-arrow-offset;
 }
 /*rtl:rename*/
 .ui.top.left.popup:before {
   bottom: popupArrowOffset();
-  left: $popupArrowDistanceFromEdge;
+  left: $popup-arrow-distance-from-edge;
   top: auto;
   right: auto;
   margin-left: 0;
 }
 .ui.top.right.popup {
-  margin-right: $popupBoxArrowOffset;
+  margin-right: $popup-box-arrow-offset;
 }
 /*rtl:rename*/
 .ui.top.right.popup:before {
   bottom: popupArrowOffset();
-  right: $popupArrowDistanceFromEdge;
+  right: $popup-arrow-distance-from-edge;
   top: auto;
   left: auto;
   margin-left: 0;
@@ -532,7 +532,7 @@
   bottom: auto;
   left: auto;
   margin-top: popupArrowOffset();
-  box-shadow: $popupLeftArrowBoxShadow;
+  box-shadow: $popup-left-arrow-box-shadow;
 }
 
 /*--- Right Center  ---*/
@@ -543,31 +543,31 @@
   bottom: auto;
   right: auto;
   margin-top: popupArrowOffset();
-  box-shadow: $popupRightArrowBoxShadow;
+  box-shadow: $popup-right-arrow-box-shadow;
 }
 
 /* Arrow Color By Location */
 .ui.bottom.popup:before {
-  background: $popupArrowTopBackground;
+  background: $popup-arrow-top-background;
 }
 .ui.right.center.popup:before,
 .ui.left.center.popup:before {
-  background: $popupArrowCenterBackground;
+  background: $popup-arrow-center-background;
 }
 .ui.top.popup:before {
-  background: $popupArrowBottomBackground;
+  background: $popup-arrow-bottom-background;
 }
 
 /* Inverted Arrow Color */
 .ui.inverted.bottom.popup:before {
-  background: $popupInvertedArrowTopBackground;
+  background: $popup-inverted-arrow-top-background;
 }
 .ui.inverted.right.center.popup:before,
 .ui.inverted.left.center.popup:before {
-  background: $popupInvertedArrowCenterBackground;
+  background: $popup-inverted-arrow-center-background;
 }
 .ui.inverted.top.popup:before {
-  background: $popupInvertedArrowBottomBackground;
+  background: $popup-inverted-arrow-bottom-background;
 }
 
 
@@ -577,8 +577,8 @@
 
 /* Immediate Nested Grid */
 .ui.popup > .ui.grid:not(.padded) {
-  width: $popupNestedGridWidth;
-  margin: $popupNestedGridMargin;
+  width: $popup-nested-grid-width;
+  margin: $popup-nested-grid-margin;
 }
 
 
@@ -590,7 +590,7 @@
 .ui.loading.popup {
   display: block;
   visibility: hidden;
-  z-index: $popupLoadingZIndex;
+  z-index: $popup-loading-zindex;
 }
 
 .ui.animating.popup,
@@ -620,16 +620,16 @@
 ---------------*/
 
 .ui.wide.popup {
-  max-width: $popupWideWidth;
+  max-width: $popup-wide-width;
 }
 .ui[class*="very wide"].popup {
-  max-width: $popupVeryWideWidth;
+  max-width: $popup-very-wide-width;
 }
 
-@media only screen and (max-width: $popupLargestMobileScreen) {
+@media only screen and (max-width: $largest-mobile-screen) {
   .ui.wide.popup,
   .ui[class*="very wide"].popup {
-    max-width: $popupMaxWidth;
+    max-width: $popup-max-width;
   }
 }
 /*--------------
@@ -646,17 +646,17 @@
 
 /* Inverted colors  */
 .ui.inverted.popup {
-  background: $popupInvertedBackground;
-  color: $popupInvertedColor;
-  border: $popupInvertedBorder;
-  box-shadow: $popupInvertedBoxShadow;
+  background: $popup-inverted-background;
+  color: $popup-inverted-color;
+  border: $popup-inverted-border;
+  box-shadow: $popup-inverted-box-shadow;
 }
 .ui.inverted.popup .header {
-  background-color: $popupInvertedHeaderBackground;
-  color: $popupInvertedHeaderColor;
+  background-color: $popup-inverted-header-background;
+  color: $popup-inverted-header-color;
 }
 .ui.inverted.popup:before {
-  background-color: $popupInvertedArrowColor;
+  background-color: $popup-inverted-arrow-color;
   box-shadow: none !important;
 }
 
@@ -672,21 +672,21 @@
 ---------------*/
 
 .ui.mini.popup {
-  font-size: $popupMini;
+  font-size: $mini;
 }
 .ui.tiny.popup {
-  font-size: $popupTiny;
+  font-size: $tiny;
 }
 .ui.small.popup {
-  font-size: $popupSmall;
+  font-size: $small;
 }
 .ui.popup {
-  font-size: $popupMedium;
+  font-size: $medium;
 }
 .ui.large.popup {
-  font-size: $popupLarge;
+  font-size: $large;
 }
 .ui.huge.popup {
-  font-size: $popupHuge;
+  font-size: $huge;
 }
 

@@ -15,8 +15,8 @@
 
 .ui.sticky {
   position: static;
-  transition: $stickyTransition;
-  z-index: $stickyZIndex;
+  transition: $sticky-transition;
+  z-index: $sticky-zindex;
 }
 
 

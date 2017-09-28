@@ -16,78 +16,78 @@
 /* All Sizes */
 .ui.container {
   display: block;
-  max-width: $containerMaxWidth !important;
+  max-width: $container-max-width !important;
 }
 
 /* Mobile */
-@media only screen and (max-width: $containerLargestMobileScreen) {
+@media only screen and (max-width: $largest-mobile-screen) {
   .ui.container {
-    width: $containerMobileWidth !important;
-    margin-left: $containerMobileGutter !important;
-    margin-right: $containerMobileGutter !important;
+    width: $container-mobile-width !important;
+    margin-left: $container-mobile-gutter !important;
+    margin-right: $container-mobile-gutter !important;
   }
   .ui.grid.container {
-    width: $containerMobileGridWidth !important;
+    width: $container-mobile-grid-width !important;
   }
   .ui.relaxed.grid.container {
-    width: $containerMobileRelaxedGridWidth !important;
+    width: $container-mobile-relaxed-grid-width !important;
   }
   .ui.very.relaxed.grid.container {
-    width: $containerMobileVeryRelaxedGridWidth !important;
+    width: $container-mobile-very-relaxed-grid-width !important;
   }
 }
 
 /* Tablet */
-@media only screen and (min-width: $containerTabletBreakpoint) and (max-width: $containerLargestTabletScreen) {
+@media only screen and (min-width: $tablet-breakpoint) and (max-width: $largest-tablet-screen) {
   .ui.container {
-    width: $containerTabletWidth;
-    margin-left: $containerTabletGutter !important;
-    margin-right: $containerTabletGutter !important;
+    width: $container-tablet-width;
+    margin-left: $container-tablet-gutter !important;
+    margin-right: $container-tablet-gutter !important;
   }
   .ui.grid.container {
-    width: $containerTabletGridWidth !important;
+    width: $container-tablet-grid-width !important;
   }
   .ui.relaxed.grid.container {
-    width: $containerTabletRelaxedGridWidth !important;
+    width: $container-tablet-relaxed-grid-width !important;
   }
   .ui.very.relaxed.grid.container {
-    width: $containerTabletVeryRelaxedGridWidth !important;
+    width: $container-tablet-very-relaxed-grid-width !important;
   }
 }
 
 /* Small Monitor */
-@media only screen and (min-width: $containerComputerBreakpoint) and (max-width: $containerLargestSmallMonitor) {
+@media only screen and (min-width: $computer-breakpoint) and (max-width: $largest-small-monitor) {
   .ui.container {
-    width: $containerComputerWidth;
-    margin-left: $containerComputerGutter !important;
-    margin-right: $containerComputerGutter !important;
+    width: $container-computer-width;
+    margin-left: $container-computer-gutter !important;
+    margin-right: $container-computer-gutter !important;
   }
   .ui.grid.container {
-    width: $containerComputerGridWidth !important;
+    width: $container-computer-grid-width !important;
   }
   .ui.relaxed.grid.container {
-    width: $containerComputerRelaxedGridWidth !important;
+    width: $container-computer-relaxed-grid-width !important;
   }
   .ui.very.relaxed.grid.container {
-    width: $containerComputerVeryRelaxedGridWidth !important;
+    width: $container-computer-very-relaxed-grid-width !important;
   }
 }
 
 /* Large Monitor */
-@media only screen and (min-width: $containerLargeMonitorBreakpoint) {
+@media only screen and (min-width: $large-monitor-breakpoint) {
   .ui.container {
-    width: $containerLargeMonitorWidth;
-    margin-left: $containerLargeMonitorGutter !important;
-    margin-right: $containerLargeMonitorGutter !important;
+    width: $container-large-monitor-width;
+    margin-left: $container-large-monitor-gutter !important;
+    margin-right: $container-large-monitor-gutter !important;
   }
   .ui.grid.container {
-    width: $containerLargeMonitorGridWidth !important;
+    width: $container-large-monitor-grid-width !important;
   }
   .ui.relaxed.grid.container {
-    width: $containerLargeMonitorRelaxedGridWidth !important;
+    width: $container-large-monitor-relaxed-grid-width !important;
   }
   .ui.very.relaxed.grid.container {
-    width: $containerLargeMonitorVeryRelaxedGridWidth !important;
+    width: $container-large-monitor-very-relaxed-grid-width !important;
   }
 }
 
@@ -98,13 +98,13 @@
 *******************************/
 /* Text Container */
 .ui.text.container {
-  font-family: $containerTextFontFamily;
-  max-width: $containerTextWidth !important;
-  line-height: $containerTextLineHeight;
+  font-family: $container-text-font-family;
+  max-width: $container-text-width !important;
+  line-height: $container-text-line-height;
 }
 
 .ui.text.container {
-  font-size: $containerTextSize;
+  font-size: $container-text-size;
 }
 
 /* Fluid */

@@ -17,12 +17,12 @@
 .ui.statistic {
   display: inline-flex;
   flex-direction: column;
-  margin: $statisticMargin;
-  max-width: $statisticMaxWidth;
+  margin: $statistic-margin;
+  max-width: $statistic-max-width;
 }
 
 .ui.statistic + .ui.statistic {
-  margin: 0 0 0 $statisticHorizontalSpacing;
+  margin: 0 0 0 $statistic-horizontal-spacing;
 }
 
 .ui.statistic:first-child {
@@ -47,12 +47,12 @@
   display: inline-flex;
   flex: 0 1 auto;
   flex-direction: column;
-  margin: $statisticElementMargin;
-  max-width: $statisticElementMaxWidth;
+  margin: $statistic-element-margin;
+  max-width: $statistic-element-max-width;
 }
 .ui.statistics {
   display: flex;
-  margin: $statisticGroupMargin;
+  margin: $statistic-group-margin;
 }
 
 /* Clearing */
@@ -82,13 +82,13 @@
 
 .ui.statistics .statistic > .value,
 .ui.statistic > .value {
-  font-family: $statisticValueFont;
-  font-size: $statisticValueSize;
-  font-weight: $statisticValueFontWeight;
-  line-height: $statisticValueLineHeight;
-  color: $statisticValueColor;
-  text-transform: $statisticValueTextTransform;
-  text-align: $statisticTextAlign;
+  font-family: $statistic-value-font;
+  font-size: $statistic-value-size;
+  font-weight: $statistic-value-font-weight;
+  line-height: $statistic-value-line-height;
+  color: $statistic-value-color;
+  text-transform: $statistic-value-text-transform;
+  text-align: $statistic-text-align;
 }
 
 /*--------------
@@ -97,24 +97,24 @@
 
 .ui.statistics .statistic > .label,
 .ui.statistic > .label {
-  font-family: $statisticLabelFont;
-  font-size: $statisticLabelSize;
-  font-weight: $statisticLabelFontWeight;
-  color: $statisticLabelColor;
-  text-transform: $statisticLabelTextTransform;
-  text-align: $statisticTextAlign;
+  font-family: $statistic-label-font;
+  font-size: $statistic-label-size;
+  font-weight: $statistic-label-font-weight;
+  color: $statistic-label-color;
+  text-transform: $statistic-label-text-transform;
+  text-align: $statistic-text-align;
 }
 
 /* Top Label */
 .ui.statistics .statistic > .label ~ .value,
 .ui.statistic > .label ~ .value {
-  margin-top: $statisticTopLabelDistance;
+  margin-top: $statistic-top-label-distance;
 }
 
 /* Bottom Label */
 .ui.statistics .statistic > .value ~ .label,
 .ui.statistic > .value ~ .label {
-  margin-top: $statisticBottomLabelDistance;
+  margin-top: $statistic-bottom-label-distance;
 }
 
 
@@ -139,9 +139,9 @@
 
 .ui.statistics .statistic > .text.value,
 .ui.statistic > .text.value {
-  line-height: $statisticTextValueLineHeight;
-  min-height: $statisticTextValueMinHeight;
-  font-weight: $statisticTextValueFontWeight;
+  line-height: $statistic-text-value-line-height;
+  min-height: $statistic-text-value-min-height;
+  font-weight: $statistic-text-value-font-weight;
   text-align: center;
 }
 .ui.statistics .statistic > .text.value + .label,
@@ -155,8 +155,8 @@
 
 .ui.statistics .statistic > .value img,
 .ui.statistic > .value img {
-  max-height: $statisticImageHeight;
-  vertical-align: $statisticImageVerticalAlign;
+  max-height: $statistic-image-height;
+  vertical-align: $statistic-image-vertical-align;
 }
 
 
@@ -167,83 +167,83 @@
       Count
 ---------------*/
 .ui.ten.statistics {
-  margin: $statisticItemGroupMargin;
+  margin: $statistic-item-group-margin;
 }
 .ui.ten.statistics .statistic {
-  min-width: $statisticTenColumn;
-  margin: $statisticItemMargin;
+  min-width: $ten-column;
+  margin: $statistic-item-margin;
 }
 
 .ui.nine.statistics {
-  margin: $statisticItemGroupMargin;
+  margin: $statistic-item-group-margin;
 }
 .ui.nine.statistics .statistic {
-  min-width: $statisticNineColumn;
-  margin: $statisticItemMargin;
+  min-width: $nine-column;
+  margin: $statistic-item-margin;
 }
 
 .ui.eight.statistics {
-  margin: $statisticItemGroupMargin;
+  margin: $statistic-item-group-margin;
 }
 .ui.eight.statistics .statistic {
-  min-width: $statisticEightColumn;
-  margin: $statisticItemMargin;
+  min-width: $eight-column;
+  margin: $statistic-item-margin;
 }
 
 .ui.seven.statistics {
-  margin: $statisticItemGroupMargin;
+  margin: $statistic-item-group-margin;
 }
 .ui.seven.statistics .statistic {
-  min-width: $statisticSevenColumn;
-  margin: $statisticItemMargin;
+  min-width: $seven-column;
+  margin: $statistic-item-margin;
 }
 
 .ui.six.statistics {
-  margin: $statisticItemGroupMargin;
+  margin: $statistic-item-group-margin;
 }
 .ui.six.statistics .statistic {
-  min-width: $statisticSixColumn;
-  margin: $statisticItemMargin;
+  min-width: $six-column;
+  margin: $statistic-item-margin;
 }
 
 .ui.five.statistics {
-  margin: $statisticItemGroupMargin;
+  margin: $statistic-item-group-margin;
 }
 .ui.five.statistics .statistic {
-  min-width: $statisticFiveColumn;
-  margin: $statisticItemMargin;
+  min-width: $five-column;
+  margin: $statistic-item-margin;
 }
 
 .ui.four.statistics {
-  margin: $statisticItemGroupMargin;
+  margin: $statistic-item-group-margin;
 }
 .ui.four.statistics .statistic {
-  min-width: $statisticFourColumn;
-  margin: $statisticItemMargin;
+  min-width: $four-column;
+  margin: $statistic-item-margin;
 }
 
 .ui.three.statistics {
-  margin: $statisticItemGroupMargin;
+  margin: $statistic-item-group-margin;
 }
 .ui.three.statistics .statistic {
-  min-width: $statisticThreeColumn;
-  margin: $statisticItemMargin;
+  min-width: $three-column;
+  margin: $statistic-item-margin;
 }
 
 .ui.two.statistics {
-  margin: $statisticItemGroupMargin;
+  margin: $statistic-item-group-margin;
 }
 .ui.two.statistics .statistic {
-  min-width: $statisticTwoColumn;
-  margin: $statisticItemMargin;
+  min-width: $two-column;
+  margin: $statistic-item-margin;
 }
 
 .ui.one.statistics {
-  margin: $statisticItemGroupMargin;
+  margin: $statistic-item-group-margin;
 }
 .ui.one.statistics .statistic {
-  min-width: $statisticOneColumn;
-  margin: $statisticItemMargin;
+  min-width: $one-column;
+  margin: $statistic-item-margin;
 }
 /*--------------
    Horizontal
@@ -262,7 +262,7 @@
   flex-direction: row;
   align-items: center;
   max-width: none;
-  margin: $statisticHorizontalGroupElementMargin;
+  margin: $statistic-horizontal-group-element-margin;
 }
 
 .ui.horizontal.statistic > .text.value,
@@ -271,7 +271,7 @@
 }
 .ui.horizontal.statistics .statistic > .value .icon,
 .ui.horizontal.statistic > .value .icon {
-  width: $statisticIconWidth;
+  width: $icon-width;
 }
 
 .ui.horizontal.statistics .statistic > .value,
@@ -283,7 +283,7 @@
 .ui.horizontal.statistic > .label {
   display: inline-block;
   vertical-align: middle;
-  margin: 0 0 0 $statisticHorizontalLabelDistance;
+  margin: 0 0 0 $statistic-horizontal-label-distance;
 }
 
 /*--------------
@@ -293,62 +293,62 @@
 .ui.red.statistics .statistic > .value,
 .ui.statistics .red.statistic > .value,
 .ui.red.statistic > .value {
-  color: $statisticRed;
+  color: $red;
 }
 .ui.orange.statistics .statistic > .value,
 .ui.statistics .orange.statistic > .value,
 .ui.orange.statistic > .value {
-  color: $statisticOrange;
+  color: $orange;
 }
 .ui.yellow.statistics .statistic > .value,
 .ui.statistics .yellow.statistic > .value,
 .ui.yellow.statistic > .value {
-  color: $statisticYellow;
+  color: $yellow;
 }
 .ui.olive.statistics .statistic > .value,
 .ui.statistics .olive.statistic > .value,
 .ui.olive.statistic > .value {
-  color: $statisticOlive;
+  color: $olive;
 }
 .ui.green.statistics .statistic > .value,
 .ui.statistics .green.statistic > .value,
 .ui.green.statistic > .value {
-  color: $statisticGreen;
+  color: $green;
 }
 .ui.teal.statistics .statistic > .value,
 .ui.statistics .teal.statistic > .value,
 .ui.teal.statistic > .value {
-  color: $statisticTeal;
+  color: $teal;
 }
 .ui.blue.statistics .statistic > .value,
 .ui.statistics .blue.statistic > .value,
 .ui.blue.statistic > .value {
-  color: $statisticBlue;
+  color: $blue;
 }
 .ui.violet.statistics .statistic > .value,
 .ui.statistics .violet.statistic > .value,
 .ui.violet.statistic > .value {
-  color: $statisticViolet;
+  color: $violet;
 }
 .ui.purple.statistics .statistic > .value,
 .ui.statistics .purple.statistic > .value,
 .ui.purple.statistic > .value {
-  color: $statisticPurple;
+  color: $purple;
 }
 .ui.pink.statistics .statistic > .value,
 .ui.statistics .pink.statistic > .value,
 .ui.pink.statistic > .value {
-  color: $statisticPink;
+  color: $pink;
 }
 .ui.brown.statistics .statistic > .value,
 .ui.statistics .brown.statistic > .value,
 .ui.brown.statistic > .value {
-  color: $statisticBrown;
+  color: $brown;
 }
 .ui.grey.statistics .statistic > .value,
 .ui.statistics .grey.statistic > .value,
 .ui.grey.statistic > .value {
-  color: $statisticGrey;
+  color: $grey;
 }
 
 /*--------------
@@ -357,72 +357,72 @@
 
 .ui.inverted.statistics .statistic > .value,
 .ui.inverted.statistic .value {
-  color: $statisticInvertedValueColor;
+  color: $statistic-inverted-value-color;
 }
 .ui.inverted.statistics .statistic > .label,
 .ui.inverted.statistic .label {
-  color: $statisticInvertedLabelColor;
+  color: $statistic-inverted-label-color;
 }
 
 .ui.inverted.red.statistics .statistic > .value,
 .ui.statistics .inverted.red.statistic > .value,
 .ui.inverted.red.statistic > .value {
-  color: $statisticLightRed;
+  color: $light-red;
 }
 .ui.inverted.orange.statistics .statistic > .value,
 .ui.statistics .inverted.orange.statistic > .value,
 .ui.inverted.orange.statistic > .value {
-  color: $statisticLightOrange;
+  color: $light-orange;
 }
 .ui.inverted.yellow.statistics .statistic > .value,
 .ui.statistics .inverted.yellow.statistic > .value,
 .ui.inverted.yellow.statistic > .value {
-  color: $statisticLightYellow;
+  color: $light-yellow;
 }
 .ui.inverted.olive.statistics .statistic > .value,
 .ui.statistics .inverted.olive.statistic > .value,
 .ui.inverted.olive.statistic > .value {
-  color: $statisticLightOlive;
+  color: $light-olive;
 }
 .ui.inverted.green.statistics .statistic > .value,
 .ui.statistics .inverted.green.statistic > .value,
 .ui.inverted.green.statistic > .value {
-  color: $statisticLightGreen;
+  color: $light-green;
 }
 .ui.inverted.teal.statistics .statistic > .value,
 .ui.statistics .inverted.teal.statistic > .value,
 .ui.inverted.teal.statistic > .value {
-  color: $statisticLightTeal;
+  color: $light-teal;
 }
 .ui.inverted.blue.statistics .statistic > .value,
 .ui.statistics .inverted.blue.statistic > .value,
 .ui.inverted.blue.statistic > .value {
-  color: $statisticLightBlue;
+  color: $light-blue;
 }
 .ui.inverted.violet.statistics .statistic > .value,
 .ui.statistics .inverted.violet.statistic > .value,
 .ui.inverted.violet.statistic > .value {
-  color: $statisticLightViolet;
+  color: $light-violet;
 }
 .ui.inverted.purple.statistics .statistic > .value,
 .ui.statistics .inverted.purple.statistic > .value,
 .ui.inverted.purple.statistic > .value {
-  color: $statisticLightPurple;
+  color: $light-purple;
 }
 .ui.inverted.pink.statistics .statistic > .value,
 .ui.statistics .inverted.pink.statistic > .value,
 .ui.inverted.pink.statistic > .value {
-  color: $statisticLightPink;
+  color: $light-pink;
 }
 .ui.inverted.brown.statistics .statistic > .value,
 .ui.statistics .inverted.brown.statistic > .value,
 .ui.inverted.brown.statistic > .value {
-  color: $statisticLightBrown;
+  color: $light-brown;
 }
 .ui.inverted.grey.statistics .statistic > .value,
 .ui.statistics .inverted.grey.statistic > .value,
 .ui.inverted.grey.statistic > .value {
-  color: $statisticLightGrey;
+  color: $light-grey;
 }
 
 /*--------------
@@ -431,11 +431,11 @@
 
 .ui[class*="left floated"].statistic {
   float: left;
-  margin: $statisticLeftFloatedMargin;
+  margin: $statistic-left-floated-margin;
 }
 .ui[class*="right floated"].statistic {
   float: right;
-  margin: $statisticRightFloatedMargin;
+  margin: $statistic-right-floated-margin;
 }
 .ui.floated.statistic:last-child {
   margin-bottom: 0;
@@ -446,83 +446,83 @@
 /* Mini */
 .ui.mini.statistics .statistic > .value,
 .ui.mini.statistic > .value {
-  font-size: $statisticMiniValueSize !important;
+  font-size: $statistic-mini-value-size !important;
 }
 .ui.mini.horizontal.statistics .statistic > .value,
 .ui.mini.horizontal.statistic > .value {
-  font-size: $statisticMiniHorizontalValueSize !important;
+  font-size: $statistic-mini-horizontal-value-size !important;
 }
 .ui.mini.statistics .statistic > .text.value,
 .ui.mini.statistic > .text.value {
-  font-size: $statisticMiniTextValueSize !important;
+  font-size: $statistic-mini-text-value-size !important;
 }
 /* Tiny */
 .ui.tiny.statistics .statistic > .value,
 .ui.tiny.statistic > .value {
-  font-size: $statisticTinyValueSize !important;
+  font-size: $statistic-tiny-value-size !important;
 }
 .ui.tiny.horizontal.statistics .statistic > .value,
 .ui.tiny.horizontal.statistic > .value {
-  font-size: $statisticTinyHorizontalValueSize !important;
+  font-size: $statistic-tiny-horizontal-value-size !important;
 }
 .ui.tiny.statistics .statistic > .text.value,
 .ui.tiny.statistic > .text.value {
-  font-size: $statisticTinyTextValueSize !important;
+  font-size: $statistic-tiny-text-value-size !important;
 }
 
 /* Small */
 .ui.small.statistics .statistic > .value,
 .ui.small.statistic > .value {
-  font-size: $statisticSmallValueSize !important;
+  font-size: $statistic-small-value-size !important;
 }
 .ui.small.horizontal.statistics .statistic > .value,
 .ui.small.horizontal.statistic > .value {
-  font-size: $statisticSmallHorizontalValueSize !important;
+  font-size: $statistic-small-horizontal-value-size !important;
 }
 .ui.small.statistics .statistic > .text.value,
 .ui.small.statistic > .text.value {
-  font-size: $statisticSmallTextValueSize !important;
+  font-size: $statistic-small-text-value-size !important;
 }
 
 /* Medium */
 .ui.statistics .statistic > .value,
 .ui.statistic > .value {
-  font-size: $statisticValueSize !important;
+  font-size: $statistic-value-size !important;
 }
 .ui.horizontal.statistics .statistic > .value,
 .ui.horizontal.statistic > .value {
-  font-size: $statisticHorizontalValueSize !important;
+  font-size: $statistic-horizontal-value-size !important;
 }
 .ui.statistics .statistic > .text.value,
 .ui.statistic > .text.value {
-  font-size: $statisticTextValueSize !important;
+  font-size: $statistic-text-value-size !important;
 }
 
 /* Large */
 .ui.large.statistics .statistic > .value,
 .ui.large.statistic > .value {
-  font-size: $statisticLargeValueSize !important;
+  font-size: $statistic-large-value-size !important;
 }
 .ui.large.horizontal.statistics .statistic > .value,
 .ui.large.horizontal.statistic > .value {
-  font-size: $statisticLargeHorizontalValueSize !important;
+  font-size: $statistic-large-horizontal-value-size !important;
 }
 .ui.large.statistics .statistic > .text.value,
 .ui.large.statistic > .text.value {
-  font-size: $statisticLargeTextValueSize !important;
+  font-size: $statistic-large-text-value-size !important;
 }
 
 /* Huge */
 .ui.huge.statistics .statistic > .value,
 .ui.huge.statistic > .value {
-  font-size: $statisticHugeValueSize !important;
+  font-size: $statistic-huge-value-size !important;
 }
 .ui.huge.horizontal.statistics .statistic > .value,
 .ui.huge.horizontal.statistic > .value {
-  font-size: $statisticHugeHorizontalValueSize !important;
+  font-size: $statistic-huge-horizontal-value-size !important;
 }
 .ui.huge.statistics .statistic > .text.value,
 .ui.huge.statistic > .text.value {
-  font-size: $statisticHugeTextValueSize !important;
+  font-size: $statistic-huge-text-value-size !important;
 }
 

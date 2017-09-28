@@ -23,18 +23,18 @@
   position: absolute !important;
   top: 0 !important;
   left: 0 !important;
-  z-index: $revealTopZIndex !important;
-  transition: $revealTransition;
+  z-index: $reveal-top-zindex !important;
+  transition: $reveal-transition;
 }
 .ui.reveal > .hidden.content {
   position: relative !important;
-  z-index: $revealBottomZIndex !important;
+  z-index: $reveal-bottom-zindex !important;
 }
 
 /* Make sure hovered element is on top of other reveal */
 .ui.active.reveal .visible.content,
 .ui.reveal:hover .visible.content {
-  z-index: $revealActiveZIndex !important;
+  z-index: $reveal-active-zindex !important;
 }
 
 
@@ -57,7 +57,7 @@
   float: left;
 
   margin: 0;
-  transition: $revealSlideTransition;
+  transition: $reveal-slide-transition;
 }
 
 .ui.slide.reveal > .visible.content {
@@ -65,7 +65,7 @@
 }
 .ui.slide.reveal > .hidden.content {
   position: absolute !important;
-  left: 0% !important;
+  left: 0 !important;
   width: 100% !important;
   transform: translateX(100%) !important;
 }
@@ -142,7 +142,7 @@
   float: left;
 
   margin: 0;
-  transition: $revealMoveTransition;
+  transition: $reveal-move-transition;
 }
 
 .ui.move.reveal > .visible.content {
@@ -150,7 +150,7 @@
 }
 .ui.move.reveal > .hidden.content {
   position: absolute !important;
-  left: 0% !important;
+  left: 0 !important;
   width: 100% !important;
 }
 .ui.move.active.reveal > .visible.content,
@@ -174,7 +174,7 @@
 ---------------*/
 
 .ui.rotate.reveal > .visible.content {
-  transition-duration: $revealTransitionDuration;
+  transition-duration: $reveal-transition-duration;
   transform: rotate(0deg);
 }
 
@@ -186,7 +186,7 @@
 .ui.rotate.reveal:hover > .visible.content,
 .ui.rotate.right.active.reveal > .visible.content,
 .ui.rotate.right.reveal:hover > .visible.content {
-  transform: rotate($revealRotateDegrees);
+  transform: rotate($reveal-rotate-degrees);
 }
 
 .ui.rotate.left.reveal > .visible.content {
@@ -194,7 +194,7 @@
 }
 .ui.rotate.left.active.reveal > .visible.content,
 .ui.rotate.left.reveal:hover > .visible.content {
-  transform: rotate(-$revealRotateDegrees);
+  transform: rotate(-$reveal-rotate-degrees);
 }
 
 
@@ -242,7 +242,7 @@
 ---------------*/
 
 .ui.reveal > .content {
-  font-size: $revealMedium !important;
+  font-size: $medium !important;
 }
 
 

@@ -7,42 +7,43 @@
 --------------------*/
 
 /* For source only. Modified in gulp for dist */
-$imagePath : '/assets/images';
-$fontPath  : '/assets/fonts';
+$image-path: '/assets/images';
+$font-path: '/assets/fonts';
 
 /*-------------------
        Fonts
 --------------------*/
 
-$fontName          : 'Lato';
-$fontSmoothing     : antialiased;
+$font-name: 'Lato';
+$font-smoothing: antialiased;
 
-$headerFont        : $fontName, 'Helvetica Neue', Arial, Helvetica, sans-serif;
-$pageFont          : $fontName, 'Helvetica Neue', Arial, Helvetica, sans-serif;
+$header-font: $font-name, 'Helvetica Neue', Arial, Helvetica, sans-serif;
+$page-font: $font-name, 'Helvetica Neue', Arial, Helvetica, sans-serif;
 
-$googleFontName    : $fontName;
-$importGoogleFonts : false;
-$googleFontSizes   : '400,700,400italic,700italic';
-$googleSubset      : 'latin';
+// Google Fonts
+$google-font-name: $font-name;
+$import-google-fonts: false;
+$google-font-sizes: '400,700,400italic,700italic';
+$google-subset: 'latin';
 
-$googleProtocol    : 'https://';
-$googleFontRequest : '#{$googleFontName}:#{$googleFontSizes}&subset=#{$googleSubset}';
+$google-protocol: 'https://';
+$google-font-request: '#{$google-font-name}:#{$google-font-sizes}&subset=#{$google-subset}';
 
 /*-------------------
       Base Sizes
 --------------------*/
 
 /* This is the single variable that controls them all */
-$emSize   : 14;
+$base-size: 14;
 
 /* The size of page text  */
-$fontSize : 14px;
+$font-size: 14px;
 
 /*-------------------
         Grid
 --------------------*/
 
-$columnCount: 16;
+$column-count: 16;
 
 /*-------------------
       Site Colors
@@ -64,91 +65,91 @@ $grey             : #767676;
 $black            : #1B1C1D;
 
 /*---  Light Colors  ---*/
-$lightRed         : #FF695E;
-$lightOrange      : #FF851B;
-$lightYellow      : #FFE21F;
-$lightOlive       : #D9E778;
-$lightGreen       : #2ECC40;
-$lightTeal        : #6DFFFF;
-$lightBlue        : #54C8FF;
-$lightViolet      : #A291FB;
-$lightPurple      : #DC73FF;
-$lightPink        : #FF8EDF;
-$lightBrown       : #D67C1C;
-$lightGrey        : #DCDDDE;
-$lightBlack       : #545454;
+$light-red: #FF695E;
+$light-orange: #FF851B;
+$light-yellow: #FFE21F;
+$light-olive: #D9E778;
+$light-green: #2ECC40;
+$light-teal: #6DFFFF;
+$light-blue: #54C8FF;
+$light-violet: #A291FB;
+$light-purple: #DC73FF;
+$light-pink: #FF8EDF;
+$light-brown: #D67C1C;
+$light-grey: #DCDDDE;
+$light-black: #545454;
 
 /*---   Neutrals  ---*/
-$fullBlack        : #000000;
-$offWhite         : #F9FAFB;
-$darkWhite        : #F3F4F5;
-$midWhite         : #DCDDDE;
+$full-black: #000000;
+$off-white: #F9FAFB;
+$dark-white: #F3F4F5;
+$mid-white: #DCDDDE;
 $white            : #FFFFFF;
 
 /*--- Colored Backgrounds ---*/
-$redBackground    : #FFE8E6;
-$orangeBackground : #FFEDDE;
-$yellowBackground : #FFF8DB;
-$oliveBackground  : #FBFDEF;
-$greenBackground  : #E5F9E7;
-$tealBackground   : #E1F7F7;
-$blueBackground   : #DFF0FF;
-$violetBackground : #EAE7FF;
-$purpleBackground : #F6E7FF;
-$pinkBackground   : #FFE3FB;
-$brownBackground  : #F1E2D3;
+$red-background: #FFE8E6;
+$orange-background: #FFEDDE;
+$yellow-background: #FFF8DB;
+$olive-background: #FBFDEF;
+$green-background: #E5F9E7;
+$teal-background: #E1F7F7;
+$blue-background: #DFF0FF;
+$violet-background: #EAE7FF;
+$purple-background: #F6E7FF;
+$pink-background: #FFE3FB;
+$brown-background: #F1E2D3;
 
 /*--- Colored Text ---*/
-$redTextColor    : $red;
-$orangeTextColor : $orange;
-$yellowTextColor : #B58105; // Yellow text is difficult to read
-$oliveTextColor  : #8ABC1E; // Olive is difficult to read
-$greenTextColor  : #1EBC30; // Green is difficult to read
-$tealTextColor   : #10A3A3; // Teal text is difficult to read
-$blueTextColor   : $blue;
-$violetTextColor : $violet;
-$purpleTextColor : $purple;
-$pinkTextColor   : $pink;
-$brownTextColor  : $brown;
+$red-text-color: $red;
+$orange-text-color: $orange;
+$yellow-text-color: #B58105; // Yellow text is difficult to read
+$olive-text-color: #8ABC1E; // Olive is difficult to read
+$green-text-color: #1EBC30; // Green is difficult to read
+$teal-text-color: #10A3A3; // Teal text is difficult to read
+$blue-text-color: $blue;
+$violet-text-color: $violet;
+$purple-text-color: $purple;
+$pink-text-color: $pink;
+$brown-text-color: $brown;
 
 /*--- Colored Headers ---*/
-$redHeaderColor    : darken($redTextColor, 5);
-$oliveHeaderColor  : darken($oliveTextColor, 5);
-$greenHeaderColor  : darken($greenTextColor, 5);
-$yellowHeaderColor : darken($yellowTextColor, 5);
-$blueHeaderColor   : darken($blueTextColor, 5);
-$tealHeaderColor   : darken($tealTextColor, 5);
-$pinkHeaderColor   : darken($pinkTextColor, 5);
-$violetHeaderColor : darken($violetTextColor, 5);
-$purpleHeaderColor : darken($purpleTextColor, 5);
-$orangeHeaderColor : darken($orangeTextColor, 5);
-$brownHeaderColor  : darken($brownTextColor, 5);
+$red-header-color: darken($red-text-color, 5);
+$olive-header-color: darken($olive-text-color, 5);
+$green-header-color: darken($green-text-color, 5);
+$yellow-header-color: darken($yellow-text-color, 5);
+$blue-header-color: darken($blue-text-color, 5);
+$teal-header-color: darken($teal-text-color, 5);
+$pink-header-color: darken($pink-text-color, 5);
+$violet-header-color: darken($violet-text-color, 5);
+$purple-header-color: darken($purple-text-color, 5);
+$orange-header-color: darken($orange-text-color, 5);
+$brown-header-color: darken($brown-text-color, 5);
 
 /*--- Colored Border ---*/
-$redBorderColor    : $redTextColor;
-$orangeBorderColor : $orangeTextColor;
-$yellowBorderColor : $yellowTextColor;
-$oliveBorderColor  : $oliveTextColor;
-$greenBorderColor  : $greenTextColor;
-$tealBorderColor   : $tealTextColor;
-$blueBorderColor   : $blueTextColor;
-$violetBorderColor : $violetTextColor;
-$purpleBorderColor : $purpleTextColor;
-$pinkBorderColor   : $pinkTextColor;
-$brownBorderColor  : $brownTextColor;
+$red-border-color: $red-text-color;
+$orange-border-color: $orange-text-color;
+$yellow-border-color: $yellow-text-color;
+$olive-border-color: $olive-text-color;
+$green-border-color: $green-text-color;
+$teal-border-color: $teal-text-color;
+$blue-border-color: $blue-text-color;
+$violet-border-color: $violet-text-color;
+$purple-border-color: $purple-text-color;
+$pink-border-color: $pink-text-color;
+$brown-border-color: $brown-text-color;
 
 /*-------------------
      Alpha Colors
 --------------------*/
 
-$subtleTransparentBlack     : rgba(0, 0, 0, 0.03);
-$transparentBlack           : rgba(0, 0, 0, 0.05);
-$strongTransparentBlack     : rgba(0, 0, 0, 0.10);
-$veryStrongTransparentBlack : rgba(0, 0, 0, 0.15);
+$subtle-transparent-black: rgba(0, 0, 0, 0.03);
+$transparent-black: rgba(0, 0, 0, 0.05);
+$strong-transparent-black: rgba(0, 0, 0, 0.10);
+$very-strong-transparent-black: rgba(0, 0, 0, 0.15);
 
-$subtleTransparentWhite     : rgba(255, 255, 255, 0.02);
-$transparentWhite           : rgba(255, 255, 255, 0.08);
-$strongTransparentWhite     : rgba(255, 255, 255, 0.15);
+$subtle-transparent-white: rgba(255, 255, 255, 0.02);
+$transparent-white: rgba(255, 255, 255, 0.08);
+$strong-transparent-white: rgba(255, 255, 255, 0.15);
 
 
 
@@ -161,14 +162,14 @@ $strongTransparentWhite     : rgba(255, 255, 255, 0.15);
   This ensures these "ratios" remain constant despite changes in EM
 */
 
-$miniSize        : (11 / 14);
-$tinySize        : (12 / 14);
-$smallSize       : (13 / 14);
-$mediumSize      : (14 / 14);
-$largeSize       : (16 / 14);
-$bigSize         : (18 / 14);
-$hugeSize        : (20 / 14);
-$massiveSize     : (24 / 14);
+$mini-size: (11 / 14);
+$tiny-size: (12 / 14);
+$small-size: (13 / 14);
+$medium-size: (14 / 14);
+$large-size: (16 / 14);
+$big-size: (18 / 14);
+$huge-size: (20 / 14);
+$massive-size: (24 / 14);
 
 
 /*******************************
@@ -181,32 +182,32 @@ $massiveSize     : (24 / 14);
 --------------------*/
 
 /* Positive */
-$positiveColor           : $green;
-$positiveBackgroundColor : #FCFFF5;
-$positiveBorderColor     : #A3C293;
-$positiveHeaderColor     : #1A531B;
-$positiveTextColor       : #2C662D;
+$positive-color: $green;
+$positive-background-color: #FCFFF5;
+$positive-border-color: #A3C293;
+$positive-header-color: #1A531B;
+$positive-text-color: #2C662D;
 
 /* Negative */
-$negativeColor           : $red;
-$negativeBackgroundColor : #FFF6F6;
-$negativeBorderColor     : #E0B4B4;
-$negativeHeaderColor     : #912D2B;
-$negativeTextColor       : #9F3A38;
+$negative-color: $red;
+$negative-background-color: #FFF6F6;
+$negative-border-color: #E0B4B4;
+$negative-header-color: #912D2B;
+$negative-text-color: #9F3A38;
 
 /* Info */
-$infoColor              : #31CCEC;
-$infoBackgroundColor    : #F8FFFF;
-$infoBorderColor        : #A9D5DE;
-$infoHeaderColor        : #0E566C;
-$infoTextColor          : #276F86;
+$info-color: #31CCEC;
+$info-background-color: #F8FFFF;
+$info-border-color: #A9D5DE;
+$info-header-color: #0E566C;
+$info-text-color: #276F86;
 
 /* Warning */
-$warningColor           : #F2C037;
-$warningBorderColor     : #C9BA9B;
-$warningBackgroundColor : #FFFAF3;
-$warningHeaderColor     : #794B02;
-$warningTextColor       : #573A08;
+$warning-color: #F2C037;
+$warning-border-color: #C9BA9B;
+$warning-background-color: #FFFAF3;
+$warning-header-color: #794B02;
+$warning-text-color: #573A08;
 
 
 /*-------------------
@@ -217,100 +218,101 @@ $warningTextColor       : #573A08;
   This rounds $size values to the closest pixel then expresses that value in (r)em.
   This ensures all size values round to exact pixels
 */
-$mini            : #{ round($miniSize * $emSize) / $emSize + "rem" };
-$tiny            : #{ round($tinySize * $emSize) / $emSize + "rem" };
-$small           : #{ round($smallSize * $emSize) / $emSize + "rem" };
-$medium          : #{ round($mediumSize * $emSize) / $emSize + "rem" };
-$large           : #{ round($largeSize * $emSize) / $emSize + "rem" };
-$big             : #{ round($bigSize * $emSize) / $emSize + "rem" };
-$huge            : #{ round($hugeSize * $emSize) / $emSize + "rem" };
-$massive         : #{ round($massiveSize * $emSize) / $emSize + "rem" };
+$mini            : #{ round($mini-size * $base-size) / $base-size + "rem" };
+$tiny            : #{ round($tiny-size * $base-size) / $base-size + "rem" };
+$small           : #{ round($small-size * $base-size) / $base-size + "rem" };
+$medium          : #{ round($medium-size * $base-size) / $base-size + "rem" };
+$large           : #{ round($large-size * $base-size) / $base-size + "rem" };
+$big             : #{ round($big-size * $base-size) / $base-size + "rem" };
+$huge            : #{ round($huge-size * $base-size) / $base-size + "rem" };
+$massive         : #{ round($massive-size * $base-size) / $base-size + "rem" };
 
 /* em */
-$relativeMini    : #{ round($miniSize * $emSize) / $emSize + "em" };
-$relativeTiny    : #{ round($tinySize * $emSize) / $emSize + "em" };
-$relativeSmall   : #{ round($smallSize * $emSize) / $emSize + "em" };
-$relativeMedium  : #{ round($mediumSize * $emSize) / $emSize + "em" };
-$relativeLarge   : #{ round($largeSize * $emSize) / $emSize + "em" };
-$relativeBig     : #{ round($bigSize * $emSize) / $emSize + "em" };
-$relativeHuge    : #{ round($hugeSize * $emSize) / $emSize + "em" };
-$relativeMassive : #{ round($massiveSize * $emSize) / $emSize + "em" };
+$relative-mini: #{ round($mini-size * $base-size) / $base-size + "em" };
+$relative-tiny: #{ round($tiny-size * $base-size) / $base-size + "em" };
+$relative-small: #{ round($small-size * $base-size) / $base-size + "em" };
+$relative-medium: #{ round($medium-size * $base-size) / $base-size + "em" };
+$relative-large: #{ round($large-size * $base-size) / $base-size + "em" };
+$relative-big: #{ round($big-size * $base-size) / $base-size + "em" };
+$relative-huge: #{ round($huge-size * $base-size) / $base-size + "em" };
+$relative-massive: #{ round($massive-size * $base-size) / $base-size + "em" };
 
 /* rem */
-$absoluteMini    : #{ round($miniSize * $emSize) / $emSize + "rem" };
-$absoluteTiny    : #{ round($tinySize * $emSize) / $emSize + "rem" };
-$absoluteSmall   : #{ round($smallSize * $emSize) / $emSize + "rem" };
-$absoluteMedium  : #{ round($mediumSize * $emSize) / $emSize + "rem" };
-$absoluteLarge   : #{ round($largeSize * $emSize) / $emSize + "rem" };
-$absoluteBig     : #{ round($bigSize * $emSize) / $emSize + "rem" };
-$absoluteHuge    : #{ round($hugeSize * $emSize) / $emSize + "rem" };
-$absoluteMassive : #{ round($massiveSize * $emSize) / $emSize + "rem" };
+$absolute-mini: #{ round($mini-size * $base-size) / $base-size + "rem" };
+$absolute-tiny: #{ round($tiny-size * $base-size) / $base-size + "rem" };
+$absolute-small: #{ round($small-size * $base-size) / $base-size + "rem" };
+$absolute-medium: #{ round($medium-size * $base-size) / $base-size + "rem" };
+$absolute-large: #{ round($large-size * $base-size) / $base-size + "rem" };
+$absolute-big: #{ round($big-size * $base-size) / $base-size + "rem" };
+$absolute-huge: #{ round($huge-size * $base-size) / $base-size + "rem" };
+$absolute-massive: #{ round($massive-size * $base-size) / $base-size + "rem" };
 
 /*-------------------
        Icons
 --------------------*/
 
 /* Maximum Glyph Width of Icon */
-$iconWidth : 1.18em;
+$icon-width: 1.18em;
 
 /*-------------------
      Neutral Text
 --------------------*/
 
-$darkTextColor               : rgba(0, 0, 0, 0.85);
-$mutedTextColor              : rgba(0, 0, 0, 0.6);
-$lightTextColor              : rgba(0, 0, 0, 0.4);
+$dark-text-color: rgba(0, 0, 0, 0.85);
+$muted-text-color: rgba(0, 0, 0, 0.6);
+$light-text-color: rgba(0, 0, 0, 0.4);
 
-$unselectedTextColor         : rgba(0, 0, 0, 0.4);
-$hoveredTextColor            : rgba(0, 0, 0, 0.8);
-$pressedTextColor            : rgba(0, 0, 0, 0.9);
-$selectedTextColor           : rgba(0, 0, 0, 0.95);
-$disabledTextColor           : rgba(0, 0, 0, 0.2);
+$unselected-text-color: rgba(0, 0, 0, 0.4);
+$hovered-text-color: rgba(0, 0, 0, 0.8);
+$pressed-text-color: rgba(0, 0, 0, 0.9);
+$selected-text-color: rgba(0, 0, 0, 0.95);
+$disabled-text-color: rgba(0, 0, 0, 0.2);
 
-$invertedTextColor           : rgba(255, 255, 255, 0.9);
-$invertedMutedTextColor      : rgba(255, 255, 255, 0.8);
-$invertedLightTextColor      : rgba(255, 255, 255, 0.7);
-$invertedUnselectedTextColor : rgba(255, 255, 255, 0.5);
-$invertedHoveredTextColor    : rgba(255, 255, 255, 1);
-$invertedPressedTextColor    : rgba(255, 255, 255, 1);
-$invertedSelectedTextColor   : rgba(255, 255, 255, 1);
-$invertedDisabledTextColor   : rgba(255, 255, 255, 0.2);
+$inverted-text-color: rgba(255, 255, 255, 0.9);
+$inverted-muted-text-color: rgba(255, 255, 255, 0.8);
+$inverted-light-text-color: rgba(255, 255, 255, 0.7);
+$inverted-unselected-text-color: rgba(255, 255, 255, 0.5);
+$inverted-hovered-text-color: rgba(255, 255, 255, 1);
+$inverted-pressed-text-color: rgba(255, 255, 255, 1);
+$inverted-selected-text-color: rgba(255, 255, 255, 1);
+$inverted-disabled-text-color: rgba(255, 255, 255, 0.2);
 
 /*-------------------
      Brand Colors
 --------------------*/
 
-$facebookColor   : #3B5998;
-$twitterColor    : #55ACEE;
-$googlePlusColor : #DD4B39;
-$linkedInColor   : #1F88BE;
-$youtubeColor    : #CC181E;
-$pinterestColor  : #BD081C;
-$vkColor         : #4D7198;
-$instagramColor  : #49769C;
+$facebook-color: #3B5998;
+$twitter-color: #55ACEE;
+$google-plus-color: #DD4B39;
+$linked-in-color: #1F88BE;
+$youtube-color: #CC181E;
+$pinterest-color: #BD081C;
+$vk-color: #4D7198;
+$instagram-color: #49769C;
+$shengnian-color: #0760bc;
 
 /*-------------------
       Borders
 --------------------*/
 
-$circularRadius                : 500rem;
+$circular-radius: 500rem;
 
-$borderColor               : rgba(34, 36, 38, 0.15);
-$strongBorderColor         : rgba(34, 36, 38, 0.22);
-$internalBorderColor       : rgba(34, 36, 38, 0.1);
-$selectedBorderColor       : rgba(34, 36, 38, 0.35);
-$strongSelectedBorderColor : rgba(34, 36, 38, 0.5);
-$disabledBorderColor       : rgba(34, 36, 38, 0.5);
+$border-color: rgba(34, 36, 38, 0.15);
+$strong-border-color: rgba(34, 36, 38, 0.22);
+$internal-border-color: rgba(34, 36, 38, 0.1);
+$selected-border-color: rgba(34, 36, 38, 0.35);
+$strong-selected-border-color: rgba(34, 36, 38, 0.5);
+$disabled-border-color: rgba(34, 36, 38, 0.5);
 
-$solidInternalBorderColor  : #FAFAFA;
-$solidBorderColor          : #D4D4D5;
-$solidSelectedBorderColor  : #BCBDBD;
+$solid-internal-border-color: #FAFAFA;
+$solid-border-color: #D4D4D5;
+$solid-selected-border-color: #BCBDBD;
 
-$whiteBorderColor              : rgba(255, 255, 255, 0.1);
-$selectedWhiteBorderColor      : rgba(255, 255, 255, 0.8);
+$white-border-color: rgba(255, 255, 255, 0.1);
+$selected-white-border-color: rgba(255, 255, 255, 0.8);
 
-$solidWhiteBorderColor         : #555555;
-$selectedSolidWhiteBorderColor : #999999;
+$solid-white-border-color: #555555;
+$selected-solid-white-border-color: #999999;
 
 
 /*-------------------
@@ -326,170 +328,170 @@ $selectedSolidWhiteBorderColor : #999999;
 
 */
 
-$_1px  : #{ (1 / $emSize) + "rem" };
-$_2px  : #{ (2 / $emSize) + "rem" };
-$_3px  : #{ (3 / $emSize) + "rem" };
-$_4px  : #{ (4 / $emSize) + "rem" };
-$_5px  : #{ (5 / $emSize) + "rem" };
-$_6px  : #{ (6 / $emSize) + "rem" };
-$_7px  : #{ (7 / $emSize) + "rem" };
-$_8px  : #{ (8 / $emSize) + "rem" };
-$_9px  : #{ (9 / $emSize) + "rem" };
-$_10px : #{ (10 / $emSize) + "rem" };
-$_11px : #{ (11 / $emSize) + "rem" };
-$_12px : #{ (12 / $emSize) + "rem" };
-$_13px : #{ (13 / $emSize) + "rem" };
-$_14px : #{ (14 / $emSize) + "rem" };
-$_15px : #{ (15 / $emSize) + "rem" };
-$_16px : #{ (16 / $emSize) + "rem" };
-$_17px : #{ (17 / $emSize) + "rem" };
-$_18px : #{ (18 / $emSize) + "rem" };
-$_19px : #{ (19 / $emSize) + "rem" };
-$_20px : #{ (20 / $emSize) + "rem" };
-$_21px : #{ (21 / $emSize) + "rem" };
-$_22px : #{ (22 / $emSize) + "rem" };
-$_23px : #{ (23 / $emSize) + "rem" };
-$_24px : #{ (24 / $emSize) + "rem" };
-$_25px : #{ (25 / $emSize) + "rem" };
-$_26px : #{ (26 / $emSize) + "rem" };
-$_27px : #{ (27 / $emSize) + "rem" };
-$_28px : #{ (28 / $emSize) + "rem" };
-$_29px : #{ (29 / $emSize) + "rem" };
-$_30px : #{ (30 / $emSize) + "rem" };
-$_31px : #{ (31 / $emSize) + "rem" };
-$_32px : #{ (32 / $emSize) + "rem" };
-$_33px : #{ (33 / $emSize) + "rem" };
-$_34px : #{ (34 / $emSize) + "rem" };
-$_35px : #{ (35 / $emSize) + "rem" };
-$_36px : #{ (36 / $emSize) + "rem" };
-$_37px : #{ (37 / $emSize) + "rem" };
-$_38px : #{ (38 / $emSize) + "rem" };
-$_39px : #{ (39 / $emSize) + "rem" };
-$_40px : #{ (40 / $emSize) + "rem" };
-$_41px : #{ (41 / $emSize) + "rem" };
-$_42px : #{ (42 / $emSize) + "rem" };
-$_43px : #{ (43 / $emSize) + "rem" };
-$_44px : #{ (44 / $emSize) + "rem" };
-$_45px : #{ (45 / $emSize) + "rem" };
-$_46px : #{ (46 / $emSize) + "rem" };
-$_47px : #{ (47 / $emSize) + "rem" };
-$_48px : #{ (48 / $emSize) + "rem" };
-$_49px : #{ (49 / $emSize) + "rem" };
-$_50px : #{ (50 / $emSize) + "rem" };
-$_51px : #{ (51 / $emSize) + "rem" };
-$_52px : #{ (52 / $emSize) + "rem" };
-$_53px : #{ (53 / $emSize) + "rem" };
-$_54px : #{ (54 / $emSize) + "rem" };
-$_55px : #{ (55 / $emSize) + "rem" };
-$_56px : #{ (56 / $emSize) + "rem" };
-$_57px : #{ (57 / $emSize) + "rem" };
-$_58px : #{ (58 / $emSize) + "rem" };
-$_59px : #{ (59 / $emSize) + "rem" };
-$_60px : #{ (60 / $emSize) + "rem" };
-$_61px : #{ (61 / $emSize) + "rem" };
-$_62px : #{ (62 / $emSize) + "rem" };
-$_63px : #{ (63 / $emSize) + "rem" };
-$_64px : #{ (64 / $emSize) + "rem" };
+$_1px  : #{ (1 / $base-size) + "rem" };
+$_2px  : #{ (2 / $base-size) + "rem" };
+$_3px  : #{ (3 / $base-size) + "rem" };
+$_4px  : #{ (4 / $base-size) + "rem" };
+$_5px  : #{ (5 / $base-size) + "rem" };
+$_6px  : #{ (6 / $base-size) + "rem" };
+$_7px  : #{ (7 / $base-size) + "rem" };
+$_8px  : #{ (8 / $base-size) + "rem" };
+$_9px  : #{ (9 / $base-size) + "rem" };
+$_10px : #{ (10 / $base-size) + "rem" };
+$_11px : #{ (11 / $base-size) + "rem" };
+$_12px : #{ (12 / $base-size) + "rem" };
+$_13px : #{ (13 / $base-size) + "rem" };
+$_14px : #{ (14 / $base-size) + "rem" };
+$_15px : #{ (15 / $base-size) + "rem" };
+$_16px : #{ (16 / $base-size) + "rem" };
+$_17px : #{ (17 / $base-size) + "rem" };
+$_18px : #{ (18 / $base-size) + "rem" };
+$_19px : #{ (19 / $base-size) + "rem" };
+$_20px : #{ (20 / $base-size) + "rem" };
+$_21px : #{ (21 / $base-size) + "rem" };
+$_22px : #{ (22 / $base-size) + "rem" };
+$_23px : #{ (23 / $base-size) + "rem" };
+$_24px : #{ (24 / $base-size) + "rem" };
+$_25px : #{ (25 / $base-size) + "rem" };
+$_26px : #{ (26 / $base-size) + "rem" };
+$_27px : #{ (27 / $base-size) + "rem" };
+$_28px : #{ (28 / $base-size) + "rem" };
+$_29px : #{ (29 / $base-size) + "rem" };
+$_30px : #{ (30 / $base-size) + "rem" };
+$_31px : #{ (31 / $base-size) + "rem" };
+$_32px : #{ (32 / $base-size) + "rem" };
+$_33px : #{ (33 / $base-size) + "rem" };
+$_34px : #{ (34 / $base-size) + "rem" };
+$_35px : #{ (35 / $base-size) + "rem" };
+$_36px : #{ (36 / $base-size) + "rem" };
+$_37px : #{ (37 / $base-size) + "rem" };
+$_38px : #{ (38 / $base-size) + "rem" };
+$_39px : #{ (39 / $base-size) + "rem" };
+$_40px : #{ (40 / $base-size) + "rem" };
+$_41px : #{ (41 / $base-size) + "rem" };
+$_42px : #{ (42 / $base-size) + "rem" };
+$_43px : #{ (43 / $base-size) + "rem" };
+$_44px : #{ (44 / $base-size) + "rem" };
+$_45px : #{ (45 / $base-size) + "rem" };
+$_46px : #{ (46 / $base-size) + "rem" };
+$_47px : #{ (47 / $base-size) + "rem" };
+$_48px : #{ (48 / $base-size) + "rem" };
+$_49px : #{ (49 / $base-size) + "rem" };
+$_50px : #{ (50 / $base-size) + "rem" };
+$_51px : #{ (51 / $base-size) + "rem" };
+$_52px : #{ (52 / $base-size) + "rem" };
+$_53px : #{ (53 / $base-size) + "rem" };
+$_54px : #{ (54 / $base-size) + "rem" };
+$_55px : #{ (55 / $base-size) + "rem" };
+$_56px : #{ (56 / $base-size) + "rem" };
+$_57px : #{ (57 / $base-size) + "rem" };
+$_58px : #{ (58 / $base-size) + "rem" };
+$_59px : #{ (59 / $base-size) + "rem" };
+$_60px : #{ (60 / $base-size) + "rem" };
+$_61px : #{ (61 / $base-size) + "rem" };
+$_62px : #{ (62 / $base-size) + "rem" };
+$_63px : #{ (63 / $base-size) + "rem" };
+$_64px : #{ (64 / $base-size) + "rem" };
 
-$relative1px  : #{ (1 / $emSize) + "em" };
-$relative2px  : #{ (2 / $emSize) + "em" };
-$relative3px  : #{ (3 / $emSize) + "em" };
-$relative4px  : #{ (4 / $emSize) + "em" };
-$relative5px  : #{ (5 / $emSize) + "em" };
-$relative6px  : #{ (6 / $emSize) + "em" };
-$relative7px  : #{ (7 / $emSize) + "em" };
-$relative8px  : #{ (8 / $emSize) + "em" };
-$relative9px  : #{ (9 / $emSize) + "em" };
-$relative10px : #{ (10 / $emSize) + "em" };
-$relative11px : #{ (11 / $emSize) + "em" };
-$relative12px : #{ (12 / $emSize) + "em" };
-$relative13px : #{ (13 / $emSize) + "em" };
-$relative14px : #{ (14 / $emSize) + "em" };
-$relative15px : #{ (15 / $emSize) + "em" };
-$relative16px : #{ (16 / $emSize) + "em" };
-$relative17px : #{ (17 / $emSize) + "em" };
-$relative18px : #{ (18 / $emSize) + "em" };
-$relative19px : #{ (19 / $emSize) + "em" };
-$relative20px : #{ (20 / $emSize) + "em" };
-$relative21px : #{ (21 / $emSize) + "em" };
-$relative22px : #{ (22 / $emSize) + "em" };
-$relative23px : #{ (23 / $emSize) + "em" };
-$relative24px : #{ (24 / $emSize) + "em" };
-$relative25px : #{ (25 / $emSize) + "em" };
-$relative26px : #{ (26 / $emSize) + "em" };
-$relative27px : #{ (27 / $emSize) + "em" };
-$relative28px : #{ (28 / $emSize) + "em" };
-$relative29px : #{ (29 / $emSize) + "em" };
-$relative30px : #{ (30 / $emSize) + "em" };
-$relative31px : #{ (31 / $emSize) + "em" };
-$relative32px : #{ (32 / $emSize) + "em" };
-$relative33px : #{ (33 / $emSize) + "em" };
-$relative34px : #{ (34 / $emSize) + "em" };
-$relative35px : #{ (35 / $emSize) + "em" };
-$relative36px : #{ (36 / $emSize) + "em" };
-$relative37px : #{ (37 / $emSize) + "em" };
-$relative38px : #{ (38 / $emSize) + "em" };
-$relative39px : #{ (39 / $emSize) + "em" };
-$relative40px : #{ (40 / $emSize) + "em" };
-$relative41px : #{ (41 / $emSize) + "em" };
-$relative42px : #{ (42 / $emSize) + "em" };
-$relative43px : #{ (43 / $emSize) + "em" };
-$relative44px : #{ (44 / $emSize) + "em" };
-$relative45px : #{ (45 / $emSize) + "em" };
-$relative46px : #{ (46 / $emSize) + "em" };
-$relative47px : #{ (47 / $emSize) + "em" };
-$relative48px : #{ (48 / $emSize) + "em" };
-$relative49px : #{ (49 / $emSize) + "em" };
-$relative50px : #{ (50 / $emSize) + "em" };
-$relative51px : #{ (51 / $emSize) + "em" };
-$relative52px : #{ (52 / $emSize) + "em" };
-$relative53px : #{ (53 / $emSize) + "em" };
-$relative54px : #{ (54 / $emSize) + "em" };
-$relative55px : #{ (55 / $emSize) + "em" };
-$relative56px : #{ (56 / $emSize) + "em" };
-$relative57px : #{ (57 / $emSize) + "em" };
-$relative58px : #{ (58 / $emSize) + "em" };
-$relative59px : #{ (59 / $emSize) + "em" };
-$relative60px : #{ (60 / $emSize) + "em" };
-$relative61px : #{ (61 / $emSize) + "em" };
-$relative62px : #{ (62 / $emSize) + "em" };
-$relative63px : #{ (63 / $emSize) + "em" };
-$relative64px : #{ (64 / $emSize) + "em" };
+$relative1px  : #{ (1 / $base-size) + "em" };
+$relative2px  : #{ (2 / $base-size) + "em" };
+$relative3px  : #{ (3 / $base-size) + "em" };
+$relative4px  : #{ (4 / $base-size) + "em" };
+$relative5px  : #{ (5 / $base-size) + "em" };
+$relative6px  : #{ (6 / $base-size) + "em" };
+$relative7px  : #{ (7 / $base-size) + "em" };
+$relative8px  : #{ (8 / $base-size) + "em" };
+$relative9px  : #{ (9 / $base-size) + "em" };
+$relative10px : #{ (10 / $base-size) + "em" };
+$relative11px : #{ (11 / $base-size) + "em" };
+$relative12px : #{ (12 / $base-size) + "em" };
+$relative13px : #{ (13 / $base-size) + "em" };
+$relative14px : #{ (14 / $base-size) + "em" };
+$relative15px : #{ (15 / $base-size) + "em" };
+$relative16px : #{ (16 / $base-size) + "em" };
+$relative17px : #{ (17 / $base-size) + "em" };
+$relative18px : #{ (18 / $base-size) + "em" };
+$relative19px : #{ (19 / $base-size) + "em" };
+$relative20px : #{ (20 / $base-size) + "em" };
+$relative21px : #{ (21 / $base-size) + "em" };
+$relative22px : #{ (22 / $base-size) + "em" };
+$relative23px : #{ (23 / $base-size) + "em" };
+$relative24px : #{ (24 / $base-size) + "em" };
+$relative25px : #{ (25 / $base-size) + "em" };
+$relative26px : #{ (26 / $base-size) + "em" };
+$relative27px : #{ (27 / $base-size) + "em" };
+$relative28px : #{ (28 / $base-size) + "em" };
+$relative29px : #{ (29 / $base-size) + "em" };
+$relative30px : #{ (30 / $base-size) + "em" };
+$relative31px : #{ (31 / $base-size) + "em" };
+$relative32px : #{ (32 / $base-size) + "em" };
+$relative33px : #{ (33 / $base-size) + "em" };
+$relative34px : #{ (34 / $base-size) + "em" };
+$relative35px : #{ (35 / $base-size) + "em" };
+$relative36px : #{ (36 / $base-size) + "em" };
+$relative37px : #{ (37 / $base-size) + "em" };
+$relative38px : #{ (38 / $base-size) + "em" };
+$relative39px : #{ (39 / $base-size) + "em" };
+$relative40px : #{ (40 / $base-size) + "em" };
+$relative41px : #{ (41 / $base-size) + "em" };
+$relative42px : #{ (42 / $base-size) + "em" };
+$relative43px : #{ (43 / $base-size) + "em" };
+$relative44px : #{ (44 / $base-size) + "em" };
+$relative45px : #{ (45 / $base-size) + "em" };
+$relative46px : #{ (46 / $base-size) + "em" };
+$relative47px : #{ (47 / $base-size) + "em" };
+$relative48px : #{ (48 / $base-size) + "em" };
+$relative49px : #{ (49 / $base-size) + "em" };
+$relative50px : #{ (50 / $base-size) + "em" };
+$relative51px : #{ (51 / $base-size) + "em" };
+$relative52px : #{ (52 / $base-size) + "em" };
+$relative53px : #{ (53 / $base-size) + "em" };
+$relative54px : #{ (54 / $base-size) + "em" };
+$relative55px : #{ (55 / $base-size) + "em" };
+$relative56px : #{ (56 / $base-size) + "em" };
+$relative57px : #{ (57 / $base-size) + "em" };
+$relative58px : #{ (58 / $base-size) + "em" };
+$relative59px : #{ (59 / $base-size) + "em" };
+$relative60px : #{ (60 / $base-size) + "em" };
+$relative61px : #{ (61 / $base-size) + "em" };
+$relative62px : #{ (62 / $base-size) + "em" };
+$relative63px : #{ (63 / $base-size) + "em" };
+$relative64px : #{ (64 / $base-size) + "em" };
 
 /* Columns */
-$oneWide        : (1 / $columnCount * 100%);
-$twoWide        : (2 / $columnCount * 100%);
-$threeWide      : (3 / $columnCount * 100%);
-$fourWide       : (4 / $columnCount * 100%);
-$fiveWide       : (5 / $columnCount * 100%);
-$sixWide        : (6 / $columnCount * 100%);
-$sevenWide      : (7 / $columnCount * 100%);
-$eightWide      : (8 / $columnCount * 100%);
-$nineWide       : (9 / $columnCount * 100%);
-$tenWide        : (10 / $columnCount * 100%);
-$elevenWide     : (11 / $columnCount * 100%);
-$twelveWide     : (12 / $columnCount * 100%);
-$thirteenWide   : (13 / $columnCount * 100%);
-$fourteenWide   : (14 / $columnCount * 100%);
-$fifteenWide    : (15 / $columnCount * 100%);
-$sixteenWide    : (16 / $columnCount * 100%);
+$one-wide: (1 / $column-count * 100%);
+$two-wide: (2 / $column-count * 100%);
+$three-wide: (3 / $column-count * 100%);
+$four-wide: (4 / $column-count * 100%);
+$five-wide: (5 / $column-count * 100%);
+$six-wide: (6 / $column-count * 100%);
+$seven-wide: (7 / $column-count * 100%);
+$eight-wide: (8 / $column-count * 100%);
+$nine-wide: (9 / $column-count * 100%);
+$ten-wide: (10 / $column-count * 100%);
+$eleven-wide: (11 / $column-count * 100%);
+$twelve-wide: (12 / $column-count * 100%);
+$thirteen-wide: (13 / $column-count * 100%);
+$fourteen-wide: (14 / $column-count * 100%);
+$fifteen-wide: (15 / $column-count * 100%);
+$sixteen-wide: (16 / $column-count * 100%);
 
-$oneColumn      : (1 / 1 * 100%);
-$twoColumn      : (1 / 2 * 100%);
-$threeColumn    : (1 / 3 * 100%);
-$fourColumn     : (1 / 4 * 100%);
-$fiveColumn     : (1 / 5 * 100%);
-$sixColumn      : (1 / 6 * 100%);
-$sevenColumn    : (1 / 7 * 100%);
-$eightColumn    : (1 / 8 * 100%);
-$nineColumn     : (1 / 9 * 100%);
-$tenColumn      : (1 / 10 * 100%);
-$elevenColumn   : (1 / 11 * 100%);
-$twelveColumn   : (1 / 12 * 100%);
-$thirteenColumn : (1 / 13 * 100%);
-$fourteenColumn : (1 / 14 * 100%);
-$fifteenColumn  : (1 / 15 * 100%);
-$sixteenColumn  : (1 / 16 * 100%);
+$one-column: (1 / 1 * 100%);
+$two-column: (1 / 2 * 100%);
+$three-column: (1 / 3 * 100%);
+$four-column: (1 / 4 * 100%);
+$five-column: (1 / 5 * 100%);
+$six-column: (1 / 6 * 100%);
+$seven-column: (1 / 7 * 100%);
+$eight-column: (1 / 8 * 100%);
+$nine-column: (1 / 9 * 100%);
+$ten-column: (1 / 10 * 100%);
+$eleven-column: (1 / 11 * 100%);
+$twelve-column: (1 / 12 * 100%);
+$thirteen-column: (1 / 13 * 100%);
+$fourteen-column: (1 / 14 * 100%);
+$fifteen-column: (1 / 15 * 100%);
+$sixteen-column: (1 / 16 * 100%);
 
 
 /*-------------------
@@ -499,28 +501,28 @@ $sixteenColumn  : (1 / 16 * 100%);
 /* See Power-user section below
    for explanation of $px variables
 */
-$relativeBorderRadius: $relative4px;
-$absoluteBorderRadius: $_4px;
+$relative-border-radius: $relative4px;
+$absolute-border-radius: $_4px;
 
-$defaultBorderRadius: $absoluteBorderRadius;
+$default-border-radius: $absolute-border-radius;
 
 
 /*-------------------
     Brand Colors
 --------------------*/
 
-$primaryColor        : $blue;
-$secondaryColor      : $black;
+$primary-color: $blue;
+$secondary-color: $black;
 
-$lightPrimaryColor   : $lightBlue;
-$lightSecondaryColor : $lightBlack;
+$light-primary-color: $light-blue;
+$light-secondary-color: $light-black;
 
 /*--------------
   Page Heading
 ---------------*/
 
-$headerFontWeight : bold;
-$headerLineHeight : #{(18 / 14) + "em"};
+$header-font-weight: bold;
+$header-line-height: #{(18 / 14) + "em"};
 
 $h1 : #{(28 / 14) + "rem"};
 $h2 : #{(24 / 14) + "rem"};
@@ -532,179 +534,179 @@ $h5 : #{(14 / 14) + "rem"};
         Page
 --------------------*/
 
-$pageBackground      : #FFFFFF;
-$pageOverflowX       : hidden;
+$page-background: #FFFFFF;
+$page-overflow-x: hidden;
 
-$lineHeight          : 1.4285em;
-$textColor           : rgba(0, 0, 0, 0.87);
+$line-height: 1.4285em;
+$text-color: rgba(0, 0, 0, 0.87);
 
 /*--------------
    Form Input
 ---------------*/
 
 /* This adjusts the default form input across all elements */
-$inputBackground        : $white;
-$inputVerticalPadding   : $relative11px;
-$inputHorizontalPadding : $relative14px;
-$inputPadding           : $inputVerticalPadding $inputHorizontalPadding;
+$input-background: $white;
+$input-vertical-padding: $relative11px;
+$input-horizontal-padding: $relative14px;
+$input-padding: $input-vertical-padding $input-horizontal-padding;
 
 /* Input Text Color */
-$inputColor: $textColor;
-$inputPlaceholderColor: lighten($inputColor, 75);
-$inputPlaceholderFocusColor: lighten($inputColor, 45);
+$input-color: $text-color;
+$input-placeholder-color: lighten($input-color, 75);
+$input-placeholder-focus-color: lighten($input-color, 45);
 
 /* Line Height Default For Inputs in Browser (Descendors are 17px at 14px base em) */
-$inputLineHeight: #{(17 / 14) + "em"};
+$input-line-height: #{(17 / 14) + "em"};
 
 /*-------------------
     Focused Input
 --------------------*/
 
 /* Used on inputs, textarea etc */
-$focusedFormBorderColor: #85B7D9;
+$focused-form-border-color: #85B7D9;
 
 /* Used on dropdowns, other larger blocks */
-$focusedFormMutedBorderColor: #96C8DA;
+$focused-form-muted-border-color: #96C8DA;
 
 
 /*-------------------
       Paragraph
 --------------------*/
 
-$paragraphMargin     : 0 0 1em;
-$paragraphLineHeight : $lineHeight;
+$paragraph-margin: 0 0 1em;
+$paragraph-line-height: $line-height;
 
 /*-------------------
        Links
 --------------------*/
 
-$linkColor           : #4183C4;
-$linkUnderline       : none;
-$linkHoverColor      : darken(saturate($linkColor, 20), 15);
-$linkHoverUnderline  : $linkUnderline;
+$link-color: #4183C4;
+$link-underline: none;
+$link-hover-color: darken(saturate($link-color, 20), 15);
+$link-hover-underline: $link-underline;
 
 /*-------------------
     Scroll Bars
 --------------------*/
 
-$useCustomScrollbars: true;
+$use-custom-scrollbars: true;
 
-$customScrollbarWidth: 10px;
+$custom-scrollbar-width: 10px;
 
-$trackBackground: rgba(0, 0, 0, 0.1);
-$trackBorderRadius: 0;
+$track-background: rgba(0, 0, 0, 0.1);
+$track-border-radius: 0;
 
-$thumbBorderRadius: 5px;
-$thumbBackground: rgba(0, 0, 0, 0.25);
-$thumbTransition: color 0.2s ease;
+$thumb-border-radius: 5px;
+$thumb-background: rgba(0, 0, 0, 0.25);
+$thumb-transition: color 0.2s ease;
 
-$thumbInactiveBackground: rgba(0, 0, 0, 0.15);
-$thumbHoverBackground: rgba(128, 135, 139, 0.8);
+$thumb-inactive-background: rgba(0, 0, 0, 0.15);
+$thumb-hover-background: rgba(128, 135, 139, 0.8);
 
 /* Inverted */
-$trackInvertedBackground: rgba(255, 255, 255, 0.1);
-$thumbInvertedBackground: rgba(255, 255, 255, 0.25);
-$thumbInvertedInactiveBackground: rgba(255, 255, 255, 0.15);
-$thumbInvertedHoverBackground: rgba(255, 255, 255, 0.35);
+$track-inverted-background: rgba(255, 255, 255, 0.1);
+$thumb-inverted-background: rgba(255, 255, 255, 0.25);
+$thumb-inverted-inactive-background: rgba(255, 255, 255, 0.15);
+$thumb-inverted-hover-background: rgba(255, 255, 255, 0.35);
 
 /*-------------------
   Highlighted Text
 --------------------*/
 
-$highlightBackground      : #CCE2FF;
-$highlightColor           : $textColor;
+$highlight-background: #CCE2FF;
+$highlight-color: $text-color;
 
-$inputHighlightBackground : rgba(100, 100, 100, 0.4);
-$inputHighlightColor      : $textColor;
+$input-highlight-background: rgba(100, 100, 100, 0.4);
+$input-highlight-color: $text-color;
 
 
 /*-------------------
        Loader
 --------------------*/
 
-$loaderSize              : $relativeBig;
-$loaderSpeed             : 0.6s;
-$loaderLineWidth         : 0.2em;
-$loaderFillColor         : rgba(0, 0, 0, 0.1);
-$loaderLineColor         : $grey;
+$loader-size: $relative-big;
+$loader-speed: 0.6s;
+$loader-line-width: 0.2em;
+$loader-fill-color: rgba(0, 0, 0, 0.1);
+$loader-line-color: $grey;
 
-$invertedLoaderFillColor : rgba(255, 255, 255, 0.15);
-$invertedLoaderLineColor : $white;
+$inverted-loader-fill-color: rgba(255, 255, 255, 0.15);
+$inverted-loader-line-color: $white;
 
 
 /*-------------------
      Transitions
 --------------------*/
 
-$defaultDuration : 0.1s;
-$defaultEasing   : ease;
+$default-duration: 0.1s;
+$default-easing: ease;
 
 /*-------------------
      Breakpoints
 --------------------*/
 
-$mobileBreakpoint            : 320px;
-$tabletBreakpoint            : 768px;
-$computerBreakpoint          : 992px;
-$largeMonitorBreakpoint      : 1200px;
-$widescreenMonitorBreakpoint : 1920px;
+$mobile-breakpoint: 320px;
+$tablet-breakpoint: 768px;
+$computer-breakpoint: 992px;
+$large-monitor-breakpoint: 1200px;
+$widescreen-monitor-breakpoint: 1920px;
 
 /*-------------------
        Accents
 --------------------*/
 
 /* Differentiating Neutrals */
-$subtleGradient: linear-gradient(transparent, $transparentBlack);
+$subtle-gradient: linear-gradient(transparent, $transparent-black);
 
 /* Differentiating Layers */
-$subtleShadow: 0 1px 2px 0 $borderColor;
-$floatingShadow: 0 2px 4px 0 rgba(34, 36, 38, 0.12), 0 2px 10px 0 rgba(34, 36, 38, 0.15);
+$subtle-shadow: 0 1px 2px 0 $border-color;
+$floating-shadow: 0 2px 4px 0 rgba(34, 36, 38, 0.12), 0 2px 10px 0 rgba(34, 36, 38, 0.15);
 
 /*-------------------
     Derived Values
 --------------------*/
 
 /* Loaders Position Offset */
-$loaderOffset : -($loaderSize / 2);
-$loaderMargin : $loaderOffset 0 0 $loaderOffset;
+$loader-offset: -($loader-size / 2);
+$loader-margin: $loader-offset 0 0 $loader-offset;
 
 /* Rendered Scrollbar Width */
-$scrollbarWidth: 17px;
+$scrollbar-width: 17px;
 
 /* Maximum Single Character Glyph Width, aka Capital "W" */
-$glyphWidth: 1.1em;
+$glyph-width: 1.1em;
 
 /* Used to match floats with text */
-$lineHeightOffset       : (($lineHeight - 1em) / 2);
-$headerLineHeightOffset : ($headerLineHeight - 1em) / 2;
+$line-height-offset: (($line-height - 1em) / 2);
+$header-line-height-offset: ($header-line-height - 1em) / 2;
 
 /* Header Spacing */
-$headerTopMargin    : #{"calc(2rem - " + $headerLineHeightOffset + ")"};
-$headerBottomMargin : 1rem;
-$headerMargin       : $headerTopMargin 0 $headerBottomMargin;
+$header-top-margin: #{"calc(2rem - " + $header-line-height-offset + ")"};
+$header-bottom-margin: 1rem;
+$header-margin: $header-top-margin 0 $header-bottom-margin;
 
 /* Minimum Mobile Width */
-$pageMinWidth       : 320px;
+$page-min-width: 320px;
 
 /* Positive / Negative Dupes */
-$successBackgroundColor : $positiveBackgroundColor;
-$successColor           : $positiveColor;
-$successBorderColor     : $positiveBorderColor;
-$successHeaderColor     : $positiveHeaderColor;
-$successTextColor       : $positiveTextColor;
+$success-background-color: $positive-background-color;
+$success-color: $positive-color;
+$success-border-color: $positive-border-color;
+$success-header-color: $positive-header-color;
+$success-text-color: $positive-text-color;
 
-$errorBackgroundColor   : $negativeBackgroundColor;
-$errorColor             : $negativeColor;
-$errorBorderColor       : $negativeBorderColor;
-$errorHeaderColor       : $negativeHeaderColor;
-$errorTextColor         : $negativeTextColor;
+$error-background-color: $negative-background-color;
+$error-color: $negative-color;
+$error-border-color: $negative-border-color;
+$error-header-color: $negative-header-color;
+$error-text-color: $negative-text-color;
 
 
 /* Responsive */
-$largestMobileScreen : ($tabletBreakpoint - 1px);
-$largestTabletScreen : ($computerBreakpoint - 1px);
-$largestSmallMonitor : ($largeMonitorBreakpoint - 1px);
-$largestLargeMonitor : ($widescreenMonitorBreakpoint - 1px);
+$largest-mobile-screen: ($tablet-breakpoint - 1px);
+$largest-tablet-screen: ($computer-breakpoint - 1px);
+$largest-small-monitor: ($large-monitor-breakpoint - 1px);
+$largest-large-monitor: ($widescreen-monitor-breakpoint - 1px);
 
 
 /*******************************
@@ -715,129 +717,130 @@ $largestLargeMonitor : ($widescreenMonitorBreakpoint - 1px);
       Disabled
 --------------------*/
 
-$disabledOpacity: 0.45;
-$disabledTextColor: rgba(40, 40, 40, 0.3);
-$invertedDisabledTextColor: rgba(225, 225, 225, 0.3);
+$disabled-opacity: 0.45;
+$disabled-text-color: rgba(40, 40, 40, 0.3);
+$inverted-disabled-text-color: rgba(225, 225, 225, 0.3);
 
 /*-------------------
         Hover
 --------------------*/
 
 /*---  Shadows  ---*/
-$floatingShadowHover: 0 2px 4px 0 rgba(34, 36, 38, 0.15), 0 2px 10px 0 rgba(34, 36, 38, 0.25)
-;
+$floating-shadow-hover: 0 2px 4px 0 rgba(34, 36, 38, 0.15), 0 2px 10px 0 rgba(34, 36, 38, 0.25);
 
 /*---  Colors  ---*/
-$primaryColorHover    : saturate(darken($primaryColor, 5), 10);
-$secondaryColorHover  : saturate(lighten($secondaryColor, 5), 10);
+$primary-color-hover: saturate(darken($primary-color, 5), 10);
+$secondary-color-hover  : saturate(lighten($secondary-color, 5), 10);
 
-$redHover             : saturate(darken($red, 5), 10);
-$orangeHover          : saturate(darken($orange, 5), 10);
-$yellowHover          : saturate(darken($yellow, 5), 10);
-$oliveHover           : saturate(darken($olive, 5), 10);
-$greenHover           : saturate(darken($green, 5), 10);
-$tealHover            : saturate(darken($teal, 5), 10);
-$blueHover            : saturate(darken($blue, 5), 10);
-$violetHover          : saturate(darken($violet, 5), 10);
-$purpleHover          : saturate(darken($purple, 5), 10);
-$pinkHover            : saturate(darken($pink, 5), 10);
-$brownHover           : saturate(darken($brown, 5), 10);
+$red-hover: saturate(darken($red, 5), 10);
+$orange-hover: saturate(darken($orange, 5), 10);
+$yellow-hover: saturate(darken($yellow, 5), 10);
+$olive-hover: saturate(darken($olive, 5), 10);
+$green-hover: saturate(darken($green, 5), 10);
+$teal-hover: saturate(darken($teal, 5), 10);
+$blue-hover: saturate(darken($blue, 5), 10);
+$violet-hover: saturate(darken($violet, 5), 10);
+$purple-hover: saturate(darken($purple, 5), 10);
+$pink-hover: saturate(darken($pink, 5), 10);
+$brown-hover: saturate(darken($brown, 5), 10);
 
-$lightRedHover        : saturate(darken($lightRed, 5), 10);
-$lightOrangeHover     : saturate(darken($lightOrange, 5), 10);
-$lightYellowHover     : saturate(darken($lightYellow, 5), 10);
-$lightOliveHover      : saturate(darken($lightOlive, 5), 10);
-$lightGreenHover      : saturate(darken($lightGreen, 5), 10);
-$lightTealHover       : saturate(darken($lightTeal, 5), 10);
-$lightBlueHover       : saturate(darken($lightBlue, 5), 10);
-$lightVioletHover     : saturate(darken($lightViolet, 5), 10);
-$lightPurpleHover     : saturate(darken($lightPurple, 5), 10);
-$lightPinkHover       : saturate(darken($lightPink, 5), 10);
-$lightBrownHover      : saturate(darken($lightBrown, 5), 10);
-$lightGreyHover       : saturate(darken($lightGrey, 5), 10);
-$lightBlackHover      : saturate(darken($fullBlack, 5), 10);
+$light-red-hover: saturate(darken($light-red, 5), 10);
+$light-orange-hover: saturate(darken($light-orange, 5), 10);
+$light-yellow-hover: saturate(darken($light-yellow, 5), 10);
+$light-olive-hover: saturate(darken($light-olive, 5), 10);
+$light-green-hover: saturate(darken($light-green, 5), 10);
+$light-teal-hover: saturate(darken($light-teal, 5), 10);
+$light-blue-hover: saturate(darken($light-blue, 5), 10);
+$light-violet-hover: saturate(darken($light-violet, 5), 10);
+$light-purple-hover: saturate(darken($light-purple, 5), 10);
+$light-pink-hover: saturate(darken($light-pink, 5), 10);
+$light-brown-hover: saturate(darken($light-brown, 5), 10);
+$light-grey-hover: saturate(darken($light-grey, 5), 10);
+$light-black-hover: saturate(darken($full-black, 5), 10);
 
 /*---  Emotive  ---*/
-$positiveColorHover   : saturate(darken($positiveColor, 5), 10);
-$negativeColorHover   : saturate(darken($negativeColor, 5), 10);
+$positive-color-hover: saturate(darken($positive-color, 5), 10);
+$negative-color-hover: saturate(darken($negative-color, 5), 10);
 
 /*---  Brand   ---*/
-$facebookHoverColor   : saturate(darken($facebookColor, 5), 10);
-$twitterHoverColor    : saturate(darken($twitterColor, 5), 10);
-$googlePlusHoverColor : saturate(darken($googlePlusColor, 5), 10);
-$linkedInHoverColor   : saturate(darken($linkedInColor, 5), 10);
-$youtubeHoverColor    : saturate(darken($youtubeColor, 5), 10);
-$instagramHoverColor  : saturate(darken($instagramColor, 5), 10);
-$pinterestHoverColor  : saturate(darken($pinterestColor, 5), 10);
-$vkHoverColor         : saturate(darken($vkColor, 5), 10);
+$facebook-hover-color: saturate(darken($facebook-color, 5), 10);
+$twitter-hover-color: saturate(darken($twitter-color, 5), 10);
+$google-plus-hover-color: saturate(darken($google-plus-color, 5), 10);
+$linked-in-hover-color: saturate(darken($linked-in-color, 5), 10);
+$youtube-hover-color: saturate(darken($youtube-color, 5), 10);
+$instagram-hover-color: saturate(darken($instagram-color, 5), 10);
+$pinterest-hover-color: saturate(darken($pinterest-color, 5), 10);
+$vk-hover-color: saturate(darken($vk-color, 5), 10);
+$shengnian-hover-color: saturate(darken($shengnian-color, 5), 10);
 
 /*---  Dark Tones  ---*/
-$fullBlackHover       : lighten($fullBlack, 5);
-$blackHover           : lighten($black, 5);
-$greyHover            : lighten($grey, 5);
+$full-black-hover: lighten($full-black, 5);
+$black-hover: lighten($black, 5);
+$grey-hover: lighten($grey, 5);
 
 /*---  Light Tones  ---*/
-$whiteHover           : darken($white, 5);
-$offWhiteHover        : darken($offWhite, 5);
-$darkWhiteHover       : darken($darkWhite, 5);
+$white-hover: darken($white, 5);
+$off-white-hover: darken($off-white, 5);
+$dark-white-hover: darken($dark-white, 5);
 
 /*-------------------
         Focus
 --------------------*/
 
 /*---  Colors  ---*/
-$primaryColorFocus    : saturate(darken($primaryColor, 8), 20);
-$secondaryColorFocus  : saturate(lighten($secondaryColor, 8), 20);
+$primary-color-focus: saturate(darken($primary-color, 8), 20);
+$secondary-color-focus: saturate(lighten($secondary-color, 8), 20);
 
-$redFocus             : saturate(darken($red, 8), 20);
-$orangeFocus          : saturate(darken($orange, 8), 20);
-$yellowFocus          : saturate(darken($yellow, 8), 20);
-$oliveFocus           : saturate(darken($olive, 8), 20);
-$greenFocus           : saturate(darken($green, 8), 20);
-$tealFocus            : saturate(darken($teal, 8), 20);
-$blueFocus            : saturate(darken($blue, 8), 20);
-$violetFocus          : saturate(darken($violet, 8), 20);
-$purpleFocus          : saturate(darken($purple, 8), 20);
-$pinkFocus            : saturate(darken($pink, 8), 20);
-$brownFocus           : saturate(darken($brown, 8), 20);
+$red-focus: saturate(darken($red, 8), 20);
+$orange-focus: saturate(darken($orange, 8), 20);
+$yellow-focus: saturate(darken($yellow, 8), 20);
+$olive-focus: saturate(darken($olive, 8), 20);
+$green-focus: saturate(darken($green, 8), 20);
+$teal-focus: saturate(darken($teal, 8), 20);
+$blue-focus: saturate(darken($blue, 8), 20);
+$violet-focus: saturate(darken($violet, 8), 20);
+$purple-focus: saturate(darken($purple, 8), 20);
+$pink-focus: saturate(darken($pink, 8), 20);
+$brown-focus: saturate(darken($brown, 8), 20);
 
-$lightRedFocus        : saturate(darken($lightRed, 8), 20);
-$lightOrangeFocus     : saturate(darken($lightOrange, 8), 20);
-$lightYellowFocus     : saturate(darken($lightYellow, 8), 20);
-$lightOliveFocus      : saturate(darken($lightOlive, 8), 20);
-$lightGreenFocus      : saturate(darken($lightGreen, 8), 20);
-$lightTealFocus       : saturate(darken($lightTeal, 8), 20);
-$lightBlueFocus       : saturate(darken($lightBlue, 8), 20);
-$lightVioletFocus     : saturate(darken($lightViolet, 8), 20);
-$lightPurpleFocus     : saturate(darken($lightPurple, 8), 20);
-$lightPinkFocus       : saturate(darken($lightPink, 8), 20);
-$lightBrownFocus      : saturate(darken($lightBrown, 8), 20);
-$lightGreyFocus       : saturate(darken($lightGrey, 8), 20);
-$lightBlackFocus      : saturate(darken($fullBlack, 8), 20);
+$light-red-focus: saturate(darken($light-red, 8), 20);
+$light-orange-focus: saturate(darken($light-orange, 8), 20);
+$light-yellow-focus: saturate(darken($light-yellow, 8), 20);
+$light-olive-focus: saturate(darken($light-olive, 8), 20);
+$light-green-focus: saturate(darken($light-green, 8), 20);
+$light-teal-focus: saturate(darken($light-teal, 8), 20);
+$light-blue-focus: saturate(darken($light-blue, 8), 20);
+$light-violet-focus: saturate(darken($light-violet, 8), 20);
+$light-purple-focus: saturate(darken($light-purple, 8), 20);
+$light-pink-focus: saturate(darken($light-pink, 8), 20);
+$light-brown-focus: saturate(darken($light-brown, 8), 20);
+$light-grey-focus: saturate(darken($light-grey, 8), 20);
+$light-black-focus: saturate(darken($full-black, 8), 20);
 
 /*---  Emotive  ---*/
-$positiveColorFocus   : saturate(darken($positiveColor, 8), 20);
-$negativeColorFocus   : saturate(darken($negativeColor, 8), 20);
+$positive-color-focus: saturate(darken($positive-color, 8), 20);
+$negative-color-focus: saturate(darken($negative-color, 8), 20);
 
 /*---  Brand   ---*/
-$facebookFocusColor   : saturate(darken($facebookColor, 8), 20);
-$twitterFocusColor    : saturate(darken($twitterColor, 8), 20);
-$googlePlusFocusColor : saturate(darken($googlePlusColor, 8), 20);
-$linkedInFocusColor   : saturate(darken($linkedInColor, 8), 20);
-$youtubeFocusColor    : saturate(darken($youtubeColor, 8), 20);
-$instagramFocusColor  : saturate(darken($instagramColor, 8), 20);
-$pinterestFocusColor  : saturate(darken($pinterestColor, 8), 20);
-$vkFocusColor         : saturate(darken($vkColor, 8), 20);
+$facebook-focus-color: saturate(darken($facebook-color, 8), 20);
+$twitter-focus-color: saturate(darken($twitter-color, 8), 20);
+$google-plus-focus-color: saturate(darken($google-plus-color, 8), 20);
+$linked-in-focus-color: saturate(darken($linked-in-color, 8), 20);
+$youtube-focus-color: saturate(darken($youtube-color, 8), 20);
+$instagram-focus-color: saturate(darken($instagram-color, 8), 20);
+$pinterest-focus-color: saturate(darken($pinterest-color, 8), 20);
+$vk-focus-color: saturate(darken($vk-color, 8), 20);
+$shengnian-focus-color: saturate(darken($shengnian-color, 8), 20);
 
 /*---  Dark Tones  ---*/
-$fullBlackFocus       : lighten($fullBlack, 8);
-$blackFocus           : lighten($black, 8);
-$greyFocus            : lighten($grey, 8);
+$full-black-focus: lighten($full-black, 8);
+$black-focus: lighten($black, 8);
+$grey-focus: lighten($grey, 8);
 
 /*---  Light Tones  ---*/
-$whiteFocus           : darken($white, 8);
-$offWhiteFocus        : darken($offWhite, 8);
-$darkWhiteFocus       : darken($darkWhite, 8);
+$white-focus: darken($white, 8);
+$off-white-focus: darken($off-white, 8);
+$dark-white-focus: darken($dark-white, 8);
 
 
 /*-------------------
@@ -845,58 +848,59 @@ $darkWhiteFocus       : darken($darkWhite, 8);
 --------------------*/
 
 /*---  Colors  ---*/
-$primaryColorDown    : darken($primaryColor, 10);
-$secondaryColorDown  : lighten($secondaryColor, 10);
+$primary-color-down: darken($primary-color, 10);
+$secondary-color-down: lighten($secondary-color, 10);
 
-$redDown             : darken($red, 10);
-$orangeDown          : darken($orange, 10);
-$yellowDown          : darken($yellow, 10);
-$oliveDown           : darken($olive, 10);
-$greenDown           : darken($green, 10);
-$tealDown            : darken($teal, 10);
-$blueDown            : darken($blue, 10);
-$violetDown          : darken($violet, 10);
-$purpleDown          : darken($purple, 10);
-$pinkDown            : darken($pink, 10);
-$brownDown           : darken($brown, 10);
+$red-down: darken($red, 10);
+$orange-down: darken($orange, 10);
+$yellow-down: darken($yellow, 10);
+$olive-down: darken($olive, 10);
+$green-down: darken($green, 10);
+$teal-down: darken($teal, 10);
+$blue-down: darken($blue, 10);
+$violet-down: darken($violet, 10);
+$purple-down: darken($purple, 10);
+$pink-down: darken($pink, 10);
+$brown-down: darken($brown, 10);
 
-$lightRedDown        : darken($lightRed, 10);
-$lightOrangeDown     : darken($lightOrange, 10);
-$lightYellowDown     : darken($lightYellow, 10);
-$lightOliveDown      : darken($lightOlive, 10);
-$lightGreenDown      : darken($lightGreen, 10);
-$lightTealDown       : darken($lightTeal, 10);
-$lightBlueDown       : darken($lightBlue, 10);
-$lightVioletDown     : darken($lightViolet, 10);
-$lightPurpleDown     : darken($lightPurple, 10);
-$lightPinkDown       : darken($lightPink, 10);
-$lightBrownDown      : darken($lightBrown, 10);
-$lightGreyDown       : darken($lightGrey, 10);
-$lightBlackDown      : darken($fullBlack, 10);
+$light-red-down: darken($light-red, 10);
+$light-orange-down: darken($light-orange, 10);
+$light-yellow-down: darken($light-yellow, 10);
+$light-olive-down: darken($light-olive, 10);
+$light-green-down: darken($light-green, 10);
+$light-teal-down: darken($light-teal, 10);
+$light-blue-down: darken($light-blue, 10);
+$light-violet-down: darken($light-violet, 10);
+$light-purple-down: darken($light-purple, 10);
+$light-pink-down: darken($light-pink, 10);
+$light-brown-down: darken($light-brown, 10);
+$light-grey-down: darken($light-grey, 10);
+$light-black-down: darken($full-black, 10);
 
 /*---  Emotive  ---*/
-$positiveColorDown   : darken($positiveColor, 10);
-$negativeColorDown   : darken($negativeColor, 10);
+$positive-color-down: darken($positive-color, 10);
+$negative-color-down: darken($negative-color, 10);
 
 /*---  Brand   ---*/
-$facebookDownColor   : darken($facebookColor, 10);
-$twitterDownColor    : darken($twitterColor, 10);
-$googlePlusDownColor : darken($googlePlusColor, 10);
-$linkedInDownColor   : darken($linkedInColor, 10);
-$youtubeDownColor    : darken($youtubeColor, 10);
-$instagramDownColor  : darken($instagramColor, 10);
-$pinterestDownColor  : darken($pinterestColor, 10);
-$vkDownColor         : darken($vkColor, 10);
+$facebook-down-color: darken($facebook-color, 10);
+$twitter-down-color: darken($twitter-color, 10);
+$google-plus-down-color: darken($google-plus-color, 10);
+$linked-in-down-color: darken($linked-in-color, 10);
+$youtube-down-color: darken($youtube-color, 10);
+$instagram-down-color: darken($instagram-color, 10);
+$pinterest-down-color: darken($pinterest-color, 10);
+$vk-down-color: darken($vk-color, 10);
+$shengnian-down-color: darken($shengnian-color, 10);
 
 /*---  Dark Tones  ---*/
-$fullBlackDown       : lighten($fullBlack, 10);
-$blackDown           : lighten($black, 10);
-$greyDown            : lighten($grey, 10);
+$full-black-down: lighten($full-black, 10);
+$black-down: lighten($black, 10);
+$grey-down: lighten($grey, 10);
 
 /*---  Light Tones  ---*/
-$whiteDown           : darken($white, 10);
-$offWhiteDown        : darken($offWhite, 10);
-$darkWhiteDown       : darken($darkWhite, 10);
+$white-down: darken($white, 10);
+$off-white-down: darken($off-white, 10);
+$dark-white-down: darken($dark-white, 10);
 
 
 /*-------------------
@@ -904,55 +908,56 @@ $darkWhiteDown       : darken($darkWhite, 10);
 --------------------*/
 
 /*---  Colors  ---*/
-$primaryColorActive    : saturate(darken($primaryColor, 5), 15);
-$secondaryColorActive  : saturate(lighten($secondaryColor, 5), 15);
+$primary-color-active: saturate(darken($primary-color, 5), 15);
+$secondary-color-active: saturate(lighten($secondary-color, 5), 15);
 
-$redActive             : saturate(darken($red, 5), 15);
-$orangeActive          : saturate(darken($orange, 5), 15);
-$yellowActive          : saturate(darken($yellow, 5), 15);
-$oliveActive           : saturate(darken($olive, 5), 15);
-$greenActive           : saturate(darken($green, 5), 15);
-$tealActive            : saturate(darken($teal, 5), 15);
-$blueActive            : saturate(darken($blue, 5), 15);
-$violetActive          : saturate(darken($violet, 5), 15);
-$purpleActive          : saturate(darken($purple, 5), 15);
-$pinkActive            : saturate(darken($pink, 5), 15);
-$brownActive           : saturate(darken($brown, 5), 15);
+$red-active: saturate(darken($red, 5), 15);
+$orange-active: saturate(darken($orange, 5), 15);
+$yellow-active: saturate(darken($yellow, 5), 15);
+$olive-active: saturate(darken($olive, 5), 15);
+$green-active: saturate(darken($green, 5), 15);
+$teal-active: saturate(darken($teal, 5), 15);
+$blue-active: saturate(darken($blue, 5), 15);
+$violet-active: saturate(darken($violet, 5), 15);
+$purple-active: saturate(darken($purple, 5), 15);
+$pink-active: saturate(darken($pink, 5), 15);
+$brown-active: saturate(darken($brown, 5), 15);
 
-$lightRedActive        : saturate(darken($lightRed, 5), 15);
-$lightOrangeActive     : saturate(darken($lightOrange, 5), 15);
-$lightYellowActive     : saturate(darken($lightYellow, 5), 15);
-$lightOliveActive      : saturate(darken($lightOlive, 5), 15);
-$lightGreenActive      : saturate(darken($lightGreen, 5), 15);
-$lightTealActive       : saturate(darken($lightTeal, 5), 15);
-$lightBlueActive       : saturate(darken($lightBlue, 5), 15);
-$lightVioletActive     : saturate(darken($lightViolet, 5), 15);
-$lightPurpleActive     : saturate(darken($lightPurple, 5), 15);
-$lightPinkActive       : saturate(darken($lightPink, 5), 15);
-$lightBrownActive      : saturate(darken($lightBrown, 5), 15);
-$lightGreyActive       : saturate(darken($lightGrey, 5), 15);
-$lightBlackActive      : saturate(darken($fullBlack, 5), 15);
+$light-red-active: saturate(darken($light-red, 5), 15);
+$light-orange-active: saturate(darken($light-orange, 5), 15);
+$light-yellow-active: saturate(darken($light-yellow, 5), 15);
+$light-olive-active: saturate(darken($light-olive, 5), 15);
+$light-green-active: saturate(darken($light-green, 5), 15);
+$light-teal-active: saturate(darken($light-teal, 5), 15);
+$light-blue-active: saturate(darken($light-blue, 5), 15);
+$light-violet-active: saturate(darken($light-violet, 5), 15);
+$light-purple-active: saturate(darken($light-purple, 5), 15);
+$light-pink-active: saturate(darken($light-pink, 5), 15);
+$light-brown-active: saturate(darken($light-brown, 5), 15);
+$light-grey-active: saturate(darken($light-grey, 5), 15);
+$light-black-active: saturate(darken($full-black, 5), 15);
 
 /*---  Emotive  ---*/
-$positiveColorActive   : saturate(darken($positiveColor, 5), 15);
-$negativeColorActive   : saturate(darken($negativeColor, 5), 15);
+$positive-color-active: saturate(darken($positive-color, 5), 15);
+$negative-color-active: saturate(darken($negative-color, 5), 15);
 
 /*---  Brand   ---*/
-$facebookActiveColor   : saturate(darken($facebookColor, 5), 15);
-$twitterActiveColor    : saturate(darken($twitterColor, 5), 15);
-$googlePlusActiveColor : saturate(darken($googlePlusColor, 5), 15);
-$linkedInActiveColor   : saturate(darken($linkedInColor, 5), 15);
-$youtubeActiveColor    : saturate(darken($youtubeColor, 5), 15);
-$instagramActiveColor  : saturate(darken($instagramColor, 5), 15);
-$pinterestActiveColor  : saturate(darken($pinterestColor, 5), 15);
-$vkActiveColor         : saturate(darken($vkColor, 5), 15);
+$facebook-active-color: saturate(darken($facebook-color, 5), 15);
+$twitter-active-color: saturate(darken($twitter-color, 5), 15);
+$google-plus-active-color: saturate(darken($google-plus-color, 5), 15);
+$linked-in-active-color: saturate(darken($linked-in-color, 5), 15);
+$youtube-active-color: saturate(darken($youtube-color, 5), 15);
+$instagram-active-color: saturate(darken($instagram-color, 5), 15);
+$pinterest-active-color: saturate(darken($pinterest-color, 5), 15);
+$vk-active-color: saturate(darken($vk-color, 5), 15);
+$shengnian-active-color: saturate(darken($shengnian-color, 5), 15);
 
 /*---  Dark Tones  ---*/
-$fullBlackActive       : darken($fullBlack, 5);
-$blackActive           : darken($black, 5);
-$greyActive            : darken($grey, 5);
+$full-black-active: darken($full-black, 5);
+$black-active: darken($black, 5);
+$grey-active: darken($grey, 5);
 
 /*---  Light Tones  ---*/
-$whiteActive           : darken($white, 5);
-$offWhiteActive        : darken($offWhite, 5);
-$darkWhiteActive       : darken($darkWhite, 5);
+$white-active: darken($white, 5);
+$off-white-active: darken($off-white, 5);
+$dark-white-active: darken($dark-white, 5);

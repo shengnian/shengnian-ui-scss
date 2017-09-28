@@ -26,12 +26,12 @@
   display: inline-flex;
   flex-direction: row;
   align-items: stretch;
-  margin: $stepStepMargin;
-  background: $stepStepsBackground;
-  box-shadow: $stepStepsBoxShadow;
-  line-height: $stepLineHeight;
-  border-radius: $stepStepsBorderRadius;
-  border: $stepStepsBorder;
+  margin: $step-step-margin;
+  background: $step-steps-background;
+  box-shadow: $step-steps-box-shadow;
+  line-height: $step-line-height;
+  border-radius: $step-steps-border-radius;
+  border: $step-steps-border;
 }
 
 /* First Steps */
@@ -57,17 +57,17 @@
   flex-direction: row;
   vertical-align: middle;
   align-items: center;
-  justify-content: $stepJustifyContent;
+  justify-content: $step-justify-content;
 
-  margin: $stepVerticalMargin $stepHorizontalMargin;
-  padding: $stepVerticalPadding $stepHorizontalPadding;
-  background: $stepBackground;
-  color: $stepTextColor;
-  box-shadow: $stepBoxShadow;
-  border-radius: $stepBorderRadius;
-  border: $stepBorder;
-  border-right: $stepDivider;
-  transition: $stepTransition;
+  margin: $step-vertical-margin $step-horizontal-margin;
+  padding: $step-vertical-padding $step-horizontal-padding;
+  background: $step-background;
+  color: $text-color;
+  box-shadow: $step-box-shadow;
+  border-radius: $step-border-radius;
+  border: $step-border;
+  border-right: $step-divider;
+  transition: $step-transition;
 }
 
 /* Arrow */
@@ -76,30 +76,30 @@
   position: absolute;
   z-index: 2;
   content: '';
-  top: $stepArrowTopOffset;
-  right: $stepArrowRightOffset;
+  top: $step-arrow-top-offset;
+  right: $step-arrow-right-offset;
   border: medium none;
-  background-color: $stepArrowBackgroundColor;
-  width: $stepArrowSize;
-  height: $stepArrowSize;
+  background-color: $step-arrow-background-color;
+  width: $step-arrow-size;
+  height: $step-arrow-size;
 
   border-style: solid;
-  border-color: $stepBorderColor;
-  border-width: $stepArrowBorderWidth;
+  border-color: $border-color;
+  border-width: $step-arrow-border-width;
 
-  transition: $stepTransition;
+  transition: $step-transition;
   transform: translateY(-50%) translateX(50%) rotate(-45deg);
 }
 
 /* First Step */
 .ui.steps .step:first-child {
-  padding-left: $stepHorizontalPadding;
-  border-radius: $stepStepsBorderRadius 0 0 $stepStepsBorderRadius;
+  padding-left: $step-horizontal-padding;
+  border-radius: $step-steps-border-radius 0 0 $step-steps-border-radius;
 }
 
 /* Last Step */
 .ui.steps .step:last-child {
-  border-radius: 0 $stepStepsBorderRadius $stepStepsBorderRadius 0;
+  border-radius: 0 $step-steps-border-radius $step-steps-border-radius 0;
 }
 .ui.steps .step:last-child {
   border-right: none;
@@ -108,7 +108,7 @@
 
 /* Only Step */
 .ui.steps .step:only-child {
-  border-radius: $stepStepsBorderRadius;
+  border-radius: $step-steps-border-radius;
 }
 
 
@@ -118,9 +118,9 @@
 
 /* Title */
 .ui.steps .step .title {
-  font-family: $stepTitleFontFamily;
-  font-size: $stepTitleFontSize;
-  font-weight: $stepTitleFontWeight;
+  font-family: $step-title-font-family;
+  font-size: $step-title-font-size;
+  font-weight: $step-title-font-weight;
 }
 .ui.steps .step > .title {
   width: 100%;
@@ -128,28 +128,28 @@
 
 /* Description */
 .ui.steps .step .description {
-  font-weight: $stepDescriptionFontWeight;
-  font-size: $stepDescriptionFontSize;
-  color: $stepDescriptionColor;
+  font-weight: $step-description-font-weight;
+  font-size: $step-description-font-size;
+  color: $step-description-color;
 }
 .ui.steps .step > .description {
   width: 100%;
 }
 .ui.steps .step .title ~ .description {
-  margin-top: $stepDescriptionDistance;
+  margin-top: $step-description-distance;
 }
 
 /* Icon */
 .ui.steps .step > .icon {
   line-height: 1;
-  font-size: $stepIconSize;
-  margin: 0 $stepIconDistance 0 0;
+  font-size: $step-icon-size;
+  margin: 0 $step-icon-distance 0 0;
 }
 .ui.steps .step > .icon,
 .ui.steps .step > .icon ~ .content {
   display: block;
   flex: 0 1 auto;
-  align-self: $stepIconAlign;
+  align-self: $step-icon-align;
 }
 .ui.steps .step > .icon ~ .content {
   flex-grow: 1 0 auto;
@@ -184,17 +184,17 @@
   position: static;
   text-align: center;
   content: counters(ordered, ".");
-  align-self: $stepIconAlign;
-  margin-right: $stepIconDistance;
-  font-size: $stepIconSize;
+  align-self: $step-icon-align;
+  margin-right: $step-icon-distance;
+  font-size: $step-icon-size;
   counter-increment: ordered;
-  font-family: $stepOrderedFontFamily;
-  font-weight: $stepOrderedFontWeight;
+  font-family: $step-ordered-font-family;
+  font-weight: $step-ordered-font-weight;
 }
 
 .ui.ordered.steps .step > * {
   display: block;
-  align-self: $stepIconAlign;
+  align-self: $step-icon-align;
 }
 /*--------------
     Vertical
@@ -207,50 +207,50 @@
 }
 .ui.vertical.steps .step {
   justify-content: flex-start;
-  border-radius: $stepBorderRadius;
-  padding: $stepVerticalPadding $stepHorizontalPadding;
+  border-radius: $step-border-radius;
+  padding: $step-vertical-padding $step-horizontal-padding;
   border-right: none;
-  border-bottom: $stepVerticalDivider;
+  border-bottom: $step-vertical-divider;
 }
 .ui.vertical.steps .step:first-child {
-  padding: $stepVerticalPadding $stepHorizontalPadding;
-  border-radius: $stepStepsBorderRadius $stepStepsBorderRadius 0 0;
+  padding: $step-vertical-padding $step-horizontal-padding;
+  border-radius: $step-steps-border-radius $step-steps-border-radius 0 0;
 }
 .ui.vertical.steps .step:last-child {
   border-bottom: none;
-  border-radius: 0 0 $stepStepsBorderRadius $stepStepsBorderRadius;
+  border-radius: 0 0 $step-steps-border-radius $step-steps-border-radius;
 }
 .ui.vertical.steps .step:only-child {
-  border-radius: $stepStepsBorderRadius;
+  border-radius: $step-steps-border-radius;
 }
 /* Arrow */
 .ui.vertical.steps .step:after {
   display: none;
 }
 .ui.vertical.steps .step:after {
-  top: $stepVerticalArrowTopOffset;
-  right: $stepVerticalArrowRightOffset;
-  border-width: $stepVerticalArrowBorderWidth;
+  top: $step-vertical-arrow-top-offset;
+  right: $step-vertical-arrow-right-offset;
+  border-width: $step-vertical-arrow-border-width;
 }
 
 .ui.vertical.steps .step:after {
-  display: $stepVerticalArrowDisplay;
+  display: $step-vertical-arrow-display;
 }
 .ui.vertical.steps .active.step:after {
-  display: $stepVerticalActiveArrowDisplay;
+  display: $step-vertical-active-arrow-display;
 }
 .ui.vertical.steps .step:last-child:after {
-  display: $stepVerticalLastArrowDisplay;
+  display: $step-vertical-last-arrow-display;
 }
 .ui.vertical.steps .active.step:last-child:after {
-  display: $stepVerticalActiveLastArrowDisplay;
+  display: $step-vertical-active-last-arrow-display;
 }
 /*---------------
     Responsive
 ----------------*/
 
 /* Mobile (Default) */
-@media only screen and (max-width: ($stepLargestMobileScreen)) {
+@media only screen and (max-width: ($largest-mobile-screen)) {
 
   .ui.steps:not(.unstackable) {
     display: inline-flex;
@@ -260,15 +260,15 @@
   .ui.steps:not(.unstackable) .step {
     width: 100% !important;
     flex-direction: column;
-    border-radius: $stepBorderRadius;
-    padding: $stepVerticalPadding $stepHorizontalPadding;
+    border-radius: $step-border-radius;
+    padding: $step-vertical-padding $step-horizontal-padding;
   }
   .ui.steps:not(.unstackable) .step:first-child {
-    padding: $stepVerticalPadding $stepHorizontalPadding;
-    border-radius: $stepStepsBorderRadius $stepStepsBorderRadius 0 0;
+    padding: $step-vertical-padding $step-horizontal-padding;
+    border-radius: $step-steps-border-radius $step-steps-border-radius 0 0;
   }
   .ui.steps:not(.unstackable) .step:last-child {
-    border-radius: 0 0 $stepStepsBorderRadius $stepStepsBorderRadius;
+    border-radius: 0 0 $step-steps-border-radius $step-steps-border-radius;
   }
 
   /* Arrow */
@@ -284,7 +284,7 @@
   /* Icon */
   .ui.steps:not(.unstackable) .step > .icon,
   .ui.ordered.steps:not(.unstackable) .step:before {
-    margin: 0 0 $stepMobileIconDistance 0;
+    margin: 0 0 $step-mobile-icon-distance 0;
   }
 
 }
@@ -300,8 +300,8 @@
 .ui.steps .link.step:hover,
 .ui.steps a.step:hover::after,
 .ui.steps a.step:hover {
-  background: $stepHoverBackground;
-  color: $stepHoverColor;
+  background: $step-hover-background;
+  color: $step-hover-color;
 }
 
 /* Link Down */
@@ -309,38 +309,38 @@
 .ui.steps .link.step:active,
 .ui.steps a.step:active::after,
 .ui.steps a.step:active {
-  background: $stepDownBackground;
-  color: $stepDownColor;
+  background: $step-down-background;
+  color: $step-down-color;
 }
 
 /* Active */
 .ui.steps .step.active {
   cursor: auto;
-  background: $stepActiveBackground;
+  background: $step-active-background;
 }
 .ui.steps .step.active:after {
-  background: $stepActiveBackground;
+  background: $step-active-background;
 }
 .ui.steps .step.active .title {
-  color: $stepActiveColor;
+  color: $step-active-color;
 }
 .ui.ordered.steps .step.active:before,
 .ui.steps .active.step .icon {
-  color: $stepActiveIconColor;
+  color: $step-active-icon-color;
 }
 
 /* Active Arrow */
 .ui.steps .step:after {
-  display: $stepArrowDisplay;
+  display: $step-arrow-display;
 }
 .ui.steps .active.step:after {
-  display: $stepActiveArrowDisplay;
+  display: $step-active-arrow-display;
 }
 .ui.steps .step:last-child:after {
-  display: $stepLastArrowDisplay;
+  display: $step-last-arrow-display;
 }
 .ui.steps .active.step:last-child:after {
-  display: $stepActiveLastArrowDisplay;
+  display: $step-active-last-arrow-display;
 }
 
 /* Active Hover */
@@ -349,29 +349,29 @@
 .ui.steps a.active.step:hover::after,
 .ui.steps a.active.step:hover {
   cursor: pointer;
-  background: $stepActiveHoverBackground;
-  color: $stepActiveHoverColor;
+  background: $step-active-hover-background;
+  color: $step-active-hover-color;
 }
 
 /* Completed */
 .ui.steps .step.completed > .icon:before,
 .ui.ordered.steps .step.completed:before {
-  color: $stepCompletedColor;
+  color: $step-completed-color;
 }
 
 /* Disabled */
 .ui.steps .disabled.step {
   cursor: auto;
-  background: $stepDisabledBackground;
+  background: $step-disabled-background;
   pointer-events: none;
 }
 .ui.steps .disabled.step,
 .ui.steps .disabled.step .title,
 .ui.steps .disabled.step .description {
-  color: $stepDisabledColor;
+  color: $step-disabled-color;
 }
 .ui.steps .disabled.step:after {
-  background: $stepDisabledBackground;
+  background: $step-disabled-background;
 }
 
 
@@ -383,7 +383,7 @@
 ---------------*/
 
 /* Tablet Or Below */
-@media only screen and (max-width: $stepLargestTabletScreen) {
+@media only screen and (max-width: $largest-tablet-screen) {
 
 .ui[class*="tablet stackable"].steps {
   display: inline-flex;
@@ -394,15 +394,15 @@
 /* Steps */
 .ui[class*="tablet stackable"].steps .step {
   flex-direction: column;
-  border-radius: $stepBorderRadius;
-  padding: $stepVerticalPadding $stepHorizontalPadding;
+  border-radius: $step-border-radius;
+  padding: $step-vertical-padding $step-horizontal-padding;
 }
 .ui[class*="tablet stackable"].steps .step:first-child {
-  padding: $stepVerticalPadding $stepHorizontalPadding;
-  border-radius: $stepStepsBorderRadius $stepStepsBorderRadius 0 0;
+  padding: $step-vertical-padding $step-horizontal-padding;
+  border-radius: $step-steps-border-radius $step-steps-border-radius 0 0;
 }
 .ui[class*="tablet stackable"].steps .step:last-child {
-  border-radius: 0 0 $stepStepsBorderRadius $stepStepsBorderRadius;
+  border-radius: 0 0 $step-steps-border-radius $step-steps-border-radius;
 }
 
 /* Arrow */
@@ -418,7 +418,7 @@
 /* Icon */
 .ui[class*="tablet stackable"].steps .step > .icon,
 .ui[class*="tablet stackable"].ordered.steps .step:before {
-  margin: 0 0 $stepMobileIconDistance 0;
+  margin: 0 0 $step-mobile-icon-distance 0;
 }
 
 }
@@ -439,28 +439,28 @@
 
 /* Top */
 .ui.attached.steps {
-  width: $stepAttachedWidth !important;
-  margin: 0 $stepAttachedHorizontalOffset $stepAttachedVerticalOffset;
-  max-width: $stepAttachedWidth;
-  border-radius: $stepStepsBorderRadius $stepStepsBorderRadius 0 0;
+  width: $step-attached-width !important;
+  margin: 0 $step-attached-horizontal-offset $step-attached-vertical-offset;
+  max-width: $step-attached-width;
+  border-radius: $step-steps-border-radius $step-steps-border-radius 0 0;
 }
 .ui.attached.steps .step:first-child {
-  border-radius: $stepStepsBorderRadius 0 0 0;
+  border-radius: $step-steps-border-radius 0 0 0;
 }
 .ui.attached.steps .step:last-child {
-  border-radius: 0 $stepStepsBorderRadius 0 0;
+  border-radius: 0 $step-steps-border-radius 0 0;
 }
 
 /* Bottom */
 .ui.bottom.attached.steps {
-  margin: $stepAttachedVerticalOffset $stepAttachedHorizontalOffset 0;
-  border-radius: 0 0 $stepStepsBorderRadius $stepStepsBorderRadius;
+  margin: $step-attached-vertical-offset $step-attached-horizontal-offset 0;
+  border-radius: 0 0 $step-steps-border-radius $step-steps-border-radius;
 }
 .ui.bottom.attached.steps .step:first-child {
-  border-radius: 0 0 0 $stepStepsBorderRadius;
+  border-radius: 0 0 0 $step-steps-border-radius;
 }
 .ui.bottom.attached.steps .step:last-child {
-  border-radius: 0 0 $stepStepsBorderRadius 0;
+  border-radius: 0 0 $step-steps-border-radius 0;
 }
 
 /*-------------------
@@ -517,34 +517,34 @@
 --------------------*/
 .ui.mini.steps .step,
 .ui.mini.step {
-  font-size: $stepMini;
+  font-size: $mini;
 }
 .ui.tiny.steps .step,
 .ui.tiny.step {
-  font-size: $stepTiny;
+  font-size: $tiny;
 }
 .ui.small.steps .step,
 .ui.small.step {
-  font-size: $stepSmall;
+  font-size: $small;
 }
 .ui.steps .step,
 .ui.step {
-  font-size: $stepMedium;
+  font-size: $medium;
 }
 .ui.large.steps .step,
 .ui.large.step {
-  font-size: $stepLarge;
+  font-size: $large;
 }
 .ui.big.steps .step,
 .ui.big.step {
-  font-size: $stepBig;
+  font-size: $big;
 }
 .ui.huge.steps .step,
 .ui.huge.step {
-  font-size: $stepHuge;
+  font-size: $huge;
 }
 .ui.massive.steps .step,
 .ui.massive.step {
-  font-size: $stepMassive;
+  font-size: $massive;
 }
 

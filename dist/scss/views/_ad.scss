@@ -16,8 +16,8 @@
 
 .ui.ad {
   display: block;
-  overflow: $adOverflow;
-  margin: $adMargin;
+  overflow: $ad-overflow;
+  margin: $ad-margin;
 }
 
 .ui.ad:first-child {
@@ -216,7 +216,7 @@
   display: none;
 }
 
-@media only screen and (max-width : $adLargestMobileScreen) {
+@media only screen and (max-width : $largest-mobile-screen) {
   .ui.mobile.ad {
     display: block;
   }
@@ -234,7 +234,7 @@
 
 .ui.test.ad {
   position: relative;
-  background: $adTestBackground;
+  background: $ad-test-background;
 }
 .ui.test.ad:after {
   position: absolute;
@@ -244,13 +244,13 @@
   text-align: center;
   transform: translateX(-50%) translateY(-50%);
 
-  content: $adTestText;
-  color: $adTestColor;
-  font-size: $adTestFontSize;
-  font-weight: $adTestFontWeight;
+  content: $ad-test-text;
+  color: $ad-test-color;
+  font-size: $ad-test-font-size;
+  font-weight: $ad-test-font-weight;
 }
 .ui.mobile.test.ad:after {
-  font-size: $adTestMobileFontSize;
+  font-size: $ad-test-mobile-font-size;
 }
 .ui.test.ad[data-text]:after {
   content: attr(data-text);

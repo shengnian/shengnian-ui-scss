@@ -15,28 +15,28 @@
 
 .ui.nag {
   display: none;
-  opacity: $nagOpacity;
-  position: $nagPosition;
+  opacity: $nag-opacity;
+  position: $nag-position;
 
-  top: $nagTop;
+  top: $nag-top;
   left: 0;
-  z-index: $nagZIndex;
+  z-index: $nag-zindex;
 
-  min-height: $nagMinHeight;
-  width: $nagWidth;
+  min-height: $nag-min-height;
+  width: $nag-width;
 
-  margin: $nagMargin;
-  padding: $nagPadding;
+  margin: $nag-margin;
+  padding: $nag-padding;
 
-  background: $nagBackground;
-  box-shadow: $nagBoxShadow;
+  background: $nag-background;
+  box-shadow: $nag-box-shadow;
 
-  font-size: $nagFontSize;
-  text-align: $nagTextAlign;
-  color: $nagColor;
+  font-size: $nag-font-size;
+  text-align: $nag-text-align;
+  color: $nag-color;
 
-  border-radius: $nagTopBorderRadius;
-  transition: $nagTransition;
+  border-radius: $nag-top-border-radius;
+  transition: $nag-transition;
 }
 
 a.ui.nag {
@@ -45,22 +45,22 @@ a.ui.nag {
 
 .ui.nag > .title {
   display: inline-block;
-  margin: $nagTitleMargin;
-  color: $nagTitleColor;
+  margin: $nag-title-margin;
+  color: $nag-title-color;
 }
 .ui.nag > .close.icon {
   cursor: pointer;
-  opacity: $nagCloseOpacity;
+  opacity: $nag-close-opacity;
 
   position: absolute;
-  top: $nagCloseTop;
-  right: $nagCloseRight;
+  top: $nag-close-top;
+  right: $nag-close-right;
 
-  font-size: $nagCloseSize;
+  font-size: $nag-close-size;
 
-  margin: $nagCloseMargin;
-  color: $nagCloseColor;
-  transition: $nagCloseTransition;
+  margin: $nag-close-margin;
+  color: $nag-close-color;
+  transition: $nag-close-transition;
 }
 
 
@@ -70,12 +70,12 @@ a.ui.nag {
 
 /* Hover */
 .ui.nag:hover {
-  background: $nagNagHoverBackground;
-  opacity: $nagNagHoverOpacity;
+  background: $nag-nag-hover-background;
+  opacity: $nag-nag-hover-opacity;
 }
 
 .ui.nag .close:hover {
-  opacity: $nagCloseHoverOpacity;
+  opacity: $nag-close-hover-opacity;
 }
 
 
@@ -105,9 +105,9 @@ a.ui.nag {
 
 .ui.bottom.nags,
 .ui.bottom.nag {
-  border-radius: $nagBottomBorderRadius;
+  border-radius: $nag-bottom-border-radius;
   top: auto;
-  bottom: $nagBottom;
+  bottom: $nag-bottom;
 }
 
 /*--------------
@@ -116,14 +116,14 @@ a.ui.nag {
 
 .ui.inverted.nags .nag,
 .ui.inverted.nag {
-  background-color: $nagInvertedBackground;
-  color: $nagDarkTextColor;
+  background-color: $nag-inverted-background;
+  color: $dark-text-color;
 }
 .ui.inverted.nags .nag .close,
 .ui.inverted.nags .nag .title,
 .ui.inverted.nag .close,
 .ui.inverted.nag .title {
-  color: $nagLightTextColor;
+  color: $light-text-color;
 }
 
 
@@ -132,13 +132,13 @@ a.ui.nag {
 *******************************/
 
 .ui.nags .nag {
-  border-radius: $nagGroupedBorderRadius !important;
+  border-radius: $nag-grouped-border-radius !important;
 }
 .ui.nags .nag:last-child {
-  border-radius: $nagTopBorderRadius;
+  border-radius: $nag-top-border-radius;
 }
 .ui.bottom.nags .nag:last-child {
-  border-radius: $nagBottomBorderRadius;
+  border-radius: $nag-bottom-border-radius;
 }
 
 

@@ -1,675 +1,63 @@
-$messageFontName: $fontName;
-$messageFontSmoothing: $fontSmoothing;
-$messageHeaderFont: $headerFont;
-$messagePageFont: $pageFont;
-$messageGoogleFontName: $googleFontName;
-$messageImportGoogleFonts: $importGoogleFonts;
-$messageGoogleFontSizes: $googleFontSizes;
-$messageGoogleSubset: $googleSubset;
-$messageGoogleProtocol: $googleProtocol;
-$messageGoogleFontRequest: $googleFontRequest;
-$messageEmSize: $emSize;
-$messageFontSize: $fontSize;
-$messageRelativeBorderRadius: $relativeBorderRadius;
-$messageAbsoluteBorderRadius: $absoluteBorderRadius;
-$messageDefaultBorderRadius: $defaultBorderRadius;
-$messagePrimaryColor: $primaryColor;
-$messageSecondaryColor: $secondaryColor;
-$messageLightPrimaryColor: $lightPrimaryColor;
-$messageLightSecondaryColor: $lightSecondaryColor;
-$messageHeaderFontWeight: $headerFontWeight;
-$messageHeaderLineHeight: $headerLineHeight;
-$messageH1: $h1;
-$messageH2: $h2;
-$messageH3: $h3;
-$messageH4: $h4;
-$messageH5: $h5;
-$messageInputBackground: $inputBackground;
-$messageInputVerticalPadding: $inputVerticalPadding;
-$messageInputHorizontalPadding: $inputHorizontalPadding;
-$messageInputPadding: $inputPadding;
-$messageInputColor: $inputColor;
-$messageInputPlaceholderColor: $inputPlaceholderColor;
-$messageInputPlaceholderFocusColor: $inputPlaceholderFocusColor;
-$messageInputLineHeight: $inputLineHeight;
-$messageFocusedFormBorderColor: $focusedFormBorderColor;
-$messageFocusedFormMutedBorderColor: $focusedFormMutedBorderColor;
-$messageMiniSize: $miniSize;
-$messageTinySize: $tinySize;
-$messageSmallSize: $smallSize;
-$messageMediumSize: $mediumSize;
-$messageLargeSize: $largeSize;
-$messageBigSize: $bigSize;
-$messageHugeSize: $hugeSize;
-$messageMassiveSize: $massiveSize;
-$messagePageBackground: $pageBackground;
-$messagePageOverflowX: $pageOverflowX;
-$messageLineHeight: $lineHeight;
-$messageTextColor: $textColor;
-$messageParagraphMargin: $paragraphMargin;
-$messageParagraphLineHeight: $paragraphLineHeight;
-$messageLinkColor: $linkColor;
-$messageLinkUnderline: $linkUnderline;
-$messageLinkHoverColor: $linkHoverColor;
-$messageLinkHoverUnderline: $linkHoverUnderline;
-$messageUseCustomScrollbars: $useCustomScrollbars;
-$messageCustomScrollbarWidth: $customScrollbarWidth;
-$messageTrackBackground: $trackBackground;
-$messageTrackBorderRadius: $trackBorderRadius;
-$messageThumbBorderRadius: $thumbBorderRadius;
-$messageThumbBackground: $thumbBackground;
-$messageThumbTransition: $thumbTransition;
-$messageThumbInactiveBackground: $thumbInactiveBackground;
-$messageThumbHoverBackground: $thumbHoverBackground;
-$messageTrackInvertedBackground: $trackInvertedBackground;
-$messageThumbInvertedBackground: $thumbInvertedBackground;
-$messageThumbInvertedInactiveBackground: $thumbInvertedInactiveBackground;
-$messageThumbInvertedHoverBackground: $thumbInvertedHoverBackground;
-$messageHighlightBackground: $highlightBackground;
-$messageHighlightColor: $highlightColor;
-$messageInputHighlightBackground: $inputHighlightBackground;
-$messageInputHighlightColor: $inputHighlightColor;
-$messageLoaderSize: $loaderSize;
-$messageLoaderSpeed: $loaderSpeed;
-$messageLoaderLineWidth: $loaderLineWidth;
-$messageLoaderFillColor: $loaderFillColor;
-$messageLoaderLineColor: $loaderLineColor;
-$messageInvertedLoaderFillColor: $invertedLoaderFillColor;
-$messageInvertedLoaderLineColor: $invertedLoaderLineColor;
-$messageColumnCount: $columnCount;
-$messageDefaultDuration: $defaultDuration;
-$messageDefaultEasing: $defaultEasing;
-$messageMobileBreakpoint: $mobileBreakpoint;
-$messageTabletBreakpoint: $tabletBreakpoint;
-$messageComputerBreakpoint: $computerBreakpoint;
-$messageLargeMonitorBreakpoint: $largeMonitorBreakpoint;
-$messageWidescreenMonitorBreakpoint: $widescreenMonitorBreakpoint;
-$messageRed: $red;
-$messageOrange: $orange;
-$messageYellow: $yellow;
-$messageOlive: $olive;
-$messageGreen: $green;
-$messageTeal: $teal;
-$messageBlue: $blue;
-$messageViolet: $violet;
-$messagePurple: $purple;
-$messagePink: $pink;
-$messageBrown: $brown;
-$messageGrey: $grey;
-$messageBlack: $black;
-$messageLightRed: $lightRed;
-$messageLightOrange: $lightOrange;
-$messageLightYellow: $lightYellow;
-$messageLightOlive: $lightOlive;
-$messageLightGreen: $lightGreen;
-$messageLightTeal: $lightTeal;
-$messageLightBlue: $lightBlue;
-$messageLightViolet: $lightViolet;
-$messageLightPurple: $lightPurple;
-$messageLightPink: $lightPink;
-$messageLightBrown: $lightBrown;
-$messageLightGrey: $lightGrey;
-$messageLightBlack: $lightBlack;
-$messageFullBlack: $fullBlack;
-$messageOffWhite: $offWhite;
-$messageDarkWhite: $darkWhite;
-$messageMidWhite: $midWhite;
-$messageWhite: $white;
-$messageRedBackground: $redBackground;
-$messageOrangeBackground: $orangeBackground;
-$messageYellowBackground: $yellowBackground;
-$messageOliveBackground: $oliveBackground;
-$messageGreenBackground: $greenBackground;
-$messageTealBackground: $tealBackground;
-$messageBlueBackground: $blueBackground;
-$messageVioletBackground: $violetBackground;
-$messagePurpleBackground: $purpleBackground;
-$messagePinkBackground: $pinkBackground;
-$messageBrownBackground: $brownBackground;
-$messageRedHeaderColor: $redHeaderColor;
-$messageOliveHeaderColor: $oliveHeaderColor;
-$messageGreenHeaderColor: $greenHeaderColor;
-$messageYellowHeaderColor: $yellowHeaderColor;
-$messageBlueHeaderColor: $blueHeaderColor;
-$messageTealHeaderColor: $tealHeaderColor;
-$messagePinkHeaderColor: $pinkHeaderColor;
-$messageVioletHeaderColor: $violetHeaderColor;
-$messagePurpleHeaderColor: $purpleHeaderColor;
-$messageOrangeHeaderColor: $orangeHeaderColor;
-$messageBrownHeaderColor: $brownHeaderColor;
-$messageRedTextColor: $redTextColor;
-$messageOrangeTextColor: $orangeTextColor;
-$messageYellowTextColor: $yellowTextColor;
-$messageOliveTextColor: $oliveTextColor;
-$messageGreenTextColor: $greenTextColor;
-$messageTealTextColor: $tealTextColor;
-$messageBlueTextColor: $blueTextColor;
-$messageVioletTextColor: $violetTextColor;
-$messagePurpleTextColor: $purpleTextColor;
-$messagePinkTextColor: $pinkTextColor;
-$messageBrownTextColor: $brownTextColor;
-$messageRedBorderColor: $redBorderColor;
-$messageOrangeBorderColor: $orangeBorderColor;
-$messageYellowBorderColor: $yellowBorderColor;
-$messageOliveBorderColor: $oliveBorderColor;
-$messageGreenBorderColor: $greenBorderColor;
-$messageTealBorderColor: $tealBorderColor;
-$messageBlueBorderColor: $blueBorderColor;
-$messageVioletBorderColor: $violetBorderColor;
-$messagePurpleBorderColor: $purpleBorderColor;
-$messagePinkBorderColor: $pinkBorderColor;
-$messageBrownBorderColor: $brownBorderColor;
-$messageSubtleTransparentBlack: $subtleTransparentBlack;
-$messageTransparentBlack: $transparentBlack;
-$messageStrongTransparentBlack: $strongTransparentBlack;
-$messageVeryStrongTransparentBlack: $veryStrongTransparentBlack;
-$messageSubtleTransparentWhite: $subtleTransparentWhite;
-$messageTransparentWhite: $transparentWhite;
-$messageStrongTransparentWhite: $strongTransparentWhite;
-$messageSubtleGradient: $subtleGradient;
-$messageSubtleShadow: $subtleShadow;
-$messageFloatingShadow: $floatingShadow;
-$messagePositiveColor: $positiveColor;
-$messagePositiveBackgroundColor: $positiveBackgroundColor;
-$messagePositiveBorderColor: $positiveBorderColor;
-$messagePositiveHeaderColor: $positiveHeaderColor;
-$messagePositiveTextColor: $positiveTextColor;
-$messageNegativeColor: $negativeColor;
-$messageNegativeBackgroundColor: $negativeBackgroundColor;
-$messageNegativeBorderColor: $negativeBorderColor;
-$messageNegativeHeaderColor: $negativeHeaderColor;
-$messageNegativeTextColor: $negativeTextColor;
-$messageInfoColor: $infoColor;
-$messageInfoBackgroundColor: $infoBackgroundColor;
-$messageInfoBorderColor: $infoBorderColor;
-$messageInfoHeaderColor: $infoHeaderColor;
-$messageInfoTextColor: $infoTextColor;
-$messageWarningColor: $warningColor;
-$messageWarningBorderColor: $warningBorderColor;
-$messageWarningBackgroundColor: $warningBackgroundColor;
-$messageWarningHeaderColor: $warningHeaderColor;
-$messageWarningTextColor: $warningTextColor;
-$messageImagePath: $imagePath;
-$messageFontPath: $fontPath;
-$messageMini: $mini;
-$messageTiny: $tiny;
-$messageSmall: $small;
-$messageMedium: $medium;
-$messageLarge: $large;
-$messageBig: $big;
-$messageHuge: $huge;
-$messageMassive: $massive;
-$messageRelativeMini: $relativeMini;
-$messageRelativeTiny: $relativeTiny;
-$messageRelativeSmall: $relativeSmall;
-$messageRelativeMedium: $relativeMedium;
-$messageRelativeLarge: $relativeLarge;
-$messageRelativeBig: $relativeBig;
-$messageRelativeHuge: $relativeHuge;
-$messageRelativeMassive: $relativeMassive;
-$messageAbsoluteMini: $absoluteMini;
-$messageAbsoluteTiny: $absoluteTiny;
-$messageAbsoluteSmall: $absoluteSmall;
-$messageAbsoluteMedium: $absoluteMedium;
-$messageAbsoluteLarge: $absoluteLarge;
-$messageAbsoluteBig: $absoluteBig;
-$messageAbsoluteHuge: $absoluteHuge;
-$messageAbsoluteMassive: $absoluteMassive;
-$messageIconWidth: $iconWidth;
-$messageDarkTextColor: $darkTextColor;
-$messageMutedTextColor: $mutedTextColor;
-$messageLightTextColor: $lightTextColor;
-$messageUnselectedTextColor: $unselectedTextColor;
-$messageHoveredTextColor: $hoveredTextColor;
-$messagePressedTextColor: $pressedTextColor;
-$messageSelectedTextColor: $selectedTextColor;
-$messageDisabledTextColor: $disabledTextColor;
-$messageInvertedTextColor: $invertedTextColor;
-$messageInvertedMutedTextColor: $invertedMutedTextColor;
-$messageInvertedLightTextColor: $invertedLightTextColor;
-$messageInvertedUnselectedTextColor: $invertedUnselectedTextColor;
-$messageInvertedHoveredTextColor: $invertedHoveredTextColor;
-$messageInvertedPressedTextColor: $invertedPressedTextColor;
-$messageInvertedSelectedTextColor: $invertedSelectedTextColor;
-$messageInvertedDisabledTextColor: $invertedDisabledTextColor;
-$messageFacebookColor: $facebookColor;
-$messageTwitterColor: $twitterColor;
-$messageGooglePlusColor: $googlePlusColor;
-$messageLinkedInColor: $linkedInColor;
-$messageYoutubeColor: $youtubeColor;
-$messagePinterestColor: $pinterestColor;
-$messageVkColor: $vkColor;
-$messageInstagramColor: $instagramColor;
-$messageCircularRadius: $circularRadius;
-$messageBorderColor: $borderColor;
-$messageStrongBorderColor: $strongBorderColor;
-$messageInternalBorderColor: $internalBorderColor;
-$messageSelectedBorderColor: $selectedBorderColor;
-$messageStrongSelectedBorderColor: $strongSelectedBorderColor;
-$messageDisabledBorderColor: $disabledBorderColor;
-$messageSolidInternalBorderColor: $solidInternalBorderColor;
-$messageSolidBorderColor: $solidBorderColor;
-$messageSolidSelectedBorderColor: $solidSelectedBorderColor;
-$messageWhiteBorderColor: $whiteBorderColor;
-$messageSelectedWhiteBorderColor: $selectedWhiteBorderColor;
-$messageSolidWhiteBorderColor: $solidWhiteBorderColor;
-$messageSelectedSolidWhiteBorderColor: $selectedSolidWhiteBorderColor;
-$messageLoaderOffset: $loaderOffset;
-$messageLoaderMargin: $loaderMargin;
-$messageScrollbarWidth: $scrollbarWidth;
-$messageGlyphWidth: $glyphWidth;
-$messageLineHeightOffset: $lineHeightOffset;
-$messageHeaderLineHeightOffset: $headerLineHeightOffset;
-$messageHeaderTopMargin: $headerTopMargin;
-$messageHeaderBottomMargin: $headerBottomMargin;
-$messageHeaderMargin: $headerMargin;
-$messagePageMinWidth: $pageMinWidth;
-$messageSuccessBackgroundColor: $successBackgroundColor;
-$messageSuccessColor: $successColor;
-$messageSuccessBorderColor: $successBorderColor;
-$messageSuccessHeaderColor: $successHeaderColor;
-$messageSuccessTextColor: $successTextColor;
-$messageErrorBackgroundColor: $errorBackgroundColor;
-$messageErrorColor: $errorColor;
-$messageErrorBorderColor: $errorBorderColor;
-$messageErrorHeaderColor: $errorHeaderColor;
-$messageErrorTextColor: $errorTextColor;
-$messageLargestMobileScreen: $largestMobileScreen;
-$messageLargestTabletScreen: $largestTabletScreen;
-$messageLargestSmallMonitor: $largestSmallMonitor;
-$messageLargestLargeMonitor: $largestLargeMonitor;
-$message1px: $_1px;
-$message2px: $_2px;
-$message3px: $_3px;
-$message4px: $_4px;
-$message5px: $_5px;
-$message6px: $_6px;
-$message7px: $_7px;
-$message8px: $_8px;
-$message9px: $_9px;
-$message10px: $_10px;
-$message11px: $_11px;
-$message12px: $_12px;
-$message13px: $_13px;
-$message14px: $_14px;
-$message15px: $_15px;
-$message16px: $_16px;
-$message17px: $_17px;
-$message18px: $_18px;
-$message19px: $_19px;
-$message20px: $_20px;
-$message21px: $_21px;
-$message22px: $_22px;
-$message23px: $_23px;
-$message24px: $_24px;
-$message25px: $_25px;
-$message26px: $_26px;
-$message27px: $_27px;
-$message28px: $_28px;
-$message29px: $_29px;
-$message30px: $_30px;
-$message31px: $_31px;
-$message32px: $_32px;
-$message33px: $_33px;
-$message34px: $_34px;
-$message35px: $_35px;
-$message36px: $_36px;
-$message37px: $_37px;
-$message38px: $_38px;
-$message39px: $_39px;
-$message40px: $_40px;
-$message41px: $_41px;
-$message42px: $_42px;
-$message43px: $_43px;
-$message44px: $_44px;
-$message45px: $_45px;
-$message46px: $_46px;
-$message47px: $_47px;
-$message48px: $_48px;
-$message49px: $_49px;
-$message50px: $_50px;
-$message51px: $_51px;
-$message52px: $_52px;
-$message53px: $_53px;
-$message54px: $_54px;
-$message55px: $_55px;
-$message56px: $_56px;
-$message57px: $_57px;
-$message58px: $_58px;
-$message59px: $_59px;
-$message60px: $_60px;
-$message61px: $_61px;
-$message62px: $_62px;
-$message63px: $_63px;
-$message64px: $_64px;
-$messageRelative1px: $relative1px;
-$messageRelative2px: $relative2px;
-$messageRelative3px: $relative3px;
-$messageRelative4px: $relative4px;
-$messageRelative5px: $relative5px;
-$messageRelative6px: $relative6px;
-$messageRelative7px: $relative7px;
-$messageRelative8px: $relative8px;
-$messageRelative9px: $relative9px;
-$messageRelative10px: $relative10px;
-$messageRelative11px: $relative11px;
-$messageRelative12px: $relative12px;
-$messageRelative13px: $relative13px;
-$messageRelative14px: $relative14px;
-$messageRelative15px: $relative15px;
-$messageRelative16px: $relative16px;
-$messageRelative17px: $relative17px;
-$messageRelative18px: $relative18px;
-$messageRelative19px: $relative19px;
-$messageRelative20px: $relative20px;
-$messageRelative21px: $relative21px;
-$messageRelative22px: $relative22px;
-$messageRelative23px: $relative23px;
-$messageRelative24px: $relative24px;
-$messageRelative25px: $relative25px;
-$messageRelative26px: $relative26px;
-$messageRelative27px: $relative27px;
-$messageRelative28px: $relative28px;
-$messageRelative29px: $relative29px;
-$messageRelative30px: $relative30px;
-$messageRelative31px: $relative31px;
-$messageRelative32px: $relative32px;
-$messageRelative33px: $relative33px;
-$messageRelative34px: $relative34px;
-$messageRelative35px: $relative35px;
-$messageRelative36px: $relative36px;
-$messageRelative37px: $relative37px;
-$messageRelative38px: $relative38px;
-$messageRelative39px: $relative39px;
-$messageRelative40px: $relative40px;
-$messageRelative41px: $relative41px;
-$messageRelative42px: $relative42px;
-$messageRelative43px: $relative43px;
-$messageRelative44px: $relative44px;
-$messageRelative45px: $relative45px;
-$messageRelative46px: $relative46px;
-$messageRelative47px: $relative47px;
-$messageRelative48px: $relative48px;
-$messageRelative49px: $relative49px;
-$messageRelative50px: $relative50px;
-$messageRelative51px: $relative51px;
-$messageRelative52px: $relative52px;
-$messageRelative53px: $relative53px;
-$messageRelative54px: $relative54px;
-$messageRelative55px: $relative55px;
-$messageRelative56px: $relative56px;
-$messageRelative57px: $relative57px;
-$messageRelative58px: $relative58px;
-$messageRelative59px: $relative59px;
-$messageRelative60px: $relative60px;
-$messageRelative61px: $relative61px;
-$messageRelative62px: $relative62px;
-$messageRelative63px: $relative63px;
-$messageRelative64px: $relative64px;
-$messageOneWide: $oneWide;
-$messageTwoWide: $twoWide;
-$messageThreeWide: $threeWide;
-$messageFourWide: $fourWide;
-$messageFiveWide: $fiveWide;
-$messageSixWide: $sixWide;
-$messageSevenWide: $sevenWide;
-$messageEightWide: $eightWide;
-$messageNineWide: $nineWide;
-$messageTenWide: $tenWide;
-$messageElevenWide: $elevenWide;
-$messageTwelveWide: $twelveWide;
-$messageThirteenWide: $thirteenWide;
-$messageFourteenWide: $fourteenWide;
-$messageFifteenWide: $fifteenWide;
-$messageSixteenWide: $sixteenWide;
-$messageOneColumn: $oneColumn;
-$messageTwoColumn: $twoColumn;
-$messageThreeColumn: $threeColumn;
-$messageFourColumn: $fourColumn;
-$messageFiveColumn: $fiveColumn;
-$messageSixColumn: $sixColumn;
-$messageSevenColumn: $sevenColumn;
-$messageEightColumn: $eightColumn;
-$messageNineColumn: $nineColumn;
-$messageTenColumn: $tenColumn;
-$messageElevenColumn: $elevenColumn;
-$messageTwelveColumn: $twelveColumn;
-$messageThirteenColumn: $thirteenColumn;
-$messageFourteenColumn: $fourteenColumn;
-$messageFifteenColumn: $fifteenColumn;
-$messageSixteenColumn: $sixteenColumn;
-$messageDisabledOpacity: $disabledOpacity;
-$messageFloatingShadowHover: $floatingShadowHover;
-$messagePrimaryColorHover: $primaryColorHover;
-$messageSecondaryColorHover: $secondaryColorHover;
-$messageRedHover: $redHover;
-$messageOrangeHover: $orangeHover;
-$messageYellowHover: $yellowHover;
-$messageOliveHover: $oliveHover;
-$messageGreenHover: $greenHover;
-$messageTealHover: $tealHover;
-$messageBlueHover: $blueHover;
-$messageVioletHover: $violetHover;
-$messagePurpleHover: $purpleHover;
-$messagePinkHover: $pinkHover;
-$messageBrownHover: $brownHover;
-$messageLightRedHover: $lightRedHover;
-$messageLightOrangeHover: $lightOrangeHover;
-$messageLightYellowHover: $lightYellowHover;
-$messageLightOliveHover: $lightOliveHover;
-$messageLightGreenHover: $lightGreenHover;
-$messageLightTealHover: $lightTealHover;
-$messageLightBlueHover: $lightBlueHover;
-$messageLightVioletHover: $lightVioletHover;
-$messageLightPurpleHover: $lightPurpleHover;
-$messageLightPinkHover: $lightPinkHover;
-$messageLightBrownHover: $lightBrownHover;
-$messageLightGreyHover: $lightGreyHover;
-$messageLightBlackHover: $lightBlackHover;
-$messagePositiveColorHover: $positiveColorHover;
-$messageNegativeColorHover: $negativeColorHover;
-$messageFacebookHoverColor: $facebookHoverColor;
-$messageTwitterHoverColor: $twitterHoverColor;
-$messageGooglePlusHoverColor: $googlePlusHoverColor;
-$messageLinkedInHoverColor: $linkedInHoverColor;
-$messageYoutubeHoverColor: $youtubeHoverColor;
-$messageInstagramHoverColor: $instagramHoverColor;
-$messagePinterestHoverColor: $pinterestHoverColor;
-$messageVkHoverColor: $vkHoverColor;
-$messageFullBlackHover: $fullBlackHover;
-$messageBlackHover: $blackHover;
-$messageGreyHover: $greyHover;
-$messageWhiteHover: $whiteHover;
-$messageOffWhiteHover: $offWhiteHover;
-$messageDarkWhiteHover: $darkWhiteHover;
-$messagePrimaryColorFocus: $primaryColorFocus;
-$messageSecondaryColorFocus: $secondaryColorFocus;
-$messageRedFocus: $redFocus;
-$messageOrangeFocus: $orangeFocus;
-$messageYellowFocus: $yellowFocus;
-$messageOliveFocus: $oliveFocus;
-$messageGreenFocus: $greenFocus;
-$messageTealFocus: $tealFocus;
-$messageBlueFocus: $blueFocus;
-$messageVioletFocus: $violetFocus;
-$messagePurpleFocus: $purpleFocus;
-$messagePinkFocus: $pinkFocus;
-$messageBrownFocus: $brownFocus;
-$messageLightRedFocus: $lightRedFocus;
-$messageLightOrangeFocus: $lightOrangeFocus;
-$messageLightYellowFocus: $lightYellowFocus;
-$messageLightOliveFocus: $lightOliveFocus;
-$messageLightGreenFocus: $lightGreenFocus;
-$messageLightTealFocus: $lightTealFocus;
-$messageLightBlueFocus: $lightBlueFocus;
-$messageLightVioletFocus: $lightVioletFocus;
-$messageLightPurpleFocus: $lightPurpleFocus;
-$messageLightPinkFocus: $lightPinkFocus;
-$messageLightBrownFocus: $lightBrownFocus;
-$messageLightGreyFocus: $lightGreyFocus;
-$messageLightBlackFocus: $lightBlackFocus;
-$messagePositiveColorFocus: $positiveColorFocus;
-$messageNegativeColorFocus: $negativeColorFocus;
-$messageFacebookFocusColor: $facebookFocusColor;
-$messageTwitterFocusColor: $twitterFocusColor;
-$messageGooglePlusFocusColor: $googlePlusFocusColor;
-$messageLinkedInFocusColor: $linkedInFocusColor;
-$messageYoutubeFocusColor: $youtubeFocusColor;
-$messageInstagramFocusColor: $instagramFocusColor;
-$messagePinterestFocusColor: $pinterestFocusColor;
-$messageVkFocusColor: $vkFocusColor;
-$messageFullBlackFocus: $fullBlackFocus;
-$messageBlackFocus: $blackFocus;
-$messageGreyFocus: $greyFocus;
-$messageWhiteFocus: $whiteFocus;
-$messageOffWhiteFocus: $offWhiteFocus;
-$messageDarkWhiteFocus: $darkWhiteFocus;
-$messagePrimaryColorDown: $primaryColorDown;
-$messageSecondaryColorDown: $secondaryColorDown;
-$messageRedDown: $redDown;
-$messageOrangeDown: $orangeDown;
-$messageYellowDown: $yellowDown;
-$messageOliveDown: $oliveDown;
-$messageGreenDown: $greenDown;
-$messageTealDown: $tealDown;
-$messageBlueDown: $blueDown;
-$messageVioletDown: $violetDown;
-$messagePurpleDown: $purpleDown;
-$messagePinkDown: $pinkDown;
-$messageBrownDown: $brownDown;
-$messageLightRedDown: $lightRedDown;
-$messageLightOrangeDown: $lightOrangeDown;
-$messageLightYellowDown: $lightYellowDown;
-$messageLightOliveDown: $lightOliveDown;
-$messageLightGreenDown: $lightGreenDown;
-$messageLightTealDown: $lightTealDown;
-$messageLightBlueDown: $lightBlueDown;
-$messageLightVioletDown: $lightVioletDown;
-$messageLightPurpleDown: $lightPurpleDown;
-$messageLightPinkDown: $lightPinkDown;
-$messageLightBrownDown: $lightBrownDown;
-$messageLightGreyDown: $lightGreyDown;
-$messageLightBlackDown: $lightBlackDown;
-$messagePositiveColorDown: $positiveColorDown;
-$messageNegativeColorDown: $negativeColorDown;
-$messageFacebookDownColor: $facebookDownColor;
-$messageTwitterDownColor: $twitterDownColor;
-$messageGooglePlusDownColor: $googlePlusDownColor;
-$messageLinkedInDownColor: $linkedInDownColor;
-$messageYoutubeDownColor: $youtubeDownColor;
-$messageInstagramDownColor: $instagramDownColor;
-$messagePinterestDownColor: $pinterestDownColor;
-$messageVkDownColor: $vkDownColor;
-$messageFullBlackDown: $fullBlackDown;
-$messageBlackDown: $blackDown;
-$messageGreyDown: $greyDown;
-$messageWhiteDown: $whiteDown;
-$messageOffWhiteDown: $offWhiteDown;
-$messageDarkWhiteDown: $darkWhiteDown;
-$messagePrimaryColorActive: $primaryColorActive;
-$messageSecondaryColorActive: $secondaryColorActive;
-$messageRedActive: $redActive;
-$messageOrangeActive: $orangeActive;
-$messageYellowActive: $yellowActive;
-$messageOliveActive: $oliveActive;
-$messageGreenActive: $greenActive;
-$messageTealActive: $tealActive;
-$messageBlueActive: $blueActive;
-$messageVioletActive: $violetActive;
-$messagePurpleActive: $purpleActive;
-$messagePinkActive: $pinkActive;
-$messageBrownActive: $brownActive;
-$messageLightRedActive: $lightRedActive;
-$messageLightOrangeActive: $lightOrangeActive;
-$messageLightYellowActive: $lightYellowActive;
-$messageLightOliveActive: $lightOliveActive;
-$messageLightGreenActive: $lightGreenActive;
-$messageLightTealActive: $lightTealActive;
-$messageLightBlueActive: $lightBlueActive;
-$messageLightVioletActive: $lightVioletActive;
-$messageLightPurpleActive: $lightPurpleActive;
-$messageLightPinkActive: $lightPinkActive;
-$messageLightBrownActive: $lightBrownActive;
-$messageLightGreyActive: $lightGreyActive;
-$messageLightBlackActive: $lightBlackActive;
-$messagePositiveColorActive: $positiveColorActive;
-$messageNegativeColorActive: $negativeColorActive;
-$messageFacebookActiveColor: $facebookActiveColor;
-$messageTwitterActiveColor: $twitterActiveColor;
-$messageGooglePlusActiveColor: $googlePlusActiveColor;
-$messageLinkedInActiveColor: $linkedInActiveColor;
-$messageYoutubeActiveColor: $youtubeActiveColor;
-$messageInstagramActiveColor: $instagramActiveColor;
-$messagePinterestActiveColor: $pinterestActiveColor;
-$messageVkActiveColor: $vkActiveColor;
-$messageFullBlackActive: $fullBlackActive;
-$messageBlackActive: $blackActive;
-$messageGreyActive: $greyActive;
-$messageWhiteActive: $whiteActive;
-$messageOffWhiteActive: $offWhiteActive;
-$messageDarkWhiteActive: $darkWhiteActive;
-
-
 /*******************************
             Message
 *******************************/
 
-// $messageTextColor
+// $message-text-color
 
 /*-------------------
        Elements
 --------------------*/
 
-$messageVerticalMargin: 1em;
-$messageVerticalPadding: 1em;
-$messageHorizontalPadding: 1.5em;
-$messagePadding: $messageVerticalPadding $messageHorizontalPadding;
-$messageBackground: #F8F8F9;
-$messageLineHeightOffset: (($messageLineHeight - 1em) / 2);
+$message-vertical-margin: 1em;
+$message-vertical-padding: 1em;
+$message-horizontal-padding: 1.5em;
+$message-padding: $message-vertical-padding $message-horizontal-padding;
+$message-background: #F8F8F9;
+$message-line-height-offset: (($line-height - 1em) / 2);
 
-$messageBorderRadius: $messageDefaultBorderRadius;
-$messageBorderWidth: 1px;
-$messageBorderShadow: 0 0 0 $messageBorderWidth $messageStrongBorderColor inset;
-$messageShadowShadow: 0 0 0 0 rgba(0, 0, 0, 0);
-$messageBoxShadow:
-  $messageBorderShadow,
-  $messageShadowShadow
+$message-border-radius: $default-border-radius;
+$message-border-width: 1px;
+$message-border-shadow: 0 0 0 $message-border-width $strong-border-color inset;
+$message-shadow-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+$message-box-shadow:
+  $message-border-shadow,
+  $message-shadow-shadow
 ;
 
-$messageTransition:
-  opacity $messageDefaultDuration $messageDefaultEasing,
-  color $messageDefaultDuration $messageDefaultEasing,
-  background $messageDefaultDuration $messageDefaultEasing,
-  box-shadow $messageDefaultDuration $messageDefaultEasing
+$message-transition:
+  opacity $default-duration $default-easing,
+  color $default-duration $default-easing,
+  background $default-duration $default-easing,
+  box-shadow $default-duration $default-easing
 ;
 
 /* Header */
-$messageHeaderFontSize: $messageRelativeLarge;
-$messageHeaderFontWeight: bold;
-$messageHeaderDisplay: block;
-$messageHeaderDistance: 0;
-$messageHeaderMargin: -$messageHeaderLineHeightOffset 0 $messageHeaderDistance 0;
-$messageHeaderParagraphDistance: 0.25em;
+$message-header-font-size: $relative-large;
+$message-header-font-weight: bold;
+$message-header-display: block;
+$message-header-distance: 0;
+$message-header-margin: -$header-line-height-offset 0 $message-header-distance 0;
+$message-header-paragraph-distance: 0.25em;
 
 /* Paragraph */
-$messageMessageTextOpacity: 0.85;
-$messageMessageParagraphMargin: 0.75em;
+$message-message-text-opacity: 0.85;
+$message-message-paragraph-margin: 0.75em;
 
 /* List */
-$messageListOpacity: 0.85;
-$messageListStylePosition: inside;
-$messageListMargin: 0.5em;
-$messageListItemIndent: 1em;
-$messageListItemMargin: 0.3em;
+$message-list-opacity: 0.85;
+$message-list-style-position: inside;
+$message-list-margin: 0.5em;
+$message-list-item-indent: 1em;
+$message-list-item-margin: 0.3em;
 
 /* Icon */
-$messageIconDistance: 0.6em;
+$message-icon-distance: 0.6em;
 
 /* Close Icon */
-$messageCloseTopDistance: $messageVerticalPadding - $messageLineHeightOffset;
-$messageCloseRightDistance: 0.5em;
-$messageCloseOpacity: 0.7;
-$messageCloseTransition: opacity $messageDefaultDuration $messageDefaultEasing;
+$message-close-top-distance: $message-vertical-padding - $message-line-height-offset;
+$message-close-right-distance: 0.5em;
+$message-close-opacity: 0.7;
+$message-close-transition: opacity $default-duration $default-easing;
 
 
 /*-------------------
@@ -677,77 +65,77 @@ $messageCloseTransition: opacity $messageDefaultDuration $messageDefaultEasing;
 --------------------*/
 
 /* Icon Message */
-$messageIconSize: 3em;
-$messageIconOpacity: 0.8;
-$messageIconContentDistance: 0;
-$messageIconVerticalAlign: middle;
+$message-icon-size: 3em;
+$message-icon-opacity: 0.8;
+$message-icon-content-distance: 0;
+$message-icon-vertical-align: middle;
 
 /* Attached */
-$messageAttachedXOffset: -1px;
-$messageAttachedYOffset: -1px;
-$messageAttachedBoxShadow: 0 0 0 $messageBorderWidth $messageBorderColor inset;
-$messageAttachedBottomBoxShadow:
-  $messageAttachedBoxShadow,
-  $messageSubtleShadow
+$message-attachedXOffset: -1px;
+$message-attachedYOffset: -1px;
+$message-attached-box-shadow: 0 0 0 $message-border-width $border-color inset;
+$message-attached-bottom-box-shadow:
+  $message-attached-box-shadow,
+  $subtle-shadow
 ;
 
 /* Floating */
-$messageFloatingBoxShadow:
-  $messageBorderShadow,
-  $messageFloatingShadow
+$message-floating-box-shadow:
+  $message-border-shadow,
+  $floating-shadow
 ;
 
 /* Colors */
-$messageRedBoxShadow: 0 0 0 $messageBorderWidth $messageRedBorderColor inset,
-  $messageShadowShadow
+$message-red-box-shadow: 0 0 0 $message-border-width $red-border-color inset,
+  $message-shadow-shadow
 ;
-$messageOrangeBoxShadow: 0 0 0 $messageBorderWidth $messageOrangeBorderColor inset,
-  $messageShadowShadow
+$message-orange-box-shadow: 0 0 0 $message-border-width $orange-border-color inset,
+  $message-shadow-shadow
 ;
-$messageYellowBoxShadow: 0 0 0 $messageBorderWidth $messageYellowBorderColor inset,
-  $messageShadowShadow
+$message-yellow-box-shadow: 0 0 0 $message-border-width $yellow-border-color inset,
+  $message-shadow-shadow
 ;
-$messageOliveBoxShadow: 0 0 0 $messageBorderWidth $messageOliveBorderColor inset,
-  $messageShadowShadow
+$message-olive-box-shadow: 0 0 0 $message-border-width $olive-border-color inset,
+  $message-shadow-shadow
 ;
-$messageGreenBoxShadow: 0 0 0 $messageBorderWidth $messageGreenBorderColor inset,
-  $messageShadowShadow
+$message-green-box-shadow: 0 0 0 $message-border-width $green-border-color inset,
+  $message-shadow-shadow
 ;
-$messageTealBoxShadow: 0 0 0 $messageBorderWidth $messageTealBorderColor inset,
-  $messageShadowShadow
+$message-teal-box-shadow: 0 0 0 $message-border-width $teal-border-color inset,
+  $message-shadow-shadow
 ;
-$messageBlueBoxShadow: 0 0 0 $messageBorderWidth $messageBlueBorderColor inset,
-  $messageShadowShadow
+$message-blue-box-shadow: 0 0 0 $message-border-width $blue-border-color inset,
+  $message-shadow-shadow
 ;
-$messageVioletBoxShadow: 0 0 0 $messageBorderWidth $messageVioletBorderColor inset,
-  $messageShadowShadow
+$message-violet-box-shadow: 0 0 0 $message-border-width $violet-border-color inset,
+  $message-shadow-shadow
 ;
-$messagePurpleBoxShadow: 0 0 0 $messageBorderWidth $messagePurpleBorderColor inset,
-  $messageShadowShadow
+$message-purple-box-shadow: 0 0 0 $message-border-width $purple-border-color inset,
+  $message-shadow-shadow
 ;
-$messagePinkBoxShadow: 0 0 0 $messageBorderWidth $messagePinkBorderColor inset,
-  $messageShadowShadow
+$message-pink-box-shadow: 0 0 0 $message-border-width $pink-border-color inset,
+  $message-shadow-shadow
 ;
-$messageBrownBoxShadow: 0 0 0 $messageBorderWidth $messageBrownBorderColor inset,
-  $messageShadowShadow
+$message-brown-box-shadow: 0 0 0 $message-border-width $brown-border-color inset,
+  $message-shadow-shadow
 ;
 
 /* Warning / Positive / Negative / Info */
-$messagePositiveBoxShadow: 0 0 0 $messageBorderWidth $messagePositiveBorderColor inset,
-  $messageShadowShadow
+$message-positive-box-shadow: 0 0 0 $message-border-width $positive-border-color inset,
+  $message-shadow-shadow
 ;
-$messageNegativeBoxShadow: 0 0 0 $messageBorderWidth $messageNegativeBorderColor inset,
-  $messageShadowShadow
+$message-negative-box-shadow: 0 0 0 $message-border-width $negative-border-color inset,
+  $message-shadow-shadow
 ;
-$messageInfoBoxShadow: 0 0 0 $messageBorderWidth $messageInfoBorderColor inset,
-  $messageShadowShadow
+$message-info-box-shadow: 0 0 0 $message-border-width $info-border-color inset,
+  $message-shadow-shadow
 ;
-$messageWarningBoxShadow: 0 0 0 $messageBorderWidth $messageWarningBorderColor inset,
-  $messageShadowShadow
+$message-warning-box-shadow: 0 0 0 $message-border-width $warning-border-color inset,
+  $message-shadow-shadow
 ;
-$messageErrorBoxShadow: 0 0 0 $messageBorderWidth $messageErrorBorderColor inset,
-  $messageShadowShadow
+$message-error-box-shadow: 0 0 0 $message-border-width $error-border-color inset,
+  $message-shadow-shadow
 ;
-$messageSuccessBoxShadow: 0 0 0 $messageBorderWidth $messageSuccessBorderColor inset,
-  $messageShadowShadow
+$message-success-box-shadow: 0 0 0 $message-border-width $success-border-color inset,
+  $message-shadow-shadow
 ;

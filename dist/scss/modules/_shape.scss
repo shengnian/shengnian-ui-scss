@@ -16,9 +16,9 @@
 .ui.shape {
   position: relative;
   vertical-align: top;
-  display: $shapeDisplay;
-  perspective: $shapePerspective;
-  transition: $shapeTransition;
+  display: $shape-display;
+  perspective: $shape-perspective;
+  transition: $shape-transition;
 }
 
 .ui.shape .sides {
@@ -29,8 +29,8 @@
   opacity: 1;
   width: 100%;
 
-  margin: $shapeSideMargin !important;
-  backface-visibility: $shapeBackfaceVisibility;
+  margin: $shape-side-margin !important;
+  backface-visibility: $shape-backface-visibility;
 }
 
 .ui.shape .side {
@@ -48,27 +48,27 @@
 *******************************/
 
 .ui.cube.shape .side {
-  min-width: $shapeCubeSize;
-  height: $shapeCubeSize;
+  min-width: $shape-cube-size;
+  height: $shape-cube-size;
 
-  padding: $shapeCubePadding;
+  padding: $shape-cube-padding;
 
-  background-color: $shapeCubeBackground;
-  color: $shapeCubeTextColor;
-  box-shadow: $shapeCubeBoxShadow;
+  background-color: $shape-cube-background;
+  color: $shape-cube-text-color;
+  box-shadow: $shape-cube-box-shadow;
 }
 .ui.cube.shape .side > .content {
   width: 100%;
   height: 100%;
   display: table;
 
-  text-align: $shapeCubeTextAlign;
+  text-align: $shape-cube-text-align;
   user-select: text;
 }
 .ui.cube.shape .side > .content > div {
   display: table-cell;
   vertical-align: middle;
-  font-size: $shapeCubeFontSize;
+  font-size: $shape-cube-font-size;
 }
 
 
@@ -110,10 +110,10 @@
   top: 0;
   left: 0;
   display: block;
-  z-index: $shapeAnimatingZIndex;
+  z-index: $shape-animating-zindex;
 }
 .ui.shape .hidden.side {
-  opacity: $shapeHiddenSideOpacity;
+  opacity: $shape-hidden-side-opacity;
 }
 /*--------------
       CSS
@@ -123,10 +123,10 @@
   position: absolute;
 }
 .ui.shape.animating .sides {
-  transition: $shapeTransition;
+  transition: $shape-transition;
 }
 .ui.shape.animating .side {
-  transition: $shapeSideTransition;
+  transition: $shape-side-transition;
 }
 
 /*--------------

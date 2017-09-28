@@ -14,45 +14,45 @@
 *******************************/
 
 .dimmable:not(body) {
-  position: $dimmerDimmablePosition;
+  position: $dimmer-dimmable-position;
 }
 
 .ui.dimmer {
   display: none;
-  position: $dimmerDimmerPosition;
+  position: $dimmer-dimmer-position;
   top: 0 !important;
   left: 0 !important;
 
   width: 100%;
   height: 100%;
 
-  text-align: $dimmerTextAlign;
-  vertical-align: $dimmerVerticalAlign;
+  text-align: $dimmer-text-align;
+  vertical-align: $dimmer-vertical-align;
 
-  background-color: $dimmerBackgroundColor;
-  opacity: $dimmerHiddenOpacity;
-  line-height: $dimmerLineHeight;
+  background-color: $dimmer-background-color;
+  opacity: $dimmer-hidden-opacity;
+  line-height: $dimmer-line-height;
 
   animation-fill-mode: both;
-  animation-duration: $dimmerDuration;
-  transition: $dimmerTransition;
+  animation-duration: $dimmer-duration;
+  transition: $dimmer-transition;
 
   user-select: none;
   will-change: opacity;
-  z-index: $dimmerZIndex;
+  z-index: $dimmer-zindex;
 }
 
 /* Dimmer Content */
 .ui.dimmer > .content {
   width: 100%;
   height: 100%;
-  display: $dimmerContentDisplay;
+  display: $dimmer-content-display;
   user-select: text;
 }
 .ui.dimmer > .content > * {
-  display: $dimmerContentChildDisplay;
-  vertical-align: $dimmerVerticalAlign;
-  color: $dimmerTextColor;
+  display: $dimmer-content-child-display;
+  vertical-align: $dimmer-vertical-align;
+  color: $dimmer-text-color;
 }
 /* Loose Coupling */
 .ui.segment > .ui.dimmer {
@@ -60,19 +60,19 @@
 }
 
 /* Scrollbars */
-@if ($dimmerUseCustomScrollbars) {
+@if ($use-custom-scrollbars) {
  @mixin addScrollbars()  {
   .ui.dimmer:not(.inverted)::-webkit-scrollbar-track {
-    background: $dimmerTrackInvertedBackground;
+    background: $track-inverted-background;
   }
   .ui.dimmer:not(.inverted)::-webkit-scrollbar-thumb {
-    background: $dimmerThumbInvertedBackground;
+    background: $thumb-inverted-background;
   }
   .ui.dimmer:not(.inverted)::-webkit-scrollbar-thumb:window-inactive {
-    background: $dimmerThumbInvertedInactiveBackground;
+    background: $thumb-inverted-inactive-background;
   }
   .ui.dimmer:not(.inverted)::-webkit-scrollbar-thumb:hover {
-    background: $dimmerThumbInvertedHoverBackground;
+    background: $thumb-inverted-hover-background;
   }
 }
 @include addScrollbars(); 
@@ -86,14 +86,14 @@
 
 .animating.dimmable:not(body),
 .dimmed.dimmable:not(body) {
-  overflow: $dimmerOverflow;
+  overflow: $dimmer-overflow;
 }
 
 .dimmed.dimmable > .ui.animating.dimmer,
 .dimmed.dimmable > .ui.visible.dimmer,
 .ui.active.dimmer {
   display: block;
-  opacity: $dimmerVisibleOpacity;
+  opacity: $dimmer-visible-opacity;
 }
 
 .ui.disabled.dimmer {
@@ -112,9 +112,9 @@
 ---------------*/
 
 .ui.page.dimmer {
-  position: $dimmerPageDimmerPosition;
-  transform-style: $dimmerTransformStyle;
-  perspective: $dimmerPerspective;
+  position: $dimmer-page-dimmer-position;
+  transform-style: $dimmer-transform-style;
+  perspective: $dimmer-perspective;
   transform-origin: center center;
 }
 
@@ -132,19 +132,19 @@ body.dimmable > .dimmer {
 ---------------*/
 
 .blurring.dimmable > :not(.dimmer) {
-  filter: $dimmerBlurredStartFilter;
-  transition: $dimmerBlurredTransition;
+  filter: $dimmer-blurred-start-filter;
+  transition: $dimmer-blurred-transition;
 }
 .blurring.dimmed.dimmable > :not(.dimmer) {
-  filter: $dimmerBlurredEndFilter;
+  filter: $dimmer-blurred-end-filter;
 }
 
 /* Dimmer Color */
 .blurring.dimmable > .dimmer {
-  background-color: $dimmerBlurredBackgroundColor;
+  background-color: $dimmer-blurred-background-color;
 }
 .blurring.dimmable > .inverted.dimmer {
-  background-color: $dimmerBlurredInvertedBackgroundColor;
+  background-color: $dimmer-blurred-inverted-background-color;
 }
 
 /*--------------
@@ -163,10 +163,10 @@ body.dimmable > .dimmer {
 ---------------*/
 
 .ui.inverted.dimmer {
-  background-color: $dimmerInvertedBackgroundColor;
+  background-color: $dimmer-inverted-background-color;
 }
 .ui.inverted.dimmer > .content > * {
-  color: $dimmerTextColor;
+  color: $dimmer-text-color;
 }
 
 /*--------------
@@ -178,25 +178,25 @@ body.dimmable > .dimmer {
   display: block;
   overflow: hidden;
   opacity: 1;
-  width: 0%;
-  height: 0%;
+  width: 0;
+  height: 0;
   z-index: -100;
-  background-color: $dimmerSimpleStartBackgroundColor;
+  background-color: $dimmer-simple-start-background-color;
 }
 .dimmed.dimmable > .ui.simple.dimmer {
   overflow: visible;
   opacity: 1;
   width: 100%;
   height: 100%;
-  background-color: $dimmerSimpleEndBackgroundColor;
-  z-index: $dimmerSimpleZIndex;
+  background-color: $dimmer-simple-end-background-color;
+  z-index: $dimmer-simple-zindex;
 }
 
 .ui.simple.inverted.dimmer {
-  background-color: $dimmerSimpleInvertedStartBackgroundColor;
+  background-color: $dimmer-simple-inverted-start-background-color;
 }
 .dimmed.dimmable > .ui.simple.inverted.dimmer {
-  background-color: $dimmerSimpleInvertedEndBackgroundColor;
+  background-color: $dimmer-simple-inverted-end-background-color;
 }
 
 

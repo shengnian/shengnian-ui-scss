@@ -15,8 +15,8 @@
 
 .ui.rating {
   display: inline-flex;
-  white-space: $ratingWhiteSpace;
-  vertical-align: $ratingVerticalAlign;
+  white-space: $rating-white-space;
+  vertical-align: $rating-vertical-align;
 }
 .ui.rating:last-child {
   margin-right: 0;
@@ -30,10 +30,10 @@
   font-weight: normal;
   font-style: normal;
   flex: 1 0 auto;
-  cursor: $ratingIconCursor;
-  width: $ratingIconWidth;
-  height: $ratingIconHeight;
-  transition: $ratingIconTransition;
+  cursor: $rating-icon-cursor;
+  width: $rating-icon-width;
+  height: $rating-icon-height;
+  transition: $rating-icon-transition;
 }
 
 
@@ -46,21 +46,21 @@
 
 /* Inactive Icon */
 .ui.rating .icon {
-  background: $ratingInactiveBackground;
-  color: $ratingInactiveColor;
+  background: $rating-inactive-background;
+  color: $rating-inactive-color;
 }
 
 /* Active Icon */
 .ui.rating .active.icon {
-  background: $ratingActiveBackground;
-  color: $ratingActiveColor;
+  background: $rating-active-background;
+  color: $rating-active-color;
 }
 
 /* Selected Icon */
 .ui.rating .icon.selected,
 .ui.rating .icon.selected.active {
-  background: $ratingSelectedBackground;
-  color: $ratingSelectedColor;
+  background: $rating-selected-background;
+  color: $rating-selected-color;
 }
 /*-------------------
         Star
@@ -68,52 +68,52 @@
 
 /* Inactive */
 .ui.star.rating .icon {
-  width: $ratingStarIconWidth;
-  height: $ratingStarIconHeight;
-  background: $ratingStarInactiveBackground;
-  color: $ratingStarInactiveColor;
-  text-shadow: $ratingStarInactiveTextShadow;
+  width: $rating-star-icon-width;
+  height: $rating-star-icon-height;
+  background: $rating-star-inactive-background;
+  color: $rating-star-inactive-color;
+  text-shadow: $rating-star-inactive-text-shadow;
 }
 
 /* Active Star */
 .ui.star.rating .active.icon {
-  background: $ratingStarActiveBackground !important;
-  color: $ratingStarActiveColor !important;
-  text-shadow: $ratingStarActiveTextShadow !important;
+  background: $rating-star-active-background !important;
+  color: $rating-star-active-color !important;
+  text-shadow: $rating-star-active-text-shadow !important;
 }
 
 /* Selected Star */
 .ui.star.rating .icon.selected,
 .ui.star.rating .icon.selected.active {
-  background: $ratingStarSelectedBackground !important;
-  color: $ratingStarSelectedColor !important;
-  text-shadow: $ratingStarSelectedTextShadow !important;
+  background: $rating-star-selected-background !important;
+  color: $rating-star-selected-color !important;
+  text-shadow: $rating-star-selected-text-shadow !important;
 }
 /*-------------------
         Heart
 --------------------*/
 
 .ui.heart.rating .icon {
-  width: $ratingHeartIconWidth;
-  height: $ratingHeartIconHeight;
-  background: $ratingHeartInactiveBackground;
-  color: $ratingHeartInactiveColor;
-  text-shadow: $ratingHeartInactiveTextShadow !important;
+  width: $rating-heart-icon-width;
+  height: $rating-heart-icon-height;
+  background: $rating-heart-inactive-background;
+  color: $rating-heart-inactive-color;
+  text-shadow: $rating-heart-inactive-text-shadow !important;
 }
 
 /* Active Heart */
 .ui.heart.rating .active.icon {
-  background: $ratingHeartActiveBackground !important;
-  color: $ratingHeartActiveColor !important;
-  text-shadow: $ratingHeartActiveTextShadow !important;
+  background: $rating-heart-active-background !important;
+  color: $rating-heart-active-color !important;
+  text-shadow: $rating-heart-active-text-shadow !important;
 }
 
 /* Selected Heart */
 .ui.heart.rating .icon.selected,
 .ui.heart.rating .icon.selected.active {
-  background: $ratingHeartSelectedBackground !important;
-  color: $ratingHeartSelectedColor !important;
-  text-shadow: $ratingHeartSelectedTextShadow !important;
+  background: $rating-heart-selected-background !important;
+  color: $rating-heart-selected-color !important;
+  text-shadow: $rating-heart-selected-text-shadow !important;
 }
 
 
@@ -135,11 +135,11 @@
 
 /* Selected Rating */
 .ui.rating.selected .active.icon {
-  opacity: $ratingInteractiveActiveIconOpacity;
+  opacity: $rating-interactive-active-icon-opacity;
 }
 .ui.rating.selected .icon.selected,
 .ui.rating .icon.selected {
-  opacity: $ratingInteractiveSelectedIconOpacity;
+  opacity: $rating-interactive-selected-icon-opacity;
 }
 
 
@@ -148,24 +148,24 @@
 *******************************/
 
 .ui.mini.rating {
-  font-size: $ratingMini;
+  font-size: $mini;
 }
 .ui.tiny.rating {
-  font-size: $ratingTiny;
+  font-size: $tiny;
 }
 .ui.small.rating {
-  font-size: $ratingSmall;
+  font-size: $small;
 }
 .ui.rating {
-  font-size: $ratingMedium;
+  font-size: $medium;
 }
 .ui.large.rating {
-  font-size: $ratingLarge;
+  font-size: $large;
 }
 .ui.huge.rating {
-  font-size: $ratingHuge;
+  font-size: $huge;
 }
 .ui.massive.rating {
-  font-size: $ratingMassive;
+  font-size: $massive;
 }
 

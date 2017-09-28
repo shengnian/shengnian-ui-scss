@@ -16,9 +16,9 @@
 ul.ui.list,
 ol.ui.list,
 .ui.list {
-  list-style-type: $listListStyleType;
-  margin: $listMargin;
-  padding: $listVerticalPadding $listHorizontalPadding;
+  list-style-type: $list-list-style-type;
+  margin: $list-margin;
+  padding: $list-vertical-padding $list-horizontal-padding;
 }
 
 ul.ui.list:first-child,
@@ -48,11 +48,11 @@ ol.ui.list li,
 .ui.list .list > .item {
   display: list-item;
   table-layout: fixed;
-  list-style-type: $listListStyleType;
-  list-style-position: $listListStylePosition;
+  list-style-type: $list-list-style-type;
+  list-style-position: $list-list-style-position;
 
-  padding: $listItemPadding;
-  line-height: $listItemLineHeight;
+  padding: $list-item-padding;
+  line-height: $list-item-line-height;
 }
 
 ul.ui.list > li:first-child:after,
@@ -85,30 +85,30 @@ ol.ui.list ol,
 .ui.list .list {
   clear: both;
   margin: 0;
-  padding: $listChildListPadding;
+  padding: $list-child-list-padding;
 }
 
 /* Child Item */
 ul.ui.list ul li,
 ol.ui.list ol li,
 .ui.list .list > .item {
-  padding: $listChildItemPadding;
-  line-height: $listChildItemLineHeight;
+  padding: $list-child-item-padding;
+  line-height: $list-child-item-line-height;
 }
 /* Icon */
 .ui.list .list > .item > i.icon,
 .ui.list > .item > i.icon {
   display: table-cell;
   margin: 0;
-  padding-top: $listIconOffset;
-  padding-right: $listIconDistance;
-  vertical-align: $listIconContentVerticalAlign;
-  transition: $listIconTransition;
+  padding-top: $list-icon-offset;
+  padding-right: $list-icon-distance;
+  vertical-align: $list-icon-content-vertical-align;
+  transition: $list-icon-transition;
 }
 .ui.list .list > .item > i.icon:only-child,
 .ui.list > .item > i.icon:only-child {
   display: inline-block;
-  vertical-align: $listIconVerticalAlign;
+  vertical-align: $list-icon-vertical-align;
 }
 /* Image */
 .ui.list .list > .item > .image,
@@ -116,15 +116,15 @@ ol.ui.list ol li,
   display: table-cell;
   background-color: transparent;
   margin: 0;
-  vertical-align: $listImageAlign;
+  vertical-align: $list-image-align;
 }
 .ui.list .list > .item > .image:not(:only-child):not(img),
 .ui.list > .item > .image:not(:only-child):not(img) {
-  padding-right: $listImageDistance;
+  padding-right: $list-image-distance;
 }
 .ui.list .list > .item > .image img,
 .ui.list > .item > .image img {
-  vertical-align: $listImageAlign;
+  vertical-align: $list-image-align;
 }
 
 .ui.list .list > .item > img.image,
@@ -137,15 +137,15 @@ ol.ui.list ol li,
 /* Content */
 .ui.list .list > .item > .content,
 .ui.list > .item > .content {
-  line-height: $listContentLineHeight;
+  line-height: $list-content-line-height;
 }
 .ui.list .list > .item > .image + .content,
 .ui.list .list > .item > .icon + .content,
 .ui.list > .item > .image + .content,
 .ui.list > .item > .icon + .content {
   display: table-cell;
-  padding: 0 0 0 $listContentDistance;
-  vertical-align: $listContentVerticalAlign;
+  padding: 0 0 0 $list-content-distance;
+  vertical-align: $list-content-vertical-align;
 }
 .ui.list .list > .item > img.image + .content,
 .ui.list > .item > img.image + .content {
@@ -162,16 +162,16 @@ ol.ui.list ol li,
 .ui.list > .item .header {
   display: block;
   margin: 0;
-  font-family: $listItemHeaderFontFamily;
-  font-weight: $listItemHeaderFontWeight;
-  color: $listItemHeaderColor;
+  font-family: $list-item-header-font-family;
+  font-weight: $list-item-header-font-weight;
+  color: $list-item-header-color;
 }
 
 /* Description */
 .ui.list .list > .item .description,
 .ui.list > .item .description {
   display: block;
-  color: $listItemDescriptionColor;
+  color: $list-item-description-color;
 }
 
 /* Child Link */
@@ -184,28 +184,28 @@ ol.ui.list ol li,
 .ui.list .list > a.item,
 .ui.list > a.item {
   cursor: pointer;
-  color: $listItemLinkColor;
+  color: $list-item-link-color;
 }
 .ui.list .list > a.item:hover,
 .ui.list > a.item:hover {
-  color: $listItemLinkHoverColor;
+  color: $list-item-link-hover-color;
 }
 
 /* Linked Item Icons */
 .ui.list .list > a.item i.icon,
 .ui.list > a.item i.icon {
-  color: $listItemLinkIconColor;
+  color: $list-item-link-icon-color;
 }
 
 /* Header Link */
 .ui.list .list > .item a.header,
 .ui.list > .item a.header {
   cursor: pointer;
-  color: $listItemHeaderLinkColor !important;
+  color: $list-item-header-link-color !important;
 }
 .ui.list .list > .item a.header:hover,
 .ui.list > .item a.header:hover {
-  color: $listItemHeaderLinkHoverColor !important;
+  color: $list-item-header-link-hover-color !important;
 }
 
 /* Floated Content */
@@ -219,12 +219,12 @@ ol.ui.list ol li,
 .ui.list .list > .item [class*="left floated"],
 .ui.list > .item [class*="left floated"] {
   float: left;
-  margin: $listLeftFloatMargin;
+  margin: $list-left-float-margin;
 }
 .ui.list .list > .item [class*="right floated"],
 .ui.list > .item [class*="right floated"] {
   float: right;
-  margin: $listRightFloatMargin;
+  margin: $list-right-float-margin;
 }
 
 
@@ -239,11 +239,11 @@ ol.ui.list ol li,
   table-layout: fixed;
   background-color: transparent;
 
-  list-style-type: $listListStyleType;
-  list-style-position: $listListStylePosition;
+  list-style-type: $list-list-style-type;
+  list-style-position: $list-list-style-position;
 
-  padding: $listItemVerticalPadding $listItemHorizontalPadding;
-  line-height: $listItemLineHeight;
+  padding: $list-item-vertical-padding $list-item-horizontal-padding;
+  line-height: $list-item-line-height;
 }
 .ui.menu .ui.list .list > .item:before,
 .ui.menu .ui.list > .item:before {
@@ -274,7 +274,7 @@ ol.ui.list ol li,
 }
 .ui.horizontal.list > .item {
   display: inline-block;
-  margin-left: $listHorizontalSpacing;
+  margin-left: $list-horizontal-spacing;
   font-size: 1rem;
 }
 .ui.horizontal.list:not(.celled) > .item:first-child {
@@ -292,20 +292,20 @@ ol.ui.list ol li,
 .ui.horizontal.list .list > .item > .icon,
 .ui.horizontal.list > .item > .content,
 .ui.horizontal.list .list > .item > .content {
-  vertical-align: $listHorizontalVerticalAlign;
+  vertical-align: $list-horizontal-vertical-align;
 }
 
 /* Padding on all elements */
 .ui.horizontal.list > .item:first-child,
 .ui.horizontal.list > .item:last-child {
-  padding-top: $listItemVerticalPadding;
-  padding-bottom: $listItemVerticalPadding;
+  padding-top: $list-item-vertical-padding;
+  padding-bottom: $list-item-vertical-padding;
 }
 
 /* Horizontal List */
 .ui.horizontal.list > .item > i.icon {
   margin: 0;
-  padding: 0 $listHorizontalIconDistance 0 0;
+  padding: 0 $list-horizontal-icon-distance 0 0;
 }
 .ui.horizontal.list > .item > .icon,
 .ui.horizontal.list > .item > .icon + .content {
@@ -325,11 +325,11 @@ ol.ui.list ol li,
 .ui.list .list > .disabled.item,
 .ui.list > .disabled.item {
   pointer-events: none;
-  color: $listDisabledColor !important;
+  color: $list-disabled-color !important;
 }
 .ui.inverted.list .list > .disabled.item,
 .ui.inverted.list > .disabled.item {
-  color: $listInvertedDisabledColor !important;
+  color: $list-inverted-disabled-color !important;
 }
 
 /*-------------------
@@ -338,7 +338,7 @@ ol.ui.list ol li,
 
 .ui.list .list > a.item:hover .icon,
 .ui.list > a.item:hover .icon {
-  color: $listItemLinkIconHoverColor;
+  color: $list-item-link-icon-hover-color;
 }
 
 
@@ -352,33 +352,33 @@ ol.ui.list ol li,
 
 .ui.inverted.list .list > a.item > .icon,
 .ui.inverted.list > a.item > .icon {
-  color: $listInvertedIconLinkColor;
+  color: $list-inverted-icon-link-color;
 }
 .ui.inverted.list .list > .item .header,
 .ui.inverted.list > .item .header {
-  color: $listInvertedHeaderColor;
+  color: $list-inverted-header-color;
 }
 .ui.inverted.list .list > .item .description,
 .ui.inverted.list > .item .description {
-  color: $listInvertedDescriptionColor;
+  color: $list-inverted-description-color;
 }
 
 /* Item Link */
 .ui.inverted.list .list > a.item,
 .ui.inverted.list > a.item {
   cursor: pointer;
-  color: $listInvertedItemLinkColor;
+  color: $list-inverted-item-link-color;
 }
 .ui.inverted.list .list > a.item:hover,
 .ui.inverted.list > a.item:hover {
-  color: $listInvertedItemLinkHoverColor;
+  color: $list-inverted-item-link-hover-color;
 }
 /* Linking Content */
 .ui.inverted.list .item a:not(.ui) {
-  color: $listInvertedItemLinkColor !important;
+  color: $list-inverted-item-link-color !important;
 }
 .ui.inverted.list .item a:not(.ui):hover {
-  color: $listInvertedItemLinkHoverColor !important;
+  color: $list-inverted-item-link-hover-color !important;
 }
 
 /*-------------------
@@ -408,39 +408,39 @@ ol.ui.list ol li,
 .ui.link.list .item,
 .ui.link.list a.item,
 .ui.link.list .item a:not(.ui) {
-  color: $listLinkListItemColor;
-  transition: $listLinkListTransition;
+  color: $list-link-list-item-color;
+  transition: $list-link-list-transition;
 }
 .ui.link.list a.item:hover,
 .ui.link.list .item a:not(.ui):hover {
-  color: $listLinkListItemHoverColor;
+  color: $list-link-list-item-hover-color;
 }
 .ui.link.list a.item:active,
 .ui.link.list .item a:not(.ui):active {
-  color: $listLinkListItemDownColor;
+  color: $list-link-list-item-down-color;
 }
 .ui.link.list .active.item,
 .ui.link.list .active.item a:not(.ui) {
-  color: $listLinkListItemActiveColor;
+  color: $list-link-list-item-active-color;
 }
 
 /* Inverted */
 .ui.inverted.link.list .item,
 .ui.inverted.link.list a.item,
 .ui.inverted.link.list .item a:not(.ui) {
-  color: $listInvertedLinkListItemColor;
+  color: $list-inverted-link-list-item-color;
 }
 .ui.inverted.link.list a.item:hover,
 .ui.inverted.link.list .item a:not(.ui):hover {
-  color: $listInvertedLinkListItemHoverColor;
+  color: $list-inverted-link-list-item-hover-color;
 }
 .ui.inverted.link.list a.item:active,
 .ui.inverted.link.list .item a:not(.ui):active {
-  color: $listInvertedLinkListItemDownColor;
+  color: $list-inverted-link-list-item-down-color;
 }
 .ui.inverted.link.list a.active.item,
 .ui.inverted.link.list .active.item a:not(.ui) {
-  color: $listInvertedLinkListItemActiveColor;
+  color: $list-inverted-link-list-item-active-color;
 }
 
 /*-------------------
@@ -450,12 +450,12 @@ ol.ui.list ol li,
 .ui.selection.list .list > .item,
 .ui.selection.list > .item {
   cursor: pointer;
-  background: $listSelectionListBackground;
-  padding: $listSelectionListItemVerticalPadding $listSelectionListItemHorizontalPadding;
-  margin: $listSelectionListItemMargin;
-  color: $listSelectionListColor;
-  border-radius: $listSelectionListItemBorderRadius;
-  transition: $listSelectionListTransition;
+  background: $list-selection-list-background;
+  padding: $list-selection-list-item-vertical-padding $list-selection-list-item-horizontal-padding;
+  margin: $list-selection-list-item-margin;
+  color: $list-selection-list-color;
+  border-radius: $list-selection-list-item-border-radius;
+  transition: $list-selection-list-transition;
 }
 .ui.selection.list .list > .item:last-child,
 .ui.selection.list > .item:last-child {
@@ -463,40 +463,40 @@ ol.ui.list ol li,
 }
 .ui.selection.list.list >  .item:hover,
 .ui.selection.list > .item:hover {
-  background: $listSelectionListHoverBackground;
-  color: $listSelectionListHoverColor;
+  background: $list-selection-list-hover-background;
+  color: $list-selection-list-hover-color;
 }
 .ui.selection.list .list > .item:active,
 .ui.selection.list > .item:active {
-  background: $listSelectionListDownBackground;
-  color: $listSelectionListDownColor;
+  background: $list-selection-list-down-background;
+  color: $list-selection-list-down-color;
 }
 .ui.selection.list .list > .item.active,
 .ui.selection.list > .item.active {
-  background: $listSelectionListActiveBackground;
-  color: $listSelectionListActiveColor;
+  background: $list-selection-list-active-background;
+  color: $list-selection-list-active-color;
 }
 
 /* Inverted */
 .ui.inverted.selection.list > .item,
 .ui.inverted.selection.list > .item {
-  background: $listInvertedSelectionListBackground;
-  color: $listInvertedSelectionListColor;
+  background: $list-inverted-selection-list-background;
+  color: $list-inverted-selection-list-color;
 }
 .ui.inverted.selection.list > .item:hover,
 .ui.inverted.selection.list > .item:hover {
-  background: $listInvertedSelectionListHoverBackground;
-  color: $listInvertedSelectionListHoverColor;
+  background: $list-inverted-selection-list-hover-background;
+  color: $list-inverted-selection-list-hover-color;
 }
 .ui.inverted.selection.list > .item:active,
 .ui.inverted.selection.list > .item:active {
-  background: $listInvertedSelectionListDownBackground;
-  color: $listInvertedSelectionListDownColor;
+  background: $list-inverted-selection-list-down-background;
+  color: $list-inverted-selection-list-down-color;
 }
 .ui.inverted.selection.list > .item.active,
 .ui.inverted.selection.list > .item.active {
-  background: $listInvertedSelectionListActiveBackground;
-  color: $listInvertedSelectionListActiveColor;
+  background: $list-inverted-selection-list-active-background;
+  color: $list-inverted-selection-list-active-color;
 }
 
 /* Celled / Divided Selection List */
@@ -512,10 +512,10 @@ ol.ui.list ol li,
 --------------------*/
 
 .ui.animated.list > .item {
-  transition: $listAnimatedListTransition;
+  transition: $list-animated-list-transition;
 }
 .ui.animated.list:not(.horizontal) > .item:hover {
-  padding-left: $listAnimatedListIndent;
+  padding-left: $list-animated-list-indent;
 }
 
 /*-------------------
@@ -528,8 +528,8 @@ ol.ui.list ol li,
 }
 .ui.fitted.selection.list .list > .item,
 .ui.fitted.selection.list > .item {
-  margin-left: -$listSelectionListItemHorizontalPadding;
-  margin-right: -$listSelectionListItemHorizontalPadding;
+  margin-left: -$list-selection-list-item-horizontal-padding;
+  margin-right: -$list-selection-list-item-horizontal-padding;
 }
 
 /*-------------------
@@ -538,7 +538,7 @@ ol.ui.list ol li,
 
 ul.ui.list,
 .ui.bulleted.list {
-  margin-left: $listBulletDistance;
+  margin-left: $list-bullet-distance;
 }
 ul.ui.list li,
 .ui.bulleted.list .list > .item,
@@ -554,22 +554,22 @@ ul.ui.list li:before,
   top: auto;
   left: auto;
   font-weight: normal;
-  margin-left: $listBulletOffset;
-  content: $listBulletCharacter;
-  opacity: $listBulletOpacity;
-  color: $listBulletColor;
-  vertical-align: $listBulletVerticalAlign;
+  margin-left: $list-bullet-offset;
+  content: $list-bullet-character;
+  opacity: $list-bullet-opacity;
+  color: $list-bullet-color;
+  vertical-align: $list-bullet-vertical-align;
 }
 
 ul.ui.list li:before,
 .ui.bulleted.list .list > a.item:before,
 .ui.bulleted.list > a.item:before {
-  color: $listBulletLinkColor;
+  color: $list-bullet-link-color;
 }
 
 ul.ui.list ul,
 .ui.bulleted.list .list {
-  padding-left: $listBulletChildDistance;
+  padding-left: $list-bullet-child-distance;
 }
 
 /* Horizontal Bulleted */
@@ -579,7 +579,7 @@ ul.ui.horizontal.bulleted.list,
 }
 ul.ui.horizontal.bulleted.list li,
 .ui.horizontal.bulleted.list > .item {
-  margin-left: $listHorizontalBulletSpacing;
+  margin-left: $list-horizontal-bullet-spacing;
 }
 ul.ui.horizontal.bulleted.list li:first-child,
 .ui.horizontal.bulleted.list > .item:first-child {
@@ -587,7 +587,7 @@ ul.ui.horizontal.bulleted.list li:first-child,
 }
 ul.ui.horizontal.bulleted.list li::before,
 .ui.horizontal.bulleted.list > .item::before {
-  color: $listHorizontalBulletColor;
+  color: $list-horizontal-bullet-color;
 }
 ul.ui.horizontal.bulleted.list li:first-child::before,
 .ui.horizontal.bulleted.list > .item:first-child::before {
@@ -603,7 +603,7 @@ ol.ui.list,
 .ui.ordered.list .list,
 ol.ui.list ol {
   counter-reset: ordered;
-  margin-left: $listOrderedCountDistance;
+  margin-left: $list-ordered-count-distance;
   list-style-type: none;
 }
 ol.ui.list li,
@@ -620,19 +620,19 @@ ol.ui.list li:before,
   left: auto;
   user-select: none;
   pointer-events: none;
-  margin-left: -($listOrderedCountDistance);
-  counter-increment: $listOrderedCountName;
-  content: $listOrderedCountContent;
-  text-align: $listOrderedCountTextAlign;
-  color: $listOrderedCountColor;
-  vertical-align: $listOrderedCountVerticalAlign;
-  opacity: $listOrderedCountOpacity;
+  margin-left: -($list-ordered-count-distance);
+  counter-increment: $list-ordered-count-name;
+  content: $list-ordered-count-content;
+  text-align: $list-ordered-count-text-align;
+  color: $list-ordered-count-color;
+  vertical-align: $list-ordered-count-vertical-align;
+  opacity: $list-ordered-count-opacity;
 }
 
 ol.ui.inverted.list li:before,
 .ui.ordered.inverted.list .list > .item:before,
 .ui.ordered.inverted.list > .item:before {
-  color: $listOrderedInvertedCountColor;
+  color: $list-ordered-inverted-count-color;
 }
 
 /* Value */
@@ -647,11 +647,11 @@ ol.ui.list li[value]:before {
 /* Child Lists */
 ol.ui.list ol,
 .ui.ordered.list .list {
-  margin-left: $listOrderedChildCountDistance;
+  margin-left: $list-ordered-child-count-distance;
 }
 ol.ui.list ol li:before,
 .ui.ordered.list .list > .item:before {
-  margin-left: $listOrderedChildCountOffset;
+  margin-left: $list-ordered-child-count-offset;
 }
 
 /* Horizontal Ordered */
@@ -663,7 +663,7 @@ ol.ui.horizontal.list li:before,
 .ui.ordered.horizontal.list .list > .item:before,
 .ui.ordered.horizontal.list > .item:before {
   position: static;
-  margin: 0 $listHorizontalOrderedCountDistance 0 0;
+  margin: 0 $list-horizontal-ordered-count-distance 0 0;
 }
 
 /*-------------------
@@ -671,13 +671,13 @@ ol.ui.horizontal.list li:before,
 --------------------*/
 
 .ui.divided.list > .item {
-  border-top: $listDividedBorder;
+  border-top: $list-divided-border;
 }
 .ui.divided.list .list > .item {
-  border-top: $listDividedChildListBorder;
+  border-top: $list-divided-child-list-border;
 }
 .ui.divided.list .item .list > .item {
-  border-top: $listDividedChildItemBorder;
+  border-top: $list-divided-child-item-border;
 }
 .ui.divided.list .list > .item:first-child,
 .ui.divided.list > .item:first-child {
@@ -686,7 +686,7 @@ ol.ui.horizontal.list li:before,
 
 /* Sub Menu */
 .ui.divided.list:not(.horizontal) .list > .item:first-child {
-  border-top-width: $listDividedBorderWidth;
+  border-top-width: $list-divided-border-width;
 }
 
 /* Divided bulleted */
@@ -696,7 +696,7 @@ ol.ui.horizontal.list li:before,
   padding-left: 0;
 }
 .ui.divided.bulleted.list > .item:not(.horizontal) {
-  padding-left: $listBulletDistance;
+  padding-left: $list-bullet-distance;
 }
 
 /* Divided Ordered */
@@ -705,15 +705,15 @@ ol.ui.horizontal.list li:before,
 }
 .ui.divided.ordered.list .list > .item,
 .ui.divided.ordered.list > .item {
-  padding-left: $listOrderedCountDistance;
+  padding-left: $list-ordered-count-distance;
 }
 .ui.divided.ordered.list .item .list {
   margin-left: 0;
   margin-right: 0;
-  padding-bottom: $listItemVerticalPadding;
+  padding-bottom: $list-item-vertical-padding;
 }
 .ui.divided.ordered.list .item .list > .item {
-  padding-left: $listOrderedChildCountDistance;
+  padding-left: $list-ordered-child-count-distance;
 }
 
 /* Divided Selection */
@@ -728,16 +728,16 @@ ol.ui.horizontal.list li:before,
   margin-left: 0;
 }
 .ui.divided.horizontal.list > .item:not(:first-child) {
-  padding-left: $listHorizontalDividedSpacing;
+  padding-left: $list-horizontal-divided-spacing;
 }
 .ui.divided.horizontal.list > .item:not(:last-child) {
-  padding-right: $listHorizontalDividedSpacing;
+  padding-right: $list-horizontal-divided-spacing;
 }
 .ui.divided.horizontal.list > .item {
   border-top: none;
-  border-left: $listDividedBorder;
+  border-left: $list-divided-border;
   margin: 0;
-  line-height: $listHorizontalDividedLineHeight;
+  line-height: $list-horizontal-divided-line-height;
 }
 .ui.horizontal.divided.list > .item:first-child {
   border-left: none;
@@ -746,7 +746,7 @@ ol.ui.horizontal.list li:before,
 .ui.divided.inverted.list > .item,
 .ui.divided.inverted.list > .list,
 .ui.divided.inverted.horizontal.list > .item {
-  border-color: $listDividedInvertedBorderColor;
+  border-color: $list-divided-inverted-border-color;
 }
 /*-------------------
         Celled
@@ -754,19 +754,19 @@ ol.ui.horizontal.list li:before,
 
 .ui.celled.list > .item,
 .ui.celled.list > .list {
-  border-top: $listCelledBorder;
-  padding-left: $listCelledHorizontalPadding;
-  padding-right: $listCelledHorizontalPadding;
+  border-top: $list-celled-border;
+  padding-left: $list-celled-horizontal-padding;
+  padding-right: $list-celled-horizontal-padding;
 }
 .ui.celled.list > .item:last-child {
-  border-bottom: $listCelledBorder;
+  border-bottom: $list-celled-border;
 }
 
 /* Padding on all elements */
 .ui.celled.list > .item:first-child,
 .ui.celled.list > .item:last-child {
-  padding-top: $listItemVerticalPadding;
-  padding-bottom: $listItemVerticalPadding;
+  padding-top: $list-item-vertical-padding;
+  padding-bottom: $list-item-vertical-padding;
 }
 
 /* Sub Menu */
@@ -783,12 +783,12 @@ ol.ui.horizontal.list li:before,
 }
 .ui.celled.bulleted.list .list > .item,
 .ui.celled.bulleted.list > .item {
-  padding-left: ($listBulletDistance);
+  padding-left: ($list-bullet-distance);
 }
 .ui.celled.bulleted.list .item .list {
-  margin-left: -($listBulletDistance);
-  margin-right: -($listBulletDistance);
-  padding-bottom: $listItemVerticalPadding;
+  margin-left: -($list-bullet-distance);
+  margin-right: -($list-bullet-distance);
+  padding-bottom: $list-item-vertical-padding;
 }
 
 /* Celled Ordered */
@@ -797,15 +797,15 @@ ol.ui.horizontal.list li:before,
 }
 .ui.celled.ordered.list .list > .item,
 .ui.celled.ordered.list > .item {
-  padding-left: $listOrderedCountDistance;
+  padding-left: $list-ordered-count-distance;
 }
 .ui.celled.ordered.list .item .list {
   margin-left: 0;
   margin-right: 0;
-  padding-bottom: $listItemVerticalPadding;
+  padding-bottom: $list-item-vertical-padding;
 }
 .ui.celled.ordered.list .list > .item {
-  padding-left: $listOrderedChildCountDistance;
+  padding-left: $list-ordered-child-count-distance;
 }
 
 /* Celled Horizontal */
@@ -815,27 +815,27 @@ ol.ui.horizontal.list li:before,
 .ui.horizontal.celled.list .list > .item,
 .ui.horizontal.celled.list > .item {
   border-top: none;
-  border-left: $listCelledBorder;
+  border-left: $list-celled-border;
   margin: 0;
-  padding-left: $listHorizontalCelledSpacing;
-  padding-right: $listHorizontalCelledSpacing;
+  padding-left: $list-horizontal-celled-spacing;
+  padding-right: $list-horizontal-celled-spacing;
 
-  line-height: $listHorizontalCelledLineHeight;
+  line-height: $list-horizontal-celled-line-height;
 }
 .ui.horizontal.celled.list .list > .item:last-child,
 .ui.horizontal.celled.list > .item:last-child {
   border-bottom: none;
-  border-right: $listCelledBorder;
+  border-right: $list-celled-border;
 }
 
 /* Inverted */
 .ui.celled.inverted.list > .item,
 .ui.celled.inverted.list > .list {
-  border-color: $listCelledInvertedBorder;
+  border-color: $list-celled-inverted-border;
 }
 .ui.celled.inverted.horizontal.list .list > .item,
 .ui.celled.inverted.horizontal.list > .item {
-  border-color: $listCelledInvertedBorder;
+  border-color: $list-celled-inverted-border;
 }
 
 /*-------------------
@@ -843,34 +843,34 @@ ol.ui.horizontal.list li:before,
 --------------------*/
 
 .ui.relaxed.list:not(.horizontal) > .item:not(:first-child) {
-  padding-top: $listRelaxedItemVerticalPadding;
+  padding-top: $list-relaxed-item-vertical-padding;
 }
 .ui.relaxed.list:not(.horizontal) > .item:not(:last-child) {
-  padding-bottom: $listRelaxedItemVerticalPadding;
+  padding-bottom: $list-relaxed-item-vertical-padding;
 }
 .ui.horizontal.relaxed.list .list > .item:not(:first-child),
 .ui.horizontal.relaxed.list > .item:not(:first-child) {
-  padding-left: $listRelaxedHorizontalPadding;
+  padding-left: $list-relaxed-horizontal-padding;
 }
 .ui.horizontal.relaxed.list .list > .item:not(:last-child),
 .ui.horizontal.relaxed.list > .item:not(:last-child) {
-  padding-right: $listRelaxedHorizontalPadding;
+  padding-right: $list-relaxed-horizontal-padding;
 }
 
 /* Very Relaxed */
 .ui[class*="very relaxed"].list:not(.horizontal) > .item:not(:first-child) {
-  padding-top: $listVeryRelaxedItemVerticalPadding;
+  padding-top: $list-very-relaxed-item-vertical-padding;
 }
 .ui[class*="very relaxed"].list:not(.horizontal) > .item:not(:last-child) {
-  padding-bottom: $listVeryRelaxedItemVerticalPadding;
+  padding-bottom: $list-very-relaxed-item-vertical-padding;
 }
 .ui.horizontal[class*="very relaxed"].list .list > .item:not(:first-child),
 .ui.horizontal[class*="very relaxed"].list > .item:not(:first-child) {
-  padding-left: $listVeryRelaxedHorizontalPadding;
+  padding-left: $list-very-relaxed-horizontal-padding;
 }
 .ui.horizontal[class*="very relaxed"].list .list > .item:not(:last-child),
 .ui.horizontal[class*="very relaxed"].list > .item:not(:last-child) {
-  padding-right: $listVeryRelaxedHorizontalPadding;
+  padding-right: $list-very-relaxed-horizontal-padding;
 }
 
 /*-------------------
@@ -878,61 +878,61 @@ ol.ui.horizontal.list li:before,
 --------------------*/
 
 .ui.mini.list {
-  font-size: $listRelativeMini;
+  font-size: $relative-mini;
 }
 .ui.tiny.list {
-  font-size: $listRelativeTiny;
+  font-size: $relative-tiny;
 }
 .ui.small.list {
-  font-size: $listRelativeSmall;
+  font-size: $relative-small;
 }
 .ui.list {
-  font-size: $listRelativeMedium;
+  font-size: $relative-medium;
 }
 .ui.large.list {
-  font-size: $listRelativeLarge;
+  font-size: $relative-large;
 }
 .ui.big.list {
-  font-size: $listRelativeBig;
+  font-size: $relative-big;
 }
 .ui.huge.list {
-  font-size: $listRelativeHuge;
+  font-size: $relative-huge;
 }
 .ui.massive.list {
-  font-size: $listRelativeMassive;
+  font-size: $relative-massive;
 }
 
 .ui.mini.horizontal.list .list > .item,
 .ui.mini.horizontal.list > .item {
-  font-size: $listMini;
+  font-size: $mini;
 }
 .ui.tiny.horizontal.list .list > .item,
 .ui.tiny.horizontal.list > .item {
-  font-size: $listTiny;
+  font-size: $tiny;
 }
 .ui.small.horizontal.list .list > .item,
 .ui.small.horizontal.list > .item {
-  font-size: $listSmall;
+  font-size: $small;
 }
 .ui.horizontal.list .list > .item,
 .ui.horizontal.list > .item {
-  font-size: $listMedium;
+  font-size: $medium;
 }
 .ui.large.horizontal.list .list > .item,
 .ui.large.horizontal.list > .item {
-  font-size: $listLarge;
+  font-size: $large;
 }
 .ui.big.horizontal.list .list > .item,
 .ui.big.horizontal.list > .item {
-  font-size: $listBig;
+  font-size: $big;
 }
 .ui.huge.horizontal.list .list > .item,
 .ui.huge.horizontal.list > .item {
-  font-size: $listHuge;
+  font-size: $huge;
 }
 .ui.massive.horizontal.list .list > .item,
 .ui.massive.horizontal.list > .item {
-  font-size: $listMassive;
+  font-size: $massive;
 }
 
 

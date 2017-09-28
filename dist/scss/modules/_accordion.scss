@@ -16,8 +16,8 @@
   max-width: 100%;
 }
 .ui.accordion .accordion {
-  margin: $accordionChildAccordionMargin;
-  padding: $accordionChildAccordionPadding;
+  margin: $accordion-child-accordion-margin;
+  padding: $accordion-child-accordion-padding;
 }
 /* Title */
 .ui.accordion .title,
@@ -26,10 +26,10 @@
 }
 /* Default Styling */
 .ui.accordion .title:not(.ui) {
-  padding: $accordionTitlePadding;
-  font-family: $accordionTitleFont;
-  font-size: $accordionTitleFontSize;
-  color: $accordionTitleColor;
+  padding: $accordion-title-padding;
+  font-family: $accordion-title-font;
+  font-size: $accordion-title-font-size;
+  color: $accordion-title-color;
 }
 /* Content */
 .ui.accordion .title ~ .content,
@@ -39,8 +39,8 @@
 /* Default Styling */
 .ui.accordion:not(.styled) .title ~ .content:not(.ui),
 .ui.accordion:not(.styled) .accordion .title ~ .content:not(.ui) {
-  margin: $accordionContentMargin;
-  padding: $accordionContentPadding;
+  margin: $accordion-content-margin;
+  padding: $accordion-content-padding;
 }
 .ui.accordion:not(.styled) .title ~ .content:not(.ui):last-child {
   padding-bottom: 0;
@@ -48,17 +48,17 @@
 /* Arrow */
 .ui.accordion .title .dropdown.icon,
 .ui.accordion .accordion .title .dropdown.icon {
-  display: $accordionIconDisplay;
-  float: $accordionIconFloat;
-  opacity: $accordionIconOpacity;
-  width: $accordionIconWidth;
-  height: $accordionIconHeight;
-  margin: $accordionIconMargin;
-  padding: $accordionIconPadding;
-  font-size: $accordionIconFontSize;
-  transition: $accordionIconTransition;
-  vertical-align: $accordionIconVerticalAlign;
-  transform: $accordionIconTransform;
+  display: $accordion-icon-display;
+  float: $accordion-icon-float;
+  opacity: $accordion-icon-opacity;
+  width: $accordion-icon-width;
+  height: $accordion-icon-height;
+  margin: $accordion-icon-margin;
+  padding: $accordion-icon-padding;
+  font-size: $accordion-icon-font-size;
+  transition: $accordion-icon-transition;
+  vertical-align: $accordion-icon-vertical-align;
+  transform: $accordion-icon-transform;
 }
 /*--------------
     Coupling
@@ -66,17 +66,17 @@
 /* Menu */
 .ui.accordion.menu .item .title {
   display: block;
-  padding: $accordionMenuTitlePadding;
+  padding: $accordion-menu-title-padding;
 }
 .ui.accordion.menu .item .title > .dropdown.icon {
-  float: $accordionMenuIconFloat;
-  margin: $accordionMenuIconMargin;
-  transform: $accordionMenuIconTransform;
+  float: $accordion-menu-icon-float;
+  margin: $accordion-menu-icon-margin;
+  transform: $accordion-menu-icon-transform;
 }
 /* Header */
 .ui.accordion .ui.header .dropdown.icon {
-  font-size: $accordionIconFontSize;
-  margin: $accordionIconMargin;
+  font-size: $accordion-icon-font-size;
+  margin: $accordion-icon-margin;
 }
 
 /*******************************
@@ -84,10 +84,10 @@
 *******************************/
 .ui.accordion .active.title .dropdown.icon,
 .ui.accordion .accordion .active.title .dropdown.icon {
-  transform: $accordionActiveIconTransform;
+  transform: $accordion-active-icon-transform;
 }
 .ui.accordion.menu .item .active.title > .dropdown.icon {
-  transform: $accordionActiveIconTransform;
+  transform: $accordion-active-icon-transform;
 }
 
 /*******************************
@@ -97,22 +97,22 @@
      Styled
 ---------------*/
 .ui.styled.accordion {
-  width: $accordionStyledWidth;
+  width: $accordion-styled-width;
 }
 .ui.styled.accordion,
 .ui.styled.accordion .accordion {
-  border-radius: $accordionStyledBorderRadius;
-  background: $accordionStyledBackground;
-  box-shadow: $accordionStyledBoxShadow;
+  border-radius: $accordion-styled-border-radius;
+  background: $accordion-styled-background;
+  box-shadow: $accordion-styled-box-shadow;
 }
 .ui.styled.accordion .title,
 .ui.styled.accordion .accordion .title {
-  margin: $accordionStyledTitleMargin;
-  padding: $accordionStyledTitlePadding;
-  color: $accordionStyledTitleColor;
-  font-weight: $accordionStyledTitleFontWeight;
-  border-top: $accordionStyledTitleBorder;
-  transition: $accordionStyledTitleTransition;
+  margin: $accordion-styled-title-margin;
+  padding: $accordion-styled-title-padding;
+  color: $accordion-styled-title-color;
+  font-weight: $accordion-styled-title-font-weight;
+  border-top: $accordion-styled-title-border;
+  transition: $accordion-styled-title-transition;
 }
 .ui.styled.accordion > .title:first-child,
 .ui.styled.accordion .accordion .title:first-child {
@@ -121,34 +121,34 @@
 /* Content */
 .ui.styled.accordion .content,
 .ui.styled.accordion .accordion .content {
-  margin: $accordionStyledContentMargin;
-  padding: $accordionStyledContentPadding;
+  margin: $accordion-styled-content-margin;
+  padding: $accordion-styled-content-padding;
 }
 .ui.styled.accordion .accordion .content {
-  padding: $accordionStyledChildContentMargin;
-  padding: $accordionStyledChildContentPadding;
+  padding: $accordion-styled-child-content-margin;
+  padding: $accordion-styled-child-content-padding;
 }
 /* Hover */
 .ui.styled.accordion .title:hover,
 .ui.styled.accordion .active.title,
 .ui.styled.accordion .accordion .title:hover,
 .ui.styled.accordion .accordion .active.title {
-  background: $accordionStyledTitleHoverBackground;
-  color: $accordionStyledTitleHoverColor;
+  background: $accordion-styled-title-hover-background;
+  color: $accordion-styled-title-hover-color;
 }
 .ui.styled.accordion .accordion .title:hover,
 .ui.styled.accordion .accordion .active.title {
-  background: $accordionStyledHoverChildTitleBackground;
-  color: $accordionStyledHoverChildTitleColor;
+  background: $accordion-styled-hover-child-title-background;
+  color: $accordion-styled-hover-child-title-color;
 }
 /* Active */
 .ui.styled.accordion .active.title {
-  background: $accordionStyledActiveTitleBackground;
-  color: $accordionStyledActiveTitleColor;
+  background: $accordion-styled-active-title-background;
+  color: $accordion-styled-active-title-color;
 }
 .ui.styled.accordion .accordion .active.title {
-  background: $accordionStyledActiveChildTitleBackground;
-  color: $accordionStyledActiveChildTitleColor;
+  background: $accordion-styled-active-child-title-background;
+  color: $accordion-styled-active-child-title-color;
 }
 
 /*******************************
@@ -176,6 +176,6 @@
      Inverted
 ---------------*/
 .ui.inverted.accordion .title:not(.ui) {
-  color: $accordionInvertedTitleColor;
+  color: $accordion-inverted-title-color;
 }
 

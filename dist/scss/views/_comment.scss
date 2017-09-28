@@ -17,8 +17,8 @@
 ---------------*/
 
 .ui.comments {
-  margin: $commentMargin;
-  max-width: $commentMaxWidth;
+  margin: $comment-margin;
+  max-width: $comment-max-width;
 }
 
 .ui.comments:first-child {
@@ -34,24 +34,24 @@
 
 .ui.comments .comment {
   position: relative;
-  background: $commentCommentBackground;
-  margin: $commentCommentMargin;
-  padding: $commentCommentPadding;
-  border: $commentCommentBorder;
-  border-top: $commentCommentDivider;
-  line-height: $commentCommentLineHeight;
+  background: $comment-comment-background;
+  margin: $comment-comment-margin;
+  padding: $comment-comment-padding;
+  border: $comment-comment-border;
+  border-top: $comment-comment-divider;
+  line-height: $comment-comment-line-height;
 }
 .ui.comments .comment:first-child {
-  margin-top: $commentFirstCommentMargin;
-  padding-top: $commentFirstCommentPadding;
+  margin-top: $comment-first-comment-margin;
+  padding-top: $comment-first-comment-padding;
 }
 /*--------------------
     Nested Comments
 ---------------------*/
 
 .ui.comments .comment .comments {
-  margin: $commentNestedCommentsMargin;
-  padding: $commentNestedCommentsPadding;
+  margin: $comment-nested-comments-margin;
+  padding: $comment-nested-comments-padding;
 }
 .ui.comments .comment .comments:before{
   position: absolute;
@@ -59,9 +59,9 @@
   left: 0;
 }
 .ui.comments .comment .comments .comment {
-  border: $commentNestedCommentBorder;
-  border-top: $commentNestedCommentDivider;
-  background: $commentNestedCommentBackground;
+  border: $comment-nested-comment-border;
+  border-top: $comment-nested-comment-divider;
+  background: $comment-nested-comment-background;
 }
 
 /*--------------
@@ -69,11 +69,11 @@
 ---------------*/
 
 .ui.comments .comment .avatar {
-  display: $commentAvatarDisplay;
-  width: $commentAvatarWidth;
-  height: $commentAvatarHeight;
-  float: $commentAvatarFloat;
-  margin: $commentAvatarMargin;
+  display: $comment-avatar-display;
+  width: $comment-avatar-width;
+  height: $comment-avatar-height;
+  float: $comment-avatar-float;
+  margin: $comment-avatar-margin;
 }
 .ui.comments .comment img.avatar,
 .ui.comments .comment .avatar img {
@@ -81,7 +81,7 @@
   margin: 0 auto;
   width: 100%;
   height: 100%;
-  border-radius: $commentAvatarBorderRadius;
+  border-radius: $comment-avatar-border-radius;
 }
 
 /*--------------
@@ -93,7 +93,7 @@
 }
 /* If there is an avatar move content over */
 .ui.comments .comment > .avatar ~ .content {
-  margin-left: $commentContentMargin;
+  margin-left: $comment-content-margin;
 }
 
 /*--------------
@@ -101,15 +101,15 @@
 ---------------*/
 
 .ui.comments .comment .author {
-  font-size: $commentAuthorFontSize;
-  color: $commentAuthorColor;
-  font-weight: $commentAuthorFontWeight;
+  font-size: $comment-author-font-size;
+  color: $comment-author-color;
+  font-weight: $comment-author-font-weight;
 }
 .ui.comments .comment a.author {
   cursor: pointer;
 }
 .ui.comments .comment a.author:hover {
-  color: $commentAuthorHoverColor;
+  color: $comment-author-hover-color;
 }
 
 /*--------------
@@ -117,14 +117,14 @@
 ---------------*/
 
 .ui.comments .comment .metadata {
-  display: $commentMetadataDisplay;
-  margin-left: $commentMetadataSpacing;
-  color: $commentMetadataColor;
-  font-size: $commentMetadataFontSize;
+  display: $comment-metadata-display;
+  margin-left: $comment-metadata-spacing;
+  color: $comment-metadata-color;
+  font-size: $comment-metadata-font-size;
 }
 .ui.comments .comment .metadata > * {
   display: inline-block;
-  margin: 0 $commentMetadataContentSpacing 0 0;
+  margin: 0 $comment-metadata-content-spacing 0 0;
 }
 .ui.comments .comment .metadata > :last-child {
   margin-right: 0;
@@ -135,31 +135,31 @@
 ---------------------*/
 
 .ui.comments .comment .text {
-  margin: $commentTextMargin;
-  font-size: $commentTextFontSize;
-  word-wrap: $commentTextWordWrap;
-  color: $commentTextColor;
-  line-height: $commentTextLineHeight;
+  margin: $comment-text-margin;
+  font-size: $comment-text-font-size;
+  word-wrap: $comment-text-word-wrap;
+  color: $text-color;
+  line-height: $comment-text-line-height;
 }
 /*--------------------
      User Actions
 ---------------------*/
 
 .ui.comments .comment .actions {
-  font-size: $commentActionFontSize;
+  font-size: $comment-action-font-size;
 }
 .ui.comments .comment .actions a {
   cursor: pointer;
   display: inline-block;
-  margin: 0 $commentActionContentDistance 0 0;
-  color: $commentActionLinkColor;
+  margin: 0 $comment-action-content-distance 0 0;
+  color: $comment-action-link-color;
 }
 .ui.comments .comment .actions a:last-child {
   margin-right: 0;
 }
 .ui.comments .comment .actions a.active,
 .ui.comments .comment .actions a:hover {
-  color: $commentActionLinkHoverColor;
+  color: $comment-action-link-hover-color;
 }
 
 /*--------------------
@@ -167,15 +167,15 @@
 ---------------------*/
 
 .ui.comments > .reply.form {
-  margin-top: $commentReplyDistance;
+  margin-top: $comment-reply-distance;
 }
 .ui.comments .comment .reply.form {
   width: 100%;
-  margin-top: $commentCommentReplyDistance;
+  margin-top: $comment-comment-reply-distance;
 }
 .ui.comments .reply.form textarea {
-  font-size: $commentReplyFontSize;
-  height: $commentReplyHeight;
+  font-size: $comment-reply-font-size;
+  height: $comment-reply-height;
 }
 
 
@@ -200,9 +200,9 @@
 ---------------------*/
 
 .ui.threaded.comments .comment .comments {
-  margin: $commentThreadedCommentMargin;
-  padding: $commentThreadedCommentPadding;
-  box-shadow: $commentThreadedCommentBoxShadow;
+  margin: $comment-threaded-comment-margin;
+  padding: $comment-threaded-comment-padding;
+  box-shadow: $comment-threaded-comment-box-shadow;
 }
 
 /*--------------------
@@ -211,12 +211,12 @@
 
 .ui.minimal.comments .comment .actions {
   opacity: 0;
-  position: $commentMinimalActionPosition;
-  top: $commentMinimalActionTop;
-  right: $commentMinimalActionRight;
-  left: $commentMinimalActionLeft;
-  transition: $commentMinimalTransition;
-  transition-delay: $commentMinimalTransitionDelay;
+  position: $comment-minimal-action-position;
+  top: $comment-minimal-action-top;
+  right: $comment-minimal-action-right;
+  left: $comment-minimal-action-left;
+  transition: $comment-minimal-transition;
+  transition-delay: $comment-minimal-transition-delay;
 }
 .ui.minimal.comments .comment > .content:hover > .actions {
   opacity: 1;
@@ -226,27 +226,27 @@
 --------------------*/
 
 .ui.mini.comments {
-  font-size: $commentMini;
+  font-size: $mini;
 }
 .ui.tiny.comments {
-  font-size: $commentTiny;
+  font-size: $tiny;
 }
 .ui.small.comments {
-  font-size: $commentSmall;
+  font-size: $small;
 }
 .ui.comments {
-  font-size: $commentMedium;
+  font-size: $medium;
 }
 .ui.large.comments {
-  font-size: $commentLarge;
+  font-size: $large;
 }
 .ui.big.comments {
-  font-size: $commentBig;
+  font-size: $big;
 }
 .ui.huge.comments {
-  font-size: $commentHuge;
+  font-size: $huge;
 }
 .ui.massive.comments {
-  font-size: $commentMassive;
+  font-size: $massive;
 }
 
