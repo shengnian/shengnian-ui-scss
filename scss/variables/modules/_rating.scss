@@ -1,0 +1,95 @@
+/*******************************
+             Rating
+*******************************/
+
+$rating-margin: 0 $relative-mini;
+$rating-white-space: nowrap;
+$rating-vertical-align: baseline;
+
+$rating-icon-cursor: pointer;
+$rating-icon-width: 1.25em;
+$rating-icon-height: auto;
+$rating-icon-transition:
+  opacity $default-duration $default-easing,
+  background $default-duration $default-easing,
+  text-shadow $default-duration $default-easing,
+  color $default-duration $default-easing
+;
+
+
+/*-------------------
+        Types
+--------------------*/
+
+/* Standard */
+$rating-inactive-background: transparent;
+$rating-inactive-color: rgba(0, 0, 0, 0.15);
+
+$rating-selected-background: $rating-inactive-background;
+$rating-selected-color: $text-color;
+
+$rating-active-background: $rating-inactive-background;
+$rating-active-color: $dark-text-color;
+
+/* Star */
+$rating-star-icon-width: $rating-icon-width;
+$rating-star-icon-height: $rating-icon-height;
+$rating-star-shadow-width: 1px;
+
+$rating-star-inactive-background: $rating-inactive-background;
+$rating-star-inactive-color: $rating-inactive-color;
+$rating-star-inactive-text-shadow: none;
+
+$rating-star-active-background: $rating-active-background;
+$rating-star-active-color: #FFE623;
+$rating-star-active-shadow-color: #DDC507;
+$rating-star-active-text-shadow: 0 (-$rating-star-shadow-width) 0 $rating-star-active-shadow-color,
+  -$rating-star-shadow-width 0 0 $rating-star-active-shadow-color, 0 $rating-star-shadow-width 0 $rating-star-active-shadow-color,
+  $rating-star-shadow-width 0 0 $rating-star-active-shadow-color
+;
+
+$rating-star-selected-background: $rating-selected-background;
+$rating-star-selected-color: #FFCC00;
+$rating-star-selected-shadow-color: #E6A200;
+$rating-star-selected-text-shadow: 0 (-$rating-star-shadow-width) 0 $rating-star-selected-shadow-color,
+  -$rating-star-shadow-width 0 0 $rating-star-selected-shadow-color, 0 $rating-star-shadow-width 0 $rating-star-selected-shadow-color,
+  $rating-star-shadow-width 0 0 $rating-star-selected-shadow-color
+;
+
+/* Heart */
+$rating-heart-icon-width: 1.4em;
+$rating-heart-icon-height: $rating-icon-height;
+$rating-heart-shadow-width: 1px;
+
+$rating-heart-inactive-background: $rating-inactive-background;
+$rating-heart-inactive-color: $rating-inactive-color;
+$rating-heart-inactive-text-shadow: none;
+
+$rating-heart-active-background: $rating-active-background;
+$rating-heart-active-color: #FF6D75;
+$rating-heart-active-shadow-color: #CD0707;
+$rating-heart-active-text-shadow: 0 (-$rating-heart-shadow-width) 0 $rating-heart-active-shadow-color,
+  -$rating-heart-shadow-width 0 0 $rating-heart-active-shadow-color, 0 $rating-heart-shadow-width 0 $rating-heart-active-shadow-color,
+  $rating-heart-shadow-width 0 0 $rating-heart-active-shadow-color
+;
+
+$rating-heart-selected-background: $rating-selected-background;
+$rating-heart-selected-color: #FF3000;
+$rating-heart-selected-shadow-color: #AA0101;
+$rating-heart-selected-text-shadow: 0 (-$rating-heart-shadow-width) 0 $rating-heart-selected-shadow-color,
+  -$rating-heart-shadow-width 0 0 $rating-heart-selected-shadow-color, 0 $rating-heart-shadow-width 0 $rating-heart-selected-shadow-color,
+  $rating-heart-shadow-width 0 0 $rating-heart-selected-shadow-color
+;
+
+/*-------------------
+        States
+--------------------*/
+
+$rating-interactive-active-icon-opacity: 1;
+$rating-interactive-selected-icon-opacity: 1;
+
+/*-------------------
+      Variations
+--------------------*/
+
+$rating-massive: 2rem;

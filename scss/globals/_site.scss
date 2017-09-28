@@ -1,0 +1,206 @@
+/*!
+ * # Shengnian UI - Site
+ * http://github.com/shengnian/shengnian-ui
+ *
+ *
+ * Released under the MIT license
+ * http://opensource.org/licenses/MIT
+ *
+ */
+
+
+/*******************************
+             Page
+*******************************/
+@if($import-google-fonts) {
+  @include loadFonts();
+}
+
+html,
+body {
+  height: 100%;
+}
+
+html {
+  font-size: $base-size+px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: $page-overflow-x;
+  min-width: $page-min-width;
+  background: $page-background;
+  font-family: $page-font;
+  font-size: $font-size;
+  line-height: $line-height;
+  color: $text-color;
+  font-smoothing: $font-smoothing;
+}
+
+
+
+/*******************************
+             Headers
+*******************************/
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: $header-font;
+  line-height: $header-line-height;
+  @include headerMargin();
+  font-weight: $header-font-weight;
+  padding: 0;
+}
+
+h1 {
+  min-height: 1rem;
+  font-size: $h1;
+}
+h2 {
+  font-size: $h2;
+}
+h3 {
+  font-size: $h3;
+}
+h4 {
+  font-size: $h4;
+}
+h5 {
+  font-size: $h5;
+}
+
+h1:first-child,
+h2:first-child,
+h3:first-child,
+h4:first-child,
+h5:first-child {
+  margin-top: 0;
+}
+
+h1:last-child,
+h2:last-child,
+h3:last-child,
+h4:last-child,
+h5:last-child {
+  margin-bottom: 0;
+}
+
+
+/*******************************
+             Text
+*******************************/
+
+p {
+  margin: $paragraph-margin;
+  line-height: $paragraph-line-height;
+}
+p:first-child {
+  margin-top: 0;
+}
+p:last-child {
+  margin-bottom: 0;
+}
+
+/*-------------------
+        Links
+--------------------*/
+
+a {
+  color: $link-color;
+  text-decoration: $link-underline;
+}
+a:hover {
+  color: $link-hover-color;
+  text-decoration: $link-hover-underline;
+}
+
+
+/*******************************
+         Scrollbars
+*******************************/
+
+@if ($use-custom-scrollbars) {
+  @mixin addScrollbars() {
+
+    /* Force Simple Scrollbars */
+    body ::-webkit-scrollbar {
+      -webkit-appearance: none;
+      width: $custom-scrollbar-width;
+    }
+    body ::-webkit-scrollbar-track {
+      background: $track-background;
+      border-radius: $track-border-radius;
+    }
+    body ::-webkit-scrollbar-thumb {
+      cursor: pointer;
+      border-radius: $thumb-border-radius;
+      background: $thumb-background;
+      transition: $thumb-transition;
+    }
+    body ::-webkit-scrollbar-thumb:window-inactive {
+      background: $thumb-inactive-background;
+    }
+    body ::-webkit-scrollbar-thumb:hover {
+      background: $thumb-hover-background;
+    }
+
+    /* Inverted UI */
+    body .ui.inverted::-webkit-scrollbar-track {
+      background: $track-inverted-background;
+    }
+    body .ui.inverted::-webkit-scrollbar-thumb {
+      background: $thumb-inverted-background;
+    }
+    body .ui.inverted::-webkit-scrollbar-thumb:window-inactive {
+      background: $thumb-inverted-inactive-background;
+    }
+    body .ui.inverted::-webkit-scrollbar-thumb:hover {
+      background: $thumb-inverted-hover-background;
+    }
+  }
+
+  @include addScrollbars();
+}
+
+
+
+/*******************************
+          Highlighting
+*******************************/
+
+/* Site */
+::-webkit-selection {
+  background-color: $highlight-background;
+  color: $highlight-color;
+}
+::-moz-selection {
+  background-color: $highlight-background;
+  color: $highlight-color;
+}
+::selection {
+  background-color: $highlight-background;
+  color: $highlight-color;
+}
+
+/* Form */
+textarea::-webkit-selection,
+input::-webkit-selection {
+  background-color: $input-highlight-background;
+  color: $input-highlight-color;
+}
+textarea::-moz-selection,
+input::-moz-selection {
+  background-color: $input-highlight-background;
+  color: $input-highlight-color;
+}
+textarea::selection,
+input::selection {
+  background-color: $input-highlight-background;
+  color: $input-highlight-color;
+}
+
+

@@ -1,0 +1,680 @@
+/*!
+ * # Shengnian UI - Header
+ * http://github.com/shengnian/shengnian-ui
+ *
+ *
+ * Released under the MIT license
+ * http://opensource.org/licenses/MIT
+ *
+ */
+
+
+/*******************************
+            Header
+*******************************/
+
+/* Standard */
+.ui.header {
+  border: none;
+  margin: #{"calc(2rem - " + $header-line-height-offset + ")"} 0 $header-bottom-margin;
+  padding: $header-vertical-padding $header-horizontal-padding;
+  font-family: $header-font-family;
+  font-weight: $header-font-weight;
+  line-height: $header-line-height;
+  text-transform: $header-text-transform;
+  color: $text-color;
+}
+
+.ui.header:first-child {
+  margin-top: $header-first-margin;
+}
+.ui.header:last-child {
+  margin-bottom: $header-last-margin;
+}
+
+/*--------------
+   Sub Header
+---------------*/
+
+.ui.header .sub.header {
+  display: block;
+  font-weight: normal;
+  padding: 0;
+  margin: $header-sub-header-margin;
+  font-size: $header-sub-header-font-size;
+  line-height: $header-sub-header-line-height;
+  color: $header-sub-header-color;
+}
+
+/*--------------
+      Icon
+---------------*/
+
+.ui.header > .icon {
+  display: table-cell;
+  opacity: $header-icon-opacity;
+  font-size: $header-icon-size;
+  padding-top: $header-icon-offset;
+  vertical-align: $header-icon-alignment;
+}
+
+/* With Text Node */
+.ui.header .icon:only-child {
+  display: inline-block;
+  padding: 0;
+  margin-right: $header-icon-margin;
+}
+
+/*-------------------
+        Image
+--------------------*/
+
+.ui.header > .image:not(.icon),
+.ui.header > img {
+  display: inline-block;
+  margin-top: $header-image-offset;
+  width: $header-image-width;
+  height: $header-image-height;
+  vertical-align: $header-image-alignment;
+}
+.ui.header > .image:not(.icon):only-child,
+.ui.header > img:only-child {
+  margin-right: $header-image-margin;
+}
+
+/*--------------
+     Content
+---------------*/
+
+.ui.header .content {
+  display: inline-block;
+  vertical-align: $header-content-alignment;
+}
+
+/* After Image */
+.ui.header > img + .content,
+.ui.header > .image + .content {
+  padding-left: $header-image-margin;
+  vertical-align: $header-content-image-alignment;
+}
+
+/* After Icon */
+.ui.header > .icon + .content {
+  padding-left: $header-icon-margin;
+  display: table-cell;
+  vertical-align: $header-content-icon-alignment;
+}
+/*--------------
+ Loose Coupling
+---------------*/
+
+.ui.header .ui.label {
+  font-size: $header-label-size;
+  margin-left: $header-label-distance;
+  vertical-align: $header-label-vertical-align;
+}
+
+/* Positioning */
+.ui.header + p {
+  margin-top: $header-next-paragraph-distance;
+}
+
+
+/*******************************
+            Types
+*******************************/
+/*--------------
+     Page
+---------------*/
+
+h1.ui.header {
+  font-size: $h1;
+}
+h2.ui.header {
+  font-size: $h2;
+}
+h3.ui.header {
+  font-size: $h3;
+}
+h4.ui.header {
+  font-size: $h4;
+}
+h5.ui.header {
+  font-size: $h5;
+}
+/* Sub Header */
+h1.ui.header .sub.header {
+  font-size: $headerH1SubHeaderFontSize;
+}
+h2.ui.header .sub.header {
+  font-size: $headerH2SubHeaderFontSize;
+}
+h3.ui.header .sub.header {
+  font-size: $headerH3SubHeaderFontSize;
+}
+h4.ui.header .sub.header {
+  font-size: $headerH4SubHeaderFontSize;
+}
+h5.ui.header .sub.header {
+  font-size: $headerH5SubHeaderFontSize;
+}
+/*--------------
+ Content Heading
+---------------*/
+
+.ui.huge.header {
+  min-height: 1em;
+  font-size: $header-huge-font-size;
+}
+.ui.large.header {
+  font-size: $header-large-font-size;
+}
+.ui.medium.header {
+  font-size: $header-medium-font-size;
+}
+.ui.small.header {
+  font-size: $header-small-font-size;
+}
+.ui.tiny.header {
+  font-size: $header-tiny-font-size;
+}
+
+/* Sub Header */
+.ui.huge.header .sub.header {
+  font-size: $header-huge-sub-header-font-size;
+}
+.ui.large.header .sub.header {
+  font-size: $header-huge-sub-header-font-size;
+}
+.ui.header .sub.header {
+  font-size: $header-sub-header-font-size;
+}
+.ui.small.header .sub.header {
+  font-size: $header-small-sub-header-font-size;
+}
+.ui.tiny.header .sub.header {
+  font-size: $header-tiny-sub-header-font-size;
+}
+
+/*--------------
+   Sub Heading
+---------------*/
+
+.ui.sub.header {
+  padding: 0;
+  margin-bottom: $header-sub-heading-distance;
+  font-weight: $header-sub-heading-font-weight;
+  font-size: $header-sub-heading-font-size;
+  text-transform: $header-sub-heading-text-transform;
+  color: $header-sub-heading-color;
+}
+
+.ui.small.sub.header {
+  font-size: $header-small-sub-heading-size;
+}
+.ui.sub.header {
+  font-size: $header-sub-heading-font-size;
+}
+.ui.large.sub.header {
+  font-size: $header-large-sub-heading-size;
+}
+.ui.huge.sub.header {
+  font-size: $header-huge-sub-heading-size;
+}
+/*-------------------
+        Icon
+--------------------*/
+
+.ui.icon.header {
+  display: inline-block;
+  text-align: center;
+  margin: $header-icon-header-top-margin 0 $header-icon-header-bottom-margin;
+}
+.ui.icon.header:after {
+  content: '';
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.ui.icon.header:first-child {
+  margin-top: $header-icon-header-first-margin;
+}
+.ui.icon.header .icon {
+  float: none;
+  display: block;
+  width: auto;
+  height: auto;
+  line-height: 1;
+  padding: 0;
+  font-size: $header-icon-header-size;
+  margin: 0 auto $header-icon-header-margin;
+  opacity: $header-icon-header-opacity;
+}
+.ui.icon.header .content {
+  display: block;
+  padding: 0;
+}
+.ui.icon.header .circular.icon {
+  font-size: $header-circular-header-icon-size;
+}
+.ui.icon.header .square.icon {
+  font-size: $header-square-header-icon-size;
+}
+.ui.block.icon.header .icon {
+  margin-bottom: 0;
+}
+.ui.icon.header.aligned {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+
+
+/*******************************
+            States
+*******************************/
+
+.ui.disabled.header {
+  opacity: $disabled-opacity;
+}
+
+
+/*******************************
+           Variations
+*******************************/
+
+/*-------------------
+      Inverted
+--------------------*/
+
+.ui.inverted.header {
+  color: $header-inverted-color;
+}
+.ui.inverted.header .sub.header {
+  color: $header-inverted-sub-header-color;
+}
+.ui.inverted.attached.header {
+  background: $header-inverted-attached-background;
+  box-shadow: none;
+  border-color: transparent;
+}
+.ui.inverted.block.header {
+  background: $header-inverted-block-background;
+  box-shadow: none;
+}
+.ui.inverted.block.header {
+  border-bottom: none;
+}
+/*-------------------
+       Colors
+--------------------*/
+
+/*--- Red ---*/
+.ui.red.header {
+  color: $red !important;
+}
+a.ui.red.header:hover {
+  color: $red-hover !important;
+}
+.ui.red.dividing.header {
+  border-bottom: $header-divided-colored-border-width solid $red;
+}
+
+/* Inverted */
+.ui.inverted.red.header {
+  color: $light-red !important;
+}
+a.ui.inverted.red.header:hover {
+  color: $light-red-hover !important;
+}
+
+/*--- Orange ---*/
+.ui.orange.header {
+  color: $orange !important;
+}
+a.ui.orange.header:hover {
+  color: $orange-hover !important;
+}
+.ui.orange.dividing.header {
+  border-bottom: $header-divided-colored-border-width solid $orange;
+}
+/* Inverted */
+.ui.inverted.orange.header {
+  color: $light-orange !important;
+}
+a.ui.inverted.orange.header:hover {
+  color: $light-orange-hover !important;
+}
+
+/*--- Olive ---*/
+.ui.olive.header {
+  color: $olive !important;
+}
+a.ui.olive.header:hover {
+  color: $olive-hover !important;
+}
+.ui.olive.dividing.header {
+  border-bottom: $header-divided-colored-border-width solid $olive;
+}
+/* Inverted */
+.ui.inverted.olive.header {
+  color: $light-olive !important;
+}
+a.ui.inverted.olive.header:hover {
+  color: $light-olive-hover !important;
+}
+
+/*--- Yellow ---*/
+.ui.yellow.header {
+  color: $yellow !important;
+}
+a.ui.yellow.header:hover {
+  color: $yellow-hover !important;
+}
+.ui.yellow.dividing.header {
+  border-bottom: $header-divided-colored-border-width solid $yellow;
+}
+/* Inverted */
+.ui.inverted.yellow.header {
+  color: $light-yellow !important;
+}
+a.ui.inverted.yellow.header:hover {
+  color: $light-yellow-hover !important;
+}
+
+/*--- Green ---*/
+.ui.green.header {
+  color: $green !important;
+}
+a.ui.green.header:hover {
+  color: $green-hover !important;
+}
+.ui.green.dividing.header {
+  border-bottom: $header-divided-colored-border-width solid $green;
+}
+/* Inverted */
+.ui.inverted.green.header {
+  color: $light-green !important;
+}
+a.ui.inverted.green.header:hover {
+  color: $light-green-hover !important;
+}
+
+/*--- Teal ---*/
+.ui.teal.header {
+  color: $teal !important;
+}
+a.ui.teal.header:hover {
+  color: $teal-hover !important;
+}
+.ui.teal.dividing.header {
+  border-bottom: $header-divided-colored-border-width solid $teal;
+}
+/* Inverted */
+.ui.inverted.teal.header {
+  color: $light-teal !important;
+}
+a.ui.inverted.teal.header:hover {
+  color: $light-teal-hover !important;
+}
+
+/*--- Blue ---*/
+.ui.blue.header {
+  color: $blue !important;
+}
+a.ui.blue.header:hover {
+  color: $blue-hover !important;
+}
+.ui.blue.dividing.header {
+  border-bottom: $header-divided-colored-border-width solid $blue;
+}
+/* Inverted */
+.ui.inverted.blue.header {
+  color: $light-blue !important;
+}
+a.ui.inverted.blue.header:hover {
+  color: $light-blue-hover !important;
+}
+
+/*--- Violet ---*/
+.ui.violet.header {
+  color: $violet !important;
+}
+a.ui.violet.header:hover {
+  color: $violet-hover !important;
+}
+.ui.violet.dividing.header {
+  border-bottom: $header-divided-colored-border-width solid $violet;
+}
+/* Inverted */
+.ui.inverted.violet.header {
+  color: $light-violet !important;
+}
+a.ui.inverted.violet.header:hover {
+  color: $light-violet-hover !important;
+}
+
+/*--- Purple ---*/
+.ui.purple.header {
+  color: $purple !important;
+}
+a.ui.purple.header:hover {
+  color: $purple-hover !important;
+}
+.ui.purple.dividing.header {
+  border-bottom: $header-divided-colored-border-width solid $purple;
+}
+/* Inverted */
+.ui.inverted.purple.header {
+  color: $light-purple !important;
+}
+a.ui.inverted.purple.header:hover {
+  color: $light-purple-hover !important;
+}
+
+/*--- Pink ---*/
+.ui.pink.header {
+  color: $pink !important;
+}
+a.ui.pink.header:hover {
+  color: $pink-hover !important;
+}
+.ui.pink.dividing.header {
+  border-bottom: $header-divided-colored-border-width solid $pink;
+}
+/* Inverted */
+.ui.inverted.pink.header {
+  color: $light-pink !important;
+}
+a.ui.inverted.pink.header:hover {
+  color: $light-pink-hover !important;
+}
+
+/*--- Brown ---*/
+.ui.brown.header {
+  color: $brown !important;
+}
+a.ui.brown.header:hover {
+  color: $brown-hover !important;
+}
+.ui.brown.dividing.header {
+  border-bottom: $header-divided-colored-border-width solid $brown;
+}
+/* Inverted */
+.ui.inverted.brown.header {
+  color: $light-brown !important;
+}
+a.ui.inverted.brown.header:hover {
+  color: $light-brown-hover !important;
+}
+
+/*--- Grey ---*/
+.ui.grey.header {
+  color: $grey !important;
+}
+a.ui.grey.header:hover {
+  color: $grey-hover !important;
+}
+.ui.grey.dividing.header {
+  border-bottom: $header-divided-colored-border-width solid $grey;
+}
+/* Inverted */
+.ui.inverted.grey.header {
+  color: $light-grey !important;
+}
+a.ui.inverted.grey.header:hover {
+  color: $light-grey-hover !important;
+}
+/*-------------------
+       Aligned
+--------------------*/
+
+.ui.left.aligned.header {
+  text-align: left;
+}
+.ui.right.aligned.header {
+  text-align: right;
+}
+.ui.centered.header,
+.ui.center.aligned.header {
+  text-align: center;
+}
+.ui.justified.header {
+  text-align: justify;
+}
+.ui.justified.header:after {
+  display: inline-block;
+  content: '';
+  width: 100%;
+}
+
+/*-------------------
+       Floated
+--------------------*/
+
+.ui.floated.header,
+.ui[class*="left floated"].header {
+  float: left;
+  margin-top: 0;
+  margin-right: $header-floated-margin;
+}
+.ui[class*="right floated"].header {
+  float: right;
+  margin-top: 0;
+  margin-left: $header-floated-margin;
+}
+
+/*-------------------
+       Fitted
+--------------------*/
+
+.ui.fitted.header {
+  padding: 0;
+}
+/*-------------------
+      Dividing
+--------------------*/
+
+.ui.dividing.header {
+  padding-bottom: $header-divided-border-padding;
+  border-bottom: $header-divided-border;
+}
+.ui.dividing.header .sub.header {
+  padding-bottom: $header-divided-sub-header-padding;
+}
+.ui.dividing.header .icon {
+  margin-bottom: $header-divided-icon-padding;
+}
+
+.ui.inverted.dividing.header {
+  border-bottom-color: $header-inverted-divided-border-color;
+}
+/*-------------------
+        Block
+--------------------*/
+
+.ui.block.header {
+  background: $header-block-background;
+  padding: $header-block-vertical-padding $header-block-horizontal-padding;
+  box-shadow: $header-block-box-shadow;
+  border: $header-block-border;
+  border-radius: $header-block-border-radius;
+}
+
+.ui.tiny.block.header {
+  font-size: $header-tiny-block;
+}
+.ui.small.block.header {
+  font-size: $header-small-block;
+}
+.ui.block.header:not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) {
+  font-size: $header-medium-block;
+}
+.ui.large.block.header {
+  font-size: $header-large-block;
+}
+.ui.huge.block.header {
+  font-size: $header-huge-block;
+}
+
+/*-------------------
+       Attached
+--------------------*/
+
+.ui.attached.header {
+  background: $header-attached-background;
+  padding: $header-attached-vertical-padding $header-attached-horizontal-padding;
+  margin-left: $header-attached-offset;
+  margin-right: $header-attached-offset;
+  box-shadow: $header-attached-box-shadow;
+  border: $header-attached-border;
+}
+.ui.attached.block.header {
+  background: $header-block-background;
+}
+
+.ui.attached:not(.top):not(.bottom).header {
+  margin-top: 0;
+  margin-bottom: 0;
+  border-top: none;
+  border-radius: 0;
+}
+.ui.top.attached.header {
+  margin-bottom: 0;
+  border-radius: $header-attached-border-radius $header-attached-border-radius 0 0;
+}
+.ui.bottom.attached.header {
+  margin-top: 0;
+  border-top: none;
+  border-radius: 0 0 $header-attached-border-radius $header-attached-border-radius;
+}
+
+/* Attached Sizes */
+.ui.tiny.attached.header {
+  font-size: $header-tiny-attached-size;
+}
+.ui.small.attached.header {
+  font-size: $header-small-attached-size;
+}
+.ui.attached.header:not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) {
+  font-size: $header-medium-attached-size;
+}
+.ui.large.attached.header {
+  font-size: $header-large-attached-size;
+}
+.ui.huge.attached.header {
+  font-size: $header-huge-attached-size;
+}
+
+/*-------------------
+        Sizing
+--------------------*/
+
+.ui.header:not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) {
+  font-size: $header-medium-font-size;
+}
+
+

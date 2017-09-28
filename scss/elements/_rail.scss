@@ -1,0 +1,145 @@
+/*!
+ * # Shengnian UI - Rail
+ * http://github.com/shengnian/shengnian-ui
+ *
+ *
+ * Released under the MIT license
+ * http://opensource.org/licenses/MIT
+ *
+ */
+
+
+/*******************************
+             Rails
+*******************************/
+
+.ui.rail {
+  position: absolute;
+  top: 0;
+  width: $rail-width;
+  height: $rail-height;
+}
+
+.ui.left.rail {
+  left: auto;
+  right: 100%;
+  padding: 0 $rail-split-distance 0 0;
+  margin: 0 $rail-split-distance 0 0;
+}
+
+.ui.right.rail {
+  left: 100%;
+  right: auto;
+  padding: 0 0 0 $rail-split-distance;
+  margin: 0 0 0 $rail-split-distance;
+}
+
+
+
+/*******************************
+           Variations
+*******************************/
+
+/*--------------
+     Internal
+---------------*/
+
+.ui.left.internal.rail {
+  left: 0;
+  right: auto;
+  padding: 0 0 0 $rail-split-distance;
+  margin: 0 0 0 $rail-split-distance;
+}
+
+.ui.right.internal.rail {
+  left: auto;
+  right: 0;
+  padding: 0 $rail-split-distance 0 0;
+  margin: 0 $rail-split-distance 0 0;
+}
+/*--------------
+    Dividing
+---------------*/
+
+.ui.dividing.rail {
+  // TODO shengnian px not rem
+  width:  px2rem($rail-width) + $rail-split-dividing-distance;
+}
+.ui.left.dividing.rail {
+  padding: 0 $rail-split-dividing-distance 0 0;
+  margin: 0 $rail-split-dividing-distance 0 0;
+  border-right: $rail-dividing-border;
+}
+.ui.right.dividing.rail {
+  border-left: $rail-dividing-border;
+  padding: 0 0 0 $rail-split-dividing-distance;
+  margin: 0 0 0 $rail-split-dividing-distance;
+}
+
+/*--------------
+    Distance
+---------------*/
+
+.ui.close.rail {
+  width: $rail-close-width;
+}
+.ui.close.left.rail {
+  padding: 0 $rail-split-close-distance 0 0;
+  margin: 0 $rail-split-close-distance 0 0;
+}
+.ui.close.right.rail {
+  padding: 0 0 0 $rail-split-close-distance;
+  margin: 0 0 0 $rail-split-close-distance;
+}
+
+.ui.very.close.rail {
+  width: $rail-very-close-width;
+}
+.ui.very.close.left.rail {
+  padding: 0 $rail-split-very-close-distance 0 0;
+  margin: 0 $rail-split-very-close-distance 0 0;
+}
+.ui.very.close.right.rail {
+  padding: 0 0 0 $rail-split-very-close-distance;
+  margin: 0 0 0 $rail-split-very-close-distance;
+}
+
+/*--------------
+    Attached
+---------------*/
+
+.ui.attached.left.rail,
+.ui.attached.right.rail {
+  padding: 0;
+  margin: 0;
+}
+
+/*--------------
+     Sizing
+---------------*/
+
+.ui.mini.rail {
+  font-size: $mini;
+}
+.ui.tiny.rail {
+  font-size: $tiny;
+}
+.ui.small.rail {
+  font-size: $small;
+}
+.ui.rail {
+  font-size: $medium;
+}
+.ui.large.rail {
+  font-size: $large;
+}
+.ui.big.rail {
+  font-size: $big;
+}
+.ui.huge.rail {
+  font-size: $huge;
+}
+.ui.massive.rail {
+  font-size: $massive;
+}
+

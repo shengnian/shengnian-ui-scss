@@ -1,0 +1,69 @@
+/*!
+ * # Shengnian UI - Transition
+ * http://github.com/shengnian/shengnian-ui
+ *
+ *
+ * Released under the MIT license
+ * http://opensource.org/licenses/MIT
+ *
+ */
+
+
+/*******************************
+          Transitions
+*******************************/
+
+.transition {
+  animation-iteration-count: 1;
+  animation-duration: $transition-transition-default-duration;
+  animation-timing-function: $transition-transition-default-easing;
+  animation-fill-mode: $transition-transition-default-fill;
+}
+
+
+
+/*******************************
+            States
+*******************************/
+/* Animating */
+.animating.transition {
+  backface-visibility: $transition-backface-visibility;
+  visibility: visible !important;
+}
+
+/* Loading */
+.loading.transition {
+  position: absolute;
+  top: -99999px;
+  left: -99999px;
+}
+
+/* Hidden */
+.hidden.transition {
+  display: none;
+  visibility: hidden;
+}
+
+/* Visible */
+.visible.transition {
+  display: block !important;
+  visibility: visible !important;
+/*  backface-visibility: $transition-backface-visibility;
+  transform: $transition-use3DAcceleration;*/
+}
+
+/* Disabled */
+.disabled.transition {
+  animation-play-state: paused;
+}
+
+
+
+/*******************************
+          Variations
+*******************************/
+
+.looping.transition {
+  animation-iteration-count: infinite;
+}
+

@@ -1,0 +1,492 @@
+/*!
+ * # Shengnian UI - Progress Bar
+ * http://github.com/shengnian/shengnian-ui
+ *
+ *
+ * Released under the MIT license
+ * http://opensource.org/licenses/MIT
+ *
+ */
+
+
+/*******************************
+            Progress
+*******************************/
+
+.ui.progress {
+  position: relative;
+  display: block;
+  max-width: 100%;
+  border: $progress-border;
+  margin: $progress-margin;
+  box-shadow: $progress-box-shadow;
+  background: $progress-background;
+  padding: $progress-padding;
+  border-radius: $progress-border-radius;
+}
+
+.ui.progress:first-child {
+  margin: $progress-first-margin;
+}
+.ui.progress:last-child {
+  margin: $progress-last-margin;
+}
+
+
+
+/*******************************
+            Content
+*******************************/
+
+/* Activity Bar */
+.ui.progress .bar {
+  display: block;
+  line-height: 1;
+  position: $progress-bar-position;
+  width: $progress-bar-initial-width;
+  min-width: $progress-bar-min-width;
+  background: $progress-bar-background;
+  border-radius: $progress-bar-border-radius;
+  transition: $progress-bar-transition;
+}
+
+/* Percent Complete */
+.ui.progress .bar > .progress {
+  white-space: nowrap;
+  position: $progress-progress-position;
+  width: $progress-progress-width;
+  font-size: $progress-progress-size;
+  top: $progress-progress-top;
+  right: $progress-progress-right;
+  left: $progress-progress-left;
+  bottom: $progress-progress-bottom;
+  color: $progress-progress-color;
+  text-shadow: $progress-progress-text-shadow;
+  margin-top: $progress-progress-offset;
+  font-weight: $progress-progress-font-weight;
+  text-align: $progress-progress-text-align;
+}
+
+/* Label */
+.ui.progress > .label {
+  position: absolute;
+  width: $progress-label-width;
+  font-size: $progress-label-size;
+  top: $progress-label-top;
+  right: $progress-label-right;
+  left: $progress-label-left;
+  bottom: $progress-label-bottom;
+  color: $progress-label-color;
+  font-weight: $progress-label-font-weight;
+  text-shadow: $progress-label-text-shadow;
+  margin-top: $progress-label-offset;
+  text-align: $progress-label-text-align;
+  transition: $progress-label-transition;
+}
+
+
+/*******************************
+            Types
+*******************************/
+/* Indicating */
+.ui.indicating.progress[data-percent^="1"] .bar,
+.ui.indicating.progress[data-percent^="2"] .bar {
+  background-color: $progress-indicating-first-color;
+}
+.ui.indicating.progress[data-percent^="3"] .bar {
+  background-color: $progress-indicating-second-color;
+}
+.ui.indicating.progress[data-percent^="4"] .bar,
+.ui.indicating.progress[data-percent^="5"] .bar {
+  background-color: $progress-indicating-third-color;
+}
+.ui.indicating.progress[data-percent^="6"] .bar {
+  background-color: $progress-indicating-fourth-color;
+}
+.ui.indicating.progress[data-percent^="7"] .bar,
+.ui.indicating.progress[data-percent^="8"] .bar {
+  background-color: $progress-indicating-fifth-color;
+}
+.ui.indicating.progress[data-percent^="9"] .bar,
+.ui.indicating.progress[data-percent^="100"] .bar {
+  background-color: $progress-indicating-sixth-color;
+}
+
+/* Indicating Label */
+.ui.indicating.progress[data-percent^="1"] .label,
+.ui.indicating.progress[data-percent^="2"] .label {
+  color: $progress-indicating-first-label-color;
+}
+.ui.indicating.progress[data-percent^="3"] .label {
+  color: $progress-indicating-second-label-color;
+}
+.ui.indicating.progress[data-percent^="4"] .label,
+.ui.indicating.progress[data-percent^="5"] .label {
+  color: $progress-indicating-third-label-color;
+}
+.ui.indicating.progress[data-percent^="6"] .label {
+  color: $progress-indicating-fourth-label-color;
+}
+.ui.indicating.progress[data-percent^="7"] .label,
+.ui.indicating.progress[data-percent^="8"] .label {
+  color: $progress-indicating-fifth-label-color;
+}
+.ui.indicating.progress[data-percent^="9"] .label,
+.ui.indicating.progress[data-percent^="100"] .label {
+  color: $progress-indicating-sixth-label-color;
+}
+
+/* Single Digits */
+.ui.indicating.progress[data-percent="1"] .bar,
+.ui.indicating.progress[data-percent="2"] .bar,
+.ui.indicating.progress[data-percent="3"] .bar,
+.ui.indicating.progress[data-percent="4"] .bar,
+.ui.indicating.progress[data-percent="5"] .bar,
+.ui.indicating.progress[data-percent="6"] .bar,
+.ui.indicating.progress[data-percent="7"] .bar,
+.ui.indicating.progress[data-percent="8"] .bar,
+.ui.indicating.progress[data-percent="9"] .bar {
+  background-color: $progress-indicating-first-color;
+}
+.ui.indicating.progress[data-percent="1"] .label,
+.ui.indicating.progress[data-percent="2"] .label,
+.ui.indicating.progress[data-percent="3"] .label,
+.ui.indicating.progress[data-percent="4"] .label,
+.ui.indicating.progress[data-percent="5"] .label,
+.ui.indicating.progress[data-percent="6"] .label,
+.ui.indicating.progress[data-percent="7"] .label,
+.ui.indicating.progress[data-percent="8"] .label,
+.ui.indicating.progress[data-percent="9"] .label {
+  color: $progress-indicating-first-label-color;
+}
+
+/* Indicating Success */
+.ui.indicating.progress.success .label {
+  color: $success-header-color;
+}
+
+
+
+/*******************************
+             States
+*******************************/
+/*--------------
+     Success
+---------------*/
+
+.ui.progress.success .bar {
+  background-color: $success-color !important;
+}
+.ui.progress.success .bar,
+.ui.progress.success .bar::after {
+  animation: none !important;
+}
+.ui.progress.success > .label {
+  color: $success-header-color;
+}
+
+/*--------------
+     Warning
+---------------*/
+
+.ui.progress.warning .bar {
+  background-color: $warning-color !important;
+}
+.ui.progress.warning .bar,
+.ui.progress.warning .bar::after {
+  animation: none !important;
+}
+.ui.progress.warning > .label {
+  color: $warning-header-color;
+}
+
+/*--------------
+     Error
+---------------*/
+
+.ui.progress.error .bar {
+  background-color: $error-color !important;
+}
+.ui.progress.error .bar,
+.ui.progress.error .bar::after {
+  animation: none !important;
+}
+.ui.progress.error > .label {
+  color: $error-header-color;
+}
+
+/*--------------
+     Active
+---------------*/
+
+.ui.active.progress .bar {
+  position: relative;
+  min-width: $progress-active-min-width;
+}
+.ui.active.progress .bar::after {
+  content: '';
+  opacity: 0;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: $progress-active-pulse-color;
+
+  border-radius: $progress-bar-border-radius;
+
+  animation: progress-active $progress-active-pulse-duration $default-easing infinite;
+}
+@keyframes progress-active {
+  0% {
+    opacity: $progress-active-pulse-max-opacity;
+    width: 0;
+  }
+  90% {
+  }
+  100% {
+    opacity: 0;
+    width: 100%;
+  }
+}
+
+/*--------------
+    Disabled
+---------------*/
+
+.ui.disabled.progress {
+  opacity: 0.35;
+}
+.ui.disabled.progress .bar,
+.ui.disabled.progress .bar::after {
+  animation: none !important;
+}
+
+
+/*******************************
+           Variations
+*******************************/
+/*--------------
+    Inverted
+---------------*/
+
+.ui.inverted.progress {
+  background: $progress-inverted-background;
+  border: $progress-inverted-border;
+}
+.ui.inverted.progress .bar {
+  background: $progress-inverted-bar-background;
+}
+.ui.inverted.progress .bar > .progress {
+  color: $progress-inverted-progress-color;
+}
+.ui.inverted.progress > .label {
+  color: $progress-inverted-label-color;
+}
+.ui.inverted.progress.success > .label {
+  color: $success-color;
+}
+.ui.inverted.progress.warning > .label {
+  color: $warning-color;
+}
+.ui.inverted.progress.error > .label {
+  color: $error-color;
+}
+
+/*--------------
+    Attached
+---------------*/
+
+/* bottom attached */
+.ui.progress.attached {
+  background: $progress-attached-background;
+  position: relative;
+  border: none;
+  margin: 0;
+}
+.ui.progress.attached,
+.ui.progress.attached .bar {
+  display: block;
+  height: $progress-attached-height;
+  padding: 0;
+  overflow: hidden;
+  border-radius: 0 0 $progress-attached-border-radius $progress-attached-border-radius;
+}
+.ui.progress.attached .bar {
+  border-radius: 0;
+}
+
+/* top attached */
+.ui.progress.top.attached,
+.ui.progress.top.attached .bar {
+  top: 0;
+  border-radius: $progress-attached-border-radius $progress-attached-border-radius 0 0;
+}
+.ui.progress.top.attached .bar {
+  border-radius: 0;
+}
+
+/* Coupling */
+.ui.segment > .ui.attached.progress,
+.ui.card > .ui.attached.progress {
+  position: absolute;
+  top: auto;
+  left: 0;
+  bottom: 100%;
+  width: 100%;
+}
+.ui.segment > .ui.bottom.attached.progress,
+.ui.card > .ui.bottom.attached.progress {
+  top: 100%;
+  bottom: auto;
+}
+
+/*--------------
+     Colors
+---------------*/
+
+/* Red */
+.ui.red.progress .bar {
+  background-color: $red;
+}
+.ui.red.inverted.progress .bar {
+  background-color: $light-red;
+}
+
+/* Orange */
+.ui.orange.progress .bar {
+  background-color: $orange;
+}
+.ui.orange.inverted.progress .bar {
+  background-color: $light-orange;
+}
+
+/* Yellow */
+.ui.yellow.progress .bar {
+  background-color: $yellow;
+}
+.ui.yellow.inverted.progress .bar {
+  background-color: $light-yellow;
+}
+
+/* Olive */
+.ui.olive.progress .bar {
+  background-color: $olive;
+}
+.ui.olive.inverted.progress .bar {
+  background-color: $light-olive;
+}
+
+/* Green */
+.ui.green.progress .bar {
+  background-color: $green;
+}
+.ui.green.inverted.progress .bar {
+  background-color: $light-green;
+}
+
+/* Teal */
+.ui.teal.progress .bar {
+  background-color: $teal;
+}
+.ui.teal.inverted.progress .bar {
+  background-color: $light-teal;
+}
+
+/* Blue */
+.ui.blue.progress .bar {
+  background-color: $blue;
+}
+.ui.blue.inverted.progress .bar {
+  background-color: $light-blue;
+}
+
+/* Violet */
+.ui.violet.progress .bar {
+  background-color: $violet;
+}
+.ui.violet.inverted.progress .bar {
+  background-color: $light-violet;
+}
+
+/* Purple */
+.ui.purple.progress .bar {
+  background-color: $purple;
+}
+.ui.purple.inverted.progress .bar {
+  background-color: $light-purple;
+}
+
+/* Pink */
+.ui.pink.progress .bar {
+  background-color: $pink;
+}
+.ui.pink.inverted.progress .bar {
+  background-color: $light-pink;
+}
+
+/* Brown */
+.ui.brown.progress .bar {
+  background-color: $brown;
+}
+.ui.brown.inverted.progress .bar {
+  background-color: $light-brown;
+}
+
+/* Grey */
+.ui.grey.progress .bar {
+  background-color: $grey;
+}
+.ui.grey.inverted.progress .bar {
+  background-color: $light-grey;
+}
+
+/* Black */
+.ui.black.progress .bar {
+  background-color: $black;
+}
+.ui.black.inverted.progress .bar {
+  background-color: $light-black;
+}
+
+/*--------------
+     Sizes
+---------------*/
+
+.ui.tiny.progress {
+  font-size: $tiny;
+}
+.ui.tiny.progress .bar {
+  height: $progress-tiny-bar-height;
+}
+
+.ui.small.progress {
+  font-size: $small;
+}
+.ui.small.progress .bar {
+  height: $progress-small-bar-height;
+}
+
+.ui.progress {
+  font-size: $medium;
+}
+.ui.progress .bar {
+  height: $progress-bar-height;
+}
+
+.ui.large.progress {
+  font-size: $large;
+}
+.ui.large.progress .bar {
+  height: $progress-large-bar-height;
+}
+
+.ui.big.progress {
+  font-size: $big;
+}
+.ui.big.progress .bar {
+  height: $progress-big-bar-height;
+}
+
+

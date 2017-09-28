@@ -1,0 +1,171 @@
+/*!
+ * # Shengnian UI - Rating
+ * http://github.com/shengnian/shengnian-ui
+ *
+ *
+ * Released under the MIT license
+ * http://opensource.org/licenses/MIT
+ *
+ */
+
+
+/*******************************
+           Rating
+*******************************/
+
+.ui.rating {
+  display: inline-flex;
+  white-space: $rating-white-space;
+  vertical-align: $rating-vertical-align;
+}
+.ui.rating:last-child {
+  margin-right: 0;
+}
+
+/* Icon */
+.ui.rating .icon {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  font-weight: normal;
+  font-style: normal;
+  flex: 1 0 auto;
+  cursor: $rating-icon-cursor;
+  width: $rating-icon-width;
+  height: $rating-icon-height;
+  transition: $rating-icon-transition;
+}
+
+
+/*******************************
+             Types
+*******************************/
+/*-------------------
+      Standard
+--------------------*/
+
+/* Inactive Icon */
+.ui.rating .icon {
+  background: $rating-inactive-background;
+  color: $rating-inactive-color;
+}
+
+/* Active Icon */
+.ui.rating .active.icon {
+  background: $rating-active-background;
+  color: $rating-active-color;
+}
+
+/* Selected Icon */
+.ui.rating .icon.selected,
+.ui.rating .icon.selected.active {
+  background: $rating-selected-background;
+  color: $rating-selected-color;
+}
+/*-------------------
+        Star
+--------------------*/
+
+/* Inactive */
+.ui.star.rating .icon {
+  width: $rating-star-icon-width;
+  height: $rating-star-icon-height;
+  background: $rating-star-inactive-background;
+  color: $rating-star-inactive-color;
+  text-shadow: $rating-star-inactive-text-shadow;
+}
+
+/* Active Star */
+.ui.star.rating .active.icon {
+  background: $rating-star-active-background !important;
+  color: $rating-star-active-color !important;
+  text-shadow: $rating-star-active-text-shadow !important;
+}
+
+/* Selected Star */
+.ui.star.rating .icon.selected,
+.ui.star.rating .icon.selected.active {
+  background: $rating-star-selected-background !important;
+  color: $rating-star-selected-color !important;
+  text-shadow: $rating-star-selected-text-shadow !important;
+}
+/*-------------------
+        Heart
+--------------------*/
+
+.ui.heart.rating .icon {
+  width: $rating-heart-icon-width;
+  height: $rating-heart-icon-height;
+  background: $rating-heart-inactive-background;
+  color: $rating-heart-inactive-color;
+  text-shadow: $rating-heart-inactive-text-shadow !important;
+}
+
+/* Active Heart */
+.ui.heart.rating .active.icon {
+  background: $rating-heart-active-background !important;
+  color: $rating-heart-active-color !important;
+  text-shadow: $rating-heart-active-text-shadow !important;
+}
+
+/* Selected Heart */
+.ui.heart.rating .icon.selected,
+.ui.heart.rating .icon.selected.active {
+  background: $rating-heart-selected-background !important;
+  color: $rating-heart-selected-color !important;
+  text-shadow: $rating-heart-selected-text-shadow !important;
+}
+
+
+/*******************************
+             States
+*******************************/
+
+/*-------------------
+       Disabled
+--------------------*/
+
+/* disabled rating */
+.ui.disabled.rating .icon {
+  cursor: default;
+}
+/*-------------------
+   User Interactive
+--------------------*/
+
+/* Selected Rating */
+.ui.rating.selected .active.icon {
+  opacity: $rating-interactive-active-icon-opacity;
+}
+.ui.rating.selected .icon.selected,
+.ui.rating .icon.selected {
+  opacity: $rating-interactive-selected-icon-opacity;
+}
+
+
+/*******************************
+          Variations
+*******************************/
+
+.ui.mini.rating {
+  font-size: $mini;
+}
+.ui.tiny.rating {
+  font-size: $tiny;
+}
+.ui.small.rating {
+  font-size: $small;
+}
+.ui.rating {
+  font-size: $medium;
+}
+.ui.large.rating {
+  font-size: $large;
+}
+.ui.huge.rating {
+  font-size: $huge;
+}
+.ui.massive.rating {
+  font-size: $massive;
+}
+

@@ -1,0 +1,254 @@
+/*******************************
+             Label
+*******************************/
+
+/*-------------------
+       Element
+--------------------*/
+
+$label-vertical-align: baseline;
+$label-vertical-margin: 0;
+$label-horizontal-margin: $relative2px;
+$label-background-color: #E8E8E8;
+$label-color: $muted-text-color;
+$label-background-image: none;
+$label-vertical-padding: 0.5833em; /* medium is not $label-em-size custom value required */
+$label-horizontal-padding: 0.833em;
+$label-border-radius: $absolute-border-radius;
+$label-text-transform: none;
+$label-font-weight: bold;
+$label-border-width: 1px;
+$label-border: 0 solid transparent;
+
+$label-line-height-offset: -($label-vertical-padding / 2);
+
+$label-label-transition-duration: $default-duration;
+$label-label-transition-easing: $default-easing;
+$label-transition: background $label-label-transition-duration $label-label-transition-easing;
+
+/* Group */
+$label-group-vertical-margin: 0.5em;
+$label-group-horizontal-margin: 0.5em;
+
+/*-------------------
+        Parts
+--------------------*/
+
+/* Link */
+$label-link-opacity: 0.5;
+$label-link-transition: $label-label-transition-duration opacity $label-label-transition-easing;
+
+/* Icon */
+$label-icon-distance: 0.75em;
+
+/* Image */
+$label-image-height: (1em + $label-vertical-padding * 2);
+
+/* Detail */
+$label-detail-font-weight: bold;
+$label-detail-opacity: 0.8;
+$label-detail-icon-distance: 0.25em;
+$label-detail-margin: 1em;
+
+/* Delete */
+$label-delete-opacity: $label-link-opacity;
+$label-delete-size: $relative-small;
+$label-delete-margin: 0.5em;
+$label-delete-transition: background $label-label-transition-duration $label-label-transition-easing;
+
+/*-------------------
+        Types
+--------------------*/
+
+/* Image Label */
+$label-image-label-background: $label-background-color;
+$label-image-label-vertical-padding: $label-vertical-padding;
+$label-image-label-horizontal-padding: $label-horizontal-padding;
+$label-image-label-text-distance: 0.5em;
+$label-image-label-detail-distance: $label-image-label-text-distance;
+$label-image-label-border-radius: $label-border-radius;
+$label-image-label-box-shadow: none;
+$label-image-label-padding: $label-image-label-vertical-padding $label-image-label-horizontal-padding $label-image-label-vertical-padding $label-image-label-text-distance;
+
+$label-image-label-image-margin: -$label-vertical-padding $label-image-label-text-distance -$label-vertical-padding -$label-image-label-text-distance;
+$label-image-label-image-border-radius: $label-image-label-border-radius 0 0 $label-image-label-border-radius;
+$label-image-label-image-height: $label-image-height;
+
+$label-image-label-detail-background: $strong-transparent-black;
+$label-image-label-detail-padding: $label-image-label-vertical-padding $label-image-label-horizontal-padding;
+$label-image-label-detail-margin: -$label-image-label-vertical-padding -$label-image-label-horizontal-padding -$label-image-label-vertical-padding $label-image-label-detail-distance;
+
+/*-------------------
+        States
+--------------------*/
+
+/* Hover */
+$label-label-hover-background-color: #E0E0E0;
+$label-label-hover-background-image: none;
+$label-label-hover-text-color: $hovered-text-color;
+
+/* Active */
+$label-label-active-background-color: #D0D0D0;
+$label-label-active-background-image: none;
+$label-label-active-text-color: $selected-text-color;
+
+/* Active Hover */
+$label-label-active-hover-background-color: #C8C8C8;
+$label-label-active-hover-background-image: none;
+$label-label-active-hover-text-color: $selected-text-color;
+
+
+/*-------------------
+      Variations
+--------------------*/
+
+/* Basic */
+$label-basic-background: none $white;
+$label-basic-border-width: 1px;
+$label-basic-border: $label-basic-border-width solid $border-color;
+$label-basic-color: $text-color;
+$label-basic-box-shadow: none;
+
+$label-basic-hover-background: $label-basic-background;
+$label-basic-hover-color: $link-hover-color;
+$label-basic-hover-border: $label-basic-border;
+$label-basic-hover-box-shadow: $label-basic-box-shadow;
+
+/* Tag */
+$label-tag-circle-color: $white;
+$label-tag-circle-size: 0.5em;
+$label-tag-horizontal-padding: 1.5em;
+$label-tag-circle-box-shadow: 0 (-1px) 1px 0 rgba(0, 0, 0, 0.3);
+$label-tag-triangle-right-offset: 100%;
+$label-tag-triangle-top-offset: 50%;
+$label-tag-triangle-size: 1.56em;
+$label-tag-triangle-background-image: none;
+$label-tag-transition: none; /* Avoids error with background: inherit; on animation */
+
+/* Ribbon */
+$label-ribbon-triangle-size: 1.2em;
+$label-ribbon-shadow-color: rgba(0, 0, 0, 0.15);
+
+$label-ribbon-margin: 1rem;
+$label-ribbon-offset: #{"calc(" + (-$label-ribbon-margin) + " - " + $label-ribbon-triangle-size + ")"};
+$label-ribbon-distance: #{"calc(" + $label-ribbon-margin + " + " + $label-ribbon-triangle-size + ")"};
+$label-right-ribbon-offset:  #{"calc(100% + " + $label-ribbon-margin + " + " + $label-ribbon-triangle-size + ")"};
+
+$label-ribbon-image-top-distance: 1rem;
+$label-ribbon-image-margin: -0.05rem; /* Rounding Offset on Triangle */
+$label-ribbon-image-offset: #{"calc(" + (-$label-ribbon-image-margin) + " - " + $label-ribbon-triangle-size + ")"};
+$label-right-ribbon-image-offset:  #{"calc(100% + " + $label-ribbon-image-margin + " + " + $label-ribbon-triangle-size + ")"};
+
+$label-ribbon-table-margin: $relative-mini; /* Rounding Offset on Triangle */
+$label-ribbon-table-offset: #{"calc(" + (-$label-ribbon-table-margin) + " - " + $label-ribbon-triangle-size + ")"};
+$label-right-ribbon-table-offset:  #{"calc(100% + " + $label-ribbon-table-margin + " + " + $label-ribbon-triangle-size + ")"};
+
+
+/* Colors */
+$label-red-text-color: $white;
+$label-orange-text-color: $white;
+$label-yellow-text-color: $white;
+$label-olive-text-color: $white;
+$label-green-text-color: $white;
+$label-teal-text-color: $white;
+$label-blue-text-color: $white;
+$label-violet-text-color: $white;
+$label-purple-text-color: $white;
+$label-pink-text-color: $white;
+$label-brown-text-color: $white;
+$label-grey-text-color: $white;
+$label-black-text-color: $white;
+
+$label-red-hover-text-color: $white;
+$label-orange-hover-text-color: $white;
+$label-yellow-hover-text-color: $white;
+$label-olive-hover-text-color: $white;
+$label-green-hover-text-color: $white;
+$label-teal-hover-text-color: $white;
+$label-blue-hover-text-color: $white;
+$label-violet-hover-text-color: $white;
+$label-purple-hover-text-color: $white;
+$label-pink-hover-text-color: $white;
+$label-brown-hover-text-color: $white;
+$label-grey-hover-text-color: $white;
+$label-black-hover-text-color: $white;
+
+$label-red-ribbon-shadow: darken($red, 10);
+$label-orange-ribbon-shadow: darken($orange, 10);
+$label-yellow-ribbon-shadow: darken($yellow, 10);
+$label-olive-ribbon-shadow: darken($olive, 10);
+$label-green-ribbon-shadow: darken($green, 10);
+$label-teal-ribbon-shadow: darken($teal, 10);
+$label-blue-ribbon-shadow: darken($blue, 10);
+$label-violet-ribbon-shadow: darken($violet, 10);
+$label-purple-ribbon-shadow: darken($purple, 10);
+$label-pink-ribbon-shadow: darken($pink, 10);
+$label-brown-ribbon-shadow: darken($brown, 10);
+$label-grey-ribbon-shadow: darken($grey, 10);
+$label-black-ribbon-shadow: darken($black, 10);
+
+/* Attached */
+$label-attached-segment-padding: 2rem;
+$label-attached-vertical-padding: 0.75em;
+$label-attached-horizontal-padding: 1em;
+
+$label-attached-corner-border-radius: $_3px;
+$label-attached-border-radius: $label-border-radius;
+
+/* Corner */
+$label-corner-size-ratio: 1;
+$label-corner-transition: color $label-label-transition-duration $label-label-transition-easing;
+$label-corner-triangle-size: 4em;
+$label-corner-triangle-transition: border-color $label-label-transition-duration $label-label-transition-easing;
+$label-corner-triangle-zindex: 1;
+
+$label-corner-icon-size: $relative-large;
+$label-corner-icon-top-offset: $relative9px;
+$label-corner-icon-left-offset: $relative11px;
+
+/* Corner Text */
+$label-corner-text-width: 3em;
+$label-corner-text-weight: bold;
+$label-corner-text-size: 1em;
+
+/* Horizontal */
+$label-horizontal-label-min-width: 3em;
+$label-horizontal-label-margin: 0.5em;
+$label-horizontal-label-vertical-padding: 0.4em;
+
+/* Circular Padding */
+$label-circular-padding: 0.5em;
+$label-circular-min-size: 2em;
+$label-empty-circle-size: 0.5em;
+
+/* Pointing */
+$label-pointing-border-color: inherit;
+$label-pointing-border-width: $label-border-width;
+$label-pointing-vertical-distance: 1em;
+$label-pointing-triangle-size: 0.6666em;
+$label-pointing-horizontal-distance: $label-pointing-triangle-size;
+
+$label-pointing-triangle-transition: background $label-label-transition-duration $label-label-transition-easing;
+$label-pointing-triangle-zindex: 2;
+
+/* Basic Pointing */
+$label-basic-pointing-triangle-offset: -$label-pointing-border-width;
+
+/* Floating */
+$label-floating-top-offset: -1em;
+$label-floating-left-offset: -1.5em;
+$label-floating-zindex: 100;
+
+/*-------------------
+        Group
+--------------------*/
+
+/* Sizing */
+$label-mini    : $_9px;
+$label-tiny    : $_10px;
+$label-small   : $_11px;
+$label-medium  : $_12px;
+$label-large   : $absolute-medium;
+$label-big     : $absolute-big;
+$label-huge    : $absolute-huge;
+$label-massive : $absolute-massive;

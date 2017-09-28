@@ -1,0 +1,192 @@
+/*******************************
+            Checkbox
+*******************************/
+
+$checkbox-checkbox-size: 17px;
+$checkbox-checkbox-color: $text-color;
+$checkbox-checkbox-line-height: $checkbox-checkbox-size;
+
+
+/* Label */
+$checkbox-label-distance: 1.85714em; /* 26px @ 14/em */
+
+/* Checkbox */
+$checkbox-checkbox-background: $white;
+$checkbox-checkbox-border: 1px solid $solid-border-color;
+$checkbox-checkbox-border-radius: $_3px;
+$checkbox-checkbox-transition:
+  border $default-duration $default-easing,
+  opacity $default-duration $default-easing,
+  transform $default-duration $default-easing,
+  box-shadow $default-duration $default-easing
+;
+
+/* Checkmark */
+$checkbox-checkbox-check-font-size: 14px;
+$checkbox-checkbox-check-top: 0;
+$checkbox-checkbox-check-left: 0;
+$checkbox-checkbox-check-size: $checkbox-checkbox-size;
+
+/* Label */
+$checkbox-label-font-size: $relative-medium;
+$checkbox-label-color: $text-color;
+$checkbox-label-transition: color $default-duration $default-easing;
+
+/*-------------------
+        States
+--------------------*/
+
+/* Hover */
+$checkbox-checkbox-hover-background: $checkbox-checkbox-background;
+$checkbox-checkbox-hover-border-color: $selected-border-color;
+$checkbox-label-hover-color: $hovered-text-color;
+
+/* Pressed */
+$checkbox-checkbox-pressed-background: $off-white;
+$checkbox-checkbox-pressed-border-color: $selected-border-color;
+$checkbox-checkbox-pressed-color: $selected-text-color;
+$checkbox-label-pressed-color: $selected-text-color;
+
+/* Focus */
+$checkbox-checkbox-focus-background: $white;
+$checkbox-checkbox-focus-border-color: $focused-form-muted-border-color;
+$checkbox-checkbox-focus-check-color: $selected-text-color;
+$checkbox-label-focus-color: $selected-text-color;
+
+/* Active */
+$checkbox-label-active-color: $selected-text-color;
+$checkbox-checkbox-active-background: $white;
+$checkbox-checkbox-active-border-color: $selected-border-color;
+$checkbox-checkbox-active-check-color: $selected-text-color;
+$checkbox-checkbox-active-check-opacity: 1;
+
+/* Active Focus */
+$checkbox-checkbox-active-focus-background: $white;
+$checkbox-checkbox-active-focus-border-color: $checkbox-checkbox-focus-border-color;
+$checkbox-checkbox-active-focus-check-color: $selected-text-color;
+
+/* Indeterminate */
+$checkbox-checkbox-indeterminate-background: $checkbox-checkbox-active-background;
+$checkbox-checkbox-indeterminate-border-color: $checkbox-checkbox-active-border-color;
+$checkbox-checkbox-indeterminate-check-opacity: 1;
+$checkbox-checkbox-indeterminate-check-color: $checkbox-checkbox-active-check-color;
+
+/* Disabled */
+$checkbox-disabled-checkbox-opacity: 0.5;
+$checkbox-disabled-checkbox-label-color: rgba(0, 0, 0, 1);
+
+/*-------------------
+        Types
+--------------------*/
+
+/* Radio */
+/* Uses px to avoid rounding issues with circles */
+
+$checkbox-radio-size: 15px;
+$checkbox-radio-top: 1px;
+$checkbox-radio-left: 0;
+$checkbox-radio-label-distance: $checkbox-label-distance;
+
+$checkbox-bullet-top: 1px;
+$checkbox-bullet-left: 0;
+$checkbox-bullet-scale: (7 / 15); /* 7px as unitless value from radio size */
+$checkbox-bullet-color: $text-color;
+$checkbox-bullet-radius: $circular-radius;
+
+$checkbox-radio-focus-background: $checkbox-checkbox-focus-background;
+$checkbox-radio-focus-bullet-color: $checkbox-checkbox-focus-check-color;
+
+$checkbox-radio-active-background: $checkbox-checkbox-active-background;
+$checkbox-radio-active-bullet-color: $checkbox-checkbox-active-check-color;
+
+$checkbox-radio-active-focus-background: $checkbox-checkbox-active-focus-background;
+$checkbox-radio-active-focus-bullet-color: $checkbox-checkbox-active-focus-check-color;
+
+/* Slider & Toggle Handle */
+$checkbox-handle-background: $white $subtle-gradient;
+$checkbox-handle-box-shadow:
+  $subtle-shadow, 0 0 0 1px $border-color inset
+;
+
+/* Slider */
+$checkbox-slider-handle-size: 1.5rem;
+$checkbox-slider-line-width: 3.5rem;
+$checkbox-slider-transition-duration: 0.3s;
+
+$checkbox-slider-handle-offset: (1rem - $checkbox-slider-handle-size) / 2;
+$checkbox-slider-handle-transition: left $checkbox-slider-transition-duration $default-easing;
+
+$checkbox-slider-width: $checkbox-slider-line-width;
+$checkbox-slider-height: ($checkbox-slider-handle-size + $checkbox-slider-handle-offset);
+
+$checkbox-slider-line-height: $_3px;
+$checkbox-slider-line-vertical-offset: 0.4rem;
+$checkbox-slider-line-color: $transparent-black;
+$checkbox-slider-line-radius: $circular-radius;
+$checkbox-slider-line-transition: background $checkbox-slider-transition-duration $default-easing;
+
+$checkbox-slider-travel-distance: $checkbox-slider-line-width - $checkbox-slider-handle-size;
+
+$checkbox-slider-label-distance: $checkbox-slider-line-width + 1rem;
+$checkbox-slider-off-label-color: $unselected-text-color;
+
+$checkbox-slider-label-line-height: 1rem;
+
+/* Slider States */
+$checkbox-slider-hover-lane-background: $very-strong-transparent-black;
+$checkbox-slider-hover-label-color: $hovered-text-color;
+
+$checkbox-slider-on-line-color: $light-black;
+$checkbox-slider-on-label-color: $selected-text-color;
+
+$checkbox-slider-on-focus-line-color: $light-black-focus;
+$checkbox-slider-on-focus-label-color: $checkbox-slider-on-label-color;
+
+
+
+/* Toggle */
+$checkbox-toggle-lane-width: 3.5rem;
+$checkbox-toggle-handle-size: 1.5rem;
+$checkbox-toggle-transition-duration: 0.2s;
+
+$checkbox-toggle-width: $checkbox-toggle-lane-width;
+$checkbox-toggle-height: $checkbox-toggle-handle-size;
+
+$checkbox-toggle-handle-radius: $circular-radius;
+$checkbox-toggle-handle-offset: 0;
+$checkbox-toggle-handle-transition:
+  background $checkbox-slider-transition-duration $default-easing,
+  left $checkbox-slider-transition-duration $default-easing
+;
+
+$checkbox-toggle-lane-background: $transparent-black;
+$checkbox-toggle-lane-height: $checkbox-toggle-handle-size;
+$checkbox-toggle-lane-box-shadow: none;
+$checkbox-toggle-lane-vertical-offset: 0;
+$checkbox-toggle-off-offset: -0.05rem;
+$checkbox-toggle-on-offset: ($checkbox-toggle-lane-width - $checkbox-toggle-handle-size) + 0.15rem;
+
+$checkbox-toggle-label-distance: $checkbox-toggle-lane-width + 1rem;
+$checkbox-toggle-label-line-height: 1.5rem;
+$checkbox-toggle-label-offset: 0.15em;
+
+
+$checkbox-toggle-focus-color: $very-strong-transparent-black;
+$checkbox-toggle-hover-color: $checkbox-toggle-focus-color;
+
+$checkbox-toggle-off-label-color: $checkbox-checkbox-color;
+$checkbox-toggle-off-handle-box-shadow: none;
+
+$checkbox-toggle-on-label-color: $selected-text-color;
+$checkbox-toggle-on-lane-color: $primary-color;
+
+$checkbox-toggle-on-handle-box-shadow: none;
+
+$checkbox-toggle-on-focus-lane-color: $primary-color-focus;
+$checkbox-toggle-on-focus-label-color: $checkbox-toggle-on-label-color;
+
+
+
+/*-------------------
+      Variations
+--------------------*/

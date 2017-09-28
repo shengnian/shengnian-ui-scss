@@ -1,0 +1,10 @@
+/*******************************
+          Transition
+*******************************/
+
+$transition-transition-default-easing: $default-easing;
+$transition-transition-default-fill: both;
+$transition-transition-default-duration: 300ms;
+
+$transition-use3DAcceleration: translateZ(0);
+$transition-backface-visibility: hidden;

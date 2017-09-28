@@ -1,0 +1,17 @@
+/*******************************
+            Reveal
+*******************************/
+
+$reveal-transition-delay: 0.1s;
+$reveal-transition-duration: 0.5s;
+$reveal-transition-easing: cubic-bezier(0.175, 0.885, 0.320, 1);
+$reveal-transition: all $reveal-transition-duration $default-easing $reveal-transition-delay;
+
+$reveal-bottom-zindex: 2;
+$reveal-top-zindex: 3;
+$reveal-active-zindex: 4;
+
+/* Types */
+$reveal-rotate-degrees: 110deg;
+$reveal-move-transition: transform $reveal-transition-duration $reveal-transition-easing $reveal-transition-delay;
+$reveal-slide-transition: transform $reveal-transition-duration $default-easing $reveal-transition-delay;

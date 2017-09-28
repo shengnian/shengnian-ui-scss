@@ -1,0 +1,220 @@
+/*******************************
+             Card
+*******************************/
+
+/*-------------------
+         View
+--------------------*/
+
+/* Shadow */
+$card-shadow-distance: 1px;
+$card-shadow-box-shadow: 0 $card-shadow-distance 3px 0 $solid-border-color;
+
+/* Card */
+$card-font-family: $page-font;
+$card-display: flex;
+$card-background: $white;
+$card-border-radius: $default-border-radius;
+$card-margin: 1em 0;
+$card-min-height: 0;
+$card-padding: 0;
+$card-width: 290px;
+$card-border-width: 1px;
+$card-border-shadow: 0 0 0 $card-border-width $solid-border-color;
+$card-box-shadow:
+  $card-shadow-box-shadow,
+  $card-border-shadow
+;
+$card-border: none;
+$card-zindex: '';
+$card-transition:
+  box-shadow $default-duration $default-easing,
+  transform $default-duration $default-easing
+;
+
+/* Card Group */
+$card-horizontal-spacing: 1em;
+$card-row-spacing: 1.75em;
+
+$card-group-margin: (-$card-row-spacing / 2) (-$card-horizontal-spacing / 2);
+$card-group-display: flex;
+
+$card-group-card-float: none;
+$card-group-card-display: flex;
+$card-group-card-margin: ($card-row-spacing / 2) ($card-horizontal-spacing / 2);
+
+/* Consecutive Cards */
+$card-consecutive-group-distance: ($card-row-spacing / 2);
+
+/*-------------------
+       Content
+--------------------*/
+
+
+/* Image */
+$card-image-background: $transparent-black;
+$card-image-padding: 0;
+$card-image-border: none;
+$card-image-box-shadow: none;
+$card-image-border: none;
+
+/* Content */
+$card-content-divider: $card-border-width solid $internal-border-color;
+$card-content-margin: 0;
+$card-content-background: none;
+$card-content-padding: 1em 1em;
+$card-content-font-size: 1em;
+$card-content-border-radius: 0;
+$card-content-box-shadow: none;
+$card-content-border: none;
+
+
+/* Header */
+$card-header-margin: '';
+$card-header-font-weight: bold;
+$card-header-font-size: $relative-big;
+$card-header-line-height-offset: -($line-height - 1em) / 2;
+$card-header-color: $dark-text-color;
+
+/* Metadata */
+$card-meta-font-size: $relative-medium;
+$card-meta-spacing: 0.3em;
+$card-meta-color: $light-text-color;
+
+/* Icons */
+$card-action-opacity: 0.75;
+$card-action-hover-opacity: 1;
+$card-action-transition: color $default-duration $default-easing;
+
+$card-star-color: #FFB70A;
+$card-star-active-color: #FFE623;
+
+$card-like-color: #FF2733;
+$card-like-active-color: #FF2733;
+
+/* Links */
+$card-content-link-color: '';
+$card-content-link-hover-color: '';
+$card-content-link-transition: color $default-duration $default-easing;
+
+$card-header-link-color: $card-header-color;
+$card-header-link-hover-color: $link-hover-color;
+
+$card-meta-link-color: $light-text-color;
+$card-meta-link-hover-color: $text-color;
+
+/* Description */
+$card-description-distance: 0.5em;
+$card-description-color: rgba(0, 0, 0, 0.68);
+
+/* Content Image */
+$card-content-image-width: '';
+$card-content-image-vertical-align: middle;
+
+/* Avatar Image */
+$card-avatar-size: 2em;
+$card-avatar-border-radius: $circular-radius;
+
+/* Paragraph */
+$card-paragraph-distance: 0.5em;
+
+/* Dimmer */
+$card-dimmer-zindex: 10;
+$card-dimmer-color: '';
+
+/* Additional Content */
+$card-extra-divider: 1px solid rgba(0, 0, 0, 0.05);
+$card-extra-background: none;
+$card-extra-position: static;
+$card-extra-width: auto;
+$card-extra-top: 0;
+$card-extra-left: 0;
+$card-extra-margin: 0 0;
+$card-extra-padding: 0.75em 1em;
+$card-extra-box-shadow: none;
+$card-extra-color: $light-text-color;
+$card-extra-transition: color $default-duration $default-easing;
+
+/* Extra Links */
+$card-extra-link-color: $unselected-text-color;
+$card-extra-link-hover-color: $link-hover-color;
+
+/* Buttons */
+$card-button-margin: 0 (-$card-border-width);
+$card-button-width: #{"calc(100% + " + ($card-border-width * 2) + ")"};
+
+/*-------------------
+      Variations
+--------------------*/
+
+/* Link */
+$card-link-hover-background: $white;
+$card-link-hover-border: $card-border;
+$card-link-hover-zindex: 5;
+$card-link-hover-raise-distance: 3px;
+$card-link-hover-transform: translateY(-$card-link-hover-raise-distance);
+
+$card-shadow-hover-box-shadow: 0 $card-shadow-distance $card-link-hover-raise-distance 0 $solid-selected-border-color;
+$card-link-hover-box-shadow:
+  $card-shadow-hover-box-shadow,
+  $card-border-shadow
+;
+
+
+/* Raised */
+$card-raised-shadow:
+  $card-border-shadow,
+  $floating-shadow
+;
+$card-raised-shadow-hover:
+  $card-border-shadow,
+  $floating-shadow-hover
+;
+
+/* Card Count */
+$card-wide-card-spacing: 1em;
+$card-card-spacing: 0.75em;
+$card-small-card-spacing: 0.5em;
+
+$card-one-card-spacing: 0;
+$card-two-card-spacing: $card-wide-card-spacing;
+$card-three-card-spacing: $card-wide-card-spacing;
+$card-four-card-spacing: $card-card-spacing;
+$card-five-card-spacing: $card-card-spacing;
+$card-six-card-spacing: $card-card-spacing;
+$card-seven-card-spacing: $card-small-card-spacing;
+$card-eight-card-spacing: $card-small-card-spacing;
+$card-nine-card-spacing: $card-small-card-spacing;
+$card-ten-card-spacing: $card-small-card-spacing;
+
+$card-one-card: $one-column;
+$card-one-card-offset: 0;
+$card-two-card: #{"calc(" + $two-column + " - " + ($card-two-card-spacing * 2) + ")"};
+$card-two-card-offset: -$card-two-card-spacing;
+$card-three-card: #{"calc(" + $three-column + " - " + ($card-three-card-spacing * 2) + ")"};
+$card-three-card-offset: -$card-three-card-spacing;
+$card-four-card: #{"calc(" + $four-column + " - " + ($card-four-card-spacing * 2) + ")"};
+$card-four-card-offset: -$card-four-card-spacing;
+$card-five-card: #{"calc(" + $five-column + " - " + ($card-five-card-spacing * 2) + ")"};
+$card-five-card-offset: -$card-five-card-spacing;
+$card-six-card: #{"calc(" + $six-column + " - " + ($card-six-card-spacing * 2) + ")"};
+$card-six-card-offset: -$card-six-card-spacing;
+$card-seven-card: #{"calc(" + $seven-column + " - " + ($card-seven-card-spacing * 2) + ")"};
+$card-seven-card-offset: -$card-seven-card-spacing;
+$card-eight-card: #{"calc(" + $eight-column + " - " + ($card-seven-card-spacing * 2) + ")"};
+$card-eight-card-offset: -$card-seven-card-spacing;
+$card-nine-card: #{"calc(" + $nine-column + " - " + ($card-nine-card-spacing * 2) + ")"};
+$card-nine-card-offset: -$card-nine-card-spacing;
+$card-ten-card: #{"calc(" + $ten-column + " - " + ($card-ten-card-spacing * 2) + ")"};
+$card-ten-card-offset: -$card-ten-card-spacing;
+
+/* Stackable */
+$card-stackable-row-spacing: 1em;
+$card-stackable-card-spacing: 1em;
+$card-stackable-margin: #{"calc(" + $one-column + " - " + ($card-stackable-card-spacing * 2) + ")"};
+
+/* Sizes */
+$card-medium: 1em;
+
+/* Colored */
+$card-colored-shadow-distance: 2px;

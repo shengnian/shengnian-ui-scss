@@ -1,0 +1,333 @@
+/*!
+ * # Shengnian UI - Loader
+ * http://github.com/shengnian/shengnian-ui
+ *
+ *
+ * Released under the MIT license
+ * http://opensource.org/licenses/MIT
+ *
+ */
+
+
+/*******************************
+            Loader
+*******************************/
+/* Standard Size */
+.ui.loader {
+  display: none;
+  position: absolute;
+  top: $loader-loader-top-offset;
+  left: $loader-loader-left-offset;
+  margin: 0;
+  text-align: center;
+  z-index: 1000;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+/* Static Shape */
+.ui.loader:before {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+
+  border-radius: $circular-radius;
+  border: $loader-line-width solid $loader-fill-color;
+}
+
+/* Active Shape */
+.ui.loader:after {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+
+  animation: loader $loader-speed linear;
+  animation-iteration-count: infinite;
+
+  border-radius: $circular-radius;
+
+  border-color: $loader-shape-border-color;
+  border-style: solid;
+  border-width: $loader-line-width;
+
+  box-shadow: 0 0 0 1px transparent;
+}
+
+/* Active Animation */
+@keyframes loader {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Sizes */
+.ui.mini.loader:before,
+.ui.mini.loader:after {
+  width: $loader-mini;
+  height: $loader-mini;
+  @include loaderMiniOffset();
+  //margin: $loader-mini-offset;
+}
+.ui.tiny.loader:before,
+.ui.tiny.loader:after {
+  width: $loader-tiny;
+  height: $loader-tiny;
+  @include loaderTinyOffset();
+  //margin: $loader-tiny-offset;
+}
+.ui.small.loader:before,
+.ui.small.loader:after {
+  width: $loader-small;
+  height: $loader-small;
+  @include loaderSmallOffset();
+  //margin: $loader-small-offset;
+}
+.ui.loader:before,
+.ui.loader:after {
+  width: $loader-medium;
+  height: $loader-medium;
+  @include loaderMediumOffset();
+  //margin: $loader-medium-offset;
+}
+.ui.large.loader:before,
+.ui.large.loader:after {
+  width: $loader-large;
+  height: $loader-large;
+  @include loaderLargeOffset();
+  //margin: $loader-large-offset;
+}
+.ui.big.loader:before,
+.ui.big.loader:after {
+  width: $loader-big;
+  height: $loader-big;
+  @include loaderBigOffset();
+  //margin: $loader-big-offset;
+}
+.ui.huge.loader:before,
+.ui.huge.loader:after {
+  width: $loader-huge;
+  height: $loader-huge;
+  @include loaderHugeOffset();
+  //margin: $loader-huge-offset;
+}
+.ui.massive.loader:before,
+.ui.massive.loader:after {
+  width: $loader-massive;
+  height: $loader-massive;
+  @include loaderMassiveOffset();
+  //margin: $loader-massive-offset;
+}
+
+/*-------------------
+      Coupling
+--------------------*/
+
+/* Show inside active dimmer */
+.ui.dimmer .loader {
+  display: block;
+}
+
+/* Black Dimmer */
+.ui.dimmer .ui.loader {
+  color: $loader-inverted-loader-text-color;
+}
+.ui.dimmer .ui.loader:before {
+  border-color: $inverted-loader-fill-color;
+}
+.ui.dimmer .ui.loader:after {
+  border-color: $loader-inverted-shape-border-color;
+}
+
+/* White Dimmer (Inverted) */
+.ui.inverted.dimmer .ui.loader {
+  color: $loader-loader-text-color;
+}
+.ui.inverted.dimmer .ui.loader:before {
+  border-color: $loader-fill-color;
+}
+.ui.inverted.dimmer .ui.loader:after {
+  border-color: $loader-shape-border-color;
+}
+
+
+
+/*******************************
+             Types
+*******************************/
+/*-------------------
+        Text
+--------------------*/
+
+.ui.text.loader {
+  width: auto !important;
+  height: auto !important;
+  text-align: center;
+  font-style: normal;
+}
+
+
+/*******************************
+            States
+*******************************/
+
+.ui.indeterminate.loader:after {
+  animation-direction: $loader-indeterminate-direction;
+  animation-duration: $loader-indeterminate-speed;
+}
+
+.ui.loader.active,
+.ui.loader.visible {
+  display: block;
+}
+.ui.loader.disabled,
+.ui.loader.hidden {
+  display: none;
+}
+
+
+
+/*******************************
+            Variations
+*******************************/
+/*-------------------
+        Sizes
+--------------------*/
+/* Loader */
+.ui.inverted.dimmer .ui.mini.loader,
+.ui.mini.loader {
+  width: $loader-mini;
+  height: $loader-mini;
+  font-size: $loader-mini-font-size;
+}
+.ui.inverted.dimmer .ui.tiny.loader,
+.ui.tiny.loader {
+  width: $loader-tiny;
+  height: $loader-tiny;
+  font-size: $loader-tiny-font-size;
+}
+.ui.inverted.dimmer .ui.small.loader,
+.ui.small.loader {
+  width: $loader-small;
+  height: $loader-small;
+  font-size: $loader-small-font-size;
+}
+.ui.inverted.dimmer .ui.loader,
+.ui.loader {
+  width: $loader-medium;
+  height: $loader-medium;
+  font-size: $loader-medium-font-size;
+}
+.ui.inverted.dimmer .ui.large.loader,
+.ui.large.loader {
+  width: $loader-large;
+  height: $loader-large;
+  font-size: $loader-large-font-size;
+}
+.ui.inverted.dimmer .ui.big.loader,
+.ui.big.loader {
+  width: $loader-big;
+  height: $loader-big;
+  font-size: $loader-big-font-size;
+}
+.ui.inverted.dimmer .ui.huge.loader,
+.ui.huge.loader {
+  width: $loader-huge;
+  height: $loader-huge;
+  font-size: $loader-huge-font-size;
+}
+.ui.inverted.dimmer .ui.massive.loader,
+.ui.massive.loader {
+  width: $loader-massive;
+  height: $loader-massive;
+  font-size: $loader-massive-font-size;
+}
+
+/* Text Loader */
+.ui.mini.text.loader {
+  min-width: $loader-mini;
+  @include loaderPaddingTop($loader-mini);
+  //padding-top: ($loader-mini + $loader-text-distance);
+}
+.ui.tiny.text.loader {
+  min-width: $loader-tiny;
+  @include loaderPaddingTop($loader-tiny);
+  //padding-top: ($loader-tiny + $loader-text-distance);
+}
+.ui.small.text.loader {
+  min-width: $loader-small;
+  @include loaderPaddingTop($loader-small);
+  //padding-top: ($loader-small + $loader-text-distance);
+}
+.ui.text.loader {
+  min-width: $loader-medium;
+  @include loaderPaddingTop($loader-medium);
+  //padding-top: ($loader-medium + $loader-text-distance);
+}
+.ui.large.text.loader {
+  min-width: $loader-large;
+  @include loaderPaddingTop($loader-large);
+  //padding-top: ($loader-large + $loader-text-distance);
+}
+.ui.big.text.loader {
+  min-width: $loader-big;
+  @include loaderPaddingTop($loader-big);
+  //padding-top: ($loader-big + $loader-text-distance);
+}
+.ui.huge.text.loader {
+  min-width: $loader-huge;
+  @include loaderPaddingTop($loader-huge);
+  //padding-top: ($loader-huge + $loader-text-distance);
+}
+.ui.massive.text.loader {
+  min-width: $loader-massive;
+  @include loaderPaddingTop($loader-massive);
+  //padding-top: ($loader-massive + $loader-text-distance);
+}
+/*-------------------
+       Inverted
+--------------------*/
+
+.ui.inverted.loader {
+  color: $loader-inverted-loader-text-color
+}
+.ui.inverted.loader:before {
+  border-color: $inverted-loader-fill-color;
+}
+.ui.inverted.loader:after {
+  border-top-color: $inverted-loader-line-color;
+}
+
+/*-------------------
+       Inline
+--------------------*/
+
+.ui.inline.loader {
+  position: relative;
+  vertical-align: $loader-inline-vertical-align;
+  margin: $loader-inline-margin;
+  left: 0;
+  top: 0;
+  transform: none;
+}
+
+.ui.inline.loader.active,
+.ui.inline.loader.visible {
+  display: inline-block;
+}
+
+/* Centered Inline */
+.ui.centered.inline.loader.active,
+.ui.centered.inline.loader.visible {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+

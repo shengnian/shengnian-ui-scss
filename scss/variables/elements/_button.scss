@@ -1,0 +1,354 @@
+/*******************************
+            Button
+*******************************/
+
+/*-------------------
+       Element
+--------------------*/
+
+/* Button */
+$button-vertical-margin: 0;
+$button-horizontal-margin: 0.25em;
+$button-background-color: #E0E1E2;
+$button-background-image: none;
+$button-background: $button-background-color $button-background-image;
+$button-line-height: 1em;
+
+/* Button defaults to using same height as input globally */
+$button-vertical-padding: $input-vertical-padding;
+$button-horizontal-padding: 1.5em;
+
+/* Text */
+$button-text-transform: none;
+$button-tap-color: transparent;
+$button-font-family: $page-font;
+$button-font-weight: bold;
+$button-text-color: rgba(0, 0, 0, 0.6);
+$button-text-shadow: none;
+$button-inverted-text-shadow: $button-text-shadow;
+$button-border-radius: $default-border-radius;
+$button-vertical-align: baseline;
+
+/* Internal Shadow */
+$button-shadow-distance: 0;
+$button-shadow-offset: ($button-shadow-distance / 2);
+$button-shadow-box-shadow: 0 (-$button-shadow-distance) 0 0 $border-color inset;
+
+/* Box Shadow */
+$button-border-box-shadow-color: transparent;
+$button-border-box-shadow-width: 1px;
+$button-border-box-shadow: 0 0 0 $button-border-box-shadow-width $button-border-box-shadow-color inset;
+$button-box-shadow:
+  $button-border-box-shadow,
+  $button-shadow-box-shadow
+;
+
+/* Icon */
+$button-icon-height: $relative-tiny;
+$button-icon-opacity: 0.8;
+$button-icon-distance: $relative6px;
+$button-icon-color: '';
+$button-icon-transition: opacity $default-duration $default-easing;
+$button-icon-vertical-align: '';
+
+$button-icon-margin: 0 $button-icon-distance 0 (-$button-icon-distance / 2);
+$button-right-icon-margin: 0 (-$button-icon-distance / 2) 0 $button-icon-distance;
+
+/* Loader */
+$button-inverted-loader-fill-color: rgba(0, 0, 0, 0.15);
+
+$button-transition:
+  opacity $default-duration $default-easing,
+  background-color $default-duration $default-easing,
+  color $default-duration $default-easing,
+  box-shadow $default-duration $default-easing,
+  background $default-duration $default-easing
+;
+/*
+$button-will-change: box-shadow, transform, opacity, color, background;
+*/
+$button-will-change: '';
+
+/*-------------------
+        Group
+--------------------*/
+
+$button-group-box-shadow: none;
+$button-group-button-box-shadow: $button-box-shadow;
+$button-vertical-box-shadow: none;
+$button-group-button-offset: 0 0 0 0;
+$button-vertical-group-offset: 0 0 0 0;
+
+/*-------------------
+        States
+--------------------*/
+
+/* Hovered */
+$button-hover-background-color: #CACBCD;
+$button-hover-background-image: $button-background-image;
+$button-hover-box-shadow: $button-box-shadow;
+$button-hover-color: $hovered-text-color;
+$button-icon-hover-opacity: 0.85;
+
+/* Focused */
+$button-focus-background-color: $button-hover-background-color;
+$button-focus-background-image: '';
+$button-focus-box-shadow: '';
+$button-focus-color: $hovered-text-color;
+$button-icon-focus-opacity: 0.85;
+
+/* Disabled */
+$button-disabled-background-image: none;
+$button-disabled-box-shadow: none;
+
+/* Pressed Down */
+$button-down-background-color: #BABBBC;
+$button-down-background-image: '';
+$button-down-pressed-shadow: none;
+$button-down-box-shadow:
+  $button-border-box-shadow,
+  $button-down-pressed-shadow
+;
+$button-down-color: $pressed-text-color;
+
+/* Active */
+$button-active-background-color: #C0C1C2;
+$button-active-background-image: none;
+$button-active-color: $selected-text-color;
+$button-active-box-shadow: $button-border-box-shadow;
+
+/* Active + Hovered */
+$button-active-hover-background-color: $button-active-background-color;
+$button-active-hover-background-image: none;
+$button-active-hover-color: $button-active-color;
+$button-active-hover-box-shadow: $button-active-box-shadow;
+
+/* Loading */
+$button-loading-opacity: 1;
+$button-loading-pointer-events: auto;
+$button-loading-transition:
+  all 0s linear,
+  opacity $default-duration $default-easing
+;
+
+/*-------------------
+        Types
+--------------------*/
+
+/* Or */
+$button-or-text: 'or';
+
+$button-or-gap: 0.3em;
+$button-or-height: (#{$button-vertical-padding} * 2) + 1em;
+$button-or-zindex: 3;
+
+$button-or-circle-distance-to-edge: ($button-vertical-padding);
+$button-or-circle-size: $button-or-height - $button-or-circle-distance-to-edge;
+$button-or-line-height: ($button-or-circle-size);
+$button-or-box-shadow: $button-border-box-shadow;
+
+$button-or-vertical-offset: -($button-or-circle-size / 2);
+$button-or-horizontal-offset: -($button-or-circle-size / 2);
+
+$button-or-background-color: $white;
+$button-or-text-shadow: $button-inverted-text-shadow;
+$button-or-text-style: normal;
+$button-or-text-weight: bold;
+$button-or-text-color: $light-text-color;
+
+
+$button-or-spacer-height: $button-vertical-padding;
+$button-or-spacer-color: transparent;
+
+/* Icon */
+$button-icon-button-opacity: 0.9;
+
+/* Labeled */
+$button-labeled-label-font-size: $medium;
+$button-labeled-label-align: center;
+$button-labeled-label-padding: '';
+$button-labeled-label-font-size: $relative-medium;
+$button-labeled-label-border-color: $border-color;
+$button-labeled-label-border-offset: -$button-border-box-shadow-width;
+$button-labeled-tag-label-size: 1.85em; /* hypotenuse of triangle */
+$button-labeled-icon-margin: 0;
+
+/* Labeled Icon */
+$button-labeled-icon-width: 1em + (#{$button-vertical-padding} * 2);
+$button-labeled-icon-background-color: rgba(0, 0, 0, 0.05);
+$button-labeled-icon-padding: ($button-horizontal-padding + $button-labeled-icon-width);
+$button-labeled-icon-border: transparent;
+$button-labeled-icon-color: '';
+
+$button-labeled-icon-left-shadow: -1px 0 0 0 $button-labeled-icon-border inset;
+$button-labeled-icon-right-shadow: 1px 0 0 0 $button-labeled-icon-border inset;
+
+
+/* Inverted */
+$button-inverted-border-size: 2px;
+$button-inverted-text-color: $white;
+$button-inverted-text-hover-color: $button-hover-color;
+$button-inverted-group-button-offset: 0 0 0 (-$button-inverted-border-size);
+$button-inverted-vertical-group-button-offset: 0 0 (-$button-inverted-border-size) 0;
+
+/* Basic */
+$button-basic-border-radius: $button-border-radius;
+$button-basic-border-size: 1px;
+$button-basic-text-color: $button-text-color;
+$button-basic-colored-border-size: 1px;
+
+$button-basic-background: transparent none;
+$button-basic-font-weight: normal;
+$button-basic-border: 1px solid $border-color;
+$button-basic-box-shadow: 0 0 0 $button-basic-border-size $border-color inset;
+$button-basic-loading-color: $off-white;
+$button-basic-text-transform: none;
+
+/* Basic Hover */
+$button-basic-hover-background: #FFFFFF;
+$button-basic-hover-text-color: $hovered-text-color;
+$button-basic-hover-box-shadow: 0 0 0 $button-basic-border-size $selected-border-color inset, 0 0 0 0 $border-color inset
+;
+/* Basic Focus */
+$button-basic-focus-background: $button-basic-hover-background;
+$button-basic-focus-text-color: $button-basic-hover-text-color;
+$button-basic-focus-box-shadow: $button-basic-hover-box-shadow;
+
+/* Basic Down */
+$button-basic-down-background: #F8F8F8;
+$button-basic-down-text-color: $pressed-text-color;
+$button-basic-down-box-shadow: 0 0 0 $button-basic-border-size rgba(0, 0, 0, 0.15) inset, 0 1px 4px 0 $border-color inset
+;
+/* Basic Active */
+$button-basic-active-background: $transparent-black;
+$button-basic-active-box-shadow: '';
+$button-basic-active-text-color: $selected-text-color;
+
+/* Basic Inverted */
+$button-basic-inverted-background: transparent;
+$button-basic-inverted-focus-background: transparent;
+$button-basic-inverted-down-background: $transparent-white;
+$button-basic-inverted-active-background: $transparent-white;
+
+$button-basic-inverted-box-shadow: 0 0 0 $button-inverted-border-size rgba(255, 255, 255, 0.5) inset;
+$button-basic-inverted-hover-box-shadow: 0 0 0 $button-inverted-border-size rgba(255, 255, 255, 1) inset;
+$button-basic-inverted-focus-box-shadow: 0 0 0 $button-inverted-border-size rgba(255, 255, 255, 1) inset;
+$button-basic-inverted-down-box-shadow: 0 0 0 $button-inverted-border-size rgba(255, 255, 255, 0.9) inset;
+$button-basic-inverted-active-box-shadow: 0 0 0 $button-inverted-border-size rgba(255, 255, 255, 0.7) inset;
+
+$button-basic-inverted-color: $dark-white;
+$button-basic-inverted-hover-color: $dark-white-hover;
+$button-basic-inverted-down-color: $dark-white-active;
+$button-basic-inverted-active-color: $inverted-text-color;
+
+
+/* Basic Group */
+$button-basic-group-border: $button-basic-border-size solid $border-color;
+$button-basic-group-box-shadow: none;
+
+/*-------------------
+      Variations
+--------------------*/
+
+/* Colors */
+$button-colored-background-image: none;
+$button-colored-box-shadow: $button-shadow-box-shadow;
+
+/* Colored */
+$button-brown-text-color: $button-inverted-text-color;
+$button-brown-text-shadow: $button-inverted-text-shadow;
+$button-red-text-color: $button-inverted-text-color;
+$button-red-text-shadow: $button-inverted-text-shadow;
+$button-orange-text-color: $button-inverted-text-color;
+$button-orange-text-shadow: $button-inverted-text-shadow;
+$button-green-text-color: $button-inverted-text-color;
+$button-green-text-shadow: $button-inverted-text-shadow;
+$button-blue-text-color: $button-inverted-text-color;
+$button-blue-text-shadow: $button-inverted-text-shadow;
+$button-violet-text-color: $button-inverted-text-color;
+$button-violet-text-shadow: $button-inverted-text-shadow;
+$button-purple-text-color: $button-inverted-text-color;
+$button-purple-text-shadow: $button-inverted-text-shadow;
+$button-pink-text-color: $button-inverted-text-color;
+$button-pink-text-shadow: $button-inverted-text-shadow;
+$button-black-text-color: $button-inverted-text-color;
+$button-black-text-shadow: $button-inverted-text-shadow;
+$button-olive-text-color: $button-inverted-text-color;
+$button-olive-text-shadow: $button-inverted-text-shadow;
+$button-yellow-text-color: $button-inverted-text-color;
+$button-yellow-text-shadow: $button-inverted-text-shadow;
+$button-teal-text-color: $button-inverted-text-color;
+$button-teal-text-shadow: $button-inverted-text-shadow;
+$button-grey-text-color: $button-inverted-text-color;
+$button-grey-text-shadow: $button-inverted-text-shadow;
+
+/* Inverted */
+$button-light-brown-text-color: $button-inverted-text-color;
+$button-light-brown-text-shadow: $button-inverted-text-shadow;
+$button-light-red-text-color: $button-inverted-text-color;
+$button-light-red-text-shadow: $button-inverted-text-shadow;
+$button-light-orange-text-color: $button-inverted-text-color;
+$button-light-orange-text-shadow: $button-inverted-text-shadow;
+$button-light-green-text-color: $button-inverted-text-color;
+$button-light-green-text-shadow: $button-inverted-text-shadow;
+$button-light-blue-text-color: $button-inverted-text-color;
+$button-light-blue-text-shadow: $button-inverted-text-shadow;
+$button-light-violet-text-color: $button-inverted-text-color;
+$button-light-violet-text-shadow: $button-inverted-text-shadow;
+$button-light-purple-text-color: $button-inverted-text-color;
+$button-light-purple-text-shadow: $button-inverted-text-shadow;
+$button-light-pink-text-color: $button-inverted-text-color;
+$button-light-pink-text-shadow: $button-inverted-text-shadow;
+$button-light-black-text-color: $button-inverted-text-color;
+$button-light-black-text-shadow: $button-inverted-text-shadow;
+$button-light-olive-text-color: $button-text-color;
+$button-light-olive-text-shadow: $button-text-shadow;
+$button-light-yellow-text-color: $button-text-color;
+$button-light-yellow-text-shadow: $button-text-shadow;
+$button-light-teal-text-color: $button-text-color;
+$button-light-teal-text-shadow: $button-text-shadow;
+$button-light-grey-text-color: $button-text-color;
+$button-light-grey-text-shadow: $button-text-shadow;
+
+
+/* Ordinality */
+$button-primary-background-image: $button-colored-background-image;
+$button-primary-text-color: $button-inverted-text-color;
+$button-primary-text-shadow: $button-inverted-text-shadow;
+$button-primary-box-shadow: $button-colored-box-shadow;
+
+$button-secondary-background-image: $button-colored-background-image;
+$button-secondary-text-color: $button-inverted-text-color;
+$button-secondary-text-shadow: $button-inverted-text-shadow;
+$button-secondary-box-shadow: $button-colored-box-shadow;
+
+$button-positive-background-image: $button-colored-background-image;
+$button-positive-text-color: $button-inverted-text-color;
+$button-positive-text-shadow: $button-inverted-text-shadow;
+$button-positive-box-shadow: $button-colored-box-shadow;
+
+$button-negative-background-image: $button-colored-background-image;
+$button-negative-text-color: $button-inverted-text-color;
+$button-negative-text-shadow: $button-inverted-text-shadow;
+$button-negative-box-shadow: $button-colored-box-shadow;
+
+/* Compact */
+$button-compact-vertical-padding: (#{$button-vertical-padding} * 0.75);
+$button-compact-horizontal-padding: (#{$button-horizontal-padding} * 0.75);
+
+/* Attached */
+$button-attached-offset: -1px;
+$button-attached-box-shadow: 0 0 0 1px $border-color;
+$button-attached-horizontal-padding: 0.75em;
+$button-attached-zindex: 2;
+
+/* Floated */
+$button-floated-margin: 0.25em;
+
+/* Animated */
+$button-animated-vertical-align: middle;
+$button-animated-zindex: 1;
+$button-animation-duration: 0.3s;
+$button-animation-easing: ease;
+$button-fade-scale-high: 1.5;
+$button-fade-scale-low: 0.75;
