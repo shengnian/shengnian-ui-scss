@@ -482,17 +482,17 @@
 
 /* Linked In */
 .ui.linkedin.button {
-  background-color: $linked-in-color;
+  background-color: $linkedin-color;
   color: $button-inverted-text-color;
   text-shadow: $button-inverted-text-shadow;
 }
 .ui.linkedin.button:hover {
-  background-color: $linked-in-hover-color;
+  background-color: $linkedin-hover-color;
   color: $button-inverted-text-color;
   text-shadow: $button-inverted-text-shadow;
 }
 .ui.linkedin.button:active {
-  background-color: $linked-in-down-color;
+  background-color: $linkedin-down-color;
   color: $button-inverted-text-color;
   text-shadow: $button-inverted-text-shadow;
 }
@@ -3036,6 +3036,79 @@
   box-shadow: 0 0 0 $button-inverted-border-size $light-yellow-down inset !important;
   color: $light-yellow !important;
 }
+
+/*--- Shengnian ---*/
+.ui.shengnian.buttons .button,
+.ui.shengnian.button {
+  background-color: $shengnian-color;
+  color: $button-shengnian-text-color;
+  text-shadow: $button-shengnian-text-shadow;
+  background-image: $button-colored-background-image;
+}
+.ui.shengnian.button {
+  box-shadow: $button-colored-box-shadow;
+}
+.ui.shengnian.buttons .button:hover,
+.ui.shengnian.button:hover {
+  background-color: $blue-hover;
+  color: $button-shengnian-text-color;
+  text-shadow: $button-shengnian-text-shadow;
+}
+.ui.shengnian.buttons .button:focus,
+.ui.shengnian.button:focus {
+  background-color: $blue-focus;
+  color: $button-shengnian-text-color;
+  text-shadow: $button-shengnian-text-shadow;
+}
+.ui.shengnian.buttons .button:active,
+.ui.shengnian.button:active {
+  background-color: $shengnian-down;
+  color: $button-shengnian-text-color;
+  text-shadow: $button-shengnian-text-shadow;
+}
+.ui.shengnian.buttons .active.button,
+.ui.shengnian.buttons .active.button:active,
+.ui.shengnian.active.button,
+.ui.shengnian.button .active.button:active {
+  background-color: $shengnian-active;
+  color: $button-shengnian-text-color;
+  text-shadow: $button-shengnian-text-shadow;
+}
+
+/* Basic */
+.ui.basic.shengnian.buttons .button,
+.ui.basic.shengnian.button {
+  box-shadow: 0 0 0 $button-basic-border-size $shengnian-color inset !important;
+  color: $shengnian !important;
+}
+.ui.basic.shengnian.buttons .button:hover,
+.ui.basic.shengnian.button:hover {
+  background: transparent !important;
+  box-shadow: 0 0 0 $button-basic-colored-border-size $shengnian-hover inset !important;
+  color: $shengnian-hover !important;
+}
+.ui.basic.shengnian.buttons .button:focus,
+.ui.basic.shengnian.button:focus {
+  background: transparent !important;
+  box-shadow: 0 0 0 $button-basic-colored-border-size $shengnian-focus inset !important;
+  color: $shengnian-hover !important;
+}
+.ui.basic.shengnian.buttons .active.button,
+.ui.basic.shengnian.active.button {
+  background: transparent !important;
+  box-shadow: 0 0 0 $button-basic-colored-border-size $shengnian-active inset !important;
+  color: $shengnian-down !important;
+}
+.ui.basic.shengnian.buttons .button:active,
+.ui.basic.shengnian.button:active {
+  box-shadow: 0 0 0 $button-basic-colored-border-size $shengnian-down inset !important;
+  color: $shengnian-down !important;
+}
+.ui.buttons:not(.vertical) > .basic.shengnian.button:not(:first-child) {
+  margin-left: -$button-basic-colored-border-size;
+}
+
+
 /*-------------------
        Primary
 --------------------*/
